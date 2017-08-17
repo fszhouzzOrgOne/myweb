@@ -18,8 +18,8 @@ import java.util.Set;
 import cangjie.java.util.IOUtils;
 
 // 去交集後 315493
-// 純六代 170616
-// 純六加詞組 555749
+// 純六代 
+// 純六加詞組 
 // 倉頡三五 164901 只要ANSI則 105618
 public class Cj01SQLiteTest {
     private static String mbsBaseDir = Cj00AllInOneTest.mbsBaseDir;
@@ -57,12 +57,39 @@ public class Cj01SQLiteTest {
 
     public static void main(String args[]) throws Exception {
         boolean withCangjieOthers = false; // 加入其他倉頡？
-        boolean withCangjie6 = true; // 加入蒼頡六？
-        
+        boolean withCangjie6 = false; // 加入蒼頡六？
         boolean withCangjie35 = false; // 加入倉頡三五？
-
+        
+        // 互斥的五個版本選擇
+        boolean edition1 = false; // 1版本默認字體
+        boolean edition2 = false; // 2版本自定義字體
+        boolean edition35 = false; // 版本倉頡三五
+        boolean edition6 = false; // 版本六 170616
+        boolean edition62 = true; // 版本六，帶詞組 555757
+        
+        if (edition1 || edition2) {
+            withCangjie6 = true;
+            withCangjieOthers = true;
+            withCangjie35 = false;
+        }
+        if (edition35) {
+            withCangjie6 = false;
+            withCangjieOthers = false;
+            withCangjie35 = true;
+        }
+        if (edition6 || edition62) {
+            withCangjie6 = true;
+            withCangjieOthers = false;
+            withCangjie35 = false;
+        }
+        
         // 生成碼表
-        Cj00AllInOneTest.generateAllInOnes();
+        if (edition62) {
+            Cj00AllInOneTest.generateAllInOnes(false, false, true, false);
+        } else {
+            Cj00AllInOneTest.generateAllInOnes(false, false, false, false);
+        }
+
         // 生成交集碼表
         Cj01MbFormatTest.getCjMbsIntersection();
 

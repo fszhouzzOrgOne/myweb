@@ -57,8 +57,7 @@ public class Cj00AllInOneTest {
 
     // 日文
     public static String mbnippon200 = mbsBaseDir + "karina-kana200.txt";
-    public static String mbnipponKanji2000 = mbsBaseDir
-            + "karina-kanji2000.txt";
+    public static String mbnipponKanji2000 = mbsBaseDir + "karina-kanji2000.txt";
     public static String nihonAllInOne = mbsBaseDir + "allInOne-karina.txt";
 
     // 韓文
@@ -73,28 +72,43 @@ public class Cj00AllInOneTest {
     public static String pinyinallInOne = mbsBaseDir + "allInOne-pinyin.txt"; // 普語拼音
     public static String cjyhallInOne = mbsBaseDir + "allInOne-cjyahoo.txt"; // 雅虎奇摩
     public static String cjmsallInOne = mbsBaseDir + "allInOne-cjms.txt"; // 微軟倉頡
-    
+
     // 滿文
     public static String manju100 = mbsBaseDir + "manju-100.txt";
     public static String manjuMore = mbsBaseDir + "manju-more.txt";
     public static String manjuAllInOne = mbsBaseDir + "allInOne-manju.txt";
 
     public static void main(String[] args) throws Exception {
-        generateAllInOnes();
+        // 電腦輸入法碼表
+        generateAllInOnes(true, false, true, false);
     }
-    
-    public static void generateAllInOnes() throws Exception {
-        boolean otherWithPhrases = false; // 其他輸入法是否加入詞組
-        boolean withPhrases = false; // 是否加入詞組
-        boolean withPhrases6 = true; // 六代是否加入詞組
-        
-        boolean withHeaders = false; // 是否加入文件頭
+
+    /**
+     * 生成整合碼表
+     * 
+     * @param allWithHeaders
+     *            是否加入文件頭
+     * @param cjwithPhrases
+     *            是否加入詞組
+     * @param cj6withPhrases6
+     *            六代是否加入詞組
+     * @param otherImWithPhrases
+     *            其他輸入法是否加入詞組
+     * @throws Exception
+     */
+    public static void generateAllInOnes(boolean allWithHeaders, boolean cjwithPhrases, boolean cj6withPhrases6,
+            boolean otherImWithPhrases) throws Exception {
+        boolean otherWithPhrases = otherImWithPhrases; // 其他輸入法是否加入詞組
+        boolean withPhrases = cjwithPhrases; // 是否加入詞組
+        boolean withPhrases6 = cj6withPhrases6; // 六代是否加入詞組
+
+        boolean withHeaders = allWithHeaders; // 是否加入文件頭
 
         // 整理词组
         if (withPhrases || withPhrases6) {
             readPhraseFile();
         }
-        
+
         // 滿文
         String[] mbmanju = new String[] { manju100, manjuMore };
         genAllInOne("圈點滿文", mbmanju, manjuAllInOne, withHeaders);
@@ -135,7 +149,7 @@ public class Cj00AllInOneTest {
         // 微軟倉頡
         String[] mbcjms = new String[] { cjms59000 };
         genAllInOne("微軟倉頡", mbcjms, cjmsallInOne, withHeaders);
-        
+
         // 詞組編碼6
         if (withPhrases6) {
             List<String> mbfiles6 = new ArrayList<String>();
@@ -145,9 +159,8 @@ public class Cj00AllInOneTest {
         }
         // 注意碼表的順序，一般爲：二萬常用字、一萬繁體、蕳化字、七萬字的、詞組
         // 生成allInOne文件6
-        String[] mbs6 = new String[] { mb620000, mb610000, mb68000, mb670000,
-                mb6more, mb6compat1000, mb6simParts400, mb6japkore200,
-                mb6morePhrase, mb6phrase };
+        String[] mbs6 = new String[] { mb620000, mb610000, mb68000, mb670000, mb6more, mb6compat1000, mb6simParts400,
+                mb6japkore200, mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
             mbs6[mbs6.length - 2] = null;
@@ -162,8 +175,7 @@ public class Cj00AllInOneTest {
             genRawCjPhrases(phraseOriginFile, mb5phrase, mbfiles5);
         }
         // 生成allInOne文件5
-        String[] mbs5 = new String[] { mb520000, mb510000, mb58000, mb570000,
-                mb5more, mb5phrase };
+        String[] mbs5 = new String[] { mb520000, mb510000, mb58000, mb570000, mb5more, mb5phrase };
         if (!withPhrases) {
             mbs5[mbs5.length - 1] = null;
         }
@@ -176,8 +188,7 @@ public class Cj00AllInOneTest {
             genRawCjPhrases(phraseOriginFile, mb3phrase, mbfiles3);
         }
         // 生成allInOne文件3
-        String[] mbs3 = new String[] { mb320000, mb310000, mb36000, mb370000,
-                mb3more, mb3phrase };
+        String[] mbs3 = new String[] { mb320000, mb310000, mb36000, mb370000, mb3more, mb3phrase };
         if (!withPhrases) {
             mbs3[mbs3.length - 1] = null;
         }
@@ -202,23 +213,20 @@ public class Cj00AllInOneTest {
      * destPhrasesFile 詞組編碼後的目標文件<br />
      * mbfile 常用版字集碼表
      */
-    private static void genRawCjPhrases(String srcPhraseFile,
-            String destPhrasesFile, List<String> mbfile) throws Exception {
+    private static void genRawCjPhrases(String srcPhraseFile, String destPhrasesFile, List<String> mbfile)
+            throws Exception {
         System.out.println("生成：" + destPhrasesFile);
         // 常用版所有字符
-        Set<String> cj6Set = new LinkedHashSet<String>(IOUtils.readLines(mbfile
-                .get(0)));
+        Set<String> cj6Set = new LinkedHashSet<String>(IOUtils.readLines(mbfile.get(0)));
         if (mbfile.size() > 1) {
             for (int index = 1; index < mbfile.size(); index++) {
                 cj6Set.addAll(IOUtils.readLines(mbfile.get(index)));
             }
         }
         // 做成映射，字符為鍵，編碼列表爲值
-        Map<String, List<String>> charCodesMap = PhraseUtils
-                .getMbSetMapByChar(cj6Set);
+        Map<String, List<String>> charCodesMap = PhraseUtils.getMbSetMapByChar(cj6Set);
         // 所有詞組
-        List<String> allphrases = new ArrayList<String>(
-                IOUtils.readLines(srcPhraseFile));
+        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(srcPhraseFile));
         // 六代詞組
         List<String> resPhrases = new ArrayList<String>();
 
@@ -238,8 +246,7 @@ public class Cj00AllInOneTest {
                 System.out.println("没有编碼：" + phr);
             }
             if (count >= 10000) {
-                System.out.println(sdf.format(new Date()) + ": "
-                        + resPhrases.size());
+                System.out.println(sdf.format(new Date()) + ": " + resPhrases.size());
                 IOUtils.writeFile(destPhrasesFile, resPhrases);
                 count = 0;
             }
@@ -261,8 +268,7 @@ public class Cj00AllInOneTest {
      * @author t
      * @time 2016-12-15下午11:36:15
      */
-    private static void genAllInOne(String name, String[] mbs, String destFile,
-            boolean withHeaders) throws Exception {
+    private static void genAllInOne(String name, String[] mbs, String destFile, boolean withHeaders) throws Exception {
         System.out.println(destFile);
         Set<String> codeLines = new LinkedHashSet<String>();
 
