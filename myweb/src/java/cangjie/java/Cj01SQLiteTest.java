@@ -61,11 +61,11 @@ public class Cj01SQLiteTest {
         boolean withCangjie35 = false; // 加入倉頡三五？
         
         // 互斥的五個版本選擇
-        boolean edition1 = false; // 1版本默認字體
-        boolean edition2 = false; // 2版本自定義字體
+        boolean edition1 = false; // 1版本默認字體 同2
+        boolean edition2 = false; // 2版本自定義字體 315495
         boolean edition35 = false; // 版本倉頡三五
-        boolean edition6 = false; // 版本六 170616
-        boolean edition62 = true; // 版本六，帶詞組 555759
+        boolean edition6 = false; // 版本六 170618
+        boolean edition62 = true; // 版本六，帶詞組 555756
         
         if (edition1 || edition2) {
             withCangjie6 = true;
