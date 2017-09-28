@@ -117,8 +117,10 @@ public class Cj01SQLiteTest {
                     + " mb_order_no integer DEFAULT 0)";
             stmt.executeUpdate(sql);
 
-            // 索引在前面建，才會有效，但文件會效大
+            // 索引在前面建，才會有效
             String indexSql = " CREATE INDEX index_mb_content_code ON t_mb_content (type_code, mb_code); ";
+            stmt.executeUpdate(indexSql);
+            indexSql = " CREATE INDEX index_mb_content_char ON t_mb_content (type_code, mb_char); ";
             stmt.executeUpdate(indexSql);
 
             List<String> lines2 = IOUtils.readLines(mb2allInOne);
