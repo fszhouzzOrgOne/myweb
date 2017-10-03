@@ -425,6 +425,7 @@ vl  ㄩ
 vsk  ㆠ
 slk  ㆡ
 vlk  ㆢ
+vk  ㆢ
 vvk  ㆣ
 pn  ㆤ
 pnk  ㆥ
