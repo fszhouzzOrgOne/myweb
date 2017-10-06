@@ -63,9 +63,9 @@ public class Cj01SQLiteTest {
         // 互斥的五個版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
         boolean edition2 = false; // 2版本自定義字體 315495
-        boolean edition35 = false; // 版本倉頡三五
-        boolean edition6 = false; // 版本六 170618
-        boolean edition62 = true; // 版本六，帶詞組 555756
+        boolean edition35 = true; // 版本倉頡三五 164901 ANSI 105618
+        boolean edition6 = false; // 版本六 170618  
+        boolean edition62 = false; // 版本六，帶詞組 555756
         
         if (edition1 || edition2) {
             withCangjie6 = true;
@@ -183,7 +183,7 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
             sql_gen = getInsertGenSql(cjGen6, "蒼頡六代");
             stmt.executeUpdate(sql_gen);
-            sql_gen = getInsertGenSql(cjGen35, "蒼頡三五");
+            sql_gen = getInsertGenSql(cjGen35, "倉頡三五");
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenpy, "普語拼音");
