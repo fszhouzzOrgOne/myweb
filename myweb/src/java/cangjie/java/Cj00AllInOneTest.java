@@ -14,66 +14,71 @@ import cangjie.java.util.PhraseUtils;
 public class Cj00AllInOneTest {
 
     public static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
-
+    // 取自倉頡平臺2012所帶碼表
     public static String mb26000 = mbsBaseDir + "cj2-6763.txt";
-
+    // 取自倉頡平臺2012所帶碼表
     public static String mb36000 = mbsBaseDir + "cj3-6763.txt";
     public static String mb310000 = mbsBaseDir + "cj3-13053.txt";
     public static String mb320000 = mbsBaseDir + "cj3-20902.txt";
     public static String mb370000 = mbsBaseDir + "cj3-70000.txt";
     public static String mb3more = mbsBaseDir + "cj3-more.txt";
-
+    // 取自倉頡平臺2012所帶碼表
     public static String mb58000 = mbsBaseDir + "cj5-8300.txt";
     public static String mb510000 = mbsBaseDir + "cj5-13053.txt";
     public static String mb520000 = mbsBaseDir + "cj5-20902.txt";
     public static String mb570000 = mbsBaseDir + "cj5-70000.txt";
     public static String mb5more = mbsBaseDir + "cj5-more.txt";
-
+    // 取用倉頡輸入法羣共享中的cj6-70000碼表等，並整合了雪齋團隊整理的碼表
     public static String mb68000 = mbsBaseDir + "cj6-8300.txt";
     public static String mb610000 = mbsBaseDir + "cj6-13053.txt";
     public static String mb620000 = mbsBaseDir + "cj6-20902.txt";
     public static String mb670000 = mbsBaseDir + "cj6-70000.txt";
     public static String mb6more = mbsBaseDir + "cj6-more.txt";
+    // 自製碼表
     public static String mb6compat1000 = mbsBaseDir + "cj6-compat1000.txt";
     public static String mb6simParts400 = mbsBaseDir + "cj6-simPart400.txt";
     public static String mb6japkore200 = mbsBaseDir + "cj6-japkorea.txt";
     public static String mb6morePhrase = mbsBaseDir + "cj6-morePhrase.txt";
-
+    // 各代所有碼表合一
     public static String mb2allInOne = mbsBaseDir + "allInOne-cj2.txt";
     public static String mb3allInOne = mbsBaseDir + "allInOne-cj3.txt";
     public static String mb5allInOne = mbsBaseDir + "allInOne-cj5.txt";
     public static String mb6allInOne = mbsBaseDir + "allInOne-cj6.txt";
-
+    // 詞組
     public static String phraseOriginFile = mbsBaseDir + "phrases.txt";
     public static String mb3phrase = mbsBaseDir + "cj3-phrase.txt";
     public static String mb5phrase = mbsBaseDir + "cj5-phrase.txt";
     public static String mb6phrase = mbsBaseDir + "cj6-phrase.txt";
 
-    // 四角號碼
+    // 四角號碼，參照911查詢網底四角號碼查詢而製作的碼表
     public static String mbsghm27000 = mbsBaseDir + "sghm-27000.txt";
     public static String mbsghm27000no5 = mbsBaseDir + "sghm-27000-5.txt";
     public static String sghmphrase = mbsBaseDir + "sghm-phrase.txt";
     public static String sghmallInOne = mbsBaseDir + "allInOne-sghm.txt";
 
-    // 日文
+    // 日文，自製碼表，並取維基上《日語常用漢字一覧表》中的字和詞，編碼後加入碼表中
     public static String mbnippon200 = mbsBaseDir + "karina-kana200.txt";
     public static String mbnipponKanji2000 = mbsBaseDir + "karina-kanji2000.txt";
     public static String nihonAllInOne = mbsBaseDir + "allInOne-karina.txt";
 
-    // 韓文
+    // 韓文，自製碼表，主要由榕樹葉編碼
     public static String mbkorea10000 = mbsBaseDir + "korea-12000.txt";
     public static String koreaAllInOne = mbsBaseDir + "allInOne-korea.txt";
 
-    public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt"; // 注音符號
-    public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt"; // 普語拼音
+    // 注音符號，自製碼表，只能打符號，不能打漢字
+    public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt"; 
+    // 普語拼音，用網上找的碼表，聲調改用英文字母m底個數表示
+    public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt"; 
+    // 兩個是伊卂Ejsoon推薦的碼表。
     public static String cjyh80000 = mbsBaseDir + "cjyahoo-80000.txt"; // 雅虎奇摩
     public static String cjms59000 = mbsBaseDir + "cjms-59000.txt"; // 微軟倉頡
+    // 合一
     public static String zyfhsallInOne = mbsBaseDir + "allInOne-zyfh.txt"; // 注音符號
     public static String pinyinallInOne = mbsBaseDir + "allInOne-pinyin.txt"; // 普語拼音
     public static String cjyhallInOne = mbsBaseDir + "allInOne-cjyahoo.txt"; // 雅虎奇摩
     public static String cjmsallInOne = mbsBaseDir + "allInOne-cjms.txt"; // 微軟倉頡
 
-    // 滿文
+    // 滿文，自製碼表，參考網上下載的《滿文滿語學習教程完整版.pdf》内容。
     public static String manju100 = mbsBaseDir + "manju-100.txt";
     public static String manjuMore = mbsBaseDir + "manju-more.txt";
     public static String manjuAllInOne = mbsBaseDir + "allInOne-manju.txt";
