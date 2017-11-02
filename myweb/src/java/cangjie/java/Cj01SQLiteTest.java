@@ -58,28 +58,61 @@ public class Cj01SQLiteTest {
     public static void main(String args[]) throws Exception {
         boolean withCangjieOthers = false; // 加入其他倉頡？
         boolean withCangjie6 = false; // 加入蒼頡六？
+        boolean withCangjie5 = false; // 加入蒼頡五？
         boolean withCangjie35 = false; // 加入倉頡三五？
         
         // 互斥的五個版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
         boolean edition2 = false; // 2版本自定義字體 315495
-        boolean edition35 = true; // 版本倉頡三五 164901 ANSI 105618
+        boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
+        boolean edition5 = true; // 版本五代 159268 ansi 103934
         boolean edition6 = false; // 版本六 170619  
         boolean edition62 = false; // 版本六，帶詞組 555963
         
+        // 驗證
+        List<Boolean> edits = new ArrayList<Boolean>();
+        edits.add(edition1);
+        edits.add(edition2);
+        edits.add(edition35);
+        edits.add(edition5);
+        edits.add(edition6);
+        edits.add(edition62);
+        int trues = 0;
+        for (Boolean b : edits) {
+            if (b) {
+                trues++;
+            }
+        }
+        if (trues > 1) {
+            System.out.println("不能有多個版本號！");
+            return;
+        } else if (trues < 1) {
+            System.out.println("不能沒有版本號！");
+            return;
+        }
+        
         if (edition1 || edition2) {
             withCangjie6 = true;
+            withCangjie5 = true;
             withCangjieOthers = true;
             withCangjie35 = false;
         }
         if (edition35) {
             withCangjie6 = false;
+            withCangjie5 = false;
             withCangjieOthers = false;
             withCangjie35 = true;
         }
+        if (edition5) {
+            withCangjie6 = false;
+            withCangjie5 = true;
+            withCangjieOthers = false;
+            withCangjie35 = false;
+        }
         if (edition6 || edition62) {
             withCangjie6 = true;
+            withCangjie5 = false;
             withCangjieOthers = false;
             withCangjie35 = false;
         }
@@ -248,7 +281,8 @@ public class Cj01SQLiteTest {
                 c.commit();
                 System.out.println("insert " + cjGencjms + " successfully");
                 selectCountAll(stmt);
-
+            }
+            if (withCangjie5) {   
                 // 倉頡五代
                 insertMbdb(stmt, cjGen5, lines5);
                 c.commit();
