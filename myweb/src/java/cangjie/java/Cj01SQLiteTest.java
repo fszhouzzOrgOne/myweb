@@ -63,9 +63,10 @@ public class Cj01SQLiteTest {
         // 互斥的五個版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
         boolean edition2 = false; // 2版本自定義字體 315495
-        boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
+        boolean edition35 = true; // 版本倉頡三五 164901 ANSI 105618
+        boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
         boolean edition6 = false; // 版本六 170619  
-        boolean edition62 = true; // 版本六，帶詞組 555963
+        boolean edition62 = false; // 版本六，帶詞組 555963
         
         if (edition1 || edition2) {
             withCangjie6 = true;
@@ -152,9 +153,11 @@ public class Cj01SQLiteTest {
             linescjms.removeAll(interset);
             if (withCangjie35) {
                 Set<String> set35 = new HashSet<String>(lines5);
-                for (String str : lines3) {
-                    if (!set35.contains(str)) {
-                        set35.add(str);
+                if (!edition35only5) {
+                    for (String str : lines3) {
+                        if (!set35.contains(str)) {
+                            set35.add(str);
+                        }
                     }
                 }
                 lines35 = new ArrayList<String>(set35);
@@ -183,7 +186,12 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
             sql_gen = getInsertGenSql(cjGen6, "蒼頡六代");
             stmt.executeUpdate(sql_gen);
-            sql_gen = getInsertGenSql(cjGen35, "倉頡三五");
+            
+            String cj35name = "倉頡三五";
+            if (edition35only5) {
+                cj35name = "倉頡五代";
+            }
+            sql_gen = getInsertGenSql(cjGen35, cj35name);
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenpy, "普語拼音");
