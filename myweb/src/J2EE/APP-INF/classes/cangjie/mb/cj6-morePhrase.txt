@@ -171,3 +171,4 @@ lgknb  闰九月
 lgjb   闰十月
 lgjmb  闰十一月
 lgjmmb 闰十二月
+lpltk  𧙟𧝠

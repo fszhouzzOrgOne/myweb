@@ -24,11 +24,11 @@ inf  礻
 ipvs 𢍻
 ixpf 𢊁
 jv 𫠠
+kh  犭
 ksh  犭
 llsb  帰
 lxs 
 m ー
-mrem 亟
 mu 兀
 ni 々
 nmby 鿕
@@ -47,11 +47,8 @@ wibp 愚
 wx   𡆵
 xkkr 𥕭
 xkkt 𥂞
-xysc 與
-yonk 夜
-ysm 𨒎
-yybuc 𧹂
-yybuu 𬢆
+ymbuc 𧹂
+ylbuu 𬢆
 zzau ↑
 zzyp ˉ
 zzyq ˙
