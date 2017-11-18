@@ -423,6 +423,13 @@ l   ㄧ
 m   ㄧ  
 ho  ㄨ
 vl  ㄩ
+ms  ㄪ
+mv  ㄫ
+mu  ㄫ
+yh  ㄬ
+mlb ㄭ
+imls ㄮ
+nl   ㄯ
 vsk  ㆠ
 slk  ㆡ
 vlk  ㆢ
