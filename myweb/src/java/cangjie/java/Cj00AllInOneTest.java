@@ -38,6 +38,7 @@ public class Cj00AllInOneTest {
     public static String mb6compat1000 = mbsBaseDir + "cj6-compat1000.txt";
     public static String mb6simParts400 = mbsBaseDir + "cj6-simPart400.txt";
     public static String mb6japkore200 = mbsBaseDir + "cj6-japkorea.txt";
+    public static String mb6unif7473 = mbsBaseDir + "cj6-unicodef7473.txt";
     public static String mb6morePhrase = mbsBaseDir + "cj6-morePhrase.txt";
     // 各代所有碼表合一
     public static String mb2allInOne = mbsBaseDir + "allInOne-cj2.txt";
@@ -165,7 +166,7 @@ public class Cj00AllInOneTest {
         // 注意碼表的順序，一般爲：二萬常用字、一萬繁體、蕳化字、七萬字的、詞組
         // 生成allInOne文件6
         String[] mbs6 = new String[] { mb620000, mb610000, mb68000, mb670000, mb6more, mb6compat1000, mb6simParts400,
-                mb6japkore200, mb6morePhrase, mb6phrase };
+                mb6japkore200, mb6unif7473, mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
             mbs6[mbs6.length - 2] = null;

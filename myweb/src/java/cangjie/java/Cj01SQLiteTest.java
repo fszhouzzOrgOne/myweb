@@ -68,7 +68,7 @@ public class Cj01SQLiteTest {
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
         boolean edition5 = false; // 版本五代 159268 ansi 103934
         boolean edition6 = false; // 版本六 170619  
-        boolean edition62 = true; // 版本六，帶詞組 555987
+        boolean edition62 = true; // 版本六，帶詞組 564272
         
         // 驗證
         List<Boolean> edits = new ArrayList<Boolean>();
@@ -130,7 +130,7 @@ public class Cj01SQLiteTest {
         Connection c = null;
         Statement stmt = null;
         try {
-            String mbdbFile = mbsBaseDir + "cjmbdb.db";
+            String mbdbFile = mbsBaseDir + "mbdb" + File.separator + "cjmbdb.db";
             File file = new File(mbdbFile);
             if (file.exists()) {
                 file.delete();
