@@ -5,7 +5,9 @@ mwbuc 賈
 ebbb 滑
 ll 串
 pr 句
+hxu 龜
 nxu 龜
+hxu 龜
 nxu 龜
 qhk 契
 c 金
@@ -424,6 +426,7 @@ ynai 逸
 tloog 難
 vlyta 響
 xnhmz 頻
+xlhmz 頻
 ijwp 恵
 suf 𤋮
 orjrr 舘
@@ -432,6 +435,7 @@ mmrhu 况
 imrhu 况
 omg 全
 omjn 侀
+ohjn 侀
 omtn 侀
 kihu 充
 yihu 充
@@ -472,6 +476,7 @@ qmsok 敖
 gysok 敖
 aqmb 晴
 iib 朗
+ivb 朗
 ybhg 望
 ybmg 望
 dijk 杖
@@ -481,6 +486,7 @@ ekiu 流
 eyiu 流
 ebmu 滛
 etv 滋
+eyii 滋
 etao 漢
 etlo 漢
 eqbd 瀞
@@ -493,7 +499,7 @@ khqa 猪
 khqia 猪
 mgjbc 瑱
 tvmn 甆
-tvmun 甆
+timun 甆
 mulw 画
 kwle 瘝
 kabt 瘟
@@ -501,9 +507,12 @@ tcbt 益
 cmct 益
 ihst 盛
 jbmm 直
+jbuv 直
 buib 睊
 tqbu 着
+tghu 着
 mrjbc 磌
+mrpbc 磌
 jcold 窱
 hail 節
 fdik 类
@@ -513,7 +522,7 @@ ouhh 缾
 outt 缾
 qa 者
 qia 者
-tvou 荒
+tovu 荒
 tmtj 華
 liwot 蝹
 lnii 襁
@@ -530,6 +539,7 @@ yrtkr 諾
 yrobn 諭
 yrobv 諭
 yrtag 謹
+yrtlg 謹
 yvfe 變
 bccwa 贈
 jjobn 輸
@@ -548,10 +558,13 @@ vlyta 響
 mrumz 頋
 xfhmz 頻
 shjbc 鬒
+shpbc 鬒
 hxu 龜
+nxu 龜
 phkp 𢡊
 phka 𢡄
 dijc 𣏕
+did 𣏕
 dcrl 㮝
 bumjj 䀘
 bumt 䀘
@@ -571,7 +584,8 @@ mmbib 丽
 knk 丸
 kni 丸
 mo 乁
-mbrm 𠄢
+mbvm 𠄢
+mbrv 𠄢
 oof 你
 oowj 侮
 oowy 侮
@@ -600,6 +614,7 @@ mgb 再
 bbmm 𠕋
 bhu 冗
 bshi 冤
+bnai 冤
 oo 仌
 heim 冬
 hey 冬
@@ -638,6 +653,7 @@ hviil 卿
 hvhpl 卿
 hp 𠨬
 mf 灰
+kf 灰
 nhe 及
 lwle 叟
 soe 𠭣
@@ -647,6 +663,7 @@ rhi 吆
 rmt 咞
 rnhe 吸
 rmg 呈
+rhg 呈
 bqr 周
 bgr 周
 rrmjs 咢
@@ -677,6 +694,7 @@ lmg 壮
 gihs 城
 gpbv 埴
 gshi 堍
+gnai 堍
 hng 型
 mng 型
 hlg 堲
@@ -685,6 +703,7 @@ glre 報
 nog 墬
 gxoc 𡓤
 gbhn 売
+gbhu 売
 gbtm 壷
 heqj 夆
 nini 多
@@ -701,11 +720,13 @@ vtt 姘
 vsbb 婦
 vjce 㛮
 vhjl 㛼
+vmjl 㛼
 vggn 嬈
 vdlc 嬾
 vdlz 嬾
 jmms 𡧈
 jshi 寃
+jnai 寃
 jpbc 寘
 jpwn 寧
 jmfc 寳
@@ -798,6 +819,7 @@ qike 拔
 qib 捐
 qhie 𢬌
 qshu 挽
+qnau 挽
 qhh 拼
 qtt 拼
 qogr 捨
@@ -820,6 +842,11 @@ owjok 敏
 owyok 敏
 tprok 敬
 yxcye 𣀊
+yxcok 𣀊
+ykcye 𣀊
+ykcok 𣀊
+itcye 𣀊
+itcok 𣀊
 hpmvu 旣
 lga 書
 mtma 晉
@@ -830,6 +857,7 @@ awot 㬈
 aise 㫤
 abu 冒
 anau 冕
+ashu 冕
 asje 最
 yta 暜
 bob 肭
@@ -875,6 +903,7 @@ kdhne 殺
 gnhne 殻
 snhne 𣪍
 uwyi 𡴋
+uwj 𡴋
 oyyib 𣫺
 ojyib 𣫺
 ehni 汎
@@ -910,6 +939,7 @@ ejtc 濆
 eowb 瀹
 eqbd 瀞
 eynv 瀛
+eyvq 瀛
 eolf 㶖
 ekub 灊
 vf 災
@@ -967,6 +997,7 @@ but 𥃲
 bumlc 𥄙
 wle 𥄳
 pbvc 眞
+pbuc 眞
 jbuc 真
 jbuc 真
 buib 睊
@@ -1045,7 +1076,6 @@ qia 者
 qa 者
 huumb 𦓚
 qdihh 𦔣
-qdihw 𦔣
 qdihy 𦔣
 qdihj 𦔣
 sjhh 聠
@@ -1057,6 +1087,7 @@ bmg 䏕
 bhg 䏕
 yib 育
 bnau 脃
+bshu 脃
 bcip 䐋
 bwhj 脾
 bfv 媵
@@ -1077,6 +1108,7 @@ tino 芝
 tbks 劳
 top 花
 uuys 芳
+tyhs 芳
 tmvh 芽
 tjr 苦
 tnf 𦬼
@@ -1206,6 +1238,8 @@ tjumi 䩶
 dqwtj 韠
 jbiom 𩐊
 jbmom 𩐊
+ybiom 𩐊
+ybmom 𩐊
 mumz 䪲
 mtmz 𩒖
 msumz 頋
@@ -1223,6 +1257,7 @@ sfcru 駾
 bbomj 䯎
 shmhn 𩬰
 shjbc 鬒
+shpbc 鬒
 hunwf 鱀
 aunwf 鱀
 mjmjz 鳽
