@@ -31,6 +31,8 @@ ksh  犭
 llsb  帰
 lxs 
 m ー
+mbrv 𠄢
+mbvm 𠄢
 mu 兀
 ni 々
 nmby 鿕
