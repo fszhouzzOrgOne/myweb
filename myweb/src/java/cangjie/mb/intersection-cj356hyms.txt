@@ -11168,6 +11168,7 @@ heyr 黏
 heyr 𥮒
 heyrp 𪐇
 heyub 黐
+hf 爫
 hfapp 𤑎
 hfb 筲
 hfbd 䉎
