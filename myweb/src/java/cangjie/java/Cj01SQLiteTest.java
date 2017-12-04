@@ -68,7 +68,7 @@ public class Cj01SQLiteTest {
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
         boolean edition5 = false; // 版本五代 159268 ansi 103934
         boolean edition6 = false; // 版本六 170619  
-        boolean edition62 = true; // 版本六，帶詞組 564600
+        boolean edition62 = true; // 版本六，帶詞組 564519
         
         // 驗證
         List<Boolean> edits = new ArrayList<Boolean>();
