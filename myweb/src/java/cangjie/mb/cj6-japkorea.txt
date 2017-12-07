@@ -179,6 +179,7 @@ vlh ゆ
 yk よ
 kn ヤ
 sm ユ
+nm ユ
 sm ヨ
 kd ゃ
 vsh ゅ
@@ -186,6 +187,7 @@ vlh ゅ
 yk ょ
 kn ャ
 sm ュ
+nm ュ
 sm ョ
 ivs ら
 vl り
@@ -275,9 +277,11 @@ mllm ㅍ
 mo ㅈ
 momo ㅉ
 mmo ㅊ
+yo ㅊ
 o ㅅ
 oo ㅆ
 mmr ㅎ
+yr ㅎ
 lm ㄴ
 r  ㅁ
 r  ㅇ

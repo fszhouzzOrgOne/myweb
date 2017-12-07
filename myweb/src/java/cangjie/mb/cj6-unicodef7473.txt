@@ -3716,6 +3716,7 @@ ebru 𭰁
 ehml 𭰂
 eopd 𭰃
 ehes 𭰄
+eoks 𭰄
 eoki 𭰅
 eoyi 𭰅
 ehnm 𭰆
@@ -3725,6 +3726,7 @@ ejb 𭰉
 ejz 𭰉
 ews 𭰊
 oke 𭰋
+vke 𭰋
 emnn 𭰌
 esll 𭰍
 efs 𭰎
@@ -3754,7 +3756,8 @@ enls 𭰤
 eehm 𭰥
 egi 𭰦
 eheb 𭰧
-eslu 𭰨
+eokb 𭰧
+essu 𭰨
 edbn 𭰩
 eqyt 𭰪
 emwr 𭰫
@@ -3763,8 +3766,10 @@ tze 𭰭
 esje 𭰮
 etbi 𭰯
 euoi 𭰰
+euol 𭰰
 expp 𭰱
 ebtt 𭰲
+ebhh 𭰲
 etmu 𭰳
 ephb 𭰴
 ehom 𭰵
@@ -3774,7 +3779,7 @@ ehex 𭰸
 ebfd 𭰹
 eyzj 𭰺
 eyvt 𭰻
-etks 𭰼
+elos 𭰼
 eep 𭰽
 enkt 𭰾
 eded 𭰿
@@ -3792,6 +3797,7 @@ emmo 𭱊
 emmb 𭱋
 esjj 𭱌
 emrt 𭱍
+emrj 𭱍
 elbu 𭱎
 ewmk 𭱏
 eytn 𭱐
@@ -3803,6 +3809,7 @@ eyos 𭱕
 epnp 𭱖
 ebyt 𭱗
 enbc 𭱘
+ehsc 𭱘
 eitb 𭱙
 efbd 𭱚
 eyus 𭱛
@@ -3828,6 +3835,7 @@ elce 𭱬
 ebui 𭱭
 hhoe 𭱮
 ebsm 𭱯
+ebsi 𭱯
 eybd 𭱰
 efhk 𭱱
 eipp 𭱲
@@ -3851,6 +3859,7 @@ ewob 𭲂
 eort 𭲃
 ehau 𭲄
 eoyk 𭲅
+eojk 𭲅
 ehor 𭲆
 ehah 𭲇
 efhd 𭲈
@@ -3858,7 +3867,7 @@ etkr 𭲉
 efmf 𭲊
 eybk 𭲋
 efok 𭲌
-eykf 𭲍
+eykl 𭲍
 evmi 𭲎
 enlu 𭲏
 sie 𭲐
@@ -3941,7 +3950,7 @@ etji 𭳚
 erjo 𭳛
 egde 𭳜
 esjf 𭳝
-eqoa 𭳞
+ejmk 𭳞
 ekuf 𭳟
 ewlz 𭳠
 etbn 𭳡
@@ -4054,6 +4063,7 @@ fisb 𭵅
 erf 𭵆
 puuf 𭵇
 nisf 𭵈
+nixf 𭵈
 jsf 𭵉
 fkbl 𭵊
 ftyt 𭵋
@@ -4071,6 +4081,7 @@ fpox 𭵖
 fhon 𭵗
 foie 𭵘
 obnf 𭵙
+obvf 𭵙
 fhsb 𭵚
 fisb 𭵚
 pgf 𭵛
@@ -4079,11 +4090,13 @@ yvf 𭵝
 ffbm 𭵞
 firp 𭵟
 tgef 𭵠
+tqef 𭵠
 fnnc 𭵡
 sff 𭵢
 dgf 𭵣
 fmre 𭵤
 fthb 𭵥
+ftmb 𭵥
 ddbf 𭵦
 smf 𭵧
 ftlq 𭵨
@@ -4171,7 +4184,7 @@ hohwj 𭶲
 ibhlo 𭶳
 hbhlo 𭶳
 bubm 𭶴
-spbbe 𭶵
+spbme 𭶵
 mfhlo 𭶶
 bxyiu 𭶷
 mhdo 𭶸
@@ -4195,6 +4208,8 @@ lld 𭷉
 lsd 𭷉
 llosl 𭷊
 lsosl 𭷊
+lloni 𭷊
+lsoni 𭷊
 llrup 𭷋
 lsrup 𭷋
 llolw 𭷌
@@ -4208,6 +4223,7 @@ mhrms 𭷐
 mhyck 𭷑
 mhoas 𭷒
 mhoav 𭷒
+mhoap 𭷒
 hqu 𭷓
 shhq 𭷔
 nhq 𭷔
@@ -4326,6 +4342,7 @@ mghum 𭹁
 mghui 𭹁
 mgjp 𭹂
 mgwyi 𭹃
+mgwj 𭹃
 mgmbl 𭹄
 mglxm 𭹅
 mgjxd 𭹅
@@ -4385,6 +4402,7 @@ mgjwv 𭹹
 mgank 𭹺
 mghwo 𭹻
 mgtwi 𭹼
+mgcmi 𭹼
 mgjcf 𭹽
 mgycg 𭹾
 mgfwf 𭹿
@@ -4435,10 +4453,11 @@ namun 𭺨
 bvmun 𭺩
 ms 𭺪
 sl 𭺪
+spl 𭺪
 jp 𭺫
 tmpa 𭺬
 tmbtq 𭺭
-fbrvm 𭺮
+fbrvt 𭺮
 tmyzn 𭺯
 hetm 𭺰
 uhqm 𭺱
@@ -4530,8 +4549,8 @@ nxdhe 𭼀
 mrnyo 𭼁
 owlo 𭼂
 xksno 𭼃
-yksno 𭼃
 nxobv 𭼄
+nxobn 𭼄
 yktyo 𭼅
 kmg 𭼆
 kop 𭼇
@@ -4629,7 +4648,7 @@ haaph 𭽛
 halsy 𭽜
 mawd 𭽝
 rkha 𭽞
-aehr 𭽟
+haehr 𭽟
 hagsk 𭽠
 haqsk 𭽠
 hghag 𭽡
@@ -4673,6 +4692,7 @@ qrbt 𭾃
 qrbt 𭾄
 jnut 𭾅
 lhbt 𭾆
+libt 𭾆
 qkabt 𭾇
 gobt 𭾈
 lwcct 𭾉
@@ -4696,6 +4716,7 @@ bunn 𭾙
 buk 𭾚
 ybuh 𭾛
 hjbu 𭾜
+hkbu 𭾜
 bund 𭾝
 butt 𭾞
 bumf 𭾟
@@ -4733,6 +4754,7 @@ buomr 𭾼
 boybu 𭾽
 buhsl 𭾾
 bumsl 𭾾
+buisl 𭾾
 builo 𭾿
 mvbu 𭿀
 ivbu 𭿀
@@ -4774,15 +4796,18 @@ buhuj 𭿟
 huumr 𭿠
 huhsl 𭿡
 huisl 𭿡
+humsl 𭿡
 bugte 𭿢
 butbm 𭿣
 bukoe 𭿤
+bujoe 𭿤
 budoe 𭿤
 bujtq 𭿥
 buaqa 𭿦
 huybn 𭿧
 huybu 𭿧
 buyto 𭿨
+buyco 𭿨
 gehmu 𭿩
 buoye 𭿪
 butgt 𭿫
@@ -4830,6 +4855,7 @@ mrmmf 𮀔
 mrir 𮀕
 mrhon 𮀖
 mrjx 𮀗
+mryx 𮀗
 yukr 𮀘
 ukmr 𮀘
 mrhkr 𮀙
@@ -4915,13 +4941,17 @@ ifhqm 𮁢
 mfhqm 𮁢
 ifosl 𮁣
 mfosl 𮁣
+ifoni 𮁣
+mfoni 𮁣
 jdmf 𮁤
 mfih 𮁥
-mfih 𮁥
+ifih 𮁥
 mfrc 𮁦
 ifrc 𮁦
 mfbbm 𮁧
 ifbbm 𮁧
+mfbt 𮁧
+ifbt 𮁧
 hkmmf 𮁨
 hcmmf 𮁨
 mfhr 𮁩
@@ -4951,7 +4981,7 @@ mfhon 𮁴
 mfomg 𮁵
 ifomg 𮁵
 ycsf 𮁶
-yclf 𮁶
+yclml 𮁶
 mfyvo 𮁷
 ifyvo 𮁷
 jbmmf 𮁸
@@ -4986,6 +5016,8 @@ mfxm 𮂈
 ifxm 𮂈
 mfykh 𮂉
 ifykh 𮂉
+mfyhh 𮂉
+ifyhh 𮂉
 mforw 𮂊
 iforw 𮂊
 mfmhf 𮂋
@@ -5047,7 +5079,7 @@ ifidd 𮂦
 mficd 𮂦
 ificd 𮂦
 ifyxf 𮂧
-mfixf 𮂧
+mfyxf 𮂧
 mfsjj 𮂨
 ifsjj 𮂨
 mfwlg 𮂩
@@ -5090,6 +5122,8 @@ hdqmb 𮃇
 hdkcs 𮃈
 hdqkq 𮃉
 hdxlh 𮃊
+hdxnh 𮃊
+hdxfh 𮃊
 hdubq 𮃋
 hdpfd 𮃌
 hdomk 𮃍
@@ -5176,6 +5210,7 @@ jcmfu 𮄚
 jcifu 𮄚
 jcrnf 𮄛
 jcyto 𮄜
+jcyco 𮄜
 jcebe 𮄝
 jcmfb 𮄞
 jcrxu 𮄟
@@ -5202,6 +5237,7 @@ ytyok 𮄳
 yjno 𮄴
 ytqka 𮄵
 ytobv 𮄶
+ytobn 𮄶
 yttct 𮄷
 ytcmt 𮄷
 ytawe 𮄸
@@ -5211,12 +5247,12 @@ ytwff 𮄻
 ytjju 𮄼
 jnyt 𮄽
 yctak 𮄾
-ydtak 𮄾
 yuyuu 𮄿
 yvyvv 𮄿
 hpsh 𮅀
 hmf 𮅁
 hlmu 𮅂
+hyhu 𮅂
 hdk 𮅃
 hosk 𮅄
 hosi 𮅄
@@ -5268,12 +5304,16 @@ hort 𮅫
 hjsl 𮅬
 hkrd 𮅭
 hune 𮅮
+hmue 𮅮
 hjjn 𮅯
 hqdt 𮅰
 hmnp 𮅱
 hoss 𮅲
-hips 𮅲
+hois 𮅲
+hops 𮅲
 hqhk 𮅳
+hqik 𮅳
+hqkk 𮅳
 hohb 𮅴
 horu 𮅵
 hjlv 𮅶
@@ -5319,8 +5359,8 @@ hwlv 𮆙
 houf 𮆚
 hhdj 𮆛
 htge 𮆜
-hynv 𮆝
-hykv 𮆝
+hyvk 𮆝
+hyvn 𮆝
 hhrl 𮆞
 hgte 𮆟
 himfg 𮆠
@@ -5377,7 +5417,7 @@ fdyg 𮇐
 fduu 𮇑
 fdksr 𮇒
 hefd 𮇓
-hofd 𮇓
+hhfd 𮇓
 fdml 𮇔
 fdgr 𮇕
 fdpa 𮇖
@@ -5386,6 +5426,7 @@ fdaj 𮇘
 fdnmu 𮇙
 fdhie 𮇚
 fdtt 𮇛
+fdhh 𮇛
 fdav 𮇜
 fdss 𮇝
 fdyl 𮇞
@@ -5405,7 +5446,6 @@ fdyrf 𮇪
 fdhss 𮇫
 fdiss 𮇫
 xkofd 𮇬
-ykofd 𮇬
 fdhje 𮇭
 fdnsp 𮇮
 fdoav 𮇯
@@ -5550,6 +5590,7 @@ oumlk 𮉳
 ouoog 𮉴
 ouyfr 𮉵
 twoju 𮉶
+cmwu  𮉶
 outhb 𮉷
 ouokg 𮉸
 ouotb 𮉹

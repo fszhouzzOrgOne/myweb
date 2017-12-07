@@ -53,7 +53,11 @@ opmrr 鿔
 qms   𫠤
 rykk  𠲲
 rysy  唹
+sn    
+mn    
 ssmaa 𦑾
+su   
+sv   
 tlqo 𦰩
 tmbo 鿒
 tmz 鿓
@@ -130,8 +134,8 @@ rfbd ㊫
 rsmt ㊬ 
 rsit ㊬ 
 rox  ㊭ 
-eioc ㊮ 
-emoc ㊮ 
+rioc ㊮ 
+rmoc ㊮ 
 rjks ㊯ 
 ryok ㊰ 
 rhdh ㊙ 
@@ -160,15 +164,19 @@ shos ㈧
 skns ㈨ 
 sjs  ㈩ 
 wl   🀄 
+wss  🈁
+wt   🈂
+wb   🈷
 wkb  🈶 
 wqpa 🈯 
-whoi 🉐 
+rhoi 🉐 
 wjrn 🈹 
 wotf 🈚 
 wddf 🈲 
-wmnr 🉑 
+rmnr 🉑 
 wlwl 🈸 
 wor  🈴 
 wjcm 🈳 
 wfbr 🈺 
+rfbr 🈺 
 wetb 🈵 
