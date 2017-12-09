@@ -23,13 +23,13 @@ public class IOUtils {
     public static String blankPatn = "[﻿\\t\\n\\x0B\\f\\r]";
 
     private static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
-    
+
     public static void main(String[] args) throws Exception {
-//        String line = "﻿昌明";
-//        System.out.println(line);
-//        line = line.replaceAll(blankPatn, "");
-//        System.out.println(line);
-        
+        // String line = "﻿昌明";
+        // System.out.println(line);
+        // line = line.replaceAll(blankPatn, "");
+        // System.out.println(line);
+
         orderCodeFile(mbsBaseDir + "cj6-more.txt");
     }
 
@@ -38,8 +38,7 @@ public class IOUtils {
      */
     public static void uniqueCodeFile(String filename) throws Exception {
         System.out.println("去重：" + filename);
-        List<String> allphrases = new ArrayList<String>(
-                IOUtils.readLines(filename));
+        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename));
 
         Set<String> uniques = new LinkedHashSet<String>();
         for (String ph : allphrases) {
@@ -55,8 +54,7 @@ public class IOUtils {
      */
     public static void orderCodeFile(String filename) throws Exception {
         System.out.println("排序：" + filename);
-        List<String> allphrases = new ArrayList<String>(
-                IOUtils.readLines(filename));
+        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename));
 
         Collections.sort(allphrases, new Comparator<String>() {
             @Override
@@ -65,8 +63,7 @@ public class IOUtils {
                     String[] keyVal1 = str1.split(" +");
                     String[] keyVal2 = str2.split(" +");
                     // 編碼同，長度又不相等
-                    if (keyVal1[0].equals(keyVal2[0])
-                            && str1.length() != str2.length()) {
+                    if (keyVal1[0].equals(keyVal2[0]) && str1.length() != str2.length()) {
                         // 不等則短的在前
                         return str1.length() - str2.length();
                     } else {
@@ -101,8 +98,8 @@ public class IOUtils {
             isr = new InputStreamReader(new FileInputStream(file), "UTF-8");
             br = new BufferedReader(isr);
             while ((str = br.readLine()) != null) {
-                if (!"".equals(str)) {
-                    String line = str.trim(); // 去首尾
+                String line = str.trim(); // 去首尾
+                if (!"".equals(line) && !line.startsWith("#")) {
                     line = line.replaceAll("( )\\1+", "$1"); // 中间一个空
                     line = line.replaceAll(blankPatn, ""); // 去空白字符
                     result.add(line);
@@ -122,8 +119,7 @@ public class IOUtils {
      * 寫碼表到文件<br />
      * 如果目標文件已經存在，會被重建
      */
-    public static void writeFile(String fileName, Collection<String> results)
-            throws Exception {
+    public static void writeFile(String fileName, Collection<String> results) throws Exception {
         File file = new File(fileName);
         if (file.exists()) {
             file.delete();
@@ -131,8 +127,7 @@ public class IOUtils {
         if (file.exists() == false) {
             file.createNewFile();
         }
-        OutputStreamWriter osr = new OutputStreamWriter(new FileOutputStream(
-                file), "UTF-8");
+        OutputStreamWriter osr = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
         BufferedWriter br = new BufferedWriter(osr);
         for (String str : results) {
             br.write(str);
