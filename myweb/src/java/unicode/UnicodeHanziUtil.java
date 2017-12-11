@@ -64,30 +64,30 @@ public class UnicodeHanziUtil {
     private static Map<String, Object> nameRangeMap = new LinkedHashMap<String, Object>();
 
     static {
-        nameRangeMap.put("漢字基本區", baseRange);
-        nameRangeMap.put("漢字基本區補充", base2Range);
-        nameRangeMap.put("漢字擴展A區", AextRange);
-        nameRangeMap.put("漢字擴展B區", BextRange);
-        nameRangeMap.put("漢字擴展C區", CextRange);
-        nameRangeMap.put("漢字擴展D區", DextRange);
-        nameRangeMap.put("漢字擴展E區", EextRange);
-        nameRangeMap.put("漢字擴展F區", FextRange);
+        nameRangeMap.put("漢字基本區", getStringSet(baseRange));
+        nameRangeMap.put("漢字基本區補充", getStringSet(base2Range));
+        nameRangeMap.put("漢字擴展A區", getStringSet(AextRange));
+        nameRangeMap.put("漢字擴展B區", getStringSet(BextRange));
+        nameRangeMap.put("漢字擴展C區", getStringSet(CextRange));
+        nameRangeMap.put("漢字擴展D區", getStringSet(DextRange));
+        nameRangeMap.put("漢字擴展E區", getStringSet(EextRange));
+        nameRangeMap.put("漢字擴展F區", getStringSet(FextRange));
 
-        nameRangeMap.put("兼容漢字", hanziCompt);
-        nameRangeMap.put("兼容漢字擴展", extCompt);
+        nameRangeMap.put("兼容漢字", getStringSet(hanziCompt));
+        nameRangeMap.put("兼容漢字擴展", getStringSet(extCompt));
 
-        nameRangeMap.put("補充標點符號", supplmtlPunctuation);
-        nameRangeMap.put("中日韓部首補充", extPart);
-        nameRangeMap.put("康熙部首", kangxiPart);
-        nameRangeMap.put("漢字結構描述字符", hanziStruct);
-        nameRangeMap.put("中日韓符號和標點", symPunctuation);
-        nameRangeMap.put("日文假名", japanKarina);
-        nameRangeMap.put("注音符號", zhuyin);
-        nameRangeMap.put("諺文兼容字母", hangulCompatJomo);
-        nameRangeMap.put("漢文標註號", kanbun);
-        nameRangeMap.put("注音符號擴充", extZhuyin);
-        nameRangeMap.put("中日韓筆畫部件", hanziStroke);
-        nameRangeMap.put("片假名音標擴充", katakanaPhoneticExtensions);
+        nameRangeMap.put("補充標點符號", getStringSet(supplmtlPunctuation));
+        nameRangeMap.put("中日韓部首補充", getStringSet(extPart));
+        nameRangeMap.put("康熙部首", getStringSet(kangxiPart));
+        nameRangeMap.put("漢字結構描述字符", getStringSet(hanziStruct));
+        nameRangeMap.put("中日韓符號和標點", getStringSet(symPunctuation));
+        nameRangeMap.put("日文假名", getStringSet(japanKarina));
+        nameRangeMap.put("注音符號", getStringSet(zhuyin));
+        nameRangeMap.put("諺文兼容字母", getStringSet(hangulCompatJomo));
+        nameRangeMap.put("漢文標註號", getStringSet(kanbun));
+        nameRangeMap.put("注音符號擴充", getStringSet(extZhuyin));
+        nameRangeMap.put("中日韓筆畫部件", getStringSet(hanziStroke));
+        nameRangeMap.put("片假名音標擴充", getStringSet(katakanaPhoneticExtensions));
     }
 
     public static void main(String[] args) {
@@ -108,8 +108,9 @@ public class UnicodeHanziUtil {
             return "";
         }
         for (String name : nameRangeMap.keySet()) {
-            int[] range = (int[]) nameRangeMap.get(name);
-            if (getStringSet(range).contains(charStr)) {
+            @SuppressWarnings("unchecked")
+            Set<String> range = (Set<String>) nameRangeMap.get(name);
+            if (range.contains(charStr)) {
                 return name;
             }
         }
