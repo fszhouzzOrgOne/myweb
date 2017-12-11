@@ -20,27 +20,27 @@ public class EmojiUnicodeTest {
     private static String fileName = baseDir + "emoji.txt";
     
     public static void main(String[] args) throws Exception {
-        Set<String> emoticons = getEmojiStringSet(0x1F601, 0x1F64F);
-        Set<String> additionalEmoticons = getEmojiStringSet(0x1F600, 0x1F636);
+        Set<String> emoticons = getStringSet(0x1F601, 0x1F64F);
+        Set<String> additionalEmoticons = getStringSet(0x1F600, 0x1F636);
         for (String emo : additionalEmoticons) {
             if (!emoticons.contains(emo)) {
                 emoticons.add(emo);
             }
         }
 
-        Set<String> dingbats = getEmojiStringSet(0x2702, 0x27B0);
+        Set<String> dingbats = getStringSet(0x2702, 0x27B0);
 
-        Set<String> transportAndMapSymbols = getEmojiStringSet(0x1F680, 0x1F6C0);
-        Set<String> additionalTransportAndMapSymbols = getEmojiStringSet(0x1F681, 0x1F6C5);
+        Set<String> transportAndMapSymbols = getStringSet(0x1F680, 0x1F6C0);
+        Set<String> additionalTransportAndMapSymbols = getStringSet(0x1F681, 0x1F6C5);
         for (String emo : additionalTransportAndMapSymbols) {
             if (!transportAndMapSymbols.contains(emo)) {
                 transportAndMapSymbols.add(emo);
             }
         }
 
-        Set<String> enclosedCharacters = getEmojiStringSet(0x24C2, 0x1F251);
+        Set<String> enclosedCharacters = getStringSet(0x24C2, 0x1F251);
 
-        Set<String> otherAdditionalSymbols = getEmojiStringSet(0x1F30D, 0x1F567);
+        Set<String> otherAdditionalSymbols = getStringSet(0x1F30D, 0x1F567);
 
         List<String> allEmoji = new ArrayList<String>();
         allEmoji.add(getEmojiStringFromSet(emoticons));
@@ -60,10 +60,10 @@ public class EmojiUnicodeTest {
         return res;
     }
 
-    public static Set<String> getEmojiStringSet(int start, int end) {
+    public static Set<String> getStringSet(int start, int end) {
         Set<String> set = new LinkedHashSet<String>();
         for (int i = start; i <= end; i++) {
-            String res = getEmojiStringByUnicode(i);
+            String res = getStringByUnicode(i);
             if (!set.contains(res)) {
                 set.add(res);
             }
@@ -71,7 +71,7 @@ public class EmojiUnicodeTest {
         return set;
     }
 
-    public static String getEmojiStringByUnicode(int unicode) {
+    public static String getStringByUnicode(int unicode) {
         return new String(Character.toChars(unicode));
     }
 }
