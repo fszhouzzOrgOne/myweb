@@ -51,12 +51,12 @@ public class UnicodeHanziUtil {
     static {
         nameRangeMap.put("基本區", baseRange);
         nameRangeMap.put("基本補充", base2Range);
-        nameRangeMap.put("擴展A", AextRange);
-        nameRangeMap.put("擴展B", BextRange);
-        nameRangeMap.put("擴展C", CextRange);
-        nameRangeMap.put("擴展D", DextRange);
-        nameRangeMap.put("擴展E", EextRange);
-        nameRangeMap.put("擴展F", FextRange);
+        nameRangeMap.put("擴展A區", AextRange);
+        nameRangeMap.put("擴展B區", BextRange);
+        nameRangeMap.put("擴展C區", CextRange);
+        nameRangeMap.put("擴展D區", DextRange);
+        nameRangeMap.put("擴展E區", EextRange);
+        nameRangeMap.put("擴展F區", FextRange);
 
         nameRangeMap.put("康熙部首", kangxiPart);
         nameRangeMap.put("部首擴展", extPart);
@@ -77,6 +77,7 @@ public class UnicodeHanziUtil {
         System.out.println(aaaa.toCharArray().length);
 
         System.out.println(getRangeNameByChar("𠔻"));
+        System.out.println(getRangeNameByChar("ㆬ"));
     }
 
     public static String getRangeNameByChar(String charStr) {
