@@ -48,8 +48,10 @@ public class DateTest {
         int add = gzs.indexOf("癸酉") - (dayList.indexOf("CE2017-12-12")) % 60;
         System.out.println("add=" + add);
         List<String> dayList2 = new ArrayList<String>();
-        // 從60開始，不去算前幾天了
-        for (int i = 60; i < dayList.size(); i++) {
+        for (int i = 0; i < dayList.size(); i++) {
+            if (add < 0) {
+                add += 60;
+            }
             String dayGz = dayList.get(i) + "\t" + gzs.get((i + add) % 60);
             dayList2.add(dayGz);
         }
