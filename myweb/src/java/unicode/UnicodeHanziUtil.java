@@ -17,7 +17,7 @@ public class UnicodeHanziUtil {
     /** 基本區 */
     private static int[] baseRange = { 0x4E00, 0x9FA5 };
     /** 基本補充 */
-    private static int[] base2Range = { 0x9FA6, 0x9FEA };
+    private static int[] base2Range = { 0x9FA6, 0x9FFF };
     /** 擴展A */
     private static int[] AextRange = { 0x3400, 0x4DBF };
     /** 擴展B */
@@ -60,6 +60,8 @@ public class UnicodeHanziUtil {
     private static int[] hanziStroke = { 0x31C0, 0x31EF };
     /** 片假名音標擴充 */
     private static int[] katakanaPhoneticExtensions = { 0x31F0, 0x31FF };
+    /** Private Use Area 私用區 */
+    private static int[] privateUserArea = { 0xE000, 0xF8FF };
 
     private static Map<String, Object> nameRangeMap = new LinkedHashMap<String, Object>();
 
@@ -88,6 +90,7 @@ public class UnicodeHanziUtil {
         nameRangeMap.put("注音符號擴充", getStringSet(extZhuyin));
         nameRangeMap.put("中日韓筆畫部件", getStringSet(hanziStroke));
         nameRangeMap.put("片假名音標擴充", getStringSet(katakanaPhoneticExtensions));
+        nameRangeMap.put("私用區", getStringSet(privateUserArea));
     }
 
     public static void main(String[] args) {
@@ -99,8 +102,10 @@ public class UnicodeHanziUtil {
         System.out.println(getRangeNameByChar("𠔻"));
         System.out.println(getRangeNameByChar("ㆬ"));
         System.out.println(getRangeNameByChar("ノ"));
+        System.out.println(getRangeNameByChar(""));
 
         // System.out.println(intc.toHexString((int) 'ノ'));
+        System.out.println(Integer.toHexString((int) ''));
     }
 
     public static String getRangeNameByChar(String charStr) {
