@@ -28,7 +28,7 @@ public class DateTest {
         cal.setTime(begin);
         // 所有日期
         List<String> dayList = new ArrayList<String>();
-        for (int i = (365 * - 1200); i <= (365 * 2102); i++) {
+        for (int i = (366 * - 1100); i <= (366 * 2100); i++) {
             cal.add(Calendar.DATE, i);
             dayList.add((i < 0 ? "BCE" : "CE") + sdf.format(cal.getTime()));
 
@@ -46,12 +46,12 @@ public class DateTest {
         System.out.println(gzs.indexOf("癸酉"));
         System.out.println((dayList.indexOf("CE2017-12-12")) % 60);
         int add = gzs.indexOf("癸酉") - (dayList.indexOf("CE2017-12-12")) % 60;
+        if (add < 0) {
+            add += 60;
+        }
         System.out.println("add=" + add);
         List<String> dayList2 = new ArrayList<String>();
         for (int i = 0; i < dayList.size(); i++) {
-            if (add < 0) {
-                add += 60;
-            }
             String dayGz = dayList.get(i) + "\t" + gzs.get((i + add) % 60);
             dayList2.add(dayGz);
         }
