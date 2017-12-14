@@ -1,4 +1,4 @@
-#粵語詞彙
+#粵語詞彙 https://github.com/rime-aca/rime-jyutping-plus.git
 一人行喊窄霸道
 一個鏰都冇
 一個鏰都無
