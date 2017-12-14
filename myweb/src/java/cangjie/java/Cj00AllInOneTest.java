@@ -68,8 +68,9 @@ public class Cj00AllInOneTest {
 
     // 注音符號，自製碼表，只能打符號，不能打漢字
     public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt";
-    // 粵語拼音，整合兩個碼表github上rime-aca的粵拼⁺正寫字碼表、
-    // mdict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
+    // 粵語拼音，整合兩個碼表GitHub上rime-aca的粵拼⁺正寫字碼表、
+    // MDict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
+    // 聲調用英文字母v底個數表示
     public static String jyutping20000 = mbsBaseDir + "jyutping-allInOne.txt";
     // 普語拼音，用網上找的碼表，聲調改用英文字母m底個數表示
     public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt";
