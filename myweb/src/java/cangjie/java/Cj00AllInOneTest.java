@@ -208,7 +208,7 @@ public class Cj00AllInOneTest {
     /**
      * 词組原始表，去重、排序
      */
-    private static void readPhraseFile() throws Exception {
+    public static void readPhraseFile() throws Exception {
         IOUtils.uniqueCodeFile(phraseOriginFile);
         IOUtils.orderCodeFile(phraseOriginFile);
     }
