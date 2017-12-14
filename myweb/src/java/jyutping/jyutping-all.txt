@@ -12154,6 +12154,7 @@ ling1 令
 ling1 拎
 ling2 拧
 ling2 擰
+ling4 〇
 ling4 令
 ling4 伶
 ling4 倰
