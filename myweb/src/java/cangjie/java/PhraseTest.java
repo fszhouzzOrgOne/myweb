@@ -16,9 +16,9 @@ public class PhraseTest {
     public static void main(String[] args) throws Exception {
         Set<String> set = new LinkedHashSet<String>();
         set.add("亮    ".trim());
-        
-        Cj00AllInOneTest.readPhraseFile();
-        
+
+        uniqueOrderPhraseFile();
+
         List<String> allphrases = IOUtils.readLines(phraseOriginFile);
         List<String> goods = new ArrayList<String>();
         for (String str : allphrases) {
@@ -27,6 +27,10 @@ public class PhraseTest {
             }
         }
         IOUtils.writeFile(phraseOriginFile, goods);
+    }
+
+    public static void uniqueOrderPhraseFile() throws Exception {
+        Cj00AllInOneTest.readPhraseFile();
     }
 
 }
