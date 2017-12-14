@@ -18465,6 +18465,15 @@ ung3 甕
 ung3 罋
 ung3 蕹
 ung3 齆
+v ˥
+v ˥˧
+vv ˧˥
+vvv ˧
+vvv ˧˧
+vvvv ˨˩
+vvvvv ˨˧
+vvvvvv ˨
+vvvvvv ˨˨
 waa1 凹
 waa1 划
 waa1 呙

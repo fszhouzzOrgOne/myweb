@@ -108,7 +108,9 @@ public class IOUtils {
         } catch (Exception e) {
         } finally {
             try {
-                br.close();
+                if (null != br) {
+                    br.close();
+                }
             } catch (IOException e) {
             }
         }

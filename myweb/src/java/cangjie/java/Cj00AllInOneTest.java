@@ -67,9 +67,12 @@ public class Cj00AllInOneTest {
     public static String koreaAllInOne = mbsBaseDir + "allInOne-korea.txt";
 
     // 注音符號，自製碼表，只能打符號，不能打漢字
-    public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt"; 
+    public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt";
+    // 粵語拼音，整合兩個碼表github上rime-aca的粵拼⁺正寫字碼表、
+    // mdict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
+    public static String jyutping20000 = mbsBaseDir + "jyutping-allInOne.txt";
     // 普語拼音，用網上找的碼表，聲調改用英文字母m底個數表示
-    public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt"; 
+    public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt";
     // 兩個是伊卂Ejsoon推薦的碼表。
     public static String cjyh80000 = mbsBaseDir + "cjyahoo-80000.txt"; // 雅虎奇摩
     public static String cjms59000 = mbsBaseDir + "cjms-59000.txt"; // 微軟倉頡
@@ -78,6 +81,9 @@ public class Cj00AllInOneTest {
     public static String pinyinallInOne = mbsBaseDir + "allInOne-pinyin.txt"; // 普語拼音
     public static String cjyhallInOne = mbsBaseDir + "allInOne-cjyahoo.txt"; // 雅虎奇摩
     public static String cjmsallInOne = mbsBaseDir + "allInOne-cjms.txt"; // 微軟倉頡
+    // 粵語拼音，整合兩個碼表github上rime-aca的粵拼⁺正寫字碼表、
+    // mdict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
+    public static String jyutpingAllInOne = mbsBaseDir + "allInOne-jyutping.txt";
 
     // 滿文，自製碼表，參考網上下載的《滿文滿語學習教程完整版.pdf》内容。
     public static String manju100 = mbsBaseDir + "manju-100.txt";
@@ -122,6 +128,10 @@ public class Cj00AllInOneTest {
         // 注音符號
         String[] mbzyfh = new String[] { zyfhs5000 };
         genAllInOne("注音符號", mbzyfh, zyfhsallInOne, withHeaders);
+
+        // 粵語拼音
+        String[] mbjyutping = new String[] { jyutping20000 };
+        genAllInOne("粵語拼音", mbjyutping, jyutpingAllInOne, withHeaders);
 
         // 普語拼音
         String[] mbpinyin = new String[] { pinyin26000 };

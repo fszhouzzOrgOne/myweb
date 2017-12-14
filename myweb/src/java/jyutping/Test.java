@@ -19,7 +19,7 @@ public class Test {
         // "粤语发声字典081217.txt");
         // IOUtils.writeFile(mbsBaseDir + "粤语发声字典081217_2.txt", res);
 
-        // mergeMbs();
+        mergeMbs();
 
         // 編碼粵拼的詞組
         String mbFile = mbsBaseDir + "jyutping-all.txt";
@@ -164,6 +164,15 @@ public class Test {
         List<String> list2 = IOUtils.readLines(mbsBaseDir + "jyutping-github.txt");
         List<String> list3 = new ArrayList<String>();
         list3.add("ling4 〇");
+        list3.add("v  ˥˧");
+        list3.add("v  ˥");
+        list3.add("vv ˧˥");
+        list3.add("vvv ˧˧");
+        list3.add("vvv ˧");
+        list3.add("vvvv ˨˩");
+        list3.add("vvvvv ˨˧");
+        list3.add("vvvvvv ˨˨");
+        list3.add("vvvvvv ˨");
         List<String> listall = new ArrayList<String>(list1);
         listall.addAll(list2);
         listall.addAll(list3);
