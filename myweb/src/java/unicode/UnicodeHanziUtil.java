@@ -64,6 +64,8 @@ public class UnicodeHanziUtil {
     private static int[] katakanaPhoneticExtensions = { 0x31F0, 0x31FF };
     /** 中日韓括號字母及月份 */
     private static int[] encloseLetterMonth = { 0x3200, 0x32FF };
+    /** 中日韓兼容字符 */
+    private static int[] cjkCompat = { 0x3300, 0x33FF };
 
     /** Private Use Area 私用區 */
     private static int[] privateUserArea = { 0xE000, 0xF8FF };
@@ -97,6 +99,8 @@ public class UnicodeHanziUtil {
         nameRangeMap.put("中日韓筆畫部件", getStringSet(hanziStroke));
         nameRangeMap.put("片假名音標擴充", getStringSet(katakanaPhoneticExtensions));
         nameRangeMap.put("中日韓括號字母及月份", getStringSet(encloseLetterMonth));
+        nameRangeMap.put("中日韓兼容字符", getStringSet(cjkCompat));
+
         nameRangeMap.put("私用區", getStringSet(privateUserArea));
     }
 
@@ -112,6 +116,7 @@ public class UnicodeHanziUtil {
         System.out.println(getRangeNameByChar(""));
         System.out.println(getRangeNameByChar("ᅀ"));
         System.out.println(getRangeNameByChar("㈠"));
+        System.out.println("\u3311" + getRangeNameByChar("\u3311"));
 
         // System.out.println(intc.toHexString((int) 'ノ'));
         System.out.println(Integer.toHexString((int) 'ᅀ'));
