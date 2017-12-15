@@ -64,12 +64,12 @@ public class Cj01SQLiteTest {
 
         // 互斥的五個版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = false; // 2版本自定義字體 324217
+        boolean edition2 = true; // 2版本自定義字體 345957
         boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
         boolean edition5 = false; // 版本五代 159268 ansi 103934
         boolean edition6 = false; // 版本六 179344
-        boolean edition62 = true; // 版本六，帶詞組 676903 其中詞475817
+        boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
 
         // 驗證
         List<Boolean> edits = new ArrayList<Boolean>();
