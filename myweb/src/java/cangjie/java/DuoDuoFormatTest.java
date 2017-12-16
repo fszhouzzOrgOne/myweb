@@ -31,7 +31,8 @@ public class DuoDuoFormatTest {
 
     public static void main(String[] args) throws Exception {
         // 生成碼表，倉頡全都加入詞組
-        // Cj00AllInOneTest.generateAllInOnes(false, true, true, false);
+        Cj00AllInOneTest.generateAllInOnes(false, false, true, false);
+        
         List<String> mbs = new ArrayList<String>();
         mbs.add(mb2allInOne);
         mbs.add(mb3allInOne);
