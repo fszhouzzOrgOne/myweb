@@ -93,7 +93,7 @@ public class Cj00AllInOneTest {
 
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
-        generateAllInOnes(true, false, true, false);
+        generateAllInOnes(false, false, true, false);
     }
 
     /**
