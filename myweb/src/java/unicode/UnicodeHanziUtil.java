@@ -121,6 +121,12 @@ public class UnicodeHanziUtil {
         // System.out.println(intc.toHexString((int) 'ノ'));
         System.out.println(Integer.toHexString((int) 'ᅀ'));
         System.out.println(Integer.toHexString((int) '㈠'));
+        System.out.println(Integer.toHexString((int) '㊹'));
+        
+        for (int i = katakanaPhoneticExtensions[0]; i <= katakanaPhoneticExtensions[1]; i++) {
+            System.out.print(getStringByUnicode(i));
+        }
+        System.out.println();
     }
 
     public static String getRangeNameByChar(String charStr) {
