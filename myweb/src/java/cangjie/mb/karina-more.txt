@@ -353,6 +353,12 @@
 ㍿ kabushikigaishya
 ㍿ kabushikigaisha
 ㍿ kabusikigaisya
+株式会社 kabushikigaishya
+株式会社 kabushikigaisha
+株式会社 kabusikigaisya
+株式會社 kabushikigaishya
+株式會社 kabushikigaisha
+株式會社 kabusikigaisya
 かぶしきがいしゃ kabushikigaishya
 かぶしきがいしゃ kabushikigaisha
 かぶしきがいしゃ kabusikigaisya
@@ -376,7 +382,10 @@
 シキ siki
 会社 kaisha
 会社 kaishya
+會社 kaishya
+會社 kaisha
 会 kai
+會 kai
 社 shya
 社 sha
 かいしゃ kaishya
