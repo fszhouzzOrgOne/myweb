@@ -41,7 +41,10 @@
 ㈯ do
 ㈰ nichi
 ㈰ niti
-㈱
+㈱ kabu
+株 kabu
+かぶ kabu
+カブ kabu
 ㈲
 ㈳
 ㈴
@@ -90,8 +93,6 @@
 ㊏ do
 ㊐ nichi
 ㊐ niti
-株 kabu
-かぶ kabu
 ㊑ kabu
 ㊒
 ㊓
