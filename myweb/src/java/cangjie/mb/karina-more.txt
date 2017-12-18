@@ -1,0 +1,306 @@
+# 兼容shi/si， chi/ti， tsu/tu， sho/shyo/syo， shu、sha同， hua/fa
+ㇰ ku
+ㇱ shi
+ㇱ si
+ㇲ su
+ㇳ to
+ㇴ nu
+ㇵ ha
+ㇶ hi
+ㇷ hu
+ㇸ he
+ㇹ ho
+ㇺ mu
+ㇻ ra
+ㇼ ri
+ㇽ ru
+ㇾ re
+ㇿ ro
+㈠ ichi
+㈠ iti
+㈡ ni
+㈢ san
+㈣ shi
+㈣ si
+㈣ yon
+㈤ go
+㈥ roku
+㈦ shichi
+㈦ siti
+㈦ nana
+㈧ hati
+㈨ kyuu
+㈩ jyuu
+㈩ juu
+㈪ getsu
+㈪ getu
+㈫ ka
+㈬ sui
+㈭ moku
+㈮ kin
+㈯ do
+㈰ nichi
+㈰ niti
+㈱
+㈲
+㈳
+㈴
+㈵
+㈶
+㈷
+㈸
+㈹
+㈺
+㈻
+㈼
+㈽
+㈾
+㈿
+㉀
+㉁
+㉂
+㉃
+㉄
+㉅
+㉆
+㉇
+㊀ ichi
+㊀ iti
+㊁ ni
+㊂ san
+㊃ shi
+㊃ si
+㊃ yon
+㊄ go
+㊅ roku
+㊆ shichi
+㊆ siti
+㊆ nana
+㊇ hachi
+㊇ hati
+㊈ kyuu
+㊉ jyuu
+㊉ juu
+㊊ getsu
+㊊ getu
+㊋ ka
+㊌ sui
+㊍ moku
+㊎ kin
+㊏ do
+㊐ nichi
+㊐ niti
+株 kabu
+かぶ kabu
+㊑ kabu
+㊒
+㊓
+㊔
+㊕
+㊖
+㊗
+㊘
+㊙
+㊚
+㊛
+㊜
+㊝
+㊞
+㊟
+㊠
+㊡
+㊢
+㊣
+㊤
+㊥
+㊦
+㊧
+㊨
+㊩
+㊪
+㊫
+㊬
+㊭
+㊮
+㊯
+㊰
+㋐ a
+㋑ i
+㋒ u
+㋓ e
+㋔ o
+㋕ ka
+㋖ ki
+㋗ ku
+㋘ ke
+㋙ ko
+㋚ sa
+㋛ shi
+㋛ si
+㋜ su
+㋝ se
+㋞ so
+㋟ ta
+㋠ chi
+㋡ tsu
+㋠ ti
+㋡ tu
+㋢ te
+㋣ to
+㋤ na
+㋥ ni
+㋦ nu
+㋧ ne
+㋨ no
+㋩ ha
+㋪ hi
+㋫ hu
+㋬ he
+㋭ ho
+㋮ ma
+㋯ mi
+㋰ mu
+㋱ me
+㋲ mo
+㋳ ya
+㋴ yu
+㋵ yo
+㋶ ra
+㋷ ri
+㋸ ru
+㋹ re
+㋺ ro
+㋻ wa
+㋼ wi
+㋽ we
+㋾ wo
+㌀ apaato
+㌁ aruhua
+㌁ arufa
+ふぁ hua
+ファ hua
+ふぁ fa
+ファ fa
+㌂ anpea
+㌃ aaru
+㌄ iningu
+㌅ inti
+㌅ inchi
+㌆ uon
+㌇ esukuudo
+㌈ eekaa
+㌉ onsu
+㌊ oomu
+㌋ kairi
+㌌ karatto
+㌍ karorii
+㌎ garon
+㌏ ganma
+㌐ giga
+㌑ ginii
+㌒ kyurii
+㌓ girudaa
+㌔ kiro
+㌕ kiroguramu
+㌖ kiromeetoru
+㌗ kirowatto
+㌘ guramu
+㌙ guramuton
+㌚ kuruzeiro
+㌛ kuroone
+㌜ keesu
+㌝ koruna
+㌞ koopo
+㌟ saikuru
+㌠ santiimu
+㌠ sanchiimu
+㌡ shiringu
+㌡ siringu
+㌢ senti
+㌢ senchi
+㌣ sento
+㌤ daasu
+㌥ deshi
+㌥ desi
+㌦ doru
+㌧ ton
+㌨ nano
+㌩ notto
+㌪ haitsu
+㌪ haitu
+㌫ paasento
+㌬ paatsu
+㌬ paatu
+㌭ baareru
+㌮ piasutoru
+㌯ pikuru
+㌰ piko
+㌱ biru
+㌲ huaraddo
+㌲ faraddo
+㌳ huiito
+㌳ fiito
+フィ hui
+ふぃ hui
+フィ fi
+ふぃ fi
+㌴ busshyeru
+㌴ bussheru
+㌴ bussyeru
+シェ shye
+しぇ shye
+シェ she
+しぇ she
+シェ sye
+しぇ sye
+㌵ huran
+㌶ hekutaaru
+㌷ peso
+㌸ penihi
+㌹ herutsu
+㌹ herutu
+㌺ pensu
+㌻ peeji
+㌻ peezi
+㌼ beeta
+㌽ pointo
+㌾ boruto
+㌿ hon
+㍀ pondo
+㍁ hooru
+㍂ hoon
+㍃ maikuru
+㍄ mairu
+㍅ mahha
+㍆ maruku
+㍇ manshyon
+㍇ manshon
+㍇ mansyon
+㍈ mikuron
+㍉ miri
+㍊ miribaaru
+㍋ mega
+㍌ megaton
+㍍ meetoru
+㍎ yaado
+㍏ yaaru
+㍐ yuan
+㍑ rittoru
+㍒ rira
+㍓ rupii
+㍔ ruuburu
+㍕ remu
+㍖ rentogen
+㍗ watto
+㍻ heisei
+㍼ shyouwa
+㍼ shouwa
+㍼ syouwa
+㍽ taishyou
+㍽ taishou
+㍽ taisyou
+㍾ meiji
+㍾ meizi
+㍿ kabushikigaishya
+㍿ kabushikigaisha
+㍿ kabusikigaisya
