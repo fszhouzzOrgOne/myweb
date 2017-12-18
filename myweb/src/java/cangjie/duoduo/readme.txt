@@ -6,7 +6,8 @@
 mb裡的文件由類cangjie.java.DuoDuoFormatTest生成。
 
 .ddconfig文件，每次生成輸入法，注意把如下地方改一下：
--软件版本="1.1"
+MAKE_COUNT=25
+-软件版本="2.5"
 
 多多蒼頡六代輸入法版本2.5：
 加入了github.com/LEOYoon-Tsaw/Cangjie6所有五字以上的詞組，之前只取了它的四字以下的詞組而維護的碼表。
