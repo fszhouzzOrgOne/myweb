@@ -64,4 +64,5 @@
 ㉼ chamgo
 ㉽ juui
 ㉾ u
+㉾ ngu
 ㉿ k
