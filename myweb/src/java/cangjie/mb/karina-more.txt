@@ -262,17 +262,73 @@
 ㊗ shyuku
 ㊗ shyuu
 ㊘ rou
-㊙
-㊚
-㊛
-㊜
-㊝
-㊞
-㊟
-㊠
+㊙ hi
+秘 hi
+㊚ dan
+男 dan
+ダン dan
+だん dan
+㊚ nan
+男 nan
+ナン nan
+なん nan
+㊛ jyo
+女 jyo
+ジョ jyo
+じょ jyo
+㊛ jo
+女 jo
+ジョ jo
+じょ jo
+㊜ teki
+適 teki
+テキ teki
+てき teki
+㊝ yuu
+優 yuu
+ユウ yuu
+ゆう yuu
+㊞ in
+印 in
+イン in
+いん in
+㊟ chyuu
+注 chyuu
+チュウ chyuu
+ちゅう chyuu
+㊟ chuu
+注 chuu
+チュウ chuu
+ちゅう chuu
+㊟ tyuu
+注 tyuu
+チュウ tyuu
+ちゅう tyuu
+㊠ kou
+項 kou
+コウ kou
+こう kou
 ㊡ kyuu
-㊢
-㊣
+㊢ sha
+写 sha
+シャ sha
+しゃ sha
+㊢ shya
+写 shya
+シャ shya
+しゃ shya
+㊣ sei
+正 sei
+セイ sei
+せい sei
+㊣ shou
+正 shou
+ショウ shou
+しょう shou
+㊣ shyou
+正 shyou
+ショウ shyou
+しょう shyou
 ㊤
 ㊥
 ㊦
