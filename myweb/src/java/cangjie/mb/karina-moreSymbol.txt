@@ -1,3 +1,4 @@
+# 兼容shi/si， chi/ti， tsu/tu， sho/shyo/syo， shu、sha同， hua/fa
 ku ㇰ
 shi ㇱ
 si ㇱ
