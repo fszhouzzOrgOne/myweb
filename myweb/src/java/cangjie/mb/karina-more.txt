@@ -112,14 +112,63 @@
 株 kabu
 かぶ kabu
 カブ kabu
-㈲
-㈳
-㈴
-㈵
-㈶
-㈷
-㈸
-㈹
+㈲ yuu
+有 yuu
+ユウ  yuu
+ゆう  yuu
+㈳ sha
+社 sha
+シャ sha
+しゃ sha
+㈳ shya
+社 shya
+シャ shya
+しゃ shya
+㈴ mei
+名 mei 
+メイ mei
+めい mei
+㈴ myou
+名 myou 
+ミョウ myou
+みょう myou
+㈵ toku
+特 toku
+トク toku
+とく toku
+㈶ zai
+財 zai
+ザイ zai
+ざい zai
+㈶ sai
+財 sai
+サイ sai
+さい sai
+㈷ shuku
+祝 shuku
+シュク shuku
+しゅく shuku
+㈷ shyuku
+祝 shyuku
+シュク shyuku
+しゅく shyuku
+㈷ shuu
+祝 shuu
+シュウ shuu
+しゅう shuu
+㈷ shyuu
+祝 shyuu
+シュウ shyuu
+しゅう shyuu
+㈸ rou
+労 rou
+勞 rou
+ロウ rou
+ろう rou
+㈹ dai
+代 dai
+ダイ dai
+だい dai
 ㈺
 ㈻
 ㈼
