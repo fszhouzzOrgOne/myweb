@@ -169,20 +169,59 @@
 代 dai
 ダイ dai
 だい dai
-㈺
-㈻
-㈼
-㈽
-㈾
-㈿
-㉀
-㉁
-㉂
-㉃
-㉄
-㉅
-㉆
-㉇
+㈺ ko
+呼 ko
+コ ko
+こ ko
+㈻ gaku
+学 gaku
+學 gaku
+ガク gaku
+がく gaku
+㈼ kan
+監 kan
+カン kan
+かん kan
+㈽ ki
+企 ki
+㈾ shi
+資 shi
+㈿ kyou
+協 kyou
+キョウ kyou
+きょう kyou
+㉀ sai
+祭 sai
+サイ sai
+さい sai
+㉁ kyuu
+休 kyuu
+キュウ kyuu
+きゅう kyuu
+㉂ ji
+自 ji
+㉃ shi
+至 shi
+㉄ mon
+問 mon
+モン mon
+もん mon
+㉅ you
+幼 you
+ヨウ you
+よう you
+㉆ bun
+文 bun
+ブン bun
+ぶん bun
+㉆ mon
+文 mon
+モン mon
+もん mon
+㉇ sou
+箏 sou
+そう sou
+ソウ sou
 ㊀ ichi
 ㊀ iti
 ㊁ ni
@@ -210,13 +249,19 @@
 ㊐ nichi
 ㊐ niti
 ㊑ kabu
-㊒
-㊓
-㊔
-㊕
-㊖
-㊗
-㊘
+㊒ yuu
+㊓ shya
+㊓ sha
+㊔ mei
+㊔ myou
+㊕ toku
+㊖ zai
+㊖ sai
+㊗ shuku
+㊗ shuu
+㊗ shyuku
+㊗ shyuu
+㊘ rou
 ㊙
 ㊚
 ㊛
@@ -225,7 +270,7 @@
 ㊞
 ㊟
 ㊠
-㊡
+㊡ kyuu
 ㊢
 ㊣
 ㊤
@@ -235,11 +280,11 @@
 ㊨
 ㊩
 ㊪
-㊫
-㊬
-㊭
-㊮
-㊯
+㊫ gaku
+㊬ kan
+㊭ ki
+㊮ shi
+㊯ kyou
 ㊰
 ㋐ a
 ㋑ i
