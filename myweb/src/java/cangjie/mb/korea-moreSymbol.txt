@@ -1,63 +1,67 @@
-㈀
-㈁
-㈂
-㈃
-㈄
-㈅
-㈆
-㈇
-㈈
-㈉
-㈊
-㈋
-㈌
-㈍
-㈎
-㈏
-㈐
-㈑
-㈒
-㈓
-㈔
-㈕
-㈖
-㈗
-㈘
-㈙
-㈚
-㈛
-㈜
-㈝
-㈞
-㉠
-㉡
-㉢
-㉣
-㉤
-㉥
-㉦
-㉧
-㉨
-㉩
-㉪
-㉫
-㉬
-㉭
-㉮
-㉯
-㉰
-㉱
-㉲
-㉳
-㉴
-㉵
-㉶
-㉷
-㉸
-㉹
-㉺
-㉻
-㉼
-㉽
-㉾
+㈀ g
+㈁ n
+㈂ d
+㈃ r
+㈄ m
+㈅ b
+㈆ s
+㈇ ng
+㈈ j
+㈉ ch
+㈊ k
+㈋ t
+㈌ p
+㈍ h
+㈎ ga
+㈏ na
+㈐ da
+㈑ ra
+㈒ ma
+㈓ ba
+㈔ sa
+㈕ a
+㈕ nga
+㈖ ja
+㈗ cha
+㈘ ka
+㈙ ta
+㈚ pa
+㈛ ha
+㈜ ju
+㈝ ojeon
+㈝ ngojeon
+㈞ ohu
+㈞ ngohu
+㉠ g
+㉡ n
+㉢ d
+㉣ r
+㉤ m
+㉥ b
+㉦ s
+㉧ ng
+㉨ j
+㉩ ch
+㉪ k
+㉫ t
+㉬ p
+㉭ h
+㉮ ga
+㉯ na
+㉰ da
+㉱ ra
+㉲ ma
+㉳ ba
+㉴ sa
+㉵ a
+㉵ nga
+㉶ ja
+㉷ cha
+㉸ ka
+㉹ ta
+㉺ pa
+㉻ ha
+㉼ chamgo
+㉽ juui
+㉾ u
 ㉿ k
