@@ -65,6 +65,7 @@ public class Cj00AllInOneTest {
 
     // 韓文，自製碼表，主要由榕樹葉編碼
     public static String mbkorea10000 = mbsBaseDir + "korea-12000.txt";
+    public static String koreaMoreSymbol = mbsBaseDir + "korea-moreSymbol.txt";
     public static String koreaAllInOne = mbsBaseDir + "allInOne-korea.txt";
 
     // 注音符號，自製碼表，只能打符號，不能打漢字
@@ -144,7 +145,7 @@ public class Cj00AllInOneTest {
         genAllInOne("日文假名", mbjapan, nihonAllInOne, withHeaders);
 
         // 韓文
-        String[] mbkorea = new String[] { mbkorea10000 };
+        String[] mbkorea = new String[] { mbkorea10000, koreaMoreSymbol };
         genAllInOne("朝鮮諺文", mbkorea, koreaAllInOne, withHeaders);
 
         // 四角號碼
