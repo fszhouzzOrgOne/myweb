@@ -36,6 +36,7 @@ public class Cangjie2356ListItemList extends JPanel {
         }
 
         // 爲了把自己放到JScrollPane中後，JScrollPane顯示垂直的滾動條
+        // 參見：http://blog.csdn.net/h002399/article/details/47340441
         this.setPreferredSize(new Dimension(0, height));
     }
 }
