@@ -59,7 +59,7 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         int listX = labelX;
         int listY = gap + compHeight + gap;
         int listWidth = 425;
-        int listHeight = 380;
+        int listHeight = 440;
         resListPanel.setBounds(listX, listY, listWidth, listHeight);
         add(resListPanel);
     }

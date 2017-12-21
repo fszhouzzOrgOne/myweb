@@ -31,7 +31,7 @@ public class CangjieDict2356Frame extends JFrame {
         setResizable(false);
         
         int contentWidth = 450;
-        int contentHeight = 480;
+        int contentHeight = 540;
         int frameWidth = contentWidth + 6;
         int frameHeight = contentHeight + 28;
         setBounds(100, 100, frameWidth, frameHeight);

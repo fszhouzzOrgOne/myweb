@@ -27,7 +27,7 @@ public class CangjieDict2356TabLogPanel extends JPanel {
             + File.separator + "log.txt";
 
     public CangjieDict2356TabLogPanel() {
-        JTextArea logTextArea = new JTextArea(20, 29);
+        JTextArea logTextArea = new JTextArea(23, 29);
         logTextArea.setEditable(false);
         logTextArea.setLineWrap(true);
         logTextArea.setBackground(new Color(220, 220, 220));
