@@ -2,6 +2,7 @@ package cjdict2356pc.tab;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
@@ -28,7 +29,7 @@ public class CangjieDict2356TabDictPanel extends JPanel {
     public CangjieDict2356TabDictPanel() {
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
         this.setLayout(null);
-        
+
         int gap = 10;
         int compHeight = 30;
 
@@ -39,27 +40,42 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         labelY = gap;
         searchLabel.setBounds(labelX, labelY, labelWidth, compHeight);
         add(searchLabel);
-        
-        searchField = new JTextField("輸入編碼或文字查詢...", 14);
+
+        searchField = new JTextField(null, 14);
         int fieldX = labelX + labelWidth + gap;
         int fieldY = gap;
         int fieldWidth = 200;
         searchField.setBounds(fieldX, fieldY, fieldWidth, compHeight);
         add(searchField);
-        
+
         searchButton = new JButton("查詢");
         int buttonX = fieldX + fieldWidth + gap;
         int buttonY = gap;
         int buttonWidth = 80;
         searchButton.setBounds(buttonX, buttonY, buttonWidth, compHeight);
         add(searchButton);
-        
-        JScrollPane resListPanel = new JScrollPane(new JPanel());
+
+        JScrollPane resListPanel = getJScrollPane();
         int listX = labelX;
         int listY = gap + compHeight + gap;
         int listWidth = 425;
         int listHeight = 380;
         resListPanel.setBounds(listX, listY, listWidth, listHeight);
         add(resListPanel);
+    }
+
+    /**
+     * 生成列表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2017年12月21日下午5:22:19
+     * @return
+     */
+    private JScrollPane getJScrollPane() {
+
+        String[] words = { "quick", "brown", "hungry", "wild" };
+        JList wordList = new JList(words);
+        JScrollPane resListPanel = new JScrollPane(wordList);
+        return resListPanel;
     }
 }
