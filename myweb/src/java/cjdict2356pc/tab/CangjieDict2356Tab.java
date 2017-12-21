@@ -31,16 +31,13 @@ public class CangjieDict2356Tab extends JPanel {
     }
 
     private void layoutComponents() {
-        int i = 0;
         JPanel jpanelFirst = new JPanel();
-        jpanelFirst.setSize(100, 30);
-        jTabbedpane.addTab(tabNames[i++], icon, jpanelFirst, "first");
+        jTabbedpane.addTab(tabNames[0], icon, jpanelFirst, tabNames[0]);
         // jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0);
 
         // 第二个标签下的JPanel
-        JPanel jpanelSecond = new JPanel();
-        jpanelSecond.setSize(100, 30);
-        jTabbedpane.addTab(tabNames[i++], icon, jpanelSecond, "second");
+        JPanel jpanelSecond = new CangjieDict2356TabLogPanel();
+        jTabbedpane.addTab(tabNames[1], icon, jpanelSecond, tabNames[1]);
         // jTabbedpane.setMnemonicAt(1, KeyEvent.VK_1);
         setLayout(new GridLayout(1, 1));
         add(jTabbedpane);
