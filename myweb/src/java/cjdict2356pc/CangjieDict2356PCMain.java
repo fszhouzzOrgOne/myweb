@@ -27,8 +27,8 @@ public class CangjieDict2356PCMain {
                 // JFrame.setDefaultLookAndFeelDecorated(true); // java外觀
 
                 // 字體設置造成選項卡的標籤文字不顯示
-                // Font font = new FontManager().getDefinedFont();
-                // initGlobalFontSetting(font);
+                Font font = new Font(Font.SANS_SERIF, Font.BOLD, 16);
+                initGlobalFontSetting(font);
 
                 JFrame frame = CangjieDict2356Frame.getInstance();
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
