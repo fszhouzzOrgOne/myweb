@@ -23,6 +23,7 @@ public class CangjieDict2356Tab extends JPanel {
 
     private JTabbedPane jTabbedpane = new JTabbedPane();
     private String[] tabNames = { "倉頡字典", "版本說明" };
+    // 圖標都用個没有背景的圖
     ImageIcon icon = createImageIcon("images/tabimg.png");
 
     public CangjieDict2356Tab() {
