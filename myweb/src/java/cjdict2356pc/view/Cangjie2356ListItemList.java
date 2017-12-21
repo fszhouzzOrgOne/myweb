@@ -1,5 +1,6 @@
 package cjdict2356pc.view;
 
+import java.awt.Dimension;
 import java.util.List;
 
 import javax.swing.JPanel;
@@ -33,5 +34,8 @@ public class Cangjie2356ListItemList extends JPanel {
             view.setBounds(viewX, viewY, viewWidth, viewHeight);
             add(view);
         }
+
+        // 爲了把自己放到JScrollPane中後，JScrollPane顯示垂直的滾動條
+        this.setPreferredSize(new Dimension(0, height));
     }
 }
