@@ -32,8 +32,9 @@ public class CangjieDict2356TabLogPanel extends JPanel {
         logTextArea.setLineWrap(true);
         logTextArea.setBackground(new Color(220, 220, 220));
         logTextArea.setText(getVLogText());
-        JScrollPane middleLogPanel = new JScrollPane(logTextArea);
+        logTextArea.setCaretPosition(0); // 滾到第一行，不然初始化展示最後一行
 
+        JScrollPane middleLogPanel = new JScrollPane(logTextArea);
         add(middleLogPanel);
     }
 
