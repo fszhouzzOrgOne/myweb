@@ -23,6 +23,7 @@ public class DuoDuoFormatTest {
     private static String karinaallInOne = Cj00AllInOneTest.nihonAllInOne; // 日語假名
     private static String zyfhsallInOne = Cj00AllInOneTest.zyfhsallInOne; // 注音符號
     private static String pinyinallInOne = Cj00AllInOneTest.pinyinallInOne; // 拼音
+    private static String jyutpingAllInOne = Cj00AllInOneTest.jyutpingAllInOne; // 粵語拼音
     private static String sghmallInOne = Cj00AllInOneTest.sghmallInOne; // 四角號碼
     private static String cjyhallInOne = Cj00AllInOneTest.cjyhallInOne; // 雅虎奇摩
     private static String cjmsallInOne = Cj00AllInOneTest.cjmsallInOne; // 微軟倉頡
@@ -46,6 +47,7 @@ public class DuoDuoFormatTest {
         mbs.add(cjmsallInOne);
         mbs.add(koreaallInOne);
         mbs.add(manjuallInOne);
+        mbs.add(jyutpingAllInOne);
 
         generateDuoDuoMb(mbs);
 
