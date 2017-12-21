@@ -14,9 +14,9 @@ public class FontManager {
 
     private static final String FONT_NAME = "KaiXinSong2.1.ttf";
 
-    private Font definedFont = null;
+    private static Font definedFont = null;
 
-    public Font getDefinedFont() {
+    public static Font getDefinedFont() {
         if (null == definedFont) {
             InputStream is = null;
             BufferedInputStream bis = null;

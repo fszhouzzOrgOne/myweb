@@ -12,12 +12,15 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import cjdict2356pc.dto.Group;
 import cjdict2356pc.dto.Item;
 import cjdict2356pc.mb.SettingDictMbUtils;
+import cjdict2356pc.view.Cangjie2356ListItemList;
+import cjdict2356pc.view.Cangjie2356ListItemView;
 
 /**
  * 倉頡字典的內容
@@ -78,6 +81,7 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         resListPanel.setBounds(listX, listY, listWidth, listHeight);
         add(resListPanel);
 
+        setgData(null);
     }
 
     /**
@@ -111,21 +115,16 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         if (null == resListPanel) {
             return;
         }
-        List<String> its = new ArrayList<String>();
+        List<Cangjie2356ListItemView> its = new ArrayList<Cangjie2356ListItemView>();
         for (Group gp : gData) {
             for (Item it : gp.getItems()) {
-                its.add(gp.getgCode() + " " + gp.getgName() + " " + it.getCharacter() + " " + it.getEncode() + " "
-                        + it.getEncodeName());
+                its.add(new Cangjie2356ListItemView(it));
             }
         }
-        String[] itsArr = new String[its.size()];
-        for (int i = 0; i < its.size(); i++) {
-            String str = its.get(i);
-            itsArr[i] = str;
-        }
-        
-        JList itList = new JList(itsArr);
-        resListPanel.setViewportView(itList);
+
+        Cangjie2356ListItemList list = new Cangjie2356ListItemList(its);
+
+        resListPanel.setViewportView(list);
         resListPanel.repaint();
     }
 
