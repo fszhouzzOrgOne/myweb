@@ -3,7 +3,9 @@ package cjdict2356pc.tab;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 /**
@@ -25,14 +27,15 @@ public class CangjieDict2356TabDictPanel extends JPanel {
 
     public CangjieDict2356TabDictPanel() {
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
+        this.setLayout(null);
         
         int gap = 10;
         int compHeight = 30;
 
-        int labelWidth = 200;
+        int labelWidth = 100;
         int labelX = gap;
         int labelY = 0;
-        searchLabel = new JLabel("輸入查詢：");
+        searchLabel = new JLabel("輸入查詢：", null, SwingConstants.RIGHT);
         labelY = gap;
         searchLabel.setBounds(labelX, labelY, labelWidth, compHeight);
         add(searchLabel);
@@ -50,5 +53,13 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         int buttonWidth = 80;
         searchButton.setBounds(buttonX, buttonY, buttonWidth, compHeight);
         add(searchButton);
+        
+        JScrollPane resListPanel = new JScrollPane(new JPanel());
+        int listX = labelX;
+        int listY = gap + compHeight + gap;
+        int listWidth = 425;
+        int listHeight = 380;
+        resListPanel.setBounds(listX, listY, listWidth, listHeight);
+        add(resListPanel);
     }
 }

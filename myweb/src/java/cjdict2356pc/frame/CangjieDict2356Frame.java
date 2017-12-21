@@ -30,7 +30,7 @@ public class CangjieDict2356Frame extends JFrame {
         setTitle("倉頡字典2356電腦版v1.0");
         setResizable(false);
         
-        int contentWidth = 640;
+        int contentWidth = 450;
         int contentHeight = 480;
         int frameWidth = contentWidth + 6;
         int frameHeight = contentHeight + 28;
