@@ -19,11 +19,12 @@ public class Test {
         // "粤语发声字典081217.txt");
         // IOUtils.writeFile(mbsBaseDir + "粤语发声字典081217_2.txt", res);
 
-        mergeMbs();
+        // mergeMbs();
 
         // 編碼粵拼的詞組
         String mbFile = mbsBaseDir + "jyutping-all.txt";
         String jyutPhrase = mbsBaseDir + "jyutping-phrases.txt";
+        
         String srcPhraseFile = Cj00AllInOneTest.phraseOriginFile;
         PhraseTest.uniqueOrderPhraseFile();
         List<String> phrases = getJyutpingPhrase(mbFile, srcPhraseFile);
