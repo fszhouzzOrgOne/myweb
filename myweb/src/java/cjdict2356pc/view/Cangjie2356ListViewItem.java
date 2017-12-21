@@ -4,7 +4,6 @@ import java.awt.Font;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
@@ -17,18 +16,21 @@ import unicode.UnicodeHanziUtil;
  * @author fszhouzz@qq.com
  * @time 2017年12月21日 下午10:19:30
  */
-public class Cangjie2356ListItemView extends JPanel {
+public class Cangjie2356ListViewItem extends Cangjie2356ListView {
 
     /**
      * 
      */
     private static final long serialVersionUID = 1L;
 
+    private Item item = null;
+
     private JLabel labelChar = null;
     private JLabel labelUnicodeRangeName = null;
     private JLabel labelEncode = null;
 
-    public Cangjie2356ListItemView(Item it) {
+    public Cangjie2356ListViewItem(Item it) {
+        item = it;
         this.setLayout(null);
         int width = 423;
         int height = 50;
@@ -36,14 +38,14 @@ public class Cangjie2356ListItemView extends JPanel {
         Border border = BorderFactory.createEtchedBorder();
         this.setBorder(border);
 
-        String charLabelText = it.getCharacter();
-        String encodeLabelText = it.getEncode() + "（" + it.getEncodeName() + "）";
+        String charLabelText = item.getCharacter();
+        String encodeLabelText = item.getEncode() + "（" + item.getEncodeName() + "）";
         String unicodeRangeName = "";
-        if (it.isEmpty()) {
+        if (item.isEmpty()) {
             charLabelText = "(空)";
             encodeLabelText = "無結果。";
         } else {
-            unicodeRangeName = UnicodeHanziUtil.getRangeNameByChar(it.getCharacter());
+            unicodeRangeName = UnicodeHanziUtil.getRangeNameByChar(item.getCharacter());
         }
 
         labelChar = new JLabel(charLabelText, null, SwingConstants.CENTER);

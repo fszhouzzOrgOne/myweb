@@ -19,7 +19,9 @@ import cjdict2356pc.dto.Group;
 import cjdict2356pc.dto.Item;
 import cjdict2356pc.mb.SettingDictMbUtils;
 import cjdict2356pc.view.Cangjie2356ListItemList;
-import cjdict2356pc.view.Cangjie2356ListItemView;
+import cjdict2356pc.view.Cangjie2356ListView;
+import cjdict2356pc.view.Cangjie2356ListViewGroup;
+import cjdict2356pc.view.Cangjie2356ListViewItem;
 
 /**
  * 倉頡字典的內容
@@ -38,9 +40,17 @@ public class CangjieDict2356TabDictPanel extends JPanel {
     private JTextField searchField = null;
     private JButton searchButton = null;
 
+    /**
+     * 查詢結果展示列表
+     */
     private JScrollPane resListPanel = null;
 
+    /**
+     * 所有的分組和查詢結果
+     */
     private List<Group> gData = null;
+    /** 已經打開的分組，分組代碼 */
+    private List<String> openGroupCodes = new ArrayList<String>();
 
     public CangjieDict2356TabDictPanel() {
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -111,13 +121,26 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         }
         gData = gDataPar;
 
+        openGroupCodes.clear();
+
+        updateResListPanel();
+    }
+
+    /**
+     * 更新查詢結果展示列表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2017年12月21日 下午11:41:39
+     */
+    public void updateResListPanel() {
         if (null == resListPanel) {
             return;
         }
-        List<Cangjie2356ListItemView> its = new ArrayList<Cangjie2356ListItemView>();
+        List<Cangjie2356ListView> its = new ArrayList<Cangjie2356ListView>();
         for (Group gp : gData) {
+            its.add(new Cangjie2356ListViewGroup(gp));
             for (Item it : gp.getItems()) {
-                its.add(new Cangjie2356ListItemView(it));
+                its.add(new Cangjie2356ListViewItem(it));
             }
         }
 
