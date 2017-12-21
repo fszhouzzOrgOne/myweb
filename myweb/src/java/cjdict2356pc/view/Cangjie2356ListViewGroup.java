@@ -38,8 +38,8 @@ public class Cangjie2356ListViewGroup extends Cangjie2356ListView {
         this.setBorder(border);
         this.setBackground(Color.GRAY);
 
-        labelGroupName = new JLabel("    " + group.getgName(), null, SwingConstants.LEFT);
-        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 30);
+        labelGroupName = new JLabel("  " + group.getgName(), null, SwingConstants.LEFT);
+        Font font = new Font(null, Font.BOLD, 30);
         labelGroupName.setFont(font);
         int groupX = 0;
         int groupY = 0;

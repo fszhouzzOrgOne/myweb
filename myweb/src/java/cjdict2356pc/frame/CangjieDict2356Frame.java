@@ -1,11 +1,15 @@
 package cjdict2356pc.frame;
 
+import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Enumeration;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.plaf.FontUIResource;
 
 /**
  * 倉頡字典2356窗口
@@ -31,7 +35,26 @@ public class CangjieDict2356Frame extends JFrame {
         return LazyHolder.frame;
     }
 
+    /**
+     * 設置全局字體
+     * 
+     * @author t
+     */
+    public static void initGlobalFontSetting() {
+        FontUIResource fontUIResource = new FontUIResource(new Font("宋体", Font.PLAIN, 16));
+        for (Enumeration<Object> keys = UIManager.getDefaults().keys(); keys.hasMoreElements();) {
+            Object key = keys.nextElement();
+            Object value = UIManager.get(key);
+            if (value instanceof FontUIResource) {
+                UIManager.put(key, fontUIResource);
+            }
+        }
+    }
+
     public CangjieDict2356Frame() {
+        // 必須放在第一個
+        initGlobalFontSetting();
+        
         setTitle("倉頡字典2356電腦版v1.0");
         setResizable(false);
 

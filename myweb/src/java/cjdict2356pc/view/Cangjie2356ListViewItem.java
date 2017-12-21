@@ -49,7 +49,7 @@ public class Cangjie2356ListViewItem extends Cangjie2356ListView {
         }
 
         labelChar = new JLabel(charLabelText, null, SwingConstants.CENTER);
-        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 24);
+        Font font = new Font(null, Font.BOLD, 30);
         labelChar.setFont(font);
         int charX = 0;
         int charY = 0;
