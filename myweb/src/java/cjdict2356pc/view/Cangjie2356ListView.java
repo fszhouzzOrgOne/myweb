@@ -10,7 +10,7 @@ import javax.swing.JPanel;
  * @author fszhouzz@qq.com
  * @time 2017年12月21日 下午11:44:41
  */
-public class Cangjie2356ListView extends JPanel {
+public abstract class Cangjie2356ListView extends JPanel {
 
     /**
      * 

@@ -1,6 +1,7 @@
 package cjdict2356pc.tab;
 
 import java.awt.GridLayout;
+import java.io.File;
 import java.net.URL;
 
 import javax.swing.ImageIcon;
@@ -24,7 +25,7 @@ public class CangjieDict2356Tab extends JPanel {
     private JTabbedPane jTabbedpane = new JTabbedPane();
     private String[] tabNames = { "倉頡字典", "版本說明" };
     // 圖標都用個没有背景的圖
-    ImageIcon icon = createImageIcon("images/tabimg.png");
+    ImageIcon icon = createImageIcon("images" + File.separator + "tabimg.png");
 
     public CangjieDict2356Tab() {
         layoutComponents();

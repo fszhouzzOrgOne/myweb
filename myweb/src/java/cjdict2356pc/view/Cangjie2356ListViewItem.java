@@ -8,6 +8,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
 import cjdict2356pc.dto.Item;
+import cjdict2356pc.tab.CangjieDict2356TabDictPanel;
 import unicode.UnicodeHanziUtil;
 
 /**
@@ -48,9 +49,11 @@ public class Cangjie2356ListViewItem extends Cangjie2356ListView {
             unicodeRangeName = UnicodeHanziUtil.getRangeNameByChar(item.getCharacter());
         }
 
+        Font font30 = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 32);
+        Font font20 = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 18);
+        
         labelChar = new JLabel(charLabelText, null, SwingConstants.CENTER);
-        Font font = new Font(null, Font.BOLD, 30);
-        labelChar.setFont(font);
+        labelChar.setFont(font30);
         int charX = 0;
         int charY = 0;
         int charWidth = height * 150 / 100;
@@ -59,6 +62,7 @@ public class Cangjie2356ListViewItem extends Cangjie2356ListView {
         add(labelChar);
 
         labelUnicodeRangeName = new JLabel(unicodeRangeName, null, SwingConstants.LEFT);
+        labelUnicodeRangeName.setFont(font20);
         int rangeX = charWidth;
         int rangeY = 0;
         int rangeWidth = width - charWidth;
@@ -67,11 +71,16 @@ public class Cangjie2356ListViewItem extends Cangjie2356ListView {
         add(labelUnicodeRangeName);
 
         labelEncode = new JLabel(encodeLabelText, null, SwingConstants.LEFT);
+        labelEncode.setFont(font20);
         int encX = charWidth;
         int encY = rangeHeight;
         int encWidth = rangeWidth;
         int encHeight = rangeHeight;
         labelEncode.setBounds(encX, encY, encWidth, encHeight);
         add(labelEncode);
+    }
+    
+    public Item getItemData() {
+        return item;
     }
 }

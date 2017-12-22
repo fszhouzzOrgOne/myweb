@@ -2,6 +2,8 @@ package cjdict2356pc.tab;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +37,8 @@ public class CangjieDict2356TabDictPanel extends JPanel {
      * 
      */
     private static final long serialVersionUID = 1L;
+
+    public static final String FONT_NAME = "黑体";
 
     private JLabel searchLabel = null;
     private JTextField searchField = null;
@@ -101,7 +105,6 @@ public class CangjieDict2356TabDictPanel extends JPanel {
      * @return
      */
     private JScrollPane getJScrollPane() {
-
         String[] words = { "quick", "brown", "hungry", "wild" };
         JList list = new JList(words);
         JScrollPane resListPanel = new JScrollPane(list);
@@ -122,6 +125,12 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         gData = gDataPar;
 
         openGroupCodes.clear();
+        // 默認展開有結果的分組
+        for (Group g : gData) {
+            if (null != g.getItems() && !g.getItems().isEmpty() && !g.getItems().get(0).isEmpty()) {
+                openGroupCodes.add(g.getgCode());
+            }
+        }
 
         updateResListPanel();
     }
@@ -138,9 +147,19 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         }
         List<Cangjie2356ListView> its = new ArrayList<Cangjie2356ListView>();
         for (Group gp : gData) {
-            its.add(new Cangjie2356ListViewGroup(gp));
-            for (Item it : gp.getItems()) {
-                its.add(new Cangjie2356ListViewItem(it));
+            if (openGroupCodes.contains(gp.getgCode())) {
+                gp = new Group(gp.getgId(), gp.getgCode(), "▼" + gp.getgName());
+            } else {
+                gp = new Group(gp.getgId(), gp.getgCode(), ">" + gp.getgName());
+            }
+            
+            Cangjie2356ListViewGroup vg = new Cangjie2356ListViewGroup(gp);
+            vg.addMouseListener(new ListViewGroupMouseListener());
+            its.add(vg);
+            if (openGroupCodes.contains(gp.getgCode())) {
+                for (Item it : gp.getItems()) {
+                    its.add(new Cangjie2356ListViewItem(it));
+                }
             }
         }
 
@@ -182,5 +201,52 @@ public class CangjieDict2356TabDictPanel extends JPanel {
             }
         }
 
+    }
+
+    /**
+     * 列表分組的點擊事件
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2017年12月22日上午9:21:46
+     */
+    class ListViewGroupMouseListener implements MouseListener {
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            String gCode = null;
+            if (null != e.getSource()) {
+                Cangjie2356ListViewGroup vg = (Cangjie2356ListViewGroup) e.getSource();
+                if (null != vg.getGroupData()) {
+                    gCode = vg.getGroupData().getgCode();
+                    if (!openGroupCodes.contains(gCode)) {
+                        openGroupCodes.add(gCode);
+                    } else {
+                        openGroupCodes.remove(gCode);
+                    }
+
+                    updateResListPanel();
+                }
+            }
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+
+        }
     }
 }

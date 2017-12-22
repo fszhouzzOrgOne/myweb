@@ -9,6 +9,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
 import cjdict2356pc.dto.Group;
+import cjdict2356pc.tab.CangjieDict2356TabDictPanel;
 
 /**
  * 字典查詢結果分組
@@ -36,16 +37,22 @@ public class Cangjie2356ListViewGroup extends Cangjie2356ListView {
         setSize(width, height);
         Border border = BorderFactory.createLineBorder(Color.black);
         this.setBorder(border);
-        this.setBackground(Color.GRAY);
+        this.setBackground(Color.DARK_GRAY);
 
         labelGroupName = new JLabel("  " + group.getgName(), null, SwingConstants.LEFT);
-        Font font = new Font(null, Font.BOLD, 30);
+        Font font = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 30);
         labelGroupName.setFont(font);
+        // 前景，字體顏色
+        labelGroupName.setForeground(Color.LIGHT_GRAY);
         int groupX = 0;
         int groupY = 0;
         int groupWidth = width;
         int groupHeight = height;
         labelGroupName.setBounds(groupX, groupY, groupWidth, groupHeight);
         add(labelGroupName);
+    }
+    
+    public Group getGroupData() {
+        return group;
     }
 }
