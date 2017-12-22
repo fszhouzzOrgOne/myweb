@@ -11,6 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
 
+import cjdict2356pc.CangjieDict2356PCMain;
+
 /**
  * 倉頡字典2356窗口
  * 
@@ -41,7 +43,7 @@ public class CangjieDict2356Frame extends JFrame {
      * @author t
      */
     public static void initGlobalFontSetting() {
-        FontUIResource fontUIResource = new FontUIResource(new Font("宋体", Font.PLAIN, 16));
+        FontUIResource fontUIResource = new FontUIResource(new Font(CangjieDict2356PCMain.FONT_NAME_HEITI, Font.PLAIN, 16));
         for (Enumeration<Object> keys = UIManager.getDefaults().keys(); keys.hasMoreElements();) {
             Object key = keys.nextElement();
             Object value = UIManager.get(key);

@@ -8,8 +8,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
+import cjdict2356pc.CangjieDict2356PCMain;
 import cjdict2356pc.dto.Group;
-import cjdict2356pc.tab.CangjieDict2356TabDictPanel;
 
 /**
  * 字典查詢結果分組
@@ -40,7 +40,7 @@ public class Cangjie2356ListViewGroup extends Cangjie2356ListView {
         this.setBackground(Color.DARK_GRAY);
 
         labelGroupName = new JLabel("  " + group.getgName(), null, SwingConstants.LEFT);
-        Font font = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 30);
+        Font font = new Font(CangjieDict2356PCMain.FONT_NAME_HEITI, Font.BOLD, 30);
         labelGroupName.setFont(font);
         // 前景，字體顏色
         labelGroupName.setForeground(Color.LIGHT_GRAY);

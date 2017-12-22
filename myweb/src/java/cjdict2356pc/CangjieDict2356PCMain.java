@@ -16,6 +16,9 @@ import cjdict2356pc.tab.CangjieDict2356Tab;
  */
 public class CangjieDict2356PCMain {
 
+    public static final String FONT_NAME_HEITI = "黑体";
+    public static final String FONT_NAME_SONGTI = "宋体";
+
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override

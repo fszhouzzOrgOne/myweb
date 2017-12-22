@@ -38,8 +38,6 @@ public class CangjieDict2356TabDictPanel extends JPanel {
      */
     private static final long serialVersionUID = 1L;
 
-    public static final String FONT_NAME = "黑体";
-
     private JLabel searchLabel = null;
     private JTextField searchField = null;
     private JButton searchButton = null;

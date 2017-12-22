@@ -7,8 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
+import cjdict2356pc.CangjieDict2356PCMain;
 import cjdict2356pc.dto.Item;
-import cjdict2356pc.tab.CangjieDict2356TabDictPanel;
 import unicode.UnicodeHanziUtil;
 
 /**
@@ -49,8 +49,8 @@ public class Cangjie2356ListViewItem extends Cangjie2356ListView {
             unicodeRangeName = UnicodeHanziUtil.getRangeNameByChar(item.getCharacter());
         }
 
-        Font font30 = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 32);
-        Font font20 = new Font(CangjieDict2356TabDictPanel.FONT_NAME, Font.BOLD, 18);
+        Font font30 = new Font(null, Font.BOLD, 32);
+        Font font20 = new Font(CangjieDict2356PCMain.FONT_NAME_HEITI, Font.BOLD, 18);
         
         labelChar = new JLabel(charLabelText, null, SwingConstants.CENTER);
         labelChar.setFont(font30);
