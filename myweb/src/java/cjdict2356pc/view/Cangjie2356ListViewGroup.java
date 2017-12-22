@@ -39,7 +39,7 @@ public class Cangjie2356ListViewGroup extends Cangjie2356ListView {
         this.setBorder(border);
         this.setBackground(Color.DARK_GRAY);
 
-        labelGroupName = new JLabel("  " + group.getgName(), null, SwingConstants.LEFT);
+        labelGroupName = new JLabel(" " + group.getgName(), null, SwingConstants.LEFT);
         Font font = new Font(CangjieDict2356PCMain.FONT_NAME_HEITI, Font.BOLD, 30);
         labelGroupName.setFont(font);
         // 前景，字體顏色

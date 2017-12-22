@@ -1,5 +1,6 @@
 package cjdict2356pc.tab;
 
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -53,6 +55,10 @@ public class CangjieDict2356TabDictPanel extends JPanel {
     private List<Group> gData = null;
     /** 已經打開的分組，分組代碼 */
     private List<String> openGroupCodes = new ArrayList<String>();
+    /**
+     * 繼續查詢框
+     */
+    private JFrame continueSearchFrame;
 
     public CangjieDict2356TabDictPanel() {
         this.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -159,7 +165,9 @@ public class CangjieDict2356TabDictPanel extends JPanel {
 
             if (isOpen) {
                 for (Item it : items) {
-                    its.add(new Cangjie2356ListViewItem(it));
+                    Cangjie2356ListViewItem vi = new Cangjie2356ListViewItem(it);
+                    vi.addMouseListener(new ListViewItemMouseListener());
+                    its.add(vi);
                 }
             }
         }
@@ -231,6 +239,67 @@ public class CangjieDict2356TabDictPanel extends JPanel {
                     }
 
                     updateResListPanel();
+                }
+            }
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+
+        }
+    }
+
+    /**
+     * 列表結果項的點擊事件
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2017年12月22日上午9:21:46
+     */
+    class ListViewItemMouseListener implements MouseListener {
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            if (null != e.getSource()) {
+                Cangjie2356ListViewItem vi = (Cangjie2356ListViewItem) e.getSource();
+                if (null != vi.getItemData()) {
+                    Item it = vi.getItemData();
+                    if (it.isEmpty()) {
+                        return;
+                    }
+                    
+                    if (null != continueSearchFrame) {
+                        continueSearchFrame.dispose();
+                        continueSearchFrame = null;
+                    }
+                    
+                    continueSearchFrame = new JFrame("繼續查詢？");
+                    continueSearchFrame.setBounds(new Rectangle((int) vi.getBounds().getX() + 50, (int) vi.getBounds().getY() + 50,
+                            200, 200));
+                    continueSearchFrame.setLocationRelativeTo(null);
+                    continueSearchFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                    continueSearchFrame.setLayout(null);
+                    
+                    JLabel jl = new JLabel();
+                    continueSearchFrame.getContentPane().add(jl);
+                    jl.setText(it.getCharacter() + it.getEncode());
+                    jl.setVerticalAlignment(JLabel.CENTER);
+                    jl.setHorizontalAlignment(JLabel.CENTER);// 注意方法名别写错了。
+                    continueSearchFrame.setVisible(true);
                 }
             }
         }
