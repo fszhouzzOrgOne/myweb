@@ -147,17 +147,20 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         }
         List<Cangjie2356ListView> its = new ArrayList<Cangjie2356ListView>();
         for (Group gp : gData) {
-            if (openGroupCodes.contains(gp.getgCode())) {
-                gp = new Group(gp.getgId(), gp.getgCode(), "▼" + gp.getgName());
+            boolean isOpen = openGroupCodes.contains(gp.getgCode());
+            List<Item> items = new ArrayList<Item>(gp.getItems());
+            if (isOpen) {
+                gp = new Group(gp.getgId(), gp.getgCode(), "▲" + gp.getgName());
             } else {
-                gp = new Group(gp.getgId(), gp.getgCode(), ">" + gp.getgName());
+                gp = new Group(gp.getgId(), gp.getgCode(), "▼" + gp.getgName());
             }
-            
+
             Cangjie2356ListViewGroup vg = new Cangjie2356ListViewGroup(gp);
             vg.addMouseListener(new ListViewGroupMouseListener());
             its.add(vg);
-            if (openGroupCodes.contains(gp.getgCode())) {
-                for (Item it : gp.getItems()) {
+
+            if (isOpen) {
+                for (Item it : items) {
                     its.add(new Cangjie2356ListViewItem(it));
                 }
             }
