@@ -1,5 +1,6 @@
 package cjdict2356pc.tab;
 
+import java.awt.Font;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,6 +9,7 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,6 +19,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
 import cjdict2356pc.dto.Group;
@@ -76,6 +79,8 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         add(searchLabel);
 
         searchField = new JTextField(null, 14);
+        Font font20 = new Font(null, Font.BOLD, 18);
+        searchField.setFont(font20);
         int fieldX = labelX + labelWidth + gap;
         int fieldY = gap;
         int fieldWidth = 200;
@@ -176,6 +181,11 @@ public class CangjieDict2356TabDictPanel extends JPanel {
 
         resListPanel.setViewportView(list);
         resListPanel.repaint();
+
+        if (null != continueSearchFrame) {
+            continueSearchFrame.dispose();
+            continueSearchFrame = null;
+        }
     }
 
     /**
@@ -281,29 +291,54 @@ public class CangjieDict2356TabDictPanel extends JPanel {
                     if (it.isEmpty()) {
                         return;
                     }
-                    
+
                     if (null != continueSearchFrame) {
                         continueSearchFrame.dispose();
                         continueSearchFrame = null;
                     }
-                    
+
                     continueSearchFrame = new JFrame("繼續查詢？");
-                    continueSearchFrame.setBounds(new Rectangle((int) vi.getBounds().getX() + 50, (int) vi.getBounds().getY() + 50,
-                            200, 200));
+                    continueSearchFrame.setBounds(new Rectangle((int) vi.getBounds().getX() + 50,
+                            (int) vi.getBounds().getY() + 50, 200, 160));
                     continueSearchFrame.setLocationRelativeTo(null);
                     continueSearchFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     continueSearchFrame.setLayout(null);
                     continueSearchFrame.setResizable(false);
                     continueSearchFrame.setUndecorated(false);
-                    
+
                     JLabel jl = new JLabel("繼續查詢：", null, SwingConstants.LEFT);
                     int jlX = 5;
                     int jlY = 0;
-                    int jlwidth = 190;
+                    int jlwidth = 185;
                     int jlheight = 30;
                     jl.setBounds(jlX, jlY, jlwidth, jlheight);
                     continueSearchFrame.getContentPane().add(jl);
-                    
+
+                    Font font20 = new Font(null, Font.BOLD, 18);
+                    BevelBorder raisedBevelBorder = (BevelBorder) BorderFactory.createRaisedBevelBorder();
+
+                    JLabel charLabel = new JLabel("查詢文字“" + it.getCharacter() + "”", null, SwingConstants.CENTER);
+                    charLabel.setFont(font20);
+                    charLabel.setBorder(raisedBevelBorder);
+                    int charX = 5;
+                    int charY = jlY + jlheight + 5;
+                    int charWidth = jlwidth;
+                    int charHeight = 40;
+                    charLabel.setBounds(charX, charY, charWidth, charHeight);
+                    charLabel.addMouseListener(new ContinueSearchMouseListener());
+                    continueSearchFrame.getContentPane().add(charLabel);
+
+                    JLabel codeLabel = new JLabel("查詢編碼“" + it.getEncode() + "”", null, SwingConstants.CENTER);
+                    codeLabel.setFont(font20);
+                    codeLabel.setBorder(raisedBevelBorder);
+                    int codeX = 5;
+                    int codeY = charY + charHeight + 5;
+                    int codeWidth = jlwidth;
+                    int codeHeight = charHeight;
+                    codeLabel.setBounds(codeX, codeY, codeWidth, codeHeight);
+                    codeLabel.addMouseListener(new ContinueSearchMouseListener());
+                    continueSearchFrame.getContentPane().add(codeLabel);
+
                     continueSearchFrame.setVisible(true);
                 }
             }
@@ -323,5 +358,64 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         public void mouseExited(MouseEvent e) {
 
         }
+    }
+
+    /**
+     * 點擊了繼續查詢選項事件
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2017年12月22日下午3:09:03
+     */
+    class ContinueSearchMouseListener implements MouseListener {
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            if (null != e.getSource()) {
+                JLabel la = (JLabel) e.getSource();
+                BevelBorder border = (BevelBorder) BorderFactory.createLoweredBevelBorder();
+                la.setBorder(border);
+                continueSearchFrame.repaint();
+            }
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+            if (null != e.getSource()) {
+                JLabel la = (JLabel) e.getSource();
+                BevelBorder border = (BevelBorder) BorderFactory.createRaisedBevelBorder();
+                la.setBorder(border);
+                continueSearchFrame.repaint();
+
+                String textInput = la.getText();
+                textInput = textInput.replaceAll("[“”]|(查詢文字)|(查詢編碼)", "");
+                if (null != textInput) {
+                    if (null != searchField) {
+                        searchField.setText(textInput);
+                        searchButton.doClick();
+                    }
+                }
+            }
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+            if (null != e.getSource()) {
+                JLabel la = (JLabel) e.getSource();
+                BevelBorder border = (BevelBorder) BorderFactory.createRaisedBevelBorder();
+                la.setBorder(border);
+                continueSearchFrame.repaint();
+            }
+        }
+
     }
 }
