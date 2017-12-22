@@ -4,6 +4,8 @@ import java.awt.Font;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -85,6 +87,15 @@ public class CangjieDict2356TabDictPanel extends JPanel {
         int fieldY = gap;
         int fieldWidth = 200;
         searchField.setBounds(fieldX, fieldY, fieldWidth, compHeight);
+        searchField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent event) {
+                if (KeyEvent.getKeyText(event.getKeyCode()).compareToIgnoreCase("Enter") == 0) {
+                    if (null != searchButton) {
+                        searchButton.doClick();
+                    }
+                }
+            }
+        });
         add(searchField);
 
         searchButton = new JButton("查詢");
@@ -203,7 +214,8 @@ public class CangjieDict2356TabDictPanel extends JPanel {
                 List<Group> gData = null;
                 String textInput = searchField.getText();
                 if (null != textInput && !"".equals(textInput.trim().replaceAll(" ", ""))) {
-                    textInput = textInput.trim().replaceAll("[ ='\"\\|!,./\\\\;?*=-_+%\\^\\$\\#\\}\\{\\]\\[\\)\\(]", "").toLowerCase();
+                    textInput = textInput.trim().replaceAll("[ ='\"\\|!,./\\\\;?*=-_+%\\^\\$\\#\\}\\{\\]\\[\\)\\(]", "")
+                            .toLowerCase();
                     searchField.setText(textInput);
                     String pattern = "[a-zA-Z]{1,}";
                     if (textInput.matches(pattern)) {

@@ -1,5 +1,6 @@
 package cjdict2356pc.tab;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.io.File;
 import java.net.URL;
@@ -29,16 +30,15 @@ public class CangjieDict2356Tab extends JPanel {
 
     public CangjieDict2356Tab() {
         layoutComponents();
+        this.setBackground(Color.GRAY);
     }
 
     private void layoutComponents() {
         JPanel jpanelFirst = new CangjieDict2356TabDictPanel();
         jTabbedpane.addTab(tabNames[0], icon, jpanelFirst, tabNames[0]);
-        // jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0);
 
         JPanel jpanelSecond = new CangjieDict2356TabLogPanel();
         jTabbedpane.addTab(tabNames[1], icon, jpanelSecond, tabNames[1]);
-        // jTabbedpane.setMnemonicAt(1, KeyEvent.VK_1);
         setLayout(new GridLayout(1, 1));
         add(jTabbedpane);
 
