@@ -293,12 +293,17 @@ public class CangjieDict2356TabDictPanel extends JPanel {
                     continueSearchFrame.setLocationRelativeTo(null);
                     continueSearchFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     continueSearchFrame.setLayout(null);
+                    continueSearchFrame.setResizable(false);
+                    continueSearchFrame.setUndecorated(false);
                     
-                    JLabel jl = new JLabel();
+                    JLabel jl = new JLabel("繼續查詢：", null, SwingConstants.LEFT);
+                    int jlX = 5;
+                    int jlY = 0;
+                    int jlwidth = 190;
+                    int jlheight = 30;
+                    jl.setBounds(jlX, jlY, jlwidth, jlheight);
                     continueSearchFrame.getContentPane().add(jl);
-                    jl.setText(it.getCharacter() + it.getEncode());
-                    jl.setVerticalAlignment(JLabel.CENTER);
-                    jl.setHorizontalAlignment(JLabel.CENTER);// 注意方法名别写错了。
+                    
                     continueSearchFrame.setVisible(true);
                 }
             }
