@@ -104,31 +104,19 @@ public class UnicodeHanziUtil {
         nameRangeMap.put("私用區", getStringSet(privateUserArea));
     }
 
-    public static void main(String[] args) {
-        String aaaa = "文字\u2CEB0";
-        // 擴展區漢字長度2
-        System.out.println(aaaa.length());
-        System.out.println(aaaa.toCharArray().length);
-
-        System.out.println(getRangeNameByChar("𠔻"));
-        System.out.println(getRangeNameByChar("ㆬ"));
-        System.out.println(getRangeNameByChar("ノ"));
-        System.out.println(getRangeNameByChar(""));
-        System.out.println(getRangeNameByChar("ᅀ"));
-        System.out.println(getRangeNameByChar("㈠"));
-        System.out.println("\u3311" + getRangeNameByChar("\u3311"));
-
-        // System.out.println(intc.toHexString((int) 'ノ'));
-        System.out.println(Integer.toHexString((int) 'ᅀ'));
-        System.out.println(Integer.toHexString((int) '㈠'));
-        System.out.println(Integer.toHexString((int) '㊹'));
-        
-        for (int i = katakanaPhoneticExtensions[0]; i <= cjkCompat[1]; i++) {
-            System.out.print(getStringByUnicode(i));
-        }
-        System.out.println();
+    public static void main(String[] args) throws Exception {
+//        String baseDir = "src" + File.separator + "java" + File.separator + "unicode" + File.separator;
+//        // 印所有字符到文件
+//        for (String name : nameRangeMap.keySet()) {
+//            @SuppressWarnings("unchecked")
+//            List<String> arr = new ArrayList<String>((Set<String>) nameRangeMap.get(name));
+//            // IOUtils.writeFile(baseDir + name + ".txt", arr);
+//        }
     }
 
+    /**
+     * 按字符，取得它在統一碼中所在區名字
+     */
     public static String getRangeNameByChar(String charStr) {
         if (null == charStr || charStr.toCharArray().length > 2) {
             return "";
@@ -143,10 +131,12 @@ public class UnicodeHanziUtil {
         return "";
     }
 
+    /** 按統一碼編號範圍，取到對应的字符集合 */
     public static Set<String> getStringSet(int[] range) {
         return getStringSet(range[0], range[1]);
     }
 
+    /** 按統一碼編號起止，取到對应的字符集合 */
     public static Set<String> getStringSet(int start, int end) {
         Set<String> set = new LinkedHashSet<String>();
         for (int i = start; i <= end; i++) {
@@ -158,6 +148,7 @@ public class UnicodeHanziUtil {
         return set;
     }
 
+    /** 按統一碼編號，取到對应的字符 */
     public static String getStringByUnicode(int unicode) {
         return new String(Character.toChars(unicode));
     }
