@@ -16,31 +16,31 @@ public class Cj00AllInOneTest {
 
     public static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
     // 取自倉頡平臺2012所帶碼表
-    public static String mb26000 = mbsBaseDir + "cj2-6763.txt";
+    public static String mb26000 = mbsBaseDir + "cjmb" + File.separator + "cj2-6763.txt";
     // 取自倉頡平臺2012所帶碼表
-    public static String mb36000 = mbsBaseDir + "cj3-6763.txt";
-    public static String mb310000 = mbsBaseDir + "cj3-13053.txt";
-    public static String mb320000 = mbsBaseDir + "cj3-20902.txt";
-    public static String mb370000 = mbsBaseDir + "cj3-70000.txt";
-    public static String mb3more = mbsBaseDir + "cj3-more.txt";
+    public static String mb36000 = mbsBaseDir + "cjmb" + File.separator + "cj3-6763.txt";
+    public static String mb310000 = mbsBaseDir + "cjmb" + File.separator + "cj3-13053.txt";
+    public static String mb320000 = mbsBaseDir + "cjmb" + File.separator + "cj3-20902.txt";
+    public static String mb370000 = mbsBaseDir + "cjmb" + File.separator + "cj3-70000.txt";
+    public static String mb3more = mbsBaseDir + "cjmb" + File.separator + "cj3-more.txt";
     // 取自倉頡平臺2012所帶碼表
-    public static String mb58000 = mbsBaseDir + "cj5-8300.txt";
-    public static String mb510000 = mbsBaseDir + "cj5-13053.txt";
-    public static String mb520000 = mbsBaseDir + "cj5-20902.txt";
-    public static String mb570000 = mbsBaseDir + "cj5-70000.txt";
-    public static String mb5more = mbsBaseDir + "cj5-more.txt";
+    public static String mb58000 = mbsBaseDir + "cjmb" + File.separator + "cj5-8300.txt";
+    public static String mb510000 = mbsBaseDir + "cjmb" + File.separator + "cj5-13053.txt";
+    public static String mb520000 = mbsBaseDir + "cjmb" + File.separator + "cj5-20902.txt";
+    public static String mb570000 = mbsBaseDir + "cjmb" + File.separator + "cj5-70000.txt";
+    public static String mb5more = mbsBaseDir + "cjmb" + File.separator + "cj5-more.txt";
     // 取用倉頡輸入法羣共享中的cj6-70000碼表等，並整合了雪齋團隊整理的碼表
-    public static String mb68000 = mbsBaseDir + "cj6-8300.txt";
-    public static String mb610000 = mbsBaseDir + "cj6-13053.txt";
-    public static String mb620000 = mbsBaseDir + "cj6-20902.txt";
-    public static String mb670000 = mbsBaseDir + "cj6-70000.txt";
-    public static String mb6more = mbsBaseDir + "cj6-more.txt";
+    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "cj6-8300.txt";
+    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "cj6-13053.txt";
+    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "cj6-20902.txt";
+    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "cj6-70000.txt";
+    public static String mb6more = mbsBaseDir + "cjmb" + File.separator + "cj6-more.txt";
     // 自製碼表
-    public static String mb6compat1000 = mbsBaseDir + "cj6-compat1000.txt";
-    public static String mb6simParts400 = mbsBaseDir + "cj6-simPart400.txt";
-    public static String mb6japkore200 = mbsBaseDir + "cj6-japkorea.txt";
-    public static String mb6unif7473 = mbsBaseDir + "cj6-unicodef7473.txt";
-    public static String mb6morePhrase = mbsBaseDir + "cj6-morePhrase.txt";
+    public static String mb6compat1000 = mbsBaseDir + "cjmb" + File.separator + "cj6-compat1000.txt";
+    public static String mb6simParts400 = mbsBaseDir + "cjmb" + File.separator + "cj6-simPart400.txt";
+    public static String mb6japkore200 = mbsBaseDir + "cjmb" + File.separator + "cj6-japkorea.txt";
+    public static String mb6unif7473 = mbsBaseDir + "cjmb" + File.separator + "cj6-unicodef7473.txt";
+    public static String mb6morePhrase = mbsBaseDir + "cjmb" + File.separator + "cj6-morePhrase.txt";
     // 各代所有碼表合一
     public static String mb2allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj2.txt";
     public static String mb3allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj3.txt";
@@ -48,9 +48,9 @@ public class Cj00AllInOneTest {
     public static String mb6allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj6.txt";
     // 詞組
     public static String phraseOriginFile = mbsBaseDir + "phrases.txt";
-    public static String mb3phrase = mbsBaseDir + "cj3-phrase.txt";
-    public static String mb5phrase = mbsBaseDir + "cj5-phrase.txt";
-    public static String mb6phrase = mbsBaseDir + "cj6-phrase.txt";
+    public static String mb3phrase = mbsBaseDir + "cjmb" + File.separator + "cj3-phrase.txt";
+    public static String mb5phrase = mbsBaseDir + "cjmb" + File.separator + "cj5-phrase.txt";
+    public static String mb6phrase = mbsBaseDir + "cjmb" + File.separator + "cj6-phrase.txt";
 
     // 四角號碼，參照911查詢網底四角號碼查詢而製作的碼表
     public static String mbsghm27000 = mbsBaseDir + "sghm-27000.txt";
@@ -78,8 +78,8 @@ public class Cj00AllInOneTest {
     // 普語拼音，用網上找的碼表，聲調改用英文字母m底個數表示
     public static String pinyin26000 = mbsBaseDir + "pinyin-26000.txt";
     // 兩個是伊卂Ejsoon推薦的碼表。
-    public static String cjyh80000 = mbsBaseDir + "cjyahoo-80000.txt"; // 雅虎奇摩
-    public static String cjms59000 = mbsBaseDir + "cjms-59000.txt"; // 微軟倉頡
+    public static String cjyh80000 = mbsBaseDir + "cjmb" + File.separator + "cjyahoo-80000.txt"; // 雅虎奇摩
+    public static String cjms59000 = mbsBaseDir + "cjmb" + File.separator + "cjms-59000.txt"; // 微軟倉頡
     // 合一
     public static String zyfhsallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-zyfh.txt"; // 注音符號
     public static String pinyinallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-pinyin.txt"; // 普語拼音
@@ -96,7 +96,7 @@ public class Cj00AllInOneTest {
 
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
-        generateAllInOnes(false, false, true, false);
+        generateAllInOnes(false, true, true, false);
     }
 
     /**

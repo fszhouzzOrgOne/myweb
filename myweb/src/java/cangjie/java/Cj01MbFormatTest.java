@@ -1,5 +1,6 @@
 package cangjie.java;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -32,11 +33,10 @@ public class Cj01MbFormatTest {
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
 
     // 倉頡三五六、雅虎、微軟，幾個的交集
-    public static String cj356hyms_allInOne = mbsBaseDir
-            + "intersection-cj356hyms.txt";
-    
+    public static String cj356hyms_allInOne = mbsBaseDir + "cjmb" + File.separator + "intersection-cj356hyms.txt";
+
     public static void main(String[] args) throws Exception {
-         getCjMbsIntersection();
+        getCjMbsIntersection();
     }
 
     /**
@@ -49,8 +49,7 @@ public class Cj01MbFormatTest {
         List<String> linescjyh = IOUtils.readLines(cjyhallInOne);
         List<String> linescjms = IOUtils.readLines(cjmsallInOne);
 
-        Set<String> inter = getIntersection(lines3, lines5, lines6, linescjyh,
-                linescjms);
+        Set<String> inter = getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
         IOUtils.writeFile(cj356hyms_allInOne, inter);
         IOUtils.orderCodeFile(cj356hyms_allInOne);
 
@@ -65,16 +64,13 @@ public class Cj01MbFormatTest {
         lines6.removeAll(inter);
         linescjyh.removeAll(inter);
         linescjms.removeAll(inter);
-        System.out.println(lines3size + "-" + interSize + "="
-                + (lines3size - interSize) + "=" + lines3.size());
-        System.out.println(lines5size + "-" + interSize + "="
-                + (lines5size - interSize) + "=" + lines5.size());
-        System.out.println(lines6size + "-" + interSize + "="
-                + (lines6size - interSize) + "=" + lines6.size());
-        System.out.println(linescjyhsize + "-" + interSize + "="
-                + (linescjyhsize - interSize) + "=" + linescjyh.size());
-        System.out.println(linescjmssize + "-" + interSize + "="
-                + (linescjmssize - interSize) + "=" + linescjms.size());
+        System.out.println(lines3size + "-" + interSize + "=" + (lines3size - interSize) + "=" + lines3.size());
+        System.out.println(lines5size + "-" + interSize + "=" + (lines5size - interSize) + "=" + lines5.size());
+        System.out.println(lines6size + "-" + interSize + "=" + (lines6size - interSize) + "=" + lines6.size());
+        System.out
+                .println(linescjyhsize + "-" + interSize + "=" + (linescjyhsize - interSize) + "=" + linescjyh.size());
+        System.out
+                .println(linescjmssize + "-" + interSize + "=" + (linescjmssize - interSize) + "=" + linescjms.size());
     }
 
     /**
@@ -89,8 +85,7 @@ public class Cj01MbFormatTest {
      * 讀碼表：編碼在前，不空格，後跟一串文字<br />
      * 如：ab明冐
      */
-    public static List<String> readCodeChaChaMb(String filename)
-            throws Exception {
+    public static List<String> readCodeChaChaMb(String filename) throws Exception {
         List<String> all = new ArrayList<String>(IOUtils.readLines(filename));
 
         List<String> res = new ArrayList<String>();
@@ -146,8 +141,7 @@ public class Cj01MbFormatTest {
      * @author t
      * @time 2017-2-24下午9:16:56
      */
-    public static List<String> read_quoteCodeEQquoteCharMb(String filename)
-            throws Exception {
+    public static List<String> read_quoteCodeEQquoteCharMb(String filename) throws Exception {
         List<String> all = new ArrayList<String>(IOUtils.readLines(filename));
 
         List<String> res = new ArrayList<String>();
@@ -162,8 +156,7 @@ public class Cj01MbFormatTest {
 
                 res.add(cod + " " + cha);
             } else {
-                System.out.println("read_quoteCodeEQquoteCharMb碼表错誤：" + index
-                        + " " + line);
+                System.out.println("read_quoteCodeEQquoteCharMb碼表错誤：" + index + " " + line);
             }
         }
         return res;
@@ -175,8 +168,7 @@ public class Cj01MbFormatTest {
      * @author t
      * @time 2017-1-3上午12:02:52
      */
-    public static List<String> compareGetDiff(Collection<String> set1,
-            Collection<String> newSet) throws Exception {
+    public static List<String> compareGetDiff(Collection<String> set1, Collection<String> newSet) throws Exception {
         List<String> diff = new ArrayList<String>();
 
         for (String n : newSet) {
@@ -190,8 +182,7 @@ public class Cj01MbFormatTest {
     /**
      * 比较碼表的不同：在碼表newSet中有，而在set1中沒有的字符
      */
-    public static List<String> compareGetDiffChars(Collection<String> set1,
-            Collection<String> newSet) {
+    public static List<String> compareGetDiffChars(Collection<String> set1, Collection<String> newSet) {
         List<String> diff = new ArrayList<String>();
 
         Set<String> oldChars = new HashSet<String>();
