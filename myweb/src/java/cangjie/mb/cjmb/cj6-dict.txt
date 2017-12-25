@@ -1,6 +1,7 @@
 # 來源雪齋的GitHub項目: https://github.com/LEOYoon-Tsaw/Cangjie6.git
 # 碼表： cangjie6.dict.yaml
 # 截止時間： 2017年12月16日
+# 三個褈複的，在最後
 a   日
 a   曰
 aa   昌
