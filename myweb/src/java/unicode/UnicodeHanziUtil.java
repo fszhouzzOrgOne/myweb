@@ -112,6 +112,8 @@ public class UnicodeHanziUtil {
 //            List<String> arr = new ArrayList<String>((Set<String>) nameRangeMap.get(name));
 //            // IOUtils.writeFile(baseDir + name + ".txt", arr);
 //        }
+        
+        System.out.println(getRangeNameByChar("龜"));
     }
 
     /**
