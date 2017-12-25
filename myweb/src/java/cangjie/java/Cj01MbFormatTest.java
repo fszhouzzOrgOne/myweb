@@ -2,8 +2,6 @@ package cangjie.java;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -49,7 +47,8 @@ public class Cj01MbFormatTest {
         List<String> linescjyh = IOUtils.readLines(cjyhallInOne);
         List<String> linescjms = IOUtils.readLines(cjmsallInOne);
 
-        Set<String> inter = getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
+        @SuppressWarnings("unchecked")
+        Set<String> inter = MbCompareTest.getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
         IOUtils.writeFile(cj356hyms_allInOne, inter);
         IOUtils.orderCodeFile(cj356hyms_allInOne);
 
@@ -162,82 +161,4 @@ public class Cj01MbFormatTest {
         return res;
     }
 
-    /**
-     * 比较碼表的不同，newSet中有，而set1中沒有的
-     * 
-     * @author t
-     * @time 2017-1-3上午12:02:52
-     */
-    public static List<String> compareGetDiff(Collection<String> set1, Collection<String> newSet) throws Exception {
-        List<String> diff = new ArrayList<String>();
-
-        for (String n : newSet) {
-            if (!set1.contains(n)) {
-                diff.add(n);
-            }
-        }
-        return diff;
-    }
-
-    /**
-     * 比较碼表的不同：在碼表newSet中有，而在set1中沒有的字符
-     */
-    public static List<String> compareGetDiffChars(Collection<String> set1, Collection<String> newSet) {
-        List<String> diff = new ArrayList<String>();
-
-        Set<String> oldChars = new HashSet<String>();
-        for (String line : set1) {
-            if (line.contains(" ")) {
-                String[] splits = line.split(" +");
-                String cha = splits[1];
-                oldChars.add(cha);
-            }
-        }
-
-        for (String n : newSet) {
-            if (n.contains(" ")) {
-                String[] splits = n.split(" +");
-                String cha = splits[1];
-                if (!oldChars.contains(cha)) {
-                    diff.add(n);
-                }
-            }
-        }
-        return diff;
-    }
-
-    /**
-     * 求碼表的交集
-     */
-    public static Set<String> getIntersection(Collection<String>... sets) {
-        Set<String> inters = new HashSet<String>();
-        if (null != sets) {
-            List<Set<String>> sets2 = new ArrayList<Set<String>>();
-            for (Collection<String> set : sets) {
-                sets2.add(new HashSet<String>(set));
-            }
-            for (Collection<String> set : sets2) {
-                for (String code : set) {
-                    if (!inters.contains(code) && isInAllSet(code, sets2)) {
-                        inters.add(code);
-                    }
-                }
-            }
-        }
-        return inters;
-    }
-
-    /** 一個编码是否在所有集合中都含有 */
-    private static boolean isInAllSet(String code, List<Set<String>> sets) {
-        if (null != sets && null != code && code.length() > 0) {
-            for (Set<String> set : sets) {
-                if (!set.contains(code)) {
-                    return false;
-                }
-            }
-            return true;
-        } else {
-            return false;
-        }
-    }
 }
