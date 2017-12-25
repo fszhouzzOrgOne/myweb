@@ -1,5 +1,6 @@
 package cangjie.java;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -41,10 +42,10 @@ public class Cj00AllInOneTest {
     public static String mb6unif7473 = mbsBaseDir + "cj6-unicodef7473.txt";
     public static String mb6morePhrase = mbsBaseDir + "cj6-morePhrase.txt";
     // 各代所有碼表合一
-    public static String mb2allInOne = mbsBaseDir + "allInOne-cj2.txt";
-    public static String mb3allInOne = mbsBaseDir + "allInOne-cj3.txt";
-    public static String mb5allInOne = mbsBaseDir + "allInOne-cj5.txt";
-    public static String mb6allInOne = mbsBaseDir + "allInOne-cj6.txt";
+    public static String mb2allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj2.txt";
+    public static String mb3allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj3.txt";
+    public static String mb5allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj5.txt";
+    public static String mb6allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj6.txt";
     // 詞組
     public static String phraseOriginFile = mbsBaseDir + "phrases.txt";
     public static String mb3phrase = mbsBaseDir + "cj3-phrase.txt";
@@ -55,18 +56,18 @@ public class Cj00AllInOneTest {
     public static String mbsghm27000 = mbsBaseDir + "sghm-27000.txt";
     public static String mbsghm27000no5 = mbsBaseDir + "sghm-27000-5.txt";
     public static String sghmphrase = mbsBaseDir + "sghm-phrase.txt";
-    public static String sghmallInOne = mbsBaseDir + "allInOne-sghm.txt";
+    public static String sghmallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-sghm.txt";
 
     // 日文，自製碼表，並取維基上《日語常用漢字一覧表》中的字和詞，編碼後加入碼表中
     public static String mbnippon200 = mbsBaseDir + "karina-kana200.txt";
     public static String mbnipponKanji2000 = mbsBaseDir + "karina-kanji2000.txt";
     public static String mbnipponMoreSymbol = mbsBaseDir + "karina-moreSymbol.txt";
-    public static String nihonAllInOne = mbsBaseDir + "allInOne-karina.txt";
+    public static String nihonAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-karina.txt";
 
     // 韓文，自製碼表，主要由榕樹葉編碼
     public static String mbkorea10000 = mbsBaseDir + "korea-12000.txt";
     public static String koreaMoreSymbol = mbsBaseDir + "korea-moreSymbol.txt";
-    public static String koreaAllInOne = mbsBaseDir + "allInOne-korea.txt";
+    public static String koreaAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-korea.txt";
 
     // 注音符號，自製碼表，只能打符號，不能打漢字
     public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt";
@@ -80,18 +81,18 @@ public class Cj00AllInOneTest {
     public static String cjyh80000 = mbsBaseDir + "cjyahoo-80000.txt"; // 雅虎奇摩
     public static String cjms59000 = mbsBaseDir + "cjms-59000.txt"; // 微軟倉頡
     // 合一
-    public static String zyfhsallInOne = mbsBaseDir + "allInOne-zyfh.txt"; // 注音符號
-    public static String pinyinallInOne = mbsBaseDir + "allInOne-pinyin.txt"; // 普語拼音
-    public static String cjyhallInOne = mbsBaseDir + "allInOne-cjyahoo.txt"; // 雅虎奇摩
-    public static String cjmsallInOne = mbsBaseDir + "allInOne-cjms.txt"; // 微軟倉頡
+    public static String zyfhsallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-zyfh.txt"; // 注音符號
+    public static String pinyinallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-pinyin.txt"; // 普語拼音
+    public static String cjyhallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cjyahoo.txt"; // 雅虎奇摩
+    public static String cjmsallInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cjms.txt"; // 微軟倉頡
     // 粵語拼音，整合兩個碼表github上rime-aca的粵拼⁺正寫字碼表、
     // mdict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
-    public static String jyutpingAllInOne = mbsBaseDir + "allInOne-jyutping.txt";
+    public static String jyutpingAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-jyutping.txt";
 
     // 滿文，自製碼表，參考網上下載的《滿文滿語學習教程完整版.pdf》内容。
     public static String manju100 = mbsBaseDir + "manju-100.txt";
     public static String manjuMore = mbsBaseDir + "manju-more.txt";
-    public static String manjuAllInOne = mbsBaseDir + "allInOne-manju.txt";
+    public static String manjuAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-manju.txt";
 
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
