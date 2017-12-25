@@ -1,5 +1,6 @@
 package cangjie.java;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -14,11 +15,22 @@ import cangjie.java.util.IOUtils;
  */
 public class MbCompareTest {
 
-    public static void main(String[] args) {
+    public static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
+    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-8300.txt";
+    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-13053.txt";
+    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-20902.txt";
+    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-70000.txt";
+
+    public static void main(String[] args) throws Exception {
         List<String> list1 = IOUtils.readLines(Cj00AllInOneTest.mb6newDict);
-        List<String> list2 = IOUtils.readLines(Cj00AllInOneTest.mb6more);
+        
+        Set<String> list2 = new LinkedHashSet<String>(); // IOUtils.readLines(Cj00AllInOneTest.mb6more));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb68000)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb610000)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb620000)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb670000)));
         ;
-        List<String> list3 = new ArrayList<String>(getIntersection(list1, list2));
+        List<String> list3 = compareGetDiff(list1, list2);
         for (String str : list3) {
             System.out.println(str);
         }
