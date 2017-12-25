@@ -71,7 +71,9 @@ public class UnicodeHanziUtil {
     private static int[] privateUserArea = { 0xE000, 0xF8FF };
 
     private static Map<String, Object> nameRangeMap = new LinkedHashMap<String, Object>();
-
+    /** 私用區鍵名 */
+    private static String PRIVATEUSERAREA_KEYNAME = "私用區";
+    
     static {
         nameRangeMap.put("漢字基本區", getStringSet(baseRange));
         nameRangeMap.put("漢字基本區補充", getStringSet(base2Range));
@@ -101,7 +103,7 @@ public class UnicodeHanziUtil {
         nameRangeMap.put("中日韓括號字母及月份", getStringSet(encloseLetterMonth));
         nameRangeMap.put("中日韓兼容字符", getStringSet(cjkCompat));
 
-        nameRangeMap.put("私用區", getStringSet(privateUserArea));
+        nameRangeMap.put(PRIVATEUSERAREA_KEYNAME, getStringSet(privateUserArea));
     }
 
     public static void main(String[] args) throws Exception {
@@ -114,6 +116,24 @@ public class UnicodeHanziUtil {
 //        }
         
         System.out.println(getRangeNameByChar("龜"));
+        
+        System.out.println(isInPrivateUserArea(""));
+    }
+
+    /**
+     * 是否在私用區
+     * 
+     * @param charStr
+     *            一個字符
+     * @return
+     */
+    public static boolean isInPrivateUserArea(String charStr) {
+        if (null == charStr || charStr.toCharArray().length > 2) {
+            return false;
+        }
+        @SuppressWarnings("unchecked")
+        Set<String> puaSet = (Set<String>) nameRangeMap.get(PRIVATEUSERAREA_KEYNAME);
+        return puaSet.contains(charStr);
     }
 
     /**
