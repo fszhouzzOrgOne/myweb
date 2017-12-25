@@ -30,16 +30,18 @@ public class Cj00AllInOneTest {
     public static String mb570000 = mbsBaseDir + "cjmb" + File.separator + "cj5-70000.txt";
     public static String mb5more = mbsBaseDir + "cjmb" + File.separator + "cj5-more.txt";
     // 取用倉頡輸入法羣共享中的cj6-70000碼表等，並整合了雪齋團隊整理的碼表
-    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "cj6-8300.txt";
-    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "cj6-13053.txt";
-    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "cj6-20902.txt";
-    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "cj6-70000.txt";
+    public static String mb6newDict = mbsBaseDir + "cjmb" + File.separator + "cj6-dict.txt";
+    
+//    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "cj6-8300.txt";
+//    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "cj6-13053.txt";
+//    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "cj6-20902.txt";
+//    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "cj6-70000.txt";
     public static String mb6more = mbsBaseDir + "cjmb" + File.separator + "cj6-more.txt";
     // 自製碼表
     public static String mb6compat1000 = mbsBaseDir + "cjmb" + File.separator + "cj6-compat1000.txt";
     public static String mb6simParts400 = mbsBaseDir + "cjmb" + File.separator + "cj6-simPart400.txt";
     public static String mb6japkore200 = mbsBaseDir + "cjmb" + File.separator + "cj6-japkorea.txt";
-    public static String mb6unif7473 = mbsBaseDir + "cjmb" + File.separator + "cj6-unicodef7473.txt";
+//    public static String mb6unif7473 = mbsBaseDir + "cjmb" + File.separator + "cj6-unicodef7473.txt";
     public static String mb6morePhrase = mbsBaseDir + "cjmb" + File.separator + "cj6-morePhrase.txt";
     // 各代所有碼表合一
     public static String mb2allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj2.txt";
@@ -173,14 +175,16 @@ public class Cj00AllInOneTest {
         // 詞組編碼6
         if (withPhrases6) {
             List<String> mbfiles6 = new ArrayList<String>();
-            mbfiles6.add(mb670000);
-            mbfiles6.add(mb6more);
+            mbfiles6.add(mb6newDict);
+            // mbfiles6.add(mb6more);
             genRawCjPhrases(phraseOriginFile, mb6phrase, mbfiles6);
         }
         // 注意碼表的順序，一般爲：二萬常用字、一萬繁體、蕳化字、七萬字的、詞組
         // 生成allInOne文件6
-        String[] mbs6 = new String[] { mb620000, mb610000, mb68000, mb670000, mb6more, mb6compat1000, mb6simParts400,
-                mb6japkore200, mb6unif7473, mb6morePhrase, mb6phrase };
+        String[] mbs6 = new String[] { mb6newDict, 
+                // mb6more, 
+                mb6compat1000, mb6simParts400,
+                mb6japkore200, mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
             mbs6[mbs6.length - 2] = null;
