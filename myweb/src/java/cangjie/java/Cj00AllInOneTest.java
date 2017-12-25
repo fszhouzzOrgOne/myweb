@@ -41,7 +41,7 @@ public class Cj00AllInOneTest {
     public static String mb6compat1000 = mbsBaseDir + "cjmb" + File.separator + "cj6-compat1000.txt";
     public static String mb6simParts400 = mbsBaseDir + "cjmb" + File.separator + "cj6-simPart400.txt";
     public static String mb6japkore200 = mbsBaseDir + "cjmb" + File.separator + "cj6-japkorea.txt";
-//    public static String mb6unif7473 = mbsBaseDir + "cjmb" + File.separator + "cj6-unicodef7473.txt";
+    public static String mb6unif7473 = mbsBaseDir + "cjmb" + File.separator + "cj6-unicodef7473.txt";
     public static String mb6morePhrase = mbsBaseDir + "cjmb" + File.separator + "cj6-morePhrase.txt";
     // 各代所有碼表合一
     public static String mb2allInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-cj2.txt";

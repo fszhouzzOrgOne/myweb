@@ -23,14 +23,11 @@ public class MbCompareTest {
 
     public static void main(String[] args) throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473));
         
         Set<String> list2 = new LinkedHashSet<String>();
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb68000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb610000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb620000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb670000)));
-        ;
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473)));
+
         List<String> list3 = compareGetDiff(list1, list2);
         for (String str : list3) {
             System.out.println(str);
