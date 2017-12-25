@@ -14,7 +14,7 @@ import cangjie.java.util.IOUtils;
  */
 public class DuoDuoFormatTest {
 
-    private static String destFileDir = "src\\java\\cangjie\\duoduo\\mb\\";
+    private static String destFileDir = "src\\java\\cangjie\\mb\\duoduo\\mb\\";
 
     private static String mb2allInOne = Cj00AllInOneTest.mb2allInOne;
     private static String mb3allInOne = Cj00AllInOneTest.mb3allInOne;
@@ -32,7 +32,7 @@ public class DuoDuoFormatTest {
 
     public static void main(String[] args) throws Exception {
         // 生成碼表，倉頡全都加入詞組
-        Cj00AllInOneTest.generateAllInOnes(false, false, true, false);
+        // Cj00AllInOneTest.generateAllInOnes(false, true, true, false);
         
         List<String> mbs = new ArrayList<String>();
         mbs.add(mb2allInOne);
