@@ -15,26 +15,26 @@ import java.util.Set;
  */
 public class UnicodeHanziUtil {
     /** 基本區 */
-    private static int[] baseRange = { 0x4E00, 0x9FA5 };
+    public static int[] baseRange = { 0x4E00, 0x9FA5 };
     /** 基本補充 */
-    private static int[] base2Range = { 0x9FA6, 0x9FFF };
+    public static int[] base2Range = { 0x9FA6, 0x9FFF };
     /** 擴展A */
-    private static int[] AextRange = { 0x3400, 0x4DBF };
+    public static int[] AextRange = { 0x3400, 0x4DBF };
     /** 擴展B */
-    private static int[] BextRange = { 0x20000, 0x2A6DF };
+    public static int[] BextRange = { 0x20000, 0x2A6DF };
     /** 擴展C */
-    private static int[] CextRange = { 0x2A700, 0x2B734 };
+    public static int[] CextRange = { 0x2A700, 0x2B734 };
     /** 擴展D */
-    private static int[] DextRange = { 0x2B740, 0x2B81D };
+    public static int[] DextRange = { 0x2B740, 0x2B81D };
     /** 擴展E */
-    private static int[] EextRange = { 0x2B820, 0x2CEA1 };
+    public static int[] EextRange = { 0x2B820, 0x2CEA1 };
     /** 擴展F */
-    private static int[] FextRange = { 0x2CEB0, 0x2EBE0 };
+    public static int[] FextRange = { 0x2CEB0, 0x2EBE0 };
 
     /** 兼容漢字 */
-    private static int[] hanziCompt = { 0xF900, 0xFAFF };
+    public static int[] hanziCompt = { 0xF900, 0xFAFF };
     /** 兼容擴展 */
-    private static int[] extCompt = { 0x2F800, 0x2FA1F };
+    public static int[] extCompt = { 0x2F800, 0x2FA1F };
 
     /** 諺文字母 */
     private static int[] hangulJamo = { 0x1100, 0x11FF };

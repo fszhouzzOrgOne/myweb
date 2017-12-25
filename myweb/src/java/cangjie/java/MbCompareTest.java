@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeHanziUtil;
 
 /**
  * 碼表對比
@@ -24,6 +25,7 @@ public class MbCompareTest {
     public static void main(String[] args) throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
         list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6compat1000));
         
         Set<String> list2 = new LinkedHashSet<String>();
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473)));
@@ -33,6 +35,20 @@ public class MbCompareTest {
             System.out.println(str);
         }
         System.out.println(list3.size());
+        
+        // 各個區漢字是否都有了：
+        Set<String> chars = new LinkedHashSet<String>();
+        for (String line : list1) {
+            if (line.contains(" ")) {
+                String[] splits = line.split(" +");
+                String cha = splits[1];
+                chars.add(cha);
+            }
+        }
+        Set<String> set = UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.hanziCompt);
+        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.hanziCompt));
+        set.removeAll(chars);
+        System.out.println(set);
     }
 
     /**
