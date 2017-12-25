@@ -22,9 +22,10 @@ public class MbCompareTest {
     public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-70000.txt";
 
     public static void main(String[] args) throws Exception {
-        List<String> list1 = IOUtils.readLines(Cj00AllInOneTest.mb6newDict);
+        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
         
-        Set<String> list2 = new LinkedHashSet<String>(); // IOUtils.readLines(Cj00AllInOneTest.mb6more));
+        Set<String> list2 = new LinkedHashSet<String>();
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb68000)));
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb610000)));
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb620000)));
