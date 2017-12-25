@@ -73,7 +73,11 @@ public class UnicodeHanziUtil {
     private static Map<String, Object> nameRangeMap = new LinkedHashMap<String, Object>();
     /** 私用區鍵名 */
     private static String PRIVATEUSERAREA_KEYNAME = "私用區";
-    
+    /** 兼容漢字區鍵名 */
+    private static String HANZICOMPT_KEYNAME = "兼容漢字";
+    /** 兼容擴展鍵名 */
+    private static String EXTCOMPT_KEYNAME = "兼容漢字擴展";
+
     static {
         nameRangeMap.put("漢字基本區", getStringSet(baseRange));
         nameRangeMap.put("漢字基本區補充", getStringSet(base2Range));
@@ -84,8 +88,8 @@ public class UnicodeHanziUtil {
         nameRangeMap.put("漢字擴展E區", getStringSet(EextRange));
         nameRangeMap.put("漢字擴展F區", getStringSet(FextRange));
 
-        nameRangeMap.put("兼容漢字", getStringSet(hanziCompt));
-        nameRangeMap.put("兼容漢字擴展", getStringSet(extCompt));
+        nameRangeMap.put(HANZICOMPT_KEYNAME, getStringSet(hanziCompt));
+        nameRangeMap.put(EXTCOMPT_KEYNAME, getStringSet(extCompt));
 
         nameRangeMap.put("諺文字母", getStringSet(hangulJamo));
         nameRangeMap.put("補充標點符號", getStringSet(supplmtlPunctuation));
@@ -118,6 +122,7 @@ public class UnicodeHanziUtil {
         System.out.println(getRangeNameByChar("龜"));
         
         System.out.println(isInPrivateUserArea(""));
+        System.out.println(isInhanziCompt("兀"));
     }
 
     /**
@@ -134,6 +139,23 @@ public class UnicodeHanziUtil {
         @SuppressWarnings("unchecked")
         Set<String> puaSet = (Set<String>) nameRangeMap.get(PRIVATEUSERAREA_KEYNAME);
         return puaSet.contains(charStr);
+    }
+    
+    /**
+     * 是否在兼容或兼容擴展區
+     * 
+     * @param charStr
+     *            一個字符
+     * @return
+     */
+    @SuppressWarnings("unchecked")
+    public static boolean isInhanziCompt(String charStr) {
+        if (null == charStr || charStr.toCharArray().length > 2) {
+            return false;
+        }
+        Set<String> set = (Set<String>) nameRangeMap.get(HANZICOMPT_KEYNAME);
+        set.addAll((Set<String>) nameRangeMap.get(EXTCOMPT_KEYNAME));
+        return set.contains(charStr);
     }
 
     /**
