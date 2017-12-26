@@ -180,12 +180,11 @@ public class Cj00AllInOneTest {
             mbfiles6.add(mb6more);
             genRawCjPhrases(phraseOriginFile, mb6phrase, mbfiles6);
         }
-        // 注意碼表的順序，一般爲：二萬常用字、一萬繁體、蕳化字、七萬字的、詞組
         // 生成allInOne文件6
         String[] mbs6 = new String[] { mb6newDict, 
                 mb6more, 
-                mb6compat1000, mb6simParts400,
-                mb6japkore200, mb6morePua, 
+                mb6simParts400, mb6japkore200, 
+                mb6compat1000, mb6morePua, 
                 mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
