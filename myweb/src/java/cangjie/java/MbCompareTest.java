@@ -24,8 +24,8 @@ public class MbCompareTest {
 
     public static void main(String[] args) throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6compat1000));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua));
         
         Set<String> list2 = new LinkedHashSet<String>();
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473)));
@@ -45,8 +45,7 @@ public class MbCompareTest {
                 chars.add(cha);
             }
         }
-        Set<String> set = UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.hanziCompt);
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.hanziCompt));
+        Set<String> set = UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.privateUserArea);
         set.removeAll(chars);
         System.out.println(set);
     }

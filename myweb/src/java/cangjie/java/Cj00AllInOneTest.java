@@ -37,6 +37,7 @@ public class Cj00AllInOneTest {
 //    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "cj6-20902.txt";
 //    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "cj6-70000.txt";
     public static String mb6more = mbsBaseDir + "cjmb" + File.separator + "cj6-more.txt";
+    public static String mb6morePua = mbsBaseDir + "cjmb" + File.separator + "cj6-pua.txt";
     // 自製碼表
     public static String mb6compat1000 = mbsBaseDir + "cjmb" + File.separator + "cj6-compat1000.txt";
     public static String mb6simParts400 = mbsBaseDir + "cjmb" + File.separator + "cj6-simPart400.txt";
@@ -184,7 +185,8 @@ public class Cj00AllInOneTest {
         String[] mbs6 = new String[] { mb6newDict, 
                 mb6more, 
                 mb6compat1000, mb6simParts400,
-                mb6japkore200, mb6morePhrase, mb6phrase };
+                mb6japkore200, mb6morePua, 
+                mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
             mbs6[mbs6.length - 2] = null;

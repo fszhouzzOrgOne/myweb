@@ -68,7 +68,7 @@ public class UnicodeHanziUtil {
     private static int[] cjkCompat = { 0x3300, 0x33FF };
 
     /** Private Use Area 私用區 */
-    private static int[] privateUserArea = { 0xE000, 0xF8FF };
+    public static int[] privateUserArea = { 0xE000, 0xF8FF };
 
     private static Map<String, Object> nameRangeMap = new LinkedHashMap<String, Object>();
     /** 私用區鍵名 */
