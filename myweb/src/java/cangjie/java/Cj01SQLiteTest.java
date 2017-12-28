@@ -61,10 +61,12 @@ public class Cj01SQLiteTest {
         boolean withCangjie6 = false; // 加入蒼頡六？
         boolean withCangjie5 = false; // 加入蒼頡五？
         boolean withCangjie35 = false; // 加入倉頡三五？
+        boolean withCangjie3 = false; // 加入倉頡三
 
         // 互斥的五個版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 347624
+        boolean edition2 = false; // 2版本自定義字體 347624
+        boolean edition3 = true; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
         boolean edition5 = false; // 版本五代 159268 ansi 103934
@@ -75,6 +77,7 @@ public class Cj01SQLiteTest {
         List<Boolean> edits = new ArrayList<Boolean>();
         edits.add(edition1);
         edits.add(edition2);
+        edits.add(edition3);
         edits.add(edition35);
         edits.add(edition5);
         edits.add(edition6);
@@ -98,6 +101,13 @@ public class Cj01SQLiteTest {
             withCangjie5 = true;
             withCangjieOthers = true;
             withCangjie35 = false;
+        }
+        if (edition3) {
+            withCangjie6 = false;
+            withCangjie5 = false;
+            withCangjieOthers = false;
+            withCangjie35 = false;
+            withCangjie3 = true;
         }
         if (edition35) {
             withCangjie6 = false;
@@ -229,7 +239,7 @@ public class Cj01SQLiteTest {
 
             sql_gen = getInsertGenSql(cjGenJyutp, "粵語拼音");
             stmt.executeUpdate(sql_gen);
-            
+
             sql_gen = getInsertGenSql(cjGenpy, "普語拼音");
             stmt.executeUpdate(sql_gen);
 
@@ -268,21 +278,23 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGen2 + " successfully");
                 selectCountAll(stmt);
 
-                // 倉頡三代
-                insertMbdb(stmt, cjGen3, lines3);
-                c.commit();
-                System.out.println("insert " + cjGen3 + " successfully");
-                selectCountAll(stmt);
-
                 // 雅虎奇摩
                 insertMbdb(stmt, cjGencjyh, linescjyh);
                 c.commit();
                 System.out.println("insert " + cjGencjyh + " successfully");
                 selectCountAll(stmt);
+
                 // 微軟倉頡
                 insertMbdb(stmt, cjGencjms, linescjms);
                 c.commit();
                 System.out.println("insert " + cjGencjms + " successfully");
+                selectCountAll(stmt);
+            }
+            if (withCangjie3) {
+                // 倉頡三代
+                insertMbdb(stmt, cjGen3, lines3);
+                c.commit();
+                System.out.println("insert " + cjGen3 + " successfully");
                 selectCountAll(stmt);
             }
             if (withCangjie5) {
