@@ -101,6 +101,7 @@ public class Cj01SQLiteTest {
             withCangjie5 = true;
             withCangjieOthers = true;
             withCangjie35 = false;
+            withCangjie3 = true;
         }
         if (edition3) {
             withCangjie6 = false;
@@ -114,18 +115,21 @@ public class Cj01SQLiteTest {
             withCangjie5 = false;
             withCangjieOthers = false;
             withCangjie35 = true;
+            withCangjie3 = false;
         }
         if (edition5) {
             withCangjie6 = false;
             withCangjie5 = true;
             withCangjieOthers = false;
             withCangjie35 = false;
+            withCangjie3 = false;
         }
         if (edition6 || edition62) {
             withCangjie6 = true;
             withCangjie5 = false;
             withCangjieOthers = false;
             withCangjie35 = false;
+            withCangjie3 = false;
         }
 
         // 生成碼表
