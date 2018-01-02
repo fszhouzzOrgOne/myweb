@@ -2,6 +2,9 @@ baek        백
 baek        白
 baekji      백지
 baekji      白紙
+bu          부
+bu          否
+bu          父
 byeong      병
 byeong      病
 dae         대
@@ -25,6 +28,9 @@ ga          苛
 ga          家
 ga          佳
 ga          街
+gabu        가부
+gabu        可否
+gabu        家父
 gado        가도
 gado        街道
 gadu        가두
@@ -34,6 +40,8 @@ gaga        家家
 gagahoho    가가호호
 gagahoho    家家戶戶
 gagahoho    家家户户
+gageup      가급
+gageup      可及
 gagu        가구
 gagu        家具
 gagu        家口
@@ -64,8 +72,12 @@ gano        가노
 gano        家奴
 garo        가로
 garo        街路
+garyeon     가련
+garyeon     可憐
 geum        금
 geum        金
+geup        급
+geup        及
 gu          구
 gu          具
 gu          口
@@ -114,6 +126,9 @@ iyun        이윤
 iyun        利潤
 jak         작
 jak         作
+jeok        적
+jeok        敵
+jeok        炙
 jeong       정
 jeong       政
 ji          지
@@ -159,6 +174,9 @@ ri          리
 ri          利
 ro          로
 ro          路
+ryeon       련
+ryeon       憐
+ryeon       怜
 saeng       생
 saeng       生
 si          시
