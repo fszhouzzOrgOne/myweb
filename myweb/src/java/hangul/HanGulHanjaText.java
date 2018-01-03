@@ -20,8 +20,58 @@ public class HanGulHanjaText {
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
 
     public static void main(String[] args) throws Exception {
-        List<String> dictHanwen = getDictHanwen();
-        writeDictHanwen2(dictHanwen);
+//        List<String> dictHanwen = getDictHanwen();
+//        writeDictHanwen2(dictHanwen);
+        
+        List<String> changyongHanzi = getHanyuChangyongHanzi();
+        writeHanyuChangyongHanzi2(changyongHanzi);
+    }
+    
+    /**
+     * 寫《韩语常用汉字对照2.txt》
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月3日下午5:08:24
+     * @param list
+     * @throws Exception
+     */
+    private static void writeHanyuChangyongHanzi2(List<String> list) throws Exception {
+        String file = mbsBaseDir + "韩语常用汉字对照2.txt";
+        IOUtils.writeFile(file, list);
+        IOUtils.uniqueCodeFile(file);
+        IOUtils.orderCodeFile(file);
+    }
+
+    /**
+     * 读《韩语常用汉字对照.txt》
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月3日下午5:04:17
+     * @return
+     */
+    private static List<String> getHanyuChangyongHanzi() {
+        List<String> list = IOUtils.readLines(mbsBaseDir + "韩语常用汉字对照.txt");
+        List<String> res = new ArrayList<String>();
+        for (String str : list) {
+            if (str.contains(" ")) {
+                String[] part = str.split(" ");
+                if (part.length >= 2) {
+                    String preffix = part[0];
+                    for (int i = 1; i < part.length; i++) {
+                        if (preffix.length() != part[i].length()) {
+                            System.out.println("多空格的諺漢長度不等：" + str);
+                        } else {
+                            res.add(preffix + " " + part[i]);
+                        }
+                    }
+                } else {
+                    System.out.println("按空格分後長度爲一：" + str);
+                }
+            } else {
+                System.out.println("沒有空格：" + str);
+            }
+        }
+        return res;
     }
 
     /**
@@ -32,7 +82,10 @@ public class HanGulHanjaText {
      * @time 2018年1月3日下午4:46:19
      */
     private static void writeDictHanwen2(List<String> list) throws Exception {
-        IOUtils.writeFile(mbsBaseDir + "韩文汉字词典2.txt", list);
+        String file = mbsBaseDir + "韩文汉字词典2.txt";
+        IOUtils.writeFile(file, list);
+        IOUtils.uniqueCodeFile(file);
+        IOUtils.orderCodeFile(file);
     }
 
     /**
