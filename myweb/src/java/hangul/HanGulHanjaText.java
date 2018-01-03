@@ -20,13 +20,101 @@ public class HanGulHanjaText {
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
 
     public static void main(String[] args) throws Exception {
-//        List<String> dictHanwen = getDictHanwen();
-//        writeDictHanwen2(dictHanwen);
-        
-        List<String> changyongHanzi = getHanyuChangyongHanzi();
-        writeHanyuChangyongHanzi2(changyongHanzi);
+        // List<String> dictHanwen = getDictHanwen();
+        // writeDictHanwen2(dictHanwen);
+
+        // List<String> changyongHanzi = getHanyuChangyongHanzi();
+        // writeHanyuChangyongHanzi2(changyongHanzi);
+
+        // List<String> biaozhunHanguoyu = getBiaozhunHanguoyu();
+        // writeBiaozhunHanguoyu(biaozhunHanguoyu);
     }
-    
+
+    /**
+     * 寫《标准韩国语词典2.txt》
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月3日下午5:33:01
+     * @param biaozhunHanguoyu
+     * @throws Exception
+     */
+    private static void writeBiaozhunHanguoyu(List<String> list) throws Exception {
+        String file = mbsBaseDir + "标准韩国语词典2.txt";
+        IOUtils.writeFile(file, list);
+        IOUtils.uniqueCodeFile(file);
+        IOUtils.orderCodeFile(file);
+    }
+
+    /**
+     * 讀《标准韩国语词典.txt》
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月3日下午5:17:06
+     * @return
+     */
+    private static List<String> getBiaozhunHanguoyu() {
+        List<String> list = IOUtils.readLines(mbsBaseDir + "标准韩国语词典.txt");
+        List<String> res = new ArrayList<String>();
+        for (String str : list) {
+            if (str.contains(" ")) {
+                String[] part = str.split(" ");
+                if (part.length > 2) {
+                    int i = 0;
+                    int j = part.length - 1;
+                    String preffix = part[i];
+                    String suffix = part[j];
+                    while (i < j - 1) {
+                        if (preffix.length() < suffix.length()) {
+                            i++;
+                            preffix += part[i];
+                        } else if (preffix.length() > suffix.length()) {
+                            j--;
+                            suffix = part[j] + suffix;
+                        } else {
+                            i++;
+                            j--;
+                            preffix += part[i];
+                            suffix = part[j] + suffix;
+                        }
+                    }
+                    if (preffix.length() != suffix.length()) {
+                        System.out.println("多個空格的長度不等：" + preffix + " " + suffix);
+                    } else {
+                        res.add(preffix + " " + suffix);
+                    }
+                } else if (part.length == 2) {
+                    res.add(str);
+                } else {
+                    System.out.println("按空格分後長度爲一：" + str);
+                }
+            } else {
+                System.out.println("沒有空格：" + str);
+            }
+        }
+        // 解析一個諺文對應多個漢字詞的
+        // 它都用/分隔的
+        // 同時去掉数字
+        List<String> res2 = new ArrayList<String>();
+        for (String str : res) {
+            str = str.replaceAll("[0-9]+", "");
+            if (str.contains("/")) {
+                String[] part = str.split(" ");
+                if (part.length != 2) {
+                    System.out.println("第二步空格不對：" + str);
+                    continue;
+                } else {
+                    String preffix = part[0];
+                    for (String suf : part[1].split("/")) {
+                        res2.add(preffix + " " + suf);
+                    }
+                }
+            } else {
+                res2.add(str);
+            }
+        }
+        return res2;
+    }
+
     /**
      * 寫《韩语常用汉字对照2.txt》
      * 
