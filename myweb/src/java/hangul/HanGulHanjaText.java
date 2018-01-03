@@ -35,7 +35,7 @@ public class HanGulHanjaText {
             if (str.contains(" ")) {
                 String[] part = str.split(" ");
                 if (part.length > 2) {
-                    
+                    System.out.println("多個空格：" + str);
                 } else {
                     if (part[0].length() != part[1].length()) {
                         System.out.println(str);
