@@ -1,4 +1,7 @@
-﻿# 後面有一個諺文對多個漢字詞的
+﻿# 取自Mdict字典《韩文汉字词典》
+# 參見：http://www.pdawiki.com/forum/forum.php?mod=forumdisplay&fid=4&filter=typeid&typeid=79
+# 後面有一個諺文對多個漢字詞的
+# 注意本詞典用了很多兼容區漢字
 일 一
 일세기 一世紀
 일대기 一代記
