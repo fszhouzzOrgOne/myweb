@@ -14,17 +14,29 @@ import cangjie.java.util.IOUtils;
 public class HanGulHanjaText {
 
     private static String hanziPtn = "[\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]+";
-    
-    private static String yanwenPtn = "[\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]+";
-    
+
+    private static String yanwenPtn = "[\\uAC00-\\uD7AF\\u1100-\\u11FF\\u3130-\\u318F\\uA960-\\uA97F\\uD7B0-\\uD7FF}]+";
+
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
-    
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws Exception {
         List<String> dictHanwen = getDictHanwen();
+        writeDictHanwen2(dictHanwen);
     }
 
     /**
-     * 《韩文汉字词典.txt》所有的詞：諺文、漢字一一對應
+     * 寫《韩文汉字词典.txt》所有的詞：諺文、漢字一一對應
+     * 
+     * @author fszhouzz@qq.com
+     * @throws Exception
+     * @time 2018年1月3日下午4:46:19
+     */
+    private static void writeDictHanwen2(List<String> list) throws Exception {
+        IOUtils.writeFile(mbsBaseDir + "韩文汉字词典2.txt", list);
+    }
+
+    /**
+     * 解析《韩文汉字词典.txt》所有的詞：諺文、漢字一一對應
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月3日上午11:29:09
@@ -47,7 +59,14 @@ public class HanGulHanjaText {
                             res.add(part[i] + " " + suffix);
                         }
                     } else {
-                        
+                        String preffix = part[0];
+                        for (int i = 1; i < part.length; i++) {
+                            if (preffix.length() != part[i].length()) {
+                                System.out.println("多空格的諺漢長度不等：" + str);
+                            } else {
+                                res.add(preffix + " " + part[i]);
+                            }
+                        }
                     }
                 } else if (part.length == 2) {
                     if (part[0].length() != part[1].length()) {
