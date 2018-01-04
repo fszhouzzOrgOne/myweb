@@ -25,18 +25,18 @@ public class HanGulHanjaText {
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
 
     public static void main(String[] args) throws Exception {
-        // List<String> dictHanwen = getDictHanwen();
-        // writeDictHanwen2(dictHanwen);
+        List<String> dictHanwen = getDictHanwen();
+        writeDictHanwen2(dictHanwen);
 
-        // List<String> changyongHanzi = getHanyuChangyongHanzi();
-        // writeHanyuChangyongHanzi2(changyongHanzi);
+        List<String> changyongHanzi = getHanyuChangyongHanzi();
+        writeHanyuChangyongHanzi2(changyongHanzi);
 
-        // List<String> biaozhunHanguoyu = getBiaozhunHanguoyu();
-        // writeBiaozhunHanguoyu2(biaozhunHanguoyu);
+        List<String> biaozhunHanguoyu = getBiaozhunHanguoyu();
+        writeBiaozhunHanguoyu2(biaozhunHanguoyu);
 
-        // makePraseAllInOne();
+        makePraseAllInOne();
 
-        // makeSingleCharMb();
+        makeSingleCharMb();
 
         encodeHangulPinyin();
     }
@@ -79,7 +79,7 @@ public class HanGulHanjaText {
         IOUtils.writeFile(file21, encoded2);
         IOUtils.uniqueCodeFile(file21);
         IOUtils.orderCodeFile(file21);
-        
+
         System.out.println(mbMap.get("힐"));
     }
 
