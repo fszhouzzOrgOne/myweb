@@ -1,8 +1,13 @@
 package hangul;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
+import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
 
 /**
@@ -27,7 +32,163 @@ public class HanGulHanjaText {
         // writeHanyuChangyongHanzi2(changyongHanzi);
 
         // List<String> biaozhunHanguoyu = getBiaozhunHanguoyu();
-        // writeBiaozhunHanguoyu(biaozhunHanguoyu);
+        // writeBiaozhunHanguoyu2(biaozhunHanguoyu);
+
+        // makePraseAllInOne();
+
+        // makeSingleCharMb();
+
+        encodeHangulPinyin();
+    }
+
+    /**
+     * 給碼表英文編碼
+     * 
+     * @author fszhouzz@qq.com
+     * @throws Exception
+     * @time 2018年1月4日上午9:28:27
+     */
+    private static void encodeHangulPinyin() throws Exception {
+        String mbfile = Cj00AllInOneTest.mbkorea10000;
+        List<String> mblist = IOUtils.readLines(mbfile);
+        Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
+        for (String str : mblist) {
+            if (str.contains(" ")) {
+                String[] part = str.split(" ");
+                List<String> codes = mbMap.get(part[1]);
+                if (null == codes) {
+                    codes = new ArrayList<String>();
+                }
+                codes.add(part[0]);
+
+                mbMap.put(part[1], codes);
+            }
+        }
+
+        String file1 = mbsBaseDir + "韓文漢字單字的碼表.txt";
+        String file2 = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
+        List<String> encoded1 = new ArrayList<String>(encodeMbfile(file1, mbMap));
+        List<String> encoded2 = new ArrayList<String>(encodeMbfile(file2, mbMap));
+
+        String file11 = mbsBaseDir + "en韓文漢字單字的碼表.txt";
+        String file21 = mbsBaseDir + "en韓文漢字詞組碼表的整合.txt";
+
+        IOUtils.writeFile(file11, encoded1);
+        IOUtils.uniqueCodeFile(file11);
+        IOUtils.orderCodeFile(file11);
+        IOUtils.writeFile(file21, encoded2);
+        IOUtils.uniqueCodeFile(file21);
+        IOUtils.orderCodeFile(file21);
+        
+        System.out.println(mbMap.get("힐"));
+    }
+
+    /**
+     * 編碼碼表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月4日上午9:38:15
+     * @param file
+     *            詞組碼表：諺文+空格+詞組
+     * @param mbMap
+     *            碼表：諺文單字-英文編碼列表
+     * @return
+     */
+    private static Set<String> encodeMbfile(String file, Map<String, List<String>> mbMap) {
+        LinkedHashSet<String> res = new LinkedHashSet<String>();
+        outerFor: for (String str : IOUtils.readLines(file)) {
+            if (str.contains(" ")) {
+                String[] part = str.split(" ");
+                char[] chas = part[0].toCharArray();
+                // 所有可能的編碼
+                List<String> encodes = null;
+                for (Character cha : chas) {
+                    List<String> codes = mbMap.get(cha.toString());
+                    if (null == codes || codes.isEmpty()) {
+                        System.out.println("編碼沒有：" + cha);
+                        continue outerFor;
+                    }
+                    if (null == encodes) {
+                        encodes = new ArrayList<String>(codes);
+                    } else {
+                        List<String> encodes2 = new ArrayList<String>();
+                        for (String suffix : codes) {
+                            for (String enc : encodes) {
+                                encodes2.add(enc + suffix);
+                            }
+                        }
+                        encodes = encodes2;
+                    }
+                }
+                if (null != encodes && !encodes.isEmpty()) {
+                    for (String enc : encodes) {
+                        String line1 = enc + " " + part[0];
+                        String line2 = enc + " " + part[1];
+                        if (!res.contains(line1)) {
+                            res.add(line1);
+                        }
+                        if (!res.contains(line2)) {
+                            res.add(line2);
+                        }
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 生成所有單字的碼表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月4日上午9:16:47
+     * @throws Exception
+     */
+    private static void makeSingleCharMb() throws Exception {
+        String file = mbsBaseDir + "韓文漢字單字的碼表.txt";
+        String fileOri = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
+        List<String> listOri = IOUtils.readLines(fileOri);
+        List<String> res = new ArrayList<String>();
+        for (String str : listOri) {
+            if (str.contains(" ")) {
+                String[] part = str.split(" ");
+                if (part[0].length() == 1 && part[1].length() == 1) {
+                    res.add(str);
+                }
+            }
+        }
+        if (!res.isEmpty()) {
+            IOUtils.writeFile(file, res);
+            IOUtils.uniqueCodeFile(file);
+            IOUtils.orderCodeFile(file);
+        }
+    }
+
+    /**
+     * 韓文漢字詞組碼表的整合
+     * 
+     * @author fszhouzz@qq.com
+     * @throws Exception
+     * @time 2018年1月4日上午9:12:19
+     */
+    private static void makePraseAllInOne() throws Exception {
+        String file1 = mbsBaseDir + "标准韩国语词典2.txt";
+        String file2 = mbsBaseDir + "韩文汉字词典2.txt";
+        String file3 = mbsBaseDir + "韩语常用汉字对照2.txt";
+        String fileAll = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
+
+        List<String> list1 = IOUtils.readLines(file1);
+        List<String> list2 = IOUtils.readLines(file2);
+        List<String> list3 = IOUtils.readLines(file3);
+
+        List<String> listAll = new ArrayList<String>();
+        listAll.addAll(list1);
+        listAll.addAll(list2);
+        listAll.addAll(list3);
+
+        IOUtils.writeFile(fileAll, listAll);
+        IOUtils.uniqueCodeFile(fileAll);
+        IOUtils.orderCodeFile(fileAll);
     }
 
     /**
@@ -38,7 +199,7 @@ public class HanGulHanjaText {
      * @param biaozhunHanguoyu
      * @throws Exception
      */
-    private static void writeBiaozhunHanguoyu(List<String> list) throws Exception {
+    private static void writeBiaozhunHanguoyu2(List<String> list) throws Exception {
         String file = mbsBaseDir + "标准韩国语词典2.txt";
         IOUtils.writeFile(file, list);
         IOUtils.uniqueCodeFile(file);
