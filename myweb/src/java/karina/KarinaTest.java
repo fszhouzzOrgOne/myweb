@@ -23,14 +23,33 @@ public class KarinaTest {
 
     private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
-    // か行、さ行、た行、ぱ行前可能有促音。
-
     public static void main(String[] args) {
         List<String> dictKanji = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
         for (String ji : dictKanji) {
         }
 
         // printAllKarina();
+
+        String str = "ほったてごや";
+        List<String> ends = encodeRomaji(str);
+        System.out.println(ends);
+    }
+
+    /**
+     * 生成對應假名的羅馬字編碼
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月5日下午2:10:36
+     * @param str
+     * @return
+     */
+    private static List<String> encodeRomaji(String str) {
+        // か行、さ行、た行、ぱ行前可能有促音。
+        String tsuPtn = ".+ッ|っ.+";
+        if (str.matches(tsuPtn)) {
+            str = str.replaceAll("", "");
+        }
+        return null;
     }
 
     /**
