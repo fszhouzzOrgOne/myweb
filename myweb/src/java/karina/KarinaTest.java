@@ -40,15 +40,33 @@ public class KarinaTest {
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月5日下午2:10:36
+     * @param parm
+     *            假名串
+     * @return
+     */
+    private static List<String> encodeRomaji(String parm) {
+        String hiraStr = parm;
+        if (hiraStr.matches("[ァ-ヾ]+")) {
+            hiraStr = katakana2Hiragana(hiraStr);
+        }
+
+        // か行、さ行、た行、ぱ行前可能有促音。
+        String tsuPtn = ".+ッ|っ.+";
+        if (hiraStr.matches(tsuPtn)) {
+            hiraStr = hiraStr.replaceAll("", "");
+        }
+        return null;
+    }
+
+    /**
+     * 片假名轉成平假名
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月5日下午4:11:03
      * @param str
      * @return
      */
-    private static List<String> encodeRomaji(String str) {
-        // か行、さ行、た行、ぱ行前可能有促音。
-        String tsuPtn = ".+ッ|っ.+";
-        if (str.matches(tsuPtn)) {
-            str = str.replaceAll("", "");
-        }
+    private static String katakana2Hiragana(String str) {
         return null;
     }
 
