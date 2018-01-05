@@ -35,7 +35,7 @@ public class KarinaTest {
             res.addAll(one);
         }
 
-        String file = mbsBaseDir + "新日漢大辭典羅馬字編碼結果.txt";
+        String file = mbsBaseDir + "新日漢大辭典純漢字詞編碼.txt";
         IOUtils.writeFile(file, res);
         IOUtils.uniqueCodeFile(file);
         IOUtils.orderCodeFile(file);
@@ -47,7 +47,7 @@ public class KarinaTest {
                 resSin.add(ji);
             }
         }
-        String fileSin = mbsBaseDir + "新日漢大辭典羅馬字編碼結果-單字.txt";
+        String fileSin = mbsBaseDir + "新日漢大辭典純漢字詞編碼-單字.txt";
         IOUtils.writeFile(fileSin, resSin);
         IOUtils.uniqueCodeFile(fileSin);
         IOUtils.orderCodeFile(fileSin);
