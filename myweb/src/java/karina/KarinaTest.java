@@ -23,10 +23,197 @@ public class KarinaTest {
             "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖゝゞ",
             "ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヽヾ" };
 
+    /** 平假名列表 */
     private static List<String> hiraganaList = new ArrayList<String>();
+    /** 片假名列表 */
     private static List<String> katakanaList = new ArrayList<String>();
+    /** 假名和羅馬字的映射，注意さ行和ざ行 */
+    private static Map<String, String> karinaRomaMap = new HashMap<String, String>();
+    /** 羅馬字兼容拼法的映射 */
+    private static Map<String, String> romaCompatMap = new HashMap<String, String>();
 
     static {
+        karinaRomaMap.put("ぁ", "a");
+        karinaRomaMap.put("ァ", "a");
+        karinaRomaMap.put("あ", "a");
+        karinaRomaMap.put("ア", "a");
+        karinaRomaMap.put("ぃ", "i");
+        karinaRomaMap.put("ィ", "i");
+        karinaRomaMap.put("い", "i");
+        karinaRomaMap.put("イ", "i");
+        karinaRomaMap.put("ぅ", "u");
+        karinaRomaMap.put("ゥ", "u");
+        karinaRomaMap.put("う", "u");
+        karinaRomaMap.put("ウ", "u");
+        karinaRomaMap.put("ぇ", "e");
+        karinaRomaMap.put("ェ", "e");
+        karinaRomaMap.put("え", "e");
+        karinaRomaMap.put("エ", "e");
+        karinaRomaMap.put("ぉ", "o");
+        karinaRomaMap.put("ォ", "o");
+        karinaRomaMap.put("お", "o");
+        karinaRomaMap.put("オ", "o");
+        karinaRomaMap.put("か", "ka");
+        karinaRomaMap.put("カ", "ka");
+        karinaRomaMap.put("が", "ga");
+        karinaRomaMap.put("ガ", "ga");
+        karinaRomaMap.put("き", "ki");
+        karinaRomaMap.put("キ", "ki");
+        karinaRomaMap.put("ぎ", "gi");
+        karinaRomaMap.put("ギ", "gi");
+        karinaRomaMap.put("く", "ku");
+        karinaRomaMap.put("ク", "ku");
+        karinaRomaMap.put("ぐ", "gu");
+        karinaRomaMap.put("グ", "gu");
+        karinaRomaMap.put("け", "ke");
+        karinaRomaMap.put("ケ", "ke");
+        karinaRomaMap.put("げ", "ge");
+        karinaRomaMap.put("ゲ", "ge");
+        karinaRomaMap.put("こ", "ko");
+        karinaRomaMap.put("コ", "ko");
+        karinaRomaMap.put("ご", "go");
+        karinaRomaMap.put("ゴ", "go");
+        karinaRomaMap.put("さ", "sa");
+        karinaRomaMap.put("サ", "sa");
+        karinaRomaMap.put("ざ", "za");
+        karinaRomaMap.put("ザ", "za");
+        karinaRomaMap.put("し", "si");
+        karinaRomaMap.put("シ", "si");
+        karinaRomaMap.put("じ", "zi");
+        karinaRomaMap.put("ジ", "zi");
+        karinaRomaMap.put("す", "su");
+        karinaRomaMap.put("ス", "su");
+        karinaRomaMap.put("ず", "zu");
+        karinaRomaMap.put("ズ", "zu");
+        karinaRomaMap.put("せ", "se");
+        karinaRomaMap.put("セ", "se");
+        karinaRomaMap.put("ぜ", "ze");
+        karinaRomaMap.put("ゼ", "ze");
+        karinaRomaMap.put("そ", "so");
+        karinaRomaMap.put("ソ", "so");
+        karinaRomaMap.put("ぞ", "zo");
+        karinaRomaMap.put("ゾ", "zo");
+        karinaRomaMap.put("た", "ta");
+        karinaRomaMap.put("タ", "ta");
+        karinaRomaMap.put("だ", "da");
+        karinaRomaMap.put("ダ", "da");
+        karinaRomaMap.put("ち", "ti");
+        karinaRomaMap.put("チ", "ti");
+        karinaRomaMap.put("ぢ", "di");
+        karinaRomaMap.put("ヂ", "di");
+        karinaRomaMap.put("っ", "tu");
+        karinaRomaMap.put("ッ", "tu");
+        karinaRomaMap.put("つ", "tu");
+        karinaRomaMap.put("ツ", "tu");
+        karinaRomaMap.put("づ", "du");
+        karinaRomaMap.put("ヅ", "du");
+        karinaRomaMap.put("て", "te");
+        karinaRomaMap.put("テ", "te");
+        karinaRomaMap.put("で", "de");
+        karinaRomaMap.put("デ", "de");
+        karinaRomaMap.put("と", "to");
+        karinaRomaMap.put("ト", "to");
+        karinaRomaMap.put("ど", "do");
+        karinaRomaMap.put("ド", "do");
+        karinaRomaMap.put("な", "na");
+        karinaRomaMap.put("ナ", "na");
+        karinaRomaMap.put("に", "ni");
+        karinaRomaMap.put("ニ", "ni");
+        karinaRomaMap.put("ぬ", "nu");
+        karinaRomaMap.put("ヌ", "nu");
+        karinaRomaMap.put("ね", "ne");
+        karinaRomaMap.put("ネ", "ne");
+        karinaRomaMap.put("の", "no");
+        karinaRomaMap.put("ノ", "no");
+        karinaRomaMap.put("は", "ha");
+        karinaRomaMap.put("ハ", "ha");
+        karinaRomaMap.put("ば", "ba");
+        karinaRomaMap.put("バ", "ba");
+        karinaRomaMap.put("ぱ", "pa");
+        karinaRomaMap.put("パ", "pa");
+        karinaRomaMap.put("ひ", "hi");
+        karinaRomaMap.put("ヒ", "hi");
+        karinaRomaMap.put("び", "bi");
+        karinaRomaMap.put("ビ", "bi");
+        karinaRomaMap.put("ぴ", "pi");
+        karinaRomaMap.put("ピ", "pi");
+        karinaRomaMap.put("ふ", "hu");
+        karinaRomaMap.put("フ", "hu");
+        karinaRomaMap.put("ぶ", "bu");
+        karinaRomaMap.put("ブ", "bu");
+        karinaRomaMap.put("ぷ", "pu");
+        karinaRomaMap.put("プ", "pu");
+        karinaRomaMap.put("へ", "he");
+        karinaRomaMap.put("ヘ", "he");
+        karinaRomaMap.put("べ", "be");
+        karinaRomaMap.put("ベ", "be");
+        karinaRomaMap.put("ぺ", "pe");
+        karinaRomaMap.put("ペ", "pe");
+        karinaRomaMap.put("ほ", "ho");
+        karinaRomaMap.put("ホ", "ho");
+        karinaRomaMap.put("ぼ", "bo");
+        karinaRomaMap.put("ボ", "bo");
+        karinaRomaMap.put("ぽ", "po");
+        karinaRomaMap.put("ポ", "po");
+        karinaRomaMap.put("ま", "ma");
+        karinaRomaMap.put("マ", "ma");
+        karinaRomaMap.put("み", "mi");
+        karinaRomaMap.put("ミ", "mi");
+        karinaRomaMap.put("む", "mu");
+        karinaRomaMap.put("ム", "mu");
+        karinaRomaMap.put("め", "me");
+        karinaRomaMap.put("メ", "me");
+        karinaRomaMap.put("も", "mo");
+        karinaRomaMap.put("モ", "mo");
+        karinaRomaMap.put("ゃ", "ya");
+        karinaRomaMap.put("ャ", "ya");
+        karinaRomaMap.put("や", "ya");
+        karinaRomaMap.put("ヤ", "ya");
+        karinaRomaMap.put("ゅ", "yu");
+        karinaRomaMap.put("ュ", "yu");
+        karinaRomaMap.put("ゆ", "yu");
+        karinaRomaMap.put("ユ", "yu");
+        karinaRomaMap.put("ょ", "yo");
+        karinaRomaMap.put("ョ", "yo");
+        karinaRomaMap.put("よ", "yo");
+        karinaRomaMap.put("ヨ", "yo");
+        karinaRomaMap.put("ら", "ra");
+        karinaRomaMap.put("ラ", "ra");
+        karinaRomaMap.put("り", "ri");
+        karinaRomaMap.put("リ", "ri");
+        karinaRomaMap.put("る", "ru");
+        karinaRomaMap.put("ル", "ru");
+        karinaRomaMap.put("れ", "re");
+        karinaRomaMap.put("レ", "re");
+        karinaRomaMap.put("ろ", "ro");
+        karinaRomaMap.put("ロ", "ro");
+        karinaRomaMap.put("ゎ", "wa");
+        karinaRomaMap.put("ヮ", "wa");
+        karinaRomaMap.put("わ", "wa");
+        karinaRomaMap.put("ワ", "wa");
+        karinaRomaMap.put("ゐ", "wi");
+        karinaRomaMap.put("ヰ", "wi");
+        karinaRomaMap.put("ゑ", "we");
+        karinaRomaMap.put("ヱ", "we");
+        karinaRomaMap.put("を", "wo");
+        karinaRomaMap.put("ヲ", "wo");
+        karinaRomaMap.put("ん", "n");
+        karinaRomaMap.put("ン", "n");
+        karinaRomaMap.put("ヴ", "v");
+        karinaRomaMap.put("ヵ", "ka");
+        karinaRomaMap.put("ヶ", "ke");
+
+        romaCompatMap.put("si", "shi");
+        romaCompatMap.put("zi", "ji");
+        romaCompatMap.put("ti", "chi");
+        romaCompatMap.put("tu", "tsu");
+        romaCompatMap.put("di", "ji");
+        romaCompatMap.put("du", "zu");
+        romaCompatMap.put("sy", "shy-sh");
+        romaCompatMap.put("ty", "chy-ch");
+        romaCompatMap.put("zy", "jy-j");
+        romaCompatMap.put("dy", "jy-j");
+
         char[] hiraganas = karinas[0].toCharArray();
         char[] katakanas = karinas[1].toCharArray();
         for (Character cha : hiraganas) {
@@ -42,8 +229,7 @@ public class KarinaTest {
     public static void main(String[] args) {
         List<String> dictKanji = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
         for (String ji : dictKanji) {
-            String part[] = ji.split(" ");
-            System.out.println(part[0] + " " + encodeRomaji(part[0]));
+            System.out.println(encodeRomaji(ji));
         }
     }
 
@@ -52,21 +238,33 @@ public class KarinaTest {
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月5日下午2:10:36
-     * @param parm
-     *            假名串
+     * @param parms
+     *            假名+空格+漢字串
      * @return
      */
-    private static String encodeRomaji(String parm) {
-        // 全是平假名
-        boolean isAllkatakana = parm.matches("[ァ-ヾ]+");
-        String hiraStr = katakana2Hiragana(parm);
+    private static List<String> encodeRomaji(String parms) {
+        String karina = null;
+        String kanji = null;
+        if (parms.contains(" ")) {
+            String[] part = parms.split(" ");
+            karina = part[0];
+            kanji = part[1];
+        } else {
+            karina = parms;
+        }
+        if (null == karina) {
+            return null;
+        }
+
+        // 全是片假名
+        boolean isAllkatakana = karina.matches("[ァ-ヾ]+");
+        String hiraStr = katakana2Hiragana(karina);
 
         // か行、さ行、た行、ぱ行前可能有促音。
-        String tsuPtn = ".+(ッ|っ.)+";
         String roma = "";
         for (int i = 0; i < hiraStr.length(); i++) {
             String st = ((Character) hiraStr.charAt(i)).toString();
-            String roma1 = getgetRomajiForOneKarina(st);
+            String roma1 = karinaRomaMap.get(st);
             if ("っ".equals(st)) {
                 if (hiraStr.length() > i + 1) {
                     roma1 = getRomaji4PreTsu(((Character) hiraStr.charAt(i + 1)).toString());
@@ -75,13 +273,40 @@ public class KarinaTest {
                 String next = ((Character) hiraStr.charAt(i + 1)).toString();
                 if ("ゃゅょャュョ".contains(next)) {
                     roma1 = roma1.substring(0, roma1.length() - 1);
-                    roma1 += getgetRomajiForOneKarina(next);
+                    roma1 += karinaRomaMap.get(next);
                     i++;
                 }
             }
             roma += roma1;
         }
-        return roma;
+        // 一些兼容拼法
+        List<String> codes = new ArrayList<String>();
+        codes.add(roma);
+        for (String key : romaCompatMap.keySet()) {
+            if (roma.contains(key)) {
+                List<String> codes2 = new ArrayList<String>();
+                codes2.addAll(codes);
+                String[] compats = romaCompatMap.get(key).split("-");
+                for (String compat : compats) {
+                    for (String code : codes) {
+                        codes2.add(code.replaceAll(key, compat));
+                    }
+                }
+                codes = codes2;
+            }
+        }
+
+        List<String> res = new ArrayList<String>();
+        for (String code : codes) {
+            res.add(code + " " + karina);
+            if (isAllkatakana) {
+                res.add(code + " " + hiraStr);
+            }
+            if (null != kanji) {
+                res.add(code + " " + kanji);
+            }
+        }
+        return res;
     }
 
     /**
@@ -168,6 +393,7 @@ public class KarinaTest {
      * @author fszhouzz@qq.com
      * @time 2018年1月5日上午11:46:57
      */
+    @SuppressWarnings("unused")
     private static void printAllKarina() {
         String all = "";
         List<String> excepts = new ArrayList<String>();
@@ -183,187 +409,5 @@ public class KarinaTest {
         }
         System.out.println(all);
 
-    }
-
-    /**
-     * 按一個假名取得羅馬字
-     * 
-     * @author fszhouzz@qq.com
-     * @time 2018年1月5日 下午11:08:31
-     * @param kana
-     * @return
-     */
-    private static String getgetRomajiForOneKarina(String kana) {
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("ぁ", "a");
-        map.put("ァ", "a");
-        map.put("あ", "a");
-        map.put("ア", "a");
-        map.put("ぃ", "i");
-        map.put("ィ", "i");
-        map.put("い", "i");
-        map.put("イ", "i");
-        map.put("ぅ", "u");
-        map.put("ゥ", "u");
-        map.put("う", "u");
-        map.put("ウ", "u");
-        map.put("ぇ", "e");
-        map.put("ェ", "e");
-        map.put("え", "e");
-        map.put("エ", "e");
-        map.put("ぉ", "o");
-        map.put("ォ", "o");
-        map.put("お", "o");
-        map.put("オ", "o");
-        map.put("か", "ka");
-        map.put("カ", "ka");
-        map.put("が", "ga");
-        map.put("ガ", "ga");
-        map.put("き", "ki");
-        map.put("キ", "ki");
-        map.put("ぎ", "gi");
-        map.put("ギ", "gi");
-        map.put("く", "ku");
-        map.put("ク", "ku");
-        map.put("ぐ", "gu");
-        map.put("グ", "gu");
-        map.put("け", "ke");
-        map.put("ケ", "ke");
-        map.put("げ", "ge");
-        map.put("ゲ", "ge");
-        map.put("こ", "ko");
-        map.put("コ", "ko");
-        map.put("ご", "go");
-        map.put("ゴ", "go");
-        map.put("さ", "sa");
-        map.put("サ", "sa");
-        map.put("ざ", "za");
-        map.put("ザ", "za");
-        map.put("し", "si");
-        map.put("シ", "si");
-        map.put("じ", "zi");
-        map.put("ジ", "zi");
-        map.put("す", "su");
-        map.put("ス", "su");
-        map.put("ず", "zu");
-        map.put("ズ", "zu");
-        map.put("せ", "se");
-        map.put("セ", "se");
-        map.put("ぜ", "ze");
-        map.put("ゼ", "ze");
-        map.put("そ", "so");
-        map.put("ソ", "so");
-        map.put("ぞ", "zo");
-        map.put("ゾ", "zo");
-        map.put("た", "ta");
-        map.put("タ", "ta");
-        map.put("だ", "da");
-        map.put("ダ", "da");
-        map.put("ち", "ti");
-        map.put("チ", "ti");
-        map.put("ぢ", "di");
-        map.put("ヂ", "di");
-        map.put("っ", "tu");
-        map.put("ッ", "tu");
-        map.put("つ", "tu");
-        map.put("ツ", "tu");
-        map.put("づ", "zu");
-        map.put("ヅ", "zu");
-        map.put("て", "te");
-        map.put("テ", "te");
-        map.put("で", "de");
-        map.put("デ", "de");
-        map.put("と", "to");
-        map.put("ト", "to");
-        map.put("ど", "do");
-        map.put("ド", "do");
-        map.put("な", "na");
-        map.put("ナ", "na");
-        map.put("に", "ni");
-        map.put("ニ", "ni");
-        map.put("ぬ", "nu");
-        map.put("ヌ", "nu");
-        map.put("ね", "ne");
-        map.put("ネ", "ne");
-        map.put("の", "no");
-        map.put("ノ", "no");
-        map.put("は", "ha");
-        map.put("ハ", "ha");
-        map.put("ば", "ba");
-        map.put("バ", "ba");
-        map.put("ぱ", "pa");
-        map.put("パ", "pa");
-        map.put("ひ", "hi");
-        map.put("ヒ", "hi");
-        map.put("び", "bi");
-        map.put("ビ", "bi");
-        map.put("ぴ", "pi");
-        map.put("ピ", "pi");
-        map.put("ふ", "hu");
-        map.put("フ", "hu");
-        map.put("ぶ", "bu");
-        map.put("ブ", "bu");
-        map.put("ぷ", "pu");
-        map.put("プ", "pu");
-        map.put("へ", "he");
-        map.put("ヘ", "he");
-        map.put("べ", "be");
-        map.put("ベ", "be");
-        map.put("ぺ", "pe");
-        map.put("ペ", "pe");
-        map.put("ほ", "ho");
-        map.put("ホ", "ho");
-        map.put("ぼ", "bo");
-        map.put("ボ", "bo");
-        map.put("ぽ", "po");
-        map.put("ポ", "po");
-        map.put("ま", "ma");
-        map.put("マ", "ma");
-        map.put("み", "mi");
-        map.put("ミ", "mi");
-        map.put("む", "mu");
-        map.put("ム", "mu");
-        map.put("め", "me");
-        map.put("メ", "me");
-        map.put("も", "mo");
-        map.put("モ", "mo");
-        map.put("ゃ", "ya");
-        map.put("ャ", "ya");
-        map.put("や", "ya");
-        map.put("ヤ", "ya");
-        map.put("ゅ", "yu");
-        map.put("ュ", "yu");
-        map.put("ゆ", "yu");
-        map.put("ユ", "yu");
-        map.put("ょ", "yo");
-        map.put("ョ", "yo");
-        map.put("よ", "yo");
-        map.put("ヨ", "yo");
-        map.put("ら", "ra");
-        map.put("ラ", "ra");
-        map.put("り", "ri");
-        map.put("リ", "ri");
-        map.put("る", "ru");
-        map.put("ル", "ru");
-        map.put("れ", "re");
-        map.put("レ", "re");
-        map.put("ろ", "ro");
-        map.put("ロ", "ro");
-        map.put("ゎ", "wa");
-        map.put("ヮ", "wa");
-        map.put("わ", "wa");
-        map.put("ワ", "wa");
-        map.put("ゐ", "wi");
-        map.put("ヰ", "wi");
-        map.put("ゑ", "we");
-        map.put("ヱ", "we");
-        map.put("を", "wo");
-        map.put("ヲ", "wo");
-        map.put("ん", "n");
-        map.put("ン", "n");
-        map.put("ヴ", "v");
-        map.put("ヵ", "ka");
-        map.put("ヶ", "ke");
-        return map.get(kana);
     }
 }
