@@ -42732,10 +42732,6 @@ kadenshi 価電子
 kadenshi かでんし
 kadensi 価電子
 kadensi かでんし
-kadeusesshokushi 可動接触子
-kadeusesshokushi かでうせっしょくし
-kadeusessyokusi 可動接触子
-kadeusessyokusi かでうせっしょくし
 kado 廉
 kado 角
 kado 門
@@ -42790,6 +42786,10 @@ kadouritsu 稼働率
 kadouritsu かどうりつ
 kadouritu 稼働率
 kadouritu かどうりつ
+kadousesshokushi 可動接触子
+kadousesshokushi かどうせっしょくし
+kadousessyokusi 可動接触子
+kadousessyokusi かどうせっしょくし
 kadousettou 可動接頭
 kadousettou かどうせっとう
 kadoushi 可動子
