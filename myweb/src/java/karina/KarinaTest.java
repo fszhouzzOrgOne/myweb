@@ -2,8 +2,10 @@ package karina;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import cangjie.java.util.IOUtils;
 import unicode.UnicodeHanziUtil;
@@ -15,6 +17,50 @@ import unicode.UnicodeHanziUtil;
  * @time 2018年1月4日下午2:24:21
  */
 public class KarinaTest {
+
+    private static String mbsBaseDir = "src\\java\\karina\\mb\\";
+
+    public static void main(String[] args) throws Exception {
+        List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
+        List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
+        List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt");
+
+        Set<String> dict = new HashSet<String>();
+        dict.addAll(dictKanji1);
+        dict.addAll(dictKanji2);
+        dict.addAll(dictKarina);
+        List<String> res = new ArrayList<String>();
+        for (String ji : dict) {
+            List<String> one = encodeRomaji(ji);
+            res.addAll(one);
+        }
+
+        String file = mbsBaseDir + "新日漢大辭典羅馬字編碼結果.txt";
+        IOUtils.writeFile(file, res);
+        IOUtils.uniqueCodeFile(file);
+        IOUtils.orderCodeFile(file);
+
+        List<String> resSin = new ArrayList<String>();
+        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1}$";
+        for (String ji : res) {
+            if (ji.matches(sinPtn)) {
+                resSin.add(ji);
+            }
+        }
+        String fileSin = mbsBaseDir + "新日漢大辭典羅馬字編碼結果-單字.txt";
+        IOUtils.writeFile(fileSin, resSin);
+        IOUtils.uniqueCodeFile(fileSin);
+        IOUtils.orderCodeFile(fileSin);
+
+        Set<String> cntSet = new HashSet<String>();
+        for (String ji : res) {
+            String suffix = ji.split(" ")[1];
+            if (!cntSet.contains(suffix)) {
+                cntSet.add(suffix);
+            }
+        }
+        System.out.println("cntSet.size(): " + cntSet.size());
+    }
 
     /** 片假名的長音 */
     private static String changyin = "ー";
@@ -29,7 +75,7 @@ public class KarinaTest {
     private static List<String> katakanaList = new ArrayList<String>();
     /** 假名和羅馬字的映射，注意さ行和ざ行 */
     private static Map<String, String> karinaRomaMap = new HashMap<String, String>();
-    /** 羅馬字兼容拼法的映射 */
+    /** 羅馬字兼容拼法的映射，只用兼容常用寫法 */
     private static Map<String, String> romaCompatMap = new HashMap<String, String>();
 
     static {
@@ -203,16 +249,17 @@ public class KarinaTest {
         karinaRomaMap.put("ヵ", "ka");
         karinaRomaMap.put("ヶ", "ke");
 
+        // 不兼容了
         romaCompatMap.put("si", "shi");
         romaCompatMap.put("zi", "ji");
         romaCompatMap.put("ti", "chi");
         romaCompatMap.put("tu", "tsu");
         romaCompatMap.put("di", "ji");
         romaCompatMap.put("du", "zu");
-        romaCompatMap.put("sy", "shy-sh");
-        romaCompatMap.put("ty", "chy-ch");
-        romaCompatMap.put("zy", "jy-j");
-        romaCompatMap.put("dy", "jy-j");
+        romaCompatMap.put("sy", "sh"); // -shy
+        romaCompatMap.put("ty", "ch"); // -chy
+        romaCompatMap.put("zy", "jy"); // -j
+        romaCompatMap.put("dy", "jy"); // -j
 
         char[] hiraganas = karinas[0].toCharArray();
         char[] katakanas = karinas[1].toCharArray();
@@ -221,15 +268,6 @@ public class KarinaTest {
         }
         for (Character cha : katakanas) {
             katakanaList.add(cha.toString());
-        }
-    }
-
-    private static String mbsBaseDir = "src\\java\\karina\\mb\\";
-
-    public static void main(String[] args) {
-        List<String> dictKanji = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
-        for (String ji : dictKanji) {
-            System.out.println(encodeRomaji(ji));
         }
     }
 
@@ -279,22 +317,27 @@ public class KarinaTest {
             }
             roma += roma1;
         }
-        // 一些兼容拼法
+        // 兼容拼法
         List<String> codes = new ArrayList<String>();
         codes.add(roma);
-        for (String key : romaCompatMap.keySet()) {
-            if (roma.contains(key)) {
-                List<String> codes2 = new ArrayList<String>();
-                codes2.addAll(codes);
-                String[] compats = romaCompatMap.get(key).split("-");
-                for (String compat : compats) {
-                    for (String code : codes) {
-                        codes2.add(code.replaceAll(key, compat));
+        List<String> codes2 = new ArrayList<String>();
+        for (String code : codes) {
+            String tempCode = code;
+            boolean compated = false;
+            for (String key : romaCompatMap.keySet()) {
+                if (roma.contains(key)) {
+                    if (!compated) {
+                        compated = true;
                     }
+                    String compat = romaCompatMap.get(key);
+                    tempCode = tempCode.replaceAll(key, compat);
                 }
-                codes = codes2;
+            }
+            if (compated) {
+                codes2.add(tempCode);
             }
         }
+        codes.addAll(codes2);
 
         List<String> res = new ArrayList<String>();
         for (String code : codes) {
