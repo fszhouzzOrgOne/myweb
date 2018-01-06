@@ -24999,7 +24999,6 @@ hou 苞
 hou 鋒
 hou 鳳
 hou ほう
-hou ホう
 houan 法案
 houan ほうあん
 houantaku 方安沢

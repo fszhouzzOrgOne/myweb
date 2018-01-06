@@ -30411,7 +30411,6 @@ hou 鋒
 hou 飽
 hou 鳳
 hou ほう
-hou ホう
 hou ホウ
 houan 法案
 houan ほうあん
