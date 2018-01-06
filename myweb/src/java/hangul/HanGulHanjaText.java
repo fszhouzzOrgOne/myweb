@@ -2,6 +2,7 @@ package hangul;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -148,17 +149,23 @@ public class HanGulHanjaText {
         String file = mbsBaseDir + "韓文漢字單字的碼表.txt";
         String fileOri = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
         List<String> listOri = IOUtils.readLines(fileOri);
-        List<String> res = new ArrayList<String>();
-        for (String str : listOri) {
-            if (str.contains(" ")) {
-                String[] part = str.split(" ");
-                if (part[0].length() == 1 && part[1].length() == 1) {
-                    res.add(str);
-                }
+        
+        Set<String> resSinCodes = new HashSet<String>();
+        List<String> resSins = new ArrayList<String>();
+        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1}$";
+        for (String ji : listOri) {
+            if (ji.matches(sinPtn)) {
+                resSinCodes.add(ji.split(" ")[0]);
             }
         }
-        if (!res.isEmpty()) {
-            IOUtils.writeFile(file, res);
+        for (String ji : listOri) {
+            if (resSinCodes.contains(ji.split(" ")[0])) {
+                resSins.add(ji);
+            }
+        }
+        
+        if (!resSins.isEmpty()) {
+            IOUtils.writeFile(file, resSins);
             IOUtils.uniqueCodeFile(file);
             IOUtils.orderCodeFile(file);
         }
