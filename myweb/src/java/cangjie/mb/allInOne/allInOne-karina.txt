@@ -12997,6 +12997,9 @@ chuugen 中元
 chuugen ちゅうげん
 chuugenkei 中原型
 chuugenkei ちゅうげんけい
+chuugoku 中国
+chuugoku 中國
+chuugoku ちゅうごく
 chuugoshi 中腰
 chuugoshi ちゅうごし
 chuuha 中波
@@ -75687,6 +75690,9 @@ tyuugen 中元
 tyuugen ちゅうげん
 tyuugenkei 中原型
 tyuugenkei ちゅうげんけい
+tyuugoku 中国
+tyuugoku 中國
+tyuugoku ちゅうごく
 tyuugosi 中腰
 tyuugosi ちゅうごし
 tyuuha 中波
