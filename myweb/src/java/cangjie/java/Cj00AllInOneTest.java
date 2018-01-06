@@ -31,11 +31,15 @@ public class Cj00AllInOneTest {
     public static String mb5more = mbsBaseDir + "cjmb" + File.separator + "cj5-more.txt";
     // 取用倉頡輸入法羣共享中的cj6-70000碼表等，並整合了雪齋團隊整理的碼表
     public static String mb6newDict = mbsBaseDir + "cjmb" + File.separator + "cj6-dict.txt";
-    
-//    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "cj6-8300.txt";
-//    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "cj6-13053.txt";
-//    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "cj6-20902.txt";
-//    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "cj6-70000.txt";
+
+    // public static String mb68000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj6-8300.txt";
+    // public static String mb610000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj6-13053.txt";
+    // public static String mb620000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj6-20902.txt";
+    // public static String mb670000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj6-70000.txt";
     public static String mb6more = mbsBaseDir + "cjmb" + File.separator + "cj6-more.txt";
     public static String mb6morePua = mbsBaseDir + "cjmb" + File.separator + "cj6-pua.txt";
     // 自製碼表
@@ -64,6 +68,7 @@ public class Cj00AllInOneTest {
     // 日文，自製碼表，並取維基上《日語常用漢字一覧表》中的字和詞，編碼後加入碼表中
     public static String mbnippon200 = mbsBaseDir + "karina-kana200.txt";
     public static String mbnipponKanji2000 = mbsBaseDir + "karina-kanji2000.txt";
+    public static String mbnipponKanjiMore = mbsBaseDir + "karina-moreKanji.txt";
     public static String mbnipponMoreSymbol = mbsBaseDir + "karina-moreSymbol.txt";
     public static String nihonAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-karina.txt";
 
@@ -146,7 +151,7 @@ public class Cj00AllInOneTest {
         genAllInOne("普語拼音", mbpinyin, pinyinallInOne, withHeaders);
 
         // 日文
-        String[] mbjapan = new String[] { mbnippon200, mbnipponKanji2000, mbnipponMoreSymbol };
+        String[] mbjapan = new String[] { mbnippon200, mbnipponKanji2000, mbnipponKanjiMore, mbnipponMoreSymbol };
         genAllInOne("日文假名", mbjapan, nihonAllInOne, withHeaders);
 
         // 韓文
@@ -182,10 +187,7 @@ public class Cj00AllInOneTest {
             genRawCjPhrases(phraseOriginFile, mb6phrase, mbfiles6);
         }
         // 生成allInOne文件6
-        String[] mbs6 = new String[] { mb6newDict, 
-                mb6more, 
-                mb6simParts400, mb6japkore200, 
-                mb6compat1000, mb6morePua, 
+        String[] mbs6 = new String[] { mb6newDict, mb6more, mb6simParts400, mb6japkore200, mb6compat1000, mb6morePua,
                 mb6morePhrase, mb6phrase };
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
