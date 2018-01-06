@@ -2551,6 +2551,8 @@ baikaihensuu 媒介変数
 baikaihensuu ばいかいへんすう
 baikoku 売国
 baikoku ばいこく
+baikokudo 売国奴
+baikokudo ばいこくど
 baikyaku 売却
 baikyaku ばいきゃく
 baikyuu 倍旧
@@ -3670,6 +3672,8 @@ bigaku 美学
 bigaku びがく
 bigi びぎ
 bigi 美技
+bihaku 美白
+bihaku びはく
 bihin 備品
 bihin びひん
 bihun 微粉
@@ -3921,6 +3925,8 @@ bishoubusokkouki 微小部測光器
 bishoubusokkouki びしょうぶそっこうき
 bishoujishin 微小地震
 bishoujishin びしょうじしん
+bishoujyo 美少女
+bishoujyo びしょうじょ
 bishoukesshoudo 微小結晶度
 bishoukesshoudo びしょうけっしょうど
 bishoukikougun 微小気孔群
@@ -3968,6 +3974,8 @@ bisyoukoudokei 微小硬度計
 bisyoukoudokei びしょうこうどけい
 bisyouzisin 微小地震
 bisyouzisin びしょうじしん
+bisyouzyo 美少女
+bisyouzyo びしょうじょ
 bisyu 美酒
 bisyu びしゅ
 bisyuu 美醜
@@ -7636,6 +7644,7 @@ chitensokudo 地点速度
 chitensokudo ちてんそくど
 chitsu 秩
 chitsu 窒
+chitsu 腟
 chitsu ちつ
 chitsu チツ
 chitsujyo 秩序
@@ -17621,6 +17630,7 @@ ge 下
 ge 夏
 ge 外
 ge 戯
+ge 戲
 ge 解
 geba げば
 geba 下馬
@@ -17712,6 +17722,7 @@ gekihen げきへん
 gekihengatahenkousei 激変型変光星
 gekihengatahenkousei げきへんがたへんこうせい
 gekijyou 劇場
+gekijyou 激情
 gekijyou げきじょう
 gekika 劇化
 gekika げきか
@@ -17772,6 +17783,7 @@ gekiyasu げきやす
 gekizou 激増
 gekizou げきぞう
 gekizyou 劇場
+gekizyou 激情
 gekizyou げきじょう
 gekkakusa 月角差
 gekkakusa げっかくさ
@@ -17781,6 +17793,7 @@ gekkei 月桂
 gekkei 月経
 gekkei げっけい
 gekkou 月光
+gekkou 激昂
 gekkou 激高
 gekkou げっこう
 gekkyuu 月給
@@ -21623,6 +21636,8 @@ haietsu 拝謁
 haietsu はいえつ
 haietu 拝謁
 haietu はいえつ
+haiga 胚芽
+haiga はいが
 haigai 排外
 haigai はいがい
 haigeki 排撃
@@ -21889,6 +21904,8 @@ hainouji 背嚢地
 hainouji はいのうじ
 hainouzi 背嚢地
 hainouzi はいのうじ
+hainyuu 胚乳
+hainyuu はいにゅう
 haioku 敗屋
 haioku はいおく
 hairan 排卵
@@ -21991,6 +22008,7 @@ haishaku はいしゃく
 haishi 廃止
 haishi はいし
 haishin 背信
+haishin 配信
 haishin はいしん
 haishinjyun 肺浸潤
 haishinjyun はいしんじゅん
@@ -22019,6 +22037,7 @@ haishutsukoutei はいしゅつこうてい
 haisi 廃止
 haisi はいし
 haisin 背信
+haisin 配信
 haisin はいしん
 haisinzyun 肺浸潤
 haisinzyun はいしんじゅん
@@ -22119,6 +22138,7 @@ haita はいた
 haitagenri 排他原理
 haitagenri はいたげんり
 haitai 敗退
+haitai 胚胎
 haitai はいたい
 haitatekironriwa 排他的論理和
 haitatekironriwa はいたてきろんりわ
@@ -23331,6 +23351,7 @@ hanmiti はんみち
 hanmoku 反目
 hanmoku はんもく
 hanmon 反問
+hanmon 煩悶
 hanmon はんもん
 hanmoto 版元
 hanmoto はんもと
@@ -25666,6 +25687,7 @@ hen 編
 hen 辺
 hen 返
 hen 遍
+hen 騙
 hen へん
 hen ヘん
 hen ヘン
@@ -25896,6 +25918,7 @@ henkakutyokkougyouretu 変格直交行列
 henkakutyokkougyouretu へんかくちょっこうぎょうれつ
 henkan 変換
 henkan 返還
+henkan 騙姦
 henkan へんかん
 henkanbosuu 変換母数
 henkanbosuu へんかんぼすう
@@ -25943,6 +25966,8 @@ henkeizyouken 変形条件
 henkeizyouken へんけいじょうけん
 henken 偏見
 henken へんけん
+henki 騙欺
+henki へんき
 henkigou 変記号
 henkigou へんきごう
 henkin 返金
@@ -26157,6 +26182,8 @@ henryuuki 変流機
 henryuuki へんりゅうき
 henryuukouseikaku 偏流校正角
 henryuukouseikaku へんりゅうこうせいかく
+hensa 騙詐
+hensa へんさ
 hensai 変災
 hensai 辺際
 hensai 返済
@@ -26254,6 +26281,7 @@ henshou 偏晶
 henshou 返照
 henshou へんしょう
 henshu 変種
+henshu 騙取
 henshu へんしゅ
 henshuu 偏執
 henshuu 編修
@@ -26356,6 +26384,7 @@ hensyou 偏晶
 hensyou 返照
 hensyou へんしょう
 hensyu 変種
+hensyu 騙取
 hensyu へんしゅ
 hensyuu 偏執
 hensyuu 編修
@@ -27113,6 +27142,7 @@ hijyuuryou ひじゅうりょう
 hijyuusenkouhou 比重選鉱法
 hijyuusenkouhou ひじゅうせんこうほう
 hika ひか
+hika 卑下
 hika 悲歌
 hika 皮下
 hikage 日影
@@ -28882,6 +28912,8 @@ hiwa 悲話
 hiwa 秘話
 hiwada 檜皮
 hiwada ひわだ
+hiwai 卑猥
+hiwai ひわい
 hiwari 日割
 hiwari ひわり
 hiwari 日割り
@@ -30714,6 +30746,7 @@ houjin 邦人
 houjin ほうじん
 houjyou 放生
 houjyou 方丈
+houjyou 方上
 houjyou 芳情
 houjyou ほうじょう
 houjyun 芳醇
@@ -31719,6 +31752,7 @@ houzousuiryoku 包蔵水力
 houzousuiryoku ほうぞうすいりょく
 houzyou 放生
 houzyou 方丈
+houzyou 方上
 houzyou 芳情
 houzyou ほうじょう
 houzyun 芳醇
@@ -36804,7 +36838,10 @@ ikuei いくえい
 ikuji 育児
 ikuji いくじ
 ikuji 意気地
+ikujima 生島
+ikujima いくじま
 ikun 偉勲
+ikun 囲裙
 ikun 遺訓
 ikun いくん
 ikusa 戦
@@ -36838,6 +36875,8 @@ ikutahanbai いくたはんばい
 ikuzi 育児
 ikuzi いくじ
 ikuzi 意気地
+ikuzima 生島
+ikuzima いくじま
 ikyoku 医局
 ikyoku 委曲
 ikyoku 異極
@@ -36926,6 +36965,7 @@ in 員
 in 因
 in 姻
 in 引
+in 淫
 in 院
 in 陰
 in 隠
@@ -37072,6 +37112,7 @@ inkoku 印刻
 inkoku いんこく
 inkou 印行
 inkou 咽喉
+inkou 淫尻
 inkou いんこう
 inkyo 隠居
 inkyo いんきょ
@@ -39189,6 +39230,7 @@ jihensuu じへんすう
 jihi じひ
 jihi 慈悲
 jihi 耳鼻
+jihi 自卑
 jihi 自費
 jihitsu 自筆
 jihitsu じひつ
@@ -39400,6 +39442,7 @@ jiken 時圈
 jiken じけん
 jiketsu 自決
 jiketsu じけつ
+jiki 喰
 jiki 直
 jiki じき
 jiki ジキ
@@ -41083,6 +41126,7 @@ jyouhen 条片
 jyouhen じょうへん
 jyouho 譲歩
 jyouho じょうほ
+jyouhou 上方
 jyouhou 乗法
 jyouhou 定法
 jyouhou 情報
@@ -46091,6 +46135,7 @@ kan 勘
 kan 勧
 kan 喚
 kan 堪
+kan 姦
 kan 完
 kan 官
 kan 寒
@@ -47990,6 +48035,7 @@ kasei 仮性
 kasei 加勢
 kasei 化成
 kasei 和声
+kasei 家政
 kasei 歌聖
 kasei 火勢
 kasei 火星
@@ -49010,6 +49056,8 @@ ke 快
 ke 怪
 ke 悔
 ke 懸
+ke 戯
+ke 戲
 ke 毛
 ke 気
 ke 華
@@ -50072,6 +50120,8 @@ kenbousi 絹紡糸
 kenbousi けんぼうし
 kenbousyou 健忘症
 kenbousyou けんぼうしょう
+kenbu 剣舞
+kenbu けんぶ
 kenbun 検分
 kenbun 見聞
 kenbun けんぶん
@@ -50163,6 +50213,8 @@ kendakuzyuugou 懸濁重合
 kendakuzyuugou けんだくじゅうごう
 kendenki 検電器
 kendenki けんでんき
+kendo 剣奴
+kendo けんど
 kendou 剣道
 kendou 厳道
 kendou けんどう
@@ -50218,6 +50270,8 @@ kenjyakuki けんじゃくき
 kenjyou 献上
 kenjyou 謙譲
 kenjyou けんじょう
+kenjyutsu 剣術
+kenjyutsu けんじゅつ
 kenjyuu 拳銃
 kenjyuu けんじゅう
 kenka 厳下
@@ -50659,6 +50713,8 @@ kenzyakuki けんじゃくき
 kenzyou 献上
 kenzyou 謙譲
 kenzyou けんじょう
+kenzyutu 剣術
+kenzyutu けんじゅつ
 kenzyuu 拳銃
 kenzyuu けんじゅう
 keori 毛織
@@ -51271,6 +51327,8 @@ ki 希
 ki 帰
 ki 幾
 ki 忌
+ki 戯
+ki 戲
 ki 揮
 ki 旗
 ki 既
@@ -55724,6 +55782,8 @@ kokubungaku 国文学
 kokubungaku こくぶんがく
 kokubyaku 黒白
 kokubyaku こくびゃく
+kokuchi 告知
+kokuchi こくち
 kokudaka 石高
 kokudaka こくだか
 kokuden 国電
@@ -55977,6 +56037,8 @@ kokutetsu 国鉄
 kokutetsu こくてつ
 kokutetu 国鉄
 kokutetu こくてつ
+kokuti 告知
+kokuti こくち
 kokuu 虚空
 kokuu こくう
 kokuun 国運
@@ -56440,6 +56502,8 @@ konzyou 紺青
 konzyou こんじょう
 konzyouki 混蒸気
 konzyouki こんじょうき
+koonna 小女
+koonna こおんな
 koori 氷
 koori こおり
 kooribako 氷箱
@@ -56488,6 +56552,8 @@ korou 故老
 korou ころう
 koryo 顧慮
 koryo こりょ
+kosai 巨細
+kosai こさい
 kosaku 小作
 kosaku こさく
 kosame 小雨
@@ -57009,6 +57075,7 @@ kou 坑
 kou 好
 kou 孔
 kou 孝
+kou 尻
 kou 工
 kou 巧
 kou 幸
@@ -58329,8 +58396,12 @@ koukiseikin 好気性菌
 koukiseikin こうきせいきん
 koukiseisaikin 好気性細菌
 koukiseisaikin こうきせいさいきん
+koukishin 好奇心
+koukishin こうきしん
 koukishori 好気処理
 koukishori こうきしょり
+koukisin 好奇心
+koukisin こうきしん
 koukisyori 好気処理
 koukisyori こうきしょり
 kouko 好個
@@ -60515,6 +60586,7 @@ ku 供
 ku 功
 ku 区
 ku 句
+ku 喰
 ku 宮
 ku 工
 ku 庫
@@ -60871,6 +60943,8 @@ kumogatazyougi 雲形定規
 kumogatazyougi くもがたじょうぎ
 kumoma 雲間
 kumoma くもま
+kumon 苦悶
+kumon くもん
 kumori 曇
 kumori 曇り
 kumori くもり
@@ -60884,6 +60958,7 @@ kumoyuki くもゆき
 kun 勲
 kun 君
 kun 薫
+kun 裙
 kun 訓
 kun くん
 kun くン
@@ -60929,6 +61004,8 @@ kunsyou 勲章
 kunsyou くんしょう
 kunsyu 君主
 kunsyu くんしゅ
+kuntai 裙帯
+kuntai くんたい
 kunten 訓点
 kunten くんてん
 kunwa 訓話
@@ -60936,6 +61013,8 @@ kunwa くんわ
 kunzi 訓示
 kunzi 訓辞
 kunzi くんじ
+kunzu 裙子
+kunzu くんず
 kuon 久遠
 kuon くおん
 kuppuku 屈服
@@ -62685,6 +62764,8 @@ kyomu 虚無
 kyomu きょむ
 kyonen 去年
 kyonen きょねん
+kyonyuu 巨乳
+kyonyuu きょにゅう
 kyoongen 虚音源
 kyoongen きょおんげん
 kyorai 去来
@@ -67919,6 +68000,8 @@ mokuhyou 目標
 mokuhyou もくひょう
 mokuji 目次
 mokuji もくじ
+mokujiki 木喰
+mokujiki もくじき
 mokumoku 黙黙
 mokumoku もくもく
 mokumou 木毛
@@ -67988,6 +68071,8 @@ mokuzen 目前
 mokuzen もくぜん
 mokuzi 目次
 mokuzi もくじ
+mokuziki 木喰
+mokuziki もくじき
 mokuzou 木造
 mokuzou もくぞう
 momen 木綿
@@ -68084,6 +68169,8 @@ monku 文句
 monku もんく
 monme 匁
 monme もんめ
+monmon 悶悶
+monmon もんもん
 monmou 文盲
 monmou もんもう
 mono 物
@@ -68134,6 +68221,7 @@ monsei 門生
 monsei もんせい
 monseki 門責
 monseki もんせき
+monshi 悶死
 monshi 門歯
 monshi もんし
 monshirochou 紋白蝶
@@ -68142,6 +68230,7 @@ monshou 紋章
 monshou もんしょう
 monshu 文殊
 monshu もんしゅ
+monsi 悶死
 monsi 門歯
 monsi もんし
 monsirotyou 紋白蝶
@@ -68170,6 +68259,10 @@ monzenmachi 門前町
 monzenmachi もんぜんまち
 monzenmati 門前町
 monzenmati もんぜんまち
+monzetsu 悶絶
+monzetsu もんぜつ
+monzetu 悶絶
+monzetu もんぜつ
 monzi 文字
 monzi もんじ
 monzin 門人
@@ -68700,6 +68793,8 @@ mujinzou 無尽蔵
 mujinzou むじんぞう
 mujitsu 無実
 mujitsu むじつ
+mujyaki 無邪気
+mujyaki むじゃき
 mujyou 無上
 mujyou 無常
 mujyou 無情
@@ -69321,6 +69416,8 @@ muzitu 無実
 muzitu むじつ
 muzousa 無造作
 muzousa むぞうさ
+muzyaki 無邪気
+muzyaki むじゃき
 muzyou 無上
 muzyou 無常
 muzyou 無情
@@ -73976,6 +74073,8 @@ nyuuen 入園
 nyuuen にゅうえん
 nyuugaku 入学
 nyuugaku にゅうがく
+nyuugan 乳癌
+nyuugan にゅうがん
 nyuugyou 乳業
 nyuugyou にゅうぎょう
 nyuugyuu 乳牛
@@ -74048,6 +74147,8 @@ nyuunetu 入熱
 nyuunetu にゅうねつ
 nyuuraiha 入来波
 nyuuraiha にゅうらいは
+nyuurin 乳輪
+nyuurin にゅうりん
 nyuuryoku 入力
 nyuuryoku にゅうりょく
 nyuuryokubaitai 入力媒体
@@ -74102,6 +74203,7 @@ nyuusatu 入札
 nyuusatu にゅうさつ
 nyuuseki 入籍
 nyuuseki にゅうせき
+nyuusen 乳腺
 nyuusen 入選
 nyuusen にゅうせん
 nyuusha 入射
@@ -75822,6 +75924,8 @@ ousama 王咽
 ousama おうさま
 ouse 逢瀬
 ouse おうせ
+ousei 旺盛
+ousei おうせい
 ousen 応戦
 ousen おうせん
 ousetsu 応接
@@ -77648,6 +77752,7 @@ rinkakusen りんかくせん
 rinkakutoueiki 輪郭投影器
 rinkakutoueiki りんかくとうえいき
 rinkan 林間
+rinkan 輪姦
 rinkan りんかん
 rinkangun 輪環群
 rinkangun りんかんぐん
@@ -78677,6 +78782,7 @@ ryou 両
 ryou 了
 ryou 令
 ryou 僚
+ryou 凉
 ryou 寮
 ryou 料
 ryou 涼
@@ -82108,6 +82214,10 @@ sanrinkassha 三輪滑車
 sanrinkassha さんりんかっしゃ
 sanrinkassya 三輪滑車
 sanrinkassya さんりんかっしゃ
+sanrinsha 三輪車
+sanrinsha さんりんしゃ
+sanrinsya 三輪車
+sanrinsya さんりんしゃ
 sanrinzidousya 三輪自動車
 sanrinzidousya さんりんじどうしゃ
 sanroku 山麓
@@ -83765,6 +83875,7 @@ seikaku 精確
 seikaku せいかく
 seikakusangyou 製革産業
 seikakusangyou せいかくさんぎょう
+seikan 性感
 seikan 生還
 seikan 盛観
 seikan 精管
@@ -83790,6 +83901,8 @@ seikansekihouka 星間赤方化
 seikansekihouka せいかんせきほうか
 seikansuu 整関数
 seikansuu せいかんすう
+seikantai 性感帯
+seikantai せいかんたい
 seikanzai 清缶剤
 seikanzai せいかんざい
 seikashori 青化処理
@@ -85770,6 +85883,8 @@ senhippariki 線引張器
 senhippariki せんひっぱりき
 senhisei 扇飛性
 senhisei せんひせい
+senhyaku 千百
+senhyaku せんひゃく
 seni 戦意
 seni 繊維
 seni 船医
@@ -89737,6 +89852,8 @@ shiragiku 白菊
 shiragiku しらぎく
 shiraha 白刃
 shiraha しらは
+shirahada 白肌
+shirahada しらはだ
 shirahu 素面
 shirahu しらふ
 shirakaba 白樺
@@ -90757,6 +90874,7 @@ shokon しょこん
 shokou 初校
 shokou 曙光
 shokou しょこう
+shoku 喰
 shoku 嘱
 shoku 植
 shoku 殖
@@ -92815,6 +92933,7 @@ shuujyukukyokusen 習熟曲線
 shuujyukukyokusen しゅうじゅくきょくせん
 shuujyuu 主従
 shuujyuu しゅうじゅう
+shuuka 周家
 shuuka 衆寡
 shuuka 集荷
 shuuka 集貨
@@ -93013,6 +93132,8 @@ shuushin 執心
 shuushin 就寝
 shuushin 終身
 shuushin しゅうしん
+shuushishou 周子照
+shuushishou しゅうししょう
 shuushoku 修飾
 shuushoku 就職
 shuushoku 秋色
@@ -94875,6 +94996,8 @@ siragiku 白菊
 siragiku しらぎく
 siraha 白刃
 siraha しらは
+sirahada 白肌
+sirahada しらはだ
 sirahu 素面
 sirahu しらふ
 sirakaba 白樺
@@ -95866,6 +95989,7 @@ so ソ
 so 塑
 so 想
 so 措
+so 曾
 so 狙
 so 疎
 so 礎
@@ -96848,6 +96972,7 @@ sonmouritu そんもうりつ
 sono 園
 sono その
 sonpi 存否
+sonpi 尊卑
 sonpi そんぴ
 sonraku 村落
 sonraku そんらく
@@ -97208,6 +97333,7 @@ sou 搜
 sou 操
 sou 早
 sou 曹
+sou 曾
 sou 桑
 sou 槽
 sou 漕
@@ -98823,6 +98949,8 @@ souwasoku 総和則
 souwasoku そうわそく
 souwasyahankyou 送話者反響
 souwasyahankyou そうわしゃはんきょう
+souyou 曾榕
+souyou そうよう
 souyousei 相容性
 souyousei 相溶性
 souyousei そうようせい
@@ -100937,6 +101065,7 @@ syokon しょこん
 syokou 初校
 syokou 曙光
 syokou しょこう
+syoku 喰
 syoku 嘱
 syoku 植
 syoku 殖
@@ -102933,6 +103062,7 @@ syuuisouon 周囲騷音
 syuuisouon しゅういそうおん
 syuuitu 秀逸
 syuuitu しゅういつ
+syuuka 周家
 syuuka 衆寡
 syuuka 集荷
 syuuka 集貨
@@ -103131,6 +103261,8 @@ syuusin 執心
 syuusin 就寝
 syuusin 終身
 syuusin しゅうしん
+syuusisyou 周子照
+syuusisyou しゅうししょう
 syuuso 臭素
 syuuso しゅうそ
 syuusoka 臭素価
@@ -106868,6 +107000,7 @@ tankayoumou たんかようもう
 tankei 短径
 tankei たんけい
 tanken 探検
+tanken 短剣
 tanken 短見
 tanken たんけん
 tankesshou 単結晶
@@ -111639,6 +111772,7 @@ tensasen てんさせん
 tensei 天性
 tensei 天成
 tensei 展性
+tensei 転生
 tensei てんせい
 tenseki 転石
 tenseki 転籍
@@ -113349,6 +113483,7 @@ titikata 父方
 titikata ちちかた
 titu 秩
 titu 窒
+titu 腟
 titu ちつ
 titu チツ
 tituzyo 秩序
@@ -114703,7 +114838,12 @@ tougei 陶芸
 tougei とうげい
 tougi 党議
 tougi 討議
+tougi 闘技
 tougi とうぎ
+tougijyou 闘技場
+tougijyou とうぎじょう
+tougizyou 闘技場
+tougizyou とうぎじょう
 tougoku 投獄
 tougoku とうごく
 tougou 投合
@@ -121405,6 +121545,7 @@ wahuku 和服
 wahuku わふく
 wahuu 和風
 wahuu わふう
+wai 猥
 wai 賄
 wai わい
 wai ワイ
@@ -123137,6 +123278,7 @@ you 揺
 you 擁
 you 曜
 you 栄
+you 榕
 you 洋
 you 溶
 you 用
@@ -123361,6 +123503,7 @@ youjyo ようじょ
 youjyou 洋上
 youjyou 養生
 youjyou ようじょう
+youjyu 榕樹
 youjyu 陽樹
 youjyu ようじゅ
 youjyuuki 揚重機
@@ -124043,6 +124186,7 @@ youzyo ようじょ
 youzyou 洋上
 youzyou 養生
 youzyou ようじょう
+youzyu 榕樹
 youzyu 陽樹
 youzyu ようじゅ
 youzyuuki 揚重機
@@ -127486,6 +127630,7 @@ zihensuu じへんすう
 zihi じひ
 zihi 慈悲
 zihi 耳鼻
+zihi 自卑
 zihi 自費
 zihitu 自筆
 zihitu じひつ
@@ -127655,6 +127800,7 @@ ziken 時圈
 ziken じけん
 ziketu 自決
 ziketu じけつ
+ziki 喰
 ziki 直
 ziki じき
 ziki ジキ
@@ -129996,6 +130142,7 @@ zyouhen 条片
 zyouhen じょうへん
 zyouho 譲歩
 zyouho じょうほ
+zyouhou 上方
 zyouhou 乗法
 zyouhou 定法
 zyouhou 情報
