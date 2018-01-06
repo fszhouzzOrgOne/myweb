@@ -44,7 +44,7 @@ public class KarinaTest {
 
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
-        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,4}$";
+        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,3}$";
         for (String ji : res) {
             if (ji.matches(sinPtn)) {
                 resSinCodes.add(ji.split(" ")[0]);
