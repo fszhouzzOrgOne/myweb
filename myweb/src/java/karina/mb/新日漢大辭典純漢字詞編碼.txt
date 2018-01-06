@@ -58681,6 +58681,7 @@ kouran 高欄
 kouran こうらん
 kourei 恒例
 kourei 高齡
+kourei 高齢
 kourei こうれい
 kouri 公理
 kouri 功利
@@ -76490,6 +76491,7 @@ rei 隸
 rei 零
 rei 霊
 rei 麗
+rei 齡
 rei 齢
 rei れい
 rei レイ

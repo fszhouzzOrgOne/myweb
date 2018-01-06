@@ -24,31 +24,39 @@ public class KarinaTest {
         List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
         List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
         List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt");
+        List<String> dictMore = IOUtils.readLines(mbsBaseDir + "更多漢字補充.txt");
 
         Set<String> dict = new HashSet<String>();
         dict.addAll(dictKanji1);
         dict.addAll(dictKanji2);
         dict.addAll(dictKarina);
+        dict.addAll(dictMore);
         List<String> res = new ArrayList<String>();
         for (String ji : dict) {
             List<String> one = encodeRomaji(ji);
             res.addAll(one);
         }
-
+        
         String file = mbsBaseDir + "新日漢大辭典純漢字詞編碼.txt";
         IOUtils.writeFile(file, res);
         IOUtils.uniqueCodeFile(file);
         IOUtils.orderCodeFile(file);
 
-        List<String> resSin = new ArrayList<String>();
-        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1}$";
+        Set<String> resSinCodes = new HashSet<String>();
+        List<String> resSins = new ArrayList<String>();
+        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,4}$";
         for (String ji : res) {
             if (ji.matches(sinPtn)) {
-                resSin.add(ji);
+                resSinCodes.add(ji.split(" ")[0]);
+            }
+        }
+        for (String ji : res) {
+            if (resSinCodes.contains(ji.split(" ")[0])) {
+                resSins.add(ji);
             }
         }
         String fileSin = mbsBaseDir + "新日漢大辭典純漢字詞編碼-單字.txt";
-        IOUtils.writeFile(fileSin, resSin);
+        IOUtils.writeFile(fileSin, resSins);
         IOUtils.uniqueCodeFile(fileSin);
         IOUtils.orderCodeFile(fileSin);
 
