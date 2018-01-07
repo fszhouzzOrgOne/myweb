@@ -617,6 +617,7 @@ an 安
 an 暗
 an 案
 an 行
+an 闇
 an 餡
 an あん
 an アン
@@ -8770,6 +8771,8 @@ eien 永遠
 eien えいえん
 eiga 映画
 eiga えいが
+eigakan 映画館
+eigakan えいがかん
 eigo 英語
 eigo えいご
 eii 鋭意
@@ -17195,6 +17198,8 @@ hitokiwa 一際
 hitokiwa ひときわ
 hitokoro 一頃
 hitokoro ひところ
+hitokoto 一言
+hitokoto ひとこと
 hitoku 秘匿
 hitoku ひとく
 hitokuchi 一口
@@ -17240,6 +17245,8 @@ hitorigoto 独り言
 hitorigoto ひとりごと
 hitorimae 一人前
 hitorimae ひとりまえ
+hitorimusume 一人娘
+hitorimusume ひとりむすめ
 hitosashiyubi 人差指
 hitosashiyubi 人差し指
 hitosashiyubi ひとさしゆび
@@ -17741,6 +17748,8 @@ hokkyokukou 北極光
 hokkyokukou ほっきょくこう
 hokkyokusei 北極星
 hokkyokusei ほっきょくせい
+hokkyou 北京
+hokkyou ほっきょう
 hokora 祠
 hokora ほこら
 hokori 埃
@@ -23100,8 +23109,10 @@ issakunen 一昨年
 issakunen いっさくねん
 issakuzitu 一昨日
 issakuzitu いっさくじつ
+issatsu 一冊
 issatsu 一札
 issatsu いっさつ
+issatu 一冊
 issatu 一札
 issatu いっさつ
 issei 一世
@@ -36890,6 +36901,7 @@ kyohi 巨費
 kyohi 拒否
 kyohi 許否
 kyohi きょひ
+kyohou 挙報
 kyohou 虚報
 kyohou きょほう
 kyojin 巨人
@@ -42421,6 +42433,8 @@ nankyokuken 南極圈
 nankyokuken なんきょくけん
 nankyokukou 南極光
 nankyokukou なんきょくこう
+nankyou 南京
+nankyou なんきょう
 nanmin 難民
 nanmin なんみん
 nanmon 難問
@@ -45661,6 +45675,9 @@ ozi 叔父
 ozi 小父
 ozigisou 含羞草
 ozigisou おじぎそう
+pekin 北京
+pekin ぺきん
+pekin ペキン
 pokkuri 木履
 pokkuri ぽっくり
 ra ら
@@ -46544,8 +46561,12 @@ renseikei 連星系
 renseikei れんせいけい
 rensen 連戦
 rensen れんせん
+rensetsu 連接
+rensetsu れんせつ
 rensetsubou 連接棒
 rensetsubou れんせつぼう
+rensetu 連接
+rensetu れんせつ
 rensetubou 連接棒
 rensetubou れんせつぼう
 rensho 連署
@@ -47505,6 +47526,8 @@ rougeniki 浪源域
 rougeniki ろうげんいき
 rougin 朗吟
 rougin ろうぎん
+rougo 老後
+rougo ろうご
 rougoku 牢獄
 rougoku ろうごく
 rouhai 老廃
@@ -49082,6 +49105,8 @@ sake 鮭
 sake さけ
 sakei 左傾
 sakei さけい
+sakeya 酒屋
+sakeya さけや
 saki 先
 saki 崎
 saki さき
@@ -56545,6 +56570,7 @@ shuu 週
 shuu 酬
 shuu 醜
 shuu 集
+shuu 驟
 shuu しゅう
 shuu シュウ
 shuuaku 醜悪
@@ -56880,6 +56906,8 @@ shuutsugime 周継目
 shuutsugime しゅうつぎめ
 shuutsugite 周継手
 shuutsugite しゅうつぎて
+shuuu 驟雨
+shuuu しゅうう
 shuuun 舟運
 shuuun しゅううん
 shuuwai 収賄
@@ -56895,6 +56923,7 @@ shuuyou しゅうよう
 shuuyuu 周遊
 shuuyuu しゅうゆう
 shuuzen 修繕
+shuuzen 驟然
 shuuzen しゅうぜん
 shuuzoku 習俗
 shuuzoku しゅうぞく
@@ -63187,6 +63216,7 @@ syuu 週
 syuu 酬
 syuu 醜
 syuu 集
+syuu 驟
 syuu しゅう
 syuu シュウ
 syuuaku 醜悪
@@ -63504,6 +63534,8 @@ syuutyuukei 集中系
 syuutyuukei しゅうちゅうけい
 syuutyuumaki 集中巻
 syuutyuumaki しゅうちゅうまき
+syuuu 驟雨
+syuuu しゅうう
 syuuun 舟運
 syuuun しゅううん
 syuuwai 収賄
@@ -63519,6 +63551,7 @@ syuuyou しゅうよう
 syuuyuu 周遊
 syuuyuu しゅうゆう
 syuuzen 修繕
+syuuzen 驟然
 syuuzen しゅうぜん
 syuuzi 修辞
 syuuzi 習字
@@ -63788,6 +63821,8 @@ taibutukyou 対物鏡
 taibutukyou たいぶつきょう
 taichi 対置
 taichi たいち
+taichini 台日
+taichini たいちに
 taichisen 対地線
 taichisen たいちせん
 taicho 大著
@@ -63894,6 +63929,8 @@ taihizyo たいひじょ
 taiho 退歩
 taiho 逮捕
 taiho たいほ
+taihoku 台北
+taihoku たいほく
 taihusei 対腐性
 taihusei たいふせい
 taihuu 台風
@@ -64165,6 +64202,9 @@ taiouryoku 耐応力
 taiouryoku たいおうりょく
 taiousen 対応線
 taiousen たいおうせん
+taipei 台北
+taipei たいぺい
+taipei タイペイ
 tairabu 平部
 tairabu 平ら部
 tairabu たいらぶ
@@ -64472,6 +64512,8 @@ taiten 退転
 taiten たいてん
 taiti 対置
 taiti たいち
+taitini 台日
+taitini たいちに
 taitisen 対地線
 taitisen たいちせん
 taito 泰斗
@@ -68754,6 +68796,12 @@ torai 渡来
 torai とらい
 tori 鳥
 tori とり
+toriatsukai 取扱
+toriatsukai 取扱い
+toriatsukai とりあつかい
+toriatukai 取扱
+toriatukai 取扱い
+toriatukai とりあつかい
 toribe 取鍋
 toribe とりべ
 toride 砦
@@ -72325,6 +72373,7 @@ ubugoe うぶごえ
 ubuyu 産湯
 ubuyu うぶゆ
 uchi 内
+uchi 家
 uchi うち
 uchiate 打当
 uchiate 打当て
@@ -72903,6 +72952,7 @@ uten うてん
 utena 台
 utena うてな
 uti 内
+uti 家
 uti うち
 utiate 打当
 utiate 打当て

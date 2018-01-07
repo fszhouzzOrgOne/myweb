@@ -765,6 +765,7 @@ an 安
 an 暗
 an 案
 an 行
+an 闇
 an 餡
 an あん
 an アン
@@ -15128,6 +15129,8 @@ eien 永遠
 eien えいえん
 eiga 映画
 eiga えいが
+eigakan 映画館
+eigakan えいがかん
 eigo 英語
 eigo えいご
 eii 鋭意
@@ -28665,6 +28668,8 @@ hitokkyokuki 非突極機
 hitokkyokuki ひとっきょくき
 hitokoro 一頃
 hitokoro ひところ
+hitokoto 一言
+hitokoto ひとこと
 hitoku 秘匿
 hitoku ひとく
 hitokuchi 一口
@@ -28716,6 +28721,8 @@ hitorigoto 独り言
 hitorigoto ひとりごと
 hitorimae 一人前
 hitorimae ひとりまえ
+hitorimusume 一人娘
+hitorimusume ひとりむすめ
 hitoriseigyohoushiki 一人制御方式
 hitoriseigyohoushiki ひとりせいぎょほうしき
 hitoriseigyohousiki 一人制御方式
@@ -29461,6 +29468,8 @@ hokkyokukyori 北極距離
 hokkyokukyori ほっきょくきょり
 hokkyokusei 北極星
 hokkyokusei ほっきょくせい
+hokkyou 北京
+hokkyou ほっきょう
 hokokairo 保弧回路
 hokokairo ほこかいろ
 hokora 祠
@@ -38086,8 +38095,10 @@ issankatanso 一酸化炭素
 issankatanso いっさんかたんそ
 issankatisso 一酸化窒素
 issankatisso いっさんかちっそ
+issatsu 一冊
 issatsu 一札
 issatsu いっさつ
+issatu 一冊
 issatu 一札
 issatu いっさつ
 issei 一世
@@ -38129,6 +38140,8 @@ isshou 一笑
 isshou いっしょう
 isshougai 一生涯
 isshougai いっしょうがい
+isshoukenmei 一生懸命
+isshoukenmei いっしょうけんめい
 isshu 一種
 isshu いっしゅ
 isshun 一瞬
@@ -38170,6 +38183,8 @@ issyou 一笑
 issyou いっしょう
 issyougai 一生涯
 issyougai いっしょうがい
+issyoukenmei 一生懸命
+issyoukenmei いっしょうけんめい
 issyu 一種
 issyu いっしゅ
 issyun 一瞬
@@ -53556,6 +53571,8 @@ kinneturo 均熱炉
 kinneturo きんねつろ
 kinniku 筋肉
 kinniku きんにく
+kinodoku 気の毒
+kinodoku きのどく
 kinoko 茸
 kinoko きのこ
 kinou 帰納
@@ -62255,6 +62272,7 @@ kyohi 巨費
 kyohi 拒否
 kyohi 許否
 kyohi きょひ
+kyohou 挙報
 kyohou 虚報
 kyohou きょほう
 kyojin 巨人
@@ -70412,6 +70430,8 @@ nankyokuken 南極圈
 nankyokuken なんきょくけん
 nankyokukou 南極光
 nankyokukou なんきょくこう
+nankyou 南京
+nankyou なんきょう
 nanmin 難民
 nanmin なんみん
 nanmon 難問
@@ -76145,6 +76165,9 @@ ozi 叔父
 ozi 小父
 ozigisou 含羞草
 ozigisou おじぎそう
+pekin 北京
+pekin ぺきん
+pekin ペキン
 pokkuri 木履
 pokkuri ぽっくり
 ra ら
@@ -77218,8 +77241,12 @@ renseikigensetu 連星起原説
 renseikigensetu れんせいきげんせつ
 rensen 連戦
 rensen れんせん
+rensetsu 連接
+rensetsu れんせつ
 rensetsubou 連接棒
 rensetsubou れんせつぼう
+rensetu 連接
+rensetu れんせつ
 rensetubou 連接棒
 rensetubou れんせつぼう
 rensho 連署
@@ -78401,6 +78428,8 @@ rougeniki 浪源域
 rougeniki ろうげんいき
 rougin 朗吟
 rougin ろうぎん
+rougo 老後
+rougo ろうご
 rougoku 牢獄
 rougoku ろうごく
 rouhai 老廃
@@ -81188,6 +81217,8 @@ sake 鮭
 sake さけ
 sakei 左傾
 sakei さけい
+sakeya 酒屋
+sakeya さけや
 saki 先
 saki 崎
 saki さき
@@ -92719,6 +92750,7 @@ shuu 週
 shuu 酬
 shuu 醜
 shuu 集
+shuu 驟
 shuu しゅう
 shuu シュウ
 shuuaku 醜悪
@@ -93228,6 +93260,8 @@ shuutsugime 周継目
 shuutsugime しゅうつぎめ
 shuutsugite 周継手
 shuutsugite しゅうつぎて
+shuuu 驟雨
+shuuu しゅうう
 shuuun 舟運
 shuuun しゅううん
 shuuwai 収賄
@@ -93245,6 +93279,7 @@ shuuyounouryoku しゅうようのうりょく
 shuuyuu 周遊
 shuuyuu しゅうゆう
 shuuzen 修繕
+shuuzen 驟然
 shuuzen しゅうぜん
 shuuzenkoujyou 修繕工場
 shuuzenkoujyou しゅうぜんこうじょう
@@ -102904,6 +102939,7 @@ syuu 週
 syuu 酬
 syuu 醜
 syuu 集
+syuu 驟
 syuu しゅう
 syuu シュウ
 syuuaku 醜悪
@@ -103393,6 +103429,8 @@ syuutyuutyuuyu 集中注油
 syuutyuutyuuyu しゅうちゅうちゅうゆ
 syuutyuuzyunkatu 集中潤滑
 syuutyuuzyunkatu しゅうちゅうじゅんかつ
+syuuu 驟雨
+syuuu しゅうう
 syuuun 舟運
 syuuun しゅううん
 syuuwai 収賄
@@ -103410,6 +103448,7 @@ syuuyounouryoku しゅうようのうりょく
 syuuyuu 周遊
 syuuyuu しゅうゆう
 syuuzen 修繕
+syuuzen 驟然
 syuuzen しゅうぜん
 syuuzenkouzyou 修繕工場
 syuuzenkouzyou しゅうぜんこうじょう
@@ -103961,6 +104000,8 @@ taichidousa 多位置動作
 taichidousa たいちどうさ
 taichikoudokei 対地高度計
 taichikoudokei たいちこうどけい
+taichini 台日
+taichini たいちに
 taichisen 対地線
 taichisen たいちせん
 taichishabaku 対地射爆
@@ -104125,6 +104166,8 @@ taihizyo たいひじょ
 taiho 退歩
 taiho 逮捕
 taiho たいほ
+taihoku 台北
+taihoku たいほく
 taihoushasensei 耐放射線性
 taihoushasensei たいほうしゃせんせい
 taihousyasensei 耐放射線性
@@ -104702,6 +104745,9 @@ taiousuii 対応水位
 taiousuii たいおうすいい
 taiouzyoutai 対応状態
 taiouzyoutai たいおうじょうたい
+taipei 台北
+taipei たいぺい
+taipei タイペイ
 tairabu 平部
 tairabu 平ら部
 tairabu たいらぶ
@@ -105409,6 +105455,8 @@ taitidousa 多位置動作
 taitidousa たいちどうさ
 taitikoudokei 対地高度計
 taitikoudokei たいちこうどけい
+taitini 台日
+taitini たいちに
 taitisen 対地線
 taitisen たいちせん
 taitisingou 対地信号
@@ -114258,6 +114306,12 @@ toriashijyousankakusu 鳥足状三角洲
 toriashijyousankakusu とりあしじょうさんかくす
 toriasizyousankakusu 鳥足状三角洲
 toriasizyousankakusu とりあしじょうさんかくす
+toriatsukai 取扱
+toriatsukai 取扱い
+toriatsukai とりあつかい
+toriatukai 取扱
+toriatukai 取扱い
+toriatukai とりあつかい
 toribe 取鍋
 toribe とりべ
 toride 砦
@@ -120553,6 +120607,7 @@ ubugoe うぶごえ
 ubuyu 産湯
 ubuyu うぶゆ
 uchi 内
+uchi 家
 uchi うち
 uchiate 打当
 uchiate 打当て
@@ -121273,6 +121328,7 @@ uten うてん
 utena 台
 utena うてな
 uti 内
+uti 家
 uti うち
 utiate 打当
 utiate 打当て
