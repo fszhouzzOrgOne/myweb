@@ -5327,6 +5327,7 @@ chou 蝶
 chou 調
 chou 貼
 chou 超
+chou 趙
 chou 跳
 chou 重
 chou 釣
@@ -71384,6 +71385,7 @@ tyou 蝶
 tyou 調
 tyou 貼
 tyou 超
+tyou 趙
 tyou 跳
 tyou 重
 tyou 釣
