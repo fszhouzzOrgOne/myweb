@@ -44,7 +44,7 @@ public class KarinaTest {
 
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
-        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,3}$";
+        String sinPtn = "^.* .{1,3}$"; // 三字以下
         for (String ji : res) {
             if (ji.matches(sinPtn)) {
                 resSinCodes.add(ji.split(" ")[0]);
@@ -266,8 +266,8 @@ public class KarinaTest {
         romaCompatMap.put("du", "zu");
         romaCompatMap.put("sy", "sh"); // -shy
         romaCompatMap.put("ty", "ch"); // -chy
-        romaCompatMap.put("zy", "jy"); // -j
-        romaCompatMap.put("dy", "jy"); // -j
+        romaCompatMap.put("zy", "j"); // -jy
+        romaCompatMap.put("dy", "j"); // -jy
 
         char[] hiraganas = karinas[0].toCharArray();
         char[] katakanas = karinas[1].toCharArray();
