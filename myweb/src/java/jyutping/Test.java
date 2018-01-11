@@ -19,7 +19,7 @@ public class Test {
         // "粤语发声字典081217.txt");
         // IOUtils.writeFile(mbsBaseDir + "粤语发声字典081217_2.txt", res);
 
-        // mergeMbs();
+        mergeMbs();
 
         // 編碼粵拼的詞組
         String mbFile = mbsBaseDir + "jyutping-all.txt";
@@ -31,14 +31,14 @@ public class Test {
         IOUtils.writeFile(jyutPhrase, phrases);
 
         // 粵拼碼表整合
-        // 用V的個數表示聲調
+        // 用Q的個數表示聲調
         List<String> mb = IOUtils.readLines(mbFile);
         List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
         List<String> jyutAllInOne = new ArrayList<String>();
         for (String str : mb) {
             if (null != str && str.trim().length() > 0) {
-                jyutAllInOne.add(str.replace("1", "v").replace("2", "vv").replace("3", "vvv").replace("4", "vvvv")
-                        .replace("5", "vvvvv").replace("6", "vvvvvv"));
+                jyutAllInOne.add(str.replace("1", "q").replace("2", "qq").replace("3", "qqq").replace("4", "qqqq")
+                        .replace("5", "qqqqq").replace("6", "qqqqqq"));
             }
         }
         // jyutAllInOne.addAll(jyutPhrases);
@@ -165,15 +165,15 @@ public class Test {
         List<String> list2 = IOUtils.readLines(mbsBaseDir + "jyutping-github.txt");
         List<String> list3 = new ArrayList<String>();
         list3.add("ling4 〇");
-        list3.add("v  ˥˧");
-        list3.add("v  ˥");
-        list3.add("vv ˧˥");
-        list3.add("vvv ˧˧");
-        list3.add("vvv ˧");
-        list3.add("vvvv ˨˩");
-        list3.add("vvvvv ˨˧");
-        list3.add("vvvvvv ˨˨");
-        list3.add("vvvvvv ˨");
+        list3.add("q  ˥˧");
+        list3.add("q  ˥");
+        list3.add("qq ˧˥");
+        list3.add("qqq ˧˧");
+        list3.add("qqq ˧");
+        list3.add("qqqq ˨˩");
+        list3.add("qqqqq ˨˧");
+        list3.add("qqqqqq ˨˨");
+        list3.add("qqqqqq ˨");
         List<String> listall = new ArrayList<String>(list1);
         listall.addAll(list2);
         listall.addAll(list3);
