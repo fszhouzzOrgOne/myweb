@@ -2,6 +2,7 @@ package karina;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -19,8 +20,28 @@ public class KarinaBackTest {
 
     private static final String karinaPtn = "[ぁ-ヾ]+";
 
-    public static void main(String[] args) throws Exception {
+    private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
+    public static void main(String[] args) throws Exception {
+        String dest = mbsBaseDir + "res.txt";
+
+        List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
+        List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
+        List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt");
+        List<String> dictMore = IOUtils.readLines(mbsBaseDir + "更多漢字補充.txt");
+
+        Set<String> dict = new HashSet<String>();
+        dict.addAll(dictKanji1);
+        dict.addAll(dictKanji2);
+        dict.addAll(dictKarina);
+
+        List<String> res = new ArrayList<String>();
+        for (String line : dictMore) {
+            if (!dict.contains(line)) {
+                res.add(line);
+            }
+        }
+        IOUtils.writeFile(dest, res);
     }
 
     public static void convertEn2Karina(String srcFile, String destFile) throws Exception {
