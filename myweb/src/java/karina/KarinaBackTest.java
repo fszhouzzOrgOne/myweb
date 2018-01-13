@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
 
 /**
@@ -20,15 +19,11 @@ public class KarinaBackTest {
 
     private static final String karinaPtn = "[ぁ-ヾ]+";
 
-    private static String mbsBaseDir = "src\\java\\karina\\mb\\";
-
     public static void main(String[] args) throws Exception {
-        convertEn2Karina(Cj00AllInOneTest.mbnipponKanji2000, mbsBaseDir + "kanji200res.txt");
-        
-        // 合併
+
     }
 
-    private static void convertEn2Karina(String srcFile, String destFile) throws Exception {
+    public static void convertEn2Karina(String srcFile, String destFile) throws Exception {
         List<String> src = IOUtils.readLines(srcFile);
         Map<String, List<String>> enMb = new HashMap<String, List<String>>();
         for (String line : src) {

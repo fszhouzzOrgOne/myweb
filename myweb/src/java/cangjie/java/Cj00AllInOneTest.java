@@ -67,7 +67,6 @@ public class Cj00AllInOneTest {
 
     // 日文，自製碼表，並取維基上《日語常用漢字一覧表》中的字和詞，編碼後加入碼表中
     public static String mbnippon200 = mbsBaseDir + "karina-kana200.txt";
-    public static String mbnipponKanji2000 = mbsBaseDir + "karina-kanji2000.txt";
     public static String mbnipponKanjiMore = mbsBaseDir + "karina-moreKanji.txt";
     public static String mbnipponMoreSymbol = mbsBaseDir + "karina-moreSymbol.txt";
     public static String nihonAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-karina.txt";
@@ -151,7 +150,7 @@ public class Cj00AllInOneTest {
         genAllInOne("普語拼音", mbpinyin, pinyinallInOne, withHeaders);
 
         // 日文
-        String[] mbjapan = new String[] { mbnippon200, mbnipponKanji2000, mbnipponKanjiMore, mbnipponMoreSymbol };
+        String[] mbjapan = new String[] { mbnippon200, mbnipponKanjiMore, mbnipponMoreSymbol };
         genAllInOne("日文假名", mbjapan, nihonAllInOne, withHeaders);
 
         // 韓文
