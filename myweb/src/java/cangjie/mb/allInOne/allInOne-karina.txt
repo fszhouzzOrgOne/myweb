@@ -1259,6 +1259,8 @@ appaku 圧迫
 appaku あっぱく
 appare 天晴
 appare あっぱれ
+appu あっぷ
+appu アップ
 appuku 圧服
 appuku あっぷく
 appunshin 圧粉心
@@ -5864,6 +5866,8 @@ chomei 著名
 chomei ちょめい
 chosaku 著作
 chosaku ちょさく
+chosakubutsu 著作物
+chosakubutsu ちょさくぶつ
 chosakuken 著作権
 chosakuken ちょさくけん
 chosha 著者
@@ -6825,6 +6829,8 @@ chuutai 中退
 chuutai ちゅうたい
 chuutanpa 中短波
 chuutanpa ちゅうたんぱ
+chuutei 忠貞
+chuutei ちゅうてい
 chuuten 中天
 chuuten 中点
 chuuten ちゅうてん
@@ -8362,6 +8368,7 @@ deshi でし
 deshi 弟子
 desi でし
 desi 弟子
+desu です
 detarame 出鱈目
 detarame でたらめ
 detchiguruma 丁稚車
@@ -9189,6 +9196,7 @@ doutai 胴体
 doutai 胴帯
 doutai どうたい
 doutei 同定
+doutei 童貞
 doutei 道程
 doutei どうてい
 douteikou 動抵抗
@@ -16365,7 +16373,6 @@ hen 遍
 hen 邊
 hen 騙
 hen へん
-hen ヘん
 hen ヘン
 henai 偏愛
 henai へんあい
@@ -23418,6 +23425,7 @@ imashimeru 戒める
 imashimeru いましめる
 imasimeru 戒める
 imasimeru いましめる
+imasu います
 imawa 今際
 imawa いまわ
 imi いみ
@@ -35551,6 +35559,8 @@ kona 粉
 kona こな
 konagusuri 粉薬
 konagusuri こなぐすり
+konban 今晩
+konban こんばん
 konbou 混紡
 konbou こんぼう
 konbouritsu 混紡率
@@ -41551,6 +41561,8 @@ meiro 迷路
 meiro めいろ
 meirou 明朗
 meirou めいろう
+meiru めいる
+meiru メール
 meiryou 明瞭
 meiryou めいりょう
 meisai 明細
@@ -43164,6 +43176,8 @@ motode 元手
 motode もとで
 motodori 髻
 motodori もとどり
+motoduku 基づく
+motoduku もとづく
 motogata 元型
 motogata もとがた
 motogataita 元型板
@@ -43202,6 +43216,8 @@ motozime 元締め
 motozime もとじめ
 motozu 元鄃
 motozu もとず
+motozuku 基づく
+motozuku もとづく
 motsu 物
 motsu もつ
 motsu モツ
@@ -43977,6 +43993,8 @@ nadeshiko 撫子
 nadeshiko なでしこ
 nadesiko 撫子
 nadesiko なでしこ
+nado 等
+nado など
 nadokoro 名所
 nadokoro などころ
 nae 苗
@@ -50160,6 +50178,8 @@ rouden 漏電
 rouden ろうでん
 roudenkei 漏電計
 roudenkei ろうでんけい
+roudo ろうど
+roudo ロード
 roudoku 朗読
 roudoku ろうどく
 roudou 労働
@@ -51277,6 +51297,7 @@ saidanki さいだんき
 saido 再度
 saido 彩度
 saido さいど
+saido サイド
 saidoki 採土器
 saidoki 砕土機
 saidoki さいどき
@@ -56637,6 +56658,7 @@ shimaru しまる
 shimaru 絞まる
 shimaru 締まる
 shimaru 閉まる
+shimasu します
 shimatsu 始末
 shimatsu しまつ
 shimauma 縞馬
@@ -56840,6 +56862,7 @@ shinekihou 浸液法
 shinekihou しんえきほう
 shinen 深遠
 shinen しんえん
+shingai 侵害
 shingai 心外
 shingai しんがい
 shingakkou 神学校
@@ -57771,6 +57794,7 @@ shitchi 湿地
 shitchi しっち
 shitchou 失調
 shitchou しっちょう
+shite して
 shitei 子弟
 shitei 師弟
 shitei 指定
@@ -60520,6 +60544,7 @@ simaru しまる
 simaru 絞まる
 simaru 締まる
 simaru 閉まる
+simasu します
 simatu 始末
 simatu しまつ
 simauma 縞馬
@@ -60712,6 +60737,7 @@ sinekihou 浸液法
 sinekihou しんえきほう
 sinen 深遠
 sinen しんえん
+singai 侵害
 singai 心外
 singai しんがい
 singakkou 神学校
@@ -61649,6 +61675,7 @@ sitaziku 下軸
 sitaziku したじく
 sitazu 下鄃
 sitazu したず
+site して
 sitei 子弟
 sitei 師弟
 sitei 指定
@@ -69770,6 +69797,10 @@ teiji 提示
 teiji ていじ
 teijikukyo 定軸距
 teijikukyo ていじくきょ
+teijitsu 貞実
+teijitsu ていじつ
+teijo 貞女
+teijo ていじょ
 teijou 呈上
 teijou 定常
 teijou ていじょう
@@ -70135,10 +70166,14 @@ teizi 提示
 teizi ていじ
 teizikukyo 定軸距
 teizikukyo ていじくきょ
+teizitu 貞実
+teizitu ていじつ
 teizoku 低俗
 teizoku ていぞく
 teizou 逓増
 teizou ていぞう
+teizyo 貞女
+teizyo ていじょ
 teizyou 呈上
 teizyou 定常
 teizyou ていじょう
@@ -72255,6 +72290,8 @@ tomoita 伴板
 tomoita ともいた
 tomonau 伴う
 tomonau ともなう
+tomoni 共に
+tomoni ともに
 tomoshibi 灯火
 tomoshibi ともしび
 tomosibi 灯火
@@ -75215,6 +75252,8 @@ tyomei 著名
 tyomei ちょめい
 tyosaku 著作
 tyosaku ちょさく
+tyosakubutu 著作物
+tyosakubutu ちょさくぶつ
 tyosakuken 著作権
 tyosakuken ちょさくけん
 tyosui 貯水
@@ -76159,6 +76198,8 @@ tyuutai 中退
 tyuutai ちゅうたい
 tyuutanpa 中短波
 tyuutanpa ちゅうたんぱ
+tyuutei 忠貞
+tyuutei ちゅうてい
 tyuuten 中天
 tyuuten 中点
 tyuuten ちゅうてん
