@@ -109886,6 +109886,7 @@ tan 探
 tan 擔
 tan 旦
 tan 淡
+tan 潭
 tan 炭
 tan 短
 tan 端
