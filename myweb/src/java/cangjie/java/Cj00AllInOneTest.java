@@ -104,7 +104,7 @@ public class Cj00AllInOneTest {
 
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
-        generateAllInOnes(false, true, true, false);
+        generateAllInOnes(false, true, true, false, false);
     }
 
     /**
@@ -118,10 +118,12 @@ public class Cj00AllInOneTest {
      *            六代是否加入詞組
      * @param otherImWithPhrases
      *            其他輸入法是否加入詞組
+     * @param withPua
+     *            是否加入私用區
      * @throws Exception
      */
     public static void generateAllInOnes(boolean allWithHeaders, boolean cjwithPhrases, boolean cj6withPhrases6,
-            boolean otherImWithPhrases) throws Exception {
+            boolean otherImWithPhrases, boolean withPua) throws Exception {
         boolean otherWithPhrases = otherImWithPhrases; // 其他輸入法是否加入詞組
         boolean withPhrases = cjwithPhrases; // 是否加入詞組
         boolean withPhrases6 = cj6withPhrases6; // 六代是否加入詞組
@@ -191,6 +193,9 @@ public class Cj00AllInOneTest {
         if (!withPhrases6) {
             mbs6[mbs6.length - 1] = null;
             mbs6[mbs6.length - 2] = null;
+        }
+        if (!withPua) {
+            mbs6[mbs6.length - 3] = null;
         }
         genAllInOne("倉頡六代", mbs6, mb6allInOne, withHeaders);
 

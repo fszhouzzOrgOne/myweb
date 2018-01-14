@@ -134,9 +134,9 @@ public class Cj01SQLiteTest {
 
         // 生成碼表
         if (edition62) {
-            Cj00AllInOneTest.generateAllInOnes(false, false, true, false);
+            Cj00AllInOneTest.generateAllInOnes(false, false, true, false, true);
         } else {
-            Cj00AllInOneTest.generateAllInOnes(false, false, false, false);
+            Cj00AllInOneTest.generateAllInOnes(false, false, false, false, true);
         }
 
         // 生成交集碼表

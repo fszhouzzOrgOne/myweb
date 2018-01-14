@@ -30932,6 +30932,7 @@
 葛	katsu
 褐	katsu
 轄	katsu
+頡	katsu
 喝	katsu
 褐	katsu
 かっ	katsu
@@ -31001,6 +31002,7 @@
 葛	katu
 褐	katu
 轄	katu
+頡	katu
 喝	katu
 褐	katu
 かっ	katu
@@ -31841,6 +31843,7 @@
 決行	kekkou
 結構	kekkou
 血行	kekkou
+頡頏	kekkou
 けっこう	kekkou
 穴居	kekkyo
 けっきょ	kekkyo
@@ -32648,6 +32651,7 @@
 結	ketsu
 缺	ketsu
 血	ketsu
+頡	ketsu
 けつ	ketsu
 ケツ	ketsu
 血圧	ketsuatsu
@@ -32764,6 +32768,7 @@
 結	ketu
 缺	ketu
 血	ketu
+頡	ketu
 けつ	ketu
 ケツ	ketu
 血圧	ketuatu
@@ -34716,9 +34721,11 @@
 きとくけん	kitokuken
 祈祷	kitou
 きとう	kitou
+吃	kitsu
 吉	kitsu
 喫	kitsu
 詰	kitsu
+頡	kitsu
 きっ	kitsu
 きつ	kitsu
 キッ	kitsu
@@ -34743,9 +34750,11 @@
 きっと	kitto
 吉兆	kittyou
 きっちょう	kittyou
+吃	kitu
 吉	kitu
 喫	kitu
 詰	kitu
+頡	kitu
 きっ	kitu
 きつ	kitu
 キッ	kitu
@@ -36278,6 +36287,7 @@
 鑛	kou
 降	kou
 項	kou
+頏	kou
 香	kou
 高	kou
 黃	kou
@@ -50579,6 +50589,7 @@
 瞭	ryou
 稜	ryou
 糧	ryou
+聊	ryou
 良	ryou
 量	ryou
 陵	ryou
@@ -50816,7 +50827,6 @@
 隆	ryuu
 りゅう	ryuu
 リュウ	ryuu
-硫リュウ	ryuu
 硫安	ryuuan
 りゅうあん	ryuuan
 粒筀	ryuubai
@@ -58420,6 +58430,7 @@
 淸	shou
 清	shou
 渉	shou
+湘	shou
 焦	shou
 焼	shou
 照	shou
@@ -58973,6 +58984,7 @@
 沼沢	shoutaku
 しょうたく	shoutaku
 小胆	shoutan
+湘潭	shoutan
 しょうたん	shoutan
 沼鉄鉱	shoutekkou
 しょうてっこう	shoutekkou
@@ -63263,6 +63275,12 @@
 そうけんか	soukenka
 総決算	soukessan
 そうけっさん	soukessan
+倉頡	souketsu
+蒼頡	souketsu
+そうけつ	souketsu
+倉頡	souketu
+蒼頡	souketu
+そうけつ	souketu
 双器	souki
 掃気	souki
 早期	souki
@@ -63280,6 +63298,12 @@
 そうきしゃ	soukisha
 聨軌車	soukisya
 そうきしゃ	soukisya
+倉頡	soukitsu
+蒼頡	soukitsu
+そうきつ	soukitsu
+倉頡	soukitu
+蒼頡	soukitu
+そうきつ	soukitu
 倉庫	souko
 そうこ	souko
 早婚	soukon
@@ -65373,6 +65397,7 @@
 淸	syou
 清	syou
 渉	syou
+湘	syou
 焦	syou
 焼	syou
 照	syou
@@ -65881,6 +65906,7 @@
 沼沢	syoutaku
 しょうたく	syoutaku
 小胆	syoutan
+湘潭	syoutan
 しょうたん	syoutan
 沼鉄鉱	syoutekkou
 しょうてっこう	syoutekkou
@@ -67887,6 +67913,9 @@
 たいちょうかく	taityoukaku
 対話	taiwa
 たいわ	taiwa
+台湾	taiwan
+臺灣	taiwan
+たいわん	taiwan
 対話式	taiwashiki
 たいわしき	taiwashiki
 対話式	taiwasiki
@@ -68370,6 +68399,7 @@
 擔	tan
 旦	tan
 淡	tan
+潭	tan
 炭	tan
 短	tan
 端	tan
