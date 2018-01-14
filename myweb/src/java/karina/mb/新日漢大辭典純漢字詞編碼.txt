@@ -49991,6 +49991,7 @@ katsu 滑
 katsu 葛
 katsu 褐
 katsu 轄
+katsu 頡
 katsu 喝
 katsu 褐
 katsu かっ
@@ -50066,6 +50067,7 @@ katu 滑
 katu 葛
 katu 褐
 katu 轄
+katu 頡
 katu 喝
 katu 褐
 katu かっ
@@ -51351,6 +51353,7 @@ kekkou 欠航
 kekkou 決行
 kekkou 結構
 kekkou 血行
+kekkou 頡頏
 kekkou けっこう
 kekkyo 穴居
 kekkyo けっきょ
@@ -52412,6 +52415,7 @@ ketsu 穴
 ketsu 結
 ketsu 缺
 ketsu 血
+ketsu 頡
 ketsu けつ
 ketsu ケツ
 ketsuatsu 血圧
@@ -52568,6 +52572,7 @@ ketu 穴
 ketu 結
 ketu 缺
 ketu 血
+ketu 頡
 ketu けつ
 ketu ケツ
 ketuatu 血圧
@@ -56499,9 +56504,11 @@ kitokuken 既得権
 kitokuken きとくけん
 kitou 祈祷
 kitou きとう
+kitsu 吃
 kitsu 吉
 kitsu 喫
 kitsu 詰
+kitsu 頡
 kitsu きっ
 kitsu きつ
 kitsu キッ
@@ -56526,9 +56533,11 @@ kitto 屹度
 kitto きっと
 kittyou 吉兆
 kittyou きっちょう
+kitu 吃
 kitu 吉
 kitu 喫
 kitu 詰
+kitu 頡
 kitu きっ
 kitu きつ
 kitu キッ
@@ -58730,6 +58739,7 @@ kou 鋼
 kou 鑛
 kou 降
 kou 項
+kou 頏
 kou 香
 kou 高
 kou 黃
@@ -81443,6 +81453,7 @@ ryou 療
 ryou 瞭
 ryou 稜
 ryou 糧
+ryou 聊
 ryou 良
 ryou 量
 ryou 陵
@@ -81732,7 +81743,6 @@ ryuu 龍
 ryuu 隆
 ryuu りゅう
 ryuu リュウ
-ryuu 硫リュウ
 ryuuan 硫安
 ryuuan りゅうあん
 ryuubai 粒筀
@@ -94159,6 +94169,7 @@ shou 涉
 shou 淸
 shou 清
 shou 渉
+shou 湘
 shou 焦
 shou 焼
 shou 照
@@ -94926,6 +94937,7 @@ shoutai しょうたい
 shoutaku 沼沢
 shoutaku しょうたく
 shoutan 小胆
+shoutan 湘潭
 shoutan しょうたん
 shoutekkou 沼鉄鉱
 shoutekkou しょうてっこう
@@ -101234,6 +101246,12 @@ soukenka 双懸果
 soukenka そうけんか
 soukessan 総決算
 soukessan そうけっさん
+souketsu 倉頡
+souketsu 蒼頡
+souketsu そうけつ
+souketu 倉頡
+souketu 蒼頡
+souketu そうけつ
 souki 双器
 souki 掃気
 souki 早期
@@ -101273,6 +101291,12 @@ soukisya 聨軌車
 soukisya そうきしゃ
 soukitenka 早期点火
 soukitenka そうきてんか
+soukitsu 倉頡
+soukitsu 蒼頡
+soukitsu そうきつ
+soukitu 倉頡
+soukitu 蒼頡
+soukitu そうきつ
 souko 倉庫
 souko そうこ
 soukokanri 倉庫管理
@@ -104677,6 +104701,7 @@ syou 涉
 syou 淸
 syou 清
 syou 渉
+syou 湘
 syou 焦
 syou 焼
 syou 照
@@ -105391,6 +105416,7 @@ syoutai しょうたい
 syoutaku 沼沢
 syoutaku しょうたく
 syoutan 小胆
+syoutan 湘潭
 syoutan しょうたん
 syoutekkou 沼鉄鉱
 syoutekkou しょうてっこう
@@ -108830,6 +108856,9 @@ taiwahoushiki 対話方式
 taiwahoushiki たいわほうしき
 taiwahousiki 対話方式
 taiwahousiki たいわほうしき
+taiwan 台湾
+taiwan 臺灣
+taiwan たいわん
 taiwanbouzu 台湾坊主
 taiwanbouzu たいわんぼうず
 taiwashiki 対話式
