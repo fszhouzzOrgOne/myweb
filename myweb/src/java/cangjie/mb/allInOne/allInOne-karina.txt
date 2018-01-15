@@ -2248,7 +2248,6 @@ baku 麥
 baku 麦
 baku ばく
 baku バク
-baku ビャク
 bakuchi 博打
 bakuchi ばくち
 bakuchin 爆沈
@@ -4907,7 +4906,6 @@ byaku 白
 byaku 縛
 byaku 麥
 byaku 麦
-byaku バク
 byaku びゃく
 byaku ビャク
 byou 平
@@ -35154,7 +35152,6 @@ koizi 恋路
 koizi こいじ
 koji 虹
 koji こじ
-koji にじ
 koji 固持
 koji 固辞
 koji 孤児
@@ -37696,7 +37693,6 @@ kozeni 小銭
 kozeni こぜに
 kozi 虹
 kozi こじ
-kozi にじ
 kozi 固持
 kozi 固辞
 kozi 孤児
@@ -41981,7 +41977,6 @@ midari 猥
 midari みだり
 midasu 乱す
 midasu 亂す
-midasu みたす
 midasu みだす
 midasu 満たす
 midasu 滿たす
@@ -42368,7 +42363,6 @@ mitake みたけ
 mitasu 乱す
 mitasu 亂す
 mitasu みたす
-mitasu みだす
 mitasu 満たす
 mitasu 滿たす
 mitchaku 密着
@@ -45851,7 +45845,6 @@ niisan 兄さん
 niisan にいさん
 niji 虹
 niji 螺
-niji こじ
 niji にじ
 niji 二次
 niji 居士
@@ -46343,7 +46336,6 @@ niyou 二咽
 niyou によう
 nizi 虹
 nizi 螺
-nizi こじ
 nizi にじ
 nizi 二次
 nizi 居士
