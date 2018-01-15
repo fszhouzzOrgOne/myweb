@@ -123,6 +123,13 @@ public class UnicodeHanziUtil {
         
         System.out.println(isInPrivateUserArea(""));
         System.out.println(isInhanziCompt("兀"));
+        
+        for (int i = 0; i < 0xFFFFF; i++) {
+            String str = getStringByUnicode(i);
+            if (isInhanziCompt(str)) {
+                System.out.println(str);
+            }
+        }
     }
 
     /**
