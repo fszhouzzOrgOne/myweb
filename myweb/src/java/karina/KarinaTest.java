@@ -390,7 +390,7 @@ public class KarinaTest {
      *            片假名
      * @return
      */
-    private static String katakana2Hiragana(String str) {
+    public static String katakana2Hiragana(String str) {
         String res = "";
         int i = 0;
         for (; i < str.length(); i++) {
