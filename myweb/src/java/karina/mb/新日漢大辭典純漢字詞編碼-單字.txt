@@ -3825,6 +3825,7 @@ bu 不
 bu 侮
 bu 分
 bu 奉
+bu 巫
 bu 步
 bu 武
 bu 歩
@@ -13328,6 +13329,8 @@ haigu 拝具
 haigu はいぐ
 haigun 敗軍
 haigun はいぐん
+haiguu 配偶
+haiguu はいぐう
 haigyou 廃業
 haigyou はいぎょう
 haihan 排反
@@ -20049,6 +20052,7 @@ hu 付
 hu 夫
 hu 婦
 hu 富
+hu 巫
 hu 布
 hu 府
 hu 怖
@@ -20332,6 +20336,7 @@ hujitsu ふじつ
 hujiyuu 不自由
 hujiyuu ふじゆう
 hujo 婦女
+hujo 巫女
 hujo 扶助
 hujo ふじょ
 hujou 不浄
@@ -22135,6 +22140,7 @@ huzuisya ふずいしゃ
 huzuiti 付随値
 huzuiti ふずいち
 huzyo 婦女
+huzyo 巫女
 huzyo 扶助
 huzyo ふじょ
 huzyou 不浄
@@ -26335,6 +26341,7 @@ jun 盾
 jun 純
 jun 遵
 jun 順
+jun 馴
 jun じゅん
 jun ジュン
 junan 受難
@@ -41929,6 +41936,8 @@ mikkyou 密教
 mikkyou みっきょう
 miko みこ
 miko 三子
+miko 巫女
+miko 神子
 mikoito 三子糸
 mikoito みこいと
 mikon 未婚
@@ -44156,6 +44165,12 @@ nakatoisi なかといし
 nakayasumi 中休
 nakayasumi 中休み
 nakayasumi なかやすみ
+nakayoshi 仲好し
+nakayoshi 仲良し
+nakayoshi なかよし
+nakayosi 仲好し
+nakayosi 仲良し
+nakayosi なかよし
 nakazima 中島
 nakazima なかじま
 nakigara 亡骸
@@ -44585,12 +44600,14 @@ naraku 奈落
 naraku ならく
 narasu ならす
 narasu 慣らす
+narasu 馴らす
 narasu 鳴らす
 narau 倣う
 narau 習う
 narau ならう
 nareru なれる
 nareru 慣れる
+nareru 馴れる
 nari 形
 nari なり
 narikin 成金
@@ -46345,6 +46362,8 @@ norizai のりざい
 noriziri 法尻
 noriziri のりじり
 noro のろ
+noro 巫女
+noro 祝女
 noro 野呂
 noroma 鈍間
 noroma のろま
@@ -47657,6 +47676,10 @@ osameru 納める
 osameru おさめる
 osanai 幼い
 osanai おさない
+osananajimi 幼馴染
+osananajimi おさななじみ
+osananazimi 幼馴染
+osananazimi おさななじみ
 osanoko 筬鋸
 osanoko おさのこ
 osen 汚染
@@ -48553,6 +48576,7 @@ rei 零
 rei 霊
 rei 靈
 rei 麗
+rei 黎
 rei 齡
 rei 齢
 rei れい
@@ -48689,6 +48713,8 @@ reikyakuzai 冷却材
 reikyakuzai れいきゃくざい
 reikyuu 霊柩
 reikyuu れいきゅう
+reimei 黎明
+reimei れいめい
 reimyou 霊妙
 reimyou れいみょう
 reinen 例年
@@ -50400,6 +50426,7 @@ ryou 令
 ryou 僚
 ryou 兩
 ryou 凉
+ryou 凌
 ryou 寮
 ryou 料
 ryou 涼
@@ -50476,6 +50503,9 @@ ryouji 領事
 ryouji りょうじ
 ryoujitsu 両日
 ryoujitsu りょうじつ
+ryoujoku 凌辱
+ryoujoku 陵辱
+ryoujoku りょうじょく
 ryouka 良家
 ryouka 良貨
 ryouka りょうか
@@ -50634,10 +50664,14 @@ ryouzi 領事
 ryouzi りょうじ
 ryouzitu 両日
 ryouzitu りょうじつ
+ryouzyoku 凌辱
+ryouzyoku 陵辱
+ryouzyoku りょうじょく
 ryozyou 旅情
 ryozyou りょじょう
 ryuu 柳
 ryuu 流
+ryuu 溜
 ryuu 留
 ryuu 硫
 ryuu 立
@@ -53121,6 +53155,7 @@ seiei 清栄
 seiei 精鋭
 seiei せいえい
 seieki 精液
+seieki 聖液
 seieki せいえき
 seien 声援
 seien 正塩
@@ -56946,6 +56981,8 @@ shinobu 忍ぶ
 shinobu しのぶ
 shinogiyasuri 鎬鑪
 shinogiyasuri しのぎやすり
+shinogu 凌ぐ
+shinogu しのぐ
 shinon 心音
 shinon 震音
 shinon しんおん
@@ -57120,6 +57157,7 @@ shinsuimen しんすいめん
 shinsuu 真数
 shinsuu しんすう
 shintai 舿体
+shintai 身体
 shintai 進退
 shintai しんたい
 shintairiku 新大陸
@@ -60806,6 +60844,8 @@ sinobu 忍ぶ
 sinobu しのぶ
 sinogiyasuri 鎬鑪
 sinogiyasuri しのぎやすり
+sinogu 凌ぐ
+sinogu しのぐ
 sinon 心音
 sinon 震音
 sinon しんおん
@@ -60980,6 +61020,7 @@ sinsyutu しんしゅつ
 sinsyuu 真宗
 sinsyuu しんしゅう
 sintai 舿体
+sintai 身体
 sintai 進退
 sintai しんたい
 sintairiku 新大陸
@@ -64594,8 +64635,12 @@ suzuri 硯
 suzuri すずり
 suzushii 涼しい
 suzushii すずしい
+suzushime 巫女
+suzushime すずしめ
 suzusii 涼しい
 suzusii すずしい
+suzusime 巫女
+suzusime すずしめ
 suzyou 素性
 suzyou すじょう
 sya 写
@@ -67374,6 +67419,8 @@ taimatu たいまつ
 taimen 体面
 taimen 対面
 taimen たいめん
+tainai 体内
+tainai たいない
 tainensei 耐燃性
 tainensei たいねんせい
 tainetsu 耐熱
@@ -68162,6 +68209,8 @@ tamana 玉菜
 tamana たまな
 tamanegi 玉葱
 tamanegi たまねぎ
+tamaru たまる
+tamaru 溜まる
 tamashii 魂
 tamashii たましい
 tamasii 魂
@@ -68198,6 +68247,7 @@ tamenkyou ためんきょう
 tamentai 多面体
 tamentai ためんたい
 tameru ためる
+tameru 溜める
 tameru 矯める
 tameshi 例
 tameshi ためし
@@ -79642,6 +79692,7 @@ yuu 勇
 yuu 友
 yuu 右
 yuu 夕
+yuu 幼
 yuu 幽
 yuu 悠
 yuu 憂
@@ -82516,6 +82567,8 @@ zuri 摩
 zuri ずり
 zuroku 図録
 zuroku ずろく
+zusan 杜撰
+zusan ずさん
 zusetsu 図説
 zusetsu ずせつ
 zusetu 図説
@@ -83296,6 +83349,7 @@ zyun 盾
 zyun 純
 zyun 遵
 zyun 順
+zyun 馴
 zyun じゅん
 zyun ジュン
 zyunan 受難
