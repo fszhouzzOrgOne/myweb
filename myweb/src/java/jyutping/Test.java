@@ -42,7 +42,7 @@ public class Test {
             }
         }
         // jyutAllInOne.addAll(jyutPhrases);
-        IOUtils.writeFile(mbsBaseDir + "jyutping-allInOne.txt", jyutAllInOne);
+        IOUtils.writeFile(Cj00AllInOneTest.jyutping20000, jyutAllInOne);
     }
 
     /**
