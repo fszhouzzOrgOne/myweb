@@ -28981,6 +28981,7 @@ kan 陥
 kan 陷
 kan 韓
 kan 館
+kan 鹹
 kan 神
 kan 館
 kan 漢
@@ -29245,6 +29246,8 @@ kangoi 看護衣
 kangoi かんごい
 kangoku 監獄
 kangoku かんごく
+kangyo 鹹魚
+kangyo かんぎょ
 kangyou 勧業
 kangyou かんぎょう
 kanheki 管壁
@@ -67268,6 +67271,7 @@ taiju 大樹
 taiju たいじゅ
 taijuu 体重
 taijuu たいじゅう
+taika 大家
 taika 大火
 taika 大過
 taika 滞貨
@@ -72306,6 +72310,10 @@ toomiti 遠道
 toomiti とおみち
 tooru 通る
 tooru とおる
+tooshiya 通し矢
+tooshiya とおしや
+toosiya 通し矢
+toosiya とおしや
 toosu 通す
 toosu とおす
 toou 渡欧

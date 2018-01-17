@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
 import unicode.UnicodeHanziUtil;
 
@@ -55,7 +56,7 @@ public class KarinaTest {
                 resSins.add(ji);
             }
         }
-        String fileSin = mbsBaseDir + "新日漢大辭典純漢字詞編碼-單字.txt";
+        String fileSin = Cj00AllInOneTest.mbnipponKanjiMore;
         IOUtils.writeFile(fileSin, resSins);
         IOUtils.uniqueCodeFile(fileSin);
         IOUtils.orderCodeFile(fileSin);
