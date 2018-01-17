@@ -152,7 +152,7 @@ public class HanGulHanjaText {
         
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
-        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1}$";
+        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,2}$";
         for (String ji : listOri) {
             if (ji.matches(sinPtn)) {
                 resSinCodes.add(ji.split(" ")[0]);
@@ -182,16 +182,20 @@ public class HanGulHanjaText {
         String file1 = mbsBaseDir + "标准韩国语词典2.txt";
         String file2 = mbsBaseDir + "韩文汉字词典2.txt";
         String file3 = mbsBaseDir + "韩语常用汉字对照2.txt";
+        String file4 = mbsBaseDir + "00補充一些韓語漢字.txt";
+        
         String fileAll = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
 
         List<String> list1 = IOUtils.readLines(file1);
         List<String> list2 = IOUtils.readLines(file2);
         List<String> list3 = IOUtils.readLines(file3);
+        List<String> list4 = IOUtils.readLines(file4);
 
         List<String> listAll = new ArrayList<String>();
         listAll.addAll(list1);
         listAll.addAll(list2);
         listAll.addAll(list3);
+        listAll.addAll(list4);
 
         IOUtils.writeFile(fileAll, listAll);
         IOUtils.uniqueCodeFile(fileAll);
