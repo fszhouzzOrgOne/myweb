@@ -71,7 +71,7 @@ public class HanGulHanjaText {
         List<String> encoded1 = new ArrayList<String>(encodeMbfile(file1, mbMap));
         List<String> encoded2 = new ArrayList<String>(encodeMbfile(file2, mbMap));
 
-        String file11 = mbsBaseDir + "en韓文漢字單字的碼表.txt";
+        String file11 = Cj00AllInOneTest.koreaHanja;
         String file21 = mbsBaseDir + "en韓文漢字詞組碼表的整合.txt";
 
         IOUtils.writeFile(file11, encoded1);
