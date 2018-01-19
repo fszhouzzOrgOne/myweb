@@ -13226,6 +13226,7 @@ hai 拝
 hai 排
 hai 敗
 hai 杯
+hai 沛
 hai 灰
 hai 肺
 hai 背
@@ -70348,6 +70349,8 @@ ten 点
 ten 貂
 ten 転
 ten 轉
+ten 顚
+ten 顛
 ten 點
 ten てん
 ten テン
@@ -70597,8 +70600,10 @@ tenmaku 天幕
 tenmaku てんまく
 tenmasen 伝馬船
 tenmasen てんません
+tenmatsu 顚末
 tenmatsu 顛末
 tenmatsu てんまつ
+tenmatu 顚末
 tenmatu 顛末
 tenmatu てんまつ
 tenmei 天命
@@ -70642,6 +70647,9 @@ tennyuu 転入
 tennyuu てんにゅう
 tenousei 天王星
 tenousei てんおうせい
+tenpai 顚沛
+tenpai 顛沛
+tenpai てんぱい
 tenpen 転変
 tenpen てんぺん
 tenpi 天日
@@ -70655,8 +70663,12 @@ tenpu 添付
 tenpu てんぷ
 tenpu テンプ
 tenpuku 転覆
+tenpuku 顚覆
+tenpuku 顛覆
 tenpuku てんぷく
 tenraku 転落
+tenraku 顚落
+tenraku 顛落
 tenraku てんらく
 tenran 展覧
 tenran てんらん
@@ -70804,6 +70816,8 @@ tentikaku 転置核
 tentikaku てんちかく
 tentou 点灯
 tentou 転倒
+tentou 顚倒
+tentou 顛倒
 tentou てんとう
 tentoukan 点灯管
 tentoukan てんとうかん
