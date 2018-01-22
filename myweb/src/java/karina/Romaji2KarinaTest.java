@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("YUKKURI"));
+        System.out.println(getKarinaFromRomaji("biiru"));
     }
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
@@ -186,9 +186,127 @@ public class Romaji2KarinaTest {
         romaStr = romaStr.trim().toLowerCase();
         List<String> res = new ArrayList<String>();
         List<String> hiras = getHiraganaFromRomaji(romaStr);
+        List<String> katas = getKatakanaFromRomaji(romaStr);
         if (null != hiras && !hiras.isEmpty()) {
             res.addAll(hiras);
         }
+        if (null != katas && !katas.isEmpty()) {
+            res.addAll(katas);
+        }
+        return res;
+    }
+
+    /**
+     * 羅馬字轉換成片假名列表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月22日上午11:02:17
+     * @param romaParam
+     *            羅馬字串
+     * @return 片假名列表
+     */
+    private static List<String> getKatakanaFromRomaji(String romaParam) {
+        String romaStr = romaParam;
+        List<String> res = new ArrayList<String>();
+        List<String> resTmp = new ArrayList<String>();
+        // 促音か行、さ行、た行、ぱ行前
+        // kk ss ssh tt tch pp
+        romaStr = romaStr.replaceAll("kk", "ッk").replaceAll("ss", "ッs");
+        romaStr = romaStr.replaceAll("tt", "ッt").replaceAll("tch", "ッch");
+        romaStr = romaStr.replaceAll("pp", "ッp");
+        resTmp.add(romaStr);
+
+        // 長音 aa ii ei uu ou
+        // 都加倍，用或不用KarinaTest.changyin
+        List<String> chouon = new ArrayList<String>();
+        chouon.add("aa");
+        chouon.add("ii");
+        chouon.add("ei");
+        chouon.add("uu");
+        chouon.add("ou");
+        boolean hasChouon = false;
+        for (String co : chouon) {
+            if (romaStr.contains(co)) {
+                hasChouon = true;
+                break;
+            }
+        }
+        if (hasChouon) {
+            List<String> resTmp2 = new ArrayList<String>();
+            resTmp2.addAll(resTmp);
+            for (String tmp : resTmp) {
+                for (String co : chouon) {
+                    tmp = tmp.replaceAll(co, co.substring(0, co.length() - 1) + KarinaTest.changyin);
+                }
+                resTmp2.add(tmp);
+            }
+            resTmp = resTmp2;
+        }
+
+        // 拗音
+        // ky sy shy sh ty chy ch ny hy my ry
+        // gy j jy zy dy by py
+        // 只有j jy要加倍
+        List<String> resTmp2 = new ArrayList<String>();
+        for (int i = 0; i < resTmp.size(); i++) {
+            romaStr = resTmp.get(i);
+            romaStr = romaStr.replaceAll("kya", "キャ").replaceAll("kyu", "キュ").replaceAll("kyo", "キョ");
+            romaStr = romaStr.replaceAll("sya|shya|sha", "シャ");
+            romaStr = romaStr.replaceAll("syu|shyu|shu", "シュ");
+            romaStr = romaStr.replaceAll("syo|shyo|sho", "ショ");
+            romaStr = romaStr.replaceAll("tya|chya|cha", "チャ");
+            romaStr = romaStr.replaceAll("tyu|chyu|chu", "チュ");
+            romaStr = romaStr.replaceAll("tyo|chyo|cho", "チョ");
+            romaStr = romaStr.replaceAll("nya", "ニャ").replaceAll("nyu", "ニュ").replaceAll("nyo", "ニョ");
+            romaStr = romaStr.replaceAll("hya", "ヒャ").replaceAll("hyu", "ヒュ").replaceAll("hyo", "ヒョ");
+            romaStr = romaStr.replaceAll("mya", "ミャ").replaceAll("myu", "ミュ").replaceAll("myo", "ミョ");
+            romaStr = romaStr.replaceAll("rya", "リャ").replaceAll("ryu", "リュ").replaceAll("ryo", "リョ");
+            romaStr = romaStr.replaceAll("gya", "ギャ").replaceAll("gyu", "ギュ").replaceAll("gyo", "ギョ");
+            romaStr = romaStr.replaceAll("zya", "ジャ").replaceAll("zyu", "ジュ").replaceAll("zyo", "ジョ");
+            romaStr = romaStr.replaceAll("dya", "ヂャ").replaceAll("dyu", "ヂュ").replaceAll("dyo", "ヂョ");
+            romaStr = romaStr.replaceAll("bya", "ビャ").replaceAll("byu", "ビュ").replaceAll("byo", "ビョ");
+            romaStr = romaStr.replaceAll("pya", "ピャ").replaceAll("pyu", "ピュ").replaceAll("pyo", "ピョ");
+            resTmp2.add(romaStr);
+        }
+        resTmp = resTmp2;
+        if (resTmp.get(0).contains("j")) {
+            List<String> resTmp3 = new ArrayList<String>();
+            for (String str : resTmp) {
+                str = str.replaceAll("jy", "j");
+
+                resTmp3.add(str.replaceAll("ja", "ジャ").replaceAll("ju", "ジュ").replaceAll("jo", "ジョ"));
+                resTmp3.add(new String(str).replaceAll("ja", "ヂャ").replaceAll("ju", "ヂュ").replaceAll("jo", "ヂョ"));
+            }
+            resTmp = resTmp3;
+        }
+
+        // 其他音
+        // 先看長音爲2的
+        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
+            // 是平假名
+            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
+            if (!isHiragana && en.getValue().length() == 2) {
+                List<String> resTmp3 = new ArrayList<String>();
+                for (String str : resTmp) {
+                    resTmp3.add(str.replaceAll(en.getValue(), en.getKey()));
+                }
+                resTmp = resTmp3;
+            }
+        }
+        // 再看長度爲1的
+        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
+            // 是平假名
+            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
+            if (!isHiragana && en.getValue().length() == 1) {
+                List<String> resTmp3 = new ArrayList<String>();
+                for (String str : resTmp) {
+                    resTmp3.add(str.replaceAll(en.getValue(), en.getKey()));
+                }
+                resTmp = resTmp3;
+            }
+        }
+
+        res.addAll(resTmp);
         return res;
     }
 
@@ -211,6 +329,8 @@ public class Romaji2KarinaTest {
         romaStr = romaStr.replaceAll("tt", "っt").replaceAll("tch", "っch");
         romaStr = romaStr.replaceAll("pp", "っp");
 
+        // 長音可以不管
+
         // 拗音
         // ky sy shy sh ty chy ch ny hy my ry
         // gy j jy zy dy by py
@@ -231,16 +351,15 @@ public class Romaji2KarinaTest {
         romaStr = romaStr.replaceAll("dya", "ぢゃ").replaceAll("dyu", "ぢゅ").replaceAll("dyo", "ぢょ");
         romaStr = romaStr.replaceAll("bya", "びゃ").replaceAll("byu", "びゅ").replaceAll("byo", "びょ");
         romaStr = romaStr.replaceAll("pya", "ぴゃ").replaceAll("pyu", "ぴゅ").replaceAll("pyo", "ぴょ");
-        romaStr = romaStr.replaceAll("jy", "j");
         // 加倍
         if (romaStr.contains("j")) {
+            romaStr = romaStr.replaceAll("jy", "j");
+
             resTmp.add(romaStr.replaceAll("ja", "じゃ").replaceAll("ju", "じゅ").replaceAll("jo", "じょ"));
             resTmp.add(new String(romaStr).replaceAll("ja", "ぢゃ").replaceAll("ju", "ぢゅ").replaceAll("jo", "ぢょ"));
         } else {
             resTmp.add(romaStr);
         }
-
-        // 長音可以不管
 
         // 其他音
         // 先看長音爲2的
