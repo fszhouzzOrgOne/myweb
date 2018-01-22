@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("biiru"));
+        System.out.println(getKarinaFromRomaji("jishinhatten"));
     }
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
@@ -175,15 +175,26 @@ public class Romaji2KarinaTest {
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月22日上午11:02:17
-     * @param romaStr
+     * @param romaParam
      *            羅馬字串
      * @return 假名列表
      */
-    private static List<String> getKarinaFromRomaji(String romaStr) {
+    private static List<String> getKarinaFromRomaji(String romaParam) {
+        String romaStr = romaParam;
         if (null == romaStr || romaStr.trim().length() == 0) {
             return null;
         }
         romaStr = romaStr.trim().toLowerCase();
+        // 兼容拼法。注意順序。
+        romaStr = romaStr.replaceAll("jy", "j");
+        romaStr = romaStr.replaceAll("shi", "si");
+        romaStr = romaStr.replaceAll("chi", "ti");
+        romaStr = romaStr.replaceAll("tsu", "tu");
+        romaStr = romaStr.replaceAll("shy", "sy");
+        romaStr = romaStr.replaceAll("chy", "ty");
+        romaStr = romaStr.replaceAll("sh", "sy");
+        romaStr = romaStr.replaceAll("ch", "ty");
+
         List<String> res = new ArrayList<String>();
         List<String> hiras = getHiraganaFromRomaji(romaStr);
         List<String> katas = getKatakanaFromRomaji(romaStr);
@@ -245,7 +256,7 @@ public class Romaji2KarinaTest {
 
         // 拗音
         // ky sy shy sh ty chy ch ny hy my ry
-        // gy j jy zy dy by py
+        // gy j zy dy by py
         // 只有j jy要加倍
         List<String> resTmp2 = new ArrayList<String>();
         for (int i = 0; i < resTmp.size(); i++) {
@@ -272,8 +283,6 @@ public class Romaji2KarinaTest {
         if (resTmp.get(0).contains("j")) {
             List<String> resTmp3 = new ArrayList<String>();
             for (String str : resTmp) {
-                str = str.replaceAll("jy", "j");
-
                 resTmp3.add(str.replaceAll("ja", "ジャ").replaceAll("ju", "ジュ").replaceAll("jo", "ジョ"));
                 resTmp3.add(new String(str).replaceAll("ja", "ヂャ").replaceAll("ju", "ヂュ").replaceAll("jo", "ヂョ"));
             }
@@ -281,28 +290,18 @@ public class Romaji2KarinaTest {
         }
 
         // 其他音
-        // 先看長音爲2的
-        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
-            // 是平假名
-            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
-            if (!isHiragana && en.getValue().length() == 2) {
-                List<String> resTmp3 = new ArrayList<String>();
-                for (String str : resTmp) {
-                    resTmp3.add(str.replaceAll(en.getValue(), en.getKey()));
+        // 先看長音爲2的，再看爲1的
+        for (int len = 2; len > 0; len--) {
+            for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
+                // 是平假名
+                boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
+                if (!isHiragana && en.getValue().length() == len) {
+                    List<String> resTmp3 = new ArrayList<String>();
+                    for (String str : resTmp) {
+                        resTmp3.add(str.replaceAll(en.getValue(), en.getKey()));
+                    }
+                    resTmp = resTmp3;
                 }
-                resTmp = resTmp3;
-            }
-        }
-        // 再看長度爲1的
-        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
-            // 是平假名
-            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
-            if (!isHiragana && en.getValue().length() == 1) {
-                List<String> resTmp3 = new ArrayList<String>();
-                for (String str : resTmp) {
-                    resTmp3.add(str.replaceAll(en.getValue(), en.getKey()));
-                }
-                resTmp = resTmp3;
             }
         }
 
@@ -333,7 +332,7 @@ public class Romaji2KarinaTest {
 
         // 拗音
         // ky sy shy sh ty chy ch ny hy my ry
-        // gy j jy zy dy by py
+        // gy j zy dy by py
         // 只有j jy要加倍
         romaStr = romaStr.replaceAll("kya", "きゃ").replaceAll("kyu", "きゅ").replaceAll("kyo", "きょ");
         romaStr = romaStr.replaceAll("sya|shya|sha", "しゃ");
@@ -353,8 +352,6 @@ public class Romaji2KarinaTest {
         romaStr = romaStr.replaceAll("pya", "ぴゃ").replaceAll("pyu", "ぴゅ").replaceAll("pyo", "ぴょ");
         // 加倍
         if (romaStr.contains("j")) {
-            romaStr = romaStr.replaceAll("jy", "j");
-
             resTmp.add(romaStr.replaceAll("ja", "じゃ").replaceAll("ju", "じゅ").replaceAll("jo", "じょ"));
             resTmp.add(new String(romaStr).replaceAll("ja", "ぢゃ").replaceAll("ju", "ぢゅ").replaceAll("jo", "ぢょ"));
         } else {
@@ -362,28 +359,18 @@ public class Romaji2KarinaTest {
         }
 
         // 其他音
-        // 先看長音爲2的
-        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
-            // 是平假名
-            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
-            if (isHiragana && en.getValue().length() == 2) {
-                List<String> resTmp2 = new ArrayList<String>();
-                for (String str : resTmp) {
-                    resTmp2.add(str.replaceAll(en.getValue(), en.getKey()));
+        // 先看長音爲2的，再看爲1的
+        for (int len = 2; len > 0; len--) {
+            for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
+                // 是平假名
+                boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
+                if (isHiragana && en.getValue().length() == len) {
+                    List<String> resTmp2 = new ArrayList<String>();
+                    for (String str : resTmp) {
+                        resTmp2.add(str.replaceAll(en.getValue(), en.getKey()));
+                    }
+                    resTmp = resTmp2;
                 }
-                resTmp = resTmp2;
-            }
-        }
-        // 再看長度爲1的
-        for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
-            // 是平假名
-            boolean isHiragana = KarinaTest.karinas[0].contains(en.getKey());
-            if (isHiragana && en.getValue().length() == 1) {
-                List<String> resTmp2 = new ArrayList<String>();
-                for (String str : resTmp) {
-                    resTmp2.add(str.replaceAll(en.getValue(), en.getKey()));
-                }
-                resTmp = resTmp2;
             }
         }
 
