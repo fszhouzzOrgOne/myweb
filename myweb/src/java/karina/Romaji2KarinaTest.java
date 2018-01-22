@@ -192,7 +192,7 @@ public class Romaji2KarinaTest {
      *            羅馬字串
      * @return 假名列表
      */
-    private static List<String> getKarinaFromRomaji(String romaParam) {
+    public static List<String> getKarinaFromRomaji(String romaParam) {
         String romaStr = romaParam;
         if (null == romaStr || romaStr.trim().length() == 0) {
             return null;
