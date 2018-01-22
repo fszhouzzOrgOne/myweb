@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("nokkozui"));
+        System.out.println(getKarinaFromRomaji("syougun"));
     }
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
@@ -185,15 +185,6 @@ public class Romaji2KarinaTest {
             return null;
         }
         romaStr = romaStr.trim().toLowerCase();
-        // 兼容拼法。注意順序。
-        romaStr = romaStr.replaceAll("jy", "j");
-        romaStr = romaStr.replaceAll("shi", "si");
-        romaStr = romaStr.replaceAll("chi", "ti");
-        romaStr = romaStr.replaceAll("tsu", "tu");
-        romaStr = romaStr.replaceAll("shy", "sy");
-        romaStr = romaStr.replaceAll("chy", "ty");
-        romaStr = romaStr.replaceAll("sh", "sy");
-        romaStr = romaStr.replaceAll("ch", "ty");
 
         List<String> res = new ArrayList<String>();
         List<String> hiras = getHiraganaFromRomaji(romaStr);
@@ -217,7 +208,7 @@ public class Romaji2KarinaTest {
      * @return 片假名列表
      */
     private static List<String> getKatakanaFromRomaji(String romaParam) {
-        String romaStr = romaParam;
+        String romaStr = replaceCompatSpell(romaParam);
         List<String> res = new ArrayList<String>();
         List<String> resTmp = new ArrayList<String>();
         // 促音
@@ -298,7 +289,7 @@ public class Romaji2KarinaTest {
      * @return 平假名列表
      */
     private static List<String> getHiraganaFromRomaji(String romaParam) {
-        String romaStr = romaParam;
+        String romaStr = replaceCompatSpell(romaParam);
         List<String> res = new ArrayList<String>();
         List<String> resTmp = new ArrayList<String>();
         // 促音
@@ -353,7 +344,10 @@ public class Romaji2KarinaTest {
      * @return
      */
     private static List<String> checkAndDoubleByJaJuJo(List<String> listCode) {
-        List<String> resTmp = listCode;
+        List<String> resTmp = new ArrayList<String>();
+        for (String code : listCode) {
+            resTmp.add(code.replaceAll("jy", "j"));
+        }
         if (resTmp.get(0).contains("ja") || resTmp.get(0).contains("ju") || resTmp.get(0).contains("jo")) {
             List<String> resTmp3 = new ArrayList<String>();
             for (String str : resTmp) {
@@ -384,6 +378,28 @@ public class Romaji2KarinaTest {
             resTmp = resTmp3;
         }
         return resTmp;
+    }
+
+    /**
+     * 日文的兼容拼法換成標準拼寫
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年1月22日下午2:33:05
+     * @param code
+     * @return
+     */
+    private static String replaceCompatSpell(String code) {
+        // 兼容拼法。注意順序。
+        String romaStr = code;
+        romaStr = romaStr.replaceAll("jy", "j");
+        romaStr = romaStr.replaceAll("shi", "si");
+        romaStr = romaStr.replaceAll("chi", "ti");
+        romaStr = romaStr.replaceAll("tsu", "tu");
+        romaStr = romaStr.replaceAll("shy", "sy");
+        romaStr = romaStr.replaceAll("chy", "ty");
+        romaStr = romaStr.replaceAll("sh", "sy");
+        romaStr = romaStr.replaceAll("ch", "ty");
+        return romaStr;
     }
 
     /**
