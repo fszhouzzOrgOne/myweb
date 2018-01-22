@@ -15,8 +15,11 @@ import java.util.Map.Entry;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("abajuukei"));
+        System.out.println(getKarinaFromRomaji("raamen"));
     }
+    
+    /** 片假名的長音 */
+    public static String changyin = "ー";
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
     public static Map<String, String> cleanKarinaRomaMap = new HashMap<String, String>();
@@ -236,7 +239,7 @@ public class Romaji2KarinaTest {
         resTmp.add(romaStr);
 
         // 長音 aa ii ei uu ou
-        // 都加倍，用或不用KarinaTest.changyin
+        // 都加倍，用或不用changyin
         List<String> chouon = new ArrayList<String>();
         chouon.add("aa");
         chouon.add("ii");
@@ -255,7 +258,7 @@ public class Romaji2KarinaTest {
             resTmp2.addAll(resTmp);
             for (String tmp : resTmp) {
                 for (String co : chouon) {
-                    tmp = tmp.replaceAll(co, co.substring(0, co.length() - 1) + KarinaTest.changyin);
+                    tmp = tmp.replaceAll(co, co.substring(0, co.length() - 1) + changyin);
                 }
                 resTmp2.add(tmp);
             }
@@ -459,7 +462,7 @@ public class Romaji2KarinaTest {
         for (int len = 2; len > 0; len--) {
             for (Entry<String, String> en : cleanKarinaRomaMap.entrySet()) {
                 // 是平假名
-                boolean isTarget = (isHiragana == KarinaTest.karinas[0].contains(en.getKey()));
+                boolean isTarget = (isHiragana == en.getKey().matches("[ぁ-ゞ]+"));
                 if (isTarget && en.getValue().length() == len) {
                     List<String> resTmp3 = new ArrayList<String>();
                     for (String str : resTmp) {
