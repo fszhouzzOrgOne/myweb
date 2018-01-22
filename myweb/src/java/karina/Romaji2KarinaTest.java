@@ -16,13 +16,6 @@ public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
         System.out.println(getKarinaFromRomaji("abajuukei"));
-        
-        // 基本的假名
-        String karinas = "";
-        for (String key : cleanKarinaRomaMap.keySet()) {
-            karinas += key;
-        }
-        System.out.println(karinas);
     }
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
