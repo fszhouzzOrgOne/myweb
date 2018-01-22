@@ -37,7 +37,7 @@ public class KarinaTest {
             List<String> one = encodeRomaji(ji);
             res.addAll(one);
         }
-        
+
         String file = mbsBaseDir + "新日漢大辭典純漢字詞編碼.txt";
         IOUtils.writeFile(file, res);
         IOUtils.uniqueCodeFile(file);
@@ -72,20 +72,20 @@ public class KarinaTest {
     }
 
     /** 片假名的長音 */
-    private static String changyin = "ー";
+    public static String changyin = "ー";
     /** 平假名和片假名的對應，都有88個 */
-    private static String[] karinas = {
+    public static String[] karinas = {
             "ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんゔゕゖゝゞ",
             "ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶヽヾ" };
 
     /** 平假名列表 */
-    private static List<String> hiraganaList = new ArrayList<String>();
+    public static List<String> hiraganaList = new ArrayList<String>();
     /** 片假名列表 */
-    private static List<String> katakanaList = new ArrayList<String>();
+    public static List<String> katakanaList = new ArrayList<String>();
     /** 假名和羅馬字的映射，注意さ行和ざ行 */
-    private static Map<String, String> karinaRomaMap = new HashMap<String, String>();
+    public static Map<String, String> karinaRomaMap = new HashMap<String, String>();
     /** 羅馬字兼容拼法的映射，只用兼容常用寫法 */
-    private static Map<String, String> romaCompatMap = new HashMap<String, String>();
+    public static Map<String, String> romaCompatMap = new HashMap<String, String>();
 
     static {
         karinaRomaMap.put("ぁ", "a");
@@ -362,7 +362,8 @@ public class KarinaTest {
     }
 
     /**
-     * 促音用甚麼羅馬字表示
+     * 促音用甚麼羅馬字表示<br/>
+     * か行、さ行、た行、ぱ行前可能有促音。
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月5日 下午10:43:51

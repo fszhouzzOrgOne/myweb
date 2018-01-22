@@ -8,7 +8,8 @@ import java.util.Set;
 import cangjie.java.util.IOUtils;
 
 /**
- * 檢查一下碼表
+ * 檢查一下碼表<br />
+ * 其他字典沒有的，才留在《更多漢字補充.txt》
  * 
  * @author fszhouzz@qq.com
  * @time 2018年1月15日上午9:37:20

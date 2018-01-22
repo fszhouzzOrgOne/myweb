@@ -16,6 +16,7 @@ import cangjie.java.util.IOUtils;
  * @author fszhouzz@qq.com
  * @time 2018年1月13日下午3:54:03
  */
+@Deprecated
 public class KarinaBackTest {
 
     private static final String karinaPtn = "[ぁ-ヾ]+";
