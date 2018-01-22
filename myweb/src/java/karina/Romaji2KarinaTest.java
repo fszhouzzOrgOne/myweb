@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("syougun"));
+        System.out.println(getKarinaFromRomaji("abajuukei"));
     }
 
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
@@ -194,6 +194,16 @@ public class Romaji2KarinaTest {
         }
         if (null != katas && !katas.isEmpty()) {
             res.addAll(katas);
+        }
+        // 還餘有羅馬字，排除
+        if (!res.isEmpty()) {
+            List<String> res2 = new ArrayList<String>();
+            for (String str : res) {
+                if (!str.matches("^.*[a-z].*$")) {
+                    res2.add(str);
+                }
+            }
+            res = res2;
         }
         return res;
     }
