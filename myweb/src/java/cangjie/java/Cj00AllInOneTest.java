@@ -152,7 +152,7 @@ public class Cj00AllInOneTest {
         genAllInOne("普語拼音", mbpinyin, pinyinallInOne, withHeaders);
 
         // 日文
-        String[] mbjapan = new String[] { mbnippon200, mbnipponKanjiMore, mbnipponMoreSymbol };
+        String[] mbjapan = new String[] { mbnippon200, mbnipponMoreSymbol, mbnipponKanjiMore };
         genAllInOne("日文假名", mbjapan, nihonAllInOne, withHeaders);
 
         // 韓文
