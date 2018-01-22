@@ -27,6 +27,7 @@ public class KarinaTest {
         List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt");
         List<String> dictMore = IOUtils.readLines(mbsBaseDir + "更多漢字補充.txt");
 
+        // 編碼
         Set<String> dict = new HashSet<String>();
         dict.addAll(dictKanji1);
         dict.addAll(dictKanji2);
@@ -38,6 +39,19 @@ public class KarinaTest {
             res.addAll(one);
         }
 
+        // 排除結果中的全假名詞
+        List<String> res2 = new ArrayList<String>();
+        for (String re : res) {
+            if (re.contains(" ")) {
+                String[] parts = re.split(" ");
+                if (!parts[1].matches(Romaji2KarinaTest.normalKarinaPtn)) {
+                    res2.add(re);
+                }
+            }
+        }
+        res = res2;
+
+        // 寫結果到文件
         String file = mbsBaseDir + "新日漢大辭典純漢字詞編碼.txt";
         IOUtils.writeFile(file, res);
         IOUtils.uniqueCodeFile(file);

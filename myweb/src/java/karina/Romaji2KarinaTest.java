@@ -21,6 +21,10 @@ public class Romaji2KarinaTest {
     /** 假名和羅馬字的映射，排除了變化形式，所以能一對二 */
     public static Map<String, String> cleanKarinaRomaMap = new HashMap<String, String>();
 
+    // 基本的假名
+    public static String normalKarina = null;
+    public static String normalKarinaPtn = null;
+
     static {
         cleanKarinaRomaMap.put("あ", "a");
         cleanKarinaRomaMap.put("ア", "a");
@@ -168,6 +172,12 @@ public class Romaji2KarinaTest {
         cleanKarinaRomaMap.put("ヲ", "wo");
         cleanKarinaRomaMap.put("ん", "n");
         cleanKarinaRomaMap.put("ン", "n");
+
+        // 基本的假名
+        for (String key : Romaji2KarinaTest.cleanKarinaRomaMap.keySet()) {
+            normalKarina += key;
+        }
+        normalKarinaPtn = "^[" + normalKarina + "ゃゅょャュョっッ]+$";
     }
 
     /**
