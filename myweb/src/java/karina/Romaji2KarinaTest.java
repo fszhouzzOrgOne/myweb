@@ -21,24 +21,14 @@ public class Romaji2KarinaTest {
     public static Map<String, String> cleanKarinaRomaMap = new HashMap<String, String>();
 
     static {
-        cleanKarinaRomaMap.put("ぁ", "a");
-        cleanKarinaRomaMap.put("ァ", "a");
         cleanKarinaRomaMap.put("あ", "a");
         cleanKarinaRomaMap.put("ア", "a");
-        cleanKarinaRomaMap.put("ぃ", "i");
-        cleanKarinaRomaMap.put("ィ", "i");
         cleanKarinaRomaMap.put("い", "i");
         cleanKarinaRomaMap.put("イ", "i");
-        cleanKarinaRomaMap.put("ぅ", "u");
-        cleanKarinaRomaMap.put("ゥ", "u");
         cleanKarinaRomaMap.put("う", "u");
         cleanKarinaRomaMap.put("ウ", "u");
-        cleanKarinaRomaMap.put("ぇ", "e");
-        cleanKarinaRomaMap.put("ェ", "e");
         cleanKarinaRomaMap.put("え", "e");
         cleanKarinaRomaMap.put("エ", "e");
-        cleanKarinaRomaMap.put("ぉ", "o");
-        cleanKarinaRomaMap.put("ォ", "o");
         cleanKarinaRomaMap.put("お", "o");
         cleanKarinaRomaMap.put("オ", "o");
         cleanKarinaRomaMap.put("か", "ka");
@@ -89,8 +79,6 @@ public class Romaji2KarinaTest {
         cleanKarinaRomaMap.put("チ", "ti");
         cleanKarinaRomaMap.put("ぢ", "di");
         cleanKarinaRomaMap.put("ヂ", "di");
-        cleanKarinaRomaMap.put("っ", "tu");
-        cleanKarinaRomaMap.put("ッ", "tu");
         cleanKarinaRomaMap.put("つ", "tu");
         cleanKarinaRomaMap.put("ツ", "tu");
         cleanKarinaRomaMap.put("づ", "du");
@@ -153,16 +141,10 @@ public class Romaji2KarinaTest {
         cleanKarinaRomaMap.put("メ", "me");
         cleanKarinaRomaMap.put("も", "mo");
         cleanKarinaRomaMap.put("モ", "mo");
-        cleanKarinaRomaMap.put("ゃ", "ya");
-        cleanKarinaRomaMap.put("ャ", "ya");
         cleanKarinaRomaMap.put("や", "ya");
         cleanKarinaRomaMap.put("ヤ", "ya");
-        cleanKarinaRomaMap.put("ゅ", "yu");
-        cleanKarinaRomaMap.put("ュ", "yu");
         cleanKarinaRomaMap.put("ゆ", "yu");
         cleanKarinaRomaMap.put("ユ", "yu");
-        cleanKarinaRomaMap.put("ょ", "yo");
-        cleanKarinaRomaMap.put("ョ", "yo");
         cleanKarinaRomaMap.put("よ", "yo");
         cleanKarinaRomaMap.put("ヨ", "yo");
         cleanKarinaRomaMap.put("ら", "ra");
@@ -175,8 +157,6 @@ public class Romaji2KarinaTest {
         cleanKarinaRomaMap.put("レ", "re");
         cleanKarinaRomaMap.put("ろ", "ro");
         cleanKarinaRomaMap.put("ロ", "ro");
-        cleanKarinaRomaMap.put("ゎ", "wa");
-        cleanKarinaRomaMap.put("ヮ", "wa");
         cleanKarinaRomaMap.put("わ", "wa");
         cleanKarinaRomaMap.put("ワ", "wa");
         cleanKarinaRomaMap.put("ゐ", "wi");
@@ -187,9 +167,6 @@ public class Romaji2KarinaTest {
         cleanKarinaRomaMap.put("ヲ", "wo");
         cleanKarinaRomaMap.put("ん", "n");
         cleanKarinaRomaMap.put("ン", "n");
-        cleanKarinaRomaMap.put("ヴ", "v");
-        cleanKarinaRomaMap.put("ヵ", "ka");
-        cleanKarinaRomaMap.put("ヶ", "ke");
     }
 
     /**
