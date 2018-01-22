@@ -4827,6 +4827,8 @@ chakushokuryoku 着色力
 chakushokuryoku ちゃくしょくりょく
 chakushokuzai 着色剤
 chakushokuzai ちゃくしょくざい
+chakushou 着床
+chakushou ちゃくしょう
 chakushu 着手
 chakushu ちゃくしゅ
 chakushutsu 嫡出
@@ -8540,6 +8542,8 @@ doudou 同道
 doudou どうどう
 douduna 胴綱
 douduna どうづな
+douga 動画
+douga どうが
 dougaku 同学
 dougaku 道学
 dougaku どうがく
@@ -12009,6 +12013,7 @@ gonjou 言上
 gonjou ごんじょう
 gonzyou 言上
 gonzyou ごんじょう
+goon 呉音
 goon 語音
 goon ごおん
 goraikou 御来光
@@ -14174,6 +14179,7 @@ han 搬
 han 播
 han 斑
 han 板
+han 樊
 han 氾
 han 汎
 han 煩
@@ -14455,6 +14461,7 @@ hanka 繁華
 hanka はんか
 hankai 半壊
 hankai 半開
+hankai 樊噲
 hankai はんかい
 hankaku 半角
 hankaku はんかく
@@ -14642,6 +14649,8 @@ hanrodo 坂路度
 hanrodo はんろど
 hanron 反論
 hanron はんろん
+hanrou 樊籠
+hanrou はんろう
 hanryoku 反力
 hanryoku はんりょく
 hanryuu 伴流
@@ -15976,6 +15985,8 @@ heisetu 併設
 heisetu へいせつ
 heisha 兵舎
 heisha 平射
+heisha 弊社
+heisha 弊舎
 heisha へいしゃ
 heishazou 閉写像
 heishazou へいしゃぞう
@@ -16034,6 +16045,8 @@ heisuiryou 平水量
 heisuiryou へいすいりょう
 heisya 兵舎
 heisya 平射
+heisya 弊社
+heisya 弊舎
 heisya へいしゃ
 heisyazou 閉写像
 heisyazou へいしゃぞう
@@ -25828,6 +25841,7 @@ jou 盛
 jou 縄
 jou 繩
 jou 蒸
+jou 襄
 jou 譲
 jou 讓
 jou 醸
@@ -25915,6 +25929,8 @@ jougo 畳語
 jougo じょうご
 jouhakumai 上白米
 jouhakumai じょうはくまい
+jouhan 襄樊
+jouhan じょうはん
 jouhanshin 上半舿
 jouhanshin じょうはんしん
 jouhatsu 蒸発
@@ -26028,6 +26044,7 @@ joukon じょうこん
 joukou 乗降
 joukou 常衡
 joukou 条項
+joukou 襄公
 joukou じょうこう
 joukoutou 乗降島
 joukoutou じょうこうとう
@@ -27320,6 +27337,7 @@ kahuu 歌風
 kahuu かふう
 kai 介
 kai 会
+kai 噲
 kai 回
 kai 塊
 kai 壊
@@ -29457,6 +29475,8 @@ kano 彼
 kano かの
 kanojo 彼女
 kanojo かのじょ
+kanon 漢音
+kanon かんおん
 kanonsei 感温性
 kanonsei かんおんせい
 kanonsou 感温相
@@ -34912,6 +34932,8 @@ koharu 小春
 koharu こはる
 kohaze 小鈎
 kohaze こはぜ
+kohoku 湖北
+kohoku こほく
 kohone 小骨
 kohone こほね
 kohu こふ
@@ -35365,6 +35387,8 @@ kona 粉
 kona こな
 konagusuri 粉薬
 konagusuri こなぐすり
+konan 湖南
+konan こなん
 konban 今晩
 konban こんばん
 konbou 混紡
@@ -54041,7 +54065,7 @@ seizudai 製鄃台
 seizudai せいずだい
 seizudukue 製鄃机
 seizudukue せいずづくえ
-seizui 精絓
+seizui 精髄
 seizui せいずい
 seizuki 製鄃機
 seizuki せいずき
@@ -57239,7 +57263,7 @@ shinzou 心臓
 shinzou しんぞう
 shinzoutsuu 心臓痛
 shinzoutsuu しんぞうつう
-shinzui 神絓
+shinzui 神髄
 shinzui しんずい
 shio 塩
 shio 潮
@@ -58332,6 +58356,7 @@ shou 荘
 shou 衝
 shou 装
 shou 裝
+shou 襄
 shou 訟
 shou 証
 shou 詔
@@ -61120,7 +61145,7 @@ sinzou 心臓
 sinzou しんぞう
 sinzoutuu 心臓痛
 sinzoutuu しんぞうつう
-sinzui 神絓
+sinzui 神髄
 sinzui しんずい
 sinzya 信者
 sinzya しんじゃ
@@ -62024,6 +62049,8 @@ soi そい
 soi 粗衣
 soin 素因
 soin そいん
+soine そいね
+soine 添い寝
 soinsuu 素因数
 soinsuu そいんすう
 soji そじ
@@ -62788,6 +62815,7 @@ sou 喪
 sou 壮
 sou 壯
 sou 奏
+sou 宋
 sou 宗
 sou 層
 sou 巢
@@ -63283,6 +63311,7 @@ sounyuusen 聨入線
 sounyuusen そうにゅうせん
 sounyuuson 挿入損
 sounyuuson そうにゅうそん
+souon 宋音
 souon 袽音
 souon そうおん
 souongen 双音源
@@ -65318,6 +65347,7 @@ syou 荘
 syou 衝
 syou 装
 syou 裝
+syou 襄
 syou 訟
 syou 証
 syou 詔
@@ -75008,6 +75038,8 @@ tyakusyokuryoku 着色力
 tyakusyokuryoku ちゃくしょくりょく
 tyakusyokuzai 着色剤
 tyakusyokuzai ちゃくしょくざい
+tyakusyou 着床
+tyakusyou ちゃくしょう
 tyakusyu 着手
 tyakusyu ちゃくしゅ
 tyakusyutu 嫡出
@@ -82512,7 +82544,6 @@ zuhu 図譜
 zuhyou 図表
 zuhyou ずひょう
 zui 瑞
-zui 絓
 zui 萣
 zui 随
 zui 隨
@@ -82856,6 +82887,7 @@ zyou 盛
 zyou 縄
 zyou 繩
 zyou 蒸
+zyou 襄
 zyou 譲
 zyou 讓
 zyou 醸
@@ -82924,6 +82956,8 @@ zyougo 畳語
 zyougo じょうご
 zyouhakumai 上白米
 zyouhakumai じょうはくまい
+zyouhan 襄樊
+zyouhan じょうはん
 zyouhansin 上半舿
 zyouhansin じょうはんしん
 zyouhatu 蒸発
@@ -83014,6 +83048,7 @@ zyoukon じょうこん
 zyoukou 乗降
 zyoukou 常衡
 zyoukou 条項
+zyoukou 襄公
 zyoukou じょうこう
 zyoukoutou 乗降島
 zyoukoutou じょうこうとう
