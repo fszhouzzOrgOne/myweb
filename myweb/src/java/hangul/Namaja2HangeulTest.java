@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
 
 /**
@@ -28,7 +27,7 @@ public class Namaja2HangeulTest {
         init();
         System.out.println(baseMbMap.keySet().size() + " " + maxCodeLen + " " + minCodeLen);
 
-        System.out.println(getHangeulFromNamaja("hanjibeiseo"));
+        System.out.println(getHangeulFromNamaja("joseon"));
     }
 
     public static void init() {
@@ -37,7 +36,7 @@ public class Namaja2HangeulTest {
             // InputStream is =
             // context.getResources().getAssets().open("database" +
             // File.separator + "korea-12000.txt");
-            InputStream is = new FileInputStream(Cj00AllInOneTest.mbkorea10000);
+            InputStream is = new FileInputStream("src\\java\\hangul\\file\\korea-12000.txt");
             List<String> res = getBaseMbByIS(is);
             baseMbMap = new HashMap<String, List<String>>();
             for (String line : res) {
@@ -145,7 +144,7 @@ public class Namaja2HangeulTest {
                 if (o2.length() < o1.length()) {
                     return 1;
                 } else if (o2.length() > o1.length()) {
-                    return 0;
+                    return -1;
                 } else {
                     return o1.compareTo(o2);
                 }

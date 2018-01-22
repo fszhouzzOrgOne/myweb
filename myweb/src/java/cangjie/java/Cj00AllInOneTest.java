@@ -72,7 +72,7 @@ public class Cj00AllInOneTest {
     public static String nihonAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-karina.txt";
 
     // 韓文，自製碼表，主要由榕樹葉編碼，韓文漢字基本取自Mdict字典《标准韩国语词典.txt》《韩文汉字词典.txt》和百度文庫的《韩语常用汉字对照》
-    public static String mbkorea10000 = mbsBaseDir + "korea-12000.txt";
+    public static String mbkoreaOther = mbsBaseDir + "korea-other.txt";
     public static String koreaMoreSymbol = mbsBaseDir + "korea-moreSymbol.txt";
     public static String koreaHanja = mbsBaseDir + "korea-hanja.txt";
     public static String koreaAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-korea.txt";
@@ -156,7 +156,7 @@ public class Cj00AllInOneTest {
         genAllInOne("日文假名", mbjapan, nihonAllInOne, withHeaders);
 
         // 韓文
-        String[] mbkorea = new String[] { mbkorea10000, koreaMoreSymbol, koreaHanja };
+        String[] mbkorea = new String[] { mbkoreaOther, koreaMoreSymbol, koreaHanja };
         genAllInOne("朝鮮諺文", mbkorea, koreaAllInOne, withHeaders);
 
         // 四角號碼

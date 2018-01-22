@@ -52,7 +52,7 @@ public class HanGulHanjaText {
      *            純諺文的詞都删除
      */
     private static void encodeHangulPinyin(boolean deleteYanwen) throws Exception {
-        String mbfile = Cj00AllInOneTest.mbkorea10000;
+        String mbfile = mbsBaseDir + "korea-12000.txt";
         List<String> mblist = IOUtils.readLines(mbfile);
         Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
         for (String str : mblist) {
