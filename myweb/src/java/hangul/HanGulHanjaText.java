@@ -39,7 +39,7 @@ public class HanGulHanjaText {
 
         makeSingleCharMb();
 
-        encodeHangulPinyin();
+        encodeHangulPinyin(true);
     }
 
     /**
@@ -48,8 +48,10 @@ public class HanGulHanjaText {
      * @author fszhouzz@qq.com
      * @throws Exception
      * @time 2018年1月4日上午9:28:27
+     * @param deleteYanwen
+     *            純諺文的詞都删除
      */
-    private static void encodeHangulPinyin() throws Exception {
+    private static void encodeHangulPinyin(boolean deleteYanwen) throws Exception {
         String mbfile = Cj00AllInOneTest.mbkorea10000;
         List<String> mblist = IOUtils.readLines(mbfile);
         Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
@@ -73,6 +75,28 @@ public class HanGulHanjaText {
 
         String file11 = Cj00AllInOneTest.koreaHanja;
         String file21 = mbsBaseDir + "en韓文漢字詞組碼表的整合.txt";
+
+        // 純諺文的詞都删除
+        if (deleteYanwen) {
+            for (int i = encoded1.size() - 1; i >= 0; i--) {
+                String line = encoded1.get(i);
+                if (line.contains(" ")) {
+                    String[] parts = line.split(" ");
+                    if (parts[1].matches(yanwenPtn)) {
+                        encoded1.remove(i);
+                    }
+                }
+            }
+            for (int i = encoded2.size() - 1; i >= 0; i--) {
+                String line = encoded2.get(i);
+                if (line.contains(" ")) {
+                    String[] parts = line.split(" ");
+                    if (parts[1].matches(yanwenPtn)) {
+                        encoded2.remove(i);
+                    }
+                }
+            }
+        }
 
         IOUtils.writeFile(file11, encoded1);
         IOUtils.uniqueCodeFile(file11);
@@ -149,7 +173,7 @@ public class HanGulHanjaText {
         String file = mbsBaseDir + "韓文漢字單字的碼表.txt";
         String fileOri = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
         List<String> listOri = IOUtils.readLines(fileOri);
-        
+
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
         String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,2}$";
@@ -163,7 +187,7 @@ public class HanGulHanjaText {
                 resSins.add(ji);
             }
         }
-        
+
         if (!resSins.isEmpty()) {
             IOUtils.writeFile(file, resSins);
             IOUtils.uniqueCodeFile(file);
@@ -183,7 +207,7 @@ public class HanGulHanjaText {
         String file2 = mbsBaseDir + "韩文汉字词典2.txt";
         String file3 = mbsBaseDir + "韩语常用汉字对照2.txt";
         String file4 = mbsBaseDir + "00補充一些韓語漢字.txt";
-        
+
         String fileAll = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
 
         List<String> list1 = IOUtils.readLines(file1);

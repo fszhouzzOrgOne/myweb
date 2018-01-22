@@ -3,6 +3,7 @@ package cangjie.java.util;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -88,8 +89,13 @@ public class IOUtils {
      * 會去首尾格，中間也只留單個空格
      */
     public static List<String> readLines(String fileName) {
-        InputStream in = IOUtils.class.getResourceAsStream(fileName);
-        return readLines(in);
+        try {
+            InputStream in = new FileInputStream(fileName);
+            return readLines(in);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static List<String> readLines(InputStream in) {
@@ -115,6 +121,10 @@ public class IOUtils {
             try {
                 br.close();
             } catch (IOException e) {
+            }
+            try {
+                in.close();
+            } catch (Exception e) {
             }
         }
         return result;
