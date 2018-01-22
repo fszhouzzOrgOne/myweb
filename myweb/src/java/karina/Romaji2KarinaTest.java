@@ -14,7 +14,7 @@ import java.util.Map;
 public class Romaji2KarinaTest {
 
     public static void main(String[] args) {
-        System.out.println(getKarinaFromRomaji("roodo"));
+        System.out.println(getKarinaFromRomaji("roodossyassho"));
     }
 
     /** 假名和羅馬字的映射，排除了變化形式 */
@@ -201,7 +201,34 @@ public class Romaji2KarinaTest {
      * @return 平假名列表
      */
     private static List<String> getHiraganaFromRomaji(String romaStr) {
+        List<String> res = new ArrayList<String>();
+        // 促音か行、さ行、た行、ぱ行前
+        // kk ss ssh tt tch pp
+        romaStr = romaStr.replaceAll("kk", "っk").replaceAll("ss", "っs");
+        romaStr = romaStr.replaceAll("tt", "っt").replaceAll("tch", "っch");
+        romaStr = romaStr.replaceAll("pp", "っp");
 
-        return null;
+        // 拗音
+        // ky sy shy sh ty chy ch ny hy my ry
+        // gy j jy zy dy by py
+        // 只有j要加倍
+        romaStr = romaStr.replaceAll("kya", "きゃ").replaceAll("kyu", "きゅ").replaceAll("kyo", "きょ");
+        romaStr = romaStr.replaceAll("sya|shya|sha", "しゃ");
+        romaStr = romaStr.replaceAll("syu|shyu|shu", "しゅ");
+        romaStr = romaStr.replaceAll("syo|shyo|sho", "しょ");
+        romaStr = romaStr.replaceAll("tya|chya|cha", "ちゃ");
+        romaStr = romaStr.replaceAll("tyu|chyu|chu", "ちゅ");
+        romaStr = romaStr.replaceAll("tyo|chyo|cho", "ちょ");
+        romaStr = romaStr.replaceAll("nya", "にゃ").replaceAll("nyu", "にゅ").replaceAll("nyo", "にょ");
+        romaStr = romaStr.replaceAll("hya", "ひゃ").replaceAll("hyu", "ひゅ").replaceAll("hyo", "ひょ");
+        romaStr = romaStr.replaceAll("mya", "みゃ").replaceAll("myu", "みゅ").replaceAll("myo", "みょ");
+        romaStr = romaStr.replaceAll("rya", "りゃ").replaceAll("ryu", "りゅ").replaceAll("ryo", "りょ");
+
+        // 長音
+
+        // 其他音
+
+        res.add(romaStr);
+        return res;
     }
 }
