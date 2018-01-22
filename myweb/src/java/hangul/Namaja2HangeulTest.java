@@ -20,7 +20,7 @@ import cangjie.java.util.IOUtils;
  */
 public class Namaja2HangeulTest {
 
-    private static Map<String, List<String>> baseMbMap = new HashMap<String, List<String>>();
+    private static Map<String, List<String>> baseMbMap = null;
     private static int maxCodeLen = 0; // 7
     private static int minCodeLen = 3; // 1
 
@@ -39,6 +39,7 @@ public class Namaja2HangeulTest {
             // File.separator + "korea-12000.txt");
             InputStream is = new FileInputStream(Cj00AllInOneTest.mbkorea10000);
             List<String> res = getBaseMbByIS(is);
+            baseMbMap = new HashMap<String, List<String>>();
             for (String line : res) {
                 if (line.contains(" ")) {
                     String[] parts = line.split(" ");
