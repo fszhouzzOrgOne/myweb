@@ -177,7 +177,7 @@ public class Romaji2KarinaTest {
         for (String key : Romaji2KarinaTest.cleanKarinaRomaMap.keySet()) {
             normalKarina += key;
         }
-        normalKarinaPtn = "^[" + normalKarina + "ゃゅょャュョっッ]+$";
+        normalKarinaPtn = "^[" + normalKarina + "ゃゅょャュョっッー]+$";
     }
 
     /**

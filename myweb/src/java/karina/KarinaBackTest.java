@@ -3,7 +3,6 @@ package karina;
 import java.util.ArrayList;
 import java.util.List;
 
-import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
 
 /**
@@ -13,10 +12,13 @@ import cangjie.java.util.IOUtils;
  */
 public class KarinaBackTest {
 
+    private static String mbsBaseDir = "src\\java\\karina\\mb\\";
+
     public static void main(String[] args) throws Exception {
         System.out.println("あからめる".matches(Romaji2KarinaTest.normalKarinaPtn));
 
-        List<String> dict = IOUtils.readLines(Cj00AllInOneTest.mbnipponMoreSymbol);
+        String file = mbsBaseDir + "更多漢字補充.txt";
+        List<String> dict = IOUtils.readLines(file);
         List<String> res = new ArrayList<String>();
         for (String line : dict) {
             if (line.contains(" ")) {
@@ -28,8 +30,8 @@ public class KarinaBackTest {
                 }
             }
         }
-        IOUtils.writeFile(Cj00AllInOneTest.mbnipponMoreSymbol, res);
-        IOUtils.uniqueCodeFile(Cj00AllInOneTest.mbnipponMoreSymbol);
+        IOUtils.writeFile(file, res);
+        IOUtils.uniqueCodeFile(file);
     }
 
 }

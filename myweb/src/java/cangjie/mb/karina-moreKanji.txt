@@ -2610,7 +2610,6 @@ byouzyaku 病弱
 byouzyou 病状
 cha 茶
 chaahan 炒飯
-chaahan チャーハン
 chadai 茶代
 chadou 茶道
 chagashi 茶菓子
@@ -23389,7 +23388,6 @@ mansuji 万筋
 mansuzi 万筋
 manten 満点
 mantou 饅頭
-mantou マントー
 mantyou 満潮
 manukareru 免れる
 manukareru 免れる
@@ -23671,7 +23669,6 @@ meireikei 命令形
 meiri 名利
 meiro 迷路
 meirou 明朗
-meiru メール
 meiryou 明瞭
 meisai 明細
 meisai 迷彩
@@ -25004,7 +25001,6 @@ na 奈
 na 納
 na 菜
 na 那
-naasu ナース
 nabe 鍋
 nadai 名代
 nadare 雪崩
@@ -27402,7 +27398,6 @@ ra 等
 ra 羅
 ra 裸
 raamen 拉面
-raamen ラーメン
 raba 騾馬
 rachi 埒
 rachi 拉致
@@ -27416,7 +27411,6 @@ rai 賴
 rai 雷
 rai 頼
 raichii 茘枝
-raichii ライチー
 raichou 雷鳥
 raiden 来電
 raiden 雷電
@@ -27458,7 +27452,6 @@ raisyun 来春
 raisyuu 来襲
 raisyuu 来週
 raitii 茘枝
-raitii ライチー
 raityou 雷鳥
 raiun 雷雲
 raiyuu 来由
@@ -28422,7 +28415,6 @@ roubasin 老婆心
 rouchin 労賃
 rouden 漏電
 roudenkei 漏電計
-roudo ロード
 roudoku 朗読
 roudou 労働
 roudouryoku 労働力
@@ -43020,7 +43012,6 @@ tuzi 旋毛
 tuzituma 辻褄
 tya 茶
 tyaahan 炒飯
-tyaahan チャーハン
 tyadai 茶代
 tyadou 茶道
 tyagasi 茶菓子
@@ -44219,9 +44210,7 @@ utyuuron 宇宙論
 utyuusen 宇宙線
 utyuusen 宇宙船
 uuroncha 烏竜茶
-uuroncha ウーロンちゃ
 uurontya 烏竜茶
-uurontya ウーロンちゃ
 uwa 上
 uwabami 蠎
 uwabe 上辺
@@ -46000,7 +45989,6 @@ yuzuru 讓る
 za 座
 za 挫
 zaasai 搾菜
-zaasai ザーサイ
 zabuton 座布団
 zachou 座長
 zadan 座談
