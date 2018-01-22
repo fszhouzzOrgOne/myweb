@@ -377,7 +377,7 @@ public class KarinaTest {
 
     /**
      * 促音用甚麼羅馬字表示<br/>
-     * か行、さ行、た行、ぱ行前可能有促音。
+     * か行、さ行、た行、ぱ行、だ行前可能有促音。
      * 
      * @author fszhouzz@qq.com
      * @time 2018年1月5日 下午10:43:51
@@ -393,6 +393,8 @@ public class KarinaTest {
             return "t";
         } else if ("ぱぴぷぺぽパピプペポ".contains(suffix)) {
             return "p";
+        } else if ("だぢづでどダヂヅデド".contains(suffix)) {
+            return "d";
         }
         return "";
     }
