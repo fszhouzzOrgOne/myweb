@@ -40,6 +40,7 @@ public class KarinaBackTest {
             }
         }
         IOUtils.writeFile(Cj00AllInOneTest.mbnipponMoreSymbol, res);
+        IOUtils.uniqueCodeFile(Cj00AllInOneTest.mbnipponMoreSymbol);
     }
 
 }
