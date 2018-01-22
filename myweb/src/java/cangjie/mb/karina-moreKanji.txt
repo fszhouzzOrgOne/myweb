@@ -36035,7 +36035,6 @@ sou 莊
 sou 葬
 sou 蒼
 sou 藻
-sou 袽
 sou 装
 sou 裝
 sou 贈
@@ -36098,7 +36097,7 @@ soudensen 送電線
 soudenson 送電損
 soudentan 送電端
 soudou 相同
-soudou 袽動
+soudou 騒動
 soudouin 総動員
 soudouki 双胴機
 soudousen 双胴船
@@ -36304,14 +36303,14 @@ sounyuunetu 総入熱
 sounyuusen 聨入線
 sounyuuson 挿入損
 souon 宋音
-souon 袽音
+souon 騒音
 souongen 双音源
-souonkei 袽音計
+souonkei 騒音計
 souou 挿秧
 souou 相応
 sourakusa 総落差
 souran 総覧
-souran 袽乱
+souran 騒乱
 souretsu 壮烈
 souretu 壮烈
 souri 総理
@@ -36501,7 +36500,7 @@ souyukan 送油管
 souzai 総菜
 souzan 早産
 souzei 総勢
-souzen 袽然
+souzen 騒然
 souzetsu 壮絶
 souzetu 壮絶
 souzi 掃除
