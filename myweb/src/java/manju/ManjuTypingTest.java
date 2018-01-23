@@ -1,4 +1,4 @@
-package hangul;
+package manju;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -12,23 +12,18 @@ import java.util.Map;
 
 import cangjie.java.util.IOUtils;
 
-/**
- * 羅馬字轉韓文方法
- * 
- * @author fszhouzz@qq.com
- * @time 2018年1月22日下午6:04:52
- */
-public class Namaja2HangeulTest {
+public class ManjuTypingTest {
 
     private static Map<String, List<String>> baseMbMap = null;
     private static int maxCodeLen = 0; // 7
     private static int minCodeLen = 3; // 1
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         init();
+
         System.out.println(baseMbMap.keySet().size() + " " + maxCodeLen + " " + minCodeLen);
 
-        System.out.println(getHangeulFromNamaja("joseon"));
+        System.out.println(getManjuFromRoman("gvsa"));
     }
 
     public static void init() {
@@ -37,8 +32,12 @@ public class Namaja2HangeulTest {
             // InputStream is =
             // context.getResources().getAssets().open("database" +
             // File.separator + "korea-12000.txt");
-            InputStream is = new FileInputStream("src\\java\\hangul\\file\\korea-12000.txt");
-            List<String> res = getBaseMbByIS(is);
+            InputStream is = new FileInputStream("src\\java\\manju\\mb\\manju-100.txt");
+            List<String> res = IOUtils.readLines(is);
+            is = new FileInputStream("src\\java\\manju\\mb\\manju-more.txt");
+            List<String> res2 = IOUtils.readLines(is);
+            res.addAll(res2);
+
             baseMbMap = new HashMap<String, List<String>>();
             for (String line : res) {
                 if (line.contains(" ")) {
@@ -62,53 +61,18 @@ public class Namaja2HangeulTest {
         }
     }
 
-    /**
-     * 取基本碼表
-     * 
-     * @author fszhouzz@qq.com
-     * @time 2018年1月22日 下午8:02:57
-     * @param is
-     * @return
-     */
-    private static List<String> getBaseMbByIS(InputStream is) {
-        String patn = "[가-힣]{1}";
-        List<String> res = IOUtils.readLines(is);
-        if (null != res && !res.isEmpty()) {
-            List<String> res2 = IOUtils.readLines(is);
-            for (String line : res) {
-                if (line.contains(" ")) {
-                    String[] parts = line.split(" ");
-                    if (parts[1].matches(patn)) {
-                        res2.add(line);
-                    }
-                }
-            }
-            res = res2;
-        }
-        return res;
-    }
-
-    /**
-     * 羅馬字轉韓文列表
-     * 
-     * @author fszhouzz@qq.com
-     * @time 2018年1月22日 下午8:18:05
-     * @param namaja
-     *            羅馬字
-     * @return 韓文列表
-     */
-    public static List<String> getHangeulFromNamaja(String namaja) {
-        if (null == namaja || namaja.trim().length() == 0) {
+    private static List<String> getManjuFromRoman(String roman) {
+        if (null == roman || roman.trim().length() == 0) {
             return null;
         }
-        namaja = namaja.trim().toLowerCase();
+        roman = roman.trim().toLowerCase();
 
-        if (namaja.length() == 1) {
-            return baseMbMap.get(namaja);
+        if (roman.length() == 1) {
+            return baseMbMap.get(roman);
         }
 
-        List<Integer> lens = getPartsLen(namaja, baseMbMap, minCodeLen, maxCodeLen);
-        List<String> res = getResByPartsLen(namaja, baseMbMap, lens);
+        List<Integer> lens = getPartsLen(roman, baseMbMap, minCodeLen, maxCodeLen);
+        List<String> res = getResByPartsLen(roman, baseMbMap, lens);
 
         // 去褈
         res = new ArrayList<String>(new HashSet<String>(res));
@@ -229,4 +193,5 @@ public class Namaja2HangeulTest {
         }
         return res;
     }
+
 }
