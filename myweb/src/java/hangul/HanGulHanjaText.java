@@ -54,6 +54,9 @@ public class HanGulHanjaText {
     private static void encodeHangulPinyin(boolean deleteYanwen) throws Exception {
         String mbfile = mbsBaseDir + "korea-12000.txt";
         List<String> mblist = IOUtils.readLines(mbfile);
+        List<String> mbOther = IOUtils.readLines(Cj00AllInOneTest.mbkoreaOther);
+        mblist.addAll(mbOther);
+        
         Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
         for (String str : mblist) {
             if (str.contains(" ")) {
