@@ -2,6 +2,7 @@ package karina;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -17,6 +18,7 @@ public class Romaji2KarinaTest {
     public static void main(String[] args) {
         System.out.println(getKarinaFromRomaji("danya"));
         System.out.println(getKarinaFromRomaji("nina"));
+        System.out.println(getKarinaFromRomaji("shin"));
     }
 
     /** 片假名的長音 */
@@ -211,6 +213,9 @@ public class Romaji2KarinaTest {
         }
         // 還餘有羅馬字，排除
         if (!res.isEmpty()) {
+            // 去褈
+            res = new ArrayList<String>(new LinkedHashSet<String>(res));
+
             List<String> res2 = new ArrayList<String>();
             for (String str : res) {
                 if (!str.matches("^.*[a-z].*$")) {
