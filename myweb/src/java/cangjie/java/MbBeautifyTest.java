@@ -6,7 +6,7 @@ import java.util.List;
 import cangjie.java.util.IOUtils;
 
 /**
- * 碼表格式化一下
+ * 碼表美化一下
  * 
  * @author fszhouzz@qq.com
  * @time 2018年1月23日上午11:10:32
@@ -20,8 +20,28 @@ public class MbBeautifyTest {
         doBeautify(file);
     }
 
+    /**
+     * 碼表美化一下
+     * 
+     * @author fszhouzz@qq.com
+     * @param file
+     * @throws Exception
+     */
     private static void doBeautify(String file) throws Exception {
         List<String> lines = IOUtils.readLines(file);
+        List<String> res = doBeautify(lines);
+        IOUtils.writeFile(file, res);
+    }
+
+    /**
+     * 碼表美化一下
+     * 
+     * @author fszhouzz@qq.com
+     * @param lines
+     * @return
+     * @throws Exception
+     */
+    private static List<String> doBeautify(List<String> lines) throws Exception {
         List<String> res = new ArrayList<String>();
         int maxCodeLen = 0;
 
@@ -44,6 +64,6 @@ public class MbBeautifyTest {
                 res.add(parts[0] + spaces + parts[1]);
             }
         }
-        IOUtils.writeFile(file, res);
+        return res;
     }
 }
