@@ -13,10 +13,8 @@ import cangjie.java.util.IOUtils;
  */
 public class MbBeautifyTest {
 
-    public static String mbsBaseDir = Cj00AllInOneTest.mbsBaseDir;
-
     public static void main(String[] args) throws Exception {
-        String file = mbsBaseDir + "korea-other.txt";
+        String file = "src\\java\\hangul\\file\\korea-12000.txt";
         doBeautify(file);
     }
 
