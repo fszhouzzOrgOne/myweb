@@ -11,18 +11,27 @@ import java.util.Map;
 import cangjie.java.util.IOUtils;
 import hangul.TypingFromRomanUtils;
 
+/**
+ * 滿文輸入工具
+ * 
+ * @author fszhouzz@qq.com
+ * @time 2018年1月23日下午3:13:55
+ */
 public class ManjuTypingTest {
 
     private static Map<String, List<String>> baseMbMap = null;
     private static int maxCodeLen = 0; // 7
     private static int minCodeLen = 3; // 1
 
+    private static String theSimKey = "q";
+    private static List<String> theSimList = null;
+
     public static void main(String[] args) {
         init();
 
         System.out.println(baseMbMap.keySet().size() + " " + maxCodeLen + " " + minCodeLen);
 
-        System.out.println(getManjuFromRoman("gvsa"));
+        System.out.println(getManjuFromRoman("q"));
     }
 
     public static void init() {
@@ -33,9 +42,18 @@ public class ManjuTypingTest {
             // File.separator + "korea-12000.txt");
             InputStream is = new FileInputStream("src\\java\\manju\\mb\\manju-100.txt");
             List<String> res = IOUtils.readLines(is);
+            // 符號的碼表
             is = new FileInputStream("src\\java\\manju\\mb\\manju-more.txt");
-            List<String> res2 = IOUtils.readLines(is);
-            res.addAll(res2);
+            List<String> resSim = IOUtils.readLines(is);
+            if (null != resSim && !resSim.isEmpty()) {
+                theSimList = new ArrayList<String>();
+                for (String sim : resSim) {
+                    if (sim.contains(" ")) {
+                        String[] parts = sim.split(" ");
+                        theSimList.add(parts[1]);
+                    }
+                }
+            }
 
             baseMbMap = new HashMap<String, List<String>>();
             for (String line : res) {
@@ -67,7 +85,11 @@ public class ManjuTypingTest {
         roman = roman.trim().toLowerCase();
 
         if (roman.length() == 1) {
-            return baseMbMap.get(roman);
+            if (theSimKey.equals(roman)) {
+                return theSimList;
+            } else {
+                return baseMbMap.get(roman);
+            }
         }
 
         List<Integer> lens = TypingFromRomanUtils.getPartsLen(roman, baseMbMap, minCodeLen, maxCodeLen);
