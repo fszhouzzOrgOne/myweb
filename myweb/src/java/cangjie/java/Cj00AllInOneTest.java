@@ -98,8 +98,7 @@ public class Cj00AllInOneTest {
     public static String jyutpingAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-jyutping.txt";
 
     // 滿文，自製碼表，參考網上下載的《滿文滿語學習教程完整版.pdf》内容。
-    public static String manju100 = mbsBaseDir + "manju-100.txt";
-    public static String manjuMore = mbsBaseDir + "manju-more.txt";
+    public static String manjuMoreOther = mbsBaseDir + "manju-moreOther.txt";
     public static String manjuAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-manju.txt";
 
     public static void main(String[] args) throws Exception {
@@ -136,7 +135,7 @@ public class Cj00AllInOneTest {
         }
 
         // 滿文
-        String[] mbmanju = new String[] { manju100, manjuMore };
+        String[] mbmanju = new String[] { manjuMoreOther };
         genAllInOne("圈點滿文", mbmanju, manjuAllInOne, withHeaders);
 
         // 注音符號
