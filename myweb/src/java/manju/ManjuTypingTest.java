@@ -12,7 +12,8 @@ import cangjie.java.util.IOUtils;
 import hangul.TypingFromRomanUtils;
 
 /**
- * 滿文輸入工具
+ * 滿文輸入工具<br/>
+ * 滿文，自製碼表，參考網上下載的《滿文滿語學習教程完整版.pdf》内容
  * 
  * @author fszhouzz@qq.com
  * @time 2018年1月23日下午3:13:55
