@@ -79,7 +79,7 @@ public class ManjuTypingTest {
         }
     }
 
-    private static List<String> getManjuFromRoman(String roman) {
+    public static List<String> getManjuFromRoman(String roman) {
         if (null == roman || roman.trim().length() == 0) {
             return null;
         }
