@@ -31,7 +31,7 @@ public class ManjuTypingTest {
 
         System.out.println(baseMbMap.keySet().size() + " " + maxCodeLen + " " + minCodeLen);
 
-        System.out.println(getManjuFromRoman("q"));
+        System.out.println(getManjuFromRoman("hargaxame"));
     }
 
     public static void init() {
