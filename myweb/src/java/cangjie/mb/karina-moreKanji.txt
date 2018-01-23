@@ -26006,6 +26006,7 @@ nigun 二軍
 niguruma 荷車
 nihenkei 二変系
 nihon 日本
+nihongo 日本語
 nihonmaki 二本巻
 nihouben 二方弁
 nihuda 荷札
