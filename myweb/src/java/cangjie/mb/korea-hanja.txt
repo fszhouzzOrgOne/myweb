@@ -46524,6 +46524,7 @@ jajil 子姪
 jajil 資質
 jajin 自盡
 jajin 自進
+jajo 子照
 jajo 慈鳥
 jajo 自助
 jajo 自嘲
@@ -52590,6 +52591,7 @@ jeungyeo 贈與
 jeungyeol 蒸熱
 jeungyeom 蒸炎
 jeungyeong 增嶸
+jeungyong 曾榕
 jeungyu 曾遊
 jeungyu 贈遺
 jeup 楫
