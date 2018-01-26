@@ -31051,6 +31051,7 @@ stwi 𠥙
 stwk 㞟
 su 㔾
 su 己
+su 已
 sua 𡲉
 sub 𡲊
 subt 𥁥
