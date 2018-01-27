@@ -4971,8 +4971,12 @@ e 衣
 e 重
 e 餌
 ebi 虾
+ebi 蝦
+ebiduru 蝦蔓
 ebisu 夷
 ebisu 戎
+ebizuru 蝦蔓
+echi 越
 echigo 越後
 echizen 越前
 eda 枝
@@ -5399,6 +5403,7 @@ esyaku 会釈
 etai 得体
 etchuu 越中
 ete 得手
+eti 越
 etigo 越後
 etizen 越前
 eto 干支
@@ -5433,6 +5438,7 @@ etureki 閲歴
 eturyuu 越流
 eziki 餌食
 ezo 虾夷
+ezo 蝦夷
 ezoushi 絵双紙
 ezousi 絵双紙
 ezu 絵鄃
@@ -12544,6 +12550,7 @@ i 医
 i 唯
 i 囲
 i 圍
+i 夷
 i 委
 i 威
 i 尉
@@ -17125,6 +17132,7 @@ kasa 瘡
 kasa 笠
 kasabuta 瘡蓋
 kasahaguruma 傘歯車
+kasai 下載
 kasai 火災
 kasaka 傘下
 kasaku 仮作
@@ -19880,6 +19888,7 @@ koeru 肥える
 koeru 超える
 koeru 越える
 kogai 戸外
+kogami 小腹
 kogan 湖岸
 kogane 小金
 kogane 黄金
@@ -21376,6 +21385,8 @@ koutyouryoku 抗張力
 koutyuu 光柱
 koutyuuseki 紅柱石
 kouu 降雨
+kouun 好運
+kouun 幸運
 kouunki 耕耘機
 kouuryou 降雨量
 kouwa 講和
@@ -23195,6 +23206,8 @@ maikan 埋管
 maiki 毎期
 maikyo 枚挙
 maimai 毎毎
+maimai 舞舞
+maimai 舞い舞い
 mainen 毎年
 mainichi 毎日
 mainiti 毎日
@@ -23337,6 +23350,7 @@ man 満
 man 滿
 man 漫
 man 萬
+man 蔓
 manabu 学ぶ
 manabu 學ぶ
 manako 眼
@@ -24523,6 +24537,7 @@ moshou 喪章
 mosu 燃す
 mosya 模写
 mosyou 喪章
+motarasu 齎す
 moteasobu 弄ぶ
 moti 糯
 moti 餅
@@ -26318,6 +26333,7 @@ noberu 述べる
 nobezinin 延人員
 nobezinin 延べ人員
 nobi 野火
+nobiru 野蒜
 nobiru 伸びる
 nobiru 延びる
 nobori 幟
@@ -26520,6 +26536,7 @@ nowaki 野分
 noyaki 野焼
 noyaki 野焼き
 nozoku 覗
+nozoku 覗く
 nozoku 除く
 nozomu 望む
 nozomu 臨む
@@ -28285,6 +28302,7 @@ ro 艫
 ro 賂
 ro 路
 ro 露
+ro 魯
 roba 驢馬
 robata 炉端
 roben 炉弁
@@ -32294,6 +32312,7 @@ shin 愼
 shin 慎
 shin 振
 shin 新
+shin 晋
 shin 森
 shin 津
 shin 浸
@@ -32303,6 +32322,7 @@ shin 眞
 shin 真
 shin 矧
 shin 神
+shin 秦
 shin 紳
 shin 臣
 shin 舿
@@ -33419,6 +33439,7 @@ shougo 正午
 shougoku 生国
 shougou 商号
 shougou 照合
+shougou 称号
 shougouki 照合機
 shougun 将軍
 shougyou 商業
@@ -34681,6 +34702,7 @@ sin 愼
 sin 慎
 sin 振
 sin 新
+sin 晋
 sin 森
 sin 津
 sin 浸
@@ -34690,6 +34712,7 @@ sin 眞
 sin 真
 sin 矧
 sin 神
+sin 秦
 sin 紳
 sin 臣
 sin 舿
@@ -37575,6 +37598,7 @@ syougo 正午
 syougoku 生国
 syougou 商号
 syougou 照合
+syougou 称号
 syougouki 照合機
 syougun 将軍
 syougyou 商業
@@ -39955,6 +39979,7 @@ tegata 手形
 tegigouki 適合器
 tegiwa 手際
 tegokoro 手心
+tegoro 手頃
 teguchi 手口
 teguruma 手車
 teguti 手口
@@ -40678,6 +40703,7 @@ tentousya 転倒車
 tentyou 天頂
 tentyougi 天頂儀
 tentyoukaku 天頂角
+tenugui 手拭
 tenui 手縫
 tenui 手縫い
 tenun 天運
@@ -41527,6 +41553,7 @@ toriatukai 取扱い
 toribe 取鍋
 toride 砦
 torihada 鳥肌
+torihiki 取引
 torihuda 取札
 torihuda 取り札
 torii 鳥居
@@ -43825,6 +43852,7 @@ ui 有為
 uiji 雨衣地
 uikumen 雨育綿
 uimago 初孫
+uirou 外郎
 uizan 初産
 uizi 雨衣地
 uji 氏
