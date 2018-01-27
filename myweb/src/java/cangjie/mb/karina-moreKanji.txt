@@ -3640,6 +3640,7 @@ chuuzahyou 柱座標
 chuuzai 抽剤
 chuuzai 駐在
 chuuzaihi 抽剤比
+chuuzan 中山
 chuuzanbutsu 抽残物
 chuuzaneki 抽残液
 chuuze 中背
@@ -4967,6 +4968,8 @@ e 柄
 e 江
 e 絵
 e 繪
+e 衛
+e 衞
 e 衣
 e 重
 e 餌
@@ -5141,6 +5144,7 @@ en 沿
 en 演
 en 炎
 en 煙
+en 燕
 en 猿
 en 緣
 en 縁
@@ -5227,6 +5231,7 @@ enkasuzu 塩化錫
 enkatsu 円滑
 enkatu 円滑
 enkei 円形
+enkei 燕京
 enkei 遠景
 enkeiki 円形機
 enki 塩基
@@ -6373,6 +6378,7 @@ gi 犧
 gi 疑
 gi 義
 gi 議
+gi 魏
 gian 議案
 gibo 義母
 gichou 議長
@@ -14467,6 +14473,7 @@ jou 蒸
 jou 襄
 jou 譲
 jou 讓
+jou 鄭
 jou 醸
 jou 釀
 jou 錠
@@ -19171,6 +19178,7 @@ kinkei 近景
 kinken 勤倹
 kinken 金権
 kinki 禁忌
+kinki 近畿
 kinkin 近近
 kinko 禁固
 kinko 近古
@@ -23397,9 +23405,13 @@ mansai 満載
 mansaku 満作
 mansei 慢性
 manshin 満身
+manshuu 満州
+manshuu 満洲
 mansin 満身
 mansuji 万筋
 mansuzi 万筋
+mansyuu 満州
+mansyuu 満洲
 manten 満点
 mantou 饅頭
 mantyou 満潮
@@ -28648,6 +28660,7 @@ ryou 凉
 ryou 凌
 ryou 寮
 ryou 料
+ryou 梁
 ryou 涼
 ryou 漁
 ryou 猟
@@ -29025,6 +29038,7 @@ sai 碎
 sai 祭
 sai 細
 sai 菜
+sai 蔡
 sai 裁
 sai 西
 sai 財
@@ -29987,6 +30001,7 @@ satsu 擦
 satsu 早
 satsu 札
 satsu 殺
+satsu 蔡
 satsu 殺
 satsubatsu 殺伐
 satsuei 撮影
@@ -30013,6 +30028,7 @@ satu 擦
 satu 早
 satu 札
 satu 殺
+satu 蔡
 satu 殺
 satubatu 殺伐
 satuei 撮影
@@ -33147,6 +33163,7 @@ shokkai 職階
 shokkaku 触覚
 shokkaku 触角
 shokkaku 食客
+shokkan 蜀漢
 shokkan 触感
 shokken 職権
 shokken 食券
@@ -34034,6 +34051,7 @@ shuu 州
 shuu 愁
 shuu 拾
 shuu 收
+shuu 洲
 shuu 祝
 shuu 秀
 shuu 秋
@@ -37309,6 +37327,7 @@ syokkai 職階
 syokkaku 触覚
 syokkaku 触角
 syokkaku 食客
+syokkan 蜀漢
 syokkan 触感
 syokken 職権
 syokken 食券
@@ -38196,6 +38215,7 @@ syuu 州
 syuu 愁
 syuu 拾
 syuu 收
+syuu 洲
 syuu 祝
 syuu 秀
 syuu 秋
@@ -40013,6 +40033,7 @@ tei 蹄
 tei 逓
 tei 遞
 tei 邸
+tei 鄭
 tei 體
 teian 提案
 teiatsu 低圧
@@ -43750,6 +43771,7 @@ tyuuzahyou 柱座標
 tyuuzai 抽剤
 tyuuzai 駐在
 tyuuzaihi 抽剤比
+tyuuzan 中山
 tyuuzanbutu 抽残物
 tyuuzaneki 抽残液
 tyuuze 中背
@@ -44189,6 +44211,7 @@ utsu 打つ
 utsu 撃つ
 utsu 擊つ
 utsu 討つ
+utsubari 梁
 utsubo 靫
 utsugi 卯月
 utsukushii 美しい
@@ -44213,6 +44236,7 @@ utu 打つ
 utu 撃つ
 utu 擊つ
 utu 討つ
+utubari 梁
 utubo 靫
 utugi 卯月
 utukusii 美しい
@@ -47305,6 +47329,7 @@ zuhu 図譜
 zuhyou 図表
 zui 瑞
 zui 萣
+zui 隋
 zui 随
 zui 隨
 zui 髄
@@ -47508,6 +47533,7 @@ zyou 蒸
 zyou 襄
 zyou 譲
 zyou 讓
+zyou 鄭
 zyou 醸
 zyou 釀
 zyou 錠
