@@ -6718,6 +6718,8 @@ goukaku 合格
 goukakuhin 合格品
 goukakuiki 合格域
 goukakusen 合格線
+goukan 強姦
+goukanzai 強姦罪
 goukazai 剛化剤
 goukei 合計
 goukeikyo 合経距
