@@ -19454,6 +19454,7 @@ kisai 鬼才
 kisaki 后
 kisaku 奇策
 kisama 貴咽
+kisama 貴様
 kisan 希酸
 kisan 帰参
 kisan 揮散
@@ -23949,6 +23950,7 @@ migiude 右腕
 migiwa 汀
 migiwa 渚
 migiwa 水際
+migoto 美事
 migoto 見事
 mihai 未配
 mihappyou 未発表
@@ -24320,6 +24322,7 @@ mo 喪
 mo 模
 mo 茂
 mo 藻
+mochi 勿
 mochi 糯
 mochi 餅
 mochi 餠
@@ -24363,6 +24366,8 @@ mokeiban 模型盤
 mokka 目下
 mokka 黙過
 mokkan 木管
+mokke 勿怪
+mokke 物怪
 mokkei 黙契
 mokkeiba 木型場
 mokkeishaku 木型尺
@@ -24557,6 +24562,7 @@ mosya 模写
 mosyou 喪章
 motarasu 齎す
 moteasobu 弄ぶ
+moti 勿
 moti 糯
 moti 餅
 moti 餠
@@ -30141,6 +30147,7 @@ sei 逝
 sei 醒
 sei 靑
 sei 青
+sei 靖
 sei 静
 sei 靜
 sei 齊
@@ -30427,6 +30434,7 @@ seikin 精勤
 seikisa 正規鎖
 seikizoku 正規族
 seikoku 正鵠
+seikoku 靖国
 seikon 精根
 seikotsu 整骨
 seikotu 整骨
@@ -44862,7 +44870,9 @@ yasiro 社
 yasizu 矢視鄃
 yasou 野草
 yasoukyoku 夜想曲
+yasu 靖
 yasui 安い
+yasukuni 靖国
 yasumaru 休まる
 yasumeru 休める
 yasumu 休む

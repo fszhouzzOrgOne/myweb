@@ -38,7 +38,7 @@ public class Cj01SQLiteTest {
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
 
     private static Map<String, Integer> mbOrderNoMap = null; // 文字排序權值
-
+ 
     private static Set<String> ansichars = null;
     static {
         ansichars = new HashSet<String>();
@@ -65,7 +65,7 @@ public class Cj01SQLiteTest {
 
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 471418
+        boolean edition2 = true; // 2版本自定義字體 471428
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
