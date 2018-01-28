@@ -11858,6 +11858,7 @@ hurui 古い
 hurujigane 古地金
 hurukabu 古株
 hurukizu 古傷
+hurumai 振舞
 hurupatsu 奮発
 hurupatu 奮発
 hurusato 古里
@@ -16719,6 +16720,7 @@ kansai 完済
 kansai 関西
 kansaku 間作
 kansan 換算
+kansan 甘酸
 kansan 閑散
 kansanhyou 換算表
 kansanritsu 換算率
@@ -18036,6 +18038,7 @@ ken 検
 ken 権
 ken 檢
 ken 權
+ken 欠
 ken 牽
 ken 犬
 ken 献
@@ -20239,6 +20242,7 @@ konjou 根性
 konjou 紺青
 konjouki 混蒸気
 konka 婚家
+konkai 今回
 konkan 根徯
 konkei 根系
 konkei 根茎
@@ -33165,6 +33169,7 @@ shokkaku 触角
 shokkaku 食客
 shokkan 蜀漢
 shokkan 触感
+shokkan 食感
 shokken 職権
 shokken 食券
 shokki 織機
@@ -37329,6 +37334,7 @@ syokkaku 触角
 syokkaku 食客
 syokkan 蜀漢
 syokkan 触感
+syokkan 食感
 syokken 職権
 syokken 食券
 syokki 織機
