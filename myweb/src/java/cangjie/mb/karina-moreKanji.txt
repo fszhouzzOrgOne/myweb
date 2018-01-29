@@ -30998,6 +30998,7 @@ sen 先
 sen 剪
 sen 千
 sen 占
+sen 圳
 sen 宣
 sen 専
 sen 專
@@ -32630,6 +32631,7 @@ shinsei 神聖
 shinsen 心線
 shinsen 新鮮
 shinsen 浸染
+shinsen 深圳
 shinsetsu 新設
 shinsetsu 真説
 shinsetsu 親切
@@ -35002,6 +35004,7 @@ sinsei 神聖
 sinsen 心線
 sinsen 新鮮
 sinsen 浸染
+sinsen 深圳
 sinsetu 新設
 sinsetu 真説
 sinsetu 親切
