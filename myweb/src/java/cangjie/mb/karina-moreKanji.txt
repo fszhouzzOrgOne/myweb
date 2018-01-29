@@ -820,8 +820,10 @@ atosimatu 後始末
 atosyori 後処理
 atosyuusyuku 後収縮
 atotsugi 跡継
+atotsugi 後継ぎ
 atotsugi 跡継ぎ
 atotugi 跡継
+atotugi 後継ぎ
 atotugi 跡継ぎ
 atsu 圧
 atsu 壓
@@ -7301,7 +7303,6 @@ hai 灰
 hai 肺
 hai 背
 hai 胚
-hai 軮
 hai 輩
 hai 配
 haian 廃案
@@ -7313,10 +7314,10 @@ haiben 排便
 haibi 配備
 haiboku 敗北
 haibu 背部
-haibukuro 軮袋
-haibun 軮分
+haibukuro 灰袋
+haibun 灰分
 haibun 配分
-haibune 軮船
+haibune 灰船
 haibutsu 廃物
 haibutu 廃物
 haibyou 肺病
@@ -7363,14 +7364,14 @@ haihon 配本
 haihou 肺泡
 haihu 配付
 haihu 配布
-haihukiro 軮吹炉
+haihukiro 灰吹炉
 haihuku 拝復
 haihuu 俳風
 haihuuki 排風機
 haii 配位
 haii 配意
 haiin 敗因
-haiiro 軮色
+haiiro 灰色
 haiisuu 配位数
 haiji 拝辞
 haijin 俳人
@@ -7378,7 +7379,7 @@ haijin 廃人
 haijo 排除
 haiju 拝受
 haika 廃家
-haika 軮化
+haika 灰化
 haika 配下
 haikakyou 拝火教
 haikan 廃刊
@@ -7418,8 +7419,8 @@ haikisitu 排気室
 haikitou 排気筒
 haikou 廃坑
 haikou 廃校
+haikou 灰坑
 haikou 背向
-haikou 軮坑
 haikou 配光
 haikou 配向
 haikoudo 配向度
@@ -7514,7 +7515,7 @@ haisuiro 排水路
 haisuiryou 排水量
 haisuiti 配水池
 haisuitou 配水塔
-haisutetou 軮捨筒
+haisutetou 灰捨筒
 haisya 背斜
 haisya 配車
 haisya 歯医者
@@ -7542,7 +7543,7 @@ haitoku 背徳
 haitou 配当
 haityou 拝聴
 haityuuritu 排中律
-haiuke 軮受
+haiuke 灰受
 haiyaku 配役
 haiyu 廃油
 haiyu 排油
@@ -14099,6 +14100,7 @@ jin 刃
 jin 塵
 jin 尋
 jin 尽
+jin 燼
 jin 甚
 jin 盡
 jin 神
@@ -15376,7 +15378,6 @@ kai 街
 kai 解
 kai 諧
 kai 貝
-kai 軮
 kai 開
 kai 階
 kai 悔
@@ -15411,7 +15412,7 @@ kaichou 諧調
 kaichou 開帳
 kaichou 階調
 kaichoudo 階調度
-kaichouseki 軮長石
+kaichouseki 灰長石
 kaichuu 回虫
 kaichuu 懐中
 kaichuu 改鋳
@@ -15458,6 +15459,9 @@ kaigyaku 諧謔
 kaigyou 改行
 kaigyou 開業
 kaihai 改廃
+kaihaku 灰白
+kaihakushoku 灰白色
+kaihakusyoku 灰白色
 kaihatsu 開発
 kaihatu 開発
 kaihei 開平
@@ -15494,6 +15498,8 @@ kaiinu 飼犬
 kaiinu 飼い犬
 kaiji 界磁
 kaijikyoku 界磁極
+kaijin 灰塵
+kaijin 灰燼
 kaijiritsu 界磁率
 kaijiro 開磁路
 kaijishaku 界磁石
@@ -15731,7 +15737,7 @@ kaisho 会所
 kaishoku 会食
 kaishoku 壊食
 kaishoku 解職
-kaishokutai 軮色体
+kaishokutai 灰色体
 kaishou 回章
 kaishou 快勝
 kaishou 改臷
@@ -15784,7 +15790,7 @@ kaisyo 会所
 kaisyoku 会食
 kaisyoku 壊食
 kaisyoku 解職
-kaisyokutai 軮色体
+kaisyokutai 灰色体
 kaisyou 回章
 kaisyou 快勝
 kaisyou 改臷
@@ -15855,7 +15861,7 @@ kaityou 諧調
 kaityou 開帳
 kaityou 階調
 kaityoudo 階調度
-kaityouseki 軮長石
+kaityouseki 灰長石
 kaityuu 回虫
 kaityuu 懐中
 kaityuu 改鋳
@@ -15876,6 +15882,8 @@ kaizen 改善
 kaizendo 改善度
 kaizi 界磁
 kaizikyoku 界磁極
+kaizin 灰塵
+kaizin 灰燼
 kaiziritu 界磁率
 kaiziro 開磁路
 kaizisyaku 界磁石
@@ -19983,6 +19991,7 @@ kokka 国家
 kokka 国歌
 kokka 国花
 kokkai 国会
+kokkai 骨灰
 kokkaku 骨格
 kokkan 酷寒
 kokken 国憲
@@ -20933,6 +20942,7 @@ koukazai 鉱化剤
 koukazai 降下剤
 koukei 光景
 koukei 口径
+koukei 後継
 koukei 黄経
 koukeihi 口径比
 koukeiki 好景気
@@ -31483,7 +31493,8 @@ sessen 節線
 sessen 雪線
 sessenryoku 接線力
 sessha 接写
-sesshin 軥信
+sesshin 窃信
+sesshin 竊信
 sesshoku 接触
 sesshoku 節食
 sesshokuhen 接触片
@@ -31499,10 +31510,12 @@ sesshou 摂政
 sesshou 殺生
 sesshu 接種
 sesshu 摂取
-sesshu 軥取
+sesshu 窃取
+sesshu 竊取
 sesshuritsu 摂取率
 sesshuu 接収
-sessin 軥信
+sessin 窃信
+sessin 竊信
 sessoku 拙速
 sessou 節操
 sessou 設想
@@ -31523,7 +31536,8 @@ sessyou 摂政
 sessyou 殺生
 sessyu 接種
 sessyu 摂取
-sessyu 軥取
+sessyu 窃取
+sessyu 竊取
 sessyuritu 摂取率
 sessyuu 接収
 sesuji 背筋
@@ -31562,7 +31576,6 @@ setsu 竊
 setsu 節
 setsu 設
 setsu 説
-setsu 軥
 setsu 雪
 setsu 殺
 setsu 節
@@ -31607,6 +31620,7 @@ setsuritsu 設立
 setsuryoukei 雪量計
 setsuwa 説話
 setsuyaku 節約
+setsuyou 窃用
 setsuyu 説諭
 setsuzoku 接続
 setsuzokubako 接続箱
@@ -31628,7 +31642,8 @@ settiatu 接地圧
 settimou 接地網
 settisen 接地線
 settoku 説得
-settou 軥盗
+settou 窃盗
+settou 竊盜
 settougo 接頭語
 settyaku 接着
 settyakuhu 接着布
@@ -31650,7 +31665,6 @@ setu 竊
 setu 節
 setu 設
 setu 説
-setu 軥
 setu 雪
 setu 殺
 setu 節
@@ -31691,6 +31705,7 @@ seturitu 設立
 seturyoukei 雪量計
 setuwa 説話
 setuyaku 節約
+setuyou 窃用
 setuyu 説諭
 setuzitu 切実
 setuzoku 接続
@@ -44054,6 +44069,7 @@ untensitu 運転室
 untiku 蘊蓄
 untin 運賃
 untinritu 運賃率
+unu 汝
 unyou 運用
 unyu 運輸
 unyushou 運輸省
@@ -46851,6 +46867,7 @@ zin 刃
 zin 塵
 zin 尋
 zin 尽
+zin 燼
 zin 甚
 zin 盡
 zin 神
