@@ -20,9 +20,16 @@
 數詞      sou3ci4
 姓氏      sing3si6
 姓氏      seng3si6
-丈 zoeng6 丈夫, 丈人, 丈母
-三 saam1 三才, 三代, 三皇
-三 saam3 三思, 三復, 三思後行
+丈夫      zoeng6fu1
+丈人      zoeng6jan4
+丈母      zoeng6mou5
+丈母      zoeng6mau4 
+三才      saam1coi4
+三代      saam1doi6
+三皇      saam1wong4
+三思      saam3si1
+三復      saam3fuk1
+三思後行  saam3si1hau6hang4
 上 soeng5 上山, 上書, 上課
 上 soeng6 上午, 上司, 上旬
 下 haa5 指動作的次數，如「打一下」

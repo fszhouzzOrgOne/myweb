@@ -4711,6 +4711,7 @@ fui3 顪
 fui3 餯
 fuk1 复
 fuk1 幅
+fuk1 復
 fuk1 愎
 fuk1 福
 fuk1 腹
