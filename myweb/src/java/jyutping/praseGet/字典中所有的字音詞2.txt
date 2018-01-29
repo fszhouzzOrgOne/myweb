@@ -1,3 +1,4 @@
+# 單字的不要，異讀音一般也不用
 一致      jat1zi3
 統一      tung2jat1
 一枝獨秀  jat1zi1duk6sau3
@@ -31,26 +32,59 @@
 三復      saam3fuk1
 三思後行  saam3si1hau6hang4
 三思後行  saam3si1hau6haang4
-上 soeng5 上山, 上書, 上課
-上 soeng6 上午, 上司, 上旬
-下 haa5 指動作的次數，如「打一下」
-下 haa6 下人, 下手, 下午
-丌 gei1 姓氏
-丌 kei4 (1)姓氏 (2)「其」的古字 
-不 bat1 不然, 不離不棄, 一成不變
-不 fau2 同「否」字
-丏 min5 (1)遮蔽 (2)古代避箭的短牆 
-丐 goi3 「丐koi3」的異讀字
-丐 koi3 丐助, 乞丐, 沾丐
-丑 cau2 丑角, 丑時, 小丑(1)地支的第二位 (2)姓氏 
-且 ce2 且住, 且慢, 而且
-且 ceoi1 次且
-且 ceoi2 「且zeoi1」的異讀字
-且 zeoi1 古漢語助詞
-且 cou4 「且ceoi1」的異讀字
-丕 pei1 丕變, 丕烈
-世 sai3 世界, 世紀, 世俗
-丘 jau1 丘陵, 丘壑, 沙丘姓氏
+上山      soeng5saan1
+上書      soeng5syu1
+上課      soeng5fo3
+上午      soeng6ng5
+上司      soeng6si1
+上旬      soeng6ceon4
+動作      dung6zok3
+次數      ci3sou3
+一下      jat1haa5
+打一下    daa2jat1haa5
+下人      haa6jan4
+下手      haa6sau2
+下午      haa6ng5
+古字      gu2zi6
+不然      bat1jin4
+不離不棄  bat1lei4bat1hei3
+一成不變  jat1cing4bat1bin3
+丏蔽      min5bai3
+遮蔽      ze1bai3
+古代      gu2doi6
+避箭      bei6zin3
+短牆      dyun2coeng4
+丐助      koi3zo6
+乞丐      hat1koi3
+沾丐      zim1koi3
+丐助      goi3zo6
+乞丐      hat1goi3
+沾丐      zim1goi3
+丑角      cau2gok3
+丑時      cau2si4
+小丑      siu2cau2
+小醜      siu2cau2
+地支      dei6zi1
+第二      dai6ji6
+第二位    dai6ji6wai6
+二位      ji6wai6
+且住      ce2zyu6
+且慢      ce2maan6
+而且      ce2ji4
+次且      ci1ceoi1
+古漢      gu2hon3
+漢語      hon3jyu5
+語助      jyu5zo6
+助詞      zo6ci4
+丕變      pei1bin3
+丕烈      pei1lit6
+世界      sai3gaai3
+世紀      sai3gei2
+世紀      sai3gei3
+世俗      sai3zuk6
+丘陵      jau1ling4
+丘壑      jau1kok3
+沙丘      saa1jau1
 丙 bing2 丙等, 丙夜, 付丙(燒棄)(1)十「天干」之三 (2)姓氏 
 丞 cing2 通「拯」字
 丞 sing4 丞相, 驛丞, 縣丞
