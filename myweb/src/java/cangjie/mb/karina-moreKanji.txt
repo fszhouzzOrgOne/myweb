@@ -2612,6 +2612,7 @@ byouzyaku 病弱
 byouzyou 病状
 cha 茶
 chaahan 炒飯
+chaba 茶葉
 chadai 茶代
 chadou 茶道
 chagashi 茶菓子
@@ -21004,6 +21005,7 @@ koukyuu 光球
 koukyuu 公休
 koukyuu 攻究
 koukyuu 鋼球
+koukyuu 高級
 koukyuu 高給
 koumai 高邁
 koumakijaku 鋼卷尺
@@ -43094,6 +43096,7 @@ tuzi 旋毛
 tuzituma 辻褄
 tya 茶
 tyaahan 炒飯
+tyaba 茶葉
 tyadai 茶代
 tyadou 茶道
 tyagasi 茶菓子
