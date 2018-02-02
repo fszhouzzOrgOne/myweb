@@ -26,7 +26,7 @@ public class Namaja2HangeulTest {
         init();
         System.out.println(baseMbMap.keySet().size() + " " + maxCodeLen + " " + minCodeLen);
 
-        System.out.println(getHangeulFromNamaja("joseon"));
+        System.out.println(getHangeulFromNamaja("aaaaaaaaaaaaaaaaaaaaaaaaaaa"));
     }
 
     public static void init() {
@@ -105,7 +105,7 @@ public class Namaja2HangeulTest {
             return baseMbMap.get(namaja);
         }
 
-        List<Integer> lens = TypingFromRomanUtils.getPartsLen(namaja, baseMbMap, minCodeLen, maxCodeLen);
+        List<String> lens = TypingFromRomanUtils.getPartsLen(namaja, baseMbMap, minCodeLen, maxCodeLen);
         List<String> res = TypingFromRomanUtils.getResByPartsLen(namaja, baseMbMap, lens);
 
         // 去褈

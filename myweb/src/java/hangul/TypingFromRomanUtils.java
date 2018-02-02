@@ -51,10 +51,10 @@ public class TypingFromRomanUtils {
      *            碼表中最長鍵長
      * @return List是分法的個數，裡面的數字位數表示可分成幾段，各位數字表示各段長度
      */
-    public static List<Integer> getPartsLen(String namaja, Map<String, List<String>> baseMbMap, int minCodeLen,
+    public static List<String> getPartsLen(String namaja, Map<String, List<String>> baseMbMap, int minCodeLen,
             int maxCodeLen) {
-        List<Integer> temp = new ArrayList<Integer>();
-        for (Integer i = minCodeLen; i < maxCodeLen; i++) {
+        List<String> temp = new ArrayList<String>();
+        for (Integer i = minCodeLen; i <= maxCodeLen; i++) {
             if (i <= namaja.length()) {
                 List<String> one = baseMbMap.get(namaja.substring(0, i));
                 if (null == one) {
@@ -62,18 +62,12 @@ public class TypingFromRomanUtils {
                 }
 
                 if (i == namaja.length()) {
-                    temp.add(i);
+                    temp.add(i + "");
                 } else {
-                    List<Integer> subLens = getPartsLen(namaja.substring(i), baseMbMap, minCodeLen, maxCodeLen);
+                    List<String> subLens = getPartsLen(namaja.substring(i), baseMbMap, minCodeLen, maxCodeLen);
                     if (null != subLens && !subLens.isEmpty()) {
-                        for (Integer subInt : subLens) {
-                            int tempI = i;
-                            for (int ii = 1; ii <= subInt.toString().length(); ii++) {
-                                tempI *= 10;
-                            }
-                            if (null != temp) {
-                                temp.add(tempI + subInt);
-                            }
+                        for (String subInt : subLens) {
+                            temp.add(i + "" + subInt);
                         }
                     }
                 }
@@ -92,13 +86,13 @@ public class TypingFromRomanUtils {
      * @param lens
      * @return
      */
-    public static List<String> getResByPartsLen(String roman, Map<String, List<String>> baseMbMap, List<Integer> lens) {
+    public static List<String> getResByPartsLen(String roman, Map<String, List<String>> baseMbMap, List<String> lens) {
         List<String> res = new ArrayList<String>();
         if (null != lens && !lens.isEmpty()) {
-            for (Integer len : lens) {
+            for (String len : lens) {
                 List<String> parts = new ArrayList<String>();
                 int start = 0;
-                for (int index = 0; index < len.toString().length(); index++) {
+                for (int index = 0; index < len.length(); index++) {
                     int number = Integer.parseInt(len.toString().charAt(index) + "");
                     parts.add(roman.substring(start, start + number));
 
