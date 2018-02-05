@@ -19092,29 +19092,59 @@
 齷 ak1 齷齪
 齷 ngak1 「齷ak1」的異讀字
 齸 jat6 (1)麋鹿反芻 (2)麋鹿的反芻胃 (3)泛指牛羊之類動物 
-齹 ci1 牙齒參差不齊
-齹 co4 齒根
-齺 zau1 (1)牙齒折斷 (2)嚙咬 
-齻 din1 牙兩畔之最長者
-齾 ngaa3 缺齾, 疵齾, 高城齾齾
-龍 lung4 龍舟, 龍門, 龍華
-龐 pong4 龐大, 龐雜, 龐然大物
-龐 lung4 「龐pong4」的異讀字
-龑 jim2 人名用字
-龑 jin2 「龑jim2」的異讀字
-龒 lung4 同「龍」字
-龔 gung1 姓氏
-龕 ham1 神龕, 壁龕, 佛龕
-龘 daap6 龍飛的狀態
-龜 gwai1 龜年, 龜板, 龜卜
-龜 gwan1 龜裂, 不龜藥, 龜坼
-龜 gau1 龜茲(古西域國名)
-龜 kau1 「龜gau1」的異讀字
-龠 joek6 (1)古樂器 (2)古代量度單位 (3)部首之一 
-龢 wo4 翁同龢(清一代名臣，官至軍機大臣)同「和」字
-龤 haai4 同「諧」字，意指樂聲和諧
-兀 ngat6 同「兀」字
-嗀 fo3 「嗀hok3」的異讀字
-嗀 hok3 嘔吐
-嗀 fo3 「嗀hok3」的異讀字
-嗀 hok3 嘔吐
+參差不齊    caam1ci1bat1cai4
+不齊  bat1cai4
+參差  caam1ci1
+齒根  ci2gan1
+牙齒  ngaa4ci2
+折斷  zit3dyun6
+嚙咬  ngit6ngaau5
+牙畔  ngaa4bun6
+兩畔  loeng5bun6
+最長  zeoi3coeng4
+長者  zoeng2ze2
+缺齾  kyut3ngaa3
+疵齾  ci1ngaa3
+高城齾齾    gou1sing4ngaa3ngaa3
+龍舟  lung4zau1
+龍門  lung4mun4
+龍華  lung4waa4
+龐大  pong4daai6
+龐雜  pong4zaap6
+龐然  pong4jin4
+龐然大物    pong4jin4daai6mat6
+龔姓  gung1sing3
+龔氏  gung1si6
+神龕  san4ham1
+壁龕  bik1ham1
+佛龕  fat6ham1
+飛龍  fei1lung4
+狀態  zong6taai3
+龜年  gwai1nin4
+龜板  gwai1baan2
+龜卜  gwai1buk1
+龜裂  gwan1lit6
+不龜藥 bat1gwan1joek6
+龜坼  gwan1caak3
+龜茲  gau1ci4
+西域  sai1wik6
+國名  gwok3ming4
+古樂  gu2ngok6
+樂器  ngok6hei3
+古代  gu2doi6
+量度  loeng4dou6
+單位  daan1wai6
+部首  bou6sau2
+自首  zi6sau3
+之一  zi1jat1
+翁同龢 jung1tung4wo4
+清代  cing1doi6
+一代  jat1doi6
+名臣  ming4san4
+官至  gun1zi3
+軍機  gwan1gei1
+大臣  daai6san4
+意指  ji3zi2
+樂聲  ngok6sing1
+和諧  wo4haai4
+嘔吐  au2tou3
