@@ -191,7 +191,7 @@
 冚家鏟
 冚棒唥
 冚被
-冧酒
+冧酒      lam6zau2
 冷衫
 凍親
 凡士林
@@ -2048,87 +2048,116 @@
 鬰林縣
 
 #增補新詞
-百度雲
-網易雲音楽
-愛奇藝
-嗶哩嗶哩
-優酷網
-土豆網
-趙瑾昀
-張俊峰
-陳琨
-小琨
-琨琨
-壞琨
-風再起時
-風繼續吹
-麥客
-紛云
-搵笨
-馬迷
-造馬
-跳樓貨
-屈機
-升呢
-雙非
-潮文
-張寶華
-寶華
-寶華姐
-膜蛤
-知乎
-造語
-十卜
-秒經
-係噉
-噉就好
-係噉嘅
-工口
-湯森
-湯森路透
-字稿
-人人網
-悠息
-雲音樂
-雲盤
-微信
-螞蟻花唄
-指引參考
-小體鱘
-吖嗱
-粵人
-亞斗官
-亞保亞勝
-亞伯
-亞爸
-亞燦
-亞福
-亞甲亞乙
-亞錦賽
-亞狗
-亞貓
-亞狗亞貓
-亞姑
-亞公
-亞茂
-亞茂整餅
-亞妹
-亞奶
-亞女
-亞婆
-亞生
-亞細
-亞嬸
-亞誰
-亞傻
-亞嫂
-亞叔
-亞頭
-亞駝
-亞仔
-亞吱亞咗
-亞豬亞狗
-猰貐
-凹凹凸凸
-艇仔粥
-及第粥
+新詞      san1ci4
+增補      zang1bou2
+百度雲     baak3dou6wan4
+百度      baak3dou6
+網易      mong5ji6
+網易雲音樂   mong5ji6wan4jam1ngok6
+網易雲     mong5ji6wan4
+音樂      jam1ngok6
+愛奇藝     oi3kei4ngai6
+才藝      coi4ngai6
+嗶哩嗶哩    bat1le1bat1le1
+嗶哩嗶哩    bat1lei5bat1lei5
+優酷網     jau1huk6mong5
+優酷      jau1huk6
+土豆網     tou2dau6mong5
+土豆      tou2dau6
+趙瑾昀     ziu6gan2wan4
+趙氏      ziu6si6
+趙姓      ziu6sing3
+張俊峰     zoeng1zeon3fung1
+陳氏      can4si6
+陳姓      can4sing3
+陳琨      can4kwan1
+小琨      siu2kwan1
+琨琨      kwan1kwan1
+壞琨      waai6kwan1
+風再起時    fung1zoi3hei2si4
+再起      zoi3hei2
+風繼續吹    fung1gai3zuk6ceoi1
+風吹      fung1ceoi1
+繼續      gai3zuk6
+麥客      mak6haak3
+紛紜      fan1wan4
+紛云      fan1wan4
+搵笨      wan3ban6
+搵笨      wan2ban6
+馬迷      maa5mai4
+造馬      zou6maa5
+跳樓貨     tiu3lau4fo3
+跳樓      tiu3lau4
+屈機      wat1gei1
+升呢      sing1nei4
+升呢      sing1ne1
+雙非      soeng1fei1
+潮文      ciu4man4
+張氏      zoeng1si6
+張姓      zoeng1sing3
+張寶華     zoeng1bou2waa4
+寶華      bou2waa4
+寶華姐     bou2waa4ze2
+膜蛤      mou4haa4
+知乎      zi1fu1
+造語      zou6jyu5
+十卜      sap6buk1
+秒經      miu5ging1
+係噉      hai6gam2
+噉就好     gam2zau6hou2
+係噉嘅     hai6gam2ge3
+工口      gung1hau2
+湯森      tong1sam1
+湯森路透    tong1sam1lou6tau3
+字稿      zi6gou2
+人人網     jan5jan5mong5
+悠息      jau4sik1
+雲音樂     wan4jam1ngok6
+音樂      jam1ngok6
+雲盤      wan4pun4
+微信      mei4seon3
+螞蟻花唄    maa5ngai5faa1baai6
+螞蟻      maa5ngai5
+指引參考   zi2jan5caam1haau2
+指引      zi2jan5
+參考      caam1haau2
+小體鱘     siu2tai2cam4
+吖嗱      aa1naa4
+粵人      jyut6jan4
+亞斗官     aa3dau2gun1
+亞保亞勝    aa3bou2aa3sing3
+亞伯      aa3baak3
+亞爸      aa3baa1
+亞燦      aa3caan3
+亞福      aa3fuk1
+亞甲亞乙    aa3gaap3aa3jyut3
+亞錦賽     aa3gam2coi3
+亞狗      aa3gau2
+亞貓      aa3maau1
+亞狗亞貓    aa3gau2aa3maau1
+亞姑      aa3gu1
+亞公      aa3gung1
+亞茂      aa3mau6
+亞茂整餅    aa3mau6zing2beng2
+亞妹      aa3mui6
+亞奶      aa3naai5
+亞女      aa3neoi5
+亞婆      aa3po4
+亞生      aa3saang1
+亞細      aa3sai3
+亞嬸      aa3sam2
+亞誰      aa3seoi4
+亞傻      aa3so4
+亞嫂      aa3sou2
+亞叔      aa3suk1
+亞頭      aa3tau4
+亞駝      aa3to4
+亞仔      aa3zai2
+亞吱亞咗    aa3zi1aa3zo2
+亞豬亞狗    aa3zyu1aa3gau2
+猰貐      aat3jyu5
+猰貐      ngaat3jyu5
+凹凹凸凸    nap1nap1dat6dat6
+艇仔粥     ting5zai2zuk1
+艇仔粥     ting5zi2zuk1
+及第粥     kap6dai6zuk1
