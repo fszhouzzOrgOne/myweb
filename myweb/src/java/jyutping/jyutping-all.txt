@@ -487,6 +487,8 @@ bang1 祊
 bang1 絣
 bang1 绷
 bang1 蹦
+bang1 鏰
+bang1 镚
 bang2 甭
 bang6 凭
 bang6 憑
@@ -1105,6 +1107,7 @@ bung2 琣
 bung2 琫
 bung2 甭
 bung2 菶
+bung6 唪
 bung6 埲
 but3 发
 but3 拨
@@ -15140,6 +15143,7 @@ paang4 鵬
 paang4 鹏
 paang5 棒
 paang5 棓
+paat6 坺
 paau1 抛
 paau1 抱
 paau1 拋
@@ -15347,6 +15351,7 @@ pek6 擗
 peng1 漰
 peng4 平
 peng4 瓶
+pet6 坺
 pik1 僻
 pik1 副
 pik1 劈
