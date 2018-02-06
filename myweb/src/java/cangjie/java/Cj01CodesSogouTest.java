@@ -19,6 +19,9 @@ import unicode.UnicodeHanziUtil;
  */
 public class Cj01CodesSogouTest {
 
+    // 還不能到十萬了
+    private static Integer max_line_cnt = 98000;
+
     private static String mbBaseDir = "src\\java\\cangjie\\mb\\cjmb\\";
 
     /** 詞組編碼後的目標文件 */
@@ -122,9 +125,15 @@ public class Cj01CodesSogouTest {
         cj6All.removeAll(theRemoved);
 
         cj6All.addAll(mbMoreSet);
-        int endIndex = 100000 - cj6All.size();
+
+        int endIndex = cj6phrases.size();
+        if (cj6All.size() + cj6phrases.size() > max_line_cnt) {
+            endIndex = max_line_cnt - cj6All.size();
+        }
         cj6All.addAll(cj6phrases.subList(0, endIndex));
-        System.out.println("再排除了的詞組個數：" + cj6phrases.subList(endIndex, cj6phrases.size()).size());
+        System.out.println("排除的詞組數：" + cj6phrases.subList(endIndex, cj6phrases.size()).size());
+        System.out.println("排除的詞組，前面一個：" + cj6phrases.get(endIndex - 1));
+        System.out.println("排除的詞組，第一個：" + cj6phrases.get(endIndex));
         System.out.println("詞組加上单字後總數：" + cj6All.size());
         IOUtils.writeFile(mbBaseDir + destFileSogou, convertToSogouFormat(cj6All));
     }
