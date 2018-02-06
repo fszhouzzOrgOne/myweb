@@ -13,20 +13,20 @@ import cangjie.java.util.IOUtils;
 public class Test {
 
     public static String mbsBaseDir = "src\\java\\jyutping\\";
+    /** 粵拼碼表 */
+    private static String jyutpAllFile = mbsBaseDir + "jyutping-all.txt";
+    /** 編碼粵拼的詞組 */
+    private static String jyutPhrase = mbsBaseDir + "jyutping-phrases.txt";
 
     public static void main(String[] args) throws Exception {
         mergeMbs();
-
-        // 編碼粵拼的詞組
-        String mbFile = mbsBaseDir + "jyutping-all.txt";
-        String jyutPhrase = mbsBaseDir + "jyutping-phrases.txt";
 
         List<String> phrases = getJyutpingPhrase();
         IOUtils.writeFile(jyutPhrase, phrases);
 
         // 粵拼碼表整合
         // 用Q的個數表示聲調
-        List<String> mb = IOUtils.readLines(mbFile);
+        List<String> mb = IOUtils.readLines(jyutpAllFile);
         List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
         List<String> jyutAllInOne = new ArrayList<String>();
         for (String str : mb) {
@@ -66,7 +66,9 @@ public class Test {
                 }
             }
         }
-        return new ArrayList<String>(res);
+        List<String> resList = new ArrayList<String>(res);
+        Collections.sort(resList);
+        return resList;
     }
 
     /**
@@ -118,7 +120,7 @@ public class Test {
         listall.addAll(list3);
         listall.addAll(list4);
         Collections.sort(listall);
-        IOUtils.writeFile(mbsBaseDir + "jyutping-all.txt", listall);
-        IOUtils.uniqueCodeFile(mbsBaseDir + "jyutping-all.txt");
+        IOUtils.writeFile(jyutpAllFile, listall);
+        IOUtils.uniqueCodeFile(jyutpAllFile);
     }
 }
