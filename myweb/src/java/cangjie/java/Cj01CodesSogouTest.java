@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeHanziUtil;
 
 /**
  * 生成搜狗輸入法的短語表<br />
@@ -18,7 +19,7 @@ import cangjie.java.util.IOUtils;
  */
 public class Cj01CodesSogouTest {
 
-    private static String mbBaseDir = "src\\java\\cangjie\\mb\\";
+    private static String mbBaseDir = "src\\java\\cangjie\\mb\\cjmb\\";
 
     /** 詞組編碼後的目標文件 */
     private static String destPhrasesFile = null;
@@ -37,15 +38,15 @@ public class Cj01CodesSogouTest {
         setCj6();
         getCodesForSogou();
         
-        setCj5();
-        getCodesForSogou();
+//        setCj5();
+//        getCodesForSogou();
     }
 
     private static void setCj6() {
         destPhrasesFile = "cj6-phrase.txt";
-        mbfile = "cj6-20902.txt";
+        mbfile = "cj6-dict.txt";
         mbMoreFile = "cj6-more.txt";
-        simfile = "cj6-8300.txt";
+        simfile = null;
         destFileSogou = "allInOneSogou-cj6.txt";
     }
 
@@ -70,15 +71,22 @@ public class Cj01CodesSogouTest {
         ;
         List<String> cj6phrases = new ArrayList<String>(
                 IOUtils.readLines(mbBaseDir + destPhrasesFile));
-        List<String> cj6sims = IOUtils.readLines(mbBaseDir + simfile);
+        
         Set<String> cj6simChar = new HashSet<String>();
-        for (String ss : cj6sims) {
-            if (ss.contains(" ")) {
-                String[] keyVal = ss.split(" +");
-                String val = keyVal[1];
-                cj6simChar.add(val);
+        if (null != simfile) {
+            List<String> cj6sims = IOUtils.readLines(mbBaseDir + simfile);
+            for (String ss : cj6sims) {
+                if (ss.contains(" ")) {
+                    String[] keyVal = ss.split(" +");
+                    String val = keyVal[1];
+                    cj6simChar.add(val);
+                }
             }
+        } else {
+            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.baseRange)); // base2先不要
+            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.AextRange));
         }
+        
         Set<String> theRemoved = new HashSet<String>();
         System.out.println("詞組總數：" + cj6phrases.size());
         for (int i = cj6phrases.size() - 1; i >= 0; i--) {
@@ -90,7 +98,7 @@ public class Cj01CodesSogouTest {
                 for (int j = 0; j < phr.length(); j++) {
                     Character c = phr.charAt(j);
                     String s = c.toString();
-                    // 留下简化字
+                    // 要删除的字
                     if (!cj6simChar.contains(s)) {
                         theRemoved.add(phrase);
                     }
@@ -101,6 +109,19 @@ public class Cj01CodesSogouTest {
         System.out.println("词组馀数：" + cj6phrases.size());
 
         Set<String> cj6All = new LinkedHashSet<String>(cj6Set);
+        // 留下基本區字
+        theRemoved = new HashSet<String>();
+        for (String line : cj6All) {
+            if (line.contains(" ")) {
+                String[] keyVal = line.split(" +");
+                String val = keyVal[1];
+                if (!cj6simChar.contains(val)) {
+                    theRemoved.add(line);
+                }
+            }
+        }
+        cj6All.removeAll(theRemoved);
+        
         cj6All.addAll(mbMoreSet);
         cj6All.addAll(cj6phrases.subList(0, 99999 - cj6All.size()));
         System.out.println("詞組加上单字後總數：" + cj6All.size());
