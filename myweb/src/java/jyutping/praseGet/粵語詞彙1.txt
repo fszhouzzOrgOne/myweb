@@ -1,37 +1,62 @@
 #粵語詞彙 https://github.com/rime-aca/rime-jyutping-plus.git
-一人行喊窄霸道
-一個鏰都冇
-一個鏰都無
-一僕一碌
-一匹布咁長
-一句講哂
-一唪臭味
-一啖
-一喺
-一坺牛屎
-一天都光曬
-一層氣
-一戙都冇
-一戙都無
-一把火
-一揇
-一搊鎖匙
-一擔擔
-一於
-一樖樹
-一沓
-一淠屎
-一碌木
-一腳踢
-一身彩
-一身潺
-一身蟻
-一遝
-一部通書睇到老
-一鑊
-一鑊泡
-一鑊熟
-七國咁亂
+一人行喊窄霸道 jat1jan4hang4haam3zaak3baa3dou6
+霸道  baa3dou6
+一人  jat1jan4
+一個鏰都冇   jat1go3bang1dou1mou5
+一個鏰     jat1go3bang1
+都冇  dou1mou5
+一個鏰都無   jat1go3bang1dou1mou4
+都無  dou1mou4
+一仆一碌    jat1puk1jat1luk1
+一仆一碌    jat1fu6jat1luk1
+一匹布咁長   jat1pat1bou3gam3coeng4
+一匹  jat1pat1
+一匹布咁長   jat1pat1bou3gam2coeng4
+一句  jat1geoi3
+一句講哂    jat1geoi3gong2saai3
+一唪臭味    jat1baang6cau3mei6
+一唪臭味    jat1bung6cau3mei6
+臭味  cau3mei6
+一啖  jat1daam6
+一喺  jat1hai2
+喺度  hai2dou6
+喺處  hai2cyu3
+牛屎  ngau4si2
+一坺牛屎    jat1paat6ngau4si2
+扁坺坺     bin2paat6paat6
+一天都光曬   jat1tin1dou1gwong1saai3
+一天  jat1tin1
+一層氣     jat1cang4hei3
+一戙都冇    jat1dung6dou1mou5
+一戙都無    jat1dung6dou1mou4
+一把火     jat1baa2fo2
+火把  fo2baa2
+一揇  jat1naam5
+一搊鎖匙    jat1cau1
+鎖匙  so2si4
+一擔擔     jat1daam1daam3
+一於  jat1jyu1
+一樖樹     jat1po1syu6
+一沓  jat1daap6
+一淠屎     jat1pei3si2
+一碌木     jat1luk1muk6
+一腳踢     jat1goek3tek3
+一腳  jat1goek3
+一身  jat1san1
+一身彩     jat1san1coi2
+一身潺     jat1san1saan4
+一身蟻     jat1san1ngai5
+一遝  jat1daap6
+一部  jat1bou6
+通書  tung1syu1
+到老  dou3lou5
+一部通書睇到老 jat1bou6tung1syu1tai2dou3lou5
+一鑊  jat1wok6
+一鑊泡     jat1wok6paau3
+一鑊熟     jat1wok6suk6
+七國  cat1gwok3
+七國咁亂    cat1gwok3gam2lyun6
+七國咁亂    cat1gwok3gam3lyun6
 三個鼻哥窿多一口氣
 三元宮土地錫身
 三口六面
