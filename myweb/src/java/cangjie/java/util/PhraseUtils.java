@@ -14,7 +14,7 @@ public class PhraseUtils {
     private static String cj6file = "sghm-20000.txt";
 
     // 詞組中可以有的符號，但不編碼
-    private static String marks = "、，˙；（）";
+    private static String marks = "、，˙·；（）";
 
     public static void main(String[] args) {
         Set<String> cj6Set = new LinkedHashSet<String>(
