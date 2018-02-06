@@ -57,7 +57,7 @@ public class Cj01CodesSogouTest {
         destPhrasesFile = "cj5-phrase.txt";
         mbfile = "cj5-20902.txt";
         mbMoreFile = "cj5-more.txt";
-        simfile = "cj5-8300.txt";
+        simfile = "cj5-20902.txt";
         destFileSogou = "allInOneSogou-cj5.txt";
     }
 
