@@ -27,7 +27,6 @@ public class Test {
         // 粵拼碼表整合
         // 用Q的個數表示聲調
         List<String> mb = IOUtils.readLines(jyutpAllFile);
-        List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
         List<String> jyutAllInOne = new ArrayList<String>();
         for (String str : mb) {
             if (null != str && str.trim().length() > 0) {
@@ -35,7 +34,15 @@ public class Test {
                         .replace("5", "qqqqq").replace("6", "qqqqqq"));
             }
         }
-        jyutAllInOne.addAll(jyutPhrases);
+        List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
+        for (String phr : jyutPhrases) {
+            if (phr.contains(" ")) {
+                String parts[] = phr.split(" ");
+
+                String line = parts[0].replaceAll("[0-9]", "") + " " + parts[1];
+                jyutAllInOne.add(line);
+            }
+        }
         IOUtils.writeFile(Cj00AllInOneTest.jyutping20000, jyutAllInOne);
     }
 
@@ -59,8 +66,18 @@ public class Test {
         for (String phr : phrs) {
             if (phr.contains(" ")) {
                 String parts[] = phr.split(" ");
+                String line = parts[1] + " " + parts[0];
 
-                String line = parts[1].replaceAll("[0-9]", "") + " " + parts[0];
+                // 輸出美化一下
+                int codeLen = 12;
+                if (parts[1].length() < codeLen) {
+                    String blank = "";
+                    for (int i = parts[1].length(); i < codeLen; i++) {
+                        blank += " ";
+                    }
+                    line = line.replace(" ", blank);
+                }
+
                 if (!res.contains(line)) {
                     res.add(line);
                 }
