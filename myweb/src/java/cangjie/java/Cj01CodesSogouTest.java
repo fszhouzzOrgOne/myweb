@@ -39,7 +39,7 @@ public class Cj01CodesSogouTest {
 
     public static void main(String[] args) throws Exception {
         setCj6();
-        getCodesForSogou();
+        getCodesForSogou(true, true);
 
         // setCj5();
         // getCodesForSogou();
@@ -64,8 +64,15 @@ public class Cj01CodesSogouTest {
     /**
      * 生成搜狗码表，搜狗碼表只支持10萬個以下的自定短語，所以要刪除一些
      * 
+     * @author fszhouzz@qq.com
+     * @time 2018年2月6日下午4:40:11
+     * @param deleteExtChars
+     *            是否只保留基本區的字
+     * @param withFrases
+     *            是否要詞組
+     * @throws Exception
      */
-    private static void getCodesForSogou() throws Exception {
+    private static void getCodesForSogou(boolean deleteExtChars, boolean withFrases) throws Exception {
         System.out.println(destFileSogou);
         Set<String> cj6Set = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbfile));
         Set<String> mbMoreSet = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbMoreFile));
@@ -83,7 +90,8 @@ public class Cj01CodesSogouTest {
                 }
             }
         } else {
-            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.baseRange)); // base2先不要
+            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.baseRange));
+            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.base2Range));
             cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.AextRange));
         }
 
@@ -122,7 +130,9 @@ public class Cj01CodesSogouTest {
                 }
             }
         }
-        cj6All.removeAll(theRemoved);
+        if (deleteExtChars) {
+            cj6All.removeAll(theRemoved);
+        }
 
         cj6All.addAll(mbMoreSet);
 
@@ -130,10 +140,12 @@ public class Cj01CodesSogouTest {
         if (cj6All.size() + cj6phrases.size() > max_line_cnt) {
             endIndex = max_line_cnt - cj6All.size();
         }
-        cj6All.addAll(cj6phrases.subList(0, endIndex));
-        System.out.println("排除的詞組數：" + cj6phrases.subList(endIndex, cj6phrases.size()).size());
-        System.out.println("排除的詞組，前面一個：" + cj6phrases.get(endIndex - 1));
-        System.out.println("排除的詞組，第一個：" + cj6phrases.get(endIndex));
+        if (withFrases) {
+            cj6All.addAll(cj6phrases.subList(0, endIndex));
+            System.out.println("排除的詞組數：" + cj6phrases.subList(endIndex, cj6phrases.size()).size());
+            System.out.println("排除的詞組，前面一個：" + cj6phrases.get(endIndex - 1));
+            System.out.println("排除的詞組，第一個：" + cj6phrases.get(endIndex));
+        }
         System.out.println("詞組加上单字後總數：" + cj6All.size());
         IOUtils.writeFile(mbBaseDir + destFileSogou, convertToSogouFormat(cj6All));
     }
