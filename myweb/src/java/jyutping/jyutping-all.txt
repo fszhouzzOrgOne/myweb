@@ -15254,6 +15254,7 @@ pau4 捊
 pau4 掊
 pau4 裒
 pei1 㓟
+pei1 㨢
 pei1 丕
 pei1 伓
 pei1 伾
@@ -19038,6 +19039,7 @@ wat1 诎
 wat1 郁
 wat1 镼
 wat1 馧
+wat1 鬰
 wat1 鬱
 wat1 黦
 wat6 噊
@@ -20413,6 +20415,7 @@ zeot1 詘
 zeot1 诎
 zeot1 踤
 zeot1 黜
+zeot1 黢
 zi1 之
 zi1 仔
 zi1 偨
