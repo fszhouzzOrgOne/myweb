@@ -2043,31 +2043,35 @@
 飛機火足燒雲
 飛發
 飛鼠
-食人隻車
-食咗
-食咗人只車咩
-食咗草龍
-食咗飯未
-食嘢
-食夜粥
-食夾棍
-食拖鞋飯
-食晏
-食死貓
-食滯
-食煙
-食皇家飯
-食碗面反碗底
-食糊
-食腦
-食詐糊
-食貓面
-食雪
-飯盒
-飯蓋
-飯鏟頭
-飲勝
-餸菜
+食人隻車    sik6
+食咗  sik6
+食咗人只車咩  sik6
+食咗草龍    sik6
+食咗飯未    sik6
+食嘢  sik6
+食夜粥 sik6
+食夾棍 sik6
+食拖鞋飯    sik6
+食晏  sik6
+食死貓 sik6
+食滯  sik6
+食煙  sik6jin1
+食皇家飯    sik6wong4gaa1faan6
+皇家飯     wong4gaa1faan6
+食碗面反碗底  sik6wun2min6faan2wun2dai2
+碗面  wun2min6
+碗底  wun2dai2
+食糊  sik6wu4
+食腦  sik6nou5
+食詐糊 sik6zaa3wu4
+詐糊  zaa3wu4
+食貓面 sik6maau1min6
+食雪  sik6syut3
+飯盒  faan6hap6
+飯蓋  faan6goi3
+飯鏟頭     faan6caan2tau4
+飲勝  jam2sing3
+餸菜  sung3coi3
 餼雞  hei3gai1
 香口膠     hoeng1hau2gaau1
 香梘  hoeng1gaan2
