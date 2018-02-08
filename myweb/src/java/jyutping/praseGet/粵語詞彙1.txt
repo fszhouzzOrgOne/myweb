@@ -57,13 +57,34 @@
 七國  cat1gwok3
 七國咁亂    cat1gwok3gam2lyun6
 七國咁亂    cat1gwok3gam3lyun6
-三個鼻哥窿多一口氣
-三元宮土地錫身
-三口六面
-三姑六婆
-三文治
-三更出世害死人
-三級相
+鼻哥窿     bei6go1lung4
+哥窿  go1lung4
+三個  saam1go3
+多一  do1jat1
+一口  jat1hau2
+口氣  hau2hei3
+三個鼻哥窿多一口氣   saam1go3bei6go1lung4do1jat1hau2hei3
+土地  tou2dei6
+地宮  dei6gung1
+三元宮土地錫身     saam1jyun4gung1tou2dei6sik3san1
+三元宮     saam1jyun4gung1
+三元  saam1jyun4
+三口六面    saam1hau2luk6min6
+三姑六婆    saam1gu1luk6po4
+三文治     saam1man4zi6
+文治  man4zi6
+三更  saam1gaang1
+更改  gang1goi2
+出世  ceot1sai3
+害死  hoi6sei2
+死人  sei2jan4
+害人  hoi6jan4
+世人  sai3jan4
+三人  saam1jan4
+三世  saam1sai3
+三更出世害死人     saam1gaang1ceot1sai3hoi6sei2jan4
+三級相     saam1kap1soeng3
+三級  saam1kap1
 上晝
 下晝
 下爬
