@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -35,12 +36,16 @@ public class Test {
             }
         }
         List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
+        Set<String> jyutPhrasesRes = new LinkedHashSet<String>(); // 去褈用
         for (String phr : jyutPhrases) {
             if (phr.contains(" ")) {
                 String parts[] = phr.split(" ");
 
                 String line = parts[0].replaceAll("[0-9]", "") + " " + parts[1];
-                jyutAllInOne.add(line);
+                if (!jyutPhrasesRes.contains(line)) {
+                    jyutPhrasesRes.add(line);
+                    jyutAllInOne.add(line);
+                }
             }
         }
         IOUtils.writeFile(Cj00AllInOneTest.jyutping20000, jyutAllInOne);

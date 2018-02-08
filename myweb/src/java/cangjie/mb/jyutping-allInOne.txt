@@ -21802,7 +21802,6 @@ batgwanjoek 不龜藥
 batgwo 不過
 batjin 不然
 batlau 不嘍
-batlau 不嘍
 batlau 不溜
 batlebatle 嗶哩嗶哩
 batleibathei 不離不棄
@@ -21825,7 +21824,6 @@ bingce 並且
 binghang 並行
 binghangbatbui 並行不悖
 bingsaimouloeng 並世無兩
-bingtan 併吞
 bitming 別名
 bongngaan 榜眼
 bouwaa 寶華
@@ -21848,7 +21846,6 @@ cansing 陳姓
 catcinglukjuk 七情六慾
 catgwok 七國
 catgwokgamlyun 七國咁亂
-catgwokgamlyun 七國咁亂
 catkamcatzung 七擒七縱
 catzik 七夕
 caugok 丑角
@@ -21864,7 +21861,6 @@ ciceoi 次且
 cimaagan 黐孖筋
 cingaa 疵齾
 cisin 黐線
-cisinlou 黐線佬
 cisinlou 黐線佬
 cisinpo 黐線婆
 cigan 齒根
@@ -21958,7 +21954,6 @@ gaukukkiu 九曲橋
 gaukukkiusaanbouhangwaanlou 九曲橋散步行彎路
 geoici 齲齒
 gimbing 兼併
-gimbing 兼併
 golung 哥窿
 goiwai 改為
 goizo 丐助
@@ -21988,8 +21983,6 @@ gwaibuk 龜卜
 gwainin 龜年
 gwaidaagwai 鬼打鬼
 gwaigam 鬼咁
-gwaigam 鬼咁
-gwailou 鬼佬
 gwailou 鬼佬
 gwaingmaaluk 鬼五馬六
 gwancaak 龜坼
@@ -22082,7 +22075,6 @@ jatngaan 一眼
 jatngaantaisaai 一眼睇曬
 jatpaatngausi 一坺牛屎
 jatpat 一匹
-jatpatbougamcoeng 一匹布咁長
 jatpatbougamcoeng 一匹布咁長
 jatpeisi 一淠屎
 jatposyu 一樖樹
@@ -22266,7 +22258,6 @@ saapsi 霎時
 saiwik 西域
 saigaai 世界
 saigei 世紀
-saigei 世紀
 saijan 世人
 saizuk 世俗
 samdousatsaai 心都實曬
@@ -22334,7 +22325,6 @@ waaikwan 壞琨
 waanlou 彎路
 waanjyu 鯇魚
 wanban 搵笨
-wanban 搵笨
 wanjamngok 雲音樂
 wanpun 雲盤
 watgei 屈機
@@ -22382,7 +22372,6 @@ ziceoi 齊衰
 zifu 知乎
 zijat 之一
 zileoi 之類
-zimaa 之嘛
 zimaa 之嘛
 zingaalitzeoi 齜牙咧嘴
 zisaam 之三
