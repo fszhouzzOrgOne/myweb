@@ -2080,60 +2080,99 @@
 馬騮升官唔係人咁品
 駁骨
 駝背佬上樓梯
-騎咧
-騎牛搵馬
-高爭鞋
-高竇
-高買
-高踭
-高踭鞋
-鬆人
-鬧交
-鬼五馬六
-鬼佬
-鬼咁
-鬼打鬼
-魚滑
-魚片粥岩岩熟
-魚片粥巖巖熟
-魚生粥僅熟
-魚腩
-魚蛋
-鯇魚
-鴨乸
-鷯哥
-鹹欖煲茶白欖冇得解
-鹹溼
-鹹濕
-鹹片
-鹹蛋滾湯心都實曬
-鹽蛇
-麻麻哋
-黃牛黨
-黃皮樹了哥唔熟唔食
-黃禽禽
-黃黃瘀瘀
-黃黚黚
-黄黚黚
-黐孖筋
-黐線
-黐線佬
-黐線婆
-黑古勒特
-黑沉沉
-黑麻麻
-黑黢黢
-點寫
-點樣
-點知
-點行
-點解
-鼎湖上素好齋
-鼻哥
-鼻哥窿
-齊緝緝
-龍眼
-㓟蘋果
+騎咧  kei4lit6
+騎咧  kei4le4
+牛馬  ngau4maa5
+騎牛搵馬    kei4ngau4wan2maa5
+騎馬    kei4maa5
+高爭鞋     gou1zang1haai4
+高爭鞋     gou1zaang1haai4
+高竇  gou1dau6
+高買  gou1maai5
+高踭  gou1zang1
+高踭  gou1zaang1
+高踭鞋     gou1zang1haai4
+高踭鞋     gou1zaang1haai4
+鬆人  sung1jan4
+鬧交  naau6gaau1
+鬼五馬六    gwai2ng5maa5luk6
+鬼佬  gwai2lou2
+鬼佬  gwai2lou5
+鬼咁  gwai2gam3
+鬼咁  gwai2gam2
+鬼打鬼     gwai2daa2gwai2
+魚滑  jyu4waat6
+魚片  jyu4pin3
+魚片粥     jyu4pin3zuk1
+岩岩  ngaam4ngaam4
+巖巖  ngaam4ngaam4
+魚片粥岩岩熟  jyu4pin3zuk1ngaam4ngaam4suk6
+魚片粥巖巖熟  jyu4pin3zuk1ngaam4ngaam4suk6
+魚生粥僅熟   jyu4saang1zuk1gan2suk6
+魚生粥     jyu4saang1zuk1
+魚生  jyu4saang1
+僅熟  gan2suk6
+魚腩  jyu4naam5
+魚蛋  jyu4daan6
+鯇魚  waan5jyu4
+鴨乸  aap3naa5
+鷯哥  liu4go1
+鹹欖  haam4laam5
+茶白  caa4baak6
+茶白欖     caa4baak6laam5
+冇得  mou5dak1
+冇得解     mou5dak1gaai2
+鹹欖煲茶白欖冇得解   haam4laam5bou1caa4baak6laam5mou5dak1gaai2
+鹹溼  haam4sap1
+鹹濕  haam4sap1
+鹹片  haam4pin3
+鹹蛋  haam4daan6
+滾湯  gwan2tong1
+鹹蛋滾湯心都實曬    haam4daan6gwan2tong1sam1dou1sat6saai3
+鹹蛋滾湯    haam4daan6gwan2tong1
+心都實曬    sam1dou1sat6saai3
+鹽蛇  jim4se4
+麻麻哋     maa4maa4dei6
+黃牛  wong4ngau4
+黃牛黨     wong4ngau4dong2
+黃皮  wong4pei4
+黃皮樹了哥   wong4pei4syu6liu5go1
+黃皮樹了哥唔熟唔食   wong4pei4syu6liu5go1m4suk6m4sik6
+唔熟唔食    m4suk6m4sik6
+熟食  suk6sik6
+黃禽禽     wong4kam4kam4
+黃黃瘀瘀    wong4wong4jyu1jyu1
+黃黚黚     wong4kim4kim4
+黄黚黚     wong4kim4kim4
+黐孖筋     ci1maa1gan1
+黐線  ci1sin3
+黐線佬     ci1sin3lou2
+黐線佬     ci1sin3lou5
+黐線婆     ci1sin3po4
+黑古勒特    hak1gu2lak6dak6
+黑沉沉     hak1cam4cam4
+沉沉  cam4cam4
+麻麻  maa4maa4
+黑麻麻     hak1maa4maa4
+黑黢黢     hak1zeot1zeot1
+點寫  dim2se2
+點樣  dim2joeng6
+點知  dim2zi1
+點行  dim2hang4
+點解  dim2gaai2
+鼎湖  ding2wu4
+湖上  wu4soeng6
+素齋  sou3zaai1
+上好  soeng6hou2
+鼎湖上素好齋  ding2wu4soeng6sou3hou2zaai1
+鼻哥  bei6go1
+鼻哥窿     bei6go1lung4
+齊緝緝 cai4cap1cap1
+龍眼  lung4ngaan5
+蘋果  ping4gwo2
+㓟蘋果     ngo4ping4gwo2
+㓟蘋果     pai1ping4gwo2
+㓟蘋果     pei1ping4gwo2
 㨢腳  nang3goek3
 㨢腳  pei1goek3
 䂻爆  zaang6baau3
