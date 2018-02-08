@@ -85,50 +85,99 @@
 三更出世害死人     saam1gaang1ceot1sai3hoi6sei2jan4
 三級相     saam1kap1soeng3
 三級  saam1kap1
-上晝
-下晝
-下爬
-不嘍
-不溜
-不特止
-丫角髻
-中意
-之不過
-之嘛
-乒乓球
-乜名
-乜嘢
-乜東東
-乜東東芫荽蔥
-九大簋
-九曲橋散步行彎路
-乞人憎
-乞米佬食死蟹只只好
-乾溼褸
-乾濕褸
-亂哂坑
-亂哂龍
-亂噏廿四
-了哥
-了哥命就食就屙
-事急
-事急馬行田
-事關
-事頭婆
-亞單睇榜一眼睇曬
-亞蘭嫁亞瑞
-交通燈點紅點綠
-交關
-交際舞
-人哋
-人客
-人工
-人工奀
-人怕危米怕篩
-人有霎時一身銀
-人蛇
-仄紙
-仆街
+上晝  soeng6zau3
+下晝  haa6zau3
+下爬  haa6paa4
+不嘍  bat1lau4
+不嘍  bat1lau1
+不溜  bat1lau6
+不溜  bat1liu1
+不特止     bat1dak6zi2
+不止  bat1zi2
+丫角髻     aa1gok3gai3
+丫髻  aa1gai3
+中意  zung3ji3
+之不過     zi1bat1gwo3
+不過  bat1gwo3
+之嘛  zi1maa3
+之嘛  zi1maa4
+乒乓球     ping1pong1kau4
+乒乓  ping1pong1
+乜名  mat1ming4
+乜名  me1ming4
+乜嘢  mat1je5
+乜嘢  me1je5
+乜東東     mat1dung1dung1
+乜東東     me1dung1dung1
+乜東東芫荽蔥  mat1dung1dung1jyun4seoi1cung1
+乜東東芫荽蔥  me1dung1dung1jyun4seoi1cung1
+芫荽  jyun4seoi1
+芫荽蔥     jyun4seoi1cung1
+九大簋     gau2daai6gwai2
+簠簋  fu2gwai2
+九曲橋散步行彎路    gau2kuk1kiu4saan3bou6hang4waan1lou6
+九曲橋     gau2kuk1kiu4
+九曲  gau2kuk1
+散步  saan3bou6
+步行  bou6hang4
+彎路  waan1lou6
+行路  hang4lou6
+乞人憎     hat1jan4zang1
+乞米佬食死蟹只只好   hat1mai5lou5sik6sei2haai5zek3zek3hou2
+乞米佬     hat1mai5lou5
+只只  zek3zek3
+好死  hou2sei2
+乾溼褸     gon1sap1leoi5
+乾濕褸     gon1sap1leoi5
+乾溼  gon1sap1
+乾濕  gon1sap1
+亂哂坑     lyun6saai3haang1
+亂哂龍     lyun6saai3lung4
+亂噏廿四    lyun6ngap1jaa6sei3
+亂噏廿四    lyun6ngap1nim6sei3
+亂噏  lyun6ngap1
+廿四  nim6sei3
+廿四  jaa6sei3
+了哥  liu5go1
+了哥命就食就屙 liu5go1ming6zau6sik6zau6o1
+了哥命     liu5go1ming6
+就食就屙    zau6sik6zau6o1
+就食  zau6sik6
+事急  si6gap1
+事急馬行田   si6gap1maa5hang4tin4
+事關  si6gwaan1
+事頭婆     si6tau4po4
+亞單睇榜一眼睇曬    aa3daan1tai2bong2jat1ngaan5tai2saai3
+亞單睇榜    aa3daan1tai2bong2
+一眼睇曬    jat1ngaan5tai2saai3
+亞單  aa3daan1
+榜眼  bong2ngaan5
+一眼  jat1ngaan5
+亞蘭嫁亞瑞   aa3laan4gaa3aa3seoi6
+交通燈點紅點綠 gaau1tung1dang1dim2hung4dim2luk6
+交通  gaau1tung1
+交通燈     gaau1tung1dang1
+點點  dim2dim2
+紅綠  hung4luk6
+交關  gaau1gwaan1
+交際  gaau1zai3
+交際舞 gaau1zai3mou5
+人哋  jan4dei6
+人客  jan4haak3
+人工  jan4gung1
+人工奀     jan4gung1ngan1
+人怕危米怕篩  jan4paa3ngai4mai5paa3sai1
+米篩  mai5sai1
+人有霎時一身銀 jan4jau5saap3si4jat1san1ngan4
+人有  jan4jau5
+霎時  saap3si4
+一身  jat1san1
+人蛇  jan4se4
+仄紙  zak1zi2
+廁紙  zak1zi2
+廁紙  ci3zi2
+仆街  puk1gaai1
+仆街  fu6gaai1
 仇口
 仔仔
 仔大仔世界
