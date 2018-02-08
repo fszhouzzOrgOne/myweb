@@ -2043,18 +2043,26 @@
 飛機火足燒雲
 飛發
 飛鼠
-食人隻車    sik6
-食咗  sik6
-食咗人只車咩  sik6
-食咗草龍    sik6
-食咗飯未    sik6
-食嘢  sik6
-食夜粥 sik6
-食夾棍 sik6
-食拖鞋飯    sik6
-食晏  sik6
-食死貓 sik6
-食滯  sik6
+食人隻車    sik6jan4zek3geoi1
+食咗  sik6zo2
+食咗人只車咩  sik6zo2jan4zek3geoi1me1
+食咗草龍    sik6zo2cou2lung4
+草龍  cou2lung4
+食咗  sik6zo2
+食飯  sik6faan6
+食咗飯未    sik6zo2faan6mei6
+食嘢  sik6je5
+食夜粥     sik6je6zuk1
+夜粥  je6zuk1
+食夾棍     sik6gaap3gwan3
+夾棍  gaap3gwan3
+食拖鞋飯    sik6to1haai4faan6
+拖鞋  to1haai4
+拖鞋飯     to1haai4faan6
+食晏  sik6aan3
+食死貓 sik6sei2maau1
+死貓  sei2maau1
+食滯  sik6zai6
 食煙  sik6jin1
 食皇家飯    sik6wong4gaa1faan6
 皇家飯     wong4gaa1faan6
