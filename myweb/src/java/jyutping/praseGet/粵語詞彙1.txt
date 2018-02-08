@@ -1996,32 +1996,51 @@
 青椒
 青瓜
 青碧碧
-靚仔
-靚女
-靜英英
-靜雞雞
-非常之
-非洲和尚乞人憎
-面珠墩
-面白白
-面紅紅
-面青青
-面黃黃
-靸鞋
-韌皮
-韌黐黐
-韞住
-韻律體操
-頂住條气
-頂住條氣
-頂你個肺
-頂心杉
-頂櫳
-頂頸
-順風屎艇快夾
-領呔
-領太
-頭報三兩六二報三錢六
+靚仔  leng3zai2
+靚女  leng3neoi5
+靚女  zing6neoi5
+靜英英     zing6jing1jing1
+靜雞雞     zing6gai1gai1
+非常之     fei1soeng4zi1
+非常  fei1soeng4
+非洲  fei1zau1
+和尚  wo4soeng6
+乞人憎     hat1jan4zang1
+非洲和尚乞人憎     fei1zau1wo4soeng6hat1jan4zang1
+面珠  min6zyu1
+面珠墩 min6zyu1deon1
+面白白 min6baak6baak6
+白白  baak6baak6
+面紅紅 min6hung4hung4
+紅紅  hung4hung4
+面青青 min6cing1cing1
+面黃黃 min6wong4wong4
+靸鞋  saap3haai4
+韌皮  ngan6pei4
+韌黐黐 ngan6ci1ci1
+韞住  wan2zyu6
+韞住  wan3zyu6
+韻律體操    wan6leot6tai2cou1
+韻律  wan6leot6
+體操  tai2cou1
+頂住  ding2zyu6
+頂住條氣    ding2zyu6tiu4hei3
+頂你個肺    ding2nei5go3fai3
+頂心杉     ding2sam1caam3
+頂心杉     ding2sam1saam3
+頂櫳  ding2lung4
+頂頸  ding2geng2
+順風  seon6fung1
+順風屎艇快夾臭  seon6fung1si2ting5faai3gaap3cau3
+領呔  ling5taai3
+領太  ling5taai3
+領呔  leng5taai3
+領太  leng5taai3
+頭報三兩六二報三錢六  tau4bou3saam1loeng5luk6ji6bou3saam1cin4luk6
+頭報三兩六   tau4bou3saam1loeng5luk6
+頭報  tau4bou3
+二報三錢六   ji6bou3saam1cin4luk6
+二報  ji6bou3
 頭岳岳     tau4ngok6ngok6
 頭嶽嶽     tau4ngok6ngok6
 頭擰擰     tau4ning4ning4
