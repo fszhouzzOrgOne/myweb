@@ -319,6 +319,7 @@ baan1 瘢
 baan1 頒
 baan1 颁
 baan1 鳻
+baan2 坂
 baan2 扳
 baan2 昄
 baan2 板
@@ -4039,6 +4040,7 @@ faan4 鷭
 faan5 販
 faan5 贩
 faan5 軬
+faan5 飯
 faan5 饭
 faan6 帆
 faan6 梵
@@ -5016,6 +5018,7 @@ gaan2 挸
 gaan2 揀
 gaan2 暕
 gaan2 柬
+gaan2 梘
 gaan2 涀
 gaan2 涧
 gaan2 痫
@@ -12644,6 +12647,7 @@ lou4 鱸
 lou4 鲈
 lou4 鸕
 lou4 鸬
+lou4 黸
 lou5 佬
 lou5 僚
 lou5 卤
@@ -12898,6 +12902,7 @@ maa3 嚜
 maa4 吗
 maa4 嘛
 maa4 妈
+maa4 嫲
 maa4 嬤
 maa4 嬷
 maa4 犘
@@ -14566,6 +14571,7 @@ ngoi3 嗳
 ngoi3 堨
 ngoi3 壒
 ngoi3 嫒
+ngoi3 愛
 ngoi3 暧
 ngoi3 爱
 ngoi3 瑷
@@ -19464,6 +19470,7 @@ zaa1 觰
 zaa1 髽
 zaa1 齄
 zaa1 齇
+zaa2 揸
 zaa2 苲
 zaa2 苴
 zaa2 謯
