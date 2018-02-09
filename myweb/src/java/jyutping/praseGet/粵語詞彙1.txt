@@ -1947,14 +1947,21 @@
 陀手
 陀手㨢腳
 除褲放屁多此一舉
-陰功
-陰溼
-陰濕
-陰陰沉沉
-陰陰溼溼
-陰陰濕濕
-陰騭
-陳年中草藥發爛渣
+陰功  jam1gung1
+陰溼  jam1sap1
+陰濕  jam1sap1
+陰陰沉沉    jam1jam1cam4cam4
+陰陰溼溼    jam1jam1sap1sap1
+陰陰濕濕    jam1jam1sap1sap1
+溼溼  sap1sap1
+濕濕  sap1sap1
+陰騭  jam1zat1
+陳年  can4nin4
+草藥  cou2joek6
+中草藥     zung1cou2joek6
+爛渣  laan6zaa1
+藥渣  joek6zaa1
+陳年中草藥發爛渣    can4nin4zung1cou2joek6faat3laan6zaa1
 陰公  jam1gung1
 隔夜  gaak3je6
 油炸鬼     jau4zaa3gwai2
