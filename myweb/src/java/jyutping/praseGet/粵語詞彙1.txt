@@ -1935,18 +1935,44 @@
 阿嫲
 阿崩叫狗越叫越走
 阿崩養貓轉性
-阿燦
-阿爸
-阿爺
-阿蘭嫁阿瑞累上加累
-阿蘭嫁阿瑞類鬥類
-阿貴買布唔講那筆
-阿超着褲谷住來
-阿超著褲穀住來
-阿駝行路中中地
-陀手
-陀手㨢腳
-除褲放屁多此一舉
+阿燦  aa3caan3
+阿爸  aa3baa1
+阿爺  aa3je4
+阿蘭  aa3laan4
+阿瑞  aa3seoi6
+累上加累    leoi6soeng6gaa1leoi6
+類鬥類     leoi6dau3leoi6
+累鬥累     leoi6dau3leoi6
+阿蘭嫁阿瑞累上加累   aa3laan4gaa3aa3seoi6leoi6soeng6gaa1leoi6
+阿蘭嫁阿瑞類鬥類    aa3laan4gaa3aa3seoi6leoi6dau3leoi6
+阿貴  aa3gwai3
+買布  maai5bou3
+唔講  m4gong2
+那筆  naa5bat1
+阿貴買布唔講那筆    aa3gwai3maai5bou3m4gong2naa5bat1
+阿超  aa3ciu1
+着褲  zoek3fu3
+著褲  zoek3fu3
+谷住  guk1zyu6
+穀住  guk1zyu6
+阿超着褲谷住來     aa3ciu1zoek3fu3guk1zyu6loi4
+阿超著褲穀住來     aa3ciu1zoek3fu3guk1zyu6loi4
+阿超著褲焗住來     aa3ciu1zoek3fu3guk6zyu6loi4
+舂舂地     zung1zung1dei6
+阿駝  aa3to4
+行路  hang4lou6
+中中地     zung1zung1dei6
+路中  lou6zung1
+阿駝行路中中地     aa3to4hang4lou6zung1zung1dei6
+陀手  to4sau2
+陀手㨢腳    to4sau2pei1goek3
+陀手㨢腳    to4sau2nang3goek3
+手腳  sau2goek3
+除褲  ceoi4fu3
+放屁  fong3pei3
+多此一舉    do1ci2jat1geoi2
+此舉  ci2geoi2
+除褲放屁多此一舉    ceoi4fu3fong3pei3do1ci2jat1geoi2
 陰功  jam1gung1
 陰溼  jam1sap1
 陰濕  jam1sap1
