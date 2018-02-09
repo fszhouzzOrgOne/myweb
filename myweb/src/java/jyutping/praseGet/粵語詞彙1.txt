@@ -1967,23 +1967,36 @@
 雞尾酒
 雞春
 雞毛鴨血
-雞翼
-雞腎
-雞食放光草心知肚明
-雞食放光蟲心知肚明
-雞髀
-雨溦溦
-雨遮
-雪條
-雪櫃
-雪種
-雪糕
-雪茄
-雪雪聲
-雲吞
-零加池塘多尻餘
-零零丁丁
-雷恩
+雞翼  gai1jik6
+雞腎  gai1san6
+雞食  gai1sik6
+放光  fong3gwong1
+心知肚明    sam1zi1tou5ming4
+知心  zi1sam1
+光明  gwong1ming4
+雞心  gai1sam1
+放心  fong3sam1
+雞食放光草心知肚明   gai1sik6fong3gwong1cou2sam1zi1tou5ming4
+雞食放光蟲心知肚明   gai1sik6fong3gwong1cung4sam1zi1tou5ming4
+雞髀  gai1bei2
+雨溦溦     jyu5mei4mei4
+雨遮  jyu5ze1
+雨遮  ze1jyu5
+雪條  syut3tiu4
+雪櫃  syut3gwai6
+雪種  syut3zung2
+雪糕  syut3gou1
+雪茄  syut3gaa1
+雪雪聲     syut3syut3sing1
+雲吞  wan4tan1
+池塘  ci4tong4
+多尻餘     do1haau1jyu4
+多餘  do1jyu4
+零加  ling4gaa1
+零加池塘多尻餘     ling4gaa1ci4tong4do1haau1jyu4
+零零丁丁    ling4ling4ding1ding1
+零丁  ling4ding1
+雷恩  leoi4jan1
 電單車     din6daan1ce1
 電車  din6ce1
 單車  daan1ce1
