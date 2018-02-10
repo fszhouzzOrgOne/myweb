@@ -1837,34 +1837,52 @@
 身慶
 身水身汗
 身熱
-躽胸凸肚
-車厘子
-車呔
-車大奅
-車大炮
-車天車地
-車掌
-車衫
-車轆
-軒芝斯
-軚盤
-軟熟
-輪更
-輸波
-近嚟
-返來
-返工
-返潮話梅又鹹又溼
-返潮話梅又鹹又濕
-返畀
-通菜
-造啡
-逢喺
-逢系
-連氣
-週身唔得掂
-週身唔聚財
-遊離浪蕩
+躽胸凸肚    jin2hung1dat6tou5
+車厘子     ce1lei4zi2
+車子  ce1zi2
+車呔  ce1taai1
+車大奅     ce1daai6paau3
+車大炮     ce1daai6paau3
+車天車地    ce1tin1ce1dei6
+天地  tin1dei6
+車掌  ce1zoeng2
+車衫  ce1saam1
+車轆  ce1luk1
+軒芝斯     hin1zi1si1
+軚盤  taai3pun4
+軟熟  jyun5suk6
+輭熟  jyun5suk6
+輪更  leon4gang1
+輸波  syu1bo1
+近嚟  gan6lai4
+近嚟  gan6lei4
+返來  faan2lai4
+返來  faan2loi4
+返工  faan2gung1
+返潮  faan2ciu4
+話梅  waa6mui4
+又鹹又溼    jau6haam4jau6sap1
+又鹹又濕    jau6haam4jau6sap1
+返潮話梅又鹹又溼    faan2ciu4waa6mui4jau6haam4jau6sap1
+返潮話梅又鹹又濕    faan2ciu4waa6mui4jau6haam4jau6sap1
+返畀  faan2bei2
+返畀  faan2bei3
+蕹菜  ung3coi3
+通菜  tung1coi3
+造啡  zou6fei1
+逢喺  fung4hai6
+逢系  fung4hai6
+連氣  lin4hei3
+週身  zau1san1
+得掂  dak1dim1
+唔得  m4dak1
+唔得掂 m4dak1dim1
+聚財  zeoi6coi4
+週身唔得掂   zau1san1m4dak1dim1
+週身唔聚財   zau1san1m4zeoi6coi4
+遊離  jau4lei4
+浪蕩  long6dong6
+遊離浪蕩    jau4lei4long6dong6
 過一排     gwo3jat1paai4
 一排  jat1paai4
 過嚟  gwo3lai4
