@@ -1876,24 +1876,39 @@
 邊爐
 邊處
 邋遢
-邪牌
-邪牌愛差人
-郇嘢
-鄭秀文跑步吳鎮宇
-酒凹
-酒埕
-酸酸宿宿
-醒目
-醫生
-里昂
-重有
-重重沓沓
-重重遝遝
-金鈪
-釣魚臺
-鈒骨
-鉸剪
-銀紙
+邪牌  ce4paai4
+邪牌愛差人   ce4paai4oi3caai1jan4
+邪牌愛差人   ce4paai4ngoi3caai1jan4
+愛人  ngoi3jan4
+差人  caai1jan4
+郇嘢  seon1je5
+鄭秀文     zeng6sau3man4
+跑步  paau2bou6
+吳鎮宇     ng4zan3jyu5
+鄭氏  zeng6si6
+鄭家  zeng6gaa1
+吳氏  ng4si6
+吳家  ng4gaa1
+鄭秀文跑步吳鎮宇    zeng6sau3man4paau2bou6ng4zan3jyu5
+酒凹  zau2lap1
+酒凹  zau2nap1
+酒埕  zau2cing4
+酸酸宿宿    syun1syun1suk1suk1
+醒目  sing2muk6
+醫生  ji1saang1
+里昂  leoi5ngong4
+里昂  lei5ngong4
+重有  cung4jau5
+重重  cung4cung4
+重重沓沓    cung4cung4daap6daap6
+重重遝遝    cung4cung4daap6daap6
+金鈪  gam1ngaak3
+釣魚臺     diu3jyu4toi4
+釣魚  diu3jyu4
+鈒骨  zaap6gwat1
+鈒骨  kap1gwat1
+鉸剪  gaau2zin2
+銀紙  ngan4zi2
 鋤大地     co4daai6dei6
 大地  daai6dei6
 鋦氣  guk6hei3
