@@ -786,6 +786,7 @@ bit1 飶
 bit1 馝
 bit1 駜
 bit1 鮅
+bit3 別
 bit3 别
 bit3 彆
 bit3 憋
@@ -6394,6 +6395,8 @@ gwaan3 掼
 gwaan3 摜
 gwaan3 擐
 gwaan3 贯
+gwaan3 躀
+gwaan3 𬦻
 gwaang2 梗
 gwaang6 俇
 gwaang6 诓
@@ -11047,8 +11050,10 @@ kwaai3 嘳
 kwaang1 框
 kwaang1 眶
 kwaang1 筐
+kwaang3 躀
 kwaang3 迋
 kwaang3 逛
+kwaang3 𬦻
 kwai1 亏
 kwai1 刲
 kwai1 奎
@@ -11212,8 +11217,10 @@ kwong3 穬
 kwong3 絖
 kwong3 纊
 kwong3 纩
+kwong3 躀
 kwong3 邝
 kwong3 鄺
+kwong3 𬦻
 kwong4 狂
 kwong4 狅
 kwong4 軠
@@ -12497,6 +12504,7 @@ loi6 赉
 loi6 酹
 lok3 乐
 lok3 咯
+lok3 樂
 lok3 洛
 lok3 漯
 lok3 烙
@@ -14206,6 +14214,7 @@ ngaak1 眲
 ngaak1 軶
 ngaak1 轭
 ngaak3 詻
+ngaak3 鈪
 ngaak6 峉
 ngaak6 詻
 ngaak6 逆
