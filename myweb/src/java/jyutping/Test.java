@@ -66,6 +66,9 @@ public class Test {
         List<String> phrs = new ArrayList<String>();
         phrs.addAll(IOUtils.readLines(path + "粤语发声字典中所有的字音詞3结果.txt"));
         phrs.addAll(IOUtils.readLines(path + "粵語詞彙1.txt"));
+        phrs.addAll(IOUtils.readLines(path + "粵語詞彙2.txt"));
+        // 粵語詞彙-補充.txt
+        phrs.addAll(IOUtils.readLines(path + "粵語詞彙-補充.txt"));
 
         Set<String> res = new HashSet<String>();
         for (String phr : phrs) {
