@@ -4,6 +4,7 @@ bang1   鏰
 bang1   镚
 bit3    別
 bung6   唪
+deng6   埞
 faan5   飯
 gaan2   梘
 gwaan3  躀
@@ -12,6 +13,10 @@ kwaang3 躀
 kwaang3 𬦻
 kwong3  躀
 kwong3  𬦻
+laang1  唥
+laang4  唥
+laang6  唥
+lang3   唥
 lok3    樂
 lou4    黸
 maa4    嫲
@@ -21,9 +26,8 @@ paat6   坺
 pei1    㨢
 pet6    坺
 sung3   餸
+tam5    氹
+tang6   凼
 wat1    鬰
 zaa2    揸
 zeot1   黢
-
-
-

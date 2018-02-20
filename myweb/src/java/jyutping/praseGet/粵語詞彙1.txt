@@ -178,127 +178,226 @@
 廁紙  ci3zi2
 仆街  puk1gaai1
 仆街  fu6gaai1
-仇口
-仔仔
-仔大仔世界
-他條
-仙士
-仲想
-仲未
-仲要
-企理
-企起
-但凡
-何裏活
-佗仔
-佗手褦腳
-作嘔
-你咪理
-你哋
-你喺
-你嘅
-佢叫
-佢哋
-佢喺
-佢嘅
-佮份
-例牌
-係乜嚟架
-係唔係
-係啊
-係噉意
-保齡
-信瓜
-俾咗
-俾我
-倒吊荷包
-倒掛臘鴨油嘴滑舌
-做乜嘢
-做嘢
-偷呃拐騙
-偷笑
-偷雞唔到蝕揸米
-偷雞唔到蝕摣米
-傢俬
-催穀
-傳呼機
-傻傻庚庚
-傻庚庚
-傾偈
-僆仔
-元肉
-先學
-先至
-光光滑滑
-光光猛猛
-光棍佬遇着冇皮柴
-光棍佬遇著冇皮柴
-光燦
-光燦燦
-光猛
-光鮮
-免治
-入冬生魚詐死
-入到
-入返來
-入面
-八仙過海各有千秋
-八八卦卦
-八卦
-公仔
-公仔面
-典地沙
-典床
-典床典蓆
-典蓆
-冇勾稈得把聲
-冇口齒
-冇咁大個頭毋好帶咁大頂帽
-冇啊
-冇埞企
-冇天裝
-冇尾飛鉈
-冇屎唔入屎坑
-冇幾何
-冇幾遠
-冇底
-冇得
-冇得作
-冇心
-冇心肝
-冇掩雞籠自出自入
-冇料
-冇柄士巴拉得棚牙
-冇毛雞打交啖啖到肉
-冇牙婆食豬腳
-冇相干
-冇耳茶煲得把嘴
-冇腦
-冇腰骨
-冇錢
-冇錯
-冇面
-冇面畀
-冇首尾
-冇鼻
-冇鼻哥
-冚家
-冚家鏟
-冚棒唥
-冚被
+仇口  sau4hau2
+仔仔  zai2zai2
+仔大仔世界  zai2daai6zai2sai3gaai3
+世界  sai3gaai3
+他條  taa1tiu4
+他他條條  taa1taa1tiu4tiu4
+仙士  sin1si6
+仲想  zung6soeng2
+仲未  zung6mei6
+仲要  zung6jiu3
+企理  kei5lei5
+企企理理  kei5kei5lei5lei5
+企起  kei5hei2
+但凡  daan6faan4
+何裏活  ho4lei5wut6
+何裏活  ho4leoi5wut6
+佗仔  to4zai2
+佗手褦腳  to4sau2le5goek3
+佗手褦腳  to4sau2naai6goek3
+作嘔  zok3au2
+你咪理  nei5mai5lei5
+咪理  mai5lei5
+你哋  nei5dei6
+你喺  nei5hai2
+你嘅  nei5ge3
+佢叫  keoi5giu3
+佢哋  keoi5dei6
+佢喺  keoi5hai2
+佢嘅  keoi5ge3
+佮份  gap3fan6
+例牌  lai6paai4
+係乜  hai6mat1
+嚟架  lai4gaa3
+嚟架  lei4gaa3
+係乜嚟架  hai6mat1lai4gaa3
+係乜嚟架  hai6mat1lei4gaa3
+係唔係  hai6m4hai6
+係啊  hai6aa1
+係噉意  hai6gam2ji3
+保齡  bou2ling4
+信瓜  seon3gwaa1
+俾咗  bei2zo2
+俾我  bei2ngo5
+倒吊荷包  dou3diu3ho4baau1
+倒吊  dou3diu3
+荷包  ho4baau1
+倒掛臘鴨油嘴滑舌  dou3gwaa3laap6aap3jau4zeoi2waat6sit6
+倒掛臘鴨  dou3gwaa3laap6aap3
+倒掛  dou3gwaa3
+臘鴨  laap6aap3
+倒掛臘鴨油嘴滑舌  dou3gwaa3laap6ngaap3jau4zeoi2waat6sit6
+倒掛臘鴨  dou3gwaa3laap6ngaap3
+臘鴨  laap6ngaap3
+油嘴滑舌  jau4zeoi2waat6sit6
+油嘴  jau4zeoi2
+滑舌  waat6sit6
+做乜嘢  zou6mat1je5
+乜嘢  mat1je5
+做嘢  zou6je5
+偷呃拐騙  tau1ak1gwaai2pin3
+喻呃  tau1ak1
+偷呃拐騙  tau1ngak1gwaai2pin3
+喻呃  tau1ngak1
+拐騙  gwaai2pin3
+偷笑  tau1siu3
+偷雞唔到蝕揸米  tau1gai1m4dou3sik6zaa1mai5
+偷雞唔到蝕摣米  tau1gai1m4dou3sik6zaa1mai5
+偷雞  tau1gai1
+唔到  m4dou3
+傢俬  gaa1si1
+催穀  ceoi1guk1
+傳呼機  cyun4fu1gei1
+呼機  fu1gei1
+傳呼  cyun4fu1
+傻傻  so4so4
+傻傻庚庚  so4so4gang1gang1
+傻庚庚  so4gang1gang1
+傾偈  king1gai2
+傾下  king1haa6
+僆仔  lin5zai2
+元肉  jyun4juk6
+先學  sin1hok6
+先至  sin1zi3
+光光滑滑  gwong1gwong1waat6waat6
+光滑  gwong1waat6
+滑滑  waat6waat6
+光光  gwong1gwong1
+光光猛猛  gwong1gwong1maang5maang5
+光棍佬遇着冇皮柴  gwong1gwan3lou2jyu6zoek6mou5pei4caai4
+光棍佬遇著冇皮柴  gwong1gwan3lou2jyu6zoek6mou5pei4caai4
+光棍  gwong1gwan3
+光棍佬  gwong1gwan3lou2
+遇着  jyu6zoek6
+遇著  jyu6zoek6
+冇皮柴  mou5pei4caai4
+光燦  gwong1caan3
+光燦燦  gwong1caan3caan3
+光猛  gwong1maang5
+光鮮  gwong1sin1
+免治  min5zi6
+入冬生魚詐死  jap6dung1saang1jyu4zaa3sei2
+入冬  jap6dung1
+生魚  saang1jyu4
+詐死  zaa3sei2
+死魚  sei2jyu4
+入到  jap6dou3
+入返來  jap6faan2loi4
+返來  faan2loi4
+入返來  jap6faan2lai4
+返來  faan2lai4
+入面  jap6min6
+八仙過海各有千秋  baat3sin1gwo3hoi2gok3jau5cin1cau1
+八仙過海  baat3sin1gwo3hoi2
+各有千秋  gok3jau5cin1cau1
+八仙  baat3sin1
+過海  gwo3hoi2
+各有  gok3jau5
+千秋  cin1cau1
+八八卦卦  baat3baat3gwaa3gwaa3
+八卦  baat3gwaa3
+公仔  gung1zai2
+公仔面  gung1zai2min6
+典地沙  din2dei6saa1
+典床  din2cong4
+典床典蓆  din2cong4din2zik6
+典蓆  din2zik6
+冇勾稈得把聲  mou5ngau1gon2dak1baa2sing1
+冇勾稈  mou5ngau1gon2
+得把聲  dak1baa2sing1
+冇口齒  mou5hau2ci2
+口齒  hau2ci2
+冇咁大個頭毋好帶咁大頂帽  mou5gam3daai6go3tau4mou4hou2daai3gam3daai6ding2mou6
+咁大  gam3daai6
+大頭  daai6tau4
+大帽  daai6mou6
+冇啊  mou5aa1
+冇埞企  mou5deng6kei5
+冇埞企  mou6deng6kei2
+冇天裝  mou5tin1zong1
+冇地載  mou5dei6zoi3
+冇尾飛鉈  mou5mei5fei1to4
+收不回來  sau1bat1wui4loi4
+回來  wui4loi4
+回來  wui4lai4
+冇屎唔入屎坑  mou5si2m4jap6si2haang1
+屎坑  si2haang1
+冇幾何  mou5gei2ho4
+幾何  gei2ho4
+冇幾遠  mou5gei2jyun5
+冇底  mou5dai2
+冇得  mou5dak1
+冇得作  mou5dak1zok3
+冇心  mou5sam1
+冇心肝  mou5sam1gon1
+心肝  sam1gon1
+冇掩雞籠自出自入  mou5jim2gai1lung4ceot1jap6zi6jau4
+雞籠  gai1lung4
+出入  ceot1jap6
+自由  zi6jau4
+冇料  mou5liu6
+冇柄士巴拉得棚牙  mou5bing3si6baa1laa1dak1paang4ngaa4
+冇柄士巴拉  mou5bing3si6baa1laa1
+冇柄士  mou5bing3si6
+巴拉  baa1laa1
+得棚牙  dak1paang4ngaa4
+棚牙  paang4ngaa4
+冇毛雞打交啖啖到肉  mou5mou4gai1daa2gaau1daam6daam6dou3juk6
+冇毛雞打交  mou5mou4gai1daa2gaau1
+冇毛雞  mou5mou4gai1
+冇毛  mou5mou4
+打交  daa2gaau1
+啖啖到肉  daam6daam6dou3juk6
+冇牙婆食豬腳  mou5ngaa4po4sik6zyu1goek3
+冇牙婆  mou5ngaa4po4
+牙婆  ngaa4po4
+豬腳  zyu1goek3
+冇相干  mou5soeng1gon1
+相干  soeng1gon1
+冇耳茶煲得把嘴  mou5ji5caa4bou1dak1baa2zeoi2
+冇耳茶煲  mou5ji5caa4bou1
+茶煲  caa4bou1
+得把嘴  dak1baa2zeoi2
+得把口  dak1baa2hau2
+冇腦  mou5nou5
+冇腰骨  mou5jiu1gwat1
+腰骨  jiu1gwat1
+冇錢  mou5cin4
+冇錯  mou5co3
+冇面  mou5min6
+冇面畀  mou5min6bei3
+冇首尾  mou5sau2mei5
+首尾  sau2mei5
+冇鼻  mou5bei6
+冇鼻哥  mou5bei6go1
+鼻哥  bei6go1
+冚家  ham6gaa1
+冚家鏟  ham6gaa1caan2
+家產  gaa1caan2
+冚棒唥  ham6paang5laang6
+冚罷唥  ham6baa6laang6
+冚被  ham6bei6
 冧酒      lam6zau2
-冷衫
-凍親
-凡士林
-凶屋
-凹凹凸凸
-出世紙
-出更
-出糧
-凼凼
-刀仔
-利市
-利爾
+冷衫  laang5saam1
+凍親  dung3can1
+凡士林  faan4si6lam4
+凶屋  hung1uk1
+凹凹凸凸  nap1nap1dat6dat6
+凹凹凸凸  aau1aau1dat6dat6
+凹凸  nap1dat6
+凹凸  aau1dat6
+出世紙  ceot1sai3zi2
+出世  ceot1sai3
+出更  ceot1gaang1
+出糧  ceot1loeng4
+凼凼  tang6tang6
+刀仔  dou1zai2
+利市  lei6si5
+利爾  lei6ji5
+嚟架  lai4gaa3
+嚟架  lei4gaa3
 刮佢出嚟
 刮竹
 到未呀
