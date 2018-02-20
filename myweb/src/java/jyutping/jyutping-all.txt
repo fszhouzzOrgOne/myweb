@@ -3284,6 +3284,7 @@ deng2 顶
 deng3 埞
 deng3 掟
 deng6 地
+deng6 埞
 deng6 定
 deng6 掟
 deng6 訂
@@ -11403,7 +11404,10 @@ laan6 澜
 laan6 烂
 laan6 爛
 laan6 糷
+laang1 唥
+laang4 唥
 laang5 冷
+laang6 唥
 laap3 擸
 laap6 垃
 laap6 岦
@@ -11544,6 +11548,7 @@ lam5 醂
 lam5 顲
 lam6 临
 lang1 舲
+lang3 唥
 lap1 凹
 lap1 笠
 lap1 粒
@@ -11681,6 +11686,7 @@ lei1 疬
 lei4 丽
 lei4 剺
 lei4 厘
+lei4 嚟
 lei4 嫠
 lei4 孋
 lei4 孷
@@ -17810,6 +17816,7 @@ tai5 悌
 tai6 娣
 tai6 弟
 tai6 悌
+tam5 氹
 tam5 窞
 tan1 吞
 tan1 啍
@@ -17836,6 +17843,7 @@ tang4 誊
 tang4 謄
 tang4 邆
 tang4 騰
+tang6 凼
 tau1 偷
 tau1 媮
 tau2 唞
