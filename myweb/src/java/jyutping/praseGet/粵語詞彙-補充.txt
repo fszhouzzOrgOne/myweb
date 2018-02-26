@@ -1,11 +1,3 @@
-# 再補充
-舌尖      sit6zim1
-恨不得    han6bat1dak1
-滴滴      dik1dik1
-恨不能    han6bat1nang4
-恨不      han6bat1
-加速      gaa1cuk1
-
 #干支
 干支 gon1zi1
 甲子 gaap3zi2
@@ -68,3 +60,11 @@
 辛酉 san1jau5
 壬戌 jam4seot1
 癸亥 gwai3hoi6
+
+# 再補充
+舌尖      sit6zim1
+恨不得    han6bat1dak1
+滴滴      dik1dik1
+恨不能    han6bat1nang4
+恨不      han6bat1
+加速      gaa1cuk1
