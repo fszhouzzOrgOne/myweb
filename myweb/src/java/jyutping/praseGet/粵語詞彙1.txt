@@ -1897,34 +1897,52 @@
 賣魚佬沖涼冇曬腥氣
 賣魚佬洗身
 賣鯇魚尾搭嘴
-贅气
-贅氣
-贈慶
-贖錢
-赤柱
-走人
-走夾唔唞
-走趲
-走鬼
-起屋
-起身
-趁墟
-趌跛跛
-趌路
-跌眼鏡
-跌落地都要楋翻揸沙
-跌落地都要楋翻摣沙
-跟你姓
-跟佢姓
-跪地喂豬母睇錢份上
-跪地餵豬母睇錢份上
-踎墩
-踢曬腳
-踢波
-踢爆
-踩屐
-踹單車
-蹬穿石
+贅氣  zeoi6hei3
+贈慶  zang6hing3
+贖錢  suk6cin4
+赤柱  cik3cyu5
+走人  zau2jan4
+走夾唔唞    zau2gaap3m4tau2
+唔唞  m4tau2
+走趲  zau2zaan2
+走鬼  zau2gwai2
+起屋  hei2uk1
+起身  hei2san1
+趁墟  can3heoi1
+趌跛跛     gat6bo2bo2
+趌跛跛     gat6bai1bai1
+跛跛  bai1bai1
+跛跛  bo2bo2
+趌路  gat6lou6
+跌眼鏡     dit3ngaan5geng3
+眼鏡  ngaan5geng3
+跌落  dit3lok6
+落地  lok6dei6
+都要  dou1jiu3
+楋翻  laat6faan1
+跌落地都要楋翻揸沙   dit3lok6dei6dou1jiu3laat6faan1zaa1saa1
+跌落地都要楋翻摣沙   dit3lok6dei6dou1jiu3laat6faan1zaa1saa1
+跟你姓     gan1nei5sing3
+跟佢姓     gan1keoi5sing3
+你姓  nei5sing3
+佢姓  keoi5sing3
+跪地喂豬母睇錢份上   gwai6dei6wai3zyu1mou5tai2cin4fan6soeng6
+跪地餵豬母睇錢份上   gwai6dei6wai3zyu1mou5tai2cin4fan6soeng6
+跪地  gwai6dei6
+豬母  zyu1mou5
+份上  fan6soeng6
+踎墩  mau1deon1
+踎墩  mau1dan1
+踎墩  mau1dan2
+踢曬腳     tek3saai3goek3
+踢波  tek3bo1
+踢爆  tek3baau3
+踢爆  tek3paau3
+踩屐  caai2kek6
+踹單車     caai2daan1ce1
+單車  daan1ce1
+蹬穿石     dang1cyun1sek6
+穿石  cyun1sek6
 蹺腳  hiu1goek3
 蹺蹊  hiu1kai1
 躀低  gwaan3dai1
