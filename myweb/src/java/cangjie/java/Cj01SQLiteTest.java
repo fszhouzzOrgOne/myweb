@@ -73,7 +73,7 @@ public class Cj01SQLiteTest {
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
 
-        // 驗證
+        // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
         edits.add(edition1);
         edits.add(edition2);
