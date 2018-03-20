@@ -101,6 +101,10 @@ public class Cj00AllInOneTest {
     public static String manjuMoreOther = mbsBaseDir + "manju-moreOther.txt";
     public static String manjuAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-manju.txt";
 
+    // 國際音標
+    public static String phonetic200 = mbsBaseDir + "phonetic-allInOne.txt";
+    public static String phoneticAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-phonetic.txt";
+    
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
         generateAllInOnes(false, true, true, false, false);
@@ -133,6 +137,10 @@ public class Cj00AllInOneTest {
         if (withPhrases || withPhrases6) {
             readPhraseFile();
         }
+        
+        // 國際音標
+        String[] mbipa = new String[] { phonetic200 };
+        genAllInOne("國際音標", mbipa, phoneticAllInOne, withHeaders);
 
         // 滿文
         String[] mbmanju = new String[] { manjuMoreOther };
