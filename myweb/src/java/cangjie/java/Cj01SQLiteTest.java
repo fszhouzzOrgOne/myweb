@@ -36,6 +36,7 @@ public class Cj01SQLiteTest {
     private static String cjmsallInOne = Cj00AllInOneTest.cjmsallInOne; // 微軟倉頡
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
+    private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
 
     private static Map<String, Integer> mbOrderNoMap = null; // 文字排序權值
  
@@ -65,7 +66,7 @@ public class Cj01SQLiteTest {
 
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 472865 韓日单字342589 
+        boolean edition2 = true; // 2版本自定義字體 473053 韓日单字342589 
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
@@ -183,6 +184,7 @@ public class Cj01SQLiteTest {
             List<String> linescjms = IOUtils.readLines(cjmsallInOne);
             List<String> lineskorea = IOUtils.readLines(koreaallInOne);
             List<String> linesmanju = IOUtils.readLines(manjuallInOne);
+            List<String> linesipa = IOUtils.readLines(phoneticAllInOne);
             // 交集碼表
             List<String> linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
             // 倉頡三五
@@ -224,6 +226,7 @@ public class Cj01SQLiteTest {
             String cjGenkorea = "korea";
             String cjGenInter = "cjcommon";
             String cjGenManju = "manju";
+            String cjGenIpa= "ipa";
 
             sql_gen = getInsertGenSql(cjGen2, "倉頡二代");
             stmt.executeUpdate(sql_gen);
@@ -264,6 +267,9 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenManju, "圈點滿文");
+            stmt.executeUpdate(sql_gen);
+            
+            sql_gen = getInsertGenSql(cjGenIpa, "國際音標");
             stmt.executeUpdate(sql_gen);
 
             // 不自動提交
@@ -355,6 +361,11 @@ public class Cj01SQLiteTest {
             insertMbdb(stmt, cjGenManju, linesmanju);
             c.commit();
             System.out.println("insert " + cjGenManju + " successfully");
+            selectCountAll(stmt);
+            // 國際音標
+            insertMbdb(stmt, cjGenIpa, linesipa);
+            c.commit();
+            System.out.println("insert " + cjGenIpa + " successfully");
             selectCountAll(stmt);
 
             stmt.close();

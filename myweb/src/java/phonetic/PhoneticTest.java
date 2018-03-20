@@ -8,8 +8,8 @@ import cangjie.java.util.IOUtils;
 
 /**
  * 國際音標符號<br/>
- * 來源：https://zh.wiktionary.org/wiki/附录:国际音标符号 碼表：按維基詞典編碼a-z，ʔ • ʡ • ʕ • ʢ • ʘ •
- * ǀ • ǂ • ǁ • ǃ 九個放入z鍵中，之後的符號用zz編碼。
+ * 來源：https://zh.wiktionary.org/wiki/附录:国际音标符号<br/>
+ * 碼表：按維基詞典編碼a-z，ʔ • ʡ • ʕ • ʢ • ʘ • ǀ • ǂ • ǁ • ǃ 九個放入z鍵中，之後的符號用zz編碼。
  * 
  * @author fszhouzz@qq.com
  * @time 2018年3月20日上午11:43:53
