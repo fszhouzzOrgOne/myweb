@@ -66,7 +66,7 @@ public class Cj01SQLiteTest {
 
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 473053 韓日单字342589 
+        boolean edition2 = true; // 2版本自定義字體 473056 韓日单字342589 
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 164901 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 159268 ansi 103934
@@ -276,94 +276,95 @@ public class Cj01SQLiteTest {
             c.setAutoCommit(false);
 
             // 倉頡交集碼表
-            insertMbdb(stmt, cjGenInter, linesInter);
+            insertMbdb(stmt, cjGenInter, linesInter, true);
             c.commit();
             System.out.println("insert " + cjGenInter + " successfully");
             selectCountAll(stmt);
 
             if (withCangjieOthers) {
                 // 倉頡二代
-                insertMbdb(stmt, cjGen2, lines2);
+                insertMbdb(stmt, cjGen2, lines2, true);
                 c.commit();
                 System.out.println("insert " + cjGen2 + " successfully");
                 selectCountAll(stmt);
 
                 // 雅虎奇摩
-                insertMbdb(stmt, cjGencjyh, linescjyh);
+                insertMbdb(stmt, cjGencjyh, linescjyh, true);
                 c.commit();
                 System.out.println("insert " + cjGencjyh + " successfully");
                 selectCountAll(stmt);
 
                 // 微軟倉頡
-                insertMbdb(stmt, cjGencjms, linescjms);
+                insertMbdb(stmt, cjGencjms, linescjms, true);
                 c.commit();
                 System.out.println("insert " + cjGencjms + " successfully");
                 selectCountAll(stmt);
             }
             if (withCangjie3) {
                 // 倉頡三代
-                insertMbdb(stmt, cjGen3, lines3);
+                insertMbdb(stmt, cjGen3, lines3, true);
                 c.commit();
                 System.out.println("insert " + cjGen3 + " successfully");
                 selectCountAll(stmt);
             }
             if (withCangjie5) {
                 // 倉頡五代
-                insertMbdb(stmt, cjGen5, lines5);
+                insertMbdb(stmt, cjGen5, lines5, true);
                 c.commit();
                 System.out.println("insert " + cjGen5 + " successfully");
                 selectCountAll(stmt);
             }
             // 蒼頡六代
             if (withCangjie6) {
-                insertMbdb(stmt, cjGen6, lines6);
+                insertMbdb(stmt, cjGen6, lines6, true);
                 c.commit();
                 System.out.println("insert " + cjGen6 + " successfully");
                 selectCountAll(stmt);
             }
             // 倉頡三五
             if (withCangjie35) {
-                insertMbdb(stmt, cjGen35, lines35);
+                insertMbdb(stmt, cjGen35, lines35, true);
                 c.commit();
                 System.out.println("insert " + cjGen35 + " successfully");
                 selectCountAll(stmt);
             }
             // 四角號碼
-            insertMbdb(stmt, cjGensghm, linessghm);
+            insertMbdb(stmt, cjGensghm, linessghm, true);
             c.commit();
             System.out.println("insert " + cjGensghm + " successfully");
             selectCountAll(stmt);
             // 粵語拼音
-            insertMbdb(stmt, cjGenJyutp, linesjyutp);
+            insertMbdb(stmt, cjGenJyutp, linesjyutp, true);
             c.commit();
             System.out.println("insert " + cjGenJyutp + " successfully");
             selectCountAll(stmt);
             // 拼音
-            insertMbdb(stmt, cjGenpy, linespy);
+            insertMbdb(stmt, cjGenpy, linespy, true);
             c.commit();
             System.out.println("insert " + cjGenpy + " successfully");
             selectCountAll(stmt);
             // 注音符號
-            insertMbdb(stmt, cjGenzy, lineszy);
+            insertMbdb(stmt, cjGenzy, lineszy, false);
             c.commit();
             System.out.println("insert " + cjGenzy + " successfully");
+            selectCountAll(stmt);
             // 日語假名
-            insertMbdb(stmt, cjGenka, lineska);
+            insertMbdb(stmt, cjGenka, lineska, true);
             c.commit();
             System.out.println("insert " + cjGenka + " successfully");
             selectCountAll(stmt);
             // 朝鮮諺文
-            insertMbdb(stmt, cjGenkorea, lineskorea);
+            insertMbdb(stmt, cjGenkorea, lineskorea, true);
             c.commit();
             System.out.println("insert " + cjGenkorea + " successfully");
             selectCountAll(stmt);
             // 圈點滿文 cjGenManju
-            insertMbdb(stmt, cjGenManju, linesmanju);
+            insertMbdb(stmt, cjGenManju, linesmanju, true);
             c.commit();
             System.out.println("insert " + cjGenManju + " successfully");
             selectCountAll(stmt);
             // 國際音標
-            insertMbdb(stmt, cjGenIpa, linesipa);
+            insertMbdb(stmt, cjGenIpa, linesipa, false);
             c.commit();
             System.out.println("insert " + cjGenIpa + " successfully");
             selectCountAll(stmt);
@@ -420,7 +421,18 @@ public class Cj01SQLiteTest {
         }
     }
 
-    private static void insertMbdb(Statement stmt, String gen, List<String> lines) throws Exception {
+    /**
+     * 插入碼表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年3月20日下午2:55:19
+     * @param stmt
+     * @param gen
+     * @param lines
+     * @param ordered 是否取mbOrderNoMap中的排序
+     * @throws Exception
+     */
+    private static void insertMbdb(Statement stmt, String gen, List<String> lines, boolean ordered) throws Exception {
         int count = 0;
         for (String line : lines) {
             if (line.contains(" ")) {
@@ -432,7 +444,12 @@ public class Cj01SQLiteTest {
                     continue;
                 }
 
-                String sql = getInsertSql(gen, cod, val);
+                Integer order = 0;
+                if (ordered) {
+                    order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                }
+                
+                String sql = getInsertSql(gen, cod, val, order);
                 stmt.executeUpdate(sql);
                 count++;
 
@@ -451,11 +468,13 @@ public class Cj01SQLiteTest {
         return sql;
     }
 
-    private static String getInsertSql(String gen, String code, String name) {
+    private static String getInsertSql(String gen, String code, String name, Integer order) {
+        if (null == order) {
+            order = 0;
+        }
         String sql;
         sql = "INSERT INTO t_mb_content (_id,type_code,mb_code,mb_char, mb_order_no) " + "VALUES (null, '" + gen
-                + "', '" + code + "', '" + name + "', " + (null != mbOrderNoMap.get(name) ? mbOrderNoMap.get(name) : 0)
-                + ");";
+                + "', '" + code + "', '" + name + "', " + order + ");";
         return sql;
     }
 
