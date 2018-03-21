@@ -21,6 +21,9 @@ public class KarinaTest {
 
     private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
+    // 三字以下
+    private static String singleCharPtn = "^.* .{1,3}$";;
+
     public static void main(String[] args) throws Exception {
         List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
         List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
@@ -59,7 +62,7 @@ public class KarinaTest {
 
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
-        String sinPtn = "^.* .{1,3}$"; // 三字以下
+        String sinPtn = singleCharPtn;
         for (String ji : res) {
             if (ji.matches(sinPtn)) {
                 resSinCodes.add(ji.split(" ")[0]);

@@ -23,6 +23,9 @@ public class HanGulHanjaText {
 
     private static String yanwenPtn = "[\\uAC00-\\uD7AF\\u1100-\\u11FF\\u3130-\\u318F\\uA960-\\uA97F\\uD7B0-\\uD7FF}]+";
 
+    /** 保留的漢字詞條中各詞字數 2 */
+    private static String singleCharPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,2}$";
+
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
 
     public static void main(String[] args) throws Exception {
@@ -56,7 +59,7 @@ public class HanGulHanjaText {
         List<String> mblist = IOUtils.readLines(mbfile);
         List<String> mbOther = IOUtils.readLines(Cj00AllInOneTest.mbkoreaOther);
         mblist.addAll(mbOther);
-        
+
         Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
         for (String str : mblist) {
             if (str.contains(" ")) {
@@ -179,7 +182,7 @@ public class HanGulHanjaText {
 
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
-        String sinPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,2}$";
+        String sinPtn = singleCharPtn;
         for (String ji : listOri) {
             if (ji.matches(sinPtn)) {
                 resSinCodes.add(ji.split(" ")[0]);

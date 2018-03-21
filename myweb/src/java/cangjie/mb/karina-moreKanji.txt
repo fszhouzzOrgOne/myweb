@@ -18601,6 +18601,7 @@ ki 喜
 ki 器
 ki 基
 ki 奇
+ki 嬉
 ki 季
 ki 寄
 ki 岐
@@ -39313,7 +39314,11 @@ tamentai 多面体
 tameru 溜める
 tameru 矯める
 tameshi 例
+tameshi 験
+tameshi 試し
 tamesi 例
+tamesi 験
+tamesi 試し
 tamesu 試す
 tami 民
 tamikusa 民草
@@ -44132,6 +44137,10 @@ urekuti 売れ口
 ureru 売れる
 ureru 熟れる
 ureru 賣れる
+ureshi 嬉し
+ureshii 嬉しい
+uresi 嬉し
+uresii 嬉しい
 uri 瓜
 uriko 売子
 uriko 売り子
