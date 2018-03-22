@@ -38,12 +38,15 @@ g   ɢ
 g   ʛ
 g   ɣ
 g   ɤ
+g   ˠ
 h   h
 h   ħ
 h   ɦ
 h   ɧ
 h   ʜ
 h   ɥ
+h   ʰ
+h   ʱ
 i   i
 i   ĩ
 i   ɨ
@@ -52,6 +55,7 @@ j   j
 j   ʝ
 j   ɟ
 j   ʄ
+j   ʲ
 k   k
 l   l
 l   ɫ
@@ -60,6 +64,7 @@ l   ɭ
 l   ʟ
 l   ɮ
 l   ʎ
+l   ˡ
 m   m
 m   ɱ
 m   ɯ
@@ -69,6 +74,7 @@ n   ɲ
 n   ŋ
 n   ɳ
 n   ɴ
+n   ⁿ
 o   o
 o   õ
 o   ɵ
@@ -117,6 +123,7 @@ w   w
 w   w̃
 w   ʍ
 w   ɰ
+w   ʷ
 x   x
 x   χ
 y   y
@@ -131,6 +138,7 @@ z   ʔ
 z   ʡ
 z   ʕ
 z   ʢ
+z   ˁ
 z   ʘ
 z   ǀ
 z   ǂ
@@ -166,12 +174,6 @@ zz   ↗
 zz   ↘
 zz   ̥
 zz   ̬
-zz   ʰ
-zz   ʱ
-zz   ʲ
-zz   ʷ
-zz   ˠ
-zz   ˁ
 zz   ̹
 zz   ̜
 zz   ̟
@@ -190,6 +192,4 @@ zz   ̙
 zz   ̪
 zz   ̺
 zz   ̻
-zz   ⁿ
-zz   ˡ
 zz   ̚
