@@ -14,12 +14,14 @@ c   ç
 c   ɕ
 c   ɔ
 c   ɔ̃
-c   ̆
 c   ‿
 c   ͡
+c   ̆
 c   ̹
 c   ̜
 c   ̯
+c   ̪
+c   ̺
 d   d
 d   ɗ
 d   ɖ
@@ -104,6 +106,8 @@ o   ɔ
 o   ɔ̃
 o   ʊ
 o   ʘ
+o   ̥
+o   ̻
 p   p
 p   ɸ
 p   p͡f
@@ -217,6 +221,8 @@ zz   ‿
 zz   x͡y
 zz   x͡
 zz   ͡
+zz   ̌
+zz   ̂
 zz   ̋
 zz   ˥
 zz   ́
@@ -227,5 +233,3 @@ zz   ̀
 zz   ˨
 zz   ̏
 zz   ˩
-zz   ̌
-zz   ̂
