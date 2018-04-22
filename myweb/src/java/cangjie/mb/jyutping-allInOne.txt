@@ -2210,6 +2210,8 @@ cingqqqq 裎
 cingqqqq 酲
 cingqqqq 餳
 cingqqqq 饧
+cingqqqqqq 鋥
+cingqqqqqq 锃
 cipqqq 呫
 cipqqq 唼
 cipqqq 妾
@@ -21859,6 +21861,7 @@ baatsin 八仙
 baatsingwohoi 八仙過海
 baatsingwohoigokjaucincau 八仙過海各有千秋
 baaungaa 齙牙
+baibai 跛跛
 baiai 閉翳
 batbui 不悖
 batcai 不齊
@@ -21904,6 +21907,7 @@ binghangbatbui 並行不悖
 bingsaimouloeng 並世無兩
 bitming 別名
 bolei 玻璃
+bobo 跛跛
 bokgwat 駁骨
 bongngaan 榜眼
 bouling 保齡
@@ -21916,6 +21920,8 @@ caabaak 茶白
 caabaaklaam 茶白欖
 caabou 茶煲
 caaijan 差人
+caaidaance 踹單車
+caaikek 踩屐
 caamci 參差
 caamcibatcai 參差不齊
 caamhaau 參考
@@ -21923,6 +21929,7 @@ caicapcap 齊緝緝
 caihap 齊合
 camsik 侵蝕
 camcam 沉沉
+canheoi 趁墟
 cankwan 陳琨
 cannin 陳年
 canninzungcoujoekfaatlaanzaa 陳年中草藥發爛渣
@@ -21976,6 +21983,7 @@ cingan 齒齦
 cisou 次數
 cizi 廁紙
 citong 池塘
+cikcyu 赤柱
 cincau 千秋
 cingbeibei 青悲悲
 cingbikbik 青碧碧
@@ -21999,6 +22007,7 @@ cungcungdaapdaap 重重遝遝
 cungjau 重有
 cungngaau 蟲咬
 cungngaausyujit 蟲咬鼠齧
+cyunsek 穿石
 cyungung 串供
 cyungungloengci 串供量詞
 cyunlyun 串聯
@@ -22025,6 +22034,7 @@ dakbaasing 得把聲
 dakbaazeoi 得把嘴
 dakdim 得掂
 dakpaangngaa 得棚牙
+dangcyunsek 蹬穿石
 datceot 突出
 deigung 地宮
 deizi 地支
@@ -22064,6 +22074,10 @@ dingwu 鼎湖
 dingwusoengsouhouzaai 鼎湖上素好齋
 dingzyu 頂住
 dingzyutiuhei 頂住條氣
+ditlok 跌落
+ditlokdeidoujiulaatfaanzaasaa 跌落地都要楋翻揸沙
+ditlokdeidoujiulaatfaanzaasaa 跌落地都要楋翻摣沙
+ditngaangeng 跌眼鏡
 diudiu 丟掉
 diuhaa 丟下
 diuhei 丟棄
@@ -22073,6 +22087,7 @@ docijatgeoi 多此一舉
 dohaaujyu 多尻餘
 dojat 多一
 dojyu 多餘
+doujiu 都要
 doumou 都無
 doumou 都冇
 douzai 刀仔
@@ -22108,6 +22123,7 @@ faatdin 發電
 fancuk 分束
 fanwan 紛云
 fanwan 紛紜
+fansoeng 份上
 fatham 佛龕
 feifaat 飛發
 feigei 飛機
@@ -22195,6 +22211,8 @@ gamngaak 金鈪
 gamzauhou 噉就好
 gamdaai 咁大
 gamhaai 噤齘
+gankeoising 跟佢姓
+ganneising 跟你姓
 gansuk 僅熟
 ganlai 近嚟
 ganlei 近嚟
@@ -22206,6 +22224,8 @@ gangsan 庚辰
 gangseot 庚戌
 gangzi 庚子
 gapfan 佮份
+gatbaibai 趌跛跛
+gatbobo 趌跛跛
 gatlou 䞘路
 gatlou 趌路
 gatlou 趷路
@@ -22258,6 +22278,7 @@ gukbaau 鋦爆
 gukhei 鋦氣
 gunzi 官至
 gunghau 工口
+gungjyun 公園
 gungsi 龔氏
 gungsing 龔姓
 gungzai 公仔
@@ -22282,6 +22303,9 @@ gwaijau 癸酉
 gwaimaau 癸卯
 gwaimei 癸未
 gwaizi 癸巳
+gwaidei 跪地
+gwaideiwaizyumoutaicinfansoeng 跪地喂豬母睇錢份上
+gwaideiwaizyumoutaicinfansoeng 跪地餵豬母睇錢份上
 gwancaak 龜坼
 gwangei 軍機
 gwanlit 龜裂
@@ -22353,6 +22377,8 @@ hatmailousikseihaaizekzekhou 乞米佬食死蟹只只好
 hauci 口齒
 hauhei 口氣
 haujyu 口語
+heisan 起身
+heiuk 起屋
 heigai 餼雞
 hinzisi 軒芝斯
 hiugoek 蹺腳
@@ -22554,6 +22580,7 @@ keoidei 佢哋
 keoige 佢嘅
 keoigiu 佢叫
 keoihai 佢喺
+keoising 佢姓
 kinggai 傾偈
 kinghaa 傾下
 koizo 丐助
@@ -22571,6 +22598,7 @@ laangsaam 冷衫
 laapaap 臘鴨
 laapngaap 臘鴨
 laaptaap 邋遢
+laatfaan 楋翻
 laattaap 邋遢
 laigaa 嚟架
 laiheoi 嚟去
@@ -22632,7 +22660,9 @@ mgong 唔講
 mhai 唔係
 mhaijan 唔係人
 msukmsik 唔熟唔食
+mtau 唔唞
 mzikcin 唔值錢
+maaling 麻嶺
 maamaa 麻麻
 maamaadei 麻麻哋
 maacoi 馬賽
@@ -22653,6 +22683,8 @@ matdungdung 乜東東
 matdungdungjyunseoicung 乜東東芫荽蔥
 matje 乜嘢
 matming 乜名
+maudan 踎墩
+maudeon 踎墩
 medungdung 乜東東
 medungdungjyunseoicung 乜東東芫荽蔥
 meje 乜嘢
@@ -22736,6 +22768,7 @@ neidei 你哋
 neige 你嘅
 neihai 你喺
 neimailei 你咪理
+neising 你姓
 nggaa 吳家
 ngsi 吳氏
 ngzanjyu 吳鎮宇
@@ -22747,6 +22780,7 @@ ngaapo 牙婆
 ngaajyu 齖齵
 ngaamngaam 岩岩
 ngaamngaam 巖巖
+ngaangeng 眼鏡
 ngaatjyu 猰貐
 ngaaungit 咬嚙
 ngaausit 咬舌
@@ -22920,6 +22954,7 @@ soengsi 上司
 soengzau 上晝
 souci 數詞
 souzaai 素齋
+sukcin 贖錢
 suksik 熟食
 sungjan 鬆人
 sungcoi 餸菜
@@ -22960,6 +22995,10 @@ taungokngok 頭岳岳
 taungokngok 頭嶽嶽
 tauningning 頭擰擰
 taupei 頭皮
+tekbaau 踢爆
+tekbo 踢波
+tekpaau 踢爆
+teksaaigoek 踢曬腳
 tindei 天地
 tingon 天干
 tingzaizuk 艇仔粥
@@ -23015,6 +23054,8 @@ watlam 鬱林
 watlamjyun 鬰林縣
 watlamjyun 鬱林縣
 wohaai 和諧
+wojin 和弦
+wojyun 和弦
 wosoeng 和尚
 woklou 鑊黸
 wongdai 皇帝
@@ -23056,14 +23097,19 @@ zaihei 祭器
 zakzi 仄紙
 zakzi 廁紙
 zangbou 增補
+zanghing 贈慶
 zaujyu 齱齵
 zausan 週身
 zausanmdakdim 週身唔得掂
 zausanmzeoicoi 週身唔聚財
 zaucing 酒埕
+zaugaapmtau 走夾唔唞
 zaugau 走狗
+zaugwai 走鬼
+zaujan 走人
 zaulap 酒凹
 zaunap 酒凹
+zauzaan 走趲
 zausik 就食
 zausikzauo 就食就屙
 zebai 遮蔽
@@ -23076,6 +23122,7 @@ zengsi 鄭氏
 zeoijyu 齟齬
 zeoicoeng 最長
 zeoicoi 聚財
+zeoihei 贅氣
 zibatgwo 之不過
 ziceoi 齊衰
 zifu 知乎
@@ -23148,4 +23195,5 @@ zungjiu 仲要
 zungmei 仲未
 zungsoeng 仲想
 zyugoek 豬腳
+zyumou 豬母
 zyunsing 轉性

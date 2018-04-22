@@ -2210,6 +2210,8 @@ cing4 裎
 cing4 酲
 cing4 餳
 cing4 饧
+cing6 鋥
+cing6 锃
 cip3 呫
 cip3 唼
 cip3 妾

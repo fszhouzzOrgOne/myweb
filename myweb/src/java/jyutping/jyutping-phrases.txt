@@ -90,6 +90,7 @@ baat3sin1   八仙
 baat3sin1gwo3hoi2 八仙過海
 baat3sin1gwo3hoi2gok3jau5cin1cau1 八仙過海各有千秋
 baau6ngaa4  齙牙
+bai1bai1    跛跛
 bai3ai3     閉翳
 bat1bui6    不悖
 bat1cai4    不齊
@@ -137,6 +138,7 @@ bing6sai3mou4loeng5 並世無兩
 bing6tan1   併吞
 bit6ming4   別名
 bo1lei4     玻璃
+bo2bo2      跛跛
 bok3gwat1   駁骨
 bong2ngaan5 榜眼
 bou2ling4   保齡
@@ -149,6 +151,8 @@ caa4baak6   茶白
 caa4baak6laam5 茶白欖
 caa4bou1    茶煲
 caai1jan4   差人
+caai2daan1ce1 踹單車
+caai2kek6   踩屐
 caam1ci1    參差
 caam1ci1bat1cai4 參差不齊
 caam1haau2  參考
@@ -156,6 +160,7 @@ cai4cap1cap1 齊緝緝
 cai4hap6    齊合
 cam1sik6    侵蝕
 cam4cam4    沉沉
+can3heoi1   趁墟
 can4kwan1   陳琨
 can4nin4    陳年
 can4nin4zung1cou2joek6faat3laan6zaa1 陳年中草藥發爛渣
@@ -211,6 +216,7 @@ ci2ngan4    齒齦
 ci3sou3     次數
 ci3zi2      廁紙
 ci4tong4    池塘
+cik3cyu5    赤柱
 cin1cau1    千秋
 cing1bei1bei1 青悲悲
 cing1bik1bik1 青碧碧
@@ -234,6 +240,7 @@ cung4cung4daap6daap6 重重遝遝
 cung4jau5   重有
 cung4ngaau5 蟲咬
 cung4ngaau5syu2jit6 蟲咬鼠齧
+cyun1sek6   穿石
 cyun3gung1  串供
 cyun3gung1loeng6ci4 串供量詞
 cyun3lyun4  串聯
@@ -260,6 +267,7 @@ dak1baa2sing1 得把聲
 dak1baa2zeoi2 得把嘴
 dak1dim1    得掂
 dak1paang4ngaa4 得棚牙
+dang1cyun1sek6 蹬穿石
 dat6ceot1   突出
 dei6gung1   地宮
 dei6zi1     地支
@@ -299,6 +307,10 @@ ding2wu4    鼎湖
 ding2wu4soeng6sou3hou2zaai1 鼎湖上素好齋
 ding2zyu6   頂住
 ding2zyu6tiu4hei3 頂住條氣
+dit3lok6    跌落
+dit3lok6dei6dou1jiu3laat6faan1zaa1saa1 跌落地都要楋翻揸沙
+dit3lok6dei6dou1jiu3laat6faan1zaa1saa1 跌落地都要楋翻摣沙
+dit3ngaan5geng3 跌眼鏡
 diu1diu6    丟掉
 diu1haa6    丟下
 diu1hei3    丟棄
@@ -308,6 +320,7 @@ do1ci2jat1geoi2 多此一舉
 do1haau1jyu4 多尻餘
 do1jat1     多一
 do1jyu4     多餘
+dou1jiu3    都要
 dou1mou4    都無
 dou1mou5    都冇
 dou1zai2    刀仔
@@ -344,6 +357,7 @@ faat3din6   發電
 fan1cuk1    分束
 fan1wan4    紛云
 fan1wan4    紛紜
+fan6soeng6  份上
 fat6ham1    佛龕
 fei1faat3   飛發
 fei1gei1    飛機
@@ -431,6 +445,8 @@ gam1ngaak3  金鈪
 gam2zau6hou2 噉就好
 gam3daai6   咁大
 gam3haai6   噤齘
+gan1keoi5sing3 跟佢姓
+gan1nei5sing3 跟你姓
 gan2suk6    僅熟
 gan6lai4    近嚟
 gan6lei4    近嚟
@@ -442,6 +458,8 @@ gang1san4   庚辰
 gang1seot1  庚戌
 gang1zi2    庚子
 gap3fan6    佮份
+gat6bai1bai1 趌跛跛
+gat6bo2bo2  趌跛跛
 gat6lou6    䞘路
 gat6lou6    趌路
 gat6lou6    趷路
@@ -496,6 +514,7 @@ guk6baau3   鋦爆
 guk6hei3    鋦氣
 gun1zi3     官至
 gung1hau2   工口
+gung1jyun4  公園
 gung1si6    龔氏
 gung1sing3  龔姓
 gung1zai2   公仔
@@ -522,6 +541,9 @@ gwai3jau5   癸酉
 gwai3maau5  癸卯
 gwai3mei6   癸未
 gwai3zi6    癸巳
+gwai6dei6   跪地
+gwai6dei6wai3zyu1mou5tai2cin4fan6soeng6 跪地喂豬母睇錢份上
+gwai6dei6wai3zyu1mou5tai2cin4fan6soeng6 跪地餵豬母睇錢份上
 gwan1caak3  龜坼
 gwan1gei1   軍機
 gwan1lit6   龜裂
@@ -593,6 +615,8 @@ hat1mai5lou5sik6sei2haai5zek3zek3hou2 乞米佬食死蟹只只好
 hau2ci2     口齒
 hau2hei3    口氣
 hau2jyu5    口語
+hei2san1    起身
+hei2uk1     起屋
 hei3gai1    餼雞
 hin1zi1si1  軒芝斯
 hiu1goek3   蹺腳
@@ -795,6 +819,7 @@ keoi5dei6   佢哋
 keoi5ge3    佢嘅
 keoi5giu3   佢叫
 keoi5hai2   佢喺
+keoi5sing3  佢姓
 king1gai2   傾偈
 king1haa6   傾下
 koi3zo6     丐助
@@ -812,6 +837,7 @@ laang5saam1 冷衫
 laap6aap3   臘鴨
 laap6ngaap3 臘鴨
 laap6taap3  邋遢
+laat6faan1  楋翻
 laat6taap3  邋遢
 lai4gaa3    嚟架
 lai4heoi3   嚟去
@@ -873,7 +899,9 @@ m4gong2     唔講
 m4hai6      唔係
 m4hai6jan4  唔係人
 m4suk6m4sik6 唔熟唔食
+m4tau2      唔唞
 m4zik6cin4  唔值錢
+maa4ling5   麻嶺
 maa4maa4    麻麻
 maa4maa4dei6 麻麻哋
 maa5coi3    馬賽
@@ -894,6 +922,9 @@ mat1dung1dung1 乜東東
 mat1dung1dung1jyun4seoi1cung1 乜東東芫荽蔥
 mat1je5     乜嘢
 mat1ming4   乜名
+mau1dan1    踎墩
+mau1dan2    踎墩
+mau1deon1   踎墩
 me1dung1dung1 乜東東
 me1dung1dung1jyun4seoi1cung1 乜東東芫荽蔥
 me1je5      乜嘢
@@ -978,6 +1009,7 @@ nei5dei6    你哋
 nei5ge3     你嘅
 nei5hai2    你喺
 nei5mai5lei5 你咪理
+nei5sing3   你姓
 ng4gaa1     吳家
 ng4si6      吳氏
 ng4zan3jyu5 吳鎮宇
@@ -989,6 +1021,7 @@ ngaa4po4    牙婆
 ngaa6jyu4   齖齵
 ngaam4ngaam4 岩岩
 ngaam4ngaam4 巖巖
+ngaan5geng3 眼鏡
 ngaat3jyu5  猰貐
 ngaau5ngit6 咬嚙
 ngaau5sit6  咬舌
@@ -1163,6 +1196,7 @@ soeng6si1   上司
 soeng6zau3  上晝
 sou3ci4     數詞
 sou3zaai1   素齋
+suk6cin4    贖錢
 suk6sik6    熟食
 sung1jan4   鬆人
 sung3coi3   餸菜
@@ -1203,6 +1237,10 @@ tau4ngok6ngok6 頭岳岳
 tau4ngok6ngok6 頭嶽嶽
 tau4ning4ning4 頭擰擰
 tau4pei4    頭皮
+tek3baau3   踢爆
+tek3bo1     踢波
+tek3paau3   踢爆
+tek3saai3goek3 踢曬腳
 tin1dei6    天地
 tin1gon1    天干
 ting5zai2zuk1 艇仔粥
@@ -1260,6 +1298,8 @@ wat1lam4    鬱林
 wat1lam4jyun6 鬰林縣
 wat1lam4jyun6 鬱林縣
 wo4haai4    和諧
+wo4jin4     和弦
+wo4jyun4    和弦
 wo4soeng6   和尚
 wok6lou4    鑊黸
 wong4dai3   皇帝
@@ -1301,14 +1341,19 @@ zai3hei3    祭器
 zak1zi2     仄紙
 zak1zi2     廁紙
 zang1bou2   增補
+zang6hing3  贈慶
 zau1jyu4    齱齵
 zau1san1    週身
 zau1san1m4dak1dim1 週身唔得掂
 zau1san1m4zeoi6coi4 週身唔聚財
 zau2cing4   酒埕
+zau2gaap3m4tau2 走夾唔唞
 zau2gau2    走狗
+zau2gwai2   走鬼
+zau2jan4    走人
 zau2lap1    酒凹
 zau2nap1    酒凹
+zau2zaan2   走趲
 zau6sik6    就食
 zau6sik6zau6o1 就食就屙
 ze1bai3     遮蔽
@@ -1321,6 +1366,7 @@ zeng6si6    鄭氏
 zeoi2jyu5   齟齬
 zeoi3coeng4 最長
 zeoi6coi4   聚財
+zeoi6hei3   贅氣
 zi1bat1gwo3 之不過
 zi1ceoi1    齊衰
 zi1fu1      知乎
@@ -1394,4 +1440,5 @@ zung6jiu3   仲要
 zung6mei6   仲未
 zung6soeng2 仲想
 zyu1goek3   豬腳
+zyu1mou5    豬母
 zyun2sing3  轉性
