@@ -86,7 +86,7 @@ eval(function(ps, w) {
 <table width="100%" cellspacing="0" cellpadding="0"><!--月历表-->
  <tbody><tr><td>
   公元<input type="text" id="Cal_y" size="4" value="2008">年<input type="text" maxlength="2" id="Cal_m" size="2" value="1">月
-  <input type="button" value="确定" onclick="getLunar()">
+  <input id='the_ok_button' type="button" value="确定" onclick="getLunar()">
   <input type="button" value="年↑" onclick="changeYear(0)"><input type="button" value="年↓" onclick="changeYear(1)">
   <input type="button" value="月↑" onclick="changeMonth(0)"><input type="button" value="月↓" onclick="changeMonth(1)">
   <input type="button" onclick="changeMonth(2)" value="今"><br>
@@ -423,6 +423,12 @@ UTC/TD<input id="Cf_ut" type="checkbox" checked="">
 
 <!--版权区-->
 <tr><td class="dTop2" colspan="2" align="center"> <font color="#cccccc"> 邮箱 xunmeng04@163.com 许剑伟(福建莆田第十中学)保留版权 &#169; 2008-2009</font></td></tr>
+
+<tr><td class="dTop2" colspan="2" align="center"> 
+    <textarea id='daysArea' rows="30" cols="100">
+        
+    </textarea>
+</td></tr>
 
 </tbody></table>
 
@@ -1440,6 +1446,86 @@ function K_show(f){
  if(f==1) pan_1.style.display='block';
  out.innerHTML='';
 }
+
+
+
+
+// 如下用于批量生成日期摘要
+// 得到日期摘要
+function getShowMessDayLine(lun,ob) {
+    // 公曆年，月，日，星期，星座，
+    // 回曆年月日，
+    // 年，月，大小月，日
+    // 年月日干支，定節氣，節日
+    // 年號
+  var s = '公曆,' + Ayear2year(ob.y) + '年,' + ob.m + '月,' + ob.d + '日,';
+  s += '星期' + JD.Weeks[ob.week] + ',' + ob.XiZ + ',';
+  s += '回曆,' + ob.Hyear+'年,'+ob.Hmonth+'月,'+ob.Hday+'日,';
+  s += '夏曆,' + ob.Lyear4+'年,'+ob.Lleap + ob.Lmc + '月,' + (ob.Ldn>29?'大月':'小月') + ',' + ob.Ldc + '日,';
+  s += '節氣干支,' + ob.Lyear2+'年,'+ob.Lmonth2+'月,'+ob.Lday2+'日,';
+  s += ((ob.jqmc)?'定'+ob.jqmc+' '+ob.jqsj:'') + ',';
+  s += ((ob.Ljq)?ob.Ljq:'') + ',';
+  s += ((ob.A)?ob.A:'') + ',';
+  s += ((ob.B)?ob.B:'') + ',';
+  s += ((ob.C)?ob.C:'') + ',';
+  s += lun.nianhao;
+  // Ayear2year(ob.y) + '年' + ob.m + '月' + ob.d + '日<br>'
+  // s += ob.Lyear3+'年 星期' + JD.Weeks[ob.week] + ' ' + ob.XiZ +'<br>';
+  // s += ob.Lyear4+'年 '+ob.Lleap + ob.Lmc + '月' + (ob.Ldn>29?'大 ':'小 ') + ob.Ldc + '日<br>';
+  // s += ob.Lyear2+'年 '+ob.Lmonth2+'月 '+ob.Lday2+'日<br>';
+  // s += '回历['+ob.Hyear+'年'+ob.Hmonth+'月'+ob.Hday+'日]<br>';
+  // s += 'JD '+(ob.d0+J2000)+'('+ob.d0+')<br>';
+  // if(ob.yxmc) s += ob.yxmc+' '+ob.yxsj+' ';
+  // if(ob.jqmc) s += '定'+ob.jqmc+' '+ob.jqsj+'<br>';
+  // else { if(ob.Ljq) s += ob.Ljq+'<br>';}
+  // if(ob.A)    s += ob.A +' ';
+  // if(ob.B)    s += ob.B +' ';
+  // if(ob.C)    s += ob.C;
+  return s;
+}
+// 等待毫秒
+function sleepMillis(numberMillis) { 
+   var now = new Date();
+   var exitTime = now.getTime() + numberMillis;  
+   while (true) { 
+       now = new Date(); 
+       if (now.getTime() > exitTime)
+           return;
+    }
+}
+// 最起止年取日期
+function startGenDaysData(starty, endy) {
+    // 輸入框主鍵： Cal_y  Cal_m
+    // 模拟从1月开始
+    document.getElementById("Cal_y").value=starty;
+    document.getElementById("Cal_m").value=1;
+    document.getElementById("the_ok_button").click();
+    sleepMillis(50);
+    
+    var yearcnt = endy - starty + 1;
+    var monthCnt = 12 * yearcnt;
+    
+    for (var i=0; i<monthCnt;i++) {
+        var monthLines = '';
+        for (var d = 0; d<lun.lun.length; d++) {
+            var ob = lun.lun[d];
+            // console.log(lun);
+            var line = getShowMessDayLine(lun,ob);
+            monthLines += "\r\n" + line;
+            
+            // 一月最大天數
+            if (d >=ob.dn-1) {
+                break;
+            }
+        }
+        var _daysArea = document.getElementById("daysArea");
+        _daysArea.value += monthLines;
+        
+        changeMonth(1); // 下一月
+        sleepMillis(50);
+    }    
+}
+startGenDaysData(1300, 1400);
 
 </script>
 
