@@ -425,6 +425,12 @@ UTC/TD<input id="Cf_ut" type="checkbox" checked="">
 <tr><td class="dTop2" colspan="2" align="center"> <font color="#cccccc"> 邮箱 xunmeng04@163.com 许剑伟(福建莆田第十中学)保留版权 &#169; 2008-2009</font></td></tr>
 
 <tr><td class="dTop2" colspan="2" align="center"> 
+    年份從<input id="startyInput" type="text" size="10" value="2017">
+    至<input id="endyInput" type="text" size="10" value="2018">
+    <input id='genDaysDataButton' type="button" value="生成日期摘要" onclick="doGenDaysData()">
+    <input id='copyDaysDataBtn' type="button" value="全部複製" onclick="doCopyDaysData()">
+</td></tr>
+<tr><td class="dTop2" colspan="2" align="center"> 
     <textarea id='daysArea' rows="30" cols="100">
         
     </textarea>
@@ -1451,6 +1457,12 @@ function K_show(f){
 
 
 // 如下用于批量生成日期摘要
+function replaceAllComma(str)
+{
+    if(str!=null)
+        str = str.replace(/,/g,";")
+    return str;
+}
 // 得到日期摘要
 function getShowMessDayLine(lun,ob) {
     // 公曆年，月，日，星期，星座，
@@ -1464,11 +1476,11 @@ function getShowMessDayLine(lun,ob) {
   s += '夏曆,' + ob.Lyear4+'年,'+ob.Lleap + ob.Lmc + '月,' + (ob.Ldn>29?'大月':'小月') + ',' + ob.Ldc + '日,';
   s += '節氣干支,' + ob.Lyear2+'年,'+ob.Lmonth2+'月,'+ob.Lday2+'日,';
   s += ((ob.jqmc)?'定'+ob.jqmc+' '+ob.jqsj:'') + ',';
-  s += ((ob.Ljq)?ob.Ljq:'') + ',';
-  s += ((ob.A)?ob.A:'') + ',';
-  s += ((ob.B)?ob.B:'') + ',';
-  s += ((ob.C)?ob.C:'') + ',';
-  s += lun.nianhao;
+  s += ((ob.Ljq)?replaceAllComma(ob.Ljq):'') + ',';
+  s += ((ob.A)?replaceAllComma(ob.A):'') + ',';
+  s += ((ob.B)?replaceAllComma(ob.B):'') + ',';
+  s += ((ob.C)?replaceAllComma(ob.C):'') + ',';
+  s += replaceAllComma(lun.nianhao);
   // Ayear2year(ob.y) + '年' + ob.m + '月' + ob.d + '日<br>'
   // s += ob.Lyear3+'年 星期' + JD.Weeks[ob.week] + ' ' + ob.XiZ +'<br>';
   // s += ob.Lyear4+'年 '+ob.Lleap + ob.Lmc + '月' + (ob.Ldn>29?'大 ':'小 ') + ob.Ldc + '日<br>';
@@ -1525,7 +1537,24 @@ function startGenDaysData(starty, endy) {
         sleepMillis(50);
     }    
 }
-startGenDaysData(1300, 1400);
+// 點擊生成按钮
+function doGenDaysData() {
+    document.getElementById("daysArea").value = '';
+    
+    var starty = document.getElementById("startyInput").value;
+    var endy = document.getElementById("endyInput").value;
+    if (starty > endy) {
+       document.getElementById("daysArea").value = '結束年份不能小於開始年份。';
+       return;
+    }
+    startGenDaysData(starty, endy);
+}
+// 點擊複製按钮
+function doCopyDaysData() {
+    var clipBoardContent = document.getElementById("daysArea");
+    clipBoardContent.select(); // 选择对象
+    document.execCommand("Copy");
+}
 
 </script>
 
