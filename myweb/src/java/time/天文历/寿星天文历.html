@@ -1470,30 +1470,18 @@ function getShowMessDayLine(lun,ob) {
     // 年，月，大小月，日
     // 年月日干支，定節氣，節日
     // 年號
-  var s = '公曆,' + Ayear2year(ob.y) + '年,' + ob.m + '月,' + ob.d + '日,';
-  s += '星期' + JD.Weeks[ob.week] + ',' + ob.XiZ + ',';
-  s += '回曆,' + ob.Hyear+'年,'+ob.Hmonth+'月,'+ob.Hday+'日,';
-  s += '夏曆,' + ob.Lyear4+'年,'+ob.Lleap + ob.Lmc + '月,' + (ob.Ldn>29?'大月':'小月') + ',' + ob.Ldc + '日,';
-  s += '節氣干支,' + ob.Lyear2+'年,'+ob.Lmonth2+'月,'+ob.Lday2+'日,';
-  s += ((ob.jqmc)?'定'+ob.jqmc+' '+ob.jqsj:'') + ',';
-  s += ((ob.Ljq)?replaceAllComma(ob.Ljq):'') + ',';
-  s += ((ob.A)?replaceAllComma(ob.A):'') + ',';
-  s += ((ob.B)?replaceAllComma(ob.B):'') + ',';
-  s += ((ob.C)?replaceAllComma(ob.C):'') + ',';
-  s += replaceAllComma(lun.nianhao);
-  // Ayear2year(ob.y) + '年' + ob.m + '月' + ob.d + '日<br>'
-  // s += ob.Lyear3+'年 星期' + JD.Weeks[ob.week] + ' ' + ob.XiZ +'<br>';
-  // s += ob.Lyear4+'年 '+ob.Lleap + ob.Lmc + '月' + (ob.Ldn>29?'大 ':'小 ') + ob.Ldc + '日<br>';
-  // s += ob.Lyear2+'年 '+ob.Lmonth2+'月 '+ob.Lday2+'日<br>';
-  // s += '回历['+ob.Hyear+'年'+ob.Hmonth+'月'+ob.Hday+'日]<br>';
-  // s += 'JD '+(ob.d0+J2000)+'('+ob.d0+')<br>';
-  // if(ob.yxmc) s += ob.yxmc+' '+ob.yxsj+' ';
-  // if(ob.jqmc) s += '定'+ob.jqmc+' '+ob.jqsj+'<br>';
-  // else { if(ob.Ljq) s += ob.Ljq+'<br>';}
-  // if(ob.A)    s += ob.A +' ';
-  // if(ob.B)    s += ob.B +' ';
-  // if(ob.C)    s += ob.C;
-  return s;
+    var s = '公曆,' + Ayear2year(ob.y) + '年,' + ob.m + '月,' + ob.d + '日,';
+    s += '星期' + JD.Weeks[ob.week] + ',' + ob.XiZ + ',';
+    s += '回曆,' + ob.Hyear+'年,'+ob.Hmonth+'月,'+ob.Hday+'日,';
+    s += '夏曆,' + ob.Lyear4+'年,'+ob.Lleap + ob.Lmc + '月,' + (ob.Ldn>29?'大月':'小月') + ',' + ob.Ldc + '日,';
+    s += '節氣干支,' + ob.Lyear2+'年,'+ob.Lmonth2+'月,'+ob.Lday2+'日,';
+    s += ((ob.jqmc)?'定'+ob.jqmc+' '+ob.jqsj:'') + ',';
+    s += ((ob.Ljq)?replaceAllComma(ob.Ljq):'') + ',';
+    s += ((ob.A)?replaceAllComma(ob.A):'') + ',';
+    s += ((ob.B)?replaceAllComma(ob.B):'') + ',';
+    s += ((ob.C)?replaceAllComma(ob.C):'') + ',';
+    s += replaceAllComma(lun.nianhao);
+    return s;
 }
 // 等待毫秒
 function sleepMillis(numberMillis) { 
@@ -1523,7 +1511,7 @@ function startGenDaysData(starty, endy) {
             var ob = lun.lun[d];
             // console.log(lun);
             var line = getShowMessDayLine(lun,ob);
-            monthLines += "\r\n" + line;
+            monthLines += line + "\r\n";
             
             // 一月最大天數
             if (d >=ob.dn-1) {
@@ -1535,7 +1523,8 @@ function startGenDaysData(starty, endy) {
         
         changeMonth(1); // 下一月
         sleepMillis(50);
-    }    
+    }
+    alert('生成完成。');
 }
 // 點擊生成按钮
 function doGenDaysData() {
@@ -1554,6 +1543,8 @@ function doCopyDaysData() {
     var clipBoardContent = document.getElementById("daysArea");
     clipBoardContent.select(); // 选择对象
     document.execCommand("Copy");
+    
+    clipBoardContent.value = '';
 }
 
 </script>
