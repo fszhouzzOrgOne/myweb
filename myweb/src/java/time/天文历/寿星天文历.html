@@ -1530,8 +1530,8 @@ function startGenDaysData(starty, endy) {
 function doGenDaysData() {
     document.getElementById("daysArea").value = '';
     
-    var starty = document.getElementById("startyInput").value;
-    var endy = document.getElementById("endyInput").value;
+    var starty = Number(document.getElementById("startyInput").value);
+    var endy = Number(document.getElementById("endyInput").value);
     if (starty > endy) {
        document.getElementById("daysArea").value = '結束年份不能小於開始年份。';
        return;
