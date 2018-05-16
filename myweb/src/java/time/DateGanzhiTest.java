@@ -13,17 +13,10 @@ import cangjie.java.util.IOUtils;
  */
 public class DateGanzhiTest {
 
+    static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
+
     /**
      * 每日子時干支<br/>
-     * 19900203 甲子時<br/>
-     * 19900204 丙子時<br/>
-     * 19900205 戊子時<br/>
-     * 19900206 庚子時<br/>
-     * 19900207 壬子時<br/>
-     * 19900208 甲子時<br/>
-     * 19900209 丙子時<br/>
-     * 19900210 戊子時<br/>
-     * 19900211 庚子時<br/>
      * CE1990-02-03 甲子 丙子 戊子 庚子 壬子
      */
     private static final String[] ganzhiDayStart = { "甲子", "丙子", "戊子", "庚子", "壬子" };
@@ -79,16 +72,86 @@ public class DateGanzhiTest {
             addHours += gzHours.size();
         }
         System.out.println("addHours=" + addHours);
-        
+
         List<String> dayList2 = new ArrayList<String>();
         for (int i = 0; i < dayList.size(); i++) {
             String dayGz = dayList.get(i) + "  " + gzs.get((i + add) % gzs.size());
             dayGz += "  " + gzHours.get((i + addHours) % gzHours.size());
+            dayGz += "    " + getDateGanzhi(dayList.get(i));
             dayList2.add(dayGz);
         }
 
         String destFile = mbsBaseDir + "days-150002500.txt";
         IOUtils.writeFile(destFile, dayList2);
+
+        System.out.println(getDateGanzhi("BCE0001-12-31"));
+        System.out.println(getDateGanzhi("CE0001-01-01"));
+    }
+
+    /**
+     * 得到日期的干支紀日
+     * 
+     * @param date
+     *            日期格式，公元前如BCE2018-05-16，公元後如CE2018-05-16<br/>
+     *            BCE、CE不傳，默認CE
+     * @return
+     * @throws Exception
+     */
+    public static String getDateGanzhi(String date) throws Exception {
+        String[] dates = date.split("-");
+        String year = dates[0].replaceAll("BCE", "-").replaceAll("CE", "");
+        Calendar cal = Calendar.getInstance();
+        // 如果是公元前，加一年，不然前一年沒有算入
+        boolean bce = year.startsWith("-");
+        cal.set(Calendar.YEAR, Integer.parseInt(year) + (bce ? 1 : 0));
+        cal.set(Calendar.MONTH, Integer.parseInt(dates[1]) - 1);
+        cal.set(Calendar.DATE, Integer.parseInt(dates[2]));
+        cal.set(Calendar.HOUR_OF_DAY, 0); // HOUR_OF_DAY 24-hour clock.
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        // CE2017-12-12 癸酉
+        long days = daysBetween(sdf_yyyyMMdd.parse("2017-12-12"), cal.getTime());
+
+        List<String> gzs = new ArrayList<String>();
+        for (String gz : ganzhi) {
+            gzs.add(gz);
+        }
+        // 偏移量
+        int offset = (int) (days % gzs.size());
+        if (offset < 0) {
+            offset = gzs.size() + offset;
+        }
+        // 目標下標
+        int index = (gzs.indexOf("癸酉") + offset) % gzs.size();
+        return gzs.get(index);
+    }
+
+    /**
+     * 兩日期之間的天數
+     * 
+     * @param date1
+     *            日期一
+     * @param date2
+     *            日期二
+     * @return
+     * @throws Exception
+     */
+    public static long daysBetween(Date date1, Date date2) throws Exception {
+        Calendar cal1 = Calendar.getInstance();
+        cal1.setTime(date1);
+        cal1.set(Calendar.HOUR, 0);
+        cal1.set(Calendar.MINUTE, 0);
+        cal1.set(Calendar.SECOND, 0);
+        cal1.set(Calendar.MILLISECOND, 0);
+        Calendar cal2 = Calendar.getInstance();
+        cal2.setTime(date2);
+        cal2.set(Calendar.HOUR, 0);
+        cal2.set(Calendar.MINUTE, 0);
+        cal2.set(Calendar.SECOND, 0);
+        cal2.set(Calendar.MILLISECOND, 0);
+        long millises = (cal2.getTimeInMillis() - cal1.getTimeInMillis());
+        return millises / (24 * 3600 * 1000);
     }
 
 }
