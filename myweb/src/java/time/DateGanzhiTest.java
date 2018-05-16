@@ -31,16 +31,19 @@ public class DateGanzhiTest {
 
     public static void main(String[] args) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Calendar cal = Calendar.getInstance();
         Date begin = sdf.parse("0001-01-01");
-        cal.setTime(begin);
+        Calendar begincal = Calendar.getInstance();
+        begincal.setTime(begin);
         // 所有日期
         List<String> dayList = new ArrayList<String>();
-        for (int i = (366 * -730); i <= (366 * 2050); i++) {
-            cal.add(Calendar.DATE, i);
-            dayList.add((i < 0 ? "BCE" : "CE") + sdf.format(cal.getTime()));
-
-            cal.setTime(begin);
+        int startYear = -722;
+        int endYear = 2050;
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(begin);
+        cal.set(Calendar.YEAR, startYear);
+        while (cal.get(Calendar.YEAR) <= endYear) {
+            dayList.add((cal.before(begincal) ? "BCE" : "CE") + sdf.format(cal.getTime()));
+            cal.add(Calendar.DATE, 1);
         }
 
         List<String> dayList2 = new ArrayList<String>();
