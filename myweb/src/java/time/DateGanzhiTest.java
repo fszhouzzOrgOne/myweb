@@ -11,7 +11,7 @@ import cangjie.java.util.IOUtils;
 /**
  * 近三千年的所有日期，加干支<br/>
  */
-public class DateTest {
+public class DateGanzhiTest {
 
     /**
      * 每日子時干支<br/>
