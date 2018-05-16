@@ -151,7 +151,7 @@ public class DateGanzhiTest {
         String[] dates = date.split("-");
         String year = dates[0].replaceAll("BCE", "-").replaceAll("CE", "");
         Calendar cal = Calendar.getInstance();
-        // 如果是公元前，加一年，不然前一年沒有算入
+        // 如果是公元前，加一年，不然公元前第1年沒有算入
         boolean bce = year.startsWith("-");
         cal.set(Calendar.YEAR, Integer.parseInt(year) + (bce ? 1 : 0));
         cal.set(Calendar.MONTH, Integer.parseInt(dates[1]) - 1);
