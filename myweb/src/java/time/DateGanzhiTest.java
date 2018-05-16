@@ -43,41 +43,10 @@ public class DateGanzhiTest {
             cal.setTime(begin);
         }
 
-        List<String> gzs = new ArrayList<String>();
-        for (String gz : ganzhi) {
-            gzs.add(gz);
-        }
-
-        // 帶上每天的干支
-        // CE2017-12-12 癸酉
-        System.out.println("index of CE2017-12-12: " + dayList.indexOf("CE2017-12-12"));
-        System.out.println(gzs.indexOf("癸酉"));
-        System.out.println((dayList.indexOf("CE2017-12-12")) % gzs.size());
-        int add = gzs.indexOf("癸酉") - (dayList.indexOf("CE2017-12-12")) % gzs.size();
-        if (add < 0) {
-            add += gzs.size();
-        }
-        System.out.println("add=" + add);
-        // 帶上每天子時干支
-        // CE1990-02-03 甲子
-        List<String> gzHours = new ArrayList<String>();
-        for (String gz : ganzhiDayStart) {
-            gzHours.add(gz);
-        }
-        System.out.println("index of CE1990-02-03: " + dayList.indexOf("CE1990-02-03"));
-        System.out.println(gzHours.indexOf("甲子"));
-        System.out.println((dayList.indexOf("CE1990-02-03")) % gzHours.size());
-        int addHours = gzHours.indexOf("甲子") - (dayList.indexOf("CE1990-02-03")) % gzHours.size();
-        if (addHours < 0) {
-            addHours += gzHours.size();
-        }
-        System.out.println("addHours=" + addHours);
-
         List<String> dayList2 = new ArrayList<String>();
         for (int i = 0; i < dayList.size(); i++) {
-            String dayGz = dayList.get(i) + "  " + gzs.get((i + add) % gzs.size());
-            dayGz += "  " + gzHours.get((i + addHours) % gzHours.size());
-            dayGz += "    " + getDateGanzhi(dayList.get(i));
+            String dayGz = dayList.get(i);
+            dayGz += "    " + getDateGanzhi(dayList.get(i)) + " " + getHourGanzhi(dayList.get(i), 0);
             dayList2.add(dayGz);
         }
 
@@ -86,6 +55,13 @@ public class DateGanzhiTest {
 
         System.out.println(getDateGanzhi("BCE0001-12-31"));
         System.out.println(getDateGanzhi("CE0001-01-01"));
+        System.out.println(getHourGanzhi("CE1990-02-11", -2));
+        System.out.println(getHourGanzhi("CE1990-02-11", -1));
+        System.out.println(getHourGanzhi("CE1990-02-11", 0));
+        System.out.println(getHourGanzhi("CE1990-02-11", 1));
+        System.out.println(getHourGanzhi("CE1990-02-11", 2));
+        System.out.println(getHourGanzhi("CE1990-02-11", 3));
+        System.out.println(getHourGanzhi("CE1990-02-11", 4));
     }
 
     /**
@@ -113,6 +89,53 @@ public class DateGanzhiTest {
         // 目標下標
         int index = (gzs.indexOf("癸酉") + offset) % gzs.size();
         return gzs.get(index);
+    }
+
+    /**
+     * 得到時辰的干支
+     * 
+     * @param date
+     *            日期格式，公元前如BCE2018-05-16，公元後如CE2018-05-16<br/>
+     *            BCE、CE不傳，默認CE
+     * @param hour
+     *            小時，1算丑時，3算寅時……23、24算第二天子時
+     * @return
+     * @throws Exception
+     */
+    public static String getHourGanzhi(String date, Integer hour) throws Exception {
+        // CE1990-02-03 甲子
+        long days = daysBetween(getCalendarByStrDate("CE1990-02-03").getTime(), getCalendarByStrDate(date).getTime());
+
+        List<String> gzHours = new ArrayList<String>();
+        for (String gz : ganzhiDayStart) {
+            gzHours.add(gz);
+        }
+        // 偏移量
+        int offset = (int) (days % gzHours.size());
+        if (offset < 0) {
+            offset = gzHours.size() + offset;
+        }
+        // 目標下標
+        int index = (gzHours.indexOf("甲子") + offset) % gzHours.size();
+        String res = gzHours.get(index);
+        if (null != hour) {
+            List<String> gzs = new ArrayList<String>();
+            for (String gz : ganzhi) {
+                gzs.add(gz);
+            }
+            int evenHour = hour;
+            if (hour % 2 != 0) {
+                evenHour += 1;
+            }
+            int offsetHour = evenHour / 2;
+            if (offsetHour < 0) {
+                offsetHour = gzs.size() + offsetHour;
+            }
+            // 目標下標
+            int indexHour = (gzs.indexOf(res) + offsetHour) % gzs.size();
+            return gzs.get(indexHour);
+        }
+        return res;
     }
 
     /**
