@@ -46,7 +46,7 @@ public class DateGanzhiTest {
         List<String> dayList2 = new ArrayList<String>();
         for (int i = 0; i < dayList.size(); i++) {
             String dayGz = dayList.get(i);
-            dayGz += "    " + getDateGanzhi(dayList.get(i)) + " " + getHourGanzhi(dayList.get(i), 0);
+            dayGz += "    " + getDateGanzhi(dayList.get(i)) + "日" + getHourGanzhi(dayList.get(i), 0) + "時";
             dayList2.add(dayGz);
         }
 
