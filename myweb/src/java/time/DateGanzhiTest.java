@@ -98,20 +98,8 @@ public class DateGanzhiTest {
      * @throws Exception
      */
     public static String getDateGanzhi(String date) throws Exception {
-        String[] dates = date.split("-");
-        String year = dates[0].replaceAll("BCE", "-").replaceAll("CE", "");
-        Calendar cal = Calendar.getInstance();
-        // 如果是公元前，加一年，不然前一年沒有算入
-        boolean bce = year.startsWith("-");
-        cal.set(Calendar.YEAR, Integer.parseInt(year) + (bce ? 1 : 0));
-        cal.set(Calendar.MONTH, Integer.parseInt(dates[1]) - 1);
-        cal.set(Calendar.DATE, Integer.parseInt(dates[2]));
-        cal.set(Calendar.HOUR_OF_DAY, 0); // HOUR_OF_DAY 24-hour clock.
-        cal.set(Calendar.MINUTE, 0);
-        cal.set(Calendar.SECOND, 0);
-        cal.set(Calendar.MILLISECOND, 0);
         // CE2017-12-12 癸酉
-        long days = daysBetween(sdf_yyyyMMdd.parse("2017-12-12"), cal.getTime());
+        long days = daysBetween(getCalendarByStrDate("CE2017-12-12").getTime(), getCalendarByStrDate(date).getTime());
 
         List<String> gzs = new ArrayList<String>();
         for (String gz : ganzhi) {
@@ -125,6 +113,31 @@ public class DateGanzhiTest {
         // 目標下標
         int index = (gzs.indexOf("癸酉") + offset) % gzs.size();
         return gzs.get(index);
+    }
+
+    /**
+     * 兩日期字符串得到日期對象
+     * 
+     * @param date
+     *            日期格式，公元前如BCE2018-05-16，公元後如CE2018-05-16<br/>
+     *            BCE、CE不傳，默認CE
+     * @return
+     * @throws Exception
+     */
+    public static Calendar getCalendarByStrDate(String date) throws Exception {
+        String[] dates = date.split("-");
+        String year = dates[0].replaceAll("BCE", "-").replaceAll("CE", "");
+        Calendar cal = Calendar.getInstance();
+        // 如果是公元前，加一年，不然前一年沒有算入
+        boolean bce = year.startsWith("-");
+        cal.set(Calendar.YEAR, Integer.parseInt(year) + (bce ? 1 : 0));
+        cal.set(Calendar.MONTH, Integer.parseInt(dates[1]) - 1);
+        cal.set(Calendar.DATE, Integer.parseInt(dates[2]));
+        cal.set(Calendar.HOUR_OF_DAY, 0); // HOUR_OF_DAY 24-hour clock.
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        return cal;
     }
 
     /**
