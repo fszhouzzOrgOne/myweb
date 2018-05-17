@@ -1,6 +1,6 @@
 package time.天文历;
 
-import time.天文历.LunarConstant.Common;
+import time.天文历.constant.LunarConstant.Common;
 
 public class JulianDate {
 

@@ -1,11 +1,13 @@
-package time.天文历;
+package time.天文历.constant;
 
 import java.math.BigDecimal;
 import java.util.regex.Pattern;
 
+import time.天文历.LunarDate;
+
 public class LunarConstant {
 
-	protected static class Common {
+	public static class Common {
 
 	    /**
 	     * 取子串
@@ -2069,7 +2071,7 @@ public class LunarConstant {
 		}
 	}
 
-	protected static class XL {
+	public static class XL {
 
 		public static double gxc_sunLon(double t) { // 太阳光行差,t是世纪数
 			double v = -0.043126 + 628.301955 * t - 0.000002732 * t * t; // 平近点角
@@ -2172,7 +2174,7 @@ public class LunarConstant {
 	}
 
 	/** 公历基础构件 */
-	protected static class Oba {
+	public static class Oba {
 		/** 某月的第几个星期几,如第2个星期一指从月首开始顺序找到第2个"星期一" */
 		public static final String[] wFtv = { "0150I世界麻风日", "0520.国际母亲节", "0530I全国助残日", "0630.父亲节", "0730.被奴役国家周", "0932I国际和平日",
 				"0940.国际聋人节 世界儿童日", "0950I世界海事日", "1011.国际住房日", "1013I国际减轻自然灾害日(减灾日)", "1144I感恩节" };
@@ -2307,7 +2309,7 @@ public class LunarConstant {
 		}
 	}
 
-	protected static class Obb {
+	public static class Obb {
 		/** 纪年表,由init初始化 */
 		public static String[] JNB;
 
@@ -2556,7 +2558,7 @@ public class LunarConstant {
 		//	}
 	}
 
-	protected static class SSQ {
+	public static class SSQ {
 
 		/** 朔修正表 */
 		public static String SB = "";
