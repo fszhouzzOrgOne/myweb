@@ -13,5 +13,6 @@ public class Test {
         String dateStr = "0000-01-01";
         LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
         System.out.println(lc.getYear() + " " + lc.getGanZhiDateString());
+        System.out.println(lc.getNianHao());
     }
 }

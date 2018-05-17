@@ -272,7 +272,7 @@ public class SSQ {
                         break;
                 f1 = (int) Math.floor((HS[i] - Integer.parseInt(ns[nn].toString()) + 15) / 29.5306); // 该月积数
                 if (f1 < 12)
-                    ym[i] = Obb.ymc[(f1 + Integer.parseInt(ns[nn + 6].toString())) % 12];
+                    ym[i] = ObChronology.ymc[(f1 + Integer.parseInt(ns[nn + 6].toString())) % 12];
                 else
                     ym[i] = ns[nn + 3].toString();
             }
@@ -291,13 +291,13 @@ public class SSQ {
         // 名称转换(月建别名)
         for (i = 0; i < 14; i++) {
             int Dm = HS[i] + Common.J2000, v2 = yIndex[i]; // Dm初一的儒略日,v2为月建序号
-            String mc = Obb.ymc[v2 % 12]; // 月建对应的默认月名称：建子十一,建丑十二,建寅为正……
+            String mc = ObChronology.ymc[v2 % 12]; // 月建对应的默认月名称：建子十一,建丑十二,建寅为正……
             if (Dm >= 1724360 && Dm <= 1729794)
-                mc = Obb.ymc[(v2 + 1) % 12]; // 8.01.15至 23.12.02 建子为十二,其它顺推
+                mc = ObChronology.ymc[(v2 + 1) % 12]; // 8.01.15至 23.12.02 建子为十二,其它顺推
             else if (Dm >= 1807724 && Dm <= 1808699)
-                mc = Obb.ymc[(v2 + 1) % 12]; // 237.04.12至239.12.13 建子为十二,其它顺推
+                mc = ObChronology.ymc[(v2 + 1) % 12]; // 237.04.12至239.12.13 建子为十二,其它顺推
             else if (Dm >= 1999349 && Dm <= 1999467)
-                mc = Obb.ymc[(v2 + 2) % 12]; // 761.12.02至762.03.30 建子为正月,其它顺推
+                mc = ObChronology.ymc[(v2 + 2) % 12]; // 761.12.02至762.03.30 建子为正月,其它顺推
             else if (Dm >= 1973067 && Dm <= 1977052) {
                 if (v2 % 12 == 0)
                     mc = "正";

@@ -2,7 +2,7 @@ package time.天文历.constant;
 
 import time.天文历.LunarDate;
 
-public class Obb {
+public class ObChronology {
     /** 纪年表,由init初始化 */
     public static String[] ChronologyTable;
 
@@ -66,14 +66,14 @@ public class Obb {
                 + "1488,18,0,明,孝宗,朱祐樘,弘治,1506,16,0,明,武宗,朱厚照,正德,1522,45,0,明,世宗,朱厚熜,嘉靖,1567,6,0,明,穆宗,朱载贺,隆庆,1573,48,0,明,神宗,朱翊钧,万历,1620,1,0,明,光宗,朱常洛,泰昌,1621,7,0,明,熹宗,朱同校,天启,1628,17,0,明,毅宗,朱由检,崇祯,1644,18,0,清,世祖,爱新觉罗福临,顺治,1662,61,0,清,圣祖,爱新觉罗玄烨,康熙,1723,13,0,清,世宗,爱新觉罗胤禛,雍正,1736,60,0,清,高宗,爱新觉罗弘历,乾隆,1796,25,0,清,仁宗,爱新觉罗颙琰,嘉庆,1821,30,0,清,宣宗,爱新觉罗旻宁,道光,1851,11,0,清,文宗,爱新觉罗奕詝,咸丰,"
                 + "1862,13,0,清,穆宗,爱新觉罗载淳,同治,1875,34,0,清,德宗,爱新觉罗载湉,光绪,1909,3,0,清,无朝,爱新觉罗溥仪,宣统,1912,37,0,近、现代,中华民国,,民国,1949,9999,1948,当代,中国,,公历纪元";
 
-        Obb.ChronologyTable = s.split(",");
+        ObChronology.ChronologyTable = s.split(",");
     }
 
     /** 取年号 */
-    public static String getNH(int year) {
+    public static String getEraName(int year) {
         int j;
         String s = "", c;
-        String[] JNB = Obb.ChronologyTable;
+        String[] JNB = ObChronology.ChronologyTable;
         for (int i = 0; i < JNB.length; i += 7) {
             j = Integer.parseInt(JNB[i]);
             if (year < j || year >= j + Integer.parseInt(JNB[i + 1]))
