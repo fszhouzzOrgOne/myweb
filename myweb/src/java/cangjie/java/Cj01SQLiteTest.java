@@ -60,6 +60,13 @@ public class Cj01SQLiteTest {
     private static boolean isOnlyAnsi = false;
 
     public static void main(String args[]) throws Exception {
+        boolean withManju = true; // 滿文
+        boolean withKorea = true; // 韓文
+        boolean withJyutp = true; // 粤拼
+        boolean withKarina = true; // 日文
+        boolean withSghm = true; // 四角號碼
+        boolean withPy = true; // 拼音
+        boolean withZy = true; // 注音
         boolean withCangjieOthers = false; // 加入其他倉頡？
         boolean withCangjie6 = false; // 加入蒼頡六？
         boolean withCangjie5 = false; // 加入蒼頡五？
@@ -68,11 +75,11 @@ public class Cj01SQLiteTest {
 
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 509762 韓日单字 380889 
+        boolean edition2 = false; // 2版本自定義字體 509762 韓日单字 380889 
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean edition5 = false; // 版本五代 159268 ansi 103934
+        boolean edition5 = true; // 版本五代 211352 ansi 103934
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
 
@@ -331,40 +338,54 @@ public class Cj01SQLiteTest {
                 selectCountAll(stmt);
             }
             // 四角號碼
-            insertMbdb(stmt, cjGensghm, linessghm, true);
-            c.commit();
-            System.out.println("insert " + cjGensghm + " successfully");
-            selectCountAll(stmt);
+            if (withSghm) {
+                insertMbdb(stmt, cjGensghm, linessghm, true);
+                c.commit();
+                System.out.println("insert " + cjGensghm + " successfully");
+                selectCountAll(stmt);
+            }
             // 粵語拼音
-            insertMbdb(stmt, cjGenJyutp, linesjyutp, true);
-            c.commit();
-            System.out.println("insert " + cjGenJyutp + " successfully");
-            selectCountAll(stmt);
+            if (withJyutp) {
+                insertMbdb(stmt, cjGenJyutp, linesjyutp, true);
+                c.commit();
+                System.out.println("insert " + cjGenJyutp + " successfully");
+                selectCountAll(stmt);
+            }
             // 拼音
-            insertMbdb(stmt, cjGenpy, linespy, true);
-            c.commit();
-            System.out.println("insert " + cjGenpy + " successfully");
-            selectCountAll(stmt);
+            if (withPy) {
+                insertMbdb(stmt, cjGenpy, linespy, true);
+                c.commit();
+                System.out.println("insert " + cjGenpy + " successfully");
+                selectCountAll(stmt);
+            }
             // 注音符號
-            insertMbdb(stmt, cjGenzy, lineszy, false);
-            c.commit();
-            System.out.println("insert " + cjGenzy + " successfully");
-            selectCountAll(stmt);
+            if (withZy) {
+                insertMbdb(stmt, cjGenzy, lineszy, false);
+                c.commit();
+                System.out.println("insert " + cjGenzy + " successfully");
+                selectCountAll(stmt);
+            }
             // 日語假名
-            insertMbdb(stmt, cjGenka, lineska, true);
-            c.commit();
-            System.out.println("insert " + cjGenka + " successfully");
-            selectCountAll(stmt);
+            if (withKarina) {
+                insertMbdb(stmt, cjGenka, lineska, true);
+                c.commit();
+                System.out.println("insert " + cjGenka + " successfully");
+                selectCountAll(stmt);
+            }
             // 朝鮮諺文
-            insertMbdb(stmt, cjGenkorea, lineskorea, true);
-            c.commit();
-            System.out.println("insert " + cjGenkorea + " successfully");
-            selectCountAll(stmt);
+            if (withKorea) {
+                insertMbdb(stmt, cjGenkorea, lineskorea, true);
+                c.commit();
+                System.out.println("insert " + cjGenkorea + " successfully");
+                selectCountAll(stmt);
+            }
             // 圈點滿文 cjGenManju
-            insertMbdb(stmt, cjGenManju, linesmanju, true);
-            c.commit();
-            System.out.println("insert " + cjGenManju + " successfully");
-            selectCountAll(stmt);
+            if (withManju) {
+                insertMbdb(stmt, cjGenManju, linesmanju, true);
+                c.commit();
+                System.out.println("insert " + cjGenManju + " successfully");
+                selectCountAll(stmt);
+            }
             // 國際音標
             insertMbdb(stmt, cjGenIpa, linesipa, false);
             c.commit();
