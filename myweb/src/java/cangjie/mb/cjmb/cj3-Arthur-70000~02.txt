@@ -1,11 +1,3 @@
-encode=UTF-8
-name=倉頡三代
-key=abcdefghijklmnopqrstuvwxyz
-len=6
-wildcard=*
-commit=1 6 0
-
-[DATA]
 a      日
 a      曰
 aa     昌
