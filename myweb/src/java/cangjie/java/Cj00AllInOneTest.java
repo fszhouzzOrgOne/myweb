@@ -18,17 +18,33 @@ public class Cj00AllInOneTest {
     // 取自倉頡平臺2012所帶碼表
     public static String mb26000 = mbsBaseDir + "cjmb" + File.separator + "cj2-6763.txt";
     // 取自倉頡平臺2012所帶碼表
-    public static String mb36000 = mbsBaseDir + "cjmb" + File.separator + "cj3-6763.txt";
-    public static String mb310000 = mbsBaseDir + "cjmb" + File.separator + "cj3-13053.txt";
-    public static String mb320000 = mbsBaseDir + "cjmb" + File.separator + "cj3-20902.txt";
-    public static String mb370000 = mbsBaseDir + "cjmb" + File.separator + "cj3-70000.txt";
+    // public static String mb36000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj3-6763.txt";
+    // public static String mb310000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj3-13053.txt";
+    // public static String mb320000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj3-20902.txt";
+    // public static String mb370000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj3-70000.txt";
+    // 倉頡三代引用GitHub上的 Arthurmcarthur/Cangjie3-Plus 碼表
+    public static String mb330000 = mbsBaseDir + "cjmb" + File.separator + "cj3-Arthur-30000.txt";
+    public static String mb370000_02 = mbsBaseDir + "cjmb" + File.separator + "cj3-Arthur-70000~02.txt";
     public static String mb3more = mbsBaseDir + "cjmb" + File.separator + "cj3-more.txt";
     // 取自倉頡平臺2012所帶碼表
-    public static String mb58000 = mbsBaseDir + "cjmb" + File.separator + "cj5-8300.txt";
-    public static String mb510000 = mbsBaseDir + "cjmb" + File.separator + "cj5-13053.txt";
-    public static String mb520000 = mbsBaseDir + "cjmb" + File.separator + "cj5-20902.txt";
-    public static String mb570000 = mbsBaseDir + "cjmb" + File.separator + "cj5-70000.txt";
+    // public static String mb58000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj5-8300.txt";
+    // public static String mb510000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj5-13053.txt";
+    // public static String mb520000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj5-20902.txt";
+    // public static String mb570000 = mbsBaseDir + "cjmb" + File.separator +
+    // "cj5-70000.txt";
+    // 倉頡五代引用 Jackchows/Cangjie5 碼表，99碼表上參考03五代製成
+    public static String mb5cangjie5 = mbsBaseDir + "cjmb" + File.separator + "cj5-Jackchows-Cangjie5.txt";
+    public static String mb5cangjie5sup = mbsBaseDir + "cjmb" + File.separator
+            + "cj5-Jackchows-Cangjie5_supplement.txt";
     public static String mb5more = mbsBaseDir + "cjmb" + File.separator + "cj5-more.txt";
+    
     // 取用倉頡輸入法羣共享中的cj6-70000碼表等，並整合了雪齋團隊整理的碼表
     public static String mb6newDict = mbsBaseDir + "cjmb" + File.separator + "cj6-dict.txt";
 
@@ -104,7 +120,7 @@ public class Cj00AllInOneTest {
     // 國際音標
     public static String phonetic200 = mbsBaseDir + "phonetic-allInOne.txt";
     public static String phoneticAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-phonetic.txt";
-    
+
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
         generateAllInOnes(false, true, true, false, false);
@@ -137,7 +153,7 @@ public class Cj00AllInOneTest {
         if (withPhrases || withPhrases6) {
             readPhraseFile();
         }
-        
+
         // 國際音標
         String[] mbipa = new String[] { phonetic200 };
         genAllInOne("國際音標", mbipa, phoneticAllInOne, withHeaders);
@@ -209,12 +225,12 @@ public class Cj00AllInOneTest {
         // 詞組編碼5
         if (withPhrases) {
             List<String> mbfiles5 = new ArrayList<String>();
-            mbfiles5.add(mb570000);
+            mbfiles5.add(mb5cangjie5);
             mbfiles5.add(mb5more);
             genRawCjPhrases(phraseOriginFile, mb5phrase, mbfiles5);
         }
         // 生成allInOne文件5
-        String[] mbs5 = new String[] { mb520000, mb510000, mb58000, mb570000, mb5more, mb5phrase };
+        String[] mbs5 = new String[] { mb5cangjie5, mb5cangjie5sup, mb5more, mb5phrase };
         if (!withPhrases) {
             mbs5[mbs5.length - 1] = null;
         }
@@ -223,11 +239,11 @@ public class Cj00AllInOneTest {
         // 詞組編碼3
         if (withPhrases) {
             List<String> mbfiles3 = new ArrayList<String>();
-            mbfiles3.add(mb370000);
+            mbfiles3.add(mb370000_02);
             genRawCjPhrases(phraseOriginFile, mb3phrase, mbfiles3);
         }
         // 生成allInOne文件3
-        String[] mbs3 = new String[] { mb320000, mb310000, mb36000, mb370000, mb3more, mb3phrase };
+        String[] mbs3 = new String[] { mb330000, mb370000_02, mb3more, mb3phrase };
         if (!withPhrases) {
             mbs3[mbs3.length - 1] = null;
         }

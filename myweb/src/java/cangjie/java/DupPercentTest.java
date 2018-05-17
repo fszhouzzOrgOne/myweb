@@ -22,14 +22,14 @@ public class DupPercentTest {
         // Cj00AllInOneTest.mb670000
         // });
 
-        List<String> trueMb36000 = getNoXCodeTable(Cj00AllInOneTest.mb36000,
-                Cj00AllInOneTest.mb370000);
-        List<String> trueMb56000 = getNoXCodeTable(Cj00AllInOneTest.mb58000,
-                Cj00AllInOneTest.mb570000);
-        System.out.println("統計三代簡化字部分編碼：");
-        doCountDupPercent(trueMb36000);
-        System.out.println("統計五代簡化字部分編碼：");
-        doCountDupPercent(trueMb56000);
+//        List<String> trueMb36000 = getNoXCodeTable(Cj00AllInOneTest.mb36000,
+//                Cj00AllInOneTest.mb370000);
+//        List<String> trueMb56000 = getNoXCodeTable(Cj00AllInOneTest.mb58000,
+//                Cj00AllInOneTest.mb570000);
+//        System.out.println("統計三代簡化字部分編碼：");
+//        doCountDupPercent(trueMb36000);
+//        System.out.println("統計五代簡化字部分編碼：");
+//        doCountDupPercent(trueMb56000);
     }
 
     /** 從mb370000中取出mb36000中所有文字的編碼 */
