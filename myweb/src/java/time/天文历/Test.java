@@ -1,6 +1,5 @@
 package time.天文历;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
@@ -13,6 +12,6 @@ public class Test {
     public static void main(String[] args) throws Exception {
         String dateStr = "0000-01-01";
         LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
-        System.out.println(lc.getYear());
+        System.out.println(lc.getYear() + " " + lc.getGanZhiDateString());
     }
 }

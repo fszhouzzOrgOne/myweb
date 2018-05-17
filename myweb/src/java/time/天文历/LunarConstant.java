@@ -7,10 +7,25 @@ public class LunarConstant {
 
 	protected static class Common {
 
+	    /**
+	     * 取子串
+	     * 
+	     * @param str
+	     * @param beginIndex 開始下標
+	     * @return
+	     */
 		public static String subString(String str, int beginIndex) {
 			return subString(str, beginIndex, 0);
 		}
 
+		/**
+		 * 取子串
+		 * 
+		 * @param str
+		 * @param beginIndex 開始下標
+		 * @param endIndex 結束下標
+		 * @return
+		 */
 		public static String subString(String str, int beginIndex, int endIndex) {
 			String subStr = "";
 			if (subStr != null) {
@@ -29,12 +44,15 @@ public class LunarConstant {
 		}
 
 		//=================================天文常数=========================================
-		public static final double rad = 180 * 3600 / Math.PI; // 每弧度的角秒数
+		/** 天文常數 每弧度的角秒数 */
+		public static final double rad = 180 * 3600 / Math.PI;
+		/** J2000.0纪元在天文学上使用。前缀"J"代表这是一个儒略纪元法，而不是一个贝塞耳纪元。 */
 		public static final int J2000 = 2451545;
+		/** pi * 2 */
 		public static final double pi2 = Math.PI * 2;
 
 		//=================================deltat T计算=====================================
-		// TD - UT1 计算表
+		/** deltat T计算-- TD - UT1 计算表 */
 		private static final double[] dt_at = { -4000, 108371.7, -13036.80, 392.000, 0.0000, -500, 17201.0, -627.82, 16.170, -0.3413, -150,
 				12200.6, -346.41, 5.403, -0.1593, 150, 9113.8, -328.13, -1.647, 0.0377, 500, 5707.5, -391.41, 0.915, 0.3145, 900, 2203.4,
 				-283.45, 13.034, -0.1778, 1300, 490.1, -57.35, 2.085, -0.0072, 1600, 120.0, -9.81, -1.532, 0.1403, 1700, 10.2, -0.91,
@@ -43,13 +61,13 @@ public class LunarConstant {
 				-0.064, 0.0031, 1960, 33.2, 0.51, 0.231, -0.0109, 1980, 51.0, 1.29, -0.026, 0.0032, 2000, 63.87, 0.1, 0, 0, 2005, 64.7,
 				0.4, 0, 0, 2015, 69 };
 
-		// 二次曲线外推
+		/** 二次曲线外推 */
 		private static double dt_ext(double y, int jsd) {
 			double dy = (y - 1820) / 100;
 			return -20 + jsd * dy * dy;
 		}
 
-		// 计算世界时与原子时之差,传入年
+		/** 计算世界时与原子时之差,传入年 */
 		private static double dt_calc(double y) {
 			double y0 = dt_at[dt_at.length - 2]; // 表中最后一年
 			double t0 = dt_at[dt_at.length - 1]; // 表中最后一年的deltatT
@@ -70,18 +88,18 @@ public class LunarConstant {
 			return d[i + 1] + d[i + 2] * t1 + d[i + 3] * t2 + d[i + 4] * t3;
 		}
 
-		// 传入儒略日(J2000起算),计算TD-UT(单位:日)
+		/** 传入儒略日(J2000起算),计算TD-UT(单位:日) */
 		public static double dt_T(double t) {
 			return dt_calc(t / 365.2425 + 2000) / 86400.0;
 		}
 
 		//=================================章动计算=========================================
-		// 中精度章动计算表
+		/** 章动计算--中精度章动计算表 */
 		private static final double[] nutB = { 2.1824, -33.75705, 36e-6, -1720, 920, 3.5069, 1256.66393, 11e-6, -132, 57, 1.3375,
 				16799.4182, -51e-6, -23, 10, 4.3649, -67.5141, 72e-6, 21, -9, 0.04, -628.302, 0, -14, 0, 2.36, 8328.691, 0, 7, 0, 3.46,
 				1884.966, 0, -5, 2, 5.44, 16833.175, 0, -4, 2, 3.69, 25128.110, 0, -3, 0, 3.55, 628.362, 0, 2, 0 };
 
-		// 只计算黄经章动
+		/** 章动计算--只计算黄经章动 */
 		public static double nutationLon2(double t) {
 			double a, t2 = t * t, dL = 0;
 			double[] B = nutB;
@@ -1486,11 +1504,11 @@ public class LunarConstant {
 			return XL0;
 		}
 
-		// 行星星历修正表
+		/** 行星星历修正表 */
 		private static final double[] XL0_xzb = { -0.08631, +0.00039, -0.00008, -0.07447, +0.00006, +0.00017, -0.07135, -0.00026, -0.00176,
 				-0.20239, +0.00273, -0.00347, -0.25486, +0.00276, +0.42926, +0.24588, +0.00345, -14.46266, -0.95116, +0.02481, +58.30651 };
 
-		// xt星体,zn坐标号,t儒略世纪数,n计算项数
+		/** xt星体,zn坐标号,t儒略世纪数,n计算项数 */
 		public static double XL0_calc(int xt, int zn, double t, int n) {
 			t /= 10; // 转为儒略千年数
 			double v = 0, tn = 1, c = 0;
@@ -1540,7 +1558,7 @@ public class LunarConstant {
 			return v;
 		}
 
-		//=================================月亮星历--=======================================
+		/**========月亮星历 */
 		private static final double[][][] XL1 = {
 				{
 						{ 22639.586, 0.78475822, 8328.691424623, 1.5229241, 25.0719, -0.123598, 4586.438, 0.1873974, 7214.06286536,
@@ -1990,7 +2008,7 @@ public class LunarConstant {
 
 		};
 
-		// 计算月亮
+		/** 计算月亮 */
 		public static double XL1_calc(int zn, double t, int n) {
 			double[][] ob = XL1[zn];
 			double[] F;
@@ -2028,7 +2046,7 @@ public class LunarConstant {
 		}
 
 		// ========================================================
-		// 传入普通纪年或天文纪年，传回天文纪年
+		/** 传入普通纪年或天文纪年，传回天文纪年 */
 		public static int year2Ayear(String c) throws RuntimeException {
 			Pattern pattern = Pattern.compile("[^0-9Bb*-]");
 			String y = pattern.matcher(c).replaceAll("");
@@ -2059,12 +2077,12 @@ public class LunarConstant {
 			return (-20.49552 * (1 + e * Math.cos(v))) / Common.rad; // 黄经光行差
 		}
 
-		// 月球经度光行差,误差0.07"
+		/** 月球经度光行差,误差0.07" */
 		public static double gxc_moonLon(double t) {
 			return -3.4E-6;
 		}
 
-		// 地球经度计算,返回Date分点黄经,传入世纪数、取项数
+		/** 地球经度计算,返回Date分点黄经,传入世纪数、取项数 */
 		public static double E_Lon(double t, int n) {
 			return Common.XL0_calc(0, 0, t, n);
 		}
@@ -2073,14 +2091,14 @@ public class LunarConstant {
 			return Common.XL1_calc(0, t, n);
 		}
 
-		// 地球速度,t是世纪数,误差小于万分3
+		/** 地球速度,t是世纪数,误差小于万分3 */
 		public static double E_v(double t) {
 			double f = 628.307585 * t;
 			return 628.332 + 21 * Math.sin(1.527 + f) + 0.44 * Math.sin(1.48 + f * 2) + 0.129 * Math.sin(5.82 + f) * t + 0.00055
 					* Math.sin(4.21 + f) * t * t;
 		}
 
-		// 月球速度计算,传入世经数
+		/** 月球速度计算,传入世经数 */
 		public static double M_v(double t) {
 			double v = 8399.71 - 914 * Math.sin(0.7848 + 8328.691425 * t + 0.0001523 * t * t); // 误差小于5%
 			v -= 179
@@ -2092,17 +2110,17 @@ public class LunarConstant {
 			return v;
 		}
 
-		// 月日视黄经的差值
+		/** 月日视黄经的差值 */
 		public static double MS_aLon(double t, int Mn, int Sn) {
 			return M_Lon(t, Mn) + gxc_moonLon(t) - (E_Lon(t, Sn) + gxc_sunLon(t) + Math.PI);
 		}
 
-		// 太阳视黄经
+		/** 太阳视黄经 */
 		public static double S_aLon(double t, int n) {
 			return E_Lon(t, n) + Common.nutationLon2(t) + gxc_sunLon(t) + Math.PI; // 注意，这里的章动计算很耗时
 		}
 
-		// 已知月日视黄经差求时间
+		/** 已知月日视黄经差求时间 */
 		public static double MS_aLon_t(double W) {
 			double t, v = 7771.37714500204;
 			t = (W + 1.08472) / v;
@@ -2113,7 +2131,7 @@ public class LunarConstant {
 			return t;
 		}
 
-		// 已知太阳视黄经反求时间
+		/** 已知太阳视黄经反求时间 */
 		public static double S_aLon_t(double W) {
 			double t, v = 628.3319653318;
 			t = (W - 1.75347 - Math.PI) / v;
@@ -2124,7 +2142,8 @@ public class LunarConstant {
 			return t;
 		}
 
-		public static double MS_aLon_t2(double W) { // 已知月日视黄经差求时间,高速低精度,误差不超过600秒(只验算了几千年)
+		/** 已知月日视黄经差求时间,高速低精度,误差不超过600秒(只验算了几千年) */
+		public static double MS_aLon_t2(double W) {
 			double t, v = 7771.37714500204;
 			t = (W + 1.08472) / v;
 			double L, t2 = t * t;
@@ -2140,7 +2159,7 @@ public class LunarConstant {
 			return t;
 		}
 
-		// 已知太阳视黄经反求时间,高速低精度,最大误差不超过600秒
+		/** 已知太阳视黄经反求时间,高速低精度,最大误差不超过600秒 */
 		public static double S_aLon_t2(double W) {
 			double t, v = 628.3319653318;
 			t = (W - 1.75347 - Math.PI) / v;
@@ -2152,17 +2171,17 @@ public class LunarConstant {
 		}
 	}
 
-	//公历基础构件
+	/** 公历基础构件 */
 	protected static class Oba {
-		// 某月的第几个星期几,如第2个星期一指从月首开始顺序找到第2个"星期一"
+		/** 某月的第几个星期几,如第2个星期一指从月首开始顺序找到第2个"星期一" */
 		public static final String[] wFtv = { "0150I世界麻风日", "0520.国际母亲节", "0530I全国助残日", "0630.父亲节", "0730.被奴役国家周", "0932I国际和平日",
 				"0940.国际聋人节 世界儿童日", "0950I世界海事日", "1011.国际住房日", "1013I国际减轻自然灾害日(减灾日)", "1144I感恩节" };
 
-		// 假日表,由initFestival初始化
+		/** 假日表,由initFestival初始化 */
 		public static String[][] sFtv;
 
 		static {
-			// 国历节日,#表示放假日,I表示重要节日或纪念日
+			/** 国历节日,#表示放假日,I表示重要节日或纪念日 */
 			String s = "01#元旦|" // 1月
 					+ "02I世界湿地日,10.国际气象节,14I情人节|" // 2月
 					+ "01.国际海豹日,03.全国爱耳日,05.1963-9999学雷锋纪念日,08I妇女节,12I植树节,12.1925-9999孙中山逝世纪念日,14.国际警察日," // 3月
@@ -2271,6 +2290,7 @@ public class LunarConstant {
 			dateTwo.setAllName(allName);
 		}
 
+		/** 計算回曆 */
 		public static void getHuiLi(int dayRL, LunarDate date) {
 			// 以下算法使用Excel测试得到,测试时主要关心年临界与月临界
 			int z, y, m, d;
@@ -2288,23 +2308,32 @@ public class LunarConstant {
 	}
 
 	protected static class Obb {
-		// 纪年表,由init初始化
+		/** 纪年表,由init初始化 */
 		public static String[] JNB;
 
-		public static final String[] numCn = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }; // 中文数字
+		/** 中文数字 */
+		public static final String[] numCn = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+		/** 天干 */
 		public static final String[] Gan = { "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸" };
+		/** 地支 */
 		public static final String[] Zhi = { "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥" };
+		/** 屬相 */
 		public static final String[] ShX = { "鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪" };
+		/** 星座 */
 		public static final String[] XiZ = { "摩羯", "水瓶", "双鱼", "白羊", "金牛", "双子", "巨蟹", "狮子", "处女", "天秤", "天蝎", "射手" };
-		public static final String[] yxmc = { "朔", "上弦", "望", "下弦" }; // 月相名称表
+		/** 月相名称表 */
+		public static final String[] yxmc = { "朔", "上弦", "望", "下弦" };
+		/** 節氣名稱 */
 		public static final String[] jqmc = { "冬至", "小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至", "小暑", "大暑",
 				"立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪" };
-		public static final String[] ymc = { "十一", "十二", "正", "二", "三", "四", "五", "六", "七", "八", "九", "十" }; // 月名称,建寅
+		/** 月名称,建寅 */
+		public static final String[] ymc = { "十一", "十二", "正", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+		/** 中文日期名稱 */
 		public static final String[] rmc = { "初一", "初二", "初三", "初四", "初五", "初六", "初七", "初八", "初九", "初十", "十一", "十二", "十三", "十四", "十五",
 				"十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十", "卅一" };
 
 		static {
-			// 纪年数据结构：数据用逗号分开，每7个描述一个年号，格式为:起始公元,使用年数,已用年数,朝代,朝号,皇帝,年号
+			/** 纪年数据结构：数据用逗号分开，每7个描述一个年号，格式为:起始公元,使用年数,已用年数,朝代,朝号,皇帝,年号 */
 			String s = "-2069,45,0,夏,禹,,禹,-2024,10,0,夏,启,,启,-2014,25,0,夏,太康,,太康,-1986,14,0,夏,仲康,,仲康,-1972,28,0,夏,相,,相,-1944,2,0,夏,后羿,,后羿,-1942,38,0,夏,寒浞,,寒浞,-1904,21,0,夏,少康,,少康,-1883,17,0,夏,杼,,杼,-1866,26,0,夏,槐,,槐,-1840,18,0,夏,芒,,芒,-1822,16,0,夏,泄,,泄,-1806,59,0,夏,不降,,不降,-1747,21,0,夏,扃,,扃,-1726,21,0,夏,廑,,廑,"
 					+ "-1705,31,0,夏,孔甲,,孔甲,-1674,11,0,夏,皋,,皋,-1663,11,0,夏,发,,发,-1652,53,0,夏,桀,,桀,-1599,11,0,商,商太祖,汤,商汤,-1588,1,0,商,商代王,太乙,商代王,-1587,2,0,商,哀王,子胜,外丙,-1585,4,0,商,懿王,子庸,仲壬,-1581,12,0,商,太宗,子至,太甲,-1569,29,0,商,昭王,子绚,沃丁,-1540,25,0,商,宣王,子辩,太庚,-1515,17,0,商,敬王,子高,小甲,-1498,13,0,商,元王,子密,雍己,-1485,75,0,商,中宗,子伷,太戊,-1410,11,0,商,孝成王,子庄,仲丁,"
 					+ "-1399,15,0,商,思王,子发,外壬,-1384,9,0,商,前平王,子整,河亶甲,-1375,19,0,商,穆王,子滕,祖乙,-1356,16,0,商,桓王,子旦,祖辛,-1340,5,0,商,僖王,子逾,沃甲,-1335,9,0,商,庄王,子新,祖丁,-1326,6,0,商,顷王,子更,南庚,-1320,7,0,商,悼王,子和,阳甲,-1313,42,0,商,世祖,子旬,盘庚,-1271,21,0,商,章王,子颂,小辛,-1250,1,0,商,惠王,子敛,小乙,-1249,59,0,商,高宗,子昭,武丁,-1190,2,0,商,后平王,子跃,祖庚,-1188,33,0,商,世宗,子载,祖甲,-1155,8,0,商,甲宗,子先,廪辛,"
@@ -2345,7 +2374,8 @@ public class LunarConstant {
 			Obb.JNB = s.split(",");
 		}
 
-		public static String getNH(int year) { //取年号
+		/** 取年号 */
+		public static String getNH(int year) {
 			int j;
 			String s = "", c;
 			String[] JNB = Obb.JNB;
@@ -2359,7 +2389,7 @@ public class LunarConstant {
 			return s;
 		}
 
-		// 计算农历节日
+		/** 计算农历节日 */
 		public static void getDayName(LunarDate date, LunarDate dateTwo) {
 			String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo.getImpHappyName();
 			String impName = dateTwo.getImpName() == null ? "" : dateTwo.getImpName();
@@ -2496,13 +2526,13 @@ public class LunarConstant {
 			dateTwo.setHoliday(holiday);
 		}
 
-		// 精气
+		/** 精气 */
 		public static double qi_accurate(double W) {
 			double t = XL.S_aLon_t(W) * 36525;
 			return t - Common.dt_T(t) + (double) 8 / 24;
 		}
 
-		// 精朔
+		/** 精朔 */
 		public static double so_accurate(double W) {
 			double t = XL.MS_aLon_t(W) * 36525;
 			return t - Common.dt_T(t) + (double) 8 / 24;
@@ -2528,9 +2558,9 @@ public class LunarConstant {
 
 	protected static class SSQ {
 
-		// 朔修正表
+		/** 朔修正表 */
 		public static String SB = "";
-		// 气修正表
+		/** 气修正表 */
 		public static String QB = "";
 
 		public static final double[] suoKB = { 1457698.231017, 29.53067166, 1546082.512234, 29.53085106, 1640640.735300, 29.53060000,
@@ -2538,7 +2568,7 @@ public class LunarConstant {
 				1883618.114100, 29.53060000, 1907360.704700, 29.53060000, 1936596.224900, 29.53060000, 1939135.675300, 29.53060000,
 				1947168.00 };
 
-		// 气直线拟合参数
+		/** 气直线拟合参数 */
 		public static final double[] qiKB = { 1640650.479938, 15.21842500, 1642476.703182, 15.21874996, 1683430.515601, 15.218750011,
 				1752157.640664, 15.218749978, 1807675.003759, 15.218620279, 1883627.765182, 15.218612292, 1907369.128100, 15.218449176,
 				1936603.140413, 15.218425000, 1939145.524180, 15.218466998, 1947180.798300, 15.218524844, 1964362.041824, 15.218533526,
@@ -2551,7 +2581,10 @@ public class LunarConstant {
 				2322147.76 };
 
 		static {
-			String suoS, qiS;
+		    /** 619-01-21开始16598个朔日修正表 d0=1947168 */
+			String suoS;
+			/** 1645-09-23开始7567个节气修正表 */
+			String qiS;
 			// 619-01-21开始16598个朔日修正表 d0=1947168
 			suoS = "EqoFscDcrFpmEsF2DfFideFelFpFfFfFiaipqti1ksttikptikqckstekqttgkqttgkqteksttikptikq2fjstgjqttjkqttgkqt";
 			suoS += "ekstfkptikq2tijstgjiFkirFsAeACoFsiDaDiADc1AFbBfgdfikijFifegF1FhaikgFag1E2btaieeibggiffdeigFfqDfaiBkF";
@@ -2586,7 +2619,7 @@ public class LunarConstant {
 			QB = jieya(qiS); // 定气修正表解压
 		}
 
-		// 低精度定朔计算,在2000年至600，误差在2小时以内(仍比古代日历精准很多)
+		/** 低精度定朔计算,在2000年至600，误差在2小时以内(仍比古代日历精准很多) */
 		public static double so_low(double W) {
 			double v = 7771.37714500204;
 			double t = (W + 1.08472) / v;
@@ -2596,7 +2629,7 @@ public class LunarConstant {
 			return t * 36525 + (double) 8 / 24;
 		}
 
-		// 最大误差小于30分钟，平均5分
+		/** 最大误差小于30分钟，平均5分 */
 		public static double qi_low(double W) {
 			double t, L, v = 628.3319653318;
 			t = (W - 4.895062166) / v; // 第一次估算,误差2天以内
@@ -2612,7 +2645,7 @@ public class LunarConstant {
 			return t * 36525 + (double) 8 / 24;
 		}
 
-		// 较高精度气
+		/** 较高精度气 */
 		public static double qi_high(double W) {
 			double t = XL.S_aLon_t2(W) * 36525;
 			t = t - Common.dt_T(t) + (double) 8 / 24;
@@ -2622,7 +2655,7 @@ public class LunarConstant {
 			return t;
 		}
 
-		// 较高精度朔
+		/** 较高精度朔 */
 		public static double so_high(double W) {
 			double t = XL.MS_aLon_t2(W) * 36525;
 			t = t - Common.dt_T(t) + (double) 8 / 24;
@@ -2632,7 +2665,7 @@ public class LunarConstant {
 			return t;
 		}
 
-		// 气朔解压缩
+		/** 气朔解压缩 */
 		public static String jieya(String s) {
 			String o = "0000000000", o2 = o + o;
 			s = s.replace("/J/g", "00");
@@ -2668,7 +2701,7 @@ public class LunarConstant {
 			return s;
 		}
 
-		// jd应靠近所要取得的气朔日,qs="气"时，算节气的儒略日
+		/** jd应靠近所要取得的气朔日,qs="气"时，算节气的儒略日 */
 		public static int calc(double jd, String qs) {
 			jd += 2451545;
 			int i;
@@ -2720,20 +2753,20 @@ public class LunarConstant {
 			return (int) D;
 		}
 
-		// 闰月位置
+		/** 闰月位置 */
 		public int leap = 0;
-		// 各月名称
+		/** 各月名称 */
 		public String[] ym = new String[14];
-		// 各月数字号码
+		/** 各月数字号码 */
 		public int[] yIndex = new int[14];
-		// 中气表,其中.liqiu是节气立秋的儒略日,计算三伏时用到
+		/** 中气表,其中.liqiu是节气立秋的儒略日,计算三伏时用到 */
 		public int[] ZQ = new int[27];
-		// 合朔表
+		/** 合朔表 */
 		public int[] HS = new int[15];
-		// 各月大小
+		/** 各月大小 */
 		public int[] dx = new int[15];
 
-		// 农历排月序计算,可定出农历,有效范围：两个冬至之间(冬至一 <= d < 冬至二)
+		/** 农历排月序计算,可定出农历,有效范围：两个冬至之间(冬至一 <= d < 冬至二) */
 		public void calcY(int jd) {
 			int[] A = ZQ, B = HS; // 中气表,日月合朔表(整日)
 			int i;

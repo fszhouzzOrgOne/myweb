@@ -19,55 +19,67 @@ public class JulianDate {
 
 	//	private final String[] weeks = { "日", "一", "二", "三", "四", "五", "六", "七" };
 
+	/** 所在公历年 */
 	public int getYear() {
 		return year;
 	}
 
+	/** 所在公历年 */
 	public void setYear(int year) {
 		this.year = year;
 	}
 
+	/** 所在公历月 */
 	public int getMonth() {
 		return month;
 	}
 
+	/** 所在公历月 */
 	public void setMonth(int month) {
 		this.month = month;
 	}
 
+	/** 所在公历日 */
 	public int getDay() {
 		return day;
 	}
 
+	/** 所在公历日 */
 	public void setDay(int day) {
 		this.day = day;
 	}
 
+	/** 所在公历小时 */
 	public int getHour() {
 		return hour;
 	}
 
+	/** 所在公历小时 */
 	public void setHour(int hour) {
 		this.hour = hour;
 	}
 
+	/** 所在公历分钟 */
 	public int getMinute() {
 		return minute;
 	}
 
+	/** 所在公历分钟 */
 	public void setMinute(int minute) {
 		this.minute = minute;
 	}
 
+	/** 所在公历秒钟 */
 	public double getSecond() {
 		return second;
 	}
 
+	/** 所在公历秒钟 */
 	public void setSecond(double second) {
 		this.second = second;
 	}
 
-	// 公历转儒略日
+	/** 公历转儒略日 */
 	private double JD(int year, int month, double day) {
 		int n = 0, G = 0;
 		if (year * 372 + month * 31 + Math.floor(day) >= 588829)
@@ -83,7 +95,7 @@ public class JulianDate {
 		return Math.floor(365.25 * (year + 4716)) + Math.floor(30.6001 * (month + 1)) + day + n - 1524.5;
 	}
 
-	// 儒略日数转公历
+	/** 儒略日数转公历 */
 	private JulianDate DD(double jd) {
 		JulianDate julianDate = new JulianDate();
 		int year, month, day, hour, minute;
@@ -127,7 +139,7 @@ public class JulianDate {
 		return julianDate;
 	}
 
-	//日期转为串
+	/** 日期转为串 */
 	private String DD2str(JulianDate julianDate) {
 		String Y = "     " + julianDate.getYear(), M = "0" + julianDate.getMonth(), D = "0" + julianDate.getDay();
 		int h = julianDate.getHour(), m = julianDate.getMinute(), s = (int) Math.floor(julianDate.getSecond() + .5);
@@ -152,18 +164,18 @@ public class JulianDate {
 		return Y + "-" + M + "-" + D + " " + hStr + ":" + mStr + ":" + sStr;
 	}
 
-	//JD转为串
+	/** JD转为串 */
 	protected String JD2str(double jd) {
 		JulianDate julianDate = this.DD(jd);
 		return this.DD2str(julianDate);
 	}
 
-	// 公历转儒略日
+	/** 公历转儒略日 */
 	protected double toJD() {
 		return this.JD(this.year, this.month, this.day + ((this.second / 60 + this.minute) / 60 + this.hour) / 24);
 	}
 
-	// 儒略日数转公历
+	/** 儒略日数转公历 */
 	protected void setFromJD(double jd) {
 		JulianDate julianDate = this.DD(jd);
 		this.year = julianDate.getYear();
@@ -174,8 +186,8 @@ public class JulianDate {
 		this.second = julianDate.getSecond();
 	}
 
+	/** 提取jd中的时间(去除日期) */
 	protected String timeStr(double jd) {
-		// 提取jd中的时间(去除日期)
 		int h, m, s;
 		jd += 0.5;
 		jd = (jd - Math.floor(jd));
@@ -192,15 +204,18 @@ public class JulianDate {
 				+ ":" + Common.subString(sStr, sStr.length() - 2, sStr.length());
 	}
 
+	/**
+	 * 星期计算
+	 */
 	protected int getWeek(double jd) {
-		//星期计算
 		return (int) Math.floor(jd + 1.5 + 7000000) % 7;
 	}
 
+	/**
+	 * ===可能有错
+     * 求y年m月的第n个星期w的儒略日数
+	 */
 	protected int nnweek(int year, int month, int n, int week) {
-		//=================可能有错
-
-		//求y年m月的第n个星期w的儒略日数
 		double jd = this.JD(year, month, 1.5); //月首儒略日
 		double w0 = (jd + 1 + 7000000) % 7; //月首的星期
 		int r = (int) (jd - w0 + 7 * n + week);

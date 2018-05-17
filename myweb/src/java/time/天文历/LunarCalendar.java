@@ -57,38 +57,38 @@ public class LunarCalendar {
 		lunarDate = lunarDates[calendar.get(Calendar.DATE) - 1];
 	}
 
-	// 农历生肖
+	/** 农历生肖 */
 	public String getAnimalString() {
 		return animalYear;
 	}
 
-	// 获取农历日期字符串
+	/** 获取农历日期字符串 */
 	public String getDateString() {
 		return lunarDate.getKingYear() + "年" + lunarDate.getLunarMonthName() + "月" + (isBigMonth() ? "大" : "小")
 				+ lunarDate.getLunarDayName() + "日";
 	}
 
-	// 获取干支农历日期字符串
+	/** 获取干支农历日期字符串 */
 	public String getGanZhiDateString() {
 		return lunarDate.getCnEraYear() + "年" + lunarDate.getCnEraMonth() + "月" + lunarDate.getCnEraDay() + "日";
 	}
 
-	// 农历日
+	/** 农历日 */
 	public int getDay() {
 		return lunarDate.getLunarMonthOffset() + 1;
 	}
 
-	// 农历日字符串
+	/** 农历日字符串 */
 	public String getDayString() {
 		return lunarDate.getLunarDayName();
 	}
 
-	// 某农历月有多少天
+	/** 某农历月有多少天 */
 	public int getMaxDayInMonth() {
 		return lunarDate.getDaysofLunarMonth();
 	}
 
-	// 农历月
+	/** 农历月 */
 	public int getMonth() {
 		int month = 0;
 		String monthName = lunarDate.getLunarMonthName();
@@ -120,51 +120,52 @@ public class LunarCalendar {
 		return month;
 	}
 
-	// 农历月字符串
+	/** 农历月字符串 */
 	public String getMonthString() {
 		return lunarDate.getLunarMonthName();
 	}
 
-	// 农历年
+	/** 农历年 */
 	public int getYear() {
 		return lunarDate.getKingYear();
 	}
 
-	// 农历年字符串
+	/** 农历年字符串 */
 	public String getYearString() {
 		return lunarDate.getCnEraYear();
 	}
 
-	// 是否是大月
+	/** 是否是大月 */
 	public boolean isBigMonth() {
 		return lunarDate.getDaysofLunarMonth() > 29;
 	}
 
-	// 是否是闰月
+	/** 是否是闰月 */
 	public boolean isLeap() {
 		return "闰".equals(lunarDate.getLunarLunarLeap());
 	}
 
-	// 是否是闰年
+	/** 是否是闰年 **/
 	public boolean isLeapYear() {
 		return ssq.leap > 0;
 	}
 
-	// 获取某年的二十四节气信息
+	/** 获取某年的二十四节气信息 */
 	public String[] getAllSolarTerm() {
 		return qiCalc(year);
 	}
 
-	// 获取某月的农历对象
+	/** 获取某月的农历对象 */
 	public LunarDate[] getMonthLunarDates() {
 		return lunarDates;
 	}
 
-	// 获取某一天的农历对象
+	/** 获取某一天的农历对象 */
 	public LunarDate getDayLunarDate() {
 		return lunarDate;
 	}
 	
+	/** 月曆計算 */
 	private void yueLiCalc(int year, int month) {
 		int c, Bd0, Bdn;
 		// 日历物件初始化
@@ -350,7 +351,7 @@ public class LunarCalendar {
 		this.lunarDates = lunarDates;
 	}
 
-	//定气测试函数
+	/** 定气测试函数 */
 	private String[] qiCalc(int year) {
 		String[] solarTerms = new String[24];
 		double T;
