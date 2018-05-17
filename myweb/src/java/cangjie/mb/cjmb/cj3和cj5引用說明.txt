@@ -1,4 +1,4 @@
-版本20180516.1.0，改版本號命名規則爲年月日。倉頡三代引用GitHub上的 Arthurmcarthur/Cangjie3-Plus 碼表，倉頡五代引用 Jackchows/Cangjie5 碼表，99碼表上參考03五代製成。改正普通拼音m作聲母時，選聲調後一個展示錯誤。
+版本20180516，1.0默認字體，2.0自定義字體。改版本號命名規則爲年月日。倉頡三代引用GitHub上的 Arthurmcarthur/Cangjie3-Plus 碼表，倉頡五代引用 Jackchows/Cangjie5 碼表，99碼表上參考03五代製成。改正普通拼音m作聲母時，選聲調後一個展示錯誤。
 
 五代：
 1，\t+\[.*\r\n 換成 \r\n

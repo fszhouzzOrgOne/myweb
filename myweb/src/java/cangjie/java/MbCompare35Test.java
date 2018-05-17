@@ -29,7 +29,7 @@ public class MbCompare35Test {
 
     public static void main(String[] args) throws Exception {
         System.out.println("compareCangjie3: ");
-        // compareCangjie3();
+        compareCangjie3();
 
         System.out.println("compareCangjie5: ");
         compareCangjie5();
