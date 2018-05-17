@@ -3,11 +3,11 @@ package time.天文历;
 import java.util.Calendar;
 import java.util.Date;
 
-import time.天文历.constant.LunarConstant.Common;
-import time.天文历.constant.LunarConstant.Oba;
-import time.天文历.constant.LunarConstant.Obb;
-import time.天文历.constant.LunarConstant.SSQ;
-import time.天文历.constant.LunarConstant.XL;
+import time.天文历.constant.Common;
+import time.天文历.constant.Oba;
+import time.天文历.constant.Obb;
+import time.天文历.constant.SSQ;
+import time.天文历.constant.XL;
 
 public class LunarCalendar {
 
