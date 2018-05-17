@@ -4,8 +4,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 import time.天文历.constant.Common;
-import time.天文历.constant.Oba;
+import time.天文历.constant.MoslemCalendar;
 import time.天文历.constant.ObChronology;
+import time.天文历.constant.ObFestival;
 import time.天文历.constant.SSQ;
 import time.天文历.constant.XL;
 
@@ -298,10 +299,10 @@ public class LunarCalendar {
 				mk++; // 星座所在月的序数,(如果j=13,ob.d0不会超过第14号中气)
 			lunarDate.setConstellation(ObChronology.XiZ[(mk + 12) % 12] + "座");
 			// 回历
-			Oba.getHuiLi(lunarDate.getDayRL(), lunarDate);
+			MoslemCalendar.getHuiLi(lunarDate.getDayRL(), lunarDate);
 			// 节日
 			// ob.A = ob.B = ob.C = ""; ob.Fjia = 0;
-			Oba.getDayName(lunarDate, lunarDate); // 公历
+			ObFestival.getDayName(lunarDate, lunarDate); // 公历
 			ObChronology.getDayName(lunarDate, lunarDate); // 农历
 
 			lunarDates[i] = lunarDate;
@@ -389,5 +390,13 @@ public class LunarCalendar {
 
     public void setNianHao(String nianHao) {
         this.nianHao = nianHao;
+    }
+
+    public LunarDate getLunarDate() {
+        return lunarDate;
+    }
+
+    public void setLunarDate(LunarDate lunarDate) {
+        this.lunarDate = lunarDate;
     }
 }

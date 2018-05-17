@@ -90,10 +90,12 @@ public class LunarDate {
 	/** r.Fjia 放假日子(可用于日期数字置红) */
 	private int holiday;
 
+	/** ob.d0 2000.0起算儒略日,北京时12:00 */
 	public int getDayRL() {
 		return dayRL;
 	}
 
+	/** ob.d0 2000.0起算儒略日,北京时12:00 */
 	public void setDayRL(int dayRL) {
 		this.dayRL = dayRL;
 	}

@@ -10,9 +10,11 @@ public class Test {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "0000-01-01";
+        String dateStr = "0622-07-16";
         LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
         System.out.println(lc.getYear() + " " + lc.getGanZhiDateString());
         System.out.println(lc.getNianHao());
+        System.out.println("回曆：" + lc.getLunarDate().gethYear() + "-" + lc.getLunarDate().gethMonth() + "-"
+                + lc.getLunarDate().gethDay());
     }
 }
