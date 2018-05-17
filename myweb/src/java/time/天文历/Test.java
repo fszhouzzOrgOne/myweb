@@ -1,12 +1,18 @@
 package time.天文历;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 /**
  * JulianDate.java、 LunarCalendar.java、 LunarConstant.java、 LunarDate.java<br/>
  * 四個類來自：https://download.csdn.net/download/wangpeng047/7755661<br/>
  */
 public class Test {
-    public static void main(String[] args) {
-        LunarCalendar lc = new LunarCalendar();
-        System.out.println(lc.getGanZhiDateString());
+    static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
+
+    public static void main(String[] args) throws Exception {
+        String dateStr = "0000-01-01";
+        LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
+        System.out.println(lc.getYear());
     }
 }
