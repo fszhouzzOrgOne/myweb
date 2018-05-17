@@ -1,6 +1,5 @@
 package time.天文历.constant;
 
-import java.math.BigDecimal;
 import java.util.regex.Pattern;
 
 public class Common {
