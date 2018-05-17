@@ -1,1406 +1,1406 @@
-⽇	a	康熙部首
-⽈	a	康熙部首
-⿱	a	表意文字描述字符
-㍾	aber	中日韓兼容符號
-暈	abjj	中日韓兼容表意文字
-冒	abu	中日韓兼容表意文字補充
-㒻	abuu	中日韓兼容表意文字補充
-㬙	aikf	中日韓兼容表意文字補充
-㫤	aine	中日韓兼容表意文字補充
-䳭	aislf	中日韓兼容表意文字補充
-暑	ajka	中日韓兼容表意文字
-暑	ajka	中日韓兼容表意文字補充
-量	amwg	中日韓兼容表意文字
-⾨	an	康熙部首
-冕	anau	中日韓兼容表意文字補充
-開	anmjj	中日韓兼容表意文字補充
-閭	anrhr	中日韓兼容表意文字
-𨵷	anwot	中日韓兼容表意文字補充
-䦕	anyjj	中日韓兼容表意文字補充
-易	aphh	中日韓兼容表意文字
-即	apsl	中日韓兼容表意文字補充
-晴	aqmb	中日韓兼容表意文字
-晴	aqmb	中日韓兼容表意文字
-最	asje	中日韓兼容表意文字補充
-㍼	asrr	中日韓兼容符號
-暴	atce	中日韓兼容表意文字
-⾉	av	康熙部首
-㬈	awot	中日韓兼容表意文字補充
-⽉	b	康熙部首
-⺝	b	中日韓部首補充
-⺼	b	中日韓部首補充
-⾻	bbb	康熙部首
-⻣	bbb	中日韓部首補充
-𠕋	bbmm	中日韓兼容表意文字補充
-䯎	bbomj	中日韓兼容表意文字補充
-亂	bbu	中日韓兼容表意文字
-鼏	bbul	中日韓兼容表意文字補充
-鼏	bbun	中日韓兼容表意文字補充
-⺳	bc	中日韓部首補充
-贈	bccwa	中日韓兼容表意文字
-贈	bccwa	中日韓兼容表意文字
-賂	bcher	中日韓兼容表意文字
-䐋	bcip	中日韓兼容表意文字補充
-炙	bf	中日韓兼容表意文字
-媵	bfqv	中日韓兼容表意文字補充
-瞧	bgf	中日韓兼容表意文字
-𦞵	bham	中日韓兼容表意文字補充
-𦞧	bhhw	中日韓兼容表意文字補充
-𧲨	bhmjj	中日韓兼容表意文字補充
-冗	bhu	中日韓兼容表意文字補充
-⺴	bhu	中日韓部首補充
-⻅	bhu	中日韓部首補充
-⺼	bim	中日韓部首補充
-⺱	bk	中日韓部首補充
-⽹	bkk	康熙部首
-𦋙	bkkhu	中日韓兼容表意文字補充
-肋	bks	中日韓兼容表意文字
-䏙	blbu	中日韓兼容表意文字補充
-⺵	bll	中日韓部首補充
-⼞	bm	康熙部首
-𣍟	bmb	中日韓兼容表意文字補充
-䏕	bmg	中日韓兼容表意文字補充
-⺜	bmm	中日韓部首補充
-脃	bnau	中日韓兼容表意文字補充
-⻉	bo	中日韓部首補充
-肭	bob	中日韓兼容表意文字補充
-⽤	bq	康熙部首
-周	bqr	中日韓兼容表意文字補充
-彫	brhhh	中日韓兼容表意文字補充
-𣎜	brxu	中日韓兼容表意文字補充
-⾘	bshh	康熙部首
-冤	bshi	中日韓兼容表意文字補充
-⽫	bt	康熙部首
-⽬	bu	康熙部首
-⿳	bu	表意文字描述字符
-⾙	buc	康熙部首
-朡	buce	中日韓兼容表意文字補充
-見	buhu	中日韓兼容表意文字
-⾒	buhu	康熙部首
-睊	buib	中日韓兼容表意文字
-睊	buib	中日韓兼容表意文字補充
-䁆	bukhu	中日韓兼容表意文字補充
-䀹	bukoo	中日韓兼容表意文字
-䀹	bukoo	中日韓兼容表意文字補充
-具	bumc	中日韓兼容表意文字補充
-𥄙	bumf	中日韓兼容表意文字補充
-䀘	bumjj	中日韓兼容表意文字
-𥃳	bumms	中日韓兼容表意文字補充
-𥉉	buold	中日韓兼容表意文字
-瞋	bupbc	中日韓兼容表意文字補充
-𥃲	but	中日韓兼容表意文字補充
-⿍	buvml	康熙部首
-臘	bvvv	中日韓兼容表意文字
-脾	bwhj	中日韓兼容表意文字補充
-爵	bwli	中日韓兼容表意文字
-爵	bwli	中日韓兼容表意文字補充
-丹	by	中日韓兼容表意文字
-𣎓	byso	中日韓兼容表意文字補充
-金	c	中日韓兼容表意文字
-⾦	c	康熙部首
-鍊	cdwf	中日韓兼容表意文字
-⺑	chn	中日韓部首補充
-⺏	chu	中日韓部首補充
-𨯺	chxf	中日韓兼容表意文字補充
-鋗	cib	中日韓兼容表意文字補充
-鈸	cike	中日韓兼容表意文字補充
-⽗	ck	康熙部首
-鐕	ckua	中日韓兼容表意文字補充
-益	cmct	中日韓兼容表意文字
-鉶	cmjn	中日韓兼容表意文字
-鏹	cnri	中日韓兼容表意文字補充
-鈴	coml	中日韓兼容表意文字
-⾕	cor	康熙部首
-鋘	crvk	中日韓兼容表意文字補充
-錄	cvne	中日韓兼容表意文字
-鉼	cyjj	中日韓兼容表意文字補充
-⽊	d	康熙部首
-欄	danw	中日韓兼容表意文字
-𣑭	dbbm	中日韓兼容表意文字補充
-刺	dbln	中日韓兼容表意文字
-榣	dbou	中日韓兼容表意文字補充
-㮝	dcrl	中日韓兼容表意文字
-㮝	dcrl	中日韓兼容表意文字補充
-林	dd	中日韓兼容表意文字
-楂	ddbm	中日韓兼容表意文字補充
-㓟	deln	中日韓兼容表意文字補充
-隸	dfle	中日韓兼容表意文字
-櫛	dhal	中日韓兼容表意文字補充
-梎	dhap	中日韓兼容表意文字補充
-⽪	dhe	康熙部首
-柳	dhhl	中日韓兼容表意文字
-槪	dhpu	中日韓兼容表意文字補充
-⼨	di	康熙部首
-𣏕	dijc	中日韓兼容表意文字
-杖	dijk	中日韓兼容表意文字
-𣏃	dl	中日韓兼容表意文字補充
-樓	dllv	中日韓兼容表意文字
-𪈎	dlmcf	中日韓兼容表意文字補充
-⺘	dm	中日韓部首補充
-枅	dmjj	中日韓兼容表意文字補充
-㍿	dmoig	中日韓兼容符號
-⾱	dmrq	康熙部首
-李	dnd	中日韓兼容表意文字
-杻	dng	中日韓兼容表意文字
-𦖨	dnsj	中日韓兼容表意文字補充
-櫓	dnwa	中日韓兼容表意文字
-⿆	doni	康熙部首
-來	doo	中日韓兼容表意文字
-梅	dowj	中日韓兼容表意文字補充
-梅	dowy	中日韓兼容表意文字
-杓	dpm	中日韓兼容表意文字補充
-韛	dqthb	中日韓兼容表意文字
-韠	dqwtj	中日韓兼容表意文字補充
-柺	drks	中日韓兼容表意文字補充
-𣏃	dsm	中日韓兼容表意文字補充
-㰘	dsmt	中日韓兼容表意文字補充
-杞	dsu	中日韓兼容表意文字補充
-檨	dtgo	中日韓兼容表意文字補充
-椔	dvmw	中日韓兼容表意文字補充
-𣚣	dwtc	中日韓兼容表意文字補充
-栟	dyjj	中日韓兼容表意文字補充
-⽔	e	康熙部首
-𣽞	eahr	中日韓兼容表意文字補充
-涅	eam	中日韓兼容表意文字補充
-滑	ebbb	中日韓兼容表意文字
-洞	ebmr	中日韓兼容表意文字
-滛	ebmu	中日韓兼容表意文字
-梁	ecd	中日韓兼容表意文字
-𣴞	ecsg	中日韓兼容表意文字補充
-淋	edd	中日韓兼容表意文字
-㴳	egih	中日韓兼容表意文字補充
-洛	eher	中日韓兼容表意文字
-派	ehhv	中日韓兼容表意文字補充
-溜	ehhw	中日韓兼容表意文字
-沿	ehnr	中日韓兼容表意文字補充
-浩	ehqr	中日韓兼容表意文字補充
-淚	ehsk	中日韓兼容表意文字
-浪	eiav	中日韓兼容表意文字
-潮	ejjb	中日韓兼容表意文字補充
-渚	ejka	中日韓兼容表意文字
-濆	ejtc	中日韓兼容表意文字補充
-𣲼	ekbn	中日韓兼容表意文字補充
-𣻑	ekce	中日韓兼容表意文字補充
-淹	ekhu	中日韓兼容表意文字補充
-灊	ekub	中日韓兼容表意文字補充
-沈	elbu	中日韓兼容表意文字
-𣾎	emef	中日韓兼容表意文字補充
-汧	emjj	中日韓兼容表意文字補充
-湮	emwg	中日韓兼容表意文字補充
-溺	enhh	中日韓兼容表意文字
-汎	enhi	中日韓兼容表意文字補充
-㶖	eolf	中日韓兼容表意文字補充
-淪	eomb	中日韓兼容表意文字
-瀹	eomb	中日韓兼容表意文字補充
-海	eowj	中日韓兼容表意文字補充
-海	eowy	中日韓兼容表意文字
-滇	epbc	中日韓兼容表意文字補充
-泌	eph	中日韓兼容表意文字
-瀞	eqbd	中日韓兼容表意文字
-瀞	eqbd	中日韓兼容表意文字補充
-泍	eqc	中日韓兼容表意文字補充
-洖	ervk	中日韓兼容表意文字補充
-漏	esmb	中日韓兼容表意文字
-浸	esme	中日韓兼容表意文字補充
-濫	esmt	中日韓兼容表意文字
-泥	esp	中日韓兼容表意文字
-漢	etao	中日韓兼容表意文字
-港	etcu	中日韓兼容表意文字補充
-漢	etlo	中日韓兼容表意文字
-滋	etvi	中日韓兼容表意文字
-滋	etvi	中日韓兼容表意文字補充
-流	eyiu	中日韓兼容表意文字
-流	eyiu	中日韓兼容表意文字
-流	eyiv	中日韓兼容表意文字補充
-漣	eyjj	中日韓兼容表意文字
-洴	eyjj	中日韓兼容表意文字補充
-濾	eypp	中日韓兼容表意文字
-瀛	eyqv	中日韓兼容表意文字補充
-⽕	f	康熙部首
-爛	fanw	中日韓兼容表意文字
-⽶	fd	康熙部首
-糧	fdamg	中日韓兼容表意文字
-类	fdik	中日韓兼容表意文字
-糖	fdilr	中日韓兼容表意文字
-糣	fdkua	中日韓兼容表意文字補充
-類	fdmbc	中日韓兼容表意文字
-糨	fdnri	中日韓兼容表意文字補充
-精	fdqmb	中日韓兼容表意文字
-糒	fdthb	中日韓兼容表意文字補充
-煉	fdwf	中日韓兼容表意文字
-料	fdyj	中日韓兼容表意文字
-粒	fdyt	中日韓兼容表意文字
-⺢	ff	中日韓部首補充
-勞	ffbks	中日韓兼容表意文字
-瑩	ffbmi	中日韓兼容表意文字
-燐	ffdq	中日韓兼容表意文字
-𤎫	ffto	中日韓兼容表意文字補充
-虩	ffypu	中日韓兼容表意文字補充
-省	fhbu	中日韓兼容表意文字
-烙	fher	中日韓兼容表意文字
-劣	fhks	中日韓兼容表意文字
-熜	fhwp	中日韓兼容表意文字補充
-⺗	fi	中日韓部首補充
-燎	fkcf	中日韓兼容表意文字
-煅	frse	中日韓兼容表意文字補充
-当	fsm	中日韓兼容表意文字補充
-灷	ft	中日韓兼容表意文字補充
-兤	fuitc	中日韓兼容表意文字補充
-𤉣	fvmw	中日韓兼容表意文字補充
-爐	fypt	中日韓兼容表意文字
-⼟	g	康熙部首
-売	gbhn	中日韓兼容表意文字補充
-塚	gbmo	中日韓兼容表意文字
-塚	gbmo	中日韓兼容表意文字
-壷	gbtm	中日韓兼容表意文字補充
-穀	gdhne	中日韓兼容表意文字
-穀	gdhne	中日韓兼容表意文字補充
-𡓤	ghoc	中日韓兼容表意文字補充
-城	gihn	中日韓兼容表意文字補充
-城	gihs	中日韓兼容表意文字補充
-報	gjrle	中日韓兼容表意文字補充
-墳	gjtc	中日韓兼容表意文字
-⾚	glnc	康熙部首
-殻	gnhne	中日韓兼容表意文字補充
-𠠄	gofbn	中日韓兼容表意文字補充
-𧼯	goomv	中日韓兼容表意文字補充
-起	gosu	中日韓兼容表意文字補充
-𧻓	goyjj	中日韓兼容表意文字
-埴	gpbv	中日韓兼容表意文字補充
-嗀	grhne	中日韓兼容表意文字
-切	gsh	中日韓兼容表意文字補充
-堍	gshi	中日韓兼容表意文字補充
-塀	gsyj	中日韓兼容表意文字
-⿎	gtje	康熙部首
-⾛	gyo	康熙部首
-⼃	h	康熙部首
-⽵	h	康熙部首
-㇒	h	中日韓筆畫
-⽩	ha	康熙部首
-馧	haabt	中日韓兼容表意文字補充
-⾹	had	康熙部首
-𤾡	haikf	中日韓兼容表意文字補充
-節	hail	中日韓兼容表意文字
-𥳐	hanj	中日韓兼容表意文字
-𤾸	hatbf	中日韓兼容表意文字補充
-⿃	hayf	康熙部首
-爨	hbddf	中日韓兼容表意文字補充
-𥮫	hbfd	中日韓兼容表意文字補充
-䈧	hbhf	中日韓兼容表意文字補充
-⾎	hbt	康熙部首
-⾃	hbu	康熙部首
-⾈	hbyi	康熙部首
-劉	hcln	中日韓兼容表意文字
-⽲	hd	康熙部首
-穏	hdbsp	中日韓兼容表意文字補充
-稜	hdgce	中日韓兼容表意文字
-彩	hdhhh	中日韓兼容表意文字
-秊	hdhj	中日韓兼容表意文字
-穊	hdhpu	中日韓兼容表意文字補充
-秫	hdid	中日韓兼容表意文字補充
-利	hdln	中日韓兼容表意文字
-䄯	hdmjj	中日韓兼容表意文字補充
-⿉	hdoe	康熙部首
-⼡	he	康熙部首
-⼢	he	康熙部首
-冬	heim	中日韓兼容表意文字補充
-爫	hf	中日韓兼容表意文字
-⺣	hf	中日韓部首補充
-⺤	hf	中日韓部首補充
-⺥	hf	中日韓部首補充
-⾤	hfd	康熙部首
-⺧	hg	中日韓部首補充
-珞	hgher	中日韓兼容表意文字
-⺁	hh	中日韓部首補充
-卿	hhapl	中日韓兼容表意文字補充
-⼺	hhh	康熙部首
-卿	hhhil	中日韓兼容表意文字補充
-⾡	hhho	康熙部首
-卿	hhhpl	中日韓兼容表意文字補充
-𨜮	hhisl	中日韓兼容表意文字補充
-黎	hhoe	中日韓兼容表意文字
-節	hhsl	中日韓兼容表意文字
-卵	hhsli	中日韓兼容表意文字
-留	hhw	中日韓兼容表意文字
-㇛	hi	中日韓筆畫
-簾	hihc	中日韓兼容表意文字
-⾆	hjr	康熙部首
-翺	hjsmm	中日韓兼容表意文字補充
-懲	hkp	中日韓兼容表意文字
-懲	hkp	中日韓兼容表意文字
-懲	hkp	中日韓兼容表意文字補充
-⺅	hl	中日韓部首補充
-齃	hlapp	中日韓兼容表意文字
-堲	hlg	中日韓兼容表意文字補充
-⽖	hlo	康熙部首
-𡷦	hlu	中日韓兼容表意文字補充
-⽄	hml	康熙部首
-築	hmnd	中日韓兼容表意文字補充
-⼏	hn	康熙部首
-⺇	hn	中日韓部首補充
-⺈	hn	中日韓部首補充
-梨	hnd	中日韓兼容表意文字
-⽎	hne	康熙部首
-⾵	hnhli	康熙部首
-𩖶	hnid	中日韓兼容表意文字補充
-⻛	hnk	中日韓部首補充
-⼋	ho	康熙部首
-⼻	ho	康熙部首
-徭	hobmu	中日韓兼容表意文字
-徚	hodw	中日韓兼容表意文字補充
-㣣	hokoo	中日韓兼容表意文字補充
-律	holq	中日韓兼容表意文字
-行	hommn	中日韓兼容表意文字
-⾏	hommn	康熙部首
-𣢧	hono	中日韓兼容表意文字補充
-復	hooae	中日韓兼容表意文字
-衠	hopcn	中日韓兼容表意文字補充
-𠨬	hp	中日韓兼容表意文字補充
-旣	hpmvu	中日韓兼容表意文字補充
-卽	hpsl	中日韓兼容表意文字補充
-⽜	hq	康熙部首
-⽣	hqm	康熙部首
-夆	hqqj	中日韓兼容表意文字補充
-犕	hqthb	中日韓兼容表意文字補充
-⽑	hqu	康熙部首
-⾩	hrj	康熙部首
-⻕	hrlr	中日韓部首補充
-⼓	hs	康熙部首
-⼾	hs	康熙部首
-⺆	hs	中日韓部首補充
-篆	hsmo	中日韓兼容表意文字補充
-既	hsmvu	中日韓兼容表意文字
-䀈	hubt	中日韓兼容表意文字補充
-䊠	hufd	中日韓兼容表意文字補充
-⿁	hui	康熙部首
-⻤	hui	中日韓部首補充
-臭	huik	中日韓兼容表意文字
-鱀	hunwf	中日韓兼容表意文字補充
-𦓚	huumb	中日韓兼容表意文字補充
-⿐	huwml	康熙部首
-鼻	huwt	中日韓兼容表意文字補充
-㇢	hv	中日韓筆畫
-⽠	hvio	康熙部首
-⽒	hvp	康熙部首
-𥲀	hvvd	中日韓兼容表意文字補充
-卑	hwhj	中日韓兼容表意文字
-卑	hwhj	中日韓兼容表意文字補充
-⾅	hx	康熙部首
-⺽	hx	中日韓部首補充
-⾝	hxh	康熙部首
-䳎	hxhaf	中日韓兼容表意文字補充
-𠔜	hxlc	中日韓兼容表意文字補充
-舁	hxt	中日韓兼容表意文字補充
-舁	hxt	中日韓兼容表意文字補充
-龜	hxu	中日韓兼容表意文字
-龜	hxu	中日韓兼容表意文字
-⻱	hxu	中日韓部首補充
-舄	hxvsf	中日韓兼容表意文字補充
-⿏	hxvyv	康熙部首
-⺖	hy	中日韓部首補充
-籠	hybp	中日韓兼容表意文字
-䈂	hyjj	中日韓兼容表意文字補充
-笠	hyt	中日韓兼容表意文字
-䑫	hyyjj	中日韓兼容表意文字補充
-⼂	i	康熙部首
-⼽	i	康熙部首
-㇔	i	中日韓筆畫
-良	iav	中日韓兼容表意文字
-⼧	ib	康熙部首
-䳸	ichaf	中日韓兼容表意文字補充
-麻	idd	中日韓兼容表意文字補充
-𪎒	idhni	中日韓兼容表意文字補充
-摩	idq	中日韓兼容表意文字補充
-視	ifbuu	中日韓兼容表意文字
-視	ifbuu	中日韓兼容表意文字
-𥛅	ifhlw	中日韓兼容表意文字補充
-𥘦	ifok	中日韓兼容表意文字補充
-福	ifslw	中日韓兼容表意文字補充
-𥚚	ifyhu	中日韓兼容表意文字補充
-𥚚	ifyku	中日韓兼容表意文字補充
-廉	ihhc	中日韓兼容表意文字
-成	ihmn	中日韓兼容表意文字補充
-成	ihs	中日韓兼容表意文字補充
-廊	ihvl	中日韓兼容表意文字補充
-⺀	ii	中日韓部首補充
-朗	iib	中日韓兼容表意文字
-⺍	iih	中日韓部首補充
-參	iiih	中日韓兼容表意文字
-⽧	iim	康熙部首
-⺡	iim	中日韓部首補充
-⻍	iino	中日韓部首補充
-廊	iivl	中日韓兼容表意文字
-⿇	ijcc	康熙部首
-唐	ijsr	中日韓兼容表意文字補充
-⽝	ik	康熙部首
-⻰	ikp	中日韓部首補充
-啓	ikr	中日韓兼容表意文字補充
-㡼	ilwp	中日韓兼容表意文字補充
-⼇	im	康熙部首
-⼎	im	康熙部首
-凌	imgce	中日韓兼容表意文字
-次	imno	中日韓兼容表意文字補充
-冷	imoml	中日韓兼容表意文字
-𩇟	imqbu	中日韓兼容表意文字補充
-凉	imyrf	中日韓兼容表意文字
-凜	imywd	中日韓兼容表意文字
-⼍	in	康熙部首
-盛	inbt	中日韓兼容表意文字
-⺭	inf	中日韓部首補充
-⻂	inlo	中日韓部首補充
-⻎	inno	中日韓部首補充
-辶	ino	中日韓兼容表意文字
-⻌	ino	中日韓部首補充
-⻂	inol	中日韓部首補充
-⻈	inv	中日韓部首補充
-⼷	ip	康熙部首
-麟	ipfdq	中日韓兼容表意文字
-𪊑	ipmjj	中日韓兼容表意文字補充
-廒	iqsk	中日韓兼容表意文字
-度	ite	中日韓兼容表意文字
-庶	itf	中日韓兼容表意文字補充
-凞	iuf	中日韓兼容表意文字
-朗	ivb	中日韓兼容表意文字
-朗	ivb	中日韓兼容表意文字補充
-⽞	ivi	康熙部首
-剆	ivln	中日韓兼容表意文字補充
-郎	ivnl	中日韓兼容表意文字
-庳	iwlj	中日韓兼容表意文字補充
-恵	iwp	中日韓兼容表意文字
-廙	iwtc	中日韓兼容表意文字
-鹿	ixp	中日韓兼容表意文字
-⿅	ixp	康熙部首
-廓	iydl	中日韓兼容表意文字
-庰	iyjj	中日韓兼容表意文字補充
-廬	iypt	中日韓兼容表意文字
-⼗	j	康熙部首
-煮	jaf	中日韓兼容表意文字
-煮	jaf	中日韓兼容表意文字
-都	janl	中日韓兼容表意文字
-直	jbmm	中日韓兼容表意文字
-𩐊	jbmom	中日韓兼容表意文字補充
-真	jbuc	中日韓兼容表意文字補充
-直	jbuv	中日韓兼容表意文字補充
-索	jbvf	中日韓兼容表意文字
-⽳	jc	康熙部首
-突	jcik	中日韓兼容表意文字
-𥥼	jcjbt	中日韓兼容表意文字補充
-窱	jcold	中日韓兼容表意文字
-⽀	je	康熙部首
-鶴	jghaf	中日韓兼容表意文字
-宅	jhp	中日韓兼容表意文字
-牢	jhq	中日韓兼容表意文字
-博	jiji	中日韓兼容表意文字補充
-戴	jiwtc	中日韓兼容表意文字
-艹	jj	中日韓兼容表意文字
-廾	jj	中日韓兼容表意文字補充
-⼶	jj	康熙部首
-⺾	jj	中日韓部首補充
-⺿	jj	中日韓部首補充
-輻	jjmrw	中日韓兼容表意文字
-輪	jjomb	中日韓兼容表意文字
-輸	jjomn	中日韓兼容表意文字
-輸	jjomv	中日韓兼容表意文字補充
-軔	jjsk	中日韓兼容表意文字補充
-轢	jjvid	中日韓兼容表意文字
-⺹	jk	中日韓部首補充
-者	jka	中日韓兼容表意文字
-者	jka	中日韓兼容表意文字
-寮	jkcf	中日韓兼容表意文字
-者	jkia	中日韓兼容表意文字補充
-老	jkp	中日韓兼容表意文字
-⽼	jkp	康熙部首
-吏	jlk	中日韓兼容表意文字
-⼠	jm	康熙部首
-寳	jmfc	中日韓兼容表意文字補充
-賓	jmhc	中日韓兼容表意文字
-𡧈	jmms	中日韓兼容表意文字補充
-⿆	joni	康熙部首
-寘	jpbc	中日韓兼容表意文字補充
-寧	jpbn	中日韓兼容表意文字
-寧	jpbn	中日韓兼容表意文字
-寧	jpwn	中日韓兼容表意文字補充
-憲	jqjp	中日韓兼容表意文字補充
-割	jrln	中日韓兼容表意文字補充
-⺺	js	中日韓部首補充
-寃	jshi	中日韓兼容表意文字補充
-卉	jt	中日韓兼容表意文字補充
-賁	jtbc	中日韓兼容表意文字補充
-塞	jtcg	中日韓兼容表意文字
-桒	jtd	中日韓兼容表意文字補充
-鼖	jtge	中日韓兼容表意文字補充
-真	jumc	中日韓兼容表意文字補充
-車	jwj	中日韓兼容表意文字
-⾞	jwj	康熙部首
-⼤	k	康熙部首
-瘟	kabt	中日韓兼容表意文字
-殺	kchne	中日韓兼容表意文字補充
-閷	kdano	中日韓兼容表意文字補充
-殺	kdhne	中日韓兼容表意文字
-殺	kdhne	中日韓兼容表意文字
-癩	kdlc	中日韓兼容表意文字
-𪄅	kehaf	中日韓兼容表意文字補充
-⺨	kh	中日韓部首補充
-獺	khdlc	中日韓兼容表意文字補充
-痢	khdn	中日韓兼容表意文字
-狼	khiav	中日韓兼容表意文字
-𤠔	khibc	中日韓兼容表意文字補充
-猪	khjka	中日韓兼容表意文字
-猪	khjka	中日韓兼容表意文字
-𤜵	khmjj	中日韓兼容表意文字補充
-犯	khru	中日韓兼容表意文字
-獵	khvvv	中日韓兼容表意文字
-⼶	kj	康熙部首
-奢	kjka	中日韓兼容表意文字補充
-奔	kjt	中日韓兼容表意文字
-⽘	kk	康熙部首
-療	kkcf	中日韓兼容表意文字
-瘐	klwo	中日韓兼容表意文字補充
-奈	kmmf	中日韓兼容表意文字
-㍽	kmym	中日韓兼容符號
-丸	knk	中日韓兼容表意文字補充
-⻋	kq	中日韓部首補充
-力	ks	中日韓兼容表意文字
-⼒	ks	康熙部首
-尢	ku	中日韓兼容表意文字補充
-⼪	ku	康熙部首
-⺐	ku	中日韓部首補充
-㞁	kuap	中日韓兼容表意文字補充
-瘝	kwle	中日韓兼容表意文字
-奄	kwu	中日韓兼容表意文字
-⼁	l	康熙部首
-㇑	l	中日韓筆畫
-㇓	l	中日韓筆畫
-褐	lapv	中日韓兼容表意文字
-⼱	lb	康熙部首
-帽	lbabu	中日韓兼容表意文字補充
-㡢	lbaws	中日韓兼容表意文字補充
-帨	lbcru	中日韓兼容表意文字補充
-幩	lbjtc	中日韓兼容表意文字補充
-⽱	lbmi	康熙部首
-𢆃	lbtye	中日韓兼容表意文字補充
-⺌	lc	中日韓部首補充
-裞	lcru	中日韓兼容表意文字補充
-懶	ldlc	中日韓兼容表意文字
-⾪	le	康熙部首
-書	lga	中日韓兼容表意文字補充
-蝹	liabt	中日韓兼容表意文字補充
-蟡	libhf	中日韓兼容表意文字補充
-䗗	lihmj	中日韓兼容表意文字補充
-蜎	liib	中日韓兼容表意文字補充
-蝫	lijka	中日韓兼容表意文字補充
-⺦	lim	中日韓部首補充
-蚈	limjj	中日韓兼容表意文字補充
-⻔	lis	中日韓部首補充
-螆	litvi	中日韓兼容表意文字補充
-䗹	litvp	中日韓兼容表意文字補充
-蠟	livvv	中日韓兼容表意文字
-蝹	liwot	中日韓兼容表意文字
-螺	liwvf	中日韓兼容表意文字
-蛢	liyjj	中日韓兼容表意文字補充
-蜨	liyso	中日韓兼容表意文字補充
-裺	lkhu	中日韓兼容表意文字補充
-串	ll	中日韓兼容表意文字
-牐	llhjl	中日韓兼容表意文字補充
-⽚	llml	康熙部首
-⽚	llmn	康熙部首
-⺊	lm	中日韓部首補充
-⺻	lm	中日韓部首補充
-㇄	lm	中日韓筆畫
-㇗	lm	中日韓筆畫
-㇘	lm	中日韓筆畫
-将	lmbdi	中日韓兼容表意文字補充
-壮	lmg	中日韓兼容表意文字補充
-⾍	lmi	康熙部首
-北	lmp	中日韓兼容表意文字
-北	lmp	中日韓兼容表意文字補充
-⾮	lmsy	康熙部首
-𧙧	lmt	中日韓兼容表意文字補充
-艹	lmy	中日韓兼容表意文字
-⻀	lmy	中日韓部首補充
-⼍	ln	康熙部首
-⾾	ln	康熙部首
-⺉	ln	中日韓部首補充
-㇁	ln	中日韓筆畫
-襁	lnii	中日韓兼容表意文字
-䘵	lnme	中日韓兼容表意文字補充
-冀	lpwtc	中日韓兼容表意文字
-⾀	lq	康熙部首
-⼌	ls	康熙部首
-⺆	ls	中日韓部首補充
-⾲	lsmm	康熙部首
-襤	lsmt	中日韓兼容表意文字
-㠯	lss	中日韓兼容表意文字補充
-⼉	lu	康熙部首
-㇂	lv	中日韓筆畫
-數	lvok	中日韓兼容表意文字
-裸	lwd	中日韓兼容表意文字
-裡	lwg	中日韓兼容表意文字
-叟	lwle	中日韓兼容表意文字補充
-𤰶	lwll	中日韓兼容表意文字補充
-𢆟	lwyjj	中日韓兼容表意文字補充
-裗	lyiv	中日韓兼容表意文字補充
-⼀	m	康熙部首
-㇀	m	中日韓筆畫
-㇐	m	中日韓筆畫
-鄑	manl	中日韓兼容表意文字補充
-𩅅	mbett	中日韓兼容表意文字補充
-覆	mbhoe	中日韓兼容表意文字
-霣	mbibc	中日韓兼容表意文字補充
-勵	mbks	中日韓兼容表意文字
-⽽	mbll	康熙部首
-⻚	mbo	中日韓部首補充
-零	mboml	中日韓兼容表意文字
-露	mbrmr	中日韓兼容表意文字
-靈	mbrro	中日韓兼容表意文字
-⾴	mbuc	康熙部首
-𠄢	mbvm	中日韓兼容表意文字補充
-雷	mbw	中日韓兼容表意文字
-祖	mcbm	中日韓兼容表意文字補充
-⻄	mcw	中日韓部首補充
-⾣	mcwm	康熙部首
-不	mf	中日韓兼容表意文字
-灰	mf	中日韓兼容表意文字補充
-禍	mfbbr	中日韓兼容表意文字
-祖	mfbm	中日韓兼容表意文字
-視	mfbuu	中日韓兼容表意文字
-社	mfg	中日韓兼容表意文字
-祈	mfhml	中日韓兼容表意文字
-祐	mfkr	中日韓兼容表意文字
-神	mflwl	中日韓兼容表意文字
-福	mfmrw	中日韓兼容表意文字
-祝	mfrhu	中日韓兼容表意文字
-祥	mftq	中日韓兼容表意文字
-禮	mftwt	中日韓兼容表意文字
-礼	mfu	中日韓兼容表意文字
-祿	mfvne	中日韓兼容表意文字
-禎	mfybc	中日韓兼容表意文字
-祉	mfylm	中日韓兼容表意文字
-王	mg	中日韓兼容表意文字補充
-⺩	mg	中日韓部首補充
-再	mgb	中日韓兼容表意文字補充
-玥	mgb	中日韓兼容表意文字補充
-璘	mgfdq	中日韓兼容表意文字
-㺬	mghni	中日韓兼容表意文字補充
-⽟	mgi	康熙部首
-瑱	mgjbc	中日韓兼容表意文字
-琢	mgmso	中日韓兼容表意文字
-瓊	mgnwe	中日韓兼容表意文字補充
-玲	mgoml	中日韓兼容表意文字
-瑜	mgomv	中日韓兼容表意文字補充
-瑱	mgpbc	中日韓兼容表意文字補充
-瑇	mgqmh	中日韓兼容表意文字補充
-弄	mgt	中日韓兼容表意文字
-璅	mgvvd	中日韓兼容表意文字補充
-理	mgwg	中日韓兼容表意文字
-琉	mgyiu	中日韓兼容表意文字
-璉	mgyjj	中日韓兼容表意文字
-⼚	mh	康熙部首
-⺂	mh	中日韓部首補充
-㇇	mh	中日韓筆畫
-㇖	mh	中日韓筆畫
-曆	mhda	中日韓兼容表意文字
-歷	mhdm	中日韓兼容表意文字
-𤘈	mhhx	中日韓兼容表意文字補充
-⾄	mig	康熙部首
-䂖	mir	中日韓兼容表意文字補充
-⼲	mj	康熙部首
-㿼	mjbt	中日韓兼容表意文字補充
-㍻	mjihs	中日韓兼容符號
-鳽	mjmjf	中日韓兼容表意文字補充
-雃	mjmjg	中日韓兼容表意文字補充
-形	mjmjh	中日韓兼容表意文字補充
-㼛	mjmjn	中日韓兼容表意文字補充
-揅	mjq	中日韓兼容表意文字補充
-⽆	mku	康熙部首
-㇕	ml	中日韓筆畫
-兩	mlbo	中日韓兼容表意文字
-⾬	mlby	康熙部首
-⻗	mlby	中日韓部首補充
-⻃	mllw	中日韓部首補充
-⼯	mlm	康熙部首
-画	mluw	中日韓兼容表意文字
-更	mlwk	中日韓兼容表意文字
-⼆	mm	康熙部首
-晉	mma	中日韓兼容表意文字補充
-麗	mmbbp	中日韓兼容表意文字
-丽	mmbmb	中日韓兼容表意文字補充
-⽰	mmf	康熙部首
-⺬	mmf	中日韓部首補充
-戛	mmi	中日韓兼容表意文字補充
-辰	mmmo	中日韓兼容表意文字
-⾠	mmmv	康熙部首
-惡	mmp	中日韓兼容表意文字
-况	mmrhu	中日韓兼容表意文字
-况	mmrhu	中日韓兼容表意文字補充
-𥁄	mmst	中日韓兼容表意文字補充
-殟	mnabt	中日韓兼容表意文字補充
-烈	mnf	中日韓兼容表意文字
-型	mng	中日韓兼容表意文字補充
-歹	mni	中日韓兼容表意文字
-⽍	mni	康熙部首
-列	mnln	中日韓兼容表意文字
-殮	mnomo	中日韓兼容表意文字
-裂	mnyhv	中日韓兼容表意文字
-乁	mo	中日韓兼容表意文字補充
-㇝	mo	中日韓筆畫
-甤	mohqm	中日韓兼容表意文字補充
-𧢮	mpbuu	中日韓兼容表意文字補充
-⽯	mr	康熙部首
-䃣	mrbhf	中日韓兼容表意文字補充
-⿀	mrbj	康熙部首
-磻	mrhdw	中日韓兼容表意文字
-碑	mrhwj	中日韓兼容表意文字
-磌	mrjbc	中日韓兼容表意文字
-磌	mrjbc	中日韓兼容表意文字補充
-硎	mrmjn	中日韓兼容表意文字補充
-磊	mrmrr	中日韓兼容表意文字
-礪	mrmtb	中日韓兼容表意文字
-碌	mrnme	中日韓兼容表意文字補充
-𥐝	mrpm	中日韓兼容表意文字補充
-⾖	mrt	康熙部首
-碌	mrvne	中日韓兼容表意文字
-硫	mryiu	中日韓兼容表意文字
-辞	mrytj	中日韓兼容表意文字補充
-⾗	msho	康熙部首
-𩒖	mtmbc	中日韓兼容表意文字補充
-兀	mu	中日韓兼容表意文字
-⺎	mu	中日韓部首補充
-⾑	mub	康熙部首
-頋	mumbc	中日韓兼容表意文字
-䪲	mumbc	中日韓兼容表意文字補充
-頋	mumbc	中日韓兼容表意文字補充
-頋	mumbc	中日韓兼容表意文字補充
-⼕	mv	康熙部首
-⼖	mv	康熙部首
-⽛	mvdh	康熙部首
-⺛	mvku	中日韓部首補充
-⽡	mvni	康熙部首
-賈	mwbuc	中日韓兼容表意文字
-栗	mwd	中日韓兼容表意文字
-酪	mwher	中日韓兼容表意文字
-醙	mwhxe	中日韓兼容表意文字
-⾯	mwsl	康熙部首
-醴	mwtwt	中日韓兼容表意文字
-𩈚	mwyjj	中日韓兼容表意文字補充
-龎	mybl	中日韓兼容表意文字
-⼅	n	康熙部首
-⼸	n	康熙部首
-㇚	n	中日韓筆畫
-⾊	nau	康熙部首
-⾓	nbg	康熙部首
-勇	nbks	中日韓兼容表意文字
-⻇	nboo	中日韓部首補充
-⻆	nbq	中日韓部首補充
-⼩	nc	康熙部首
-⼦	nd	康熙部首
-鱗	nffdq	中日韓兼容表意文字
-及	nhe	中日韓兼容表意文字補充
-⼣	ni	康熙部首
-⽭	ninh	康熙部首
-多	nini	中日韓兼容表意文字補充
-⾇	niq	康熙部首
-⽨	niyo	康熙部首
-⼜	nk	康熙部首
-⻏	nl	中日韓部首補充
-⻖	nl	中日韓部首補充
-隣	nlfdq	中日韓兼容表意文字
-陵	nlgce	中日韓兼容表意文字
-陸	nlgcg	中日韓兼容表意文字
-隆	nlheg	中日韓兼容表意文字
-降	nlheq	中日韓兼容表意文字
-䧦	nlikf	中日韓兼容表意文字補充
-陼	nljka	中日韓兼容表意文字
-陋	nlmbv	中日韓兼容表意文字
-阮	nlmmu	中日韓兼容表意文字
-⼹	nmm	康熙部首
-了	nn	中日韓兼容表意文字
-㇆	nn	中日韓筆畫
-㇋	nn	中日韓筆畫
-㇎	nn	中日韓筆畫
-⼵	nnk	康熙部首
-⽋	no	康熙部首
-⻜	no	中日韓部首補充
-𠭣	noe	中日韓兼容表意文字補充
-墬	nog	中日韓兼容表意文字補充
-⾶	nohto	康熙部首
-㇌	ns	中日韓筆畫
-㇡	ns	中日韓筆畫
-豕	nsho	中日韓兼容表意文字補充
-⼄	nu	康熙部首
-㇠	nu	中日韓筆畫
-弢	nue	中日韓兼容表意文字補充
-勉	nuks	中日韓兼容表意文字
-勉	nuks	中日韓兼容表意文字補充
-弢	numk	中日韓兼容表意文字補充
-⺄	nv	中日韓部首補充
-⻠	nv	中日韓部首補充
-㇅	nv	中日韓筆畫
-㇈	nv	中日韓筆畫
-㇊	nv	中日韓筆畫
-㇍	nv	中日韓筆畫
-⻢	nvsm	中日韓部首補充
-⿻	nvwm	表意文字描述字符
-⿂	nwf	康熙部首
-魯	nwfa	中日韓兼容表意文字
-勇	nwks	中日韓兼容表意文字補充
-⻲	nwlu	中日韓部首補充
-⻥	nwm	中日韓部首補充
-⻳	nwu	中日韓部首補充
-龜	nxu	中日韓兼容表意文字
-龜	nxu	中日韓兼容表意文字
-⿔	nxu	康熙部首
-⺪	nylm	中日韓部首補充
-⽦	nyo	康熙部首
-⼈	o	康熙部首
-㇏	o	中日韓筆畫
-內	ob	中日韓兼容表意文字補充
-⾁	obo	康熙部首
-侻	ocru	中日韓兼容表意文字補充
-僧	ocwa	中日韓兼容表意文字
-僧	ocwa	中日韓兼容表意文字補充
-⾫	og	康熙部首
-⼊	oh	康熙部首
-侀	ohjn	中日韓兼容表意文字
-偺	ohya	中日韓兼容表意文字補充
-⻟	oiai	中日韓部首補充
-⻞	oias	中日韓部首補充
-⾷	oiav	康熙部首
-⻝	oiav	中日韓部首補充
-䬳	oifq	中日韓兼容表意文字補充
-飢	oilu	中日韓兼容表意文字補充
-念	oinp	中日韓兼容表意文字
-⺮	oioi	中日韓部首補充
-餩	oioyo	中日韓兼容表意文字補充
-什	oj	中日韓兼容表意文字
-敏	ojok	中日韓兼容表意文字補充
-⽸	oju	康熙部首
-⽮	ok	康熙部首
-⺙	ok	中日韓部首補充
-僚	okcf	中日韓兼容表意文字
-㺸	okmg	中日韓兼容表意文字補充
-㺸	okmgi	中日韓兼容表意文字補充
-繁	okvif	中日韓兼容表意文字
-絛	olhef	中日韓兼容表意文字
-領	olmbc	中日韓兼容表意文字
-愈	ombp	中日韓兼容表意文字
-全	omg	中日韓兼容表意文字
-便	omlk	中日韓兼容表意文字
-⽓	omn	康熙部首
-例	omnn	中日韓兼容表意文字
-⻐	omp	中日韓部首補充
-⿕	omrb	康熙部首
-令	omsl	中日韓兼容表意文字
-像	onbo	中日韓兼容表意文字補充
-㔕	onks	中日韓兼容表意文字補充
-仌	oo	中日韓兼容表意文字補充
-你	oof	中日韓兼容表意文字補充
-倫	oomb	中日韓兼容表意文字
-侮	oowj	中日韓兼容表意文字補充
-侮	oowy	中日韓兼容表意文字
-年	oq	中日韓兼容表意文字
-鼅	orbus	中日韓兼容表意文字補充
-舘	orjrr	中日韓兼容表意文字
-鼅	orrxu	中日韓兼容表意文字補充
-館	osjrr	中日韓兼容表意文字
-飯	osme	中日韓兼容表意文字
-飼	ossmr	中日韓兼容表意文字
-備	otmb	中日韓兼容表意文字補充
-㒞	ougs	中日韓兼容表意文字補充
-𦈨	oumjj	中日韓兼容表意文字補充
-𦉇	ousyj	中日韓兼容表意文字補充
-缾	ouyjj	中日韓兼容表意文字
-㇃	ov	中日韓筆畫
-𪃎	ovhaf	中日韓兼容表意文字補充
-倂	oyjj	中日韓兼容表意文字補充
-𣫺	oykib	中日韓兼容表意文字補充
-敏	oyok	中日韓兼容表意文字
-⼼	p	康熙部首
-𣊸	pavnb	中日韓兼容表意文字補充
-惘	pbtv	中日韓兼容表意文字
-眞	pbvc	中日韓兼容表意文字補充
-㒹	pcpbc	中日韓兼容表意文字補充
-憎	pcwa	中日韓兼容表意文字
-憎	pcwa	中日韓兼容表意文字
-憎	pcwa	中日韓兼容表意文字補充
-懶	pdlc	中日韓兼容表意文字補充
-𢛔	pdwf	中日韓兼容表意文字補充
-憐	pfdq	中日韓兼容表意文字
-慠	pgsk	中日韓兼容表意文字
-𢡄	phka	中日韓兼容表意文字
-𢡊	phkp	中日韓兼容表意文字
-慨	phsu	中日韓兼容表意文字
-勺	pi	中日韓兼容表意文字
-悁	pib	中日韓兼容表意文字補充
-㤜	pihm	中日韓兼容表意文字補充
-慎	pjbc	中日韓兼容表意文字
-駂	pjsqf	中日韓兼容表意文字補充
-憤	pjtc	中日韓兼容表意文字補充
-慎	pjuc	中日韓兼容表意文字補充
-𠣞	pjwj	中日韓兼容表意文字補充
-匆	pkk	中日韓兼容表意文字補充
-懞	plbo	中日韓兼容表意文字補充
-慺	pllv	中日韓兼容表意文字補充
-勺	pm	中日韓兼容表意文字補充
-忹	pmg	中日韓兼容表意文字補充
-慄	pmwd	中日韓兼容表意文字
-⻓	po	中日韓部首補充
-怜	poml	中日韓兼容表意文字
-悔	powj	中日韓兼容表意文字補充
-悔	powy	中日韓兼容表意文字
-⽐	pp	康熙部首
-句	pr	中日韓兼容表意文字
-切	psh	中日韓兼容表意文字
-包	psu	中日韓兼容表意文字補充
-慌	ptvu	中日韓兼容表意文字補充
-慌	ptyu	中日韓兼容表意文字補充
-惇	pysd	中日韓兼容表意文字補充
-⻦	pysm	中日韓部首補充
-㤺	pyvu	中日韓兼容表意文字補充
-⼿	q	康熙部首
-撝	qbhf	中日韓兼容表意文字補充
-撚	qbkf	中日韓兼容表意文字
-⽾	qd	康熙部首
-𦔣	qdish	中日韓兼容表意文字補充
-𢬌	qhie	中日韓兼容表意文字補充
-契	qhk	中日韓兼容表意文字
-揤	qhpl	中日韓兼容表意文字補充
-㨮	qhsn	中日韓兼容表意文字補充
-搜	qhxe	中日韓兼容表意文字
-捐	qib	中日韓兼容表意文字補充
-拔	qike	中日韓兼容表意文字補充
-𢯱	qjfe	中日韓兼容表意文字補充
-寿	qkdi	中日韓兼容表意文字補充
-掩	qkhu	中日韓兼容表意文字補充
-憯	qkua	中日韓兼容表意文字補充
-⾭	qmb	康熙部首
-⻘	qmb	中日韓部首補充
-⾭	qmblm	康熙部首
-搢	qmca	中日韓兼容表意文字補充
-⻨	qme	中日韓部首補充
-扝	qmjs	中日韓兼容表意文字補充
-拓	qmr	中日韓兼容表意文字
-摾	qnri	中日韓兼容表意文字補充
-捨	qogr	中日韓兼容表意文字補充
-捻	qoip	中日韓兼容表意文字
-輦	qojwj	中日韓兼容表意文字
-揄	qomn	中日韓兼容表意文字
-拾	qomr	中日韓兼容表意文字
-志	qp	中日韓兼容表意文字補充
-抱	qpsu	中日韓兼容表意文字補充
-⻙	qs	中日韓部首補充
-挽	qshu	中日韓兼容表意文字補充
-掃	qsmb	中日韓兼容表意文字補充
-敖	qsok	中日韓兼容表意文字
-摒	qsyj	中日韓兼容表意文字
-摷	qvvd	中日韓兼容表意文字補充
-㩬	qyci	中日韓兼容表意文字補充
-拼	qyjj	中日韓兼容表意文字補充
-擄	qyps	中日韓兼容表意文字
-掠	qyrf	中日韓兼容表意文字
-拉	qyt	中日韓兼容表意文字
-⼝	r	康熙部首
-嗢	rabt	中日韓兼容表意文字
-喝	rapp	中日韓兼容表意文字
-喝	rapv	中日韓兼容表意文字
-⾢	rau	康熙部首
-嗂	rbou	中日韓兼容表意文字補充
-喳	rdbm	中日韓兼容表意文字補充
-喇	rdln	中日韓兼容表意文字
-噑	rhaj	中日韓兼容表意文字補充
-吆	rhi	中日韓兼容表意文字補充
-呂	rhr	中日韓兼容表意文字
-噴	rjtc	中日韓兼容表意文字補充
-⻪	rlwu	中日韓部首補充
-呈	rmg	中日韓兼容表意文字補充
-路	rmher	中日韓兼容表意文字
-跋	rmike	中日韓兼容表意文字補充
-趼	rmmjj	中日韓兼容表意文字補充
-咞	rmt	中日韓兼容表意文字補充
-跰	rmyjj	中日韓兼容表意文字補充
-吸	rnhe	中日韓兼容表意文字補充
-喙	rnmo	中日韓兼容表意文字
-喙	rnmo	中日韓兼容表意文字補充
-啣	roul	中日韓兼容表意文字補充
-叱	rp	中日韓兼容表意文字補充
-啕	rpov	中日韓兼容表意文字
-喫	rqhk	中日韓兼容表意文字補充
-鷺	rrhaf	中日韓兼容表意文字
-器	rrikr	中日韓兼容表意文字
-咢	rrmjs	中日韓兼容表意文字補充
-嘆	rtao	中日韓兼容表意文字補充
-嘆	rtlo	中日韓兼容表意文字
-哶	rtq	中日韓兼容表意文字補充
-⺒	ru	中日韓部首補充
-巽	rutc	中日韓兼容表意文字補充
-叫	rvl	中日韓兼容表意文字補充
-⺠	rvp	中日韓部首補充
-咽	rwk	中日韓兼容表意文字
-黾	rwu	中日韓兼容表意文字補充
-⿌	rxu	康熙部首
-⻊	rylm	中日韓部首補充
-⾜	ryo	康熙部首
-⼫	s	康熙部首
-層	scwa	中日韓兼容表意文字
-尿	se	中日韓兼容表意文字
-䵖	sehde	中日韓兼容表意文字補充
-犀	sehq	中日韓兼容表意文字補充
-駾	sfcru	中日韓兼容表意文字補充
-駱	sfher	中日韓兼容表意文字
-驪	sfmmp	中日韓兼容表意文字
-⼑	sh	康熙部首
-兔	shahi	中日韓兼容表意文字補充
-免	shahu	中日韓兼容表意文字補充
-免	shau	中日韓兼容表意文字
-戮	shi	中日韓兼容表意文字
-鬒	shjbc	中日韓兼容表意文字
-鬒	shjbc	中日韓兼容表意文字補充
-𡬘	shjtu	中日韓兼容表意文字補充
-𩬰	shmhn	中日韓兼容表意文字補充
-履	shoe	中日韓兼容表意文字
-⾽	sihhh	康熙部首
-⽿	sj	康熙部首
-聰	sjhwp	中日韓兼容表意文字補充
-屠	sjka	中日韓兼容表意文字補充
-聆	sjoml	中日韓兼容表意文字
-聯	sjvit	中日韓兼容表意文字
-聠	sjyjj	中日韓兼容表意文字補充
-刃	sk	中日韓兼容表意文字補充
-忍	skp	中日韓兼容表意文字補充
-⼙	sl	康熙部首
-屢	sllv	中日韓兼容表意文字
-臨	slorr	中日韓兼容表意文字
-⾂	slsl	康熙部首
-⺕	sm	中日韓部首補充
-㣇	smhhb	中日韓兼容表意文字補充
-⻒	smi	中日韓部首補充
-⽻	smsim	康熙部首
-羽	smsmm	中日韓兼容表意文字
-⾧	smv	康熙部首
-⻑	smv	中日韓部首補充
-𣪍	snhne	中日韓兼容表意文字補充
-⾺	sqsf	康熙部首
-匿	stkr	中日韓兼容表意文字
-⼰	su	康熙部首
-⺋	su	中日韓部首補充
-𤋮	suf	中日韓兼容表意文字
-邔	sunl	中日韓兼容表意文字補充
-莭	tail	中日韓兼容表意文字補充
-𦳕	tajt	中日韓兼容表意文字補充
-藺	tang	中日韓兼容表意文字
-䕡	tanr	中日韓兼容表意文字補充
-蘭	tanw	中日韓兼容表意文字
-荣	tbd	中日韓兼容表意文字補充
-菜	tbd	中日韓兼容表意文字補充
-劳	tbks	中日韓兼容表意文字補充
-益	tcbt	中日韓兼容表意文字
-⿋	tcfb	康熙部首
-㭉	td	中日韓兼容表意文字補充
-落	tehr	中日韓兼容表意文字
-𦼬	temt	中日韓兼容表意文字補充
-蓱	teyj	中日韓兼容表意文字補充
-⺷	tg	中日韓部首補充
-菱	tgce	中日韓兼容表意文字
-𦰶	tgpr	中日韓兼容表意文字補充
-善	tgtr	中日韓兼容表意文字補充
-羕	tgye	中日韓兼容表意文字補充
-⾸	thbu	康熙部首
-䕝	thdb	中日韓兼容表意文字補充
-蘒	thdu	中日韓兼容表意文字
-菧	tihp	中日韓兼容表意文字補充
-芝	tino	中日韓兼容表意文字補充
-著	tjka	中日韓兼容表意文字
-著	tjka	中日韓兼容表意文字補充
-勒	tjks	中日韓兼容表意文字
-苦	tjr	中日韓兼容表意文字補充
-䩮	tjsme	中日韓兼容表意文字補充
-䩶	tjumi	中日韓兼容表意文字補充
-若	tkr	中日韓兼容表意文字
-若	tkr	中日韓兼容表意文字補充
-莽	tkt	中日韓兼容表意文字補充
-𧏊	tlii	中日韓兼容表意文字補充
-⾰	tlj	康熙部首
-⻩	tlwc	中日韓部首補充
-⽢	tm	康熙部首
-𦵫	tmbf	中日韓兼容表意文字補充
-芋	tmd	中日韓兼容表意文字補充
-黹	tmfb	中日韓兼容表意文字補充
-⺸	tmj	中日韓部首補充
-勤	tmks	中日韓兼容表意文字
-勤	tmks	中日韓兼容表意文字補充
-⿈	tmlc	康熙部首
-華	tmtj	中日韓兼容表意文字
-芽	tmvh	中日韓兼容表意文字補充
-䔫	tnmb	中日韓兼容表意文字補充
-茶	tod	中日韓兼容表意文字
-𦬼	tof	中日韓兼容表意文字補充
-蕤	tohqm	中日韓兼容表意文字補充
-難	toog	中日韓兼容表意文字
-難	toog	中日韓兼容表意文字
-花	top	中日韓兼容表意文字補充
-菊	tpfd	中日韓兼容表意文字補充
-葉	tptd	中日韓兼容表意文字
-⽺	tq	康熙部首
-⺶	tq	中日韓部首補充
-着	tqbu	中日韓兼容表意文字
-羚	tqoml	中日韓兼容表意文字
-𦾱	tqvd	中日韓兼容表意文字補充
-茣	trmk	中日韓兼容表意文字補充
-敬	trok	中日韓兼容表意文字補充
-𠔥	tsf	中日韓兼容表意文字補充
-茝	tsll	中日韓兼容表意文字補充
-蓼	tsmh	中日韓兼容表意文字
-藍	tsmt	中日韓兼容表意文字
-芑	tsu	中日韓兼容表意文字補充
-蓳	ttlm	中日韓兼容表意文字補充
-並	ttm	中日韓兼容表意文字
-善	ttr	中日韓兼容表意文字補充
-𧃒	tvfv	中日韓兼容表意文字補充
-甆	tvin	中日韓兼容表意文字
-慈	tvip	中日韓兼容表意文字補充
-菉	tvne	中日韓兼容表意文字
-荒	tvou	中日韓兼容表意文字
-菌	twhd	中日韓兼容表意文字補充
-蘿	twlg	中日韓兼容表意文字
-夢	twln	中日韓兼容表意文字補充
-䕫	tyce	中日韓兼容表意文字補充
-蓮	tyjj	中日韓兼容表意文字
-荓	tyjj	中日韓兼容表意文字補充
-蔖	typm	中日韓兼容表意文字補充
-蘆	typt	中日韓兼容表意文字
-⼭	u	康熙部首
-屮	uh	中日韓兼容表意文字補充
-⼔	uh	康熙部首
-⼬	uh	康熙部首
-嵐	uhni	中日韓兼容表意文字
-⾿	uip	康熙部首
-炭	ukf	中日韓兼容表意文字補充
-屮	ul	中日韓兼容表意文字
-屮	ul	中日韓兼容表意文字補充
-⼬	ul	康熙部首
-峀	ulw	中日韓兼容表意文字補充
-岍	umjj	中日韓兼容表意文字補充
-蚩	umli	中日韓兼容表意文字補充
-蚩	umlmi	中日韓兼容表意文字補充
-豈	umrt	中日韓兼容表意文字
-嶲	uogs	中日韓兼容表意文字補充
-嶺	uolc	中日韓兼容表意文字
-崙	uomb	中日韓兼容表意文字
-嵮	upbc	中日韓兼容表意文字補充
-𡷤	urvk	中日韓兼容表意文字補充
-嵫	utvi	中日韓兼容表意文字補充
-⾋	uu	康熙部首
-芳	uuyhs	中日韓兼容表意文字補充
-𡴋	uwyi	中日韓兼容表意文字補充
-嵃	uyhh	中日韓兼容表意文字補充
-嵼	uyhm	中日韓兼容表意文字補充
-女	v	中日韓兼容表意文字
-⼥	v	康熙部首
-㇙	v	中日韓筆畫
-娧	vcru	中日韓兼容表意文字補充
-嬾	vdlc	中日韓兼容表意文字補充
-嬾	vdlc	中日韓兼容表意文字補充
-鄛	vdnl	中日韓兼容表意文字補充
-怒	vep	中日韓兼容表意文字
-拏	veq	中日韓兼容表意文字
-縂	vfcrp	中日韓兼容表意文字補充
-練	vfdw	中日韓兼容表意文字
-練	vfdwf	中日韓兼容表意文字
-練	vfdwf	中日韓兼容表意文字
-綾	vfgce	中日韓兼容表意文字
-鸞	vfhaf	中日韓兼容表意文字
-變	vfhe	中日韓兼容表意文字補充
-縷	vfllv	中日韓兼容表意文字
-縉	vfmca	中日韓兼容表意文字
-䌁	vfmwv	中日韓兼容表意文字補充
-紐	vfng	中日韓兼容表意文字
-綠	vfnve	中日韓兼容表意文字
-戀	vfp	中日韓兼容表意文字
-紀	vfsu	中日韓兼容表意文字補充
-緇	vfvmw	中日韓兼容表意文字補充
-𥾆	vfvu	中日韓兼容表意文字補充
-繅	vfvvd	中日韓兼容表意文字補充
-絣	vfyjj	中日韓兼容表意文字補充
-䌴	vfyqq	中日韓兼容表意文字補充
-嬈	vggn	中日韓兼容表意文字補充
-⼛	vi	康熙部首
-⼳	vi	康熙部首
-⺓	vi	中日韓部首補充
-樂	vid	中日韓兼容表意文字
-樂	vid	中日韓兼容表意文字
-樂	vid	中日韓兼容表意文字
-⽷	vif	康熙部首
-⺯	vif	中日韓部首補充
-㛮	vjce	中日韓兼容表意文字補充
-𡛪	vkuh	中日韓兼容表意文字補充
-凵	vl	中日韓兼容表意文字補充
-⼐	vl	康熙部首
-⺃	vl	中日韓部首補充
-㇟	vl	中日韓筆畫
-蠁	vllmi	中日韓兼容表意文字補充
-響	vlyta	中日韓兼容表意文字
-響	vlyta	中日韓兼容表意文字
-㇜	vm	中日韓筆畫
-災	vmf	中日韓兼容表意文字補充
-𦇚	vmftf	中日韓兼容表意文字補充
-狀	vmik	中日韓兼容表意文字
-㛼	vmjx	中日韓兼容表意文字補充
-⽙	vml	康熙部首
-甾	vmw	中日韓兼容表意文字補充
-㇞	vn	中日韓筆畫
-⺔	vnm	中日韓部首補充
-𡚨	vp	中日韓兼容表意文字補充
-娛	vrvk	中日韓兼容表意文字補充
-㇉	vs	中日韓筆畫
-姬	vsll	中日韓兼容表意文字補充
-婦	vsmb	中日韓兼容表意文字補充
-嬨	vtvp	中日韓兼容表意文字
-巢	vvhxd	中日韓兼容表意文字補充
-⺰	vvm	中日韓部首補充
-⻡	vvmbu	中日韓部首補充
-⼮	vvv	康熙部首
-婢	vwhj	中日韓兼容表意文字
-姘	vyjj	中日韓兼容表意文字補充
-⽥	w	康熙部首
-⿵	wb	表意文字描述字符
-㱎	wfno	中日韓兼容表意文字補充
-里	wg	中日韓兼容表意文字
-⾥	wg	康熙部首
-⿊	wgf	康熙部首
-墨	wgfg	中日韓兼容表意文字
-略	wher	中日韓兼容表意文字
-圗	wiyw	中日韓兼容表意文字補充
-⽏	wj	康熙部首
-⿰	wl	表意文字描述字符
-𥄳	wle	中日韓兼容表意文字補充
-署	wljka	中日韓兼容表意文字
-⺫	wll	中日韓部首補充
-⺲	wll	中日韓部首補充
-⿲	wll	表意文字描述字符
-䍙	wlowy	中日韓兼容表意文字補充
-罹	wlpog	中日韓兼容表意文字
-羅	wlvfg	中日韓兼容表意文字
-𦌾	wlvfv	中日韓兼容表意文字補充
-罺	wlvvd	中日韓兼容表意文字補充
-⿸	wml	表意文字描述字符
-〾	wmq	表意文字描述字符
-⿹	wn	表意文字描述字符
-囹	woml	中日韓兼容表意文字
-〾	woq	表意文字描述字符
-⿴	wr	表意文字描述字符
-圖	wrjw	中日韓兼容表意文字補充
-⿷	ws	表意文字描述字符
-異	wtc	中日韓兼容表意文字
-異	wtc	中日韓兼容表意文字補充
-𤲒	wtt	中日韓兼容表意文字補充
-⿶	wu	表意文字描述字符
-⿺	wv	表意文字描述字符
-累	wvif	中日韓兼容表意文字
-⿻	ww	表意文字描述字符
-壘	wwwg	中日韓兼容表意文字
-貫	wybuc	中日韓兼容表意文字補充
-⺟	wyi	中日韓部首補充
-㇣	xxxxx	中日韓筆畫
-⼘	y	康熙部首
-望	ybhg	中日韓兼容表意文字
-望	ybmg	中日韓兼容表意文字補充
-離	ybog	中日韓兼容表意文字
-龍	ybysp	中日韓兼容表意文字
-⿓	ybysp	康熙部首
-六	yc	中日韓兼容表意文字
-歔	ycno	中日韓兼容表意文字補充
-𣀊	ycok	中日韓兼容表意文字補充
-⽁	ye	康熙部首
-虧	ygmjs	中日韓兼容表意文字補充
-⼴	yh	康熙部首
-頻	yhmbc	中日韓兼容表意文字
-頻	yhmbc	中日韓兼容表意文字
-⽅	yhs	康熙部首
-⾐	yhv	康熙部首
-𨗭	yhxg	中日韓兼容表意文字補充
-育	yib	中日韓兼容表意文字補充
-充	yihu	中日韓兼容表意文字
-𠘺	yihu	中日韓兼容表意文字補充
-率	yioj	中日韓兼容表意文字
-率	yioj	中日韓兼容表意文字
-⽃	yj	康熙部首
-贛	yjhec	中日韓兼容表意文字補充
-連	yjwj	中日韓兼容表意文字
-頩	yjyjc	中日韓兼容表意文字補充
-鵧	yjyjf	中日韓兼容表意文字補充
-郱	yjyjl	中日韓兼容表意文字補充
-⽂	yk	康熙部首
-遼	ykcf	中日韓兼容表意文字
-⻬	ykll	中日韓部首補充
-吝	ykr	中日韓兼容表意文字
-⻫	yksl	中日韓部首補充
-⽌	ylm	康熙部首
-⺡	ym	中日韓部首補充
-𨗒	ymbg	中日韓兼容表意文字補充
-歲	ymihf	中日韓兼容表意文字補充
-剷	ymln	中日韓兼容表意文字補充
-⾔	ymmr	康熙部首
-𢌱	ymt	中日韓兼容表意文字補充
-𢌱	ymt	中日韓兼容表意文字補充
-⻭	ymufd	中日韓部首補充
-⻮	ymuo	中日韓部首補充
-⿒	ymuoo	康熙部首
-逸	ynai	中日韓兼容表意文字
-逸	ynai	中日韓兼容表意文字
-⺞	yni	中日韓部首補充
-⻍	yno	中日韓部首補充
-刻	yoln	中日韓兼容表意文字補充
-衣	yoo	中日韓兼容表意文字補充
-⾌	yp	康熙部首
-壟	ypg	中日韓兼容表意文字
-⻁	yphn	中日韓部首補充
-聾	ypsj	中日韓兼容表意文字
-虐	ypsm	中日韓兼容表意文字補充
-盧	ypwbt	中日韓兼容表意文字
-虜	ypwks	中日韓兼容表意文字
-虜	ypwks	中日韓兼容表意文字補充
-謁	yrapp	中日韓兼容表意文字
-謁	yrapv	中日韓兼容表意文字
-調	yrbgr	中日韓兼容表意文字
-⾼	yrbr	康熙部首
-亮	yrbu	中日韓兼容表意文字
-䛇	yrcr	中日韓兼容表意文字補充
-說	yrcru	中日韓兼容表意文字
-說	yrcru	中日韓兼容表意文字
-讀	yrgwc	中日韓兼容表意文字
-誠	yrihl	中日韓兼容表意文字補充
-諸	yrjka	中日韓兼容表意文字
-諸	yrjka	中日韓兼容表意文字
-䚾	yrmg	中日韓兼容表意文字補充
-𧥦	yrmms	中日韓兼容表意文字補充
-論	yromb	中日韓兼容表意文字
-諭	yromn	中日韓兼容表意文字
-諭	yromv	中日韓兼容表意文字補充
-請	yrqmb	中日韓兼容表意文字
-謹	yrtag	中日韓兼容表意文字
-諾	yrtkr	中日韓兼容表意文字
-諾	yrtkr	中日韓兼容表意文字
-謹	yrtlm	中日韓兼容表意文字
-識	yryia	中日韓兼容表意文字
-諒	yryrf	中日韓兼容表意文字
-遲	yseq	中日韓兼容表意文字
-旅	ysohv	中日韓兼容表意文字
-立	yt	中日韓兼容表意文字
-⽴	yt	康熙部首
-暜	yta	中日韓兼容表意文字補充
-⾳	yta	康熙部首
-⾟	ytj	康熙部首
-𥪧	ytjbc	中日韓兼容表意文字補充
-𥪧	ytpbc	中日韓兼容表意文字補充
-靖	ytqmb	中日韓兼容表意文字
-靖	ytqmb	中日韓兼容表意文字
-竮	ytsyj	中日韓兼容表意文字補充
-⻯	ytwu	中日韓部首補充
-𪘀	yuyjj	中日韓兼容表意文字補充
-變	yvfw	中日韓兼容表意文字
-巡	yvvv	中日韓兼容表意文字補充
-裏	ywgv	中日韓兼容表意文字
-⿄	ywii	康熙部首
-⻧	ywk	中日韓部首補充
-邏	ywlg	中日韓兼容表意文字
-⿑	yx	康熙部首
+a    ⽇
+a    ⽈
+a    ⿱
+aber    ㍾
+abjj    暈
+abu    冒
+abuu    㒻
+aikf    㬙
+aine    㫤
+aislf    䳭
+ajka    暑
+ajka    暑
+amwg    量
+an    ⾨
+anau    冕
+anmjj    開
+anrhr    閭
+anwot    𨵷
+anyjj    䦕
+aphh    易
+apsl    即
+aqmb    晴
+aqmb    晴
+asje    最
+asrr    ㍼
+atce    暴
+av    ⾉
+awot    㬈
+b    ⽉
+b    ⺝
+b    ⺼
+bbb    ⾻
+bbb    ⻣
+bbmm    𠕋
+bbomj    䯎
+bbu    亂
+bbul    鼏
+bbun    鼏
+bc    ⺳
+bccwa    贈
+bccwa    贈
+bcher    賂
+bcip    䐋
+bf    炙
+bfqv    媵
+bgf    瞧
+bham    𦞵
+bhhw    𦞧
+bhmjj    𧲨
+bhu    冗
+bhu    ⺴
+bhu    ⻅
+bim    ⺼
+bk    ⺱
+bkk    ⽹
+bkkhu    𦋙
+bks    肋
+blbu    䏙
+bll    ⺵
+bm    ⼞
+bmb    𣍟
+bmg    䏕
+bmm    ⺜
+bnau    脃
+bo    ⻉
+bob    肭
+bq    ⽤
+bqr    周
+brhhh    彫
+brxu    𣎜
+bshh    ⾘
+bshi    冤
+bt    ⽫
+bu    ⽬
+bu    ⿳
+buc    ⾙
+buce    朡
+buhu    見
+buhu    ⾒
+buib    睊
+buib    睊
+bukhu    䁆
+bukoo    䀹
+bukoo    䀹
+bumc    具
+bumf    𥄙
+bumjj    䀘
+bumms    𥃳
+buold    𥉉
+bupbc    瞋
+but    𥃲
+buvml    ⿍
+bvvv    臘
+bwhj    脾
+bwli    爵
+bwli    爵
+by    丹
+byso    𣎓
+c    金
+c    ⾦
+cdwf    鍊
+chn    ⺑
+chu    ⺏
+chxf    𨯺
+cib    鋗
+cike    鈸
+ck    ⽗
+ckua    鐕
+cmct    益
+cmjn    鉶
+cnri    鏹
+coml    鈴
+cor    ⾕
+crvk    鋘
+cvne    錄
+cyjj    鉼
+d    ⽊
+danw    欄
+dbbm    𣑭
+dbln    刺
+dbou    榣
+dcrl    㮝
+dcrl    㮝
+dd    林
+ddbm    楂
+deln    㓟
+dfle    隸
+dhal    櫛
+dhap    梎
+dhe    ⽪
+dhhl    柳
+dhpu    槪
+di    ⼨
+dijc    𣏕
+dijk    杖
+dl    𣏃
+dllv    樓
+dlmcf    𪈎
+dm    ⺘
+dmjj    枅
+dmoig    ㍿
+dmrq    ⾱
+dnd    李
+dng    杻
+dnsj    𦖨
+dnwa    櫓
+doni    ⿆
+doo    來
+dowj    梅
+dowy    梅
+dpm    杓
+dqthb    韛
+dqwtj    韠
+drks    柺
+dsm    𣏃
+dsmt    㰘
+dsu    杞
+dtgo    檨
+dvmw    椔
+dwtc    𣚣
+dyjj    栟
+e    ⽔
+eahr    𣽞
+eam    涅
+ebbb    滑
+ebmr    洞
+ebmu    滛
+ecd    梁
+ecsg    𣴞
+edd    淋
+egih    㴳
+eher    洛
+ehhv    派
+ehhw    溜
+ehnr    沿
+ehqr    浩
+ehsk    淚
+eiav    浪
+ejjb    潮
+ejka    渚
+ejtc    濆
+ekbn    𣲼
+ekce    𣻑
+ekhu    淹
+ekub    灊
+elbu    沈
+emef    𣾎
+emjj    汧
+emwg    湮
+enhh    溺
+enhi    汎
+eolf    㶖
+eomb    淪
+eomb    瀹
+eowj    海
+eowy    海
+epbc    滇
+eph    泌
+eqbd    瀞
+eqbd    瀞
+eqc    泍
+ervk    洖
+esmb    漏
+esme    浸
+esmt    濫
+esp    泥
+etao    漢
+etcu    港
+etlo    漢
+etvi    滋
+etvi    滋
+eyiu    流
+eyiu    流
+eyiv    流
+eyjj    漣
+eyjj    洴
+eypp    濾
+eyqv    瀛
+f    ⽕
+fanw    爛
+fd    ⽶
+fdamg    糧
+fdik    类
+fdilr    糖
+fdkua    糣
+fdmbc    類
+fdnri    糨
+fdqmb    精
+fdthb    糒
+fdwf    煉
+fdyj    料
+fdyt    粒
+ff    ⺢
+ffbks    勞
+ffbmi    瑩
+ffdq    燐
+ffto    𤎫
+ffypu    虩
+fhbu    省
+fher    烙
+fhks    劣
+fhwp    熜
+fi    ⺗
+fkcf    燎
+frse    煅
+fsm    当
+ft    灷
+fuitc    兤
+fvmw    𤉣
+fypt    爐
+g    ⼟
+gbhn    売
+gbmo    塚
+gbmo    塚
+gbtm    壷
+gdhne    穀
+gdhne    穀
+ghoc    𡓤
+gihn    城
+gihs    城
+gjrle    報
+gjtc    墳
+glnc    ⾚
+gnhne    殻
+gofbn    𠠄
+goomv    𧼯
+gosu    起
+goyjj    𧻓
+gpbv    埴
+grhne    嗀
+gsh    切
+gshi    堍
+gsyj    塀
+gtje    ⿎
+gyo    ⾛
+h    ⼃
+h    ⽵
+h    ㇒
+ha    ⽩
+haabt    馧
+had    ⾹
+haikf    𤾡
+hail    節
+hanj    𥳐
+hatbf    𤾸
+hayf    ⿃
+hbddf    爨
+hbfd    𥮫
+hbhf    䈧
+hbt    ⾎
+hbu    ⾃
+hbyi    ⾈
+hcln    劉
+hd    ⽲
+hdbsp    穏
+hdgce    稜
+hdhhh    彩
+hdhj    秊
+hdhpu    穊
+hdid    秫
+hdln    利
+hdmjj    䄯
+hdoe    ⿉
+he    ⼡
+he    ⼢
+heim    冬
+hf    爫
+hf    ⺣
+hf    ⺤
+hf    ⺥
+hfd    ⾤
+hg    ⺧
+hgher    珞
+hh    ⺁
+hhapl    卿
+hhh    ⼺
+hhhil    卿
+hhho    ⾡
+hhhpl    卿
+hhisl    𨜮
+hhoe    黎
+hhsl    節
+hhsli    卵
+hhw    留
+hi    ㇛
+hihc    簾
+hjr    ⾆
+hjsmm    翺
+hkp    懲
+hkp    懲
+hkp    懲
+hl    ⺅
+hlapp    齃
+hlg    堲
+hlo    ⽖
+hlu    𡷦
+hml    ⽄
+hmnd    築
+hn    ⼏
+hn    ⺇
+hn    ⺈
+hnd    梨
+hne    ⽎
+hnhli    ⾵
+hnid    𩖶
+hnk    ⻛
+ho    ⼋
+ho    ⼻
+hobmu    徭
+hodw    徚
+hokoo    㣣
+holq    律
+hommn    行
+hommn    ⾏
+hono    𣢧
+hooae    復
+hopcn    衠
+hp    𠨬
+hpmvu    旣
+hpsl    卽
+hq    ⽜
+hqm    ⽣
+hqqj    夆
+hqthb    犕
+hqu    ⽑
+hrj    ⾩
+hrlr    ⻕
+hs    ⼓
+hs    ⼾
+hs    ⺆
+hsmo    篆
+hsmvu    既
+hubt    䀈
+hufd    䊠
+hui    ⿁
+hui    ⻤
+huik    臭
+hunwf    鱀
+huumb    𦓚
+huwml    ⿐
+huwt    鼻
+hv    ㇢
+hvio    ⽠
+hvp    ⽒
+hvvd    𥲀
+hwhj    卑
+hwhj    卑
+hx    ⾅
+hx    ⺽
+hxh    ⾝
+hxhaf    䳎
+hxlc    𠔜
+hxt    舁
+hxt    舁
+hxu    龜
+hxu    龜
+hxu    ⻱
+hxvsf    舄
+hxvyv    ⿏
+hy    ⺖
+hybp    籠
+hyjj    䈂
+hyt    笠
+hyyjj    䑫
+i    ⼂
+i    ⼽
+i    ㇔
+iav    良
+ib    ⼧
+ichaf    䳸
+idd    麻
+idhni    𪎒
+idq    摩
+ifbuu    視
+ifbuu    視
+ifhlw    𥛅
+ifok    𥘦
+ifslw    福
+ifyhu    𥚚
+ifyku    𥚚
+ihhc    廉
+ihmn    成
+ihs    成
+ihvl    廊
+ii    ⺀
+iib    朗
+iih    ⺍
+iiih    參
+iim    ⽧
+iim    ⺡
+iino    ⻍
+iivl    廊
+ijcc    ⿇
+ijsr    唐
+ik    ⽝
+ikp    ⻰
+ikr    啓
+ilwp    㡼
+im    ⼇
+im    ⼎
+imgce    凌
+imno    次
+imoml    冷
+imqbu    𩇟
+imyrf    凉
+imywd    凜
+in    ⼍
+inbt    盛
+inf    ⺭
+inlo    ⻂
+inno    ⻎
+ino    辶
+ino    ⻌
+inol    ⻂
+inv    ⻈
+ip    ⼷
+ipfdq    麟
+ipmjj    𪊑
+iqsk    廒
+ite    度
+itf    庶
+iuf    凞
+ivb    朗
+ivb    朗
+ivi    ⽞
+ivln    剆
+ivnl    郎
+iwlj    庳
+iwp    恵
+iwtc    廙
+ixp    鹿
+ixp    ⿅
+iydl    廓
+iyjj    庰
+iypt    廬
+j    ⼗
+jaf    煮
+jaf    煮
+janl    都
+jbmm    直
+jbmom    𩐊
+jbuc    真
+jbuv    直
+jbvf    索
+jc    ⽳
+jcik    突
+jcjbt    𥥼
+jcold    窱
+je    ⽀
+jghaf    鶴
+jhp    宅
+jhq    牢
+jiji    博
+jiwtc    戴
+jj    艹
+jj    廾
+jj    ⼶
+jj    ⺾
+jj    ⺿
+jjmrw    輻
+jjomb    輪
+jjomn    輸
+jjomv    輸
+jjsk    軔
+jjvid    轢
+jk    ⺹
+jka    者
+jka    者
+jkcf    寮
+jkia    者
+jkp    老
+jkp    ⽼
+jlk    吏
+jm    ⼠
+jmfc    寳
+jmhc    賓
+jmms    𡧈
+joni    ⿆
+jpbc    寘
+jpbn    寧
+jpbn    寧
+jpwn    寧
+jqjp    憲
+jrln    割
+js    ⺺
+jshi    寃
+jt    卉
+jtbc    賁
+jtcg    塞
+jtd    桒
+jtge    鼖
+jumc    真
+jwj    車
+jwj    ⾞
+k    ⼤
+kabt    瘟
+kchne    殺
+kdano    閷
+kdhne    殺
+kdhne    殺
+kdlc    癩
+kehaf    𪄅
+kh    ⺨
+khdlc    獺
+khdn    痢
+khiav    狼
+khibc    𤠔
+khjka    猪
+khjka    猪
+khmjj    𤜵
+khru    犯
+khvvv    獵
+kj    ⼶
+kjka    奢
+kjt    奔
+kk    ⽘
+kkcf    療
+klwo    瘐
+kmmf    奈
+kmym    ㍽
+knk    丸
+kq    ⻋
+ks    力
+ks    ⼒
+ku    尢
+ku    ⼪
+ku    ⺐
+kuap    㞁
+kwle    瘝
+kwu    奄
+l    ⼁
+l    ㇑
+l    ㇓
+lapv    褐
+lb    ⼱
+lbabu    帽
+lbaws    㡢
+lbcru    帨
+lbjtc    幩
+lbmi    ⽱
+lbtye    𢆃
+lc    ⺌
+lcru    裞
+ldlc    懶
+le    ⾪
+lga    書
+liabt    蝹
+libhf    蟡
+lihmj    䗗
+liib    蜎
+lijka    蝫
+lim    ⺦
+limjj    蚈
+lis    ⻔
+litvi    螆
+litvp    䗹
+livvv    蠟
+liwot    蝹
+liwvf    螺
+liyjj    蛢
+liyso    蜨
+lkhu    裺
+ll    串
+llhjl    牐
+llml    ⽚
+llmn    ⽚
+lm    ⺊
+lm    ⺻
+lm    ㇄
+lm    ㇗
+lm    ㇘
+lmbdi    将
+lmg    壮
+lmi    ⾍
+lmp    北
+lmp    北
+lmsy    ⾮
+lmt    𧙧
+lmy    艹
+lmy    ⻀
+ln    ⼍
+ln    ⾾
+ln    ⺉
+ln    ㇁
+lnii    襁
+lnme    䘵
+lpwtc    冀
+lq    ⾀
+ls    ⼌
+ls    ⺆
+lsmm    ⾲
+lsmt    襤
+lss    㠯
+lu    ⼉
+lv    ㇂
+lvok    數
+lwd    裸
+lwg    裡
+lwle    叟
+lwll    𤰶
+lwyjj    𢆟
+lyiv    裗
+m    ⼀
+m    ㇀
+m    ㇐
+manl    鄑
+mbett    𩅅
+mbhoe    覆
+mbibc    霣
+mbks    勵
+mbll    ⽽
+mbo    ⻚
+mboml    零
+mbrmr    露
+mbrro    靈
+mbuc    ⾴
+mbvm    𠄢
+mbw    雷
+mcbm    祖
+mcw    ⻄
+mcwm    ⾣
+mf    不
+mf    灰
+mfbbr    禍
+mfbm    祖
+mfbuu    視
+mfg    社
+mfhml    祈
+mfkr    祐
+mflwl    神
+mfmrw    福
+mfrhu    祝
+mftq    祥
+mftwt    禮
+mfu    礼
+mfvne    祿
+mfybc    禎
+mfylm    祉
+mg    王
+mg    ⺩
+mgb    再
+mgb    玥
+mgfdq    璘
+mghni    㺬
+mgi    ⽟
+mgjbc    瑱
+mgmso    琢
+mgnwe    瓊
+mgoml    玲
+mgomv    瑜
+mgpbc    瑱
+mgqmh    瑇
+mgt    弄
+mgvvd    璅
+mgwg    理
+mgyiu    琉
+mgyjj    璉
+mh    ⼚
+mh    ⺂
+mh    ㇇
+mh    ㇖
+mhda    曆
+mhdm    歷
+mhhx    𤘈
+mig    ⾄
+mir    䂖
+mj    ⼲
+mjbt    㿼
+mjihs    ㍻
+mjmjf    鳽
+mjmjg    雃
+mjmjh    形
+mjmjn    㼛
+mjq    揅
+mku    ⽆
+ml    ㇕
+mlbo    兩
+mlby    ⾬
+mlby    ⻗
+mllw    ⻃
+mlm    ⼯
+mluw    画
+mlwk    更
+mm    ⼆
+mma    晉
+mmbbp    麗
+mmbmb    丽
+mmf    ⽰
+mmf    ⺬
+mmi    戛
+mmmo    辰
+mmmv    ⾠
+mmp    惡
+mmrhu    况
+mmrhu    况
+mmst    𥁄
+mnabt    殟
+mnf    烈
+mng    型
+mni    歹
+mni    ⽍
+mnln    列
+mnomo    殮
+mnyhv    裂
+mo    乁
+mo    ㇝
+mohqm    甤
+mpbuu    𧢮
+mr    ⽯
+mrbhf    䃣
+mrbj    ⿀
+mrhdw    磻
+mrhwj    碑
+mrjbc    磌
+mrjbc    磌
+mrmjn    硎
+mrmrr    磊
+mrmtb    礪
+mrnme    碌
+mrpm    𥐝
+mrt    ⾖
+mrvne    碌
+mryiu    硫
+mrytj    辞
+msho    ⾗
+mtmbc    𩒖
+mu    兀
+mu    ⺎
+mub    ⾑
+mumbc    頋
+mumbc    䪲
+mumbc    頋
+mumbc    頋
+mv    ⼕
+mv    ⼖
+mvdh    ⽛
+mvku    ⺛
+mvni    ⽡
+mwbuc    賈
+mwd    栗
+mwher    酪
+mwhxe    醙
+mwsl    ⾯
+mwtwt    醴
+mwyjj    𩈚
+mybl    龎
+n    ⼅
+n    ⼸
+n    ㇚
+nau    ⾊
+nbg    ⾓
+nbks    勇
+nboo    ⻇
+nbq    ⻆
+nc    ⼩
+nd    ⼦
+nffdq    鱗
+nhe    及
+ni    ⼣
+ninh    ⽭
+nini    多
+niq    ⾇
+niyo    ⽨
+nk    ⼜
+nl    ⻏
+nl    ⻖
+nlfdq    隣
+nlgce    陵
+nlgcg    陸
+nlheg    隆
+nlheq    降
+nlikf    䧦
+nljka    陼
+nlmbv    陋
+nlmmu    阮
+nmm    ⼹
+nn    了
+nn    ㇆
+nn    ㇋
+nn    ㇎
+nnk    ⼵
+no    ⽋
+no    ⻜
+noe    𠭣
+nog    墬
+nohto    ⾶
+ns    ㇌
+ns    ㇡
+nsho    豕
+nu    ⼄
+nu    ㇠
+nue    弢
+nuks    勉
+nuks    勉
+numk    弢
+nv    ⺄
+nv    ⻠
+nv    ㇅
+nv    ㇈
+nv    ㇊
+nv    ㇍
+nvsm    ⻢
+nvwm    ⿻
+nwf    ⿂
+nwfa    魯
+nwks    勇
+nwlu    ⻲
+nwm    ⻥
+nwu    ⻳
+nxu    龜
+nxu    龜
+nxu    ⿔
+nylm    ⺪
+nyo    ⽦
+o    ⼈
+o    ㇏
+ob    內
+obo    ⾁
+ocru    侻
+ocwa    僧
+ocwa    僧
+og    ⾫
+oh    ⼊
+ohjn    侀
+ohya    偺
+oiai    ⻟
+oias    ⻞
+oiav    ⾷
+oiav    ⻝
+oifq    䬳
+oilu    飢
+oinp    念
+oioi    ⺮
+oioyo    餩
+oj    什
+ojok    敏
+oju    ⽸
+ok    ⽮
+ok    ⺙
+okcf    僚
+okmg    㺸
+okmgi    㺸
+okvif    繁
+olhef    絛
+olmbc    領
+ombp    愈
+omg    全
+omlk    便
+omn    ⽓
+omnn    例
+omp    ⻐
+omrb    ⿕
+omsl    令
+onbo    像
+onks    㔕
+oo    仌
+oof    你
+oomb    倫
+oowj    侮
+oowy    侮
+oq    年
+orbus    鼅
+orjrr    舘
+orrxu    鼅
+osjrr    館
+osme    飯
+ossmr    飼
+otmb    備
+ougs    㒞
+oumjj    𦈨
+ousyj    𦉇
+ouyjj    缾
+ov    ㇃
+ovhaf    𪃎
+oyjj    倂
+oykib    𣫺
+oyok    敏
+p    ⼼
+pavnb    𣊸
+pbtv    惘
+pbvc    眞
+pcpbc    㒹
+pcwa    憎
+pcwa    憎
+pcwa    憎
+pdlc    懶
+pdwf    𢛔
+pfdq    憐
+pgsk    慠
+phka    𢡄
+phkp    𢡊
+phsu    慨
+pi    勺
+pib    悁
+pihm    㤜
+pjbc    慎
+pjsqf    駂
+pjtc    憤
+pjuc    慎
+pjwj    𠣞
+pkk    匆
+plbo    懞
+pllv    慺
+pm    勺
+pmg    忹
+pmwd    慄
+po    ⻓
+poml    怜
+powj    悔
+powy    悔
+pp    ⽐
+pr    句
+psh    切
+psu    包
+ptvu    慌
+ptyu    慌
+pysd    惇
+pysm    ⻦
+pyvu    㤺
+q    ⼿
+qbhf    撝
+qbkf    撚
+qd    ⽾
+qdish    𦔣
+qhie    𢬌
+qhk    契
+qhpl    揤
+qhsn    㨮
+qhxe    搜
+qib    捐
+qike    拔
+qjfe    𢯱
+qkdi    寿
+qkhu    掩
+qkua    憯
+qmb    ⾭
+qmb    ⻘
+qmblm    ⾭
+qmca    搢
+qme    ⻨
+qmjs    扝
+qmr    拓
+qnri    摾
+qogr    捨
+qoip    捻
+qojwj    輦
+qomn    揄
+qomr    拾
+qp    志
+qpsu    抱
+qs    ⻙
+qshu    挽
+qsmb    掃
+qsok    敖
+qsyj    摒
+qvvd    摷
+qyci    㩬
+qyjj    拼
+qyps    擄
+qyrf    掠
+qyt    拉
+r    ⼝
+rabt    嗢
+rapp    喝
+rapv    喝
+rau    ⾢
+rbou    嗂
+rdbm    喳
+rdln    喇
+rhaj    噑
+rhi    吆
+rhr    呂
+rjtc    噴
+rlwu    ⻪
+rmg    呈
+rmher    路
+rmike    跋
+rmmjj    趼
+rmt    咞
+rmyjj    跰
+rnhe    吸
+rnmo    喙
+rnmo    喙
+roul    啣
+rp    叱
+rpov    啕
+rqhk    喫
+rrhaf    鷺
+rrikr    器
+rrmjs    咢
+rtao    嘆
+rtlo    嘆
+rtq    哶
+ru    ⺒
+rutc    巽
+rvl    叫
+rvp    ⺠
+rwk    咽
+rwu    黾
+rxu    ⿌
+rylm    ⻊
+ryo    ⾜
+s    ⼫
+scwa    層
+se    尿
+sehde    䵖
+sehq    犀
+sfcru    駾
+sfher    駱
+sfmmp    驪
+sh    ⼑
+shahi    兔
+shahu    免
+shau    免
+shi    戮
+shjbc    鬒
+shjbc    鬒
+shjtu    𡬘
+shmhn    𩬰
+shoe    履
+sihhh    ⾽
+sj    ⽿
+sjhwp    聰
+sjka    屠
+sjoml    聆
+sjvit    聯
+sjyjj    聠
+sk    刃
+skp    忍
+sl    ⼙
+sllv    屢
+slorr    臨
+slsl    ⾂
+sm    ⺕
+smhhb    㣇
+smi    ⻒
+smsim    ⽻
+smsmm    羽
+smv    ⾧
+smv    ⻑
+snhne    𣪍
+sqsf    ⾺
+stkr    匿
+su    ⼰
+su    ⺋
+suf    𤋮
+sunl    邔
+tail    莭
+tajt    𦳕
+tang    藺
+tanr    䕡
+tanw    蘭
+tbd    荣
+tbd    菜
+tbks    劳
+tcbt    益
+tcfb    ⿋
+td    㭉
+tehr    落
+temt    𦼬
+teyj    蓱
+tg    ⺷
+tgce    菱
+tgpr    𦰶
+tgtr    善
+tgye    羕
+thbu    ⾸
+thdb    䕝
+thdu    蘒
+tihp    菧
+tino    芝
+tjka    著
+tjka    著
+tjks    勒
+tjr    苦
+tjsme    䩮
+tjumi    䩶
+tkr    若
+tkr    若
+tkt    莽
+tlii    𧏊
+tlj    ⾰
+tlwc    ⻩
+tm    ⽢
+tmbf    𦵫
+tmd    芋
+tmfb    黹
+tmj    ⺸
+tmks    勤
+tmks    勤
+tmlc    ⿈
+tmtj    華
+tmvh    芽
+tnmb    䔫
+tod    茶
+tof    𦬼
+tohqm    蕤
+toog    難
+toog    難
+top    花
+tpfd    菊
+tptd    葉
+tq    ⽺
+tq    ⺶
+tqbu    着
+tqoml    羚
+tqvd    𦾱
+trmk    茣
+trok    敬
+tsf    𠔥
+tsll    茝
+tsmh    蓼
+tsmt    藍
+tsu    芑
+ttlm    蓳
+ttm    並
+ttr    善
+tvfv    𧃒
+tvin    甆
+tvip    慈
+tvne    菉
+tvou    荒
+twhd    菌
+twlg    蘿
+twln    夢
+tyce    䕫
+tyjj    蓮
+tyjj    荓
+typm    蔖
+typt    蘆
+u    ⼭
+uh    屮
+uh    ⼔
+uh    ⼬
+uhni    嵐
+uip    ⾿
+ukf    炭
+ul    屮
+ul    屮
+ul    ⼬
+ulw    峀
+umjj    岍
+umli    蚩
+umlmi    蚩
+umrt    豈
+uogs    嶲
+uolc    嶺
+uomb    崙
+upbc    嵮
+urvk    𡷤
+utvi    嵫
+uu    ⾋
+uuyhs    芳
+uwyi    𡴋
+uyhh    嵃
+uyhm    嵼
+v    女
+v    ⼥
+v    ㇙
+vcru    娧
+vdlc    嬾
+vdlc    嬾
+vdnl    鄛
+vep    怒
+veq    拏
+vfcrp    縂
+vfdw    練
+vfdwf    練
+vfdwf    練
+vfgce    綾
+vfhaf    鸞
+vfhe    變
+vfllv    縷
+vfmca    縉
+vfmwv    䌁
+vfng    紐
+vfnve    綠
+vfp    戀
+vfsu    紀
+vfvmw    緇
+vfvu    𥾆
+vfvvd    繅
+vfyjj    絣
+vfyqq    䌴
+vggn    嬈
+vi    ⼛
+vi    ⼳
+vi    ⺓
+vid    樂
+vid    樂
+vid    樂
+vif    ⽷
+vif    ⺯
+vjce    㛮
+vkuh    𡛪
+vl    凵
+vl    ⼐
+vl    ⺃
+vl    ㇟
+vllmi    蠁
+vlyta    響
+vlyta    響
+vm    ㇜
+vmf    災
+vmftf    𦇚
+vmik    狀
+vmjx    㛼
+vml    ⽙
+vmw    甾
+vn    ㇞
+vnm    ⺔
+vp    𡚨
+vrvk    娛
+vs    ㇉
+vsll    姬
+vsmb    婦
+vtvp    嬨
+vvhxd    巢
+vvm    ⺰
+vvmbu    ⻡
+vvv    ⼮
+vwhj    婢
+vyjj    姘
+w    ⽥
+wb    ⿵
+wfno    㱎
+wg    里
+wg    ⾥
+wgf    ⿊
+wgfg    墨
+wher    略
+wiyw    圗
+wj    ⽏
+wl    ⿰
+wle    𥄳
+wljka    署
+wll    ⺫
+wll    ⺲
+wll    ⿲
+wlowy    䍙
+wlpog    罹
+wlvfg    羅
+wlvfv    𦌾
+wlvvd    罺
+wml    ⿸
+wmq    〾
+wn    ⿹
+woml    囹
+woq    〾
+wr    ⿴
+wrjw    圖
+ws    ⿷
+wtc    異
+wtc    異
+wtt    𤲒
+wu    ⿶
+wv    ⿺
+wvif    累
+ww    ⿻
+wwwg    壘
+wybuc    貫
+wyi    ⺟
+xxxxx    ㇣
+y    ⼘
+ybhg    望
+ybmg    望
+ybog    離
+ybysp    龍
+ybysp    ⿓
+yc    六
+ycno    歔
+ycok    𣀊
+ye    ⽁
+ygmjs    虧
+yh    ⼴
+yhmbc    頻
+yhmbc    頻
+yhs    ⽅
+yhv    ⾐
+yhxg    𨗭
+yib    育
+yihu    充
+yihu    𠘺
+yioj    率
+yioj    率
+yj    ⽃
+yjhec    贛
+yjwj    連
+yjyjc    頩
+yjyjf    鵧
+yjyjl    郱
+yk    ⽂
+ykcf    遼
+ykll    ⻬
+ykr    吝
+yksl    ⻫
+ylm    ⽌
+ym    ⺡
+ymbg    𨗒
+ymihf    歲
+ymln    剷
+ymmr    ⾔
+ymt    𢌱
+ymt    𢌱
+ymufd    ⻭
+ymuo    ⻮
+ymuoo    ⿒
+ynai    逸
+ynai    逸
+yni    ⺞
+yno    ⻍
+yoln    刻
+yoo    衣
+yp    ⾌
+ypg    壟
+yphn    ⻁
+ypsj    聾
+ypsm    虐
+ypwbt    盧
+ypwks    虜
+ypwks    虜
+yrapp    謁
+yrapv    謁
+yrbgr    調
+yrbr    ⾼
+yrbu    亮
+yrcr    䛇
+yrcru    說
+yrcru    說
+yrgwc    讀
+yrihl    誠
+yrjka    諸
+yrjka    諸
+yrmg    䚾
+yrmms    𧥦
+yromb    論
+yromn    諭
+yromv    諭
+yrqmb    請
+yrtag    謹
+yrtkr    諾
+yrtkr    諾
+yrtlm    謹
+yryia    識
+yryrf    諒
+yseq    遲
+ysohv    旅
+yt    立
+yt    ⽴
+yta    暜
+yta    ⾳
+ytj    ⾟
+ytjbc    𥪧
+ytpbc    𥪧
+ytqmb    靖
+ytqmb    靖
+ytsyj    竮
+ytwu    ⻯
+yuyjj    𪘀
+yvfw    變
+yvvv    巡
+ywgv    裏
+ywii    ⿄
+ywk    ⻧
+ywlg    邏
+yx    ⿑
