@@ -1,5 +1,8 @@
 package time.天文历.constant;
 
+/**
+ * 星曆
+ */
 public class XL {
 
     public static double gxc_sunLon(double t) { // 太阳光行差,t是世纪数
@@ -15,11 +18,11 @@ public class XL {
 
     /** 地球经度计算,返回Date分点黄经,传入世纪数、取项数 */
     public static double E_Lon(double t, int n) {
-        return Common.XL0_calc(0, 0, t, n);
+        return XLData.XL0_calc(0, 0, t, n);
     }
 
     public static double M_Lon(double t, int n) {
-        return Common.XL1_calc(0, t, n);
+        return XLData.XL1_calc(0, t, n);
     }
 
     /** 地球速度,t是世纪数,误差小于万分3 */
