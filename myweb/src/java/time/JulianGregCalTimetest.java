@@ -59,7 +59,7 @@ public class JulianGregCalTimetest {
 
         List<String> _2000YearDays = new ArrayList<String>();
         // 2000年一直到前800年所有格列曆日
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 10; i++) {
             _2000YearDays.addAll(_400YearDays);
         }
 
