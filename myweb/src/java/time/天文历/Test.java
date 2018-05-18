@@ -12,9 +12,9 @@ public class Test {
     public static void main(String[] args) throws Exception {
         String dateStr = "0622-07-16";
         LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
-        System.out.println(lc.getYear() + " " + lc.getGanZhiDateString());
+        System.out.println(lc.getDateString() + "," + lc.getGanZhiDateString());
         System.out.println(lc.getNianHao());
-        System.out.println("回曆：" + lc.getLunarDate().gethYear() + "-" + lc.getLunarDate().gethMonth() + "-"
-                + lc.getLunarDate().gethDay());
+        System.out.println("回曆：" + lc.getLunarDate().gethYear() + "年," + lc.getLunarDate().gethMonth() + "月,"
+                + lc.getLunarDate().gethDay() + "日");
     }
 }
