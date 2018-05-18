@@ -51,20 +51,18 @@ public class JulianGregCalTimetest {
         Calendar cal111 = Calendar.getInstance();
         cal111.setTime(date111);
 
-        int startYear = -1200;
-        int endYear = 2000;
-        Date endDate = sdf_yyyyMMdd.parse(endYear + "-12-31");
+        int startYear = -1201;
+        Date endDate = sdf_yyyyMMdd.parse("2400-12-31");
         Calendar cal = Calendar.getInstance();
         cal.setTime(endDate);
 
         List<String> _2000YearDays = new ArrayList<String>();
-        // 2000年一直到前800年所有格列曆日
         for (int i = 0; i < 10; i++) {
             _2000YearDays.addAll(_400YearDays);
         }
 
         List<String> reses = new ArrayList<String>();
-        int currGregYear = endYear;
+        int currGregYear = 2400;
         for (int i = _2000YearDays.size() - 1; i >= 0; i--) {
             String one = _2000YearDays.get(i);
             String[] parts = one.split("-");
@@ -89,7 +87,10 @@ public class JulianGregCalTimetest {
             ceDateStr += sdf_yyyyMMdd.format(cal.getTime());
             res += "," + DateGanzhiTest.getDateGanzhi(ceDateStr) + "日";
             res += "," + DateGanzhiTest.getHourGanzhi(ceDateStr, 0) + "時";
-            reses.add(res);
+            
+            if (!(cal111.before(cal) && cal.get(Calendar.YEAR) > 2100)) {
+                reses.add(res);
+            }
 
             cal.add(Calendar.DATE, -1);
             if ("0101".equals(parts[1] + parts[2])) {
