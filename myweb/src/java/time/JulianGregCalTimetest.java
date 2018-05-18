@@ -51,6 +51,7 @@ public class JulianGregCalTimetest {
         Calendar cal111 = Calendar.getInstance();
         cal111.setTime(date111);
 
+        int startYear = -1200;
         int endYear = 2000;
         Date endDate = sdf_yyyyMMdd.parse(endYear + "-12-31");
         Calendar cal = Calendar.getInstance();
@@ -72,7 +73,7 @@ public class JulianGregCalTimetest {
             if (cal111.after(cal)) {
                 res += "B";
                 // 到了BCE723了，不再要了
-                if (cal.get(Calendar.YEAR) == 723) {
+                if (cal.get(Calendar.YEAR) == -startYear) {
                     break;
                 }
             }
