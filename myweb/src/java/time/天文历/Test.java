@@ -1,6 +1,10 @@
 package time.天文历;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import time.DateGanzhiTest;
 
 /**
  * JulianDate.java、 LunarCalendar.java、 LunarConstant.java、 LunarDate.java<br/>
@@ -10,11 +14,23 @@ public class Test {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "0622-07-16";
-        LunarCalendar lc = new LunarCalendar(sdf_yyyyMMdd.parse(dateStr));
-        System.out.println(lc.getDateString() + "," + lc.getGanZhiDateString());
-        System.out.println(lc.getNianHao());
-        System.out.println("回曆：" + lc.getLunarDate().gethYear() + "年," + lc.getLunarDate().gethMonth() + "月,"
+        String dateStr = "2018-15-22";
+        Date date = sdf_yyyyMMdd.parse(dateStr);
+
+        Date begin = sdf_yyyyMMdd.parse("0001-01-01");
+        Calendar begincal = Calendar.getInstance();
+        begincal.setTime(begin);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        String eraPreffix = (begincal.after(cal)) ? "BCE" : "CE";
+
+        LunarCalendar lc = new LunarCalendar(date);
+
+        System.out.println(eraPreffix + cal.get(Calendar.YEAR) + "年" + cal.get(Calendar.MONTH) + "月"
+                + cal.get(Calendar.DATE) + "日");
+        System.out.println(lc.getDateString() + "," + lc.getGanZhiDateString()
+                + DateGanzhiTest.getHourGanzhi(eraPreffix + sdf_yyyyMMdd.format(cal.getTime()), 0) + "時");
+        System.out.println("回曆" + lc.getLunarDate().gethYear() + "年" + lc.getLunarDate().gethMonth() + "月"
                 + lc.getLunarDate().gethDay() + "日");
     }
 }
