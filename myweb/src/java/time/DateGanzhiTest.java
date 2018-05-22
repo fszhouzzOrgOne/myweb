@@ -32,11 +32,12 @@ public class DateGanzhiTest {
 
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        cal.set(Calendar.HOUR_OF_DAY, 23);
+        cal.set(Calendar.HOUR_OF_DAY, 14);
+        cal.set(Calendar.MINUTE, 13);
 
         String dateGz = getDateGanzhi(cal.getTime());
         String hourGz = getHourGanzhi(cal.getTime());
-        System.out.println(dateGz + "日" + hourGz + "時" + getQuarterTimeStr(date));
+        System.out.println(dateGz + "日" + hourGz + "時" + getQuarterTimeStr(cal.getTime()));
     }
 
     /**
@@ -64,7 +65,9 @@ public class DateGanzhiTest {
             shike = "三刻";
         }
         if (minute15 != 0 || second != 0) {
-            shike += "又";
+            if (!"初刻".equals(shike)) {
+                shike += "又";
+            }
         }
         String minSec = minute15 + "分" + second + "秒";
         return chuzheng + shike + minSec;
