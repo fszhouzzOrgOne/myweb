@@ -28,15 +28,45 @@ public class DateGanzhiTest {
     public static String mbsBaseDir = "src\\java\\time\\";
 
     public static void main(String[] args) throws Exception {
-        Date date = sdf_yyyyMMdd.parse("0001-01-01");
+        Date date = new Date();
 
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        cal.set(Calendar.HOUR_OF_DAY, 20);
 
         String dateGz = getDateGanzhi(cal.getTime());
         String hourGz = getHourGanzhi(cal.getTime());
-        System.out.println(dateGz + "日" + hourGz + "時");
+        System.out.println(dateGz + "日" + hourGz + "時" + getQuarterTimeStr(date));
+    }
+
+    /**
+     * 得到時刻和時間串，如初/正某刻某分秒
+     * 
+     * @param date
+     * @return
+     */
+    public static String getQuarterTimeStr(Date date) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int hourOfDay = cal.get(Calendar.HOUR_OF_DAY);
+        int minute = cal.get(Calendar.MINUTE);
+        int minute15 = minute % 15;
+        int second = cal.get(Calendar.SECOND);
+        String chuzheng = (hourOfDay % 2 == 0) ? "正" : "初";
+        String shike = ""; // 某刻
+        if (minute < 15) {
+            shike = "初刻";
+        } else if (minute >= 15 && minute < 30) {
+            shike = "一刻";
+        } else if (minute >= 30 && minute < 45) {
+            shike = "二刻";
+        } else if (minute >= 45) {
+            shike = "三刻";
+        }
+        if (minute15 != 0 || second != 0) {
+            shike += "又";
+        }
+        String minSec = minute15 + "分" + second + "秒";
+        return chuzheng + shike + minSec;
     }
 
     /**
