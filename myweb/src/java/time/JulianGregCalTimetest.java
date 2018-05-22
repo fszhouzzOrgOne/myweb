@@ -55,6 +55,9 @@ public class JulianGregCalTimetest {
         Calendar cal2 = DateGanzhiTest.getCalendarByStrDate("CE0721-12-28");
         long days = DateGanzhiTest.daysBetween(cal1.getTime(), cal2.getTime());
         System.out.println("days: " + days);
+
+        System.out.println("addDaysGregCal: " + addDaysGregCal("BCE0722-01-01", 527044));
+        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527044));
     }
 
     private static void getJulianAndGregCal() throws Exception {
@@ -147,9 +150,45 @@ public class JulianGregCalTimetest {
         days11 += day1;
         // 按1月1日，要加減多少天
         int daysParam = days - days11;
-        // 按365先算算
-        int yearCnt = Math.abs(days) / 365;
-        return null;
+        int theYear = year1;
+        int theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
+        // 如果是負數，先轉成正數
+        // 最終，當年1月1日，加daysParam天後還在當年
+        while (daysParam < 0) {
+            theYear--;
+            if (theYear == 0) {
+                theYear--;
+            }
+            theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
+            daysParam += theYearDays;
+        }
+        // 正向走，一年一年加
+        while (theYearDays <= daysParam) {
+            daysParam -= theYearDays;
+            theYear++;
+            if (theYear == 0) {
+                theYear++;
+            }
+            theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
+        }
+        // 當年1月1日，加daysParam天，得到最終結果
+        daysParam--;
+        int theMonth = 1;
+        int theDay = 0;
+        for (int i = 1; i <= 12; i++) {
+            theMonth = i;
+            int monthDayCnt = monthDays[i - 1];
+            if (i == 2 && isLeapGregCal(theYear)) {
+                monthDayCnt++;
+            }
+            daysParam -= monthDayCnt;
+
+            if (daysParam <= 0) {
+                theDay = monthDayCnt + daysParam;
+                break;
+            }
+        }
+        return (theYear < 0 ? "BCE" : "CE") + Math.abs(theYear) + "-" + theMonth + "-" + theDay;
     }
 
     /**
