@@ -32,6 +32,7 @@ public class DateGanzhiTest {
 
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
+        cal.set(Calendar.HOUR_OF_DAY, 23);
 
         String dateGz = getDateGanzhi(cal.getTime());
         String hourGz = getHourGanzhi(cal.getTime());
