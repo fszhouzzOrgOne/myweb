@@ -50,7 +50,7 @@ public class JulianGregCalTimetest {
         System.out.println("-3201" + isLeapGregCal(-101));
         System.out.println("4" + isLeapGregCal(4));
         System.out.println(daysBetweenGregCal("CE0722-01-01", "BCE0722-01-01"));
-        
+
         Calendar cal1 = DateGanzhiTest.getCalendarByStrDate("BCE0722-01-09");
         Calendar cal2 = DateGanzhiTest.getCalendarByStrDate("CE0721-12-28");
         long days = DateGanzhiTest.daysBetween(cal1.getTime(), cal2.getTime());
@@ -118,6 +118,41 @@ public class JulianGregCalTimetest {
     }
 
     /**
+     * 日期加減多少天，格列曆
+     * 
+     * @param date1
+     *            日期串
+     * @param days
+     *            天數
+     * @return
+     * @throws Exception
+     */
+    public static String addDaysGregCal(String date1, int days) throws Exception {
+        String ptn = "(BCE|CE)\\d{4}(-\\d{2}){2}";
+        if (!date1.matches(ptn)) {
+            throw new Exception("日期格式錯誤。");
+        }
+        String[] parts1 = date1.split("-");
+        parts1[0] = parts1[0].replaceAll("CE", "").replaceAll("B", "-");
+        int year1 = Integer.parseInt(parts1[0]), month1 = Integer.parseInt(parts1[1]),
+                day1 = Integer.parseInt(parts1[2]);
+        // 先看本年1月1日，到今天有多少天
+        int days11 = 0;
+        for (int i = 1; i < month1; i++) {
+            days11 += monthDays[i - 1];
+            if (i == 2 && isLeapGregCal(year1)) {
+                days11++;
+            }
+        }
+        days11 += day1;
+        // 按1月1日，要加減多少天
+        int daysParam = days - days11;
+        // 按365先算算
+        int yearCnt = Math.abs(days) / 365;
+        return null;
+    }
+
+    /**
      * 两个日期之间的天數，格列曆
      * 
      * @param date1
@@ -158,12 +193,9 @@ public class JulianGregCalTimetest {
             } else {
                 // 第一個月，到倒數第二月
                 for (int i = month1; i < month2; i++) {
-                    if (i == 2) {
-                        days += monthDays[i - 1];
-                        if (isLeapGregCal(year1))
-                            days++;
-                    } else {
-                        days += monthDays[i - 1];
+                    days += monthDays[i - 1];
+                    if (i == 2 && isLeapGregCal(year1)) {
+                        days++;
                     }
                 }
                 // 第一個月，減去day1
@@ -174,12 +206,9 @@ public class JulianGregCalTimetest {
         } else {
             // 第一年
             for (int i = month1; i <= 12; i++) {
-                if (i == 2) {
-                    days += monthDays[i - 1];
-                    if (isLeapGregCal(year1))
-                        days++;
-                } else {
-                    days += monthDays[i - 1];
+                days += monthDays[i - 1];
+                if (i == 2 && isLeapGregCal(year1)) {
+                    days++;
                 }
             }
             days -= day1;
@@ -194,12 +223,9 @@ public class JulianGregCalTimetest {
             }
             // 最後一年
             for (int i = 1; i < month2; i++) {
-                if (i == 2) {
-                    days += monthDays[i - 1];
-                    if (isLeapGregCal(year1))
-                        days++;
-                } else {
-                    days += monthDays[i - 1];
+                days += monthDays[i - 1];
+                if (i == 2 && isLeapGregCal(year1)) {
+                    days++;
                 }
             }
             days += day2;
