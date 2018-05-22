@@ -6,8 +6,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import cangjie.java.util.IOUtils;
-
 /**
  * 近三千年的所有日期，加干支<br/>
  */
@@ -30,71 +28,15 @@ public class DateGanzhiTest {
     public static String mbsBaseDir = "src\\java\\time\\";
 
     public static void main(String[] args) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date begin = sdf.parse("0001-01-01");
-        Calendar begincal = Calendar.getInstance();
-        begincal.setTime(begin);
-        // 所有日期
-        List<String> dayList = new ArrayList<String>();
-        int startYear = -722;
-        int endYear = 2050;
+        Date date = sdf_yyyyMMdd.parse("0001-01-01");
+
         Calendar cal = Calendar.getInstance();
-        cal.setTime(begin);
-        cal.set(Calendar.YEAR, startYear);
-        while (cal.get(Calendar.YEAR) <= endYear) {
-            dayList.add((cal.before(begincal) ? "BCE" : "CE") + sdf.format(cal.getTime()));
-            cal.add(Calendar.DATE, 1);
-        }
+        cal.setTime(date);
+        cal.set(Calendar.HOUR_OF_DAY, 20);
 
-        List<String> dayList2 = new ArrayList<String>();
-        for (int i = 0; i < dayList.size(); i++) {
-            String dayGz = dayList.get(i);
-            dayGz += "    " + getDateGanzhi(dayList.get(i)) + "日" + getHourGanzhi(dayList.get(i), 0) + "時";
-            dayList2.add(dayGz);
-        }
-
-        String destFile = mbsBaseDir + "days-150002500.txt";
-        IOUtils.writeFile(destFile, dayList2);
-
-        System.out.println("getGanzhiByOffset: " + getGanzhiByOffset("甲子", -1));
-        System.out.println("getGanzhiByOffset: " + getGanzhiByOffset("甲子", 0));
-        System.out.println("getGanzhiByOffset: " + getGanzhiByOffset("甲子", 1));
-        System.out.println("getGanzhiByOffset: " + getGanzhiByOffset("甲子", 62));
-
-        System.out.println("getDateGanzhi: " + getDateGanzhi("BCE0001-12-31"));
-        System.out.println("getDateGanzhi: " + getDateGanzhi("CE0001-01-01"));
-
-        System.out.println(getHourGanzhi("CE1990-02-11", -2));
-        System.out.println(getHourGanzhi("CE1990-02-11", -1));
-        System.out.println(getHourGanzhi("CE1990-02-11", 0));
-        System.out.println(getHourGanzhi("CE1990-02-11", 1));
-        System.out.println(getHourGanzhi("CE1990-02-11", 2));
-        System.out.println(getHourGanzhi("CE1990-02-11", 3));
-        System.out.println(getHourGanzhi("CE1990-02-11", 4));
-    }
-
-    /**
-     * 按偏移量得到前後第幾個干支
-     * 
-     * @param gzPar
-     *            干支
-     * @param offset
-     *            偏移量
-     * @return 前後第幾個干支
-     */
-    public static String getGanzhiByOffset(String gzPar, long offset) {
-        List<String> gzs = new ArrayList<String>();
-        for (String s : ganzhi) {
-            gzs.add(s);
-        }
-        // 偏移量
-        int offset2 = (int) (offset % gzs.size());
-        if (offset2 < 0) {
-            offset2 = gzs.size() + offset2;
-        }
-        // 目標下標
-        int index = (gzs.indexOf(gzPar) + offset2) % gzs.size();
-        return gzs.get(index);
+        String dateGz = getDateGanzhi(cal.getTime());
+        String hourGz = getHourGanzhi(cal.getTime());
+        System.out.println(dateGz + "日" + hourGz + "時");
     }
 
     /**
@@ -110,6 +52,26 @@ public class DateGanzhiTest {
         // CE2017-12-12 癸酉
         long days = daysBetween(getCalendarByStrDate("CE2017-12-12").getTime(), getCalendarByStrDate(date).getTime());
         return getGanzhiByOffset("癸酉", days);
+    }
+
+    /**
+     * 按日期對象求本日干支<br/>
+     * 子時從先日23時始，所以加一小時再算
+     * 
+     * @param date
+     * @return
+     * @throws Exception
+     */
+    public static String getDateGanzhi(Date date) throws Exception {
+        Date begin = sdf_yyyyMMdd.parse("0001-01-01");
+        Calendar begincal = Calendar.getInstance();
+        begincal.setTime(begin);
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.HOUR_OF_DAY, 1);
+        String eraPreffix = (cal.before(begincal) ? "BCE" : "CE");
+        return getDateGanzhi(eraPreffix + sdf_yyyyMMdd.format(cal.getTime()));
     }
 
     /**
@@ -151,6 +113,48 @@ public class DateGanzhiTest {
             return getGanzhiByOffset(res, evenHour / 2);
         }
         return res;
+    }
+
+    /**
+     * 按日期對象得到時辰的干支
+     * 
+     * @param date
+     * @return
+     * @throws Exception
+     */
+    public static String getHourGanzhi(Date date) throws Exception {
+        Date begin = sdf_yyyyMMdd.parse("0001-01-01");
+        Calendar begincal = Calendar.getInstance();
+        begincal.setTime(begin);
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        String eraPreffix = (cal.before(begincal) ? "BCE" : "CE");
+        return getHourGanzhi(eraPreffix + sdf_yyyyMMdd.format(cal.getTime()), cal.get(Calendar.HOUR_OF_DAY));
+    }
+
+    /**
+     * 按偏移量得到前後第幾個干支
+     * 
+     * @param gzPar
+     *            干支
+     * @param offset
+     *            偏移量
+     * @return 前後第幾個干支
+     */
+    public static String getGanzhiByOffset(String gzPar, long offset) {
+        List<String> gzs = new ArrayList<String>();
+        for (String s : ganzhi) {
+            gzs.add(s);
+        }
+        // 偏移量
+        int offset2 = (int) (offset % gzs.size());
+        if (offset2 < 0) {
+            offset2 = gzs.size() + offset2;
+        }
+        // 目標下標
+        int index = (gzs.indexOf(gzPar) + offset2) % gzs.size();
+        return gzs.get(index);
     }
 
     /**
