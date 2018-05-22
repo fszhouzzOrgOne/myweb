@@ -44,7 +44,17 @@ public class JulianGregCalTimetest {
 
     public static void main(String[] args) throws Exception {
         // getJulianAndGregCal();
-        System.out.println(daysBetweenGregCal("CE0001-01-01", "BCE0001-01-01"));
+        System.out.println("-1" + isLeapGregCal(-1));
+        System.out.println("-401" + isLeapGregCal(-401));
+        System.out.println("-101" + isLeapGregCal(-101));
+        System.out.println("-3201" + isLeapGregCal(-101));
+        System.out.println("4" + isLeapGregCal(4));
+        System.out.println(daysBetweenGregCal("CE0722-01-01", "BCE0722-01-01"));
+        
+        Calendar cal1 = DateGanzhiTest.getCalendarByStrDate("BCE0722-01-09");
+        Calendar cal2 = DateGanzhiTest.getCalendarByStrDate("CE0721-12-28");
+        long days = DateGanzhiTest.daysBetween(cal1.getTime(), cal2.getTime());
+        System.out.println("days: " + days);
     }
 
     private static void getJulianAndGregCal() throws Exception {
@@ -206,13 +216,19 @@ public class JulianGregCalTimetest {
     public static boolean isLeapGregCal(int year) {
         boolean isleap = false;
         if (year > 0) {
-            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+            if ((year % 100 == 0 && year % 400 == 0 && year % 3200 != 0) || (year % 100 != 0 && year % 4 == 0)) {
                 isleap = true;
             }
         } else if (year < 0) {
             year = Math.abs(year);
-            if (year % 400 == 1 || (year % 4 == 1 && year % 100 != 1)) {
-                isleap = true;
+            if (year <= 100) {
+                if (year % 4 == 1) {
+                    isleap = true;
+                }
+            } else {
+                if ((year % 100 == 1 && year % 400 == 1 && year % 3200 != 1) || (year % 100 != 1 && year % 4 == 1)) {
+                    isleap = true;
+                }
             }
         }
         return isleap;
