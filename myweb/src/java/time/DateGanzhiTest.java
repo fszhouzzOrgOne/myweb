@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 近三千年的所有日期，加干支<br/>
+ * 日時干支計算<br/>
  */
 public class DateGanzhiTest {
 
