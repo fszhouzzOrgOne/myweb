@@ -43,7 +43,8 @@ public class JulianGregCalTimetest {
     }
 
     public static void main(String[] args) throws Exception {
-        getJulianAndGregCal();
+        // getJulianAndGregCal();
+        System.out.println(daysBetweenGregCal("CE0001-01-01", "BCE0001-01-01"));
     }
 
     private static void getJulianAndGregCal() throws Exception {
@@ -87,7 +88,7 @@ public class JulianGregCalTimetest {
             ceDateStr += sdf_yyyyMMdd.format(cal.getTime());
             res += "," + DateGanzhiTest.getDateGanzhi(ceDateStr) + "日";
             res += "," + DateGanzhiTest.getHourGanzhi(ceDateStr, 0) + "時";
-            
+
             if (!(cal111.before(cal) && cal.get(Calendar.YEAR) > 2100)) {
                 reses.add(res);
             }
@@ -107,6 +108,96 @@ public class JulianGregCalTimetest {
     }
 
     /**
+     * 两个日期之间的天數，格列曆
+     * 
+     * @param date1
+     *            日期字符串，格式如公元前BCEyyyy-MM-dd，元後CEyyyy-MM-dd
+     * @param date2
+     *            日期字符串，格式同上
+     * @return
+     * @throws Exception
+     */
+    public static long daysBetweenGregCal(String date1, String date2) throws Exception {
+        String ptn = "(BCE|CE)\\d{4}(-\\d{2}){2}";
+        if (!date1.matches(ptn) || !date2.matches(ptn)) {
+            throw new Exception("日期格式錯誤。");
+        }
+        String[] parts1 = date1.split("-");
+        String[] parts2 = date2.split("-");
+        parts1[0] = parts1[0].replaceAll("CE", "").replaceAll("B", "-");
+        parts2[0] = parts2[0].replaceAll("CE", "").replaceAll("B", "-");
+
+        int year1 = Integer.parseInt(parts1[0]), month1 = Integer.parseInt(parts1[1]),
+                day1 = Integer.parseInt(parts1[2]);
+        int year2 = Integer.parseInt(parts2[0]), month2 = Integer.parseInt(parts2[1]),
+                day2 = Integer.parseInt(parts2[2]);
+        if ((year1 > year2) || (year1 == year2 && month1 > month2)
+                || (year1 == year2 && month1 == month2 && day1 > day2)) {
+            int year = year1, month = month1, day = day1;
+            year1 = year2;
+            month1 = month2;
+            day1 = day2;
+            year2 = year;
+            month2 = month;
+            day2 = day;
+        }
+        int days = 0;
+        if (year1 == year2) {
+            if (month1 == month2) {
+                days = day2 - day1;
+            } else {
+                // 第一個月，到倒數第二月
+                for (int i = month1; i < month2; i++) {
+                    if (i == 2) {
+                        days += monthDays[i - 1];
+                        if (isLeapGregCal(year1))
+                            days++;
+                    } else {
+                        days += monthDays[i - 1];
+                    }
+                }
+                // 第一個月，減去day1
+                days -= day1;
+                // 最後一月，加上day2
+                days += day2;
+            }
+        } else {
+            // 第一年
+            for (int i = month1; i <= 12; i++) {
+                if (i == 2) {
+                    days += monthDays[i - 1];
+                    if (isLeapGregCal(year1))
+                        days++;
+                } else {
+                    days += monthDays[i - 1];
+                }
+            }
+            days -= day1;
+            // 第二年到倒數第二年
+            for (int i = year1 + 1; i < year2; i++) {
+                if (i == 0) {
+                    continue;
+                }
+                days += 365;
+                if (isLeapGregCal(i))
+                    days++;
+            }
+            // 最後一年
+            for (int i = 1; i < month2; i++) {
+                if (i == 2) {
+                    days += monthDays[i - 1];
+                    if (isLeapGregCal(year1))
+                        days++;
+                } else {
+                    days += monthDays[i - 1];
+                }
+            }
+            days += day2;
+        }
+        return days;
+    }
+
+    /**
      * 格列曆是否閏年
      * 
      * @param year
@@ -114,10 +205,15 @@ public class JulianGregCalTimetest {
      */
     public static boolean isLeapGregCal(int year) {
         boolean isleap = false;
-        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-            isleap = true;
-        } else {
-            isleap = false;
+        if (year > 0) {
+            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+                isleap = true;
+            }
+        } else if (year < 0) {
+            year = Math.abs(year);
+            if (year % 400 == 1 || (year % 4 == 1 && year % 100 != 1)) {
+                isleap = true;
+            }
         }
         return isleap;
     }
