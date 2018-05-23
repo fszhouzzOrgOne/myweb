@@ -147,6 +147,7 @@ public class JulianGregCalTimetest {
                 days11++;
             }
         }
+        days11--;
         days11 += day1;
         // 按1月1日，要加減多少天
         int daysParam = days - days11;
@@ -172,7 +173,6 @@ public class JulianGregCalTimetest {
             theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
         }
         // 當年1月1日，加daysParam天，得到最終結果
-        daysParam--;
         int theMonth = 1;
         int theDay = 0;
         for (int i = 1; i <= 12; i++) {
