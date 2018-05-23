@@ -44,20 +44,15 @@ public class JulianGregCalTimetest {
 
     public static void main(String[] args) throws Exception {
         // getJulianAndGregCal();
-        System.out.println("-1" + isLeapGregCal(-1));
-        System.out.println("-401" + isLeapGregCal(-401));
-        System.out.println("-101" + isLeapGregCal(-101));
-        System.out.println("-3201" + isLeapGregCal(-101));
-        System.out.println("4" + isLeapGregCal(4));
-        System.out.println(daysBetweenGregCal("CE0722-01-01", "BCE0722-01-01"));
 
-        Calendar cal1 = DateGanzhiTest.getCalendarByStrDate("BCE0722-01-09");
-        Calendar cal2 = DateGanzhiTest.getCalendarByStrDate("CE0721-12-28");
-        long days = DateGanzhiTest.daysBetween(cal1.getTime(), cal2.getTime());
-        System.out.println("days: " + days);
+        System.out.println(daysBetweenGregCal("BCE0722-01-01", "CE0722-01-01"));
 
-        System.out.println("addDaysGregCal: " + addDaysGregCal("BCE0722-01-01", 527045));
-        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527043));
+        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527042));
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(sdf_yyyyMMdd.parse("2018-05-23"));
+        cal.add(Calendar.DATE, -50000);
+        System.out.println(sdf_yyyyMMdd.format(cal.getTime()));
     }
 
     private static void getJulianAndGregCal() throws Exception {
@@ -150,8 +145,8 @@ public class JulianGregCalTimetest {
         days11--;
         days11 += day1;
         // 按1月1日，要加減多少天
-        int daysParam = days - days11;
-        int theYear = year1;
+        int daysParam = days + days11;
+        int theYear = year1; 
         int theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
         // 如果是負數，先轉成正數
         // 最終，當年1月1日，加daysParam天後還在當年
@@ -195,7 +190,8 @@ public class JulianGregCalTimetest {
                 }
             }
         }
-        return (theYear < 0 ? "BCE" : "CE") + Math.abs(theYear) + "-" + theMonth + "-" + theDay;
+        return (theYear < 0 ? "BCE" : "CE") + Math.abs(theYear) + "-" + (theMonth < 10 ? "0" : "") + theMonth + "-"
+                + theDay;
     }
 
     /**
