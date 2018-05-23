@@ -56,8 +56,8 @@ public class JulianGregCalTimetest {
         long days = DateGanzhiTest.daysBetween(cal1.getTime(), cal2.getTime());
         System.out.println("days: " + days);
 
-        System.out.println("addDaysGregCal: " + addDaysGregCal("BCE0722-01-01", 527044));
-        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527044));
+        System.out.println("addDaysGregCal: " + addDaysGregCal("BCE0722-01-01", 527045));
+        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527043));
     }
 
     private static void getJulianAndGregCal() throws Exception {
@@ -184,9 +184,13 @@ public class JulianGregCalTimetest {
                 }
                 daysParam -= monthDayCnt;
 
-                if (daysParam <= 0) {
-                    System.out.println("daysParam: " + daysParam);
-                    theDay = monthDayCnt + daysParam;
+                if (daysParam < 0) {
+                    theDay = monthDayCnt + daysParam + 1;
+                    break;
+                } else if (daysParam == 0) {
+                    // 下月一號
+                    theDay = 1;
+                    theMonth++;
                     break;
                 }
             }
