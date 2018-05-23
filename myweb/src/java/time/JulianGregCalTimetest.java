@@ -163,8 +163,7 @@ public class JulianGregCalTimetest {
                 }
             }
         }
-        return (theYear < 0 ? "BCE" : "CE") + nfYear.format(Math.abs(theYear)) + "-" + (theMonth < 10 ? "0" : "")
-                + theMonth + "-" + (theDay < 10 ? "0" : "") + theDay;
+        return formatGregCalYMD(theYear, theMonth, theDay);
     }
 
     /**
@@ -273,6 +272,19 @@ public class JulianGregCalTimetest {
             }
         }
         return isleap;
+    }
+
+    /**
+     * 格式化年月日
+     * 
+     * @param year
+     * @param month
+     * @param day
+     * @return 加上BCE/CE
+     */
+    public static String formatGregCalYMD(int year, int month, int day) {
+        return (year < 0 ? "BCE" : "CE") + nfYear.format(Math.abs(year)) + "-" + (month < 10 ? "0" : "") + month + "-"
+                + (day < 10 ? "0" : "") + day;
     }
 
 }
