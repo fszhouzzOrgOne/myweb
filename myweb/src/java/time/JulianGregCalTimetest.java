@@ -174,18 +174,21 @@ public class JulianGregCalTimetest {
         }
         // 當年1月1日，加daysParam天，得到最終結果
         int theMonth = 1;
-        int theDay = 0;
-        for (int i = 1; i <= 12; i++) {
-            theMonth = i;
-            int monthDayCnt = monthDays[i - 1];
-            if (i == 2 && isLeapGregCal(theYear)) {
-                monthDayCnt++;
-            }
-            daysParam -= monthDayCnt;
+        int theDay = 1;
+        if (daysParam != 0) {
+            for (int i = 1; i <= 12; i++) {
+                theMonth = i;
+                int monthDayCnt = monthDays[i - 1];
+                if (i == 2 && isLeapGregCal(theYear)) {
+                    monthDayCnt++;
+                }
+                daysParam -= monthDayCnt;
 
-            if (daysParam <= 0) {
-                theDay = monthDayCnt + daysParam;
-                break;
+                if (daysParam <= 0) {
+                    System.out.println("daysParam: " + daysParam);
+                    theDay = monthDayCnt + daysParam;
+                    break;
+                }
             }
         }
         return (theYear < 0 ? "BCE" : "CE") + Math.abs(theYear) + "-" + theMonth + "-" + theDay;
