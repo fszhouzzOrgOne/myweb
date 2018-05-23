@@ -37,7 +37,7 @@ public class JulianGregCalTimetest {
         cal.add(Calendar.DATE, -50000);
         System.out.println(sdf_yyyyMMdd.format(cal.getTime()));
 
-        System.out.println(getGregCalByDate(sdf_yyyyMMdd.parse("0087-11-01")));
+        System.out.println(sdf_yyyyMMdd.format(getDateByGregCal(getGregCalByDate(sdf_yyyyMMdd.parse("0001-01-03")))));
     }
 
     /**
@@ -45,7 +45,7 @@ public class JulianGregCalTimetest {
      * 
      * @throws Exception
      */
-    private static void getJulianAndGregCal() throws Exception {
+    public static void getJulianAndGregCal() throws Exception {
         Date date111 = sdf_yyyyMMdd.parse("0001-01-01");
         Calendar cal111 = Calendar.getInstance();
         cal111.setTime(date111);
@@ -94,10 +94,30 @@ public class JulianGregCalTimetest {
      * @return
      * @throws Exception
      */
-    private static String getGregCalByDate(Date date) throws Exception {
+    public static String getGregCalByDate(Date date) throws Exception {
         Date date2 = sdf_yyyyMMdd.parse("1582-10-15");
         Long days = DateGanzhiTest.daysBetween(date2, date);
         return addDaysGregCal("CE1582-10-15", days.intValue());
+    }
+
+    /**
+     * 按格列曆日期取日期對象
+     * 
+     * @param date
+     * @return
+     * @throws Exception
+     */
+    public static Date getDateByGregCal(String date) throws Exception {
+        String ptn = "(BCE|CE)\\d{4}(-\\d{2}){2}";
+        if (!date.matches(ptn)) {
+            throw new Exception("日期格式錯誤。");
+        }
+        Long days = daysBetweenGregCal("CE1582-10-15", date);
+        Date date2 = sdf_yyyyMMdd.parse("1582-10-15");
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date2);
+        cal.add(Calendar.DATE, days.intValue());
+        return cal.getTime();
     }
 
     /**
@@ -205,6 +225,7 @@ public class JulianGregCalTimetest {
                 day1 = Integer.parseInt(parts1[2]);
         int year2 = Integer.parseInt(parts2[0]), month2 = Integer.parseInt(parts2[1]),
                 day2 = Integer.parseInt(parts2[2]);
+        boolean switched = false;
         if ((year1 > year2) || (year1 == year2 && month1 > month2)
                 || (year1 == year2 && month1 == month2 && day1 > day2)) {
             int year = year1, month = month1, day = day1;
@@ -214,6 +235,8 @@ public class JulianGregCalTimetest {
             year2 = year;
             month2 = month;
             day2 = day;
+
+            switched = true;
         }
         int days = 0;
         if (year1 == year2) {
@@ -259,7 +282,7 @@ public class JulianGregCalTimetest {
             }
             days += day2;
         }
-        return days;
+        return days * (switched ? -1 : 1);
     }
 
     /**
