@@ -26,7 +26,7 @@ public class JulianGregCalTimetest {
     }
 
     public static void main(String[] args) throws Exception {
-        getJulianAndGregCal();
+        // getJulianAndGregCal();
 
         System.out.println(daysBetweenGregCal("BCE0722-01-01", "CE0722-01-01"));
 
@@ -36,6 +36,8 @@ public class JulianGregCalTimetest {
         cal.setTime(sdf_yyyyMMdd.parse("2018-05-23"));
         cal.add(Calendar.DATE, -50000);
         System.out.println(sdf_yyyyMMdd.format(cal.getTime()));
+
+        System.out.println(getGregCalByDate(sdf_yyyyMMdd.parse("0087-11-01")));
     }
 
     /**
@@ -83,6 +85,19 @@ public class JulianGregCalTimetest {
         Collections.reverse(reses);
         String destFile = mbsBaseDir + "days-2000year.txt";
         IOUtils.writeFile(destFile, reses);
+    }
+
+    /**
+     * 按日期對象取格列曆日期
+     * 
+     * @param parse
+     * @return
+     * @throws Exception
+     */
+    private static String getGregCalByDate(Date date) throws Exception {
+        Date date2 = sdf_yyyyMMdd.parse("1582-10-15");
+        Long days = DateGanzhiTest.daysBetween(date2, date);
+        return addDaysGregCal("CE1582-10-15", days.intValue());
     }
 
     /**
