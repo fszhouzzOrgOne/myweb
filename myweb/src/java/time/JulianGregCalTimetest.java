@@ -16,7 +16,6 @@ public class JulianGregCalTimetest {
     static NumberFormat nfYear = NumberFormat.getInstance();
 
     public static int[] monthDays = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-    public static List<String> _400YearDays = null;
 
     public static String mbsBaseDir = "src\\java\\time\\";
 
@@ -24,33 +23,10 @@ public class JulianGregCalTimetest {
         nfYear.setGroupingUsed(false);
         nfYear.setMaximumIntegerDigits(4);
         nfYear.setMinimumIntegerDigits(4);
-
-        // 格列曆400一循环，所以用個400的所有日期
-        _400YearDays = new ArrayList<String>();
-        for (int i = 2001; i <= 2400; i++) {
-            boolean isleap = isLeapGregCal(i);
-            for (int m = 1; m <= 12; m++) {
-                String preffix = "";
-                if (m < 10) {
-                    preffix = "0";
-                }
-                int monthEnd = monthDays[m - 1];
-                if (isleap && m == 2) {
-                    monthEnd += 1;
-                }
-                for (int d = 1; d <= monthEnd; d++) {
-                    String preffixDay = "";
-                    if (d < 10) {
-                        preffixDay = "0";
-                    }
-                    _400YearDays.add(i + "-" + preffix + m + "-" + preffixDay + d);
-                }
-            }
-        }
     }
 
     public static void main(String[] args) throws Exception {
-        // getJulianAndGregCal();
+        getJulianAndGregCal();
 
         System.out.println(daysBetweenGregCal("BCE0722-01-01", "CE0722-01-01"));
 
@@ -62,39 +38,34 @@ public class JulianGregCalTimetest {
         System.out.println(sdf_yyyyMMdd.format(cal.getTime()));
     }
 
+    /**
+     * 生成儒略曆和格列曆對照表
+     * 
+     * @throws Exception
+     */
     private static void getJulianAndGregCal() throws Exception {
         Date date111 = sdf_yyyyMMdd.parse("0001-01-01");
         Calendar cal111 = Calendar.getInstance();
         cal111.setTime(date111);
 
-        int startYear = -1201;
-        Date endDate = sdf_yyyyMMdd.parse("2400-12-31");
+        Date endDate = sdf_yyyyMMdd.parse("2100-12-31");
         Calendar cal = Calendar.getInstance();
         cal.setTime(endDate);
 
-        List<String> _2000YearDays = new ArrayList<String>();
-        for (int i = 0; i < 10; i++) {
-            _2000YearDays.addAll(_400YearDays);
-        }
+        String gregDate = "CE2100-12-31";
 
         List<String> reses = new ArrayList<String>();
-        int currGregYear = 2400;
-        for (int i = _2000YearDays.size() - 1; i >= 0; i--) {
-            String one = _2000YearDays.get(i);
-            String[] parts = one.split("-");
+        while (!(cal111.after(cal) && cal.get(Calendar.YEAR) >= 723)) {
+            String parts[] = gregDate.split("-");
 
             String res = "";
             if (cal111.after(cal)) {
                 res += "B";
-                // 到了BCE723了，不再要了
-                if (cal.get(Calendar.YEAR) == -startYear) {
-                    break;
-                }
             }
             res += cal.get(Calendar.YEAR) + "年,";
             res += cal.get(Calendar.MONTH) + 1 + "月,";
             res += cal.get(Calendar.DATE) + "日,";
-            res += (currGregYear < 0 ? "B" : "") + Math.abs(currGregYear) + "年," + parts[1] + "月," + parts[2] + "日";
+            res += parts[0].replaceAll("CE", "") + "年," + parts[1] + "月," + parts[2] + "日";
             // 夏曆等不加了，加干支紀日，紀時
             String ceDateStr = "CE";
             if (cal111.after(cal)) {
@@ -104,17 +75,9 @@ public class JulianGregCalTimetest {
             res += "," + DateGanzhiTest.getDateGanzhi(ceDateStr) + "日";
             res += "," + DateGanzhiTest.getHourGanzhi(ceDateStr, 0) + "時";
 
-            if (!(cal111.before(cal) && cal.get(Calendar.YEAR) > 2100)) {
-                reses.add(res);
-            }
-
+            reses.add(res);
             cal.add(Calendar.DATE, -1);
-            if ("0101".equals(parts[1] + parts[2])) {
-                currGregYear--;
-                if (currGregYear == 0) {
-                    currGregYear--;
-                }
-            }
+            gregDate = addDaysGregCal(gregDate, -1);
         }
 
         Collections.reverse(reses);
