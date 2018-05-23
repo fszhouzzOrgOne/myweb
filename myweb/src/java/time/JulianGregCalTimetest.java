@@ -26,7 +26,7 @@ public class JulianGregCalTimetest {
     }
 
     public static void main(String[] args) throws Exception {
-        // getJulianAndGregCal();
+        getJulianAndGregCal();
 
         System.out.println(daysBetweenGregCal("BCE0722-01-01", "CE0722-01-01"));
 
@@ -54,10 +54,11 @@ public class JulianGregCalTimetest {
         Calendar cal = Calendar.getInstance();
         cal.setTime(endDate);
 
-        String gregDate = "CE2100-12-31";
+        String gregDate = null;
 
         List<String> reses = new ArrayList<String>();
         while (!(cal111.after(cal) && cal.get(Calendar.YEAR) >= 723)) {
+            gregDate = getGregCalByDate(cal.getTime());
             String parts[] = gregDate.split("-");
 
             String res = "";
@@ -79,7 +80,6 @@ public class JulianGregCalTimetest {
 
             reses.add(res);
             cal.add(Calendar.DATE, -1);
-            gregDate = addDaysGregCal(gregDate, -1);
         }
 
         Collections.reverse(reses);
