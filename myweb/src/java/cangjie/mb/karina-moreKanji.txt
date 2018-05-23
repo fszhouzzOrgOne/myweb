@@ -18054,6 +18054,7 @@ ken 牽
 ken 犬
 ken 献
 ken 獻
+ken 甄
 ken 監
 ken 県
 ken 研
@@ -32367,6 +32368,7 @@ shin 森
 shin 津
 shin 浸
 shin 深
+shin 甄
 shin 申
 shin 眞
 shin 真
@@ -34761,6 +34763,7 @@ sin 森
 sin 津
 sin 浸
 sin 深
+sin 甄
 sin 申
 sin 眞
 sin 真
