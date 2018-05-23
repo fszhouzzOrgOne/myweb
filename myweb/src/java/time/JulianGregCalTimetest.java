@@ -26,18 +26,17 @@ public class JulianGregCalTimetest {
     }
 
     public static void main(String[] args) throws Exception {
-        getJulianAndGregCal();
+        // getJulianAndGregCal();
 
-        System.out.println(daysBetweenGregCal("BCE0722-01-01", "CE0722-01-01"));
-
-        System.out.println("addDaysGregCal: " + addDaysGregCal("CE0722-01-01", -527042));
-
+        Date date = sdf_yyyyMMdd.parse("0001-10-04");
         Calendar cal = Calendar.getInstance();
-        cal.setTime(sdf_yyyyMMdd.parse("2018-05-23"));
-        cal.add(Calendar.DATE, -50000);
+        cal.setTime(date);
+        cal.add(Calendar.YEAR, -551);
+        String gregCal = getGregCalByDate(cal.getTime());
         System.out.println(sdf_yyyyMMdd.format(cal.getTime()));
-
-        System.out.println(sdf_yyyyMMdd.format(getDateByGregCal(getGregCalByDate(sdf_yyyyMMdd.parse("0001-01-03")))));
+        System.out.println("gregCal: " + gregCal);
+        Date date2 = getDateByGregCal(gregCal);
+        System.out.println(sdf_yyyyMMdd.format(date2));
     }
 
     /**
