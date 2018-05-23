@@ -100,6 +100,9 @@ public class JulianGregCalTimetest {
         if (!date1.matches(ptn)) {
             throw new Exception("日期格式錯誤。");
         }
+        if (days == 0) {
+            return date1;
+        }
         String[] parts1 = date1.split("-");
         parts1[0] = parts1[0].replaceAll("CE", "").replaceAll("B", "-");
         int year1 = Integer.parseInt(parts1[0]), month1 = Integer.parseInt(parts1[1]),
