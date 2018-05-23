@@ -1,5 +1,6 @@
 package time;
 
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -11,6 +12,8 @@ import cangjie.java.util.IOUtils;
 
 public class JulianGregCalTimetest {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
+    /** 年份數字格式化 */
+    static NumberFormat nfYear = NumberFormat.getInstance();
 
     public static int[] monthDays = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     public static List<String> _400YearDays = null;
@@ -18,6 +21,10 @@ public class JulianGregCalTimetest {
     public static String mbsBaseDir = "src\\java\\time\\";
 
     static {
+        nfYear.setGroupingUsed(false);
+        nfYear.setMaximumIntegerDigits(4);
+        nfYear.setMinimumIntegerDigits(4);
+
         // 格列曆400一循环，所以用個400的所有日期
         _400YearDays = new ArrayList<String>();
         for (int i = 2001; i <= 2400; i++) {
@@ -146,7 +153,7 @@ public class JulianGregCalTimetest {
         days11 += day1;
         // 按1月1日，要加減多少天
         int daysParam = days + days11;
-        int theYear = year1; 
+        int theYear = year1;
         int theYearDays = (isLeapGregCal(theYear) ? 366 : 365);
         // 如果是負數，先轉成正數
         // 最終，當年1月1日，加daysParam天後還在當年
@@ -190,8 +197,8 @@ public class JulianGregCalTimetest {
                 }
             }
         }
-        return (theYear < 0 ? "BCE" : "CE") + Math.abs(theYear) + "-" + (theMonth < 10 ? "0" : "") + theMonth + "-"
-                + theDay;
+        return (theYear < 0 ? "BCE" : "CE") + nfYear.format(Math.abs(theYear)) + "-" + (theMonth < 10 ? "0" : "")
+                + theMonth + "-" + (theDay < 10 ? "0" : "") + theDay;
     }
 
     /**
