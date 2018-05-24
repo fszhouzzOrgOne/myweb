@@ -37,9 +37,10 @@ public class Cj01SQLiteTest {
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
+    private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
 
     private static Map<String, Integer> mbOrderNoMap = null; // 文字排序權值
- 
+
     private static Set<String> ansichars = null;
     static {
         ansichars = new HashSet<String>();
@@ -55,8 +56,8 @@ public class Cj01SQLiteTest {
             }
         }
     }
-    
-    /**  只要ANSI的字 */
+
+    /** 只要ANSI的字 */
     private static boolean isOnlyAnsi = false;
 
     public static void main(String args[]) throws Exception {
@@ -67,6 +68,7 @@ public class Cj01SQLiteTest {
         boolean withSghm = true; // 四角號碼
         boolean withPy = true; // 拼音
         boolean withZy = true; // 注音
+        boolean withKoxhanh = true; // 中古漢語
         boolean withCangjieOthers = false; // 加入其他倉頡？
         boolean withCangjie6 = false; // 加入蒼頡六？
         boolean withCangjie5 = false; // 加入蒼頡五？
@@ -75,7 +77,7 @@ public class Cj01SQLiteTest {
 
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 509765 韓日单字 380889 
+        boolean edition2 = true; // 2版本自定義字體 540454 韓日单字 380889
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
@@ -194,6 +196,7 @@ public class Cj01SQLiteTest {
             List<String> lineskorea = IOUtils.readLines(koreaallInOne);
             List<String> linesmanju = IOUtils.readLines(manjuallInOne);
             List<String> linesipa = IOUtils.readLines(phoneticAllInOne);
+            List<String> linesKoxhanh = IOUtils.readLines(koxhanhAllInOne);
             // 交集碼表
             List<String> linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
             // 倉頡三五
@@ -235,7 +238,8 @@ public class Cj01SQLiteTest {
             String cjGenkorea = "korea";
             String cjGenInter = "cjcommon";
             String cjGenManju = "manju";
-            String cjGenIpa= "ipa";
+            String cjGenIpa = "ipa";
+            String cjGenKoxhanh = "kohan";
 
             sql_gen = getInsertGenSql(cjGen2, "倉頡二代");
             stmt.executeUpdate(sql_gen);
@@ -277,8 +281,11 @@ public class Cj01SQLiteTest {
 
             sql_gen = getInsertGenSql(cjGenManju, "圈點滿文");
             stmt.executeUpdate(sql_gen);
-            
+
             sql_gen = getInsertGenSql(cjGenIpa, "國際音標");
+            stmt.executeUpdate(sql_gen);
+
+            sql_gen = getInsertGenSql(cjGenKoxhanh, "中古漢語");
             stmt.executeUpdate(sql_gen);
 
             // 不自動提交
@@ -391,6 +398,13 @@ public class Cj01SQLiteTest {
             c.commit();
             System.out.println("insert " + cjGenIpa + " successfully");
             selectCountAll(stmt);
+            // 中古漢語
+            if (withKoxhanh) {
+                insertMbdb(stmt, cjGenKoxhanh, linesKoxhanh, false);
+                c.commit();
+                System.out.println("insert " + cjGenKoxhanh + " successfully");
+                selectCountAll(stmt);
+            }
 
             stmt.close();
             c.close();
@@ -452,7 +466,8 @@ public class Cj01SQLiteTest {
      * @param stmt
      * @param gen
      * @param lines
-     * @param ordered 是否取mbOrderNoMap中的排序
+     * @param ordered
+     *            是否取mbOrderNoMap中的排序
      * @throws Exception
      */
     private static void insertMbdb(Statement stmt, String gen, List<String> lines, boolean ordered) throws Exception {
@@ -471,7 +486,7 @@ public class Cj01SQLiteTest {
                 if (ordered) {
                     order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
                 }
-                
+
                 String sql = getInsertSql(gen, cod, val, order);
                 stmt.executeUpdate(sql);
                 count++;

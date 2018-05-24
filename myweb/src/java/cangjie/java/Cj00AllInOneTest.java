@@ -131,6 +131,10 @@ public class Cj00AllInOneTest {
             readPhraseFile();
         }
 
+        // 中古漢語
+        String[] mbkoxhanh = new String[] { koxhanh30000 };
+        genAllInOne("中古漢語", mbkoxhanh, koxhanhAllInOne, withHeaders);
+
         // 國際音標
         String[] mbipa = new String[] { phonetic200 };
         genAllInOne("國際音標", mbipa, phoneticAllInOne, withHeaders);
