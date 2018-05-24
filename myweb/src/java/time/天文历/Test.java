@@ -14,7 +14,7 @@ public class Test {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "0622-07-16";
+        String dateStr = "1950-10-01";
         Date date = sdf_yyyyMMdd.parse(dateStr);
 
         Date begin = sdf_yyyyMMdd.parse("0001-01-01");
@@ -33,5 +33,9 @@ public class Test {
                 + DateGanzhiTest.getHourGanzhi(eraPreffix + sdf_yyyyMMdd.format(cal.getTime()), 0) + "時");
         System.out.println("回曆" + lc.getLunarDate().gethYear() + "年" + lc.getLunarDate().gethMonth() + "月"
                 + lc.getLunarDate().gethDay() + "日");
+        
+        System.out.println(lc.getLunarDate().getImpHappyName());
+        System.out.println(lc.getLunarDate().getImpName());
+        System.out.println(lc.getLunarDate().getAllName());
     }
 }
