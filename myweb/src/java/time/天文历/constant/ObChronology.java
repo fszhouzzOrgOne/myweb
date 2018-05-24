@@ -19,13 +19,14 @@ public class ObChronology {
     /** 月相名称表 */
     public static final String[] yxmc = { "朔", "上弦", "望", "下弦" };
     /** 節氣名稱 */
-    public static final String[] jqmc = { "冬至", "小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至", "小暑", "大暑",
-            "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪" };
+    public static final String[] jqmc = { "冬至", "小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至",
+            "小暑", "大暑", "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪" };
     /** 月名称,建寅 */
     public static final String[] ymc = { "十一", "十二", "正", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
     /** 中文日期名稱 */
-    public static final String[] rmc = { "初一", "初二", "初三", "初四", "初五", "初六", "初七", "初八", "初九", "初十", "十一", "十二", "十三", "十四", "十五",
-            "十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十", "卅一" };
+    public static final String[] rmc = { "初一", "初二", "初三", "初四", "初五", "初六", "初七", "初八", "初九", "初十", "十一", "十二", "十三",
+            "十四", "十五", "十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十",
+            "卅一" };
 
     static {
         /** 纪年数据结构：数据用逗号分开，每7个描述一个年号，格式为:起始公元,使用年数,已用年数,朝代,朝号,皇帝,年号 */
@@ -92,7 +93,8 @@ public class ObChronology {
         int holiday = dateTwo.getHoliday();
 
         // 按农历日期查找重量点节假日
-        String d = date.getLunarMonthName() + (date.getLunarMonthName().length() < 2 ? "月" : "") + date.getLunarDayName();
+        String d = date.getLunarMonthName() + (date.getLunarMonthName().length() < 2 ? "月" : "")
+                + date.getLunarDayName();
         if (!date.getLunarLunarLeap().equals("闰")) {
             if (d.equals("正月初一")) {
                 impHappyName += "春节 ";
@@ -233,20 +235,20 @@ public class ObChronology {
         return t - Common.dt_T(t) + (double) 8 / 24;
     }
 
-    //  // 精气
-    //  public static double qi_accurate2(double jd) {
-    //      double d = Math.PI / 12;
-    //      double w = Math.floor((jd + 293) / 365.2422 * 24) * d;
-    //      double a = this.qi_accurate(w);
-    //      if (a - jd > 5)
-    //          return this.qi_accurate(w - d);
-    //      if (a - jd < -5)
-    //          return this.qi_accurate(w + d);
-    //      return a;
-    //  }
+    // // 精气
+    // public static double qi_accurate2(double jd) {
+    // double d = Math.PI / 12;
+    // double w = Math.floor((jd + 293) / 365.2422 * 24) * d;
+    // double a = this.qi_accurate(w);
+    // if (a - jd > 5)
+    // return this.qi_accurate(w - d);
+    // if (a - jd < -5)
+    // return this.qi_accurate(w + d);
+    // return a;
+    // }
     //
-    //  // 精朔
-    //  public static double so_accurate2(double jd) {
-    //      return this.so_accurate(Math.floor((jd + 8) / 29.5306) * Math.PI * 2);
-    //  }
+    // // 精朔
+    // public static double so_accurate2(double jd) {
+    // return this.so_accurate(Math.floor((jd + 8) / 29.5306) * Math.PI * 2);
+    // }
 }
