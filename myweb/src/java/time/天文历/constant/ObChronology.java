@@ -38,7 +38,7 @@ public class ObChronology {
             if (year < j || year >= j + Integer.parseInt(JNB[i + 1]))
                 continue;
             c = JNB[i + 6] + (year - j + 1 + Integer.parseInt(JNB[i + 2])) + "年"; // 年号及年次
-            s += (s != "" ? ";" : "") + "[" + JNB[i + 3] + "]" + JNB[i + 4] + " " + JNB[i + 5] + " " + c;// i为年号元年,i+3朝代,i+4朝号,i+5皇帝,i+6年号
+            s += (s != "" ? ";" : "") + "[" + JNB[i + 3] + "]" + JNB[i + 4] + " " + JNB[i + 5] + " " + c;// i为年号元年,i+3朝代,i+4廟号,i+5皇帝,i+6年号
         }
         return s;
     }
@@ -213,7 +213,7 @@ public class ObChronology {
     static {
         /**
          * 纪年数据结构：数据用逗号分开，每7个描述一个年号<br/>
-         * 格式为:起始公元,使用年数,已用年数,朝代,朝号,皇帝,年号
+         * 格式为:起始公元,使用年数,已用年数,朝代,廟号,皇帝,年号
          */
         StringBuilder sbd = new StringBuilder();
         sbd.append("-2069,45,0,夏,禹,,禹,");
@@ -742,7 +742,7 @@ public class ObChronology {
         sbd.append("1851,11,0,清,文宗,爱新觉罗奕詝,咸丰,");
         sbd.append("1862,13,0,清,穆宗,爱新觉罗载淳,同治,");
         sbd.append("1875,34,0,清,德宗,爱新觉罗载湉,光绪,");
-        sbd.append("1909,3,0,清,无朝,爱新觉罗溥仪,宣统,");
+        sbd.append("1909,3,0,清,无廟,爱新觉罗溥仪,宣统,");
         sbd.append("1912,37,0,近、现代,中华民国,,民国,");
         sbd.append("1949,9999,1948,当代,中国,,公历纪元");
 
