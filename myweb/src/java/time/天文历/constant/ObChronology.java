@@ -28,6 +28,10 @@ public class ObChronology {
             "十四", "十五", "十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十",
             "卅一" };
 
+    public static void main(String[] args) {
+        System.out.println(getEraName(911));
+    }
+    
     /** 取年号 */
     public static String getEraName(int year) {
         int j;
