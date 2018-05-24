@@ -14,7 +14,7 @@ public class Test {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "2018-15-22";
+        String dateStr = "0622-07-16";
         Date date = sdf_yyyyMMdd.parse(dateStr);
 
         Date begin = sdf_yyyyMMdd.parse("0001-01-01");
@@ -26,7 +26,8 @@ public class Test {
 
         LunarCalendar lc = new LunarCalendar(date);
 
-        System.out.println(eraPreffix + cal.get(Calendar.YEAR) + "年" + cal.get(Calendar.MONTH) + "月"
+        System.out.println(lc.getNianHao());
+        System.out.println(eraPreffix + cal.get(Calendar.YEAR) + "年" + (cal.get(Calendar.MONTH) + 1) + "月"
                 + cal.get(Calendar.DATE) + "日");
         System.out.println(lc.getDateString() + "," + lc.getGanZhiDateString()
                 + DateGanzhiTest.getHourGanzhi(eraPreffix + sdf_yyyyMMdd.format(cal.getTime()), 0) + "時");
