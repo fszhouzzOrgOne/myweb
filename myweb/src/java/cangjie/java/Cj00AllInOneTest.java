@@ -120,6 +120,10 @@ public class Cj00AllInOneTest {
     // 國際音標
     public static String phonetic200 = mbsBaseDir + "phonetic-allInOne.txt";
     public static String phoneticAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-phonetic.txt";
+    
+    // 中古漢語拼音
+    public static String koxhanh30000 = mbsBaseDir + "koxhanh-30000.txt";
+    public static String koxhanhAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-koxhanh.txt";
 
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
