@@ -14,7 +14,7 @@ public class Test {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "1950-10-01";
+        String dateStr = "0913-01-01";
         Date date = sdf_yyyyMMdd.parse(dateStr);
 
         Date begin = sdf_yyyyMMdd.parse("0001-01-01");
