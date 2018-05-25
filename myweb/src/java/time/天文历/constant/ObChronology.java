@@ -31,7 +31,7 @@ public class ObChronology {
     public static void main(String[] args) {
         System.out.println(getEraName(911));
     }
-    
+
     /** 取年号 */
     public static String getEraName(int year) {
         int j;
@@ -39,10 +39,14 @@ public class ObChronology {
         String[] JNB = ObChronology.ChronologyTable;
         for (int i = 0; i < JNB.length; i += 7) {
             j = Integer.parseInt(JNB[i]);
-            if (year < j || year >= j + Integer.parseInt(JNB[i + 1]))
+            // 年小於表中的年，或年大於年號的末年
+            if (year < j || year >= j + Integer.parseInt(JNB[i + 1])) {
                 continue;
-            c = JNB[i + 6] + (year - j + 1 + Integer.parseInt(JNB[i + 2])) + "年"; // 年号及年次
-            s += (!"".equals(s) ? ";" : "") + "[" + JNB[i + 3] + "]" + JNB[i + 4] + " " + JNB[i + 5] + " " + c;// i为年号元年,i+3朝代,i+4廟号,i+5皇帝,i+6年号
+            }
+            // 年號名稱，當前年減去元年，加1，加上已用年份
+            c = JNB[i + 6] + (year - j + 1 + Integer.parseInt(JNB[i + 2])) + "年";
+            // i爲年號元年,i+3朝代,i+4廟號,i+5皇帝名,i+6年號
+            s += (!"".equals(s) ? ";" : "") + "[" + JNB[i + 3] + "]" + JNB[i + 4] + " " + JNB[i + 5] + " " + c;
         }
         return s;
     }
