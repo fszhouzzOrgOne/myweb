@@ -14,10 +14,13 @@ public class ObFestival {
     static {
         /** 国历节日,#表示放假日,I表示重要节日或纪念日 */
         StringBuilder sbd = new StringBuilder();
+        // 1月
         sbd.append("01#元旦|");
+        // 2月
         sbd.append("02I世界湿地日,");
         sbd.append("10.国际气象节,");
         sbd.append("14I情人节|");
+        // 3月
         sbd.append("01.国际海豹日,");
         sbd.append("03.全国爱耳日,");
         sbd.append("05.1963-9999学雷锋纪念日,");
@@ -36,6 +39,7 @@ public class ObFestival {
         sbd.append("24.1982-9999世界防治结核病日,");
         sbd.append("25.全国中小学生安全教育日,");
         sbd.append("30.巴勒斯坦国土日|");
+        // 4月
         sbd.append("01I1564-9999愚人节,");
         sbd.append("01.全国爱国卫生运动月(四月),");
         sbd.append("01.税收宣传月(四月),");
@@ -43,6 +47,7 @@ public class ObFestival {
         sbd.append("22I世界地球日,");
         sbd.append("23.世界图书和版权日,");
         sbd.append("24.亚非新闻工作者日|");
+        // 5月
         sbd.append("01#1889-9999劳动节,");
         sbd.append("04I青年节,");
         sbd.append("05.碘缺乏病防治日,");
@@ -54,6 +59,7 @@ public class ObFestival {
         sbd.append("20.全国学生营养日,");
         sbd.append("23.国际牛奶日,");
         sbd.append("31I世界无烟日|");
+        // 6月
         sbd.append("01I1925-9999国际儿童节,");
         sbd.append("05.世界环境保护日,");
         sbd.append("06.全国爱眼日,");
@@ -61,6 +67,7 @@ public class ObFestival {
         sbd.append("23.国际奥林匹克日,");
         sbd.append("25.全国土地日,");
         sbd.append("26I国际禁毒日|");
+        // 7月
         sbd.append("01I1997-9999香港回归纪念日,");
         sbd.append("01I1921-9999中共诞辰,");
         sbd.append("01.世界建筑日,");
@@ -68,8 +75,10 @@ public class ObFestival {
         sbd.append("07I1937-9999抗日战争纪念日,");
         sbd.append("11I世界人口日,");
         sbd.append("30.非洲妇女日|");
+        // 8月
         sbd.append("01I1927-9999建军节,");
         sbd.append("08.中国男子节(爸爸节)|");
+        // 9月
         sbd.append("03I1945-9999抗日战争胜利纪念,");
         sbd.append("08.1966-9999国际扫盲日,");
         sbd.append("08.国际新闻工作者日,");
@@ -81,6 +90,7 @@ public class ObFestival {
         sbd.append("20.国际爱牙日,");
         sbd.append("27.世界旅游日,");
         sbd.append("28I孔子诞辰|");
+        // 10月
         sbd.append("01#1949-9999国庆节,");
         sbd.append("01.世界音乐日,");
         sbd.append("01.国际老人节,");
@@ -104,6 +114,7 @@ public class ObFestival {
         sbd.append("22.世界传统医药日,");
         sbd.append("24.联合国日,");
         sbd.append("31.世界勤俭日|");
+        // 11月
         sbd.append("07.1917-9999十月社会主义革命纪念日,");
         sbd.append("08.中国记者日,");
         sbd.append("09.全国消防安全宣传教育日,");
@@ -119,6 +130,7 @@ public class ObFestival {
         sbd.append("21.世界电视日,");
         sbd.append("22.彝族年,");
         sbd.append("29.国际声援巴勒斯坦人民国际日|");
+        // 12月
         sbd.append("01I1988-9999世界艾滋病日,");
         sbd.append("03.世界残疾人日,");
         sbd.append("05.国际经济和社会发展志愿人员日,");
