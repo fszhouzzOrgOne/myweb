@@ -29,10 +29,11 @@ public class DuoDuoFormatTest {
     private static String cjmsallInOne = Cj00AllInOneTest.cjmsallInOne; // 微軟倉頡
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
+    private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
 
     public static void main(String[] args) throws Exception {
         // 生成碼表，倉頡全都加入詞組
-        Cj00AllInOneTest.generateAllInOnes(false, false, true, false, false);
+        Cj00AllInOneTest.generateAllInOnes(false, true, true, false, false);
         
         List<String> mbs = new ArrayList<String>();
         mbs.add(mb2allInOne);
@@ -48,6 +49,7 @@ public class DuoDuoFormatTest {
         mbs.add(koreaallInOne);
         mbs.add(manjuallInOne);
         mbs.add(jyutpingAllInOne);
+        mbs.add(koxhanhAllInOne);
 
         generateDuoDuoMb(mbs);
 
