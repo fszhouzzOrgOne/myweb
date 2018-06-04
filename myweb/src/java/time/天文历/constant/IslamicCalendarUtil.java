@@ -88,9 +88,11 @@ public class IslamicCalendarUtil {
      *            是否簡化字
      * @param withNames
      *            是否帶各月的名字
+     * @param withTime
+     *            是否帶時分秒
      * @return 字符串，如回曆1439年01月穆哈蘭姆月01日
      */
-    public static String getHuiLiStrByDate(Date date, boolean isSimple, boolean withNames) {
+    public static String getHuiLiStrByDate(Date date, boolean isSimple, boolean withNames, boolean withTime) {
         String huili = getHuiLiByDate(date);
         String[] parts = huili.split(" ");
         String res = "回曆";
@@ -101,14 +103,16 @@ public class IslamicCalendarUtil {
         }
         res += parts[2] + "日";
 
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-        int hour = cal.get(Calendar.HOUR_OF_DAY);
-        int minute = cal.get(Calendar.MINUTE);
-        int second = cal.get(Calendar.SECOND);
-        res += (hour < 10 ? "0" : "") + hour + "時";
-        res += (minute < 10 ? "0" : "") + minute + "分";
-        res += (second < 10 ? "0" : "") + second + "秒";
+        if (withTime) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
+            int hour = cal.get(Calendar.HOUR_OF_DAY);
+            int minute = cal.get(Calendar.MINUTE);
+            int second = cal.get(Calendar.SECOND);
+            res += (hour < 10 ? "0" : "") + hour + "時";
+            res += (minute < 10 ? "0" : "") + minute + "分";
+            res += (second < 10 ? "0" : "") + second + "秒";
+        }
 
         if (isSimple) {
             for (int i = 0; i < jyutMingzi.length; i++) {
@@ -151,7 +155,7 @@ public class IslamicCalendarUtil {
         cal.setTime(new Date());
         cal.add(Calendar.DATE, -90);
         System.out.println(getHuiLiByDate(cal.getTime()));
-        System.out.println(getHuiLiStrByDate(cal.getTime(), true, true));
-        System.out.println(getHuiLiStrByDate(cal.getTime(), false, false));
+        System.out.println(getHuiLiStrByDate(cal.getTime(), true, true, false));
+        System.out.println(getHuiLiStrByDate(cal.getTime(), false, false, true));
     }
 }
