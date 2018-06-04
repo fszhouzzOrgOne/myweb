@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import time.天文历.constant.Common;
-import time.天文历.constant.MoslemCalendar;
+import time.天文历.constant.IslamicCalendar;
 import time.天文历.constant.ObChronology;
 import time.天文历.constant.ObFestival;
 import time.天文历.constant.SSQ;
@@ -299,7 +299,7 @@ public class LunarCalendar {
 				mk++; // 星座所在月的序数,(如果j=13,ob.d0不会超过第14号中气)
 			lunarDate.setConstellation(ObChronology.XiZ[(mk + 12) % 12] + "座");
 			// 回历
-			MoslemCalendar.getHuiLi(lunarDate.getDayRL(), lunarDate);
+			IslamicCalendar.getHuiLi(lunarDate.getDayRL(), lunarDate);
 			// 节日
 			// ob.A = ob.B = ob.C = ""; ob.Fjia = 0;
 			ObFestival.getDayName(lunarDate, lunarDate); // 公历

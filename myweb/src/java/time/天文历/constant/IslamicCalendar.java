@@ -1,7 +1,6 @@
 package time.天文历.constant;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import time.DateGanzhiTest;
@@ -50,7 +49,7 @@ public class IslamicCalendar {
         int year = z * 30 + y + 1;
         int month = m + 1;
         int day = d + 1;
-        return year + " " + (month < 10 ? "0" : "") + month + " " + (day < 10 ? "0" : "") + day;
+        return fomatHuili2Str(year, month, day);
     }
 
     /**
@@ -74,12 +73,32 @@ public class IslamicCalendar {
         return res;
     }
 
-    public static void main(String[] args) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.YEAR, 2018);
-        cal.set(Calendar.MONTH, 5);
-        cal.set(Calendar.DATE, 4);
-        System.out.println(sdf_yyyyMMdd.format(cal.getTime()) + ": " + getHuiliByDate(cal.getTime()));
+    /**
+     * 格式化回曆年月日
+     * 
+     * @param year
+     *            年
+     * @param month
+     *            月
+     * @param day
+     *            日
+     * @return 回曆年月日，格式如“(-)1420 09 24”
+     */
+    public static String fomatHuili2Str(int year, int month, int day) {
+        boolean beforeEra = (year < 0);
+        String yearStr = Math.abs(year) + "";
+        while (yearStr.length() < 4) {
+            yearStr = "0" + yearStr;
+        }
+        if (beforeEra) {
+            yearStr = "-" + yearStr;
+        }
+        return yearStr + " " + (month < 10 ? "0" : "") + month + " " + (day < 10 ? "0" : "") + day;
+    }
+
+    public static void main(String[] args) throws Exception {
+        String dateStr = "0621-07-16";
+        System.out.println(dateStr + ": " + getHuiliByDate(sdf_yyyyMMdd.parse(dateStr)));
 
         System.out.println(getHuiliByDate(new Date()));
     }
