@@ -12,6 +12,9 @@ import time.天文历.LunarDate;
 public class IslamicCalendarUtil {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
+    static String[] jyutMingzi = { "穆哈蘭姆月聖月", "色法爾月旅月", "賴比爾·敖外魯月第一春月", "賴比爾·阿色尼月第二春月", "主馬達·敖外魯月第一乾月", "主馬達·阿色尼月第二乾月",
+            "赖哲卜月問候月", "舍爾邦月分配月", "賴買丹月齋戒月", "閃瓦魯月獵月", "都爾喀爾德月休息月", "都爾黑哲月朝聖月" };
+
     /**
      * 計算回曆
      * 
@@ -58,7 +61,7 @@ public class IslamicCalendarUtil {
      * @param date
      * @return 回曆年月日，格式如“(-)1420 09 24”
      */
-    public static String getHuiliByDate(Date date) {
+    public static String getHuiLiByDate(Date date) {
         // 公元2000年1月1日，設儒略日相對值爲0，回曆1420-9-24
         // 實際值參見Common.J2000=2451545
         int theJd = 0;
@@ -70,6 +73,23 @@ public class IslamicCalendarUtil {
             res = getHuiLiByJD(theJd);
         } catch (Exception e) {
         }
+        return res;
+    }
+
+    /**
+     * 按日期對象算出回曆年月日，帶各月的名字
+     * 
+     * @param date
+     * @return 字符串，如回曆1439年01月穆哈蘭姆月01日
+     */
+    public static String getHuiLiByDateWithNames(Date date) {
+        String huili = getHuiLiByDate(date);
+        String[] parts = huili.split(" ");
+        String res = "回曆";
+        res += parts[0].replaceAll("-", "前") + "年";
+        res += parts[1] + "月";
+        res += jyutMingzi[Integer.parseInt(parts[1]) - 1];
+        res += parts[2] + "日";
         return res;
     }
 
@@ -98,8 +118,9 @@ public class IslamicCalendarUtil {
 
     public static void main(String[] args) throws Exception {
         String dateStr = "0621-07-15";
-        System.out.println(dateStr + ": " + getHuiliByDate(sdf_yyyyMMdd.parse(dateStr)));
+        System.out.println(dateStr + ": " + getHuiLiByDate(sdf_yyyyMMdd.parse(dateStr)));
 
-        System.out.println(getHuiliByDate(new Date()));
+        System.out.println(getHuiLiByDate(new Date()));
+        System.out.println(getHuiLiByDateWithNames(new Date()));
     }
 }
