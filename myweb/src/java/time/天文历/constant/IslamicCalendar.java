@@ -97,7 +97,7 @@ public class IslamicCalendar {
     }
 
     public static void main(String[] args) throws Exception {
-        String dateStr = "0621-07-16";
+        String dateStr = "0621-07-15";
         System.out.println(dateStr + ": " + getHuiliByDate(sdf_yyyyMMdd.parse(dateStr)));
 
         System.out.println(getHuiliByDate(new Date()));
