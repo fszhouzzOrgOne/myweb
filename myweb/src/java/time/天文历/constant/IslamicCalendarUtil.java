@@ -9,7 +9,7 @@ import time.天文历.LunarDate;
 /**
  * 回曆
  */
-public class IslamicCalendar {
+public class IslamicCalendarUtil {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     /**
