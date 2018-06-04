@@ -1,19 +1,23 @@
 package time.天文历.constant;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import time.DateGanzhiTest;
 import time.天文历.LunarDate;
 
 /**
- * 回曆
+ * 回曆日期計算
  */
 public class IslamicCalendarUtil {
     static SimpleDateFormat sdf_yyyyMMdd = new SimpleDateFormat("yyyy-MM-dd");
 
     static String[] jyutMingzi = { "穆哈蘭姆月聖月", "色法爾月旅月", "賴比爾·敖外魯月第一春月", "賴比爾·阿色尼月第二春月", "主馬達·敖外魯月第一乾月", "主馬達·阿色尼月第二乾月",
             "赖哲卜月問候月", "舍爾邦月分配月", "賴買丹月齋戒月", "閃瓦魯月獵月", "都爾喀爾德月休息月", "都爾黑哲月朝聖月" };
+
+    static String[] jyutMingziSim = { "穆哈兰姆月圣月", "色法尔月旅月", "赖比尔·敖外鲁月第一春月", "赖比尔·阿色尼月第二春月", "主马达·敖外鲁月第一干月",
+            "主马达·阿色尼月第二干月", "赖哲卜月问候月", "舍尔邦月分配月", "赖买丹月斋戒月", "闪瓦鲁月猎月", "都尔喀尔德月休息月", "都尔黑哲月朝圣月" };
 
     /**
      * 計算回曆
@@ -77,19 +81,42 @@ public class IslamicCalendarUtil {
     }
 
     /**
-     * 按日期對象算出回曆年月日，帶各月的名字
+     * 按日期對象算出回曆時間戳
      * 
      * @param date
+     * @param isSimple
+     *            是否簡化字
+     * @param withNames
+     *            是否帶各月的名字
      * @return 字符串，如回曆1439年01月穆哈蘭姆月01日
      */
-    public static String getHuiLiByDateWithNames(Date date) {
+    public static String getHuiLiStrByDate(Date date, boolean isSimple, boolean withNames) {
         String huili = getHuiLiByDate(date);
         String[] parts = huili.split(" ");
         String res = "回曆";
         res += parts[0].replaceAll("-", "前") + "年";
         res += parts[1] + "月";
-        res += jyutMingzi[Integer.parseInt(parts[1]) - 1];
+        if (withNames) {
+            res += jyutMingzi[Integer.parseInt(parts[1]) - 1];
+        }
         res += parts[2] + "日";
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
+        int minute = cal.get(Calendar.MINUTE);
+        int second = cal.get(Calendar.SECOND);
+        res += (hour < 10 ? "0" : "") + hour + "時";
+        res += (minute < 10 ? "0" : "") + minute + "分";
+        res += (second < 10 ? "0" : "") + second + "秒";
+
+        if (isSimple) {
+            for (int i = 0; i < jyutMingzi.length; i++) {
+                res = res.replaceAll(jyutMingzi[i], jyutMingziSim[i]);
+            }
+            res = res.replaceAll("回曆", "回历");
+            res = res.replaceAll("時", "时");
+        }
         return res;
     }
 
@@ -120,7 +147,11 @@ public class IslamicCalendarUtil {
         String dateStr = "0621-07-15";
         System.out.println(dateStr + ": " + getHuiLiByDate(sdf_yyyyMMdd.parse(dateStr)));
 
-        System.out.println(getHuiLiByDate(new Date()));
-        System.out.println(getHuiLiByDateWithNames(new Date()));
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(new Date());
+        cal.add(Calendar.DATE, -90);
+        System.out.println(getHuiLiByDate(cal.getTime()));
+        System.out.println(getHuiLiStrByDate(cal.getTime(), true, true));
+        System.out.println(getHuiLiStrByDate(cal.getTime(), false, false));
     }
 }
