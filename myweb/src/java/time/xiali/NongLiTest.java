@@ -1,7 +1,7 @@
 package time.xiali;
 
 
-public class HialiTest {
+public class NongLiTest {
 
     public static void main(String[] args) {
         String date="19900211";
