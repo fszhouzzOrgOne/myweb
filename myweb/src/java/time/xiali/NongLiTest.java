@@ -1,5 +1,9 @@
 package time.xiali;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class NongLiTest {
 
     private static final String[] chinaMoons = { "正月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月",
@@ -13,7 +17,10 @@ public class NongLiTest {
         String str = NongLi.getDate(date);
         System.out.println(str);
 
-        for (String moon : chinaMoons) {
+        List<String> mons = new ArrayList<String>(Arrays.asList(chinaMoons));
+        mons.add("一月");
+
+        for (String moon : mons) {
             for (String day : chinaMoonDays) {
                 System.out.println(moon + day);
                 System.out.println(moon + day + "日");
