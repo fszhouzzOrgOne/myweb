@@ -5,7 +5,14 @@ package time.天文历.constant;
  */
 public class XL {
 
-    public static double gxc_sunLon(double t) { // 太阳光行差,t是世纪数
+    /**
+     * 太阳光行差
+     * 
+     * @param t
+     *            世纪数
+     * @return
+     */
+    public static double gxc_sunLon(double t) {
         double v = -0.043126 + 628.301955 * t - 0.000002732 * t * t; // 平近点角
         double e = 0.016708634 - 0.000042037 * t - 0.0000001267 * t * t;
         return (-20.49552 * (1 + e * Math.cos(v))) / Common.rad; // 黄经光行差
