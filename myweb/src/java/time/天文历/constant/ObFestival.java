@@ -11,6 +11,86 @@ public class ObFestival {
     /** 假日表,由initFestival初始化 */
     public static String[][] sFtv;
 
+    /**
+     * 取某日节日
+     * @param date
+     * @param dateTwo
+     */
+    public static void getDayName(LunarDate date, LunarDate dateTwo) {
+        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo.getImpHappyName();
+        String impName = dateTwo.getImpName() == null ? "" : dateTwo.getImpName();
+        String allName = dateTwo.getAllName() == null ? "" : dateTwo.getAllName();
+        /****************
+         * 节日名称生成 传入日物件u 返回某日节日信息 r.A 重要喜庆日子名称(可将日子名称置红) r.B 重要日子名称 r.C 各种日子名称(连成一大串) r.Fjia 放假日子(可用于日期数字置红)
+         *****************/
+        String m0 = (date.getMonth() < 10 ? "0" : "") + date.getMonth();
+        String d0 = (date.getDay() < 10 ? "0" : "") + date.getDay();
+        String s, s2, type;
+
+        if (date.getWeek() == 0 || date.getWeek() == 6)
+            dateTwo.setHoliday(1); // 星期日或星期六放假
+
+        // 按公历日期查找
+        for (int i = 0; i < sFtv[date.getMonth() - 1].length; i++) { // 公历节日或纪念日,遍历本月节日表
+            s = sFtv[date.getMonth() - 1][i];
+            if (!Common.subString(s, 0, 2).equals(d0))
+                continue;
+            s = Common.subString(s, 2);
+            type = Common.subString(s, 0, 1);
+            if (Common.subString(s, 5, 6).equals("-")) { // 有年限的
+                if (date.getYear() < Integer.parseInt(Common.subString(s, 1, 5))
+                        || date.getYear() > Integer.parseInt(Common.subString(s, 6, 10)))
+                    continue;
+                s = Common.subString(s, 10);
+            } else {
+                if (date.getYear() < 1850)
+                    continue;
+                s = Common.subString(s, 1);
+            }
+            if (type.equals("#")) {
+                impHappyName += s + " ";
+                dateTwo.setHoliday(1); // 放假的节日
+            }
+            if (type.equals("I"))
+                impName += s + " "; // 主要
+            if (type.equals("."))
+                allName += s + " "; // 其它
+        }
+
+        // 按周查找
+        int w = date.getWeekIndex();
+        if (date.getWeek() >= date.getWeekFirst())
+            w += 1;
+        int w2 = w;
+        if (date.getWeekIndex() == date.getWeeksOfMonth() - 1)
+            w2 = 5;
+
+        String wStr = m0 + w + date.getWeek(); // d日在本月的第几个星期某
+        String w2Str = m0 + w2 + date.getWeek();
+
+        for (int i = 0; i < wFtv.length; i++) {
+            s = wFtv[i];
+            s2 = Common.subString(s, 0, 4);
+            if (!s2.equals(wStr) && !s2.equals(w2Str))
+                continue;
+            type = Common.subString(s, 4, 5);
+            s = Common.subString(s, 5);
+            if (type.equals("#")) {
+                impHappyName += s + " ";
+                dateTwo.setHoliday(1);
+            }
+            if (type.equals("I"))
+                impName += s + " ";
+            if (type.equals("."))
+                allName += s + " ";
+        }
+
+        dateTwo.setImpHappyName(impHappyName);
+        dateTwo.setImpName(impName);
+        dateTwo.setAllName(allName);
+    }
+    
+
     static {
         /** 国历节日,#表示放假日,I表示重要节日或纪念日 */
         StringBuilder sbd = new StringBuilder();
@@ -151,85 +231,6 @@ public class ObFestival {
         for (int i = 0; i < s_Month.length; i++) {
             sFtv[i] = s_Month[i].split(",");
         }
-    }
-
-    /**
-     * 取某日节日
-     * @param date
-     * @param dateTwo
-     */
-    public static void getDayName(LunarDate date, LunarDate dateTwo) {
-        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo.getImpHappyName();
-        String impName = dateTwo.getImpName() == null ? "" : dateTwo.getImpName();
-        String allName = dateTwo.getAllName() == null ? "" : dateTwo.getAllName();
-        /****************
-         * 节日名称生成 传入日物件u 返回某日节日信息 r.A 重要喜庆日子名称(可将日子名称置红) r.B 重要日子名称 r.C 各种日子名称(连成一大串) r.Fjia 放假日子(可用于日期数字置红)
-         *****************/
-        String m0 = (date.getMonth() < 10 ? "0" : "") + date.getMonth();
-        String d0 = (date.getDay() < 10 ? "0" : "") + date.getDay();
-        String s, s2, type;
-
-        if (date.getWeek() == 0 || date.getWeek() == 6)
-            dateTwo.setHoliday(1); // 星期日或星期六放假
-
-        // 按公历日期查找
-        for (int i = 0; i < sFtv[date.getMonth() - 1].length; i++) { // 公历节日或纪念日,遍历本月节日表
-            s = sFtv[date.getMonth() - 1][i];
-            if (!Common.subString(s, 0, 2).equals(d0))
-                continue;
-            s = Common.subString(s, 2);
-            type = Common.subString(s, 0, 1);
-            if (Common.subString(s, 5, 6).equals("-")) { // 有年限的
-                if (date.getYear() < Integer.parseInt(Common.subString(s, 1, 5))
-                        || date.getYear() > Integer.parseInt(Common.subString(s, 6, 10)))
-                    continue;
-                s = Common.subString(s, 10);
-            } else {
-                if (date.getYear() < 1850)
-                    continue;
-                s = Common.subString(s, 1);
-            }
-            if (type.equals("#")) {
-                impHappyName += s + " ";
-                dateTwo.setHoliday(1); // 放假的节日
-            }
-            if (type.equals("I"))
-                impName += s + " "; // 主要
-            if (type.equals("."))
-                allName += s + " "; // 其它
-        }
-
-        // 按周查找
-        int w = date.getWeekIndex();
-        if (date.getWeek() >= date.getWeekFirst())
-            w += 1;
-        int w2 = w;
-        if (date.getWeekIndex() == date.getWeeksOfMonth() - 1)
-            w2 = 5;
-
-        String wStr = m0 + w + date.getWeek(); // d日在本月的第几个星期某
-        String w2Str = m0 + w2 + date.getWeek();
-
-        for (int i = 0; i < wFtv.length; i++) {
-            s = wFtv[i];
-            s2 = Common.subString(s, 0, 4);
-            if (!s2.equals(wStr) && !s2.equals(w2Str))
-                continue;
-            type = Common.subString(s, 4, 5);
-            s = Common.subString(s, 5);
-            if (type.equals("#")) {
-                impHappyName += s + " ";
-                dateTwo.setHoliday(1);
-            }
-            if (type.equals("I"))
-                impName += s + " ";
-            if (type.equals("."))
-                allName += s + " ";
-        }
-
-        dateTwo.setImpHappyName(impHappyName);
-        dateTwo.setImpName(impName);
-        dateTwo.setAllName(allName);
     }
 }
 
