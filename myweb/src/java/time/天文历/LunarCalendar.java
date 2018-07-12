@@ -7,6 +7,7 @@ import time.天文历.constant.Common;
 import time.天文历.constant.IslamicCalendarUtil;
 import time.天文历.constant.ObChronology;
 import time.天文历.constant.ObFestival;
+import time.天文历.constant.ObFestivalCn;
 import time.天文历.constant.SSQ;
 import time.天文历.constant.XL;
 
@@ -193,8 +194,8 @@ public class LunarCalendar {
 
 		// 所属公历年对应的农历干支纪年
 		c = year - 1984 + 12000;
-		this.cnEraYear = ObChronology.Gan[c % 10] + ObChronology.Zhi[c % 12]; // 干支纪年
-		this.animalYear = ObChronology.ShX[c % 12]; // 该年对应的生肖
+		this.cnEraYear = Common.Gan[c % 10] + Common.Zhi[c % 12]; // 干支纪年
+		this.animalYear = Common.ShX[c % 12]; // 该年对应的生肖
 		this.nianHao = ObChronology.getEraName(year);
 
 		int D;
@@ -227,7 +228,7 @@ public class LunarCalendar {
 				mk++; // 农历所在月的序数
 
 			lunarDate.setLunarMonthOffset(lunarDate.getDayRL() - ssq.HS[mk]); // 距农历月首的编移量,0对应初一
-			lunarDate.setLunarDayName(ObChronology.rmc[lunarDate.getLunarMonthOffset()]); // 农历日名称
+			lunarDate.setLunarDayName(Common.rmc[lunarDate.getLunarMonthOffset()]); // 农历日名称
 			lunarDate.setDaysToDZ(lunarDate.getDayRL() - ssq.ZQ[0]); // 距冬至的天数
 			lunarDate.setDaysToXZ(lunarDate.getDayRL() - ssq.ZQ[12]); // 距夏至的天数
 			lunarDate.setDaysToLQ(lunarDate.getDayRL() - ssq.ZQ[15]); // 距立秋的天数
@@ -249,7 +250,7 @@ public class LunarCalendar {
 			if (qk < 23 && lunarDate.getDayRL() >= ssq.ZQ[qk + 1])
 				qk++; // 节气的取值范围是0-23
 			if (lunarDate.getDayRL() == ssq.ZQ[qk])
-				lunarDate.setLunarSolarTerm(ObChronology.jqmc[qk]);
+				lunarDate.setLunarSolarTerm(Common.jqmc[qk]);
 			else
 				lunarDate.setLunarSolarTerm("");
 
@@ -275,7 +276,7 @@ public class LunarCalendar {
 			int Lyear0 = (int) Math.floor(D / 365.2422 + 0.5); // 农历纪年(10进制,1984年起算)
 
 			D = lunarDate.getLunarYear() + 12000;
-			lunarDate.setCnEraYear(ObChronology.Gan[D % 10] + ObChronology.Zhi[D % 12]); // 干支纪年(立春)
+			lunarDate.setCnEraYear(Common.Gan[D % 10] + Common.Zhi[D % 12]); // 干支纪年(立春)
 			D = Lyear0 + 12000;
 			// String Lyear3 = this.Gan[D % 10] + this.Zhi[D % 12]; // 干支纪年(正月) , 与Lyear2区别在于春节才视为新年
 			lunarDate.setKingYear(Lyear0 + 1984 + 2698); // 黄帝纪年
@@ -287,23 +288,23 @@ public class LunarCalendar {
 
 			D = mk + (int) Math.floor((ssq.ZQ[12] + 390) / 365.2422) * 12 + 900000; // 相对于1998年12月7(大雪)的月数,900000为正数基数
 			lunarDate.setLunarMonth(D % 12);
-			lunarDate.setCnEraMonth(ObChronology.Gan[D % 10] + ObChronology.Zhi[D % 12]);
+			lunarDate.setCnEraMonth(Common.Gan[D % 10] + Common.Zhi[D % 12]);
 
 			// 纪日,2000年1月7日起算
 			D = lunarDate.getDayRL() - 6 + 9000000;
-			lunarDate.setCnEraDay(ObChronology.Gan[D % 10] + ObChronology.Zhi[D % 12]);
+			lunarDate.setCnEraDay(Common.Gan[D % 10] + Common.Zhi[D % 12]);
 
 			// 星座
 			mk = (int) Math.floor((lunarDate.getDayRL() - ssq.ZQ[0] - 15) / 30.43685);
 			if (mk < 11 && lunarDate.getDayRL() >= ssq.ZQ[2 * mk + 2])
 				mk++; // 星座所在月的序数,(如果j=13,ob.d0不会超过第14号中气)
-			lunarDate.setConstellation(ObChronology.XiZ[(mk + 12) % 12] + "座");
+			lunarDate.setConstellation(Common.XiZ[(mk + 12) % 12] + "座");
 			// 回历
 			IslamicCalendarUtil.getHuiLi(lunarDate.getDayRL(), lunarDate);
 			// 节日
 			// ob.A = ob.B = ob.C = ""; ob.Fjia = 0;
 			ObFestival.getDayName(lunarDate, lunarDate); // 公历
-			ObChronology.getDayName(lunarDate, lunarDate); // 农历
+			ObFestivalCn.getDayName(lunarDate, lunarDate); // 农历
 
 			lunarDates[i] = lunarDate;
 		}
@@ -325,7 +326,7 @@ public class LunarCalendar {
 			if (D < Bd0)
 				continue;
 			LunarDate lunarDate = lunarDates[D - Bd0];
-			lunarDate.setMoonPhaseName(ObChronology.yxmc[xn]); // 取得月相名称
+			lunarDate.setMoonPhaseName(Common.yxmc[xn]); // 取得月相名称
 			lunarDate.setMoonPhaseTime(d);
 			lunarDate.setMoonPhaseTimeStr(julianDate.timeStr(d));
 		} while (D + 5 < Bd0 + Bdn);
@@ -343,7 +344,7 @@ public class LunarCalendar {
 			if (D < Bd0)
 				continue;
 			LunarDate lunarDate = lunarDates[D - Bd0];
-			lunarDate.setSolarTermName(ObChronology.jqmc[xn]); // 取得节气名称
+			lunarDate.setSolarTermName(Common.jqmc[xn]); // 取得节气名称
 			lunarDate.setSolarTermTime(d);
 			lunarDate.setSolarTermTimeStr(julianDate.timeStr(d));
 		} while (D + 12 < Bd0 + Bdn);
@@ -363,7 +364,7 @@ public class LunarCalendar {
 			//			s2 += new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
 			//					+ Obb.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			String solarTerm = new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
-					+ ObChronology.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
+					+ Common.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			solarTerms[index] = solarTerm.trim();
 			//			if (i % 2 == 0)
 			//				s2 += " 视黄经" + (i * 15) + "\n";

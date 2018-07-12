@@ -25,7 +25,7 @@ public class Test {
         String eraPreffix = (begincal.after(cal)) ? "BCE" : "CE";
 
         LunarCalendar lc = new LunarCalendar(date);
-
+        
         System.out.println(lc.getNianHao());
         System.out.println(eraPreffix + cal.get(Calendar.YEAR) + "年" + (cal.get(Calendar.MONTH) + 1) + "月"
                 + cal.get(Calendar.DATE) + "日");
@@ -37,5 +37,9 @@ public class Test {
         System.out.println(lc.getLunarDate().getImpHappyName());
         System.out.println(lc.getLunarDate().getImpName());
         System.out.println(lc.getLunarDate().getAllName());
+        
+        for (LunarDate ld : new LunarCalendar().getMonthLunarDates()) {
+            System.out.println(ld);
+        }
     }
 }

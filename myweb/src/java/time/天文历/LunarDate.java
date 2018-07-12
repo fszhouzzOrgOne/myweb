@@ -519,4 +519,32 @@ public class LunarDate {
 	public void setHoliday(int holiday) {
 		this.holiday = holiday;
 	}
+
+    @Override
+    public String toString() {
+        return "LunarDate [dayRL=" + dayRL + ", dayIndex=" + dayIndex
+                + ", year=" + year + ", month=" + month + ", day=" + day
+                + ", daysOfMonth=" + daysOfMonth + ", weekFirst=" + weekFirst
+                + ", week=" + week + ", weekIndex=" + weekIndex
+                + ", weeksOfMonth=" + weeksOfMonth + ", hYear=" + hYear
+                + ", hMonth=" + hMonth + ", hDay=" + hDay + ", lunarMonthName="
+                + lunarMonthName + ", lunarMonthOffset=" + lunarMonthOffset
+                + ", lunarDayName=" + lunarDayName + ", daysofLunarMonth="
+                + daysofLunarMonth + ", lunarLunarLeap=" + lunarLunarLeap
+                + ", nextLunarMonthName=" + nextLunarMonthName
+                + ", lunarSolarTerm=" + lunarSolarTerm + ", daysToDZ="
+                + daysToDZ + ", daysToXZ=" + daysToXZ + ", daysToLQ="
+                + daysToLQ + ", daysToMZ=" + daysToMZ + ", daysToXS="
+                + daysToXS + ", cnEraYear=" + cnEraYear + ", cnEraMonth="
+                + cnEraMonth + ", cnEraDay=" + cnEraDay + ", cnEraTime="
+                + cnEraTime + ", constellation=" + constellation
+                + ", lunarYear=" + lunarYear + ", lunarMonth=" + lunarMonth
+                + ", moonPhaseName=" + moonPhaseName + ", moonPhaseTime="
+                + moonPhaseTime + ", moonPhaseTimeStr=" + moonPhaseTimeStr
+                + ", solarTermName=" + solarTermName + ", solarTermTime="
+                + solarTermTime + ", solarTermTimeStr=" + solarTermTimeStr
+                + ", kingYear=" + kingYear + ", impHappyName=" + impHappyName
+                + ", impName=" + impName + ", allName=" + allName
+                + ", holiday=" + holiday + "]";
+    }
 }
