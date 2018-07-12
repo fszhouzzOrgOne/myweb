@@ -189,35 +189,6 @@ public class ObChronology {
         dateTwo.setHoliday(holiday);
     }
 
-    /** 精气 */
-    public static double qi_accurate(double W) {
-        double t = XL.S_aLon_t(W) * 36525;
-        return t - Common.dt_T(t) + (double) 8 / 24;
-    }
-
-    /** 精朔 */
-    public static double so_accurate(double W) {
-        double t = XL.MS_aLon_t(W) * 36525;
-        return t - Common.dt_T(t) + (double) 8 / 24;
-    }
-
-    // // 精气
-    // public static double qi_accurate2(double jd) {
-    // double d = Math.PI / 12;
-    // double w = Math.floor((jd + 293) / 365.2422 * 24) * d;
-    // double a = this.qi_accurate(w);
-    // if (a - jd > 5)
-    // return this.qi_accurate(w - d);
-    // if (a - jd < -5)
-    // return this.qi_accurate(w + d);
-    // return a;
-    // }
-    //
-    // // 精朔
-    // public static double so_accurate2(double jd) {
-    // return this.so_accurate(Math.floor((jd + 8) / 29.5306) * Math.PI * 2);
-    // }
-
     static {
         /**
          * 纪年数据结构：数据用逗号分开，每7个描述一个年号<br/>

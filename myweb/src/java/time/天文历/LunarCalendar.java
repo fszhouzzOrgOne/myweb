@@ -316,7 +316,7 @@ public class LunarCalendar {
 		w = XL.MS_aLon(jd2 / 36525, 10, 3);
 		w = (int) Math.floor((w - 0.78) / Math.PI * 2) * Math.PI / 2;
 		do {
-			d = ObChronology.so_accurate(w);
+			d = SSQ.so_accurate(w);
 			D = (int) Math.floor(d + 0.5);
 			xn = (int) Math.floor(w / Common.pi2 * 4 + 4000000.01) % 4;
 			w += Common.pi2 / 4;
@@ -334,7 +334,7 @@ public class LunarCalendar {
 		w = XL.S_aLon(jd2 / 36525, 3);
 		w = (int) Math.floor((w - 0.13) / Common.pi2 * 24) * Common.pi2 / 24;
 		do {
-			d = ObChronology.qi_accurate(w);
+			d = SSQ.qi_accurate(w);
 			D = (int) Math.floor(d + 0.5);
 			xn = (int) Math.floor(w / Common.pi2 * 24 + 24000006.01) % 24;
 			w += Common.pi2 / 24;

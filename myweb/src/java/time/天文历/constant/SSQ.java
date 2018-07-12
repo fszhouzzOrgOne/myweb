@@ -73,7 +73,7 @@ public class SSQ {
         return t * 36525 + (double) 8 / 24;
     }
 
-    /** 最大误差小于30分钟，平均5分 */
+    /** 低精度定氣计算，最大误差小于30分钟，平均5分 */
     public static double qi_low(double W) {
         double t, L, v = 628.3319653318;
         t = (W - 4.895062166) / v; // 第一次估算,误差2天以内
@@ -108,6 +108,35 @@ public class SSQ {
             t = XL.MS_aLon_t(W) * 36525 - Common.dt_T(t) + (double) 8 / 24;
         return t;
     }
+    
+    /** 精气 */
+    public static double qi_accurate(double W) {
+        double t = XL.S_aLon_t(W) * 36525;
+        return t - Common.dt_T(t) + (double) 8 / 24;
+    }
+
+    /** 精朔 */
+    public static double so_accurate(double W) {
+        double t = XL.MS_aLon_t(W) * 36525;
+        return t - Common.dt_T(t) + (double) 8 / 24;
+    }
+
+    // // 精气
+    // public static double qi_accurate2(double jd) {
+    // double d = Math.PI / 12;
+    // double w = Math.floor((jd + 293) / 365.2422 * 24) * d;
+    // double a = this.qi_accurate(w);
+    // if (a - jd > 5)
+    // return this.qi_accurate(w - d);
+    // if (a - jd < -5)
+    // return this.qi_accurate(w + d);
+    // return a;
+    // }
+    //
+    // // 精朔
+    // public static double so_accurate2(double jd) {
+    // return this.so_accurate(Math.floor((jd + 8) / 29.5306) * Math.PI * 2);
+    // }
 
     /** 气朔解压缩 */
     public static String jieya(String s) {
