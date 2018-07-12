@@ -5,23 +5,30 @@ import time.天文历.LunarDate;
 /** 公历基础构件 */
 public class ObFestival {
     /** 某月的第几个星期几,如第2个星期一指从月首开始顺序找到第2个"星期一" */
-    public static final String[] wFtv = { "0150I世界麻风日", "0520.国际母亲节", "0530I全国助残日", "0630.父亲节", "0730.被奴役国家周", "0932I国际和平日",
-            "0940.国际聋人节 世界儿童日", "0950I世界海事日", "1011.国际住房日", "1013I国际减轻自然灾害日(减灾日)", "1144I感恩节" };
+    public static final String[] wFtv = { "0150I世界麻风日", "0520.国际母亲节",
+            "0530I全国助残日", "0630.父亲节", "0730.被奴役国家周", "0932I国际和平日",
+            "0940.国际聋人节 世界儿童日", "0950I世界海事日", "1011.国际住房日",
+            "1013I国际减轻自然灾害日(减灾日)", "1144I感恩节" };
 
     /** 假日表,由initFestival初始化 */
     public static String[][] sFtv;
 
     /**
      * 取某日节日
+     * 
      * @param date
      * @param dateTwo
      */
     public static void getDayName(LunarDate date, LunarDate dateTwo) {
-        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo.getImpHappyName();
-        String impName = dateTwo.getImpName() == null ? "" : dateTwo.getImpName();
-        String allName = dateTwo.getAllName() == null ? "" : dateTwo.getAllName();
+        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo
+                .getImpHappyName();
+        String impName = dateTwo.getImpName() == null ? "" : dateTwo
+                .getImpName();
+        String allName = dateTwo.getAllName() == null ? "" : dateTwo
+                .getAllName();
         /****************
-         * 节日名称生成 传入日物件u 返回某日节日信息 r.A 重要喜庆日子名称(可将日子名称置红) r.B 重要日子名称 r.C 各种日子名称(连成一大串) r.Fjia 放假日子(可用于日期数字置红)
+         * 节日名称生成 传入日物件u 返回某日节日信息 r.A 重要喜庆日子名称(可将日子名称置红) r.B 重要日子名称 r.C
+         * 各种日子名称(连成一大串) r.Fjia 放假日子(可用于日期数字置红)
          *****************/
         String m0 = (date.getMonth() < 10 ? "0" : "") + date.getMonth();
         String d0 = (date.getDay() < 10 ? "0" : "") + date.getDay();
@@ -38,8 +45,10 @@ public class ObFestival {
             s = Common.subString(s, 2);
             type = Common.subString(s, 0, 1);
             if (Common.subString(s, 5, 6).equals("-")) { // 有年限的
-                if (date.getYear() < Integer.parseInt(Common.subString(s, 1, 5))
-                        || date.getYear() > Integer.parseInt(Common.subString(s, 6, 10)))
+                if (date.getYear() < Integer
+                        .parseInt(Common.subString(s, 1, 5))
+                        || date.getYear() > Integer.parseInt(Common.subString(
+                                s, 6, 10)))
                     continue;
                 s = Common.subString(s, 10);
             } else {
@@ -89,7 +98,6 @@ public class ObFestival {
         dateTwo.setImpName(impName);
         dateTwo.setAllName(allName);
     }
-    
 
     static {
         /** 国历节日,#表示放假日,I表示重要节日或纪念日 */
@@ -224,7 +232,7 @@ public class ObFestival {
         sbd.append("24I平安夜,");
         sbd.append("25I圣诞节,");
         sbd.append("26.毛泽东诞辰纪念");
-        
+
         String[] s_Month = sbd.toString().split("\\|");
 
         sFtv = new String[s_Month.length][];
@@ -233,4 +241,3 @@ public class ObFestival {
         }
     }
 }
-
