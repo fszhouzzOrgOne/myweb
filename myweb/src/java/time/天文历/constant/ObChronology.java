@@ -7,26 +7,34 @@ public class ObChronology {
     public static String[][] ChronologyTable;
 
     /** 中文数字 */
-    public static final String[] numCn = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+    public static final String[] numCn = { "零", "一", "二", "三", "四", "五", "六",
+            "七", "八", "九", "十" };
     /** 天干 */
-    public static final String[] Gan = { "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸" };
+    public static final String[] Gan = { "甲", "乙", "丙", "丁", "戊", "己", "庚",
+            "辛", "壬", "癸" };
     /** 地支 */
-    public static final String[] Zhi = { "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥" };
+    public static final String[] Zhi = { "子", "丑", "寅", "卯", "辰", "巳", "午",
+            "未", "申", "酉", "戌", "亥" };
     /** 屬相 */
-    public static final String[] ShX = { "鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪" };
+    public static final String[] ShX = { "鼠", "牛", "虎", "兔", "龙", "蛇", "马",
+            "羊", "猴", "鸡", "狗", "猪" };
     /** 星座 */
-    public static final String[] XiZ = { "摩羯", "水瓶", "双鱼", "白羊", "金牛", "双子", "巨蟹", "狮子", "处女", "天秤", "天蝎", "射手" };
+    public static final String[] XiZ = { "摩羯", "水瓶", "双鱼", "白羊", "金牛", "双子",
+            "巨蟹", "狮子", "处女", "天秤", "天蝎", "射手" };
     /** 月相名称表 */
     public static final String[] yxmc = { "朔", "上弦", "望", "下弦" };
     /** 節氣名稱 */
-    public static final String[] jqmc = { "冬至", "小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至",
-            "小暑", "大暑", "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪" };
+    public static final String[] jqmc = { "冬至", "小寒", "大寒", "立春", "雨水", "惊蛰",
+            "春分", "清明", "谷雨", "立夏", "小满", "芒种", "夏至", "小暑", "大暑", "立秋", "处暑",
+            "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪" };
     /** 月名称,建寅 */
-    public static final String[] ymc = { "十一", "十二", "正", "二", "三", "四", "五", "六", "七", "八", "九", "十" };
+    public static final String[] ymc = { "十一", "十二", "正", "二", "三", "四", "五",
+            "六", "七", "八", "九", "十" };
     /** 中文日期名稱 */
-    public static final String[] rmc = { "初一", "初二", "初三", "初四", "初五", "初六", "初七", "初八", "初九", "初十", "十一", "十二", "十三",
-            "十四", "十五", "十六", "十七", "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八", "廿九", "三十",
-            "卅一" };
+    public static final String[] rmc = { "初一", "初二", "初三", "初四", "初五", "初六",
+            "初七", "初八", "初九", "初十", "十一", "十二", "十三", "十四", "十五", "十六", "十七",
+            "十八", "十九", "二十", "廿一", "廿二", "廿三", "廿四", "廿五", "廿六", "廿七", "廿八",
+            "廿九", "三十", "卅一" };
 
     public static void main(String[] args) {
         System.out.println(getEraName(1949));
@@ -43,30 +51,37 @@ public class ObChronology {
         int firstYear;
         String s = "", c;
         String[][] lines = ObChronology.ChronologyTable;
-        for (int i = 0; i < lines.length; i ++) {
+        for (int i = 0; i < lines.length; i++) {
             String[] line = lines[i];
             firstYear = Integer.parseInt(line[0]);
             // 年小於表中的元年，或年大於等於年號的末年+1
-            if (year < firstYear || year >= firstYear + Integer.parseInt(line[1])) {
+            if (year < firstYear
+                    || year >= firstYear + Integer.parseInt(line[1])) {
                 continue;
             }
             // 年號名稱，當前年減去元年，加1，加上已用年份
-            c = line[6] + (year - firstYear + 1 + Integer.parseInt(line[2])) + "年";
+            c = line[6] + (year - firstYear + 1 + Integer.parseInt(line[2]))
+                    + "年";
             // i爲年號元年,i+3朝代,i+4廟號,i+5皇帝名,i+6年號
-            s += (!"".equals(s) ? ";" : "") + "[" + line[3] + "]" + line[4] + " " + line[5] + " " + c;
+            s += (!"".equals(s) ? ";" : "") + "[" + line[3] + "]" + line[4]
+                    + " " + line[5] + " " + c;
         }
         return s;
     }
 
     /** 计算农历节日 */
     public static void getDayName(LunarDate date, LunarDate dateTwo) {
-        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo.getImpHappyName();
-        String impName = dateTwo.getImpName() == null ? "" : dateTwo.getImpName();
-        String allName = dateTwo.getAllName() == null ? "" : dateTwo.getAllName();
+        String impHappyName = dateTwo.getImpHappyName() == null ? "" : dateTwo
+                .getImpHappyName();
+        String impName = dateTwo.getImpName() == null ? "" : dateTwo
+                .getImpName();
+        String allName = dateTwo.getAllName() == null ? "" : dateTwo
+                .getAllName();
         int holiday = dateTwo.getHoliday();
 
         // 按农历日期查找重量点节假日
-        String d = date.getLunarMonthName() + (date.getLunarMonthName().length() < 2 ? "月" : "")
+        String d = date.getLunarMonthName()
+                + (date.getLunarMonthName().length() < 2 ? "月" : "")
                 + date.getLunarDayName();
         if (!date.getLunarLunarLeap().equals("闰")) {
             if (d.equals("正月初一")) {
@@ -159,7 +174,8 @@ public class ObChronology {
             if (d.equals("十二廿三"))
                 impName += "小年 ";
         }
-        if (date.getLunarSolarTerm() != null && !date.getLunarSolarTerm().equals("")) {
+        if (date.getLunarSolarTerm() != null
+                && !date.getLunarSolarTerm().equals("")) {
             if (date.getLunarSolarTerm().equals("清明")) {
                 impHappyName += date.getLunarSolarTerm() + " ";
                 holiday = 1;
@@ -179,15 +195,18 @@ public class ObChronology {
 
         w = Common.subString(date.getCnEraDay(), 0, 1);
         w2 = Common.subString(date.getCnEraDay(), 1, 2);
-        if (date.getDaysToXZ() >= 20 && date.getDaysToXZ() < 30 && w.equals("庚"))
+        if (date.getDaysToXZ() >= 20 && date.getDaysToXZ() < 30
+                && w.equals("庚"))
             impName += "初伏 ";
-        if (date.getDaysToXZ() >= 30 && date.getDaysToXZ() < 40 && w.equals("庚"))
+        if (date.getDaysToXZ() >= 30 && date.getDaysToXZ() < 40
+                && w.equals("庚"))
             impName += "中伏 ";
         if (date.getDaysToLQ() >= 0 && date.getDaysToLQ() < 10 && w.equals("庚"))
             impName += "末伏 ";
         if (date.getDaysToMZ() >= 0 && date.getDaysToMZ() < 10 && w.equals("丙"))
             impName += "入梅 ";
-        if (date.getDaysToXS() >= 0 && date.getDaysToXS() < 12 && w2.equals("未"))
+        if (date.getDaysToXS() >= 0 && date.getDaysToXS() < 12
+                && w2.equals("未"))
             impName += "出梅 ";
 
         dateTwo.setImpHappyName(impHappyName);
