@@ -8,16 +8,11 @@ public class JulianDayCount {
     public static final int J2000 = 2451545;
 
     public static void main(String[] args) {
-        String date = "CE0918-07-13";
-        String date2 = "CE2018-07-13";
-        String date3 = "BCE0001-12-31";
-        System.out.println(commonEraToJDCount(date));
-        System.out.println(commonEraToJDCount(date2));
-        System.out.println(commonEraToJDCount(date3));
-
+        System.out.println(commonEraToJDCount("CE2018-07-13"));
         System.out.println(commonEraToJDCount(2018, 7, 13));
-        System.out.println(commonEraToJDCount(1, 1, 1));
+
         System.out.println(commonEraToJDCount(0, 12, 31));
+        System.out.println(commonEraToJDCount("BCE0001-12-31"));
     }
 
     /**
