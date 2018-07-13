@@ -94,33 +94,33 @@ public class ShuoQiUtil {
 
     /** 较高精度气 */
     public static double qi_high(double W) {
-        double t = XL.S_aLon_t2(W) * 36525;
+        double t = XingliUtil.S_aLon_t2(W) * 36525;
         t = t - Common.dt_T(t) + (double) 8 / 24;
         double v = ((t + 0.5) % 1) * 86400;
         if (v < 1200 || v > 86400 - 1200)
-            t = XL.S_aLon_t(W) * 36525 - Common.dt_T(t) + (double) 8 / 24;
+            t = XingliUtil.S_aLon_t(W) * 36525 - Common.dt_T(t) + (double) 8 / 24;
         return t;
     }
 
     /** 较高精度朔 */
     public static double so_high(double W) {
-        double t = XL.MS_aLon_t2(W) * 36525;
+        double t = XingliUtil.MS_aLon_t2(W) * 36525;
         t = t - Common.dt_T(t) + (double) 8 / 24;
         double v = ((t + 0.5) % 1) * 86400;
         if (v < 1800 || v > 86400 - 1800)
-            t = XL.MS_aLon_t(W) * 36525 - Common.dt_T(t) + (double) 8 / 24;
+            t = XingliUtil.MS_aLon_t(W) * 36525 - Common.dt_T(t) + (double) 8 / 24;
         return t;
     }
     
     /** 精气 */
     public static double qi_accurate(double W) {
-        double t = XL.S_aLon_t(W) * 36525;
+        double t = XingliUtil.S_aLon_t(W) * 36525;
         return t - Common.dt_T(t) + (double) 8 / 24;
     }
 
     /** 精朔 */
     public static double so_accurate(double W) {
-        double t = XL.MS_aLon_t(W) * 36525;
+        double t = XingliUtil.MS_aLon_t(W) * 36525;
         return t - Common.dt_T(t) + (double) 8 / 24;
     }
 

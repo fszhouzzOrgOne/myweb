@@ -9,7 +9,7 @@ import time.天文历.constant.ObChronology;
 import time.天文历.constant.ObFestival;
 import time.天文历.constant.ObFestivalCn;
 import time.天文历.constant.ShuoQiUtil;
-import time.天文历.constant.XL;
+import time.天文历.constant.XingliUtil;
 
 public class LunarCalendar {
 
@@ -314,7 +314,7 @@ public class LunarCalendar {
 		int xn;
 		double jd2 = Bd0 + Common.dt_T(Bd0) - (double) 8 / 24;
 		// 月相查找
-		w = XL.MS_aLon(jd2 / 36525, 10, 3);
+		w = XingliUtil.MS_aLon(jd2 / 36525, 10, 3);
 		w = (int) Math.floor((w - 0.78) / Math.PI * 2) * Math.PI / 2;
 		do {
 			d = ShuoQiUtil.so_accurate(w);
@@ -332,7 +332,7 @@ public class LunarCalendar {
 		} while (D + 5 < Bd0 + Bdn);
 
 		// 节气查找
-		w = XL.S_aLon(jd2 / 36525, 3);
+		w = XingliUtil.S_aLon(jd2 / 36525, 3);
 		w = (int) Math.floor((w - 0.13) / Common.pi2 * 24) * Common.pi2 / 24;
 		do {
 			d = ShuoQiUtil.qi_accurate(w);
@@ -360,7 +360,7 @@ public class LunarCalendar {
 		int y = Common.year2Ayear(String.valueOf(year)) - 2001;
 		int n = 24;
 		for (int i = 21, index = 0; i < n;) {
-			T = XL.S_aLon_t((y + (double) i * 15 / 360 + 1) * 2 * Math.PI); //精确节气时间计算
+			T = XingliUtil.S_aLon_t((y + (double) i * 15 / 360 + 1) * 2 * Math.PI); //精确节气时间计算
 			//			s2 += new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
 			//					+ Obb.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			String solarTerm = new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
