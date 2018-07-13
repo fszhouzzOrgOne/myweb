@@ -74,6 +74,20 @@ public class JulianDayCount {
     }
 
     /**
+     * 公曆轉儒略日數
+     * 
+     * @param dateStr
+     *            日期字串，格式如“CE0918-07-13”“CE2018-07-13”“BCE0551-07-13”
+     * @param timeStr
+     *            時間字串，如“09:38:19”
+     * @return
+     */
+    public static double commonEraToJDCount(String dateStr, String timeStr) {
+
+        return 0;
+    }
+
+    /**
      * 儒略日數轉公曆
      * 
      * @param jd
@@ -130,5 +144,32 @@ public class JulianDayCount {
         commonEra += ":" + (minute < 10 ? "0" : "") + minute;
         commonEra += ":" + (second < 10 ? "0" : "") + second;
         return commonEra;
+    }
+
+    /**
+     * 提取儒略日數中的時間串
+     * 
+     * @param jd
+     * @return
+     */
+    public static String getTimeStrByJdCount(double jd) {
+        return null;
+    }
+
+    /**
+     * 格式化時間串
+     * 
+     * @param year
+     *            年，含0年
+     * @param month
+     * @param day
+     * @param hour
+     * @param minute
+     * @param second
+     * @return 返回時間字符串，不含0年，如“CE2018-07-13 00:00:00.0”“BCE0001-12-31 00:00:00.0”
+     */
+    public static String formatCommonEra(int year, int month, int day,
+            int hour, int minute, int second) {
+        return null;
     }
 }
