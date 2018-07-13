@@ -8,7 +8,7 @@ import time.天文历.constant.IslamicCalendarUtil;
 import time.天文历.constant.ObChronology;
 import time.天文历.constant.ObFestival;
 import time.天文历.constant.ObFestivalCn;
-import time.天文历.constant.SSQ;
+import time.天文历.constant.ShuoQiUtil;
 import time.天文历.constant.XL;
 
 public class LunarCalendar {
@@ -19,7 +19,7 @@ public class LunarCalendar {
 	private LunarDate lunarDate;
 
 	/** 某年气朔的数据信息 */
-	private SSQ ssq;
+	private ShuoQiUtil ssq;
 
 	/** lun.y 公历年份 */
 	private int year;
@@ -170,7 +170,7 @@ public class LunarCalendar {
 	private void yueLiCalc(int year, int month) {
 		int c, Bd0, Bdn;
 		// 日历物件初始化
-		ssq = new SSQ();
+		ssq = new ShuoQiUtil();
 		JulianDate julianDate = new JulianDate();
 		julianDate.setHour(12);
 		julianDate.setMinute(0);
@@ -317,7 +317,7 @@ public class LunarCalendar {
 		w = XL.MS_aLon(jd2 / 36525, 10, 3);
 		w = (int) Math.floor((w - 0.78) / Math.PI * 2) * Math.PI / 2;
 		do {
-			d = SSQ.so_accurate(w);
+			d = ShuoQiUtil.so_accurate(w);
 			D = (int) Math.floor(d + 0.5);
 			xn = (int) Math.floor(w / Common.pi2 * 4 + 4000000.01) % 4;
 			w += Common.pi2 / 4;
@@ -335,7 +335,7 @@ public class LunarCalendar {
 		w = XL.S_aLon(jd2 / 36525, 3);
 		w = (int) Math.floor((w - 0.13) / Common.pi2 * 24) * Common.pi2 / 24;
 		do {
-			d = SSQ.qi_accurate(w);
+			d = ShuoQiUtil.qi_accurate(w);
 			D = (int) Math.floor(d + 0.5);
 			xn = (int) Math.floor(w / Common.pi2 * 24 + 24000006.01) % 24;
 			w += Common.pi2 / 24;

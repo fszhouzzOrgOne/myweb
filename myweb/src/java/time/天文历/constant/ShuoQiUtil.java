@@ -1,6 +1,9 @@
 package time.天文历.constant;
 
-public class SSQ {
+/**
+ * 朔氣計算
+ */
+public class ShuoQiUtil {
 
     /** 朔修正表 */
     public static String SB = "";
