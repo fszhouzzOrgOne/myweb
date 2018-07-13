@@ -5,6 +5,7 @@ import java.util.Date;
 
 import time.天文历.constant.Common;
 import time.天文历.constant.IslamicCalendarUtil;
+import time.天文历.constant.JulianDayCount;
 import time.天文历.constant.ObChronology;
 import time.天文历.constant.ObFestival;
 import time.天文历.constant.ObFestivalCn;
@@ -179,15 +180,15 @@ public class LunarCalendar {
 		julianDate.setYear(year);
 		julianDate.setMonth(month);
 		julianDate.setDay(1);
-		Bd0 = (int) (Math.floor(julianDate.toJD()) - Common.J2000); // 公历月首,中午
+		Bd0 = (int) (Math.floor(julianDate.toJD()) - JulianDayCount.J2000); // 公历月首,中午
 		julianDate.setMonth(julianDate.getMonth() + 1);
 		if (julianDate.getMonth() > 12) {
 			julianDate.setYear(julianDate.getYear() + 1);
 			julianDate.setMonth(1);
 		}
-		Bdn = (int) (Math.floor(julianDate.toJD()) - Common.J2000 - Bd0); // 本月天数(公历)
+		Bdn = (int) (Math.floor(julianDate.toJD()) - JulianDayCount.J2000 - Bd0); // 本月天数(公历)
 
-		this.weekFirst = (Bd0 + Common.J2000 + 1 + 7000000) % 7; // 本月第一天的星期
+		this.weekFirst = (Bd0 + JulianDayCount.J2000 + 1 + 7000000) % 7; // 本月第一天的星期
 		this.year = year; // 公历年份
 		this.month = month; // 公历月分
 		this.dayRL = Bd0;
@@ -215,7 +216,7 @@ public class LunarCalendar {
 			lunarDate.setWeek((this.weekFirst + i) % 7); // 当前日的星期
 			lunarDate.setWeekIndex((int) Math.floor((this.weekFirst + i) / 7)); // 本日所在的周序号
 			lunarDate.setWeeksOfMonth((int) Math.floor((this.weekFirst + Bdn - 1) / 7) + 1); // 本月的总周数
-			julianDate.setFromJD(lunarDate.getDayRL() + Common.J2000);
+			julianDate.setFromJD(lunarDate.getDayRL() + JulianDayCount.J2000);
 			lunarDate.setDay(julianDate.getDay()); // 公历日名称
 
 			// 农历月历
@@ -364,7 +365,7 @@ public class LunarCalendar {
 			T = XingliUtil.S_aLon_t((y + (double) i * 15 / 360 + 1) * 2 * Math.PI); //精确节气时间计算
 			//			s2 += new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
 			//					+ Obb.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
-			String solarTerm = new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
+			String solarTerm = new JulianDate().JD2str(T * 36525 + JulianDayCount.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
 					+ SolarTermsUtil.getTermNames()[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			solarTerms[index] = solarTerm.trim();
 			//			if (i % 2 == 0)

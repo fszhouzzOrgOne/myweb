@@ -282,17 +282,17 @@ public class ShuoQiUtil {
                 yy = YY + i - 1;
                 // 颁行历年首, 闰月名称, 月建
                 if (yy >= -721) {
-                    ns[i] = calc(1457698 - Common.J2000 + Math.floor(0.342 + (yy + 721) * 12.368422) * 29.5306, "朔");
+                    ns[i] = calc(1457698 - JulianDayCount.J2000 + Math.floor(0.342 + (yy + 721) * 12.368422) * 29.5306, "朔");
                     ns[i + 3] = "十三";
                     ns[i + 6] = 2;
                 } // 春秋历,ly为-722.12.17
                 if (yy >= -479) {
-                    ns[i] = calc(1546083 - Common.J2000 + Math.floor(0.500 + (yy + 479) * 12.368422) * 29.5306, "朔");
+                    ns[i] = calc(1546083 - JulianDayCount.J2000 + Math.floor(0.500 + (yy + 479) * 12.368422) * 29.5306, "朔");
                     ns[i + 3] = "十三";
                     ns[i + 6] = 2;
                 } // 战国历,ly为-480.12.11
                 if (yy >= -220) {
-                    ns[i] = calc(1640641 - Common.J2000 + Math.floor(0.866 + (yy + 220) * 12.369000) * 29.5306, "朔");
+                    ns[i] = calc(1640641 - JulianDayCount.J2000 + Math.floor(0.866 + (yy + 220) * 12.369000) * 29.5306, "朔");
                     ns[i + 3] = "后九";
                     ns[i + 6] = 11;
                 } // 秦汉历,ly为-221.10.31
@@ -322,7 +322,7 @@ public class ShuoQiUtil {
 
         // 名称转换(月建别名)
         for (i = 0; i < 14; i++) {
-            int Dm = HS[i] + Common.J2000, v2 = yIndex[i]; // Dm初一的儒略日,v2为月建序号
+            int Dm = HS[i] + JulianDayCount.J2000, v2 = yIndex[i]; // Dm初一的儒略日,v2为月建序号
             String mc = Common.ymc[v2 % 12]; // 月建对应的默认月名称：建子十一,建丑十二,建寅为正……
             if (Dm >= 1724360 && Dm <= 1729794)
                 mc = Common.ymc[(v2 + 1) % 12]; // 8.01.15至 23.12.02 建子为十二,其它顺推
