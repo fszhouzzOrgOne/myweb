@@ -10,9 +10,16 @@ public class JulianDayCount {
     public static void main(String[] args) {
         System.out.println(commonEraToJDCount("CE2018-07-13"));
         System.out.println(commonEraToJDCount(2018, 7, 13));
+        System.out.println(jdCountToCommonEra(commonEraToJDCount(2018, 7, 13)));
 
         System.out.println(commonEraToJDCount(0, 12, 31));
         System.out.println(commonEraToJDCount("BCE0001-12-31"));
+        System.out
+                .println(jdCountToCommonEra(commonEraToJDCount("BCE0001-12-31")));
+
+        System.out.println(commonEraToJDCount("BCE0002-12-31"));
+        System.out
+                .println(jdCountToCommonEra(commonEraToJDCount("BCE0002-12-31")));
     }
 
     /**
@@ -64,5 +71,64 @@ public class JulianDayCount {
         int month = Integer.parseInt(parts[1]);
         int day = Integer.parseInt(parts[2]);
         return commonEraToJDCount(year, month, day);
+    }
+
+    /**
+     * 儒略日數轉公曆
+     * 
+     * @param jd
+     *            儒略日數
+     * @return 返回時間字符串，不含0年，如“CE2018-07-13 00:00:00.0”“BCE0001-12-31 00:00:00.0”
+     */
+    public static String jdCountToCommonEra(double jd) {
+        int year, month, day, hour, minute;
+        double second;
+        int D = (int) Math.floor(jd + 0.5), c;
+        double F = jd + 0.5 - D; // 取得日数的整数部份A及小数部分F
+
+        if (D >= 2299161) {
+            c = (int) Math.floor((D - 1867216.25) / 36524.25);
+            D += 1 + c - Math.floor(c / 4);
+        }
+        D += 1524;
+        year = (int) Math.floor((D - 122.1) / 365.25);// 年数
+        D -= Math.floor(365.25 * year);
+        month = (int) Math.floor(D / 30.601); // 月数
+        D -= Math.floor(30.601 * month);
+        day = D; // 日数
+        if (month > 13) {
+            month -= 13;
+            year -= 4715;
+        } else {
+            month -= 1;
+            year -= 4716;
+        }
+        // 日的小数转为时分秒
+        F *= 24;
+        hour = (int) Math.floor(F);
+        F -= hour;
+        F *= 60;
+        minute = (int) Math.floor(F);
+        F -= minute;
+        F *= 60;
+        second = F;
+
+        boolean isBce = year <= 0;
+        if (isBce) { // 去掉0年，改爲公元前1年
+            year = Math.abs(year) + 1;
+        }
+        String yearStr = String.valueOf(year);
+        while (yearStr.length() < 4) {
+            yearStr = "0" + yearStr;
+        }
+        yearStr = (isBce ? "B" : "") + "CE" + yearStr;
+
+        String commonEra = yearStr;
+        commonEra += "-" + (month < 10 ? "0" : "") + month;
+        commonEra += "-" + (day < 10 ? "0" : "") + day;
+        commonEra += " " + (hour < 10 ? "0" : "") + hour;
+        commonEra += ":" + (minute < 10 ? "0" : "") + minute;
+        commonEra += ":" + (second < 10 ? "0" : "") + second;
+        return commonEra;
     }
 }
