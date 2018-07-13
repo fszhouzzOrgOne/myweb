@@ -251,7 +251,7 @@ public class LunarCalendar {
 			if (qk < 23 && lunarDate.getDayRL() >= ssq.ZQ[qk + 1])
 				qk++; // 节气的取值范围是0-23
 			if (lunarDate.getDayRL() == ssq.ZQ[qk])
-				lunarDate.setLunarSolarTerm(SolarTermsUtil.termNames[qk]);
+				lunarDate.setLunarSolarTerm(SolarTermsUtil.getTermNames()[qk]);
 			else
 				lunarDate.setLunarSolarTerm("");
 
@@ -345,7 +345,7 @@ public class LunarCalendar {
 			if (D < Bd0)
 				continue;
 			LunarDate lunarDate = lunarDates[D - Bd0];
-			lunarDate.setSolarTermName(SolarTermsUtil.termNames[xn]); // 取得节气名称
+			lunarDate.setSolarTermName(SolarTermsUtil.getTermNames()[xn]); // 取得节气名称
 			lunarDate.setSolarTermTime(d);
 			lunarDate.setSolarTermTimeStr(julianDate.timeStr(d));
 		} while (D + 12 < Bd0 + Bdn);
@@ -365,7 +365,7 @@ public class LunarCalendar {
 			//			s2 += new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
 			//					+ Obb.jqmc[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			String solarTerm = new JulianDate().JD2str(T * 36525 + Common.J2000 + (double) 8 / 24 - Common.dt_T(T * 36525))
-					+ SolarTermsUtil.termNames[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
+					+ SolarTermsUtil.getTermNames()[(i - 18 >= 0 ? i - 18 : i + 6) % 24]; //日期转为字串
 			solarTerms[index] = solarTerm.trim();
 			//			if (i % 2 == 0)
 			//				s2 += " 视黄经" + (i * 15) + "\n";
