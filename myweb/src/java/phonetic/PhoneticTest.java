@@ -34,19 +34,19 @@ public class PhoneticTest {
         // 之後的符號放入zz中
         String currentKey = "";
         for (String str : mb) {
-            if (!"zz".equals(currentKey)) {
+            // 符號放入zz中
+            if ("zz".equals(str)) {
+                currentKey = "zz";
+                continue;
+            } else {
                 for (String key : azs) {
                     if (key.equals(str)) {
                         currentKey = key;
                     }
                 }
             }
+            
             res.add(currentKey + "   " + str);
-
-            // ǃ 之後的符號放入zz中
-            if ("ǃ".equals(str)) {
-                currentKey = "zz";
-            }
         }
 
         // res
