@@ -40,6 +40,13 @@ vomu  𡡾
 uomu  𡼴
 buomu 𥋎
 homu  𥴔
+# 𦦊字按官方pdf，取xm開頭，依之改幾個字
+xmwks 𦦊
+hjxm  𦥫
+hsxm  𦥢
+nxm   𦥢
+tuxm  𦥾
+ojvx  𦦓
 #其他漢字區
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
 alry  𠘀
@@ -62,8 +69,6 @@ gofbn 𠠄
 goll  𧺈
 gyoln 𧺈
 hf    爫
-# 𦦊字按官方pdf，取xm開頭，依之改𦥫字
-hjxm  𦥫
 hog   坕
 hoyhv 𧙍
 hnmz  鳳
@@ -136,8 +141,6 @@ wllk  𡚇
 wmll  曱
 wx    𡆵
 xkbt  𥂞
-# 𦦊字按官方pdf，取xm開頭
-xmwks 𦦊
 ybhn  𠅙
 ybypg 𪚤
 yhqm  産
