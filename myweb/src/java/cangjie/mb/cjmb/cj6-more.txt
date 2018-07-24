@@ -62,6 +62,8 @@ gofbn 𠠄
 goll  𧺈
 gyoln 𧺈
 hf    爫
+# 𦦊字按官方pdf，取xm開頭，依之改𦥫字
+hjxm  𦥫
 hog   坕
 hoyhv 𧙍
 hnmz  鳳
@@ -88,6 +90,8 @@ nmxc 𫝖
 nz   𩰲
 obou 𠒯
 ogob 𨿇
+ohbh  𪝹
+oibh  𪝹
 # 輔助字根亼，不能跨越字首字身取
 oml  𠇭
 omli  𫝇
@@ -132,6 +136,8 @@ wllk  𡚇
 wmll  曱
 wx    𡆵
 xkbt  𥂞
+# 𦦊字按官方pdf，取xm開頭
+xmwks 𦦊
 ybhn  𠅙
 ybypg 𪚤
 yhqm  産
