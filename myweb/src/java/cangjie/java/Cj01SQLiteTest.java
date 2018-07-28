@@ -39,6 +39,44 @@ public class Cj01SQLiteTest {
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
     private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
 
+    private static List<String> lines2 = null;
+    private static List<String> lines3 = null;
+    private static List<String> lines5 = null;
+    private static List<String> lines6 = null;
+    private static List<String> lineska = null;
+    private static List<String> lineszy = null;
+    private static List<String> linesjyutp = null;
+    private static List<String> linespy = null;
+    private static List<String> linessghm = null;
+    private static List<String> linescjyh = null;
+    private static List<String> linescjms = null;
+    private static List<String> lineskorea = null;
+    private static List<String> linesmanju = null;
+    private static List<String> linesipa = null;
+    private static List<String> linesKoxhanh = null;
+    // 交集碼表
+    private static List<String> linesInter = null;
+    // 倉頡三五
+    private static List<String> lines35 = null;
+
+    private static final String cjGen2 = "cj2";
+    private static final String cjGen3 = "cj3";
+    private static final String cjGen35 = "cj35";
+    private static final String cjGen5 = "cj5";
+    private static final String cjGen6 = "cj6";
+    private static final String cjGenJyutp = "jyutp";
+    private static final String cjGenpy = "pinyin";
+    private static final String cjGenka = "karina";
+    private static final String cjGenzy = "zyfh";
+    private static final String cjGensghm = "sghm";
+    private static final String cjGencjyh = "cjyhqm";
+    private static final String cjGencjms = "cjms";
+    private static final String cjGenkorea = "korea";
+    private static final String cjGenInter = "cjcommon";
+    private static final String cjGenManju = "manju";
+    private static final String cjGenIpa = "ipa";
+    private static final String cjGenKoxhanh = "kohan";
+
     private static Map<String, Integer> mbOrderNoMap = null; // 文字排序權值
 
     private static Set<String> ansichars = null;
@@ -59,31 +97,33 @@ public class Cj01SQLiteTest {
 
     /** 只要ANSI的字 */
     private static boolean isOnlyAnsi = false;
+    // 是否加入庫中
+    private static boolean withManju = true; // 滿文
+    private static boolean withKorea = true; // 韓文
+    private static boolean withJyutp = true; // 粤拼
+    private static boolean withKarina = true; // 日文
+    private static boolean withSghm = true; // 四角號碼
+    private static boolean withPy = true; // 拼音
+    private static boolean withZy = true; // 注音
+    private static boolean withKoxhanh = true; // 中古漢語
+    private static boolean withCangjieOthers = false; // 加入其他倉頡？
+    private static boolean withCangjie6 = false; // 加入蒼頡六？
+    private static boolean withCangjie5 = false; // 加入蒼頡五？
+    private static boolean withCangjie35 = false; // 加入倉頡三五？
+    private static boolean withCangjie3 = false; // 加入倉頡三
 
     public static void main(String args[]) throws Exception {
-        boolean withManju = true; // 滿文
-        boolean withKorea = true; // 韓文
-        boolean withJyutp = true; // 粤拼
-        boolean withKarina = true; // 日文
-        boolean withSghm = true; // 四角號碼
-        boolean withPy = true; // 拼音
-        boolean withZy = true; // 注音
-        boolean withKoxhanh = true; // 中古漢語
-        boolean withCangjieOthers = false; // 加入其他倉頡？
-        boolean withCangjie6 = false; // 加入蒼頡六？
-        boolean withCangjie5 = false; // 加入蒼頡五？
-        boolean withCangjie35 = false; // 加入倉頡三五？
-        boolean withCangjie3 = false; // 加入倉頡三
-
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 540664 韓日单字 425942
+        boolean edition2 = false; // 2版本自定義字體 540664 韓日单字 425942
         boolean edition3 = false; // 版本倉頡三 177361
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
         boolean edition5 = false; // 版本五代 242227 ansi 103934 其它只留下拼音注音 199187
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
+        // 倉頡字典
+        boolean editionDict = true;  // 倉頡字典 324629
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
@@ -94,6 +134,7 @@ public class Cj01SQLiteTest {
         edits.add(edition5);
         edits.add(edition6);
         edits.add(edition62);
+        edits.add(editionDict);
         int trues = 0;
         for (Boolean b : edits) {
             if (b) {
@@ -143,6 +184,22 @@ public class Cj01SQLiteTest {
             withCangjie35 = false;
             withCangjie3 = false;
         }
+        if (editionDict) {
+            withManju = false; // 滿文
+            withKorea = false; // 韓文
+            withJyutp = false; // 粤拼
+            withKarina = false; // 日文
+            // withSghm = true; // 四角號碼
+            withPy = false; // 拼音
+            withZy = false; // 注音
+            withKoxhanh = false; // 中古漢語
+
+            withCangjie6 = true;
+            withCangjie5 = true;
+            withCangjieOthers = true;
+            withCangjie35 = false;
+            withCangjie3 = true;
+        }
 
         // 生成碼表
         if (edition62) {
@@ -150,10 +207,21 @@ public class Cj01SQLiteTest {
         } else {
             Cj00AllInOneTest.generateAllInOnes(false, false, false, false, true);
         }
-
         // 生成交集碼表
         Cj01MbFormatTest.getCjMbsIntersection();
 
+        insertIntoDb(edition35only5);
+    }
+
+    /**
+     * 數據庫操作
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年7月28日 下午4:18:02
+     * @param edition35only5
+     *            是版本倉頡三五代合一，且又只要五代
+     */
+    private static void insertIntoDb(boolean edition35only5) {
         Connection c = null;
         Statement stmt = null;
         try {
@@ -182,25 +250,25 @@ public class Cj01SQLiteTest {
             indexSql = " CREATE INDEX index_mb_content_char ON t_mb_content (type_code, mb_char); ";
             stmt.executeUpdate(indexSql);
 
-            List<String> lines2 = IOUtils.readLines(mb2allInOne);
-            List<String> lines3 = IOUtils.readLines(mb3allInOne);
-            List<String> lines5 = IOUtils.readLines(mb5allInOne);
-            List<String> lines6 = IOUtils.readLines(mb6allInOne);
-            List<String> lineska = IOUtils.readLines(karinaallInOne);
-            List<String> lineszy = IOUtils.readLines(zyfhsallInOne);
-            List<String> linesjyutp = IOUtils.readLines(jyutpingAllInOne);
-            List<String> linespy = IOUtils.readLines(pinyinallInOne);
-            List<String> linessghm = IOUtils.readLines(sghmallInOne);
-            List<String> linescjyh = IOUtils.readLines(cjyhallInOne);
-            List<String> linescjms = IOUtils.readLines(cjmsallInOne);
-            List<String> lineskorea = IOUtils.readLines(koreaallInOne);
-            List<String> linesmanju = IOUtils.readLines(manjuallInOne);
-            List<String> linesipa = IOUtils.readLines(phoneticAllInOne);
-            List<String> linesKoxhanh = IOUtils.readLines(koxhanhAllInOne);
+            lines2 = IOUtils.readLines(mb2allInOne);
+            lines3 = IOUtils.readLines(mb3allInOne);
+            lines5 = IOUtils.readLines(mb5allInOne);
+            lines6 = IOUtils.readLines(mb6allInOne);
+            lineska = IOUtils.readLines(karinaallInOne);
+            lineszy = IOUtils.readLines(zyfhsallInOne);
+            linesjyutp = IOUtils.readLines(jyutpingAllInOne);
+            linespy = IOUtils.readLines(pinyinallInOne);
+            linessghm = IOUtils.readLines(sghmallInOne);
+            linescjyh = IOUtils.readLines(cjyhallInOne);
+            linescjms = IOUtils.readLines(cjmsallInOne);
+            lineskorea = IOUtils.readLines(koreaallInOne);
+            linesmanju = IOUtils.readLines(manjuallInOne);
+            linesipa = IOUtils.readLines(phoneticAllInOne);
+            linesKoxhanh = IOUtils.readLines(koxhanhAllInOne);
             // 交集碼表
-            List<String> linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
+            linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
             // 倉頡三五
-            List<String> lines35 = null;
+            lines35 = null;
 
             initMbOrderNoMap(lines6);
 
@@ -222,24 +290,6 @@ public class Cj01SQLiteTest {
                 }
                 lines35 = new ArrayList<String>(set35);
             }
-
-            String cjGen2 = "cj2";
-            String cjGen3 = "cj3";
-            String cjGen35 = "cj35";
-            String cjGen5 = "cj5";
-            String cjGen6 = "cj6";
-            String cjGenJyutp = "jyutp";
-            String cjGenpy = "pinyin";
-            String cjGenka = "karina";
-            String cjGenzy = "zyfh";
-            String cjGensghm = "sghm";
-            String cjGencjyh = "cjyhqm";
-            String cjGencjms = "cjms";
-            String cjGenkorea = "korea";
-            String cjGenInter = "cjcommon";
-            String cjGenManju = "manju";
-            String cjGenIpa = "ipa";
-            String cjGenKoxhanh = "kohan";
 
             sql_gen = getInsertGenSql(cjGen2, "倉頡二代");
             stmt.executeUpdate(sql_gen);
