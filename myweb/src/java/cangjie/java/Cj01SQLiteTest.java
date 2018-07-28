@@ -113,10 +113,11 @@ public class Cj01SQLiteTest {
     private static boolean withCangjie3 = false; // 加入倉頡三
 
     public static void main(String args[]) throws Exception {
+        boolean withNotAllOthers = true;
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 540664 韓日单字 425942
-        boolean edition3 = false; // 版本倉頡三 177361
+        boolean edition2 = false; // 2版本自定義字體 540664 韓日单字 425942
+        boolean edition3 = true; // 版本倉頡三 149393
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
         boolean edition5 = false; // 版本五代 242227 ansi 103934 其它只留下拼音注音 199187
@@ -149,6 +150,16 @@ public class Cj01SQLiteTest {
             return;
         }
 
+        if (withNotAllOthers) {
+            withManju = false; // 滿文
+            withKorea = false; // 韓文
+            withJyutp = true; // 粤拼
+            withKarina = false; // 日文
+            withSghm = false; // 四角號碼
+            withPy = true; // 拼音
+            withZy = true; // 注音
+            withKoxhanh = false; // 中古漢語
+        }
         if (edition1 || edition2) {
             withCangjie6 = true;
             withCangjie5 = true;
