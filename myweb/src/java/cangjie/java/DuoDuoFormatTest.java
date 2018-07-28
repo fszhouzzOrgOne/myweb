@@ -40,16 +40,16 @@ public class DuoDuoFormatTest {
         mbs.add(mb3allInOne);
         mbs.add(mb5allInOne);
         mbs.add(mb6allInOne);
-        mbs.add(karinaallInOne);
-        mbs.add(zyfhsallInOne);
-        mbs.add(pinyinallInOne);
-        mbs.add(sghmallInOne);
-        mbs.add(cjyhallInOne);
-        mbs.add(cjmsallInOne);
-        mbs.add(koreaallInOne);
-        mbs.add(manjuallInOne);
-        mbs.add(jyutpingAllInOne);
-        mbs.add(koxhanhAllInOne);
+//        mbs.add(karinaallInOne);
+//        mbs.add(zyfhsallInOne);
+//        mbs.add(pinyinallInOne);
+//        mbs.add(sghmallInOne);
+//        mbs.add(cjyhallInOne);
+//        mbs.add(cjmsallInOne);
+//        mbs.add(koreaallInOne);
+//        mbs.add(manjuallInOne);
+//        mbs.add(jyutpingAllInOne);
+//        mbs.add(koxhanhAllInOne);
 
         generateDuoDuoMb(mbs);
 
