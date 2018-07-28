@@ -57,7 +57,7 @@ public class MbCompare35Test {
 
     public static void compareCangjie3() throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb330000));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb370000_02));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb380000));
         list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb3more));
 
         Set<String> list2 = new LinkedHashSet<String>();
