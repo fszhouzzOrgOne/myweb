@@ -49,7 +49,7 @@ MAKE_COUNT=3
 输入法语言标识=2052
 
 //3.x 必须定义的输入法唯一标识符，并必须在脚本向导中使用程序生成
-IMEGUID="{FA212179-3D1F-43F7-B39F-33CE5F60BEAF}"
+IMEGUID="{4AF3D3B0-A76E-4520-818F-290FA5E46787}"
 
 IME文件名="allinonecj3"
 
