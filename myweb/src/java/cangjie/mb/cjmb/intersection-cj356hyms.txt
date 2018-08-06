@@ -7248,6 +7248,7 @@ esr 𣲳
 esrl 㴫
 esrr 漚
 ess 洰
+esss 𣵬
 estn 㶜
 estt 𣸹
 estv 𣺹
@@ -14358,6 +14359,7 @@ ifsmt 𥜓
 ifspr 𥚍
 ifsqf 禡
 ifss 𥘹
+ifsss 𥙸
 ifta 䄍
 iftaa 𥛼
 iftbi 𥜲
@@ -31265,6 +31267,7 @@ sse 𠭜
 ssf 燛
 ssgcg 𢑫
 ssh 𠥭
+sshne 𣪐
 ssioh 𢑶
 ssj 𡱡
 ssje 𡱾
@@ -33749,6 +33752,7 @@ trrg 雚
 trri 𦾆
 trrj 蕇
 trrk 䕾
+trrk 𧅍
 trrr 䓵
 trrr 䖀
 trrr 虈
@@ -33839,6 +33843,7 @@ tsql 𦰡
 tsrl 𦵼
 tsrr 蓲
 tss 苣
+tssk 𦷠
 tssr 𦯃
 tsu 芑
 tsu 𦫾
