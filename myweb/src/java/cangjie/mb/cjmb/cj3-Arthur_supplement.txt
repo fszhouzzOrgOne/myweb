@@ -413,6 +413,8 @@ bwli   爵
 by     丹
 c      金
 cdwf   鍊
+cgtj   﨨
+cjkd   﨧
 cmct   益
 cmjn   鉶
 cmkn   鉶
@@ -421,6 +423,7 @@ cvne   錄
 danw   欄
 dbln   刺
 dd     林
+dfcq   﨔
 dhhl   柳
 dijk   杖
 dlwv   樓
@@ -430,6 +433,7 @@ dnwa   櫓
 doo    來
 dowy   梅
 dqthb  韛
+dtoi   﨓
 ebbb   滑
 ebmr   洞
 ebmu   滛
@@ -475,10 +479,12 @@ fkmbc  類
 fypt   爐
 gbmo   塚
 gbmo   塚
+gcor   﨏
 gdhne  穀
 gfle   隸
 gfle   隷
 gjtc   墳
+goyj   﨣
 goyjj  𧻓
 grhne  嗀
 gsyj   塀
@@ -578,6 +584,7 @@ ks     力
 kwle   瘝
 kwu    奄
 lapv   褐
+lihqm  﨡
 livvv  蠟
 liwot  蝹
 liwvf  螺
@@ -656,6 +663,7 @@ nffdq  鱗
 nlfdq  隣
 nlgce  陵
 nlgcg  陸
+nlhau  﨩
 nlhem  隆
 nlheq  降
 nljka  陼
@@ -749,6 +757,7 @@ stkr   匿
 suf    𤋮
 tang   藺
 tanw   蘭
+tbav   﨟
 tcbt   益
 tehr   落
 tgce   菱
@@ -777,6 +786,7 @@ ul     屮
 umrt   豈
 uolc   嶺
 uomb   崙
+uytr   﨑
 v      女
 vep    怒
 veq    拏
@@ -812,6 +822,7 @@ ybhg   望
 ybog   離
 ybysp  龍
 yc     六
+yge    﨎
 yhmbc  頻
 yhmbc  頻
 yihu   充
@@ -820,6 +831,7 @@ yioj   率
 yjwj   連
 ykcf   遼
 ykr    吝
+ynhe   﨤
 ynui   逸
 ynui   逸
 ypg    壟
