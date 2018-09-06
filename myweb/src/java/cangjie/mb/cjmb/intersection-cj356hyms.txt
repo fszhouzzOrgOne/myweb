@@ -12449,6 +12449,7 @@ hodqn 𩙃
 hodrn 𧗮
 hodt 徕
 hoeai 𢕚
+hoeg 径
 hoeii 𢔳
 hoeii 𤔢
 hoemn 衍
@@ -12704,6 +12705,7 @@ hoqkq 𢔓
 hoqmc 㣱
 hoqoc 𢖑
 hor 咎
+horhg 徎
 horhr 𤔑
 horn 箚
 horp 𢛃
@@ -17483,6 +17485,7 @@ koog 痤
 koog 𡘫
 koog 𤸰
 kooo 𡙁
+kop 㤲
 kopd 𤵚
 kopd 𤵩
 kore 𤹫
@@ -23808,6 +23811,7 @@ noc 鐆
 nod 𣐦
 nod 𤼨
 nodi 弣
+nof 弥
 nof 灸
 nof 𤆐
 nof 𤎩
@@ -27143,6 +27147,7 @@ qdomg 𦓰
 qdon 䎢
 qdooa 𦔡
 qdoyb 𦔟
+qdqdd 䆐
 qdqmc 耫
 qdrbc 𦔐
 qdru 𦓨
@@ -28486,7 +28491,6 @@ ratk 𠾝
 ratr 𡄗
 rau 吧
 rau 邑
-rau 𨙨
 rauf 𨚋
 raum 𡃢
 raur 𡅜
@@ -29116,6 +29120,7 @@ rmgt 哢
 rmgu 𠳟
 rmhml 斲
 rmhp 𠰨
+rmhu 𠯚
 rmig 咥
 rmjk 噉
 rmjn 𠰙
@@ -29676,7 +29681,6 @@ rudi 𡬣
 rug 㙱
 rugk 𠼌
 ruhne 㱼
-ruhpu 𨞰
 ruhpu 𨞸
 ruhr 𠸉
 ruk 㕳
@@ -29704,7 +29708,6 @@ rurhu 㒭
 rurk 𡆑
 rutc 巽
 rutcu 𨞔
-rutcu 𨞠
 ruu 咄
 ruu 𡶸
 ruumd 𡥺
@@ -34759,11 +34762,9 @@ ulb 𡴅
 ulbk 岟
 ulbr 𠻭
 ulk 𡶈
-ullm 𦥒
 ulln 岪
 ulln 𡶒
 ulls 岿
-ulmm 𠚒
 ulq 峍
 ulq 𡷏
 ulr 𠺤
