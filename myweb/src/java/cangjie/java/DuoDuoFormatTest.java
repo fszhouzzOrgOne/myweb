@@ -33,7 +33,7 @@ public class DuoDuoFormatTest {
 
     public static void main(String[] args) throws Exception {
         // 生成碼表，倉頡全都加入詞組
-        boolean cjwithPhrases = false;
+        boolean cjwithPhrases = true;
         boolean otherImWithPhrases = false;
         Cj00AllInOneTest.generateAllInOnes(false, cjwithPhrases, true, otherImWithPhrases, false);
         
