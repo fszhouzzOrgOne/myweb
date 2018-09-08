@@ -118,10 +118,10 @@ public class Cj01SQLiteTest {
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
         boolean edition2 = false; // 2版本自定義字體 554879 韓日单字 425942
-        boolean edition3 = true; // 版本倉頡三 149395
+        boolean edition3 = false; // 版本倉頡三 149395
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean edition5 = false; // 版本五代 242227 ansi 103934 其它只留下拼音注音 199187
+        boolean edition5 = true; // 版本五代 242227 ansi 103934 其它只留下拼音注音 168552
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
         // 倉頡字典
