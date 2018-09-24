@@ -108,6 +108,11 @@ jmqx  𫴛
 ###############
 #其他漢字區
 ###############
+#碼表錯作鶥
+ahumz 眉頁
+#有的字體沒有點
+aje   𭥢
+alo   𬀲
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
 alry  𠘀
 ambg  𪱑
@@ -139,6 +144,7 @@ hog   坕
 hoyhv 𧙍
 hnhii 𮕕
 hnmz  鳳
+hut   𢍂
 hxu   龜
 # 䑮字，按UCS字形从朶，按GB18030-2000/2005从朵
 hyhnd 䑮
