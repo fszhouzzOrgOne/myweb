@@ -103,6 +103,7 @@ n   n
 n   ɲ
 n   ŋ
 n   ɳ
+n   ȵ
 n   ɴ
 n   ⁿ
 o   o
@@ -132,11 +133,13 @@ r   ɹ
 r   ɻ
 r   ʀ
 r   ʁ
+r   ɿ
 r   ˞
 s   s
 s   ʂ
 s   ʃ
 s   ʄ
+s   ʅ
 s   ̃
 s   ̰
 s   ˞
