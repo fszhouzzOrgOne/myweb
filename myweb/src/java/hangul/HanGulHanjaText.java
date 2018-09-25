@@ -24,7 +24,7 @@ public class HanGulHanjaText {
     private static String yanwenPtn = "[\\uAC00-\\uD7AF\\u1100-\\u11FF\\u3130-\\u318F\\uA960-\\uA97F\\uD7B0-\\uD7FF}]+";
 
     /** 保留的漢字詞條中各詞字數 2 */
-    private static String singleCharPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,1}$";
+    private static String singleCharPtn = "^.* [\\u4e00-\\u9fff\\u3400-\\u4dbf\\uF900-\\uFAFF]{1,2}$";
 
     private static String mbsBaseDir = "src\\java\\hangul\\file\\";
 
