@@ -4,10 +4,10 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -77,7 +77,8 @@ public class Cj01SQLiteTest {
     private static final String cjGenIpa = "ipa";
     private static final String cjGenKoxhanh = "kohan";
 
-    private static Map<String, Integer> mbOrderNoMap = null; // 文字排序權值
+    private static Map<String, Map<String, Integer>> mbOrderNoMaps = null; // 文字排序權值
+    private static String ORDER_MAP_DEFAULT_KEY = "default";
 
     private static Set<String> ansichars = null;
     static {
@@ -114,18 +115,18 @@ public class Cj01SQLiteTest {
 
     public static void main(String args[]) throws Exception {
         // 其他輸入法是否去掉，純三代要設置這個爲true
-        boolean withNotAllOthers = true;
+        boolean withNotAllOthers = false;
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = false; // 2版本自定義字體 554939 韓日单字 426066
+        boolean edition2 = true; // 2版本自定義字體 554939 韓日单字 426067
         boolean edition3 = false; // 版本倉頡三 149398
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean edition5 = true; // 版本五代 242227 ansi 103934 其它只留下拼音注音 168555
+        boolean edition5 = false; // 版本五代 242227 ansi 103934 其它只留下拼音注音 168555
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
         // 倉頡字典
-        boolean editionDict = false;  // 倉頡字典 324750
+        boolean editionDict = false; // 倉頡字典 324750
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
@@ -255,6 +256,11 @@ public class Cj01SQLiteTest {
                     + " type_code varchar(20), " + " mb_code varchar(20), " + " mb_char varchar(20), "
                     + " mb_order_no integer DEFAULT 0)";
             stmt.executeUpdate(sql);
+            String sqlInter = "create table t_mb_content_intersect (_id integer primary key autoincrement, "
+                    + " mb_code varchar(20), mb_char varchar(20), mb_order_6 integer DEFAULT 0, "
+                    + " mb_order_5 integer DEFAULT 0, mb_order_3 integer DEFAULT 0, "
+                    + " mb_order_yh integer DEFAULT 0, mb_order_ms integer DEFAULT 0)";
+            stmt.executeUpdate(sqlInter);
 
             // 索引在前面建，才會有效
             String indexSql = " CREATE INDEX index_mb_content_code ON t_mb_content (type_code, mb_code); ";
@@ -282,7 +288,13 @@ public class Cj01SQLiteTest {
             // 倉頡三五
             lines35 = null;
 
-            initMbOrderNoMap(lines6);
+            initMbOrderNoMap(lines6, cjGen6);
+            initMbOrderNoMap(lines5, cjGen5);
+            initMbOrderNoMap(lines3, cjGen3);
+            initMbOrderNoMap(linescjyh, cjGencjyh);
+            initMbOrderNoMap(linescjms, cjGencjms);
+            initMbOrderNoMap(lines2, cjGen2);
+            initMbOrderNoMap(lines6, ORDER_MAP_DEFAULT_KEY);
 
             // 去掉交集，注意和Cj01MbFormatTest.getCjMbsIntersection();方法对应
             Set<String> interset = new HashSet<String>(linesInter); // 轉成Set刪除，快些
@@ -354,7 +366,7 @@ public class Cj01SQLiteTest {
             c.setAutoCommit(false);
 
             // 倉頡交集碼表
-            insertMbdb(stmt, cjGenInter, linesInter, true);
+            insertMbdbIntersect(stmt, linesInter, true);
             c.commit();
             System.out.println("insert " + cjGenInter + " successfully");
             selectCountAll(stmt);
@@ -482,32 +494,65 @@ public class Cj01SQLiteTest {
      * 
      * @param lines6
      */
-    private static void initMbOrderNoMap(List<String> lines) {
-        mbOrderNoMap = new HashMap<String, Integer>();
-        int size = lines.size();
-        List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt");
-        int rateSize = rate.size();
-        for (int i = 0; i < rateSize; i++) {
-            String one = rate.get(i);
-            if (!mbOrderNoMap.keySet().contains(one)) {
-                mbOrderNoMap.put(one, size + rateSize - i);
-            }
+    private static void initMbOrderNoMap(List<String> lines, String key) {
+        if (null == mbOrderNoMaps) {
+            mbOrderNoMaps = new HashMap<String, Map<String, Integer>>();
         }
-        for (int i = 0; i < lines.size(); i++) {
-            String line = lines.get(i);
-            if (line.contains(" ")) {
-                String[] keyVal = line.split(" +");
-                String val = keyVal[1];
+        Map<String, Integer> mbOrderNoMap = new HashMap<String, Integer>();
+        if (ORDER_MAP_DEFAULT_KEY.equals(key)) {
+            int size = lines.size();
+            List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt");
+            int rateSize = rate.size();
+            for (int i = 0; i < rateSize; i++) {
+                String one = rate.get(i);
+                if (!mbOrderNoMap.keySet().contains(one)) {
+                    mbOrderNoMap.put(one, size + rateSize - i);
+                }
+            }
+            for (int i = 0; i < lines.size(); i++) {
+                String line = lines.get(i);
+                if (line.contains(" ")) {
+                    String[] keyVal = line.split(" +");
+                    String val = keyVal[1];
 
-                if (!mbOrderNoMap.keySet().contains(val)) {
-                    mbOrderNoMap.put(val, size - i);
+                    if (!mbOrderNoMap.keySet().contains(val)) {
+                        mbOrderNoMap.put(val, size - i);
+                    }
+                }
+            }
+        } else {
+            Map<String, List<String>> codeCharsList = new HashMap<String, List<String>>();
+            for (String line : lines) {
+                if (line.contains(" ")) {
+                    String[] keyVal = line.split(" +");
+                    String code = keyVal[0];
+                    String val = keyVal[1];
+                    List<String> chars = codeCharsList.get(code);
+                    if (null == chars) {
+                        codeCharsList.put(code, new ArrayList<String>());
+                        chars = codeCharsList.get(code);
+                    }
+                    chars.add(val);
+                }
+            }
+            List<String> codes = new ArrayList<String>(codeCharsList.keySet());
+            Collections.sort(codes);
+            for (String code : codes) {
+                List<String> chars = codeCharsList.get(code);
+                int i = chars.size();
+                for (String val : chars) {
+                    mbOrderNoMap.put(code + " " + val, i);
+                    i--;
                 }
             }
         }
+        mbOrderNoMaps.put(key, mbOrderNoMap);
     }
 
-    private static void selectCountAll(Statement stmt) throws SQLException {
-        String sqlSelect = "SELECT count(1) as cnt FROM t_mb_content;";
+    private static void selectCountAll(Statement stmt) throws Exception {
+        String sqlSelect = " SELECT count(1) as cnt FROM t_mb_content union all  ";
+        sqlSelect += " select count(1) as cnt from t_mb_content_intersect ";
+        sqlSelect = "select sum(cnt) as cnt from (" + sqlSelect + ") t ";
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             ResultSet rs = stmt.executeQuery(sqlSelect);
@@ -517,6 +562,7 @@ public class Cj01SQLiteTest {
             }
             rs.close();
         } catch (Exception e) {
+            throw e;
         }
     }
 
@@ -546,10 +592,59 @@ public class Cj01SQLiteTest {
 
                 Integer order = 0;
                 if (ordered) {
-                    order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                    if (null != mbOrderNoMaps) {
+                        Map<String, Integer> mbOrderNoMap = mbOrderNoMaps.get(gen);
+                        if (null != mbOrderNoMap) {
+                            order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                        } else {
+                            mbOrderNoMap = mbOrderNoMaps.get(ORDER_MAP_DEFAULT_KEY);
+                            if (null != mbOrderNoMap) {
+                                order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                            }
+                        }
+                    }
                 }
 
                 String sql = getInsertSql(gen, cod, val, order);
+                stmt.executeUpdate(sql);
+                count++;
+
+                if (count % 1000 == 0) {
+                    selectCountAll(stmt);
+                }
+            }
+        }
+        selectCountAll(stmt);
+    }
+
+    private static void insertMbdbIntersect(Statement stmt, List<String> lines, boolean ordered) throws Exception {
+        int count = 0;
+        for (String line : lines) {
+            if (line.contains(" ")) {
+                String[] keyVal = line.split(" +");
+                String cod = keyVal[0];
+                String val = keyVal[1];
+
+                if (isOnlyAnsi && !ansichars.contains(val)) {
+                    continue;
+                }
+
+                int order6 = 0, order5 = 0, order3 = 0, orderyh = 0, orderms = 0;
+                if (ordered) {
+                    if (null != mbOrderNoMaps) {
+                        String allKey = cod + " " + val;
+                        order6 = mbOrderNoMaps.get(cjGen6).get(allKey);
+                        order5 = mbOrderNoMaps.get(cjGen5).get(allKey);
+                        order3 = mbOrderNoMaps.get(cjGen3).get(allKey);
+                        orderyh = mbOrderNoMaps.get(cjGencjyh).get(allKey);
+                        orderms = mbOrderNoMaps.get(cjGencjms).get(allKey);
+                    }
+                }
+
+                String sql = " insert into t_mb_content_intersect (_id,mb_code,mb_char, ";
+                sql += " mb_order_6, mb_order_5, mb_order_3, mb_order_yh, mb_order_ms ) ";
+                sql += " values (null, '" + cod + "', '" + val + "', ";
+                sql += order6 + "," + order5 + "," + order3 + "," + orderyh + "," + orderms + "); ";
                 stmt.executeUpdate(sql);
                 count++;
 
