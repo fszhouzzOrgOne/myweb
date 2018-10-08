@@ -9,7 +9,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Cj01SQLiteTest2 {
+/**
+ * SQLite查詢
+ * 
+ * 
+ * @author fszhouzz@qq.com
+ * @time 2018年10月8日 下午11:20:21
+ */
+public class Cj01SQLiteQueryTest {
     private static String mbsBaseDir = Cj00AllInOneTest.mbsBaseDir;
 
     public static final String TYPE_CODE_CJGEN2 = "cj2";
@@ -62,7 +69,7 @@ public class Cj01SQLiteTest2 {
             c = DriverManager.getConnection("jdbc:sqlite:" + mbdbFile);
             System.out.println("Opened database successfully");
 
-            String sql = getQuerySql(new String[] { TYPE_CODE_CJGEN5, TYPE_CODE_CJINTERSECT }, "", "h");
+            String sql = getQuerySql(new String[] { TYPE_CODE_CJGEN6, TYPE_CODE_CJINTERSECT }, "", "hup");
 
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery(sql);

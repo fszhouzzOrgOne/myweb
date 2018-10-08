@@ -599,7 +599,8 @@ public class Cj01SQLiteTest {
                     if (null != mbOrderNoMaps) {
                         Map<String, Integer> mbOrderNoMap = mbOrderNoMaps.get(gen);
                         if (null != mbOrderNoMap) {
-                            order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                            String orderKey = cod + " " + val;
+                            order = (null != mbOrderNoMap.get(orderKey) ? mbOrderNoMap.get(orderKey) : 0);
                         } else {
                             mbOrderNoMap = mbOrderNoMaps.get(ORDER_MAP_DEFAULT_KEY);
                             if (null != mbOrderNoMap) {
