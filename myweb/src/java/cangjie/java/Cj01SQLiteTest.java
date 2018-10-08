@@ -267,6 +267,10 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(indexSql);
             indexSql = " CREATE INDEX index_mb_content_char ON t_mb_content (type_code, mb_char); ";
             stmt.executeUpdate(indexSql);
+            indexSql = " CREATE INDEX index_mb_content_intrst_code ON t_mb_content_intersect (mb_code); ";
+            stmt.executeUpdate(indexSql);
+            indexSql = " CREATE INDEX index_mb_content_intrst_char ON t_mb_content_intersect (mb_char); ";
+            stmt.executeUpdate(indexSql);
 
             lines2 = IOUtils.readLines(mb2allInOne);
             lines3 = IOUtils.readLines(mb3allInOne);
