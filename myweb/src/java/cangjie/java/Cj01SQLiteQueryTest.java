@@ -69,8 +69,9 @@ public class Cj01SQLiteQueryTest {
             c = DriverManager.getConnection("jdbc:sqlite:" + mbdbFile);
             System.out.println("Opened database successfully");
 
-            String sql = getQuerySql(new String[] { TYPE_CODE_CJGEN6, TYPE_CODE_CJINTERSECT }, "", "hup");
-
+            String sql = getQuerySql(new String[] { TYPE_CODE_CJGEN6, TYPE_CODE_CJINTERSECT }, "", "buhjm");
+            System.out.println(sql);
+            
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
@@ -140,7 +141,7 @@ public class Cj01SQLiteQueryTest {
             sql.append(mbClNameCodIntersect + ", ");
             sql.append(mbClNameValIntersect + ", ");
             String colName = getColOrderName(types.get(0));
-            sql.append(colName + " as " + mbClNameOrder);
+            sql.append(colName + " " + mbClNameOrder);
             sql.append(" from ");
             sql.append(mbTbNameIntersect);
             sql.append(" where 1=1 ");
