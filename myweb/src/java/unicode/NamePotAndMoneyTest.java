@@ -20,5 +20,9 @@ public class NamePotAndMoneyTest {
         System.out.println('\u060B');
         System.out.println('\u17DB');
         System.out.println('\uFDFC');
+        
+        for (String one : UnicodeSimUtil.getMathListByString()) {
+            System.out.println(one);
+        }
     }
 }
