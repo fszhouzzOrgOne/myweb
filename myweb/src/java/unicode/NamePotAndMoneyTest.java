@@ -21,8 +21,8 @@ public class NamePotAndMoneyTest {
         System.out.println('\u17DB');
         System.out.println('\uFDFC');
 
-        for (char i = '\u2190'; i <= '\u21FF'; i++) {
-            System.out.print(" " + i);
+        for (String str : UnicodeSimUtil.getSuperSubScriptListString()) {
+            System.out.print(" " + str);
         }
     }
 }
