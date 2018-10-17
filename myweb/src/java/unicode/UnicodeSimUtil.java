@@ -15,7 +15,7 @@ import java.util.Set;
  */
 public class UnicodeSimUtil {
     private static List<String> biaoqingList = new ArrayList<String>(Arrays.asList(":-)", ":-D", ":->", ":-p", ";-)",
-            ":-O", ":-(", ":-<", ":-*", ":-×", "Orz", "orz", "(^_^)", "(^-^)", "(^^)", "(^.^)", "(^o^)", "(^q^)",
+            ":-O", ":-(", ":-<", ":-*", ":-×", "Orz", "orz", "(^_^)", "(^-^)", "(^ ^)", "(^.^)", "(^o^)", "(^q^)",
             "(^ɜ^)", "(>_<)", "(>c<)", "(>﹏<)", "(>ɛ<)", "(ˉ﹁ˉ)", "(ˉˇˉ)", "(ˉ.ˉ)", "(ˉ~ˉ)", "(ˉoˉ)", "(ˉʒˉ)", "(ˉ_ˉ)",
             "(ˉɜˉ)", "(ˉɛˉ)", "(ˉωˉ)", "(_ _)", "(-.-)", "(-_-)", "(=ɛ=)", "(= =b)", "(= =#)", "(+﹏+)", "(*_*)",
             "(×_×)", "(ˋ﹏ˊ)", "('﹏')", "(ˋωˊ)", "(ˋ^ˊ)", "(ˇ_ˇ)", "( • - •)", "(;_;)", "(;o;)", "(˙ɷ˙)", "(˙Ꙫ˙)",
@@ -37,7 +37,7 @@ public class UnicodeSimUtil {
      * @return
      */
     public static List<String> getCnListString() {
-        String cnstr = "， 、 。 ？ ！ ： ∶ ； … ‘’ “” ＇＇ ＂＂ 〃〃 〝〞 ❛❜ ❝❞ ❟ ❠ （） 〔〕 〈〉 《》 «» ［］ ｛｝ 「」 『』 〖〗 【】 — ＋ ± － × ÷ ＝ ＜ ＞ ～ ｀ ＠ ＃ ¥ ￥ Ұ ұ ＄ ％ ＆ ＊ ｜ ‖ ／ ＼ ˉ ˊ ˇ ˋ ˙ ． · • 々 ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻";
+        String cnstr = "， 、 。 ？ ！ ： ； … ‘’ “” ＇＇ ＂＂ 〃〃 〝〞 ❛❜ ❝❞ ❟ ❠ （） 〔〕 〈〉 《》 «» ［］ ｛｝ 「」 『』 〖〗 【】 — ＋ ± － × ÷ ＝ ＜ ＞ ～ ｀ ＠ ＃ ¥ ￥ Ұ ұ ＄ ％ ＆ ＊ ｜ ‖ ／ ＼ ˉ ˊ ˇ ˋ ˙ ． · • 々 ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻";
         String[] facesArr = cnstr.split(" +");
         List<String> list = new ArrayList<String>();
         for (String str : facesArr) {
@@ -91,7 +91,7 @@ public class UnicodeSimUtil {
      */
     public static List<String> getSpecialListString() {
         return getListByString(
-                "╳︿﹀︵︶︹︺︷︸︻︼︽︾﹁﹂﹃﹄/\\︴﹌﹉﹊￣¨‥―﹍﹎﹏＿╭╮╰╯◟◞◜◝ˉˊˇˋ˙℠℡™©®♩♪♫♬♭♮♯¶‡†♂♀§№☆★♡♥○●⊙◎Θ◇◆□■△▲▽▼※〒▪⁜⁕⁎⁑⁂⁚⁖⁝⋰⋱⁘⁛⁞⁙〓°Ψ⊕卍卐囍㈱￡⇒⇔↖↑↗←↹→↙↓↘҈҉̶⃢⏎⇧⇪⌂⌘☢☣⌥⎋⌫⌦⌨");
+                "╳︿﹀︵︶︹︺︷︸︻︼︽︾﹁﹂﹃﹄/\\︴﹌﹉﹊￣¨‥―﹍﹎﹏＿╭╮╰╯◟◞◜◝ˉˊˇˋ˙℠℡™©®♩♪♫♬♭♮♯¶‡†♂♀§№☆★♡♥○●⊙◎Θ◇◆□■△▲▽▼※〒▪⁜⁕⁎⁑⁂⁚∶∵∴⁖⁝⋰⋱∷⁘⁛⁞⁙〓°Ψ⊕卍卐囍㈱￡⇒⇔↖↑↗←↹→↙↓↘҈҉̶⃢⏎⇧⇪⌂⌘☢☣⌥⎋⌫⌦⌨");
     }
 
     /**
@@ -139,7 +139,7 @@ public class UnicodeSimUtil {
     // http://www.runoob.com/charsets/ref-utf-currency.html
     // https://unicode-table.com/cn/20B6/
     public static List<String> getMoneyListString() {
-        String faceStr = "圓 圆 元 円 ¥ ￥ Ұ ұ $ ＄ ₳ ฿ € ₡ ₵ ￠ ¢ ₠ ₢ č ₫ ₯ ￡ £ ₤ ₣ ƒ ₲ ₭ Kčs ℳ ₥ ₦ ¤ ₱ ₽ ₧ ₨ ₴ ₷ ₮ ₸ ₶ ៛ ₩ ރ zł ₹ ₰ ₪ ﷼";
+        String faceStr = "圓 圆 元 円 ¥ ￥ Ұ ұ $ ＄ ₳ ฿ ₿ € ₡ ₵ ￠ ¢ ₠ ₢ ₾ ₫ ₯ ￡ £ ₤ ₣ ƒ ₲ ₭ Kčs ₺ ℳ ₥ ₦ ¤ ₱ ₽ ₧ ₨ ₴ ₷ ₮ ₸ ₶ ៛ ₩ ރ zł ₻ ₼ ֏ ₹ ₰ ₪ ؋ ﷼ ৲ ৳ ૱ ௹ ៛ ";
         List<String> list = mergeFaceString2List(null, faceStr);
         return list;
     }
