@@ -1,5 +1,8 @@
 package unicode;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class NamePotAndMoneyTest {
     public static void main(String[] args) {
         // http://www.chinanews.com/sh/2016/01-27/7736202.shtml
@@ -21,8 +24,15 @@ public class NamePotAndMoneyTest {
         System.out.println('\u17DB');
         System.out.println('\uFDFC');
 
-        for (String str : UnicodeSimUtil.getSuperSubScriptListString()) {
-            System.out.print(" " + str);
+        String str = " ⬆ ↗ ➡ ↘ ⬇ ↙ ⬅ ↖ ↕ ↔ ↩ ↪ ⤴ ⤵ 🔃 🔄 🔀 🔁 🔂 ▶ ⏩ ⏭ ⏯ ◀ ⏪ ⏮ 🔼 ⏫ 🔽 ⏬ ⏏ ";
+        List<String> list = Arrays.asList(str.trim().split(" +"));
+        List<String> arrows = UnicodeSimUtil.getArrowListString();
+        for (String one : list) {
+            if (!arrows.contains(one)) {
+                System.out.print(" " + one);
+            } else {
+                System.out.print("    ");
+            }
         }
     }
 }
