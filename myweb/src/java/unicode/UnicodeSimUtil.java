@@ -73,12 +73,12 @@ public class UnicodeSimUtil {
         String str5 = "Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ";
         String str6 = "🇦 🇧 🇨 🇩 🇪 🇫 🇬 🇭 🇮 🇯 🇰 🇱 🇲 🇳 🇴 🇵 🇶 🇷 🇸 🇹 🇺 🇻 🇼 🇽 🇾 🇿";
         String str7 = "© ® ™ 🔠 🔡 🔢 🔣 🔤 🅰 🆎 🅱 🆑 🆒 🆓 ℹ 🆔 Ⓜ 🆕 🆖 🅾 🆗 🅿 🆘 🆙 🆚 🔙 🔚 🔛 🔜 🔝 📴 🏧 🚾";
-        list = mergeFaceString2List(list, str2 + str22 + str23);
+        list = mergeFaceString2List(list, str7);
         list = mergeFaceString2List(list, str3);
         list = mergeFaceString2List(list, str4);
         list = mergeFaceString2List(list, str5);
+        list = mergeFaceString2List(list, str2 + str22 + str23);
         list = mergeFaceString2List(list, str6);
-        list = mergeFaceString2List(list, str7);
         return list;
     }
 
