@@ -1,8 +1,8 @@
 package unicode;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 統一碼漢字工具类<br/>
@@ -78,35 +78,35 @@ public class UnicodeHanziUtil {
     private static String EXTCOMPT_KEYNAME = "兼容漢字擴展";
 
     static {
-        nameRangeMap.put("漢字基本區", UnicodeConvertUtil.getStringSet(baseRange));
-        nameRangeMap.put("漢字基本區補充", UnicodeConvertUtil.getStringSet(base2Range));
-        nameRangeMap.put("漢字擴展A區", UnicodeConvertUtil.getStringSet(AextRange));
-        nameRangeMap.put("漢字擴展B區", UnicodeConvertUtil.getStringSet(BextRange));
-        nameRangeMap.put("漢字擴展C區", UnicodeConvertUtil.getStringSet(CextRange));
-        nameRangeMap.put("漢字擴展D區", UnicodeConvertUtil.getStringSet(DextRange));
-        nameRangeMap.put("漢字擴展E區", UnicodeConvertUtil.getStringSet(EextRange));
-        nameRangeMap.put("漢字擴展F區", UnicodeConvertUtil.getStringSet(FextRange));
+        nameRangeMap.put("漢字基本區", baseRange);
+        nameRangeMap.put("漢字基本區補充", base2Range);
+        nameRangeMap.put("漢字擴展A區", AextRange);
+        nameRangeMap.put("漢字擴展B區", BextRange);
+        nameRangeMap.put("漢字擴展C區", CextRange);
+        nameRangeMap.put("漢字擴展D區", DextRange);
+        nameRangeMap.put("漢字擴展E區", EextRange);
+        nameRangeMap.put("漢字擴展F區", FextRange);
 
-        nameRangeMap.put(HANZICOMPT_KEYNAME, UnicodeConvertUtil.getStringSet(hanziCompt));
-        nameRangeMap.put(EXTCOMPT_KEYNAME, UnicodeConvertUtil.getStringSet(extCompt));
+        nameRangeMap.put(HANZICOMPT_KEYNAME, hanziCompt);
+        nameRangeMap.put(EXTCOMPT_KEYNAME, extCompt);
 
-        nameRangeMap.put("諺文字母", UnicodeConvertUtil.getStringSet(hangulJamo));
-        nameRangeMap.put("補充標點符號", UnicodeConvertUtil.getStringSet(supplmtlPunctuation));
-        nameRangeMap.put("中日韓部首補充", UnicodeConvertUtil.getStringSet(extPart));
-        nameRangeMap.put("康熙部首", UnicodeConvertUtil.getStringSet(kangxiPart));
-        nameRangeMap.put("漢字結構描述字符", UnicodeConvertUtil.getStringSet(hanziStruct));
-        nameRangeMap.put("中日韓符號和標點", UnicodeConvertUtil.getStringSet(symPunctuation));
-        nameRangeMap.put("日文假名", UnicodeConvertUtil.getStringSet(japanKarina));
-        nameRangeMap.put("注音符號", UnicodeConvertUtil.getStringSet(zhuyin));
-        nameRangeMap.put("諺文兼容字母", UnicodeConvertUtil.getStringSet(hangulCompatJomo));
-        nameRangeMap.put("漢文標註號", UnicodeConvertUtil.getStringSet(kanbun));
-        nameRangeMap.put("注音符號擴充", UnicodeConvertUtil.getStringSet(extZhuyin));
-        nameRangeMap.put("中日韓筆畫部件", UnicodeConvertUtil.getStringSet(hanziStroke));
-        nameRangeMap.put("片假名音標擴充", UnicodeConvertUtil.getStringSet(katakanaPhoneticExtensions));
-        nameRangeMap.put("中日韓括號字母及月份", UnicodeConvertUtil.getStringSet(encloseLetterMonth));
-        nameRangeMap.put("中日韓兼容字符", UnicodeConvertUtil.getStringSet(cjkCompat));
+        nameRangeMap.put("諺文字母", hangulJamo);
+        nameRangeMap.put("補充標點符號", supplmtlPunctuation);
+        nameRangeMap.put("中日韓部首補充", extPart);
+        nameRangeMap.put("康熙部首", kangxiPart);
+        nameRangeMap.put("漢字結構描述字符", hanziStruct);
+        nameRangeMap.put("中日韓符號和標點", symPunctuation);
+        nameRangeMap.put("日文假名", japanKarina);
+        nameRangeMap.put("注音符號", zhuyin);
+        nameRangeMap.put("諺文兼容字母", hangulCompatJomo);
+        nameRangeMap.put("漢文標註號", kanbun);
+        nameRangeMap.put("注音符號擴充", extZhuyin);
+        nameRangeMap.put("中日韓筆畫部件", hanziStroke);
+        nameRangeMap.put("片假名音標擴充", katakanaPhoneticExtensions);
+        nameRangeMap.put("中日韓括號字母及月份", encloseLetterMonth);
+        nameRangeMap.put("中日韓兼容字符", cjkCompat);
 
-        nameRangeMap.put(PRIVATEUSERAREA_KEYNAME, UnicodeConvertUtil.getStringSet(privateUserArea));
+        nameRangeMap.put(PRIVATEUSERAREA_KEYNAME, privateUserArea);
     }
 
     public static void main(String[] args) throws Exception {
@@ -144,9 +144,10 @@ public class UnicodeHanziUtil {
         if (null == charStr || charStr.toCharArray().length > 2) {
             return false;
         }
-        @SuppressWarnings("unchecked")
-        Set<String> puaSet = (Set<String>) nameRangeMap.get(PRIVATEUSERAREA_KEYNAME);
-        return puaSet.contains(charStr);
+        int[] range = (int[]) nameRangeMap.get(PRIVATEUSERAREA_KEYNAME);
+        List<Integer> codes = UnicodeConvertUtil.getUnicodeListFromStr(charStr);
+        int code = codes.get(0); // 只取第一個
+        return code >= range[0] && code <= range[1];
     }
 
     /**
@@ -156,14 +157,15 @@ public class UnicodeHanziUtil {
      *            一個字符
      * @return
      */
-    @SuppressWarnings("unchecked")
     public static boolean isInhanziCompt(String charStr) {
         if (null == charStr || charStr.toCharArray().length > 2) {
             return false;
         }
-        Set<String> set = (Set<String>) nameRangeMap.get(HANZICOMPT_KEYNAME);
-        set.addAll((Set<String>) nameRangeMap.get(EXTCOMPT_KEYNAME));
-        return set.contains(charStr);
+        int[] range1 = (int[]) nameRangeMap.get(HANZICOMPT_KEYNAME);
+        int[] range2 = (int[]) nameRangeMap.get(EXTCOMPT_KEYNAME);
+        List<Integer> codes = UnicodeConvertUtil.getUnicodeListFromStr(charStr);
+        int code = codes.get(0); // 只取第一個
+        return (code >= range1[0] && code <= range1[1]) || (code >= range2[0] && code <= range2[1]);
     }
 
     /**
@@ -173,10 +175,11 @@ public class UnicodeHanziUtil {
         if (null == charStr || charStr.toCharArray().length > 2) {
             return "";
         }
+        List<Integer> codes = UnicodeConvertUtil.getUnicodeListFromStr(charStr);
+        int code = codes.get(0); // 只取第一個
         for (String name : nameRangeMap.keySet()) {
-            @SuppressWarnings("unchecked")
-            Set<String> range = (Set<String>) nameRangeMap.get(name);
-            if (range.contains(charStr)) {
+            int[] range = (int[]) nameRangeMap.get(name);
+            if (code >= range[0] && code <= range[1]) {
                 return name;
             }
         }
