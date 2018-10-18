@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeConvertUtil;
 import unicode.UnicodeHanziUtil;
 
 /**
@@ -89,14 +90,14 @@ public class MbCompare35Test {
                 chars.add(cha);
             }
         }
-        Set<String> set = UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.baseRange);
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.base2Range));
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.AextRange));
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.BextRange));
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.CextRange));
-        set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.DextRange));
-        // set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.EextRange));
-        // set.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.FextRange));
+        Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.baseRange);
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.AextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.BextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.CextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.DextRange));
+        // set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.EextRange));
+        // set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.FextRange));
         set.removeAll(chars);
         System.out.println("getNotIncludedCharsAF: " + set.size() + ": " + set);
     }

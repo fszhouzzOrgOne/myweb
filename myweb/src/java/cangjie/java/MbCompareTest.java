@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeConvertUtil;
 import unicode.UnicodeHanziUtil;
 
 /**
@@ -45,7 +46,7 @@ public class MbCompareTest {
                 chars.add(cha);
             }
         }
-        Set<String> set = UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.privateUserArea);
+        Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.privateUserArea);
         set.removeAll(chars);
         System.out.println(set);
     }

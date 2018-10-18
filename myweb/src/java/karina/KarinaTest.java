@@ -9,7 +9,7 @@ import java.util.Set;
 
 import cangjie.java.Cj00AllInOneTest;
 import cangjie.java.util.IOUtils;
-import unicode.UnicodeHanziUtil;
+import unicode.UnicodeConvertUtil;
 
 /**
  * 日語假名編碼
@@ -473,7 +473,7 @@ public class KarinaTest {
         excepts.add("゗");
         excepts.add("゘");
         for (int i = 0x3040; i < 0x30FF; i++) {
-            String one = UnicodeHanziUtil.getStringByUnicode(i);
+            String one = UnicodeConvertUtil.getStringByUnicode(i);
             System.out.println(one);
             if (!excepts.contains(one)) {
                 all += one;

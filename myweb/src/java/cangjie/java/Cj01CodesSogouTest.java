@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeConvertUtil;
 import unicode.UnicodeHanziUtil;
 
 /**
@@ -90,9 +91,9 @@ public class Cj01CodesSogouTest {
                 }
             }
         } else {
-            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.baseRange));
-            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.base2Range));
-            cj6simChar.addAll(UnicodeHanziUtil.getStringSet(UnicodeHanziUtil.AextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.baseRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.AextRange));
         }
 
         Set<String> theRemoved = new HashSet<String>();
