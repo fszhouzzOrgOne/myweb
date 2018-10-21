@@ -27,7 +27,7 @@ public class MbCompareTest {
         Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
         list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
         list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua));
-        
+
         Set<String> list2 = new LinkedHashSet<String>();
         list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473)));
 
@@ -36,7 +36,7 @@ public class MbCompareTest {
             System.out.println(str);
         }
         System.out.println(list3.size());
-        
+
         // 各個區漢字是否都有了：
         Set<String> chars = new LinkedHashSet<String>();
         for (String line : list1) {
@@ -48,6 +48,7 @@ public class MbCompareTest {
         }
         Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.privateUserArea);
         set.removeAll(chars);
+        set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.privateUserArea2);
         System.out.println(set);
     }
 

@@ -97,7 +97,7 @@ public class MbCompare35Test {
         set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.CextRange));
         set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.DextRange));
         // set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.EextRange));
-        // set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.FextRange));
+        //  set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.FextRange));
         set.removeAll(chars);
         System.out.println("getNotIncludedCharsAF: " + set.size() + ": " + set);
     }
