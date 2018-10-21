@@ -18,6 +18,8 @@ import java.util.regex.Pattern;
 public class UnicodeConvertUtil {
 
     public static void main(String[] args) {
+        System.out.println(Integer.parseInt("18b0", 16));
+        
         String str = "aaaa圍，取𬺰45";
         List<Integer> list = getUnicodeListFromStr(str);
         System.out.println(Arrays.toString(list.toArray()));
