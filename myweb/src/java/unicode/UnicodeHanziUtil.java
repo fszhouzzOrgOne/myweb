@@ -184,7 +184,7 @@ public class UnicodeHanziUtil {
         list.add("A9E0 A9FF 緬甸語擴展B");
         list.add("AA00 AA5F 占族文");
         list.add("AA60 AA7F 緬甸語擴展A");
-        list.add("AA80 AADF 泰越");
+        list.add("AA80 AADF 越南傣文");
         list.add("AAE0 AAFF 曼尼普爾語擴展");
         list.add("AB00 AB2F 埃塞俄比亞擴展A");
         list.add("AB30 AB6F 拉丁文擴展E");
