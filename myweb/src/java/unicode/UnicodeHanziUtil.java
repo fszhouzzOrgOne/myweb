@@ -345,7 +345,7 @@ public class UnicodeHanziUtil {
      * @return
      */
     public static boolean isInPrivateUserArea(String charStr) {
-        if (null == charStr || charStr.toCharArray().length > 2) {
+        if (null == charStr || "".equals(charStr) || charStr.toCharArray().length > 2) {
             return false;
         }
         int start1 = 0xF0000;
@@ -365,7 +365,7 @@ public class UnicodeHanziUtil {
      * @return
      */
     public static boolean isInhanziCompt(String charStr) {
-        if (null == charStr || charStr.toCharArray().length > 2) {
+        if (null == charStr || "".equals(charStr) || charStr.toCharArray().length > 2) {
             return false;
         }
         int start1 = 0x2F800;
@@ -381,7 +381,7 @@ public class UnicodeHanziUtil {
      * 按字符，取得它在統一碼中所在區名字
      */
     public static String getRangeNameByChar(String charStr) {
-        if (null == charStr || charStr.toCharArray().length > 2) {
+        if (null == charStr || "".equals(charStr) || charStr.toCharArray().length > 2) {
             return "";
         }
         List<Integer> codes = UnicodeConvertUtil.getUnicodeListFromStr(charStr);
