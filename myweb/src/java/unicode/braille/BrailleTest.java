@@ -75,7 +75,7 @@ public class BrailleTest {
         System.out.println(reses);
     }
 
-    private static String resolveImageInput(String part) {
+    public static String resolveImageInput(String part) {
         String code1 = keyMap2.get(part.charAt(0) + "");
         if (code1.length() == 8) {
             return codeCharMap.get(code1);
@@ -98,7 +98,7 @@ public class BrailleTest {
         return codeCharMap.get(codex);
     }
 
-    private static String resolveNumInput(String part) {
+    public static String resolveNumInput(String part) {
         List<String> codes = new ArrayList<String>(
                 Arrays.asList("0", "0", "0", "0", "0", "0", "0", "0"));
         for (int i = 0; i < part.length(); i++) {
@@ -191,7 +191,7 @@ public class BrailleTest {
         return lines;
     }
 
-    private static String toFullCode(String code) {
+    public static String toFullCode(String code) {
         int len = 8;
         if (code.length() == len) {
             return code;
