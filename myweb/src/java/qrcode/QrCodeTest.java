@@ -62,19 +62,14 @@ public class QrCodeTest {
     }
 
     /**
-     *
      * 生成QRCode二维码<br>
-     *
-     * 在编码时需要将com.google.zxing.qrcode.encoder.Encoder.java中的<br>
-     *
+     * 注意com.google.zxing.qrcode.encoder.Encoder.java中的<br>
      * static final String DEFAULT_BYTE_MODE_ENCODING = "ISO8859-1";<br>
-     *
-     * 修改为UTF-8，否则中文编译后解析不了<br>
+     * 如果有中文，不能直接用UTF-8，得先按ISO-8859-1格式編碼字符串，否则中文编译后解析不了<br>
      */
     public void encode(String contents, File file, BarcodeFormat format,
             int width, int height, Map<EncodeHintType, ?> hints) {
         try {
-            // 消除乱码
             contents = new String(contents.getBytes("UTF-8"), "ISO-8859-1");
             System.out.println("encoded contents: " + contents);
             BitMatrix bitMatrix = new MultiFormatWriter().encode(contents,
@@ -86,9 +81,14 @@ public class QrCodeTest {
     }
 
     /**
-     * * 生成二维码图片<br>
-     * * * @param matrix * @param format * 图片格式 * @param file * 生成二维码图片位置
-     * * @throws IOException
+     * 生成二维码图片<br>
+     * 
+     * @param matrix
+     * @param format
+     *            图片格式
+     * @param file
+     *            生成二维码图片位置
+     * @throws IOException
      */
     public static void writeToFile(BitMatrix matrix, String format, File file)
             throws IOException {
@@ -97,8 +97,10 @@ public class QrCodeTest {
     }
 
     /**
-     * * 生成二维码内容<br>
-     * * * @param matrix * @return
+     * 生成二维码内容<br>
+     * 
+     * @param matrix
+     * @return
      */
     public static BufferedImage toBufferedImage(BitMatrix matrix) {
         int width = matrix.getWidth();
@@ -113,7 +115,7 @@ public class QrCodeTest {
         return image;
     }
 
-    /** * 解析QRCode二维码 */
+    /** 解析QRCode二维码 */
     public void decode(File file) {
         try {
             BufferedImage image = ImageIO.read(file);
