@@ -15,5 +15,7 @@
 	<classpathentry kind="lib" path="src/J2EE/APP-INF/lib/mail.jar"/>
 	<classpathentry kind="lib" path="src/J2EE/APP-INF/lib/json.jar"/>
 	<classpathentry kind="lib" path="src/J2EE/APP-INF/lib/sqlite-jdbc-3.15.1.jar"/>
+	<classpathentry kind="lib" path="src/J2EE/APP-INF/lib/zxing-1.7-javase.jar"/>
+	<classpathentry kind="lib" path="src/J2EE/APP-INF/lib/zxing-2.0-core.jar"/>
 	<classpathentry kind="output" path="src/J2EE/APP-INF/classes"/>
 </classpath>
