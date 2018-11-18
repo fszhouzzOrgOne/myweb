@@ -22527,6 +22527,7 @@ jit 身熱
 jitbei 齧臂
 jitsyutcaanzin 齧雪餐氈
 jiugwat 腰骨
+joekjyun 藥丸
 joekzaa 藥渣
 joengmaau 養貓
 joengzi 樣子
@@ -22549,7 +22550,6 @@ jyuze 雨遮
 jyuzo 語助
 jyuzoek 遇着
 jyuzoek 遇著
-jyun 藥丸
 jyunjuk 元肉
 jyunseoi 芫荽
 jyunseoicung 芫荽蔥
