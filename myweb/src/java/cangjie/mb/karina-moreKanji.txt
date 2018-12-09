@@ -277,6 +277,7 @@ bou 某
 bou 棒
 bou 矛
 bou 紡
+bou 綁
 bou 肪
 bou 膨
 bou 謀
@@ -1189,6 +1190,7 @@ hou 捧
 hou 放
 hou 方
 hou 朋
+hou 榜
 hou 法
 hou 泡
 hou 砲
@@ -3307,6 +3309,7 @@ o 尾
 o 御
 o 悪
 o 惡
+o 於
 o 汚
 o 緒
 o 緖
@@ -5541,6 +5544,7 @@ tyuu 酎
 tyuu 鋳
 tyuu 鑄
 tyuu 駐
+u 于
 u 卯
 u 右
 u 宇
