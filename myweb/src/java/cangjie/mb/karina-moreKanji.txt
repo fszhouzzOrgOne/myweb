@@ -1190,10 +1190,10 @@ hou 捧
 hou 放
 hou 方
 hou 朋
-hou 榜
 hou 法
 hou 泡
 hou 砲
+hou 綁
 hou 縫
 hou 胞
 hou 芳
