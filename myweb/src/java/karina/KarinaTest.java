@@ -22,7 +22,7 @@ public class KarinaTest {
     private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
     // 三字以下
-    // 單字 48609
+    // 單字 48610
     private static String singleCharPtn = "^.* .{1,1}$";;
 
     public static void main(String[] args) throws Exception {
