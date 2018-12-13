@@ -143,6 +143,15 @@ public class Test {
         list3.add("qqqqq ˨˧");
         list3.add("qqqqqq ˨˨");
         list3.add("qqqqqq ˨");
+        list3.add("q ⁵⁵");
+        list3.add("q ⁵");
+        list3.add("qq ³⁵");
+        list3.add("qqq ³³");
+        list3.add("qqq ³");
+        list3.add("qqqq ¹¹");
+        list3.add("qqqqq ¹³");
+        list3.add("qqqqqq ²²");
+        list3.add("qqqqqq ²");
         List<String> list4 = IOUtils
                 .readLines(mbsBaseDir + "jyutping-more.txt");
         List<String> listall = new ArrayList<String>(list1);
