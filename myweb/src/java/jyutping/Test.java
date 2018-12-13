@@ -132,34 +132,35 @@ public class Test {
                 .readLines(mbsBaseDir + "jyutping-dict.txt");
         List<String> list2 = IOUtils
                 .readLines(mbsBaseDir + "jyutping-github.txt");
-        List<String> list3 = new ArrayList<String>();
-        list3.add("ling4 〇");
-        list3.add("q  ˥˧");
-        list3.add("q  ˥");
-        list3.add("qq ˧˥");
-        list3.add("qqq ˧˧");
-        list3.add("qqq ˧");
-        list3.add("qqqq ˨˩");
-        list3.add("qqqqq ˨˧");
-        list3.add("qqqqqq ˨˨");
-        list3.add("qqqqqq ˨");
-        list3.add("q ⁵⁵");
-        list3.add("q ⁵");
-        list3.add("qq ³⁵");
-        list3.add("qqq ³³");
-        list3.add("qqq ³");
-        list3.add("qqqq ¹¹");
-        list3.add("qqqqq ¹³");
-        list3.add("qqqqqq ²²");
-        list3.add("qqqqqq ²");
         List<String> list4 = IOUtils
                 .readLines(mbsBaseDir + "jyutping-more.txt");
         List<String> listall = new ArrayList<String>(list1);
         listall.addAll(list2);
-        listall.addAll(list3);
         listall.addAll(list4);
         Collections.sort(listall);
-        IOUtils.writeFile(jyutpAllFile, listall);
+
+        List<String> res = new ArrayList<String>();
+        res.add("ling4 〇");
+        res.add("q  ˥˧");
+        res.add("q  ˥");
+        res.add("qq ˧˥");
+        res.add("qqq ˧˧");
+        res.add("qqq ˧");
+        res.add("qqqq ˨˩");
+        res.add("qqqqq ˨˧");
+        res.add("qqqqqq ˨˨");
+        res.add("qqqqqq ˨");
+        res.add("q ⁵⁵");
+        res.add("q ⁵");
+        res.add("qq ³⁵");
+        res.add("qqq ³³");
+        res.add("qqq ³");
+        res.add("qqqq ¹¹");
+        res.add("qqqqq ¹³");
+        res.add("qqqqqq ²²");
+        res.add("qqqqqq ²");
+        res.addAll(listall);
+        IOUtils.writeFile(jyutpAllFile, res);
         IOUtils.uniqueCodeFile(jyutpAllFile);
     }
 }
