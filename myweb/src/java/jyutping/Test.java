@@ -29,9 +29,11 @@ public class Test {
         // 用Q的個數表示聲調
         List<String> mb = IOUtils.readLines(jyutpAllFile);
         List<String> jyutAllInOne = new ArrayList<String>();
+        jyutAllInOne.addAll(PingJamTest.getPingjamList());
         for (String str : mb) {
             if (null != str && str.trim().length() > 0) {
-                jyutAllInOne.add(str.replace("1", "q").replace("2", "qq").replace("3", "qqq").replace("4", "qqqq")
+                jyutAllInOne.add(str.replace("1", "q").replace("2", "qq")
+                        .replace("3", "qqq").replace("4", "qqqq")
                         .replace("5", "qqqqq").replace("6", "qqqqqq"));
             }
         }
@@ -126,8 +128,10 @@ public class Test {
      */
     public static void mergeMbs() throws Exception {
         // 合併
-        List<String> list1 = IOUtils.readLines(mbsBaseDir + "jyutping-dict.txt");
-        List<String> list2 = IOUtils.readLines(mbsBaseDir + "jyutping-github.txt");
+        List<String> list1 = IOUtils
+                .readLines(mbsBaseDir + "jyutping-dict.txt");
+        List<String> list2 = IOUtils
+                .readLines(mbsBaseDir + "jyutping-github.txt");
         List<String> list3 = new ArrayList<String>();
         list3.add("ling4 〇");
         list3.add("q  ˥˧");
@@ -139,7 +143,8 @@ public class Test {
         list3.add("qqqqq ˨˧");
         list3.add("qqqqqq ˨˨");
         list3.add("qqqqqq ˨");
-        List<String> list4 = IOUtils.readLines(mbsBaseDir + "jyutping-more.txt");
+        List<String> list4 = IOUtils
+                .readLines(mbsBaseDir + "jyutping-more.txt");
         List<String> listall = new ArrayList<String>(list1);
         listall.addAll(list2);
         listall.addAll(list3);
