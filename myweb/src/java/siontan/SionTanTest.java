@@ -7,41 +7,70 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * 輸入法工具類<br/>
+ * 參見 siontan.SionTanMbConvertTest
+ * 
+ * 
+ * @author fszhouzz@qq.com
+ * @time 2018年12月15日 上午9:56:44
+ */
 public class SionTanTest {
 
     private static final List<String> toneList = new ArrayList<String>();
     private static final Map<String, String> map = new HashMap<String, String>();
 
     public static void main(String[] args) {
-        List<String> res = getResult(
-                "henqhanqqqscqqɪnqdvqqdanqqlənqqqddqqqyuenqqqqynqqqqqqqqqionqqqqqqqq");
-        System.out.println(res);
-        res = resolveNasalSounds(res);
+        String input = "henqhanqqqscqqɪnqdvqqdanqqlənqqqddqqqyuenqqqqynqqqqqqqqqionqqqqqqqq";
+
+        List<String> res = getResultList(input);
         System.out.println(res);
     }
 
-    // 曾版沒有on、ɪn，只en鼻化；張拼沒有ɪn，in、yn、ən不鼻化；
+    /**
+     * 按輸入法，得到音標候選列表
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2018年12月15日 上午9:55:41
+     * @param input
+     * @return
+     */
+    public static List<String> getResultList(String input) {
+        List<String> res = getPreliminaryResult(input);
+        res = resolveNasalSounds(res);
+        return res;
+    }
+
+    /** 鼻化: 曾版沒有on、ɪn，只en鼻化；張拼沒有ɪn，in、yn、ən不鼻化； */
     private static List<String> resolveNasalSounds(List<String> input) {
         if (null == input || input.isEmpty()) {
             return null;
         }
         Set<String> res = new LinkedHashSet<String>();
         for (String one : input) {
+            if (!res.contains(one)) {
+                res.add(one);
+            }
             String tmp = one.replaceAll("en", "ẽ");
             tmp = tmp.replaceAll("an", "ã");
             tmp = tmp.replaceAll("ɔn", "ɔ̃");
             tmp = tmp.replaceAll("on", "õ");
-            res.add(tmp);
+            if (!res.contains(tmp)) {
+                res.add(tmp);
+            }
             tmp = tmp.replaceAll("in", "ĩ");
             tmp = tmp.replaceAll("yn", "ỹ");
             tmp = tmp.replaceAll("ən", "ə̃");
             tmp = tmp.replaceAll("ɪn", "ɪ̃");
-            res.add(tmp);
+            if (!res.contains(tmp)) {
+                res.add(tmp);
+            }
         }
         return new ArrayList<String>(res);
     }
 
-    private static List<String> getResult(String input) {
+    /** 初步解析結果 */
+    private static List<String> getPreliminaryResult(String input) {
         if (null == input) {
             return null;
         }
