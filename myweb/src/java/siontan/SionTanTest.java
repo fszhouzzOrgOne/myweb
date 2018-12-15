@@ -25,6 +25,12 @@ public class SionTanTest {
 
         List<String> res = getResultList(input);
         System.out.println(res);
+
+        System.out.println(getKeyNameMap());
+    }
+
+    public static Map<String, Object> getKeyNameMap() {
+        return new HashMap<String, Object>(map);
     }
 
     /**
