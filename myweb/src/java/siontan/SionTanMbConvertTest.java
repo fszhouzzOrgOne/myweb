@@ -76,11 +76,11 @@ public class SionTanMbConvertTest {
     }
 
     static {
-        toneMap.put("33", "³³");
-        toneMap.put("12", "¹²");
-        toneMap.put("42", "⁴²");
-        toneMap.put("55", "⁴⁵");
-        toneMap.put("21", "²¹");
-        toneMap.put("24", "²⁴");
+        toneMap.put("33", "q");
+        toneMap.put("12", "qq");
+        toneMap.put("42", "qqq");
+        toneMap.put("55", "qqqq");
+        toneMap.put("21", "qqqqq");
+        toneMap.put("24", "qqqqqq");
     }
 }
