@@ -38,6 +38,7 @@ public class Cj01SQLiteTest {
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
     private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
+    private static String sionTanTsengAllInOne = Cj00AllInOneTest.sionTanTsengAllInOne; // 曾版湘潭話
 
     private static List<String> lines2 = null;
     private static List<String> lines3 = null;
@@ -54,6 +55,7 @@ public class Cj01SQLiteTest {
     private static List<String> linesmanju = null;
     private static List<String> linesipa = null;
     private static List<String> linesKoxhanh = null;
+    private static List<String> linesSionTanTseng = null;
     // 交集碼表
     private static List<String> linesInter = null;
     // 倉頡三五
@@ -76,6 +78,7 @@ public class Cj01SQLiteTest {
     private static final String cjGenManju = "manju";
     private static final String cjGenIpa = "ipa";
     private static final String cjGenKoxhanh = "kohan";
+    private static final String cjGenSionTanTseng = "siontts";
 
     private static Map<String, Map<String, Integer>> mbOrderNoMaps = null; // 文字排序權值
     private static String ORDER_MAP_DEFAULT_KEY = "default";
@@ -83,7 +86,8 @@ public class Cj01SQLiteTest {
     private static Set<String> ansichars = null;
     static {
         ansichars = new HashSet<String>();
-        List<String> linesAnsi = IOUtils.readLines(Cj00AllInOneTest.mbsBaseDir + "ansichar.txt");
+        List<String> linesAnsi = IOUtils
+                .readLines(Cj00AllInOneTest.mbsBaseDir + "ansichar.txt");
         for (String line : linesAnsi) {
             if (line.contains(" ")) {
                 String[] keyVal = line.split(" +");
@@ -107,6 +111,8 @@ public class Cj01SQLiteTest {
     private static boolean withPy = true; // 拼音
     private static boolean withZy = true; // 注音
     private static boolean withKoxhanh = true; // 中古漢語
+    private static boolean withSionTanTseng = true; // 曾版湘潭話
+
     private static boolean withCangjieOthers = false; // 加入其他倉頡？
     private static boolean withCangjie6 = false; // 加入蒼頡六？
     private static boolean withCangjie5 = false; // 加入蒼頡五？
@@ -118,7 +124,7 @@ public class Cj01SQLiteTest {
         boolean withNotAllOthers = false;
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 554939 韓日单字 427640
+        boolean edition2 = true; // 2版本自定義字體 554939 韓日单字 431169
         boolean edition3 = false; // 版本倉頡三 149399
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
@@ -161,6 +167,7 @@ public class Cj01SQLiteTest {
             withPy = true; // 拼音
             withZy = true; // 注音
             withKoxhanh = false; // 中古漢語
+            withSionTanTseng = false;
         }
         if (edition1 || edition2) {
             withCangjie6 = true;
@@ -206,6 +213,7 @@ public class Cj01SQLiteTest {
             withPy = false; // 拼音
             withZy = false; // 注音
             withKoxhanh = false; // 中古漢語
+            withSionTanTseng = false;
 
             withCangjie6 = true;
             withCangjie5 = true;
@@ -218,7 +226,8 @@ public class Cj01SQLiteTest {
         if (edition62) {
             Cj00AllInOneTest.generateAllInOnes(false, false, true, false, true);
         } else {
-            Cj00AllInOneTest.generateAllInOnes(false, false, false, false, true);
+            Cj00AllInOneTest.generateAllInOnes(false, false, false, false,
+                    true);
         }
         // 生成交集碼表
         Cj01MbFormatTest.getCjMbsIntersection();
@@ -238,7 +247,8 @@ public class Cj01SQLiteTest {
         Connection c = null;
         Statement stmt = null;
         try {
-            String mbdbFile = mbsBaseDir + "mbdb" + File.separator + "cjmbdb.db";
+            String mbdbFile = mbsBaseDir + "mbdb" + File.separator
+                    + "cjmbdb.db";
             File file = new File(mbdbFile);
             if (file.exists()) {
                 file.delete();
@@ -253,7 +263,8 @@ public class Cj01SQLiteTest {
                     + " type_code varchar(20), " + " type_name varchar(20));";
             stmt.executeUpdate(sql_gen);
             String sql = "create table t_mb_content (_id integer primary key autoincrement, "
-                    + " type_code varchar(20), " + " mb_code varchar(20), " + " mb_char varchar(20), "
+                    + " type_code varchar(20), " + " mb_code varchar(20), "
+                    + " mb_char varchar(20), "
                     + " mb_order_no integer DEFAULT 0)";
             stmt.executeUpdate(sql);
             String sqlInter = "create table t_mb_content_intersect (_id integer primary key autoincrement, "
@@ -287,6 +298,7 @@ public class Cj01SQLiteTest {
             linesmanju = IOUtils.readLines(manjuallInOne);
             linesipa = IOUtils.readLines(phoneticAllInOne);
             linesKoxhanh = IOUtils.readLines(koxhanhAllInOne);
+            linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne);
             // 交集碼表
             linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
             // 倉頡三五
@@ -364,6 +376,9 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenKoxhanh, "中古漢語");
+            stmt.executeUpdate(sql_gen);
+
+            sql_gen = getInsertGenSql(cjGenSionTanTseng, "曾版湘潭話");
             stmt.executeUpdate(sql_gen);
 
             // 不自動提交
@@ -483,6 +498,14 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGenKoxhanh + " successfully");
                 selectCountAll(stmt);
             }
+            // 曾版湘潭話
+            if (withSionTanTseng) {
+                insertMbdb(stmt, cjGenSionTanTseng, linesSionTanTseng, false);
+                c.commit();
+                System.out.println(
+                        "insert " + cjGenSionTanTseng + " successfully");
+                selectCountAll(stmt);
+            }
 
             stmt.close();
             c.close();
@@ -582,7 +605,8 @@ public class Cj01SQLiteTest {
      *            是否取mbOrderNoMap中的排序
      * @throws Exception
      */
-    private static void insertMbdb(Statement stmt, String gen, List<String> lines, boolean ordered) throws Exception {
+    private static void insertMbdb(Statement stmt, String gen,
+            List<String> lines, boolean ordered) throws Exception {
         int count = 0;
         for (String line : lines) {
             if (line.contains(" ")) {
@@ -590,21 +614,26 @@ public class Cj01SQLiteTest {
                 String cod = keyVal[0];
                 String val = keyVal[1];
 
-                if (gen.startsWith("cj") && isOnlyAnsi && !ansichars.contains(val)) {
+                if (gen.startsWith("cj") && isOnlyAnsi
+                        && !ansichars.contains(val)) {
                     continue;
                 }
 
                 Integer order = 0;
                 if (ordered) {
                     if (null != mbOrderNoMaps) {
-                        Map<String, Integer> mbOrderNoMap = mbOrderNoMaps.get(gen);
+                        Map<String, Integer> mbOrderNoMap = mbOrderNoMaps
+                                .get(gen);
                         if (null != mbOrderNoMap) {
                             String orderKey = cod + " " + val;
-                            order = (null != mbOrderNoMap.get(orderKey) ? mbOrderNoMap.get(orderKey) : 0);
+                            order = (null != mbOrderNoMap.get(orderKey)
+                                    ? mbOrderNoMap.get(orderKey) : 0);
                         } else {
-                            mbOrderNoMap = mbOrderNoMaps.get(ORDER_MAP_DEFAULT_KEY);
+                            mbOrderNoMap = mbOrderNoMaps
+                                    .get(ORDER_MAP_DEFAULT_KEY);
                             if (null != mbOrderNoMap) {
-                                order = (null != mbOrderNoMap.get(val) ? mbOrderNoMap.get(val) : 0);
+                                order = (null != mbOrderNoMap.get(val)
+                                        ? mbOrderNoMap.get(val) : 0);
                             }
                         }
                     }
@@ -622,7 +651,8 @@ public class Cj01SQLiteTest {
         selectCountAll(stmt);
     }
 
-    private static void insertMbdbIntersect(Statement stmt, List<String> lines, boolean ordered) throws Exception {
+    private static void insertMbdbIntersect(Statement stmt, List<String> lines,
+            boolean ordered) throws Exception {
         int count = 0;
         for (String line : lines) {
             if (line.contains(" ")) {
@@ -634,7 +664,8 @@ public class Cj01SQLiteTest {
                     continue;
                 }
 
-                int order6 = 0, order5 = 0, order3 = 0, orderyh = 0, orderms = 0;
+                int order6 = 0, order5 = 0, order3 = 0, orderyh = 0,
+                        orderms = 0;
                 if (ordered) {
                     if (null != mbOrderNoMaps) {
                         String allKey = cod + " " + val;
@@ -649,7 +680,8 @@ public class Cj01SQLiteTest {
                 String sql = " insert into t_mb_content_intersect (_id,mb_code,mb_char, ";
                 sql += " mb_order_6, mb_order_5, mb_order_3, mb_order_yh, mb_order_ms ) ";
                 sql += " values (null, '" + cod + "', '" + val + "', ";
-                sql += order6 + "," + order5 + "," + order3 + "," + orderyh + "," + orderms + "); ";
+                sql += order6 + "," + order5 + "," + order3 + "," + orderyh
+                        + "," + orderms + "); ";
                 stmt.executeUpdate(sql);
                 count++;
 
@@ -663,18 +695,20 @@ public class Cj01SQLiteTest {
 
     private static String getInsertGenSql(String cjGen, String cjGenName) {
         String sql;
-        sql = "INSERT INTO t_mb_type (_id,type_code,type_name) " + "VALUES (null, '" + cjGen + "', '" + cjGenName
-                + "');";
+        sql = "INSERT INTO t_mb_type (_id,type_code,type_name) "
+                + "VALUES (null, '" + cjGen + "', '" + cjGenName + "');";
         return sql;
     }
 
-    private static String getInsertSql(String gen, String code, String name, Integer order) {
+    private static String getInsertSql(String gen, String code, String name,
+            Integer order) {
         if (null == order) {
             order = 0;
         }
         String sql;
-        sql = "INSERT INTO t_mb_content (_id,type_code,mb_code,mb_char, mb_order_no) " + "VALUES (null, '" + gen
-                + "', '" + code + "', '" + name + "', " + order + ");";
+        sql = "INSERT INTO t_mb_content (_id,type_code,mb_code,mb_char, mb_order_no) "
+                + "VALUES (null, '" + gen + "', '" + code + "', '" + name
+                + "', " + order + ");";
         return sql;
     }
 
