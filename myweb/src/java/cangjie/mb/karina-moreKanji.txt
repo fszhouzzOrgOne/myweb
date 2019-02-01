@@ -691,6 +691,8 @@ gen 嚴
 gen 嫌
 gen 幻
 gen 弦
+gen 彥
+gen 彦
 gen 拳
 gen 減
 gen 源
@@ -702,7 +704,6 @@ gen 言
 gen 限
 gen 験
 gen 驗
-gen 玄ゲン
 getsu 月
 getu 月
 gi 偽
@@ -1057,8 +1058,12 @@ hijiri 聖
 hikari 光
 hiki 匹
 hiki 悲喜
+hiko 彥
+hiko 彦
+hiko 曽孫
 hima 暇
 hime 姫
+hime 媛
 hin 品
 hin 浜
 hin 濱
