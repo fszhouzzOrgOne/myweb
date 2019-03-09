@@ -21,9 +21,9 @@ public class KarinaTest {
 
     private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
-    // 三字以下
-    // 單字 48611
-    private static String singleCharPtn = "^.* .{1,1}$";;
+    // 三字以下 48613
+    // 單字
+    private static String singleCharPtn = "^.* .{1,3}$";;
 
     public static void main(String[] args) throws Exception {
         List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
