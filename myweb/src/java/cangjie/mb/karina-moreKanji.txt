@@ -6061,6 +6061,8 @@ gengo 言語
 gengogaku 言語学
 gengomei 言語名
 gengorou 源五郎
+gengou 元号
+gengou 元號
 gengyou 現業
 genhaatsu 弦歯厚
 genhaatu 弦歯厚
@@ -27814,6 +27816,7 @@ reitousitu 冷凍室
 reitousya 冷凍車
 reitouzai 冷凍剤
 reityou 霊長
+reiwa 令和
 reiyuki 冷油器
 reizai 冷材
 reizen 冷然
