@@ -19,7 +19,7 @@ public class UnicodeConvertUtil {
 
     public static void main(String[] args) {
         System.out.println(Integer.parseInt("18b0", 16));
-        
+
         String str = "aaaa圍，取𬺰45";
         List<Integer> list = getUnicodeListFromStr(str);
         System.out.println(Arrays.toString(list.toArray()));
@@ -86,6 +86,10 @@ public class UnicodeConvertUtil {
             return null;
         }
         String bitemp = getBinaryStrFromStr(str, "UTF-8");
+        return getUnicodeListFromBinaryStr(bitemp);
+    }
+
+    public static List<Integer> getUnicodeListFromBinaryStr(String bitemp) {
         if (null == bitemp) {
             return null;
         }
@@ -115,6 +119,16 @@ public class UnicodeConvertUtil {
             }
         }
         return codes;
+    }
+
+    public static String getStrFromBinaryStr(String bitemp) {
+        List<Integer> codes = UnicodeConvertUtil
+                .getUnicodeListFromBinaryStr(bitemp);
+        String res = "";
+        for (Integer one : codes) {
+            res += UnicodeConvertUtil.getStringByUnicode(one);
+        }
+        return res;
     }
 
     public static String getBinaryStrFromStr(String str, String charSet) {
