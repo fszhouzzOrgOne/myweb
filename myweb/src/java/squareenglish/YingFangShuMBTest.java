@@ -17,7 +17,7 @@ import cangjie.java.util.IOUtils;
 public class YingFangShuMBTest {
     private static String mbsBaseDir = "src\\java\\squareenglish\\";
     private static String srcFile = "英方書海綿寶寶字體碼表.txt";
-    private static String destFile = "英方書海綿寶寶字體碼表-duoduo.txt";
+    private static String destFile = "yingfangshu-squareenglish-duoduo.txt";
 
     public static void main(String[] args) throws Exception {
         List<String> lines = IOUtils.readLines(mbsBaseDir + srcFile);
