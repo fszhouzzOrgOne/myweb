@@ -49,7 +49,7 @@ MAKE_COUNT=1
 输入法语言标识=2052
 
 //3.x 必须定义的输入法唯一标识符，并必须在脚本向导中使用程序生成
-IMEGUID="{FA212179-3D1F-43F7-B39F-33CE5F60BEAF}"
+IMEGUID="{B9AA6272-8844-41E2-958D-7109BA98CFCF}"
 
 IME文件名="yingfangshusquareenglish"
 
