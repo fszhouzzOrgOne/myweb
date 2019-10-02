@@ -1,9 +1,10 @@
-package unicode;
+package squareenglish;
 
 import java.util.ArrayList;
 import java.util.Set;
 
 import cangjie.java.util.IOUtils;
+import unicode.UnicodeConvertUtil;
 
 /**
  * 把私用區(0xE000, 0xF8FF)打印出來
@@ -13,7 +14,7 @@ import cangjie.java.util.IOUtils;
  * @time 2019年9月27日 上午12:30:03
  */
 public class PrivateUserAreaTest {
-    private static String mbsBaseDir = "src\\java\\unicode\\";
+    private static String mbsBaseDir = "src\\java\\squareenglish\\";
     private static String fileName = "PrivateUserArea.txt";
 
     public static void main(String[] args) throws Exception {

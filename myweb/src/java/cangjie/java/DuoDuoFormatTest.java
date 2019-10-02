@@ -65,7 +65,7 @@ public class DuoDuoFormatTest {
      * @param mbs
      * @throws Exception
      */
-    private static void generateDuoDuoMb(List<String> mbs) throws Exception {
+    public static void generateDuoDuoMb(List<String> mbs) throws Exception {
         if (null != mbs) {
             for (String fileName : mbs) {
                 String shortFileName = fileName.substring(fileName.lastIndexOf("\\") + 1);
@@ -88,7 +88,7 @@ public class DuoDuoFormatTest {
      * @param lines
      * @throws Exception
      */
-    private static void writeDuoDuoMb(String destFileDir, String dduoFileName, List<String> lines) throws Exception {
+    public static void writeDuoDuoMb(String destFileDir, String dduoFileName, List<String> lines) throws Exception {
         File dir = new File(destFileDir);
         if (!dir.exists()) {
             dir.mkdirs();
