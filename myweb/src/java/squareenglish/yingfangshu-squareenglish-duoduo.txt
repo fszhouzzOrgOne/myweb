@@ -164,6 +164,7 @@
 	ring
 	rior
 	root
+	rai
 	s
 	sad
 	said
@@ -248,6 +249,7 @@
 	xa
 	y
 	yew
+	yet
 	z
 	zo
 	a
