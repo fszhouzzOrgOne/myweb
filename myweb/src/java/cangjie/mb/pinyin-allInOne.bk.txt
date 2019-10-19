@@ -1,8 +1,12 @@
-m1 ˉ
-m2 ˊ
-m3 ˇ
-m4 ˋ
-m5 ˙
+q1 ⁵⁵
+q2 ³⁵
+q3 ²¹⁴
+q4 ⁵¹
+q1 ˉ
+q2 ˊ
+q3 ˇ
+q4 ˋ
+q5 ˙
 a1 吖
 a1 啊
 a1 腌
@@ -8027,7 +8031,7 @@ ji2 雧
 ji2 霵
 ji2 鹡
 ji2 齎
-ji2 <img src="http://ii.911cha.com/zidian/song24/65/fa24.png" alt="﨤" class="wh24" />
+ji2 﨤
 ji3 㚡
 ji3 㞆
 ji3 㞛
