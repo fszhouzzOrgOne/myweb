@@ -14,11 +14,11 @@ import cangjie.java.util.IOUtils;
  * @time 2016-12-3上午12:40:06
  */
 public class ZhuyinTest {
-    
+
     private static String mbBaseDir = "src\\java\\cangjie\\mb\\";
-    
+
     private static String destFile = "zyfh-allInOne.txt";
-    
+
     public static void main(String[] args) throws Exception {
         List<String> finalResults = new ArrayList<String>();
         finalResults.add("encode=UTF-8");
@@ -29,7 +29,7 @@ public class ZhuyinTest {
         finalResults.add("commit=1 6 0");
         finalResults.add("");
         finalResults.add("[DATA]");
-        
+
         List<String> shengmu = new ArrayList<String>();
         List<String> yunmu = new ArrayList<String>();
         shengmu.add("b ㄅ");
@@ -54,8 +54,6 @@ public class ZhuyinTest {
         shengmu.add("c ㄘ");
         shengmu.add("s ㄙ");
 
-        
-        
         // 34個加幾個
         yunmu.add("a ㄚ");
         yunmu.add("o ㄛ");
@@ -151,17 +149,17 @@ public class ZhuyinTest {
         tempResults.add("jue ㄐㄩㄝ");
         tempResults.add("que ㄑㄩㄝ");
         tempResults.add("xue ㄒㄩㄝ");
-        
+
         // 都加上聲調
         Collections.sort(tempResults);
         for (String s : tempResults) {
             finalResults.add(s);
             String[] ss = s.split(" ");
-            finalResults.add(ss[0] + " " + ss[1] + "ˉ");
-            finalResults.add(ss[0] + "q " + ss[1] + "ˊ");
-            finalResults.add(ss[0] + "qq " + ss[1] + "ˇ");
-            finalResults.add(ss[0] + "qqq " + ss[1] + "ˋ");
-            finalResults.add(ss[0] + "qqqq " + ss[1] + "˙");
+            finalResults.add(ss[0] + "q " + ss[1] + "ˉ");
+            finalResults.add(ss[0] + "qq " + ss[1] + "ˊ");
+            finalResults.add(ss[0] + "qqq " + ss[1] + "ˇ");
+            finalResults.add(ss[0] + "qqqq " + ss[1] + "ˋ");
+            finalResults.add(ss[0] + "qqqqq " + ss[1] + "˙");
         }
 
         finalResults.addAll(shengmu);
