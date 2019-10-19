@@ -156,19 +156,20 @@ public class ZhuyinTest {
         Collections.sort(tempResults);
         for (String s : tempResults) {
             finalResults.add(s);
-            finalResults.add(s + "ˉ");
-            finalResults.add(s + "ˊ");
-            finalResults.add(s + "ˇ");
-            finalResults.add(s + "ˋ");
-            finalResults.add(s + "˙");
+            String[] ss = s.split(" ");
+            finalResults.add(ss[0] + " " + ss[1] + "ˉ");
+            finalResults.add(ss[0] + "q " + ss[1] + "ˊ");
+            finalResults.add(ss[0] + "qq " + ss[1] + "ˇ");
+            finalResults.add(ss[0] + "qqq " + ss[1] + "ˋ");
+            finalResults.add(ss[0] + "qqqq " + ss[1] + "˙");
         }
 
         finalResults.addAll(shengmu);
-        finalResults.add("m ˉ");
-        finalResults.add("mm ˊ");
-        finalResults.add("mmm ˇ");
-        finalResults.add("mmmm ˋ");
-        finalResults.add("mmmmm ˙");
+        finalResults.add("q ˉ");
+        finalResults.add("qq ˊ");
+        finalResults.add("qqq ˇ");
+        finalResults.add("qqqq ˋ");
+        finalResults.add("qqqqq ˙");
         print(finalResults);
 
         IOUtils.writeFile(mbBaseDir + destFile, finalResults);
