@@ -124,7 +124,6 @@ dcrl    㮝
 dd    林
 ddbm    楂
 deln    㓟
-dfle    隸
 dhal    櫛
 dhap    梎
 dhe    ⽪
@@ -179,10 +178,10 @@ eiav    浪
 ejjb    潮
 ejka    渚
 ejtc    濆
-ekbn    𣲼
 ekce    𣻑
 ekhu    淹
 ekub    灊
+elbn    𣲼
 elbu    沈
 emef    𣾎
 emjj    汧
@@ -223,7 +222,6 @@ fdamg    糧
 fdik    类
 fdilr    糖
 fdkua    糣
-fdmbc    類
 fdnri    糨
 fdqmb    精
 fdthb    糒
@@ -242,6 +240,7 @@ fhks    劣
 fhwp    熜
 fi    ⺗
 fkcf    燎
+fkmbc    類
 frse    煅
 fsm    当
 ft    灷
@@ -255,6 +254,7 @@ gbmo    塚
 gbtm    壷
 gdhne    穀
 gdhne    穀
+gfle    隸
 ghoc    𡓤
 gihn    城
 gihs    城
@@ -304,6 +304,7 @@ hdoe    ⿉
 he    ⼡
 he    ⼢
 heim    冬
+heqj    夆
 hf    爫
 hf    ⺣
 hf    ⺤
@@ -360,7 +361,6 @@ hpmvu    旣
 hpsl    卽
 hq    ⽜
 hqm    ⽣
-hqqj    夆
 hqthb    犕
 hqu    ⽑
 hrj    ⾩
@@ -435,6 +435,7 @@ ijsr    唐
 ik    ⽝
 ikp    ⻰
 ikr    啓
+ilr    唐
 ilwp    㡼
 im    ⼇
 im    ⼎
@@ -462,7 +463,6 @@ itf    庶
 iuf    凞
 ivb    朗
 ivb    朗
-ivi    ⽞
 ivln    剆
 ivnl    郎
 iwlj    庳
@@ -481,7 +481,7 @@ jbmm    直
 jbmom    𩐊
 jbuc    真
 jbuv    直
-jbvf    索
+jbvif    索
 jc    ⽳
 jcik    突
 jcjbt    𥥼
@@ -504,9 +504,9 @@ jjomv    輸
 jjsk    軔
 jjvid    轢
 jk    ⺹
-jka    者
 jka    者
 jkcf    寮
+jkia    者
 jkia    者
 jkp    老
 jkp    ⽼
@@ -540,7 +540,6 @@ kdhne    殺
 kdhne    殺
 kdlc    癩
 kehaf    𪄅
-kh    ⺨
 khdlc    獺
 khdn    痢
 khiav    狼
@@ -558,10 +557,12 @@ kkcf    療
 klwo    瘐
 kmmf    奈
 kmym    ㍽
+knh    ⺨
 knk    丸
 kq    ⻋
 ks    力
 ks    ⼒
+ksh    ⺨
 ku    尢
 ku    ⼪
 ku    ⺐
@@ -623,11 +624,11 @@ ln    ⾾
 ln    ⺉
 ln    ㇁
 lnii    襁
-lnme    䘵
 lpwtc    冀
 lq    ⾀
 ls    ⼌
 ls    ⺆
+lsme    䘵
 lsmm    ⾲
 lsmt    襤
 lss    㠯
@@ -656,13 +657,13 @@ mbrro    靈
 mbuc    ⾴
 mbvm    𠄢
 mbw    雷
-mcbm    祖
 mcw    ⻄
 mcwm    ⾣
 mf    不
 mf    灰
 mfbbr    禍
 mfbm    祖
+mfbm    祖
 mfbuu    視
 mfg    社
 mfhml    祈
@@ -807,7 +808,7 @@ nl    ⻖
 nlfdq    隣
 nlgce    陵
 nlgcg    陸
-nlheg    隆
+nlhem    隆
 nlheq    降
 nlikf    䧦
 nljka    陼
@@ -868,6 +869,7 @@ oias    ⻞
 oiav    ⾷
 oiav    ⻝
 oifq    䬳
+oihdr    ㋿
 oilu    飢
 oinp    念
 oioi    ⺮
@@ -881,7 +883,8 @@ okcf    僚
 okmg    㺸
 okmgi    㺸
 okvif    繁
-olhef    絛
+olhdr    ㋿
+olhf    絛
 olmbc    領
 ombp    愈
 omg    全
@@ -1050,8 +1053,8 @@ sfher    駱
 sfmmp    驪
 sh    ⼑
 shahi    兔
+shahu    免
 shahu    免
-shau    免
 shi    戮
 shjbc    鬒
 shjbc    鬒
@@ -1131,9 +1134,9 @@ tmks    勤
 tmlc    ⿈
 tmtj    華
 tmvh    芽
+tnf    𦬼
 tnmb    䔫
 tod    茶
-tof    𦬼
 tohqm    蕤
 toog    難
 toog    難
@@ -1156,7 +1159,6 @@ ttlm    蓳
 ttm    並
 ttr    善
 tvfv    𧃒
-tvin    甆
 tvip    慈
 tvne    菉
 tvou    荒
@@ -1238,6 +1240,7 @@ vl    ⼐
 vl    ⺃
 vl    ㇟
 vllmi    蠁
+vlm    ⽙
 vlyta    響
 vlyta    響
 vm    ㇜
@@ -1245,7 +1248,6 @@ vmf    災
 vmftf    𦇚
 vmik    狀
 vmjx    㛼
-vml    ⽙
 vmw    甾
 vn    ㇞
 vnm    ⺔
@@ -1254,13 +1256,13 @@ vrvk    娛
 vs    ㇉
 vsll    姬
 vsmb    婦
-vtvp    嬨
 vvhxd    巢
 vvm    ⺰
 vvmbu    ⻡
 vvv    ⼮
 vwhj    婢
 vyjj    姘
+vyyp    嬨
 w    ⽥
 wb    ⿵
 wfno    㱎
@@ -1397,10 +1399,12 @@ ytqmb    靖
 ytsyj    竮
 ytwu    ⻯
 yuyjj    𪘀
-yvfw    變
+yvfe    變
+yvi    ⽞
 yvvv    巡
 ywgv    裏
 ywii    ⿄
 ywk    ⻧
 ywlg    邏
 yx    ⿑
+yyvin    甆
