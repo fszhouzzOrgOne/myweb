@@ -10284,6 +10284,7 @@ haapv 馤
 haau 皅
 habbe 皧
 habbi 𤿃
+habbm 𤽛
 habgr 皗
 habhf 𤾡
 habjj 𤾈
@@ -11878,6 +11879,7 @@ hkr 𠮮
 hkr 𥬡
 hkrau 𦤡
 hkrbr 喬
+hkrly 𩇺
 hkrr 𥰮
 hkrvf 𦄊
 hks 竻
@@ -19281,6 +19283,7 @@ lsro 𧞨
 lsrr 䙔
 lssj 闻
 lstuo 阙
+lsu 𡶓
 lsup 𧚈
 lsusu 闿
 lsuu 䘿
@@ -33106,6 +33109,7 @@ tmks 苈
 tmks 𦬋
 tmku 芜
 tmky 𦻅
+tmlb 䓣
 tmlb 𦲸
 tmlb 𦻋
 tmlii 䗣
@@ -33121,6 +33125,7 @@ tmmi 芸
 tmmi 𦮈
 tmmj 𤮽
 tmmj 𤯀
+tmmjr 甛
 tmmm 𦱯
 tmmr 𦯰
 tmms 芌
@@ -37161,7 +37166,6 @@ vwks 娚
 vwla 𡣈
 vwlc 㜥
 vwlg 𡤢
-vwlk 嬽
 vwlk 𡢊
 vwlv 嬛
 vwlv 𡣱
