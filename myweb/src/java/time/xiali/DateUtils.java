@@ -28,6 +28,9 @@ public class DateUtils {
         item = new Item(1, null, null, "兄");
         items = resolveTime(item);
         System.out.println(items);
+        item = new Item(1, null, null, "嫂");
+        items = resolveTime(item);
+        System.out.println(items);
         item = new Item(1, null, null, "榕");
         items = resolveTime(item);
         System.out.println(items);
@@ -367,6 +370,26 @@ public class DateUtils {
             } catch (Exception e) {
             }
         }
+        // 家嫂1987-09-30
+        else if ("嫂".equals(item.getCharacter())
+                || "家嫂".equals(item.getCharacter())) {
+            int year = (Calendar.getInstance().get(Calendar.YEAR) - 1987);
+            if (isBetweenNewYears) {
+                year--;
+            }
+            items.add(new Item(null, item.getGenCode(), null,
+                    "家嫂" + (year + 1) + "年"));
+            try {
+                String beginDate = "19870930";
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+                int dates = datesMoreAfterBegin(beginDate, sdf.format(now));
+                items.add(new Item(null, item.getGenCode(), null,
+                        "家嫂" + (dates + 1) + "天"));
+            } catch (Exception e) {
+            }
+        }
+        // 舍侄
+        // 舍姪
         // 1989-02-15
         else if ("榕".equals(item.getCharacter())) {
             int year = (Calendar.getInstance().get(Calendar.YEAR) - 1989);
