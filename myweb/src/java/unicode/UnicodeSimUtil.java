@@ -326,8 +326,10 @@ public class UnicodeSimUtil {
      * @return
      */
     public static List<String> getLatinListString() {
-        return getListByString(
-                "ÄÆÅÀÁÂÃÇĒĚÈÉÊËÐÌÍÎÏÖØÒÓÔÕÑÙÚÛÜÝÞäæåàáâãçēěèéêëðìíîïöøòóôõñùúûüýþ");
+        String str1 = "";
+        str1 += "ÄÆĂÅÀÁÂÃĈÇĒĚÈÉÊËÐÌÍÎÏÑŊÖØÒÓÔÕŜȘȚÙÚÛÜŬÝẐẞÞ";
+        str1 += "äæăåàáâãĉçēěèéêëðìíîïñŋöøòóôõŝșțùúûüŭýẑßþ";
+        return getListByString(str1);
     }
 
     /**
