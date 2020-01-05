@@ -28696,6 +28696,7 @@ rfkt 𡃇
 rfl 𡁉
 rfmu 咣
 rfo 𠯙
+rfog 𠻘
 rfq 𠰢
 rg 吐
 rgah 𠴢
