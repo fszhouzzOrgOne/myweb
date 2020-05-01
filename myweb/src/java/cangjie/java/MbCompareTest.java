@@ -28,8 +28,16 @@ public class MbCompareTest {
                 IOUtils.readLines(Cj00AllInOneTest.mb6newDict, true));
 
         Set<String> list2 = new LinkedHashSet<String>();
-        List<String> listMore = IOUtils.readLines(Cj00AllInOneTest.mb6more, true);
-        list2.addAll(listMore);
+        List<String> listMore = IOUtils.readLines(Cj00AllInOneTest.mb6more,
+                true);
+        // 摸否有重複行
+        for (String line : listMore) {
+            if (!list2.contains(line)) {
+                list2.add(line);
+            } else {
+                System.out.println("more: " + line);
+            }
+        }
         list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua, true));
 
         // 六代碼表沒有的編碼
