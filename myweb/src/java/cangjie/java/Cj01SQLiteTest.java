@@ -122,7 +122,7 @@ public class Cj01SQLiteTest {
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 560140 韓日单字 457595
+        boolean edition2 = false; // 2版本自定義字體 560140 韓日单字 457595
         boolean edition3 = false; // 版本倉頡三 150962
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
@@ -130,7 +130,7 @@ public class Cj01SQLiteTest {
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
         // 倉頡字典
-        boolean editionDict = false; // 倉頡字典 324754
+        boolean editionDict = true; // 倉頡字典 351172
         // 其他輸入法是否去掉，純三代要設置這個爲true
         boolean withNotAllOthers = false;
         if (edition3 || edition5) {
@@ -212,7 +212,6 @@ public class Cj01SQLiteTest {
             withKorea = false; // 韓文
             withJyutp = false; // 粤拼
             withKarina = false; // 日文
-            // withSghm = true; // 四角號碼
             withPy = false; // 拼音
             withZy = false; // 注音
             withKoxhanh = false; // 中古漢語
@@ -223,6 +222,7 @@ public class Cj01SQLiteTest {
             withCangjieOthers = true;
             withCangjie35 = false;
             withCangjie3 = true;
+            withSghm = true; // 四角號碼
         }
 
         // 生成碼表
