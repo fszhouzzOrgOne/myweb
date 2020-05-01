@@ -19,7 +19,7 @@ public class PhraseTest {
 
         uniqueOrderPhraseFile();
 
-        List<String> allphrases = IOUtils.readLines(phraseOriginFile);
+        List<String> allphrases = IOUtils.readLines(phraseOriginFile, true);
         List<String> goods = new ArrayList<String>();
         for (String str : allphrases) {
             if (!set.contains(str)) {

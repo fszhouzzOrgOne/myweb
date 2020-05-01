@@ -35,7 +35,7 @@ public class SionTanMbConvertTest {
     }
 
     private static List<String> getResultLines() throws Exception {
-        List<String> list = IOUtils.readLines(mbsBaseDir + mbFileSrc);
+        List<String> list = IOUtils.readLines(mbsBaseDir + mbFileSrc, true);
         Set<String> res = new LinkedHashSet<String>();
         for (String line : list) {
             String[] parts = line.split(" +");

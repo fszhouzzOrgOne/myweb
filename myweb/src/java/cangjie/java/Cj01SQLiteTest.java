@@ -87,7 +87,7 @@ public class Cj01SQLiteTest {
     static {
         ansichars = new HashSet<String>();
         List<String> linesAnsi = IOUtils
-                .readLines(Cj00AllInOneTest.mbsBaseDir + "ansichar.txt");
+                .readLines(Cj00AllInOneTest.mbsBaseDir + "ansichar.txt", true);
         for (String line : linesAnsi) {
             if (line.contains(" ")) {
                 String[] keyVal = line.split(" +");
@@ -286,24 +286,24 @@ public class Cj01SQLiteTest {
             indexSql = " CREATE INDEX index_mb_content_intrst_char ON t_mb_content_intersect (mb_char); ";
             stmt.executeUpdate(indexSql);
 
-            lines2 = IOUtils.readLines(mb2allInOne);
-            lines3 = IOUtils.readLines(mb3allInOne);
-            lines5 = IOUtils.readLines(mb5allInOne);
-            lines6 = IOUtils.readLines(mb6allInOne);
-            lineska = IOUtils.readLines(karinaallInOne);
-            lineszy = IOUtils.readLines(zyfhsallInOne);
-            linesjyutp = IOUtils.readLines(jyutpingAllInOne);
-            linespy = IOUtils.readLines(pinyinallInOne);
-            linessghm = IOUtils.readLines(sghmallInOne);
-            linescjyh = IOUtils.readLines(cjyhallInOne);
-            linescjms = IOUtils.readLines(cjmsallInOne);
-            lineskorea = IOUtils.readLines(koreaallInOne);
-            linesmanju = IOUtils.readLines(manjuallInOne);
-            linesipa = IOUtils.readLines(phoneticAllInOne);
-            linesKoxhanh = IOUtils.readLines(koxhanhAllInOne);
-            linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne);
+            lines2 = IOUtils.readLines(mb2allInOne, true);
+            lines3 = IOUtils.readLines(mb3allInOne, true);
+            lines5 = IOUtils.readLines(mb5allInOne, true);
+            lines6 = IOUtils.readLines(mb6allInOne, true);
+            lineska = IOUtils.readLines(karinaallInOne, true);
+            lineszy = IOUtils.readLines(zyfhsallInOne, true);
+            linesjyutp = IOUtils.readLines(jyutpingAllInOne, true);
+            linespy = IOUtils.readLines(pinyinallInOne, true);
+            linessghm = IOUtils.readLines(sghmallInOne, true);
+            linescjyh = IOUtils.readLines(cjyhallInOne, true);
+            linescjms = IOUtils.readLines(cjmsallInOne, true);
+            lineskorea = IOUtils.readLines(koreaallInOne, true);
+            linesmanju = IOUtils.readLines(manjuallInOne, true);
+            linesipa = IOUtils.readLines(phoneticAllInOne, true);
+            linesKoxhanh = IOUtils.readLines(koxhanhAllInOne, true);
+            linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne, true);
             // 交集碼表
-            linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne);
+            linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne, true);
             // 倉頡三五
             lines35 = null;
 
@@ -531,7 +531,7 @@ public class Cj01SQLiteTest {
         Map<String, Integer> mbOrderNoMap = new HashMap<String, Integer>();
         if (ORDER_MAP_DEFAULT_KEY.equals(key)) {
             int size = lines.size();
-            List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt");
+            List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt", true);
             int rateSize = rate.size();
             for (int i = 0; i < rateSize; i++) {
                 String one = rate.get(i);

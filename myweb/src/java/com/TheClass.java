@@ -16,7 +16,7 @@ public class TheClass {
     }
 
     private static void toQQMbformat(String file, String destFile) throws Exception {
-        List<String> lines = IOUtils.readLines(file);
+        List<String> lines = IOUtils.readLines(file, true);
         System.out.println(lines.get(0));
 
         Map<String, List<String>> map = new HashMap<String, List<String>>();

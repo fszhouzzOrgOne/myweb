@@ -18,7 +18,7 @@ public class PhraseUtils {
 
     public static void main(String[] args) {
         Set<String> cj6Set = new LinkedHashSet<String>(
-                IOUtils.readLines(mbBaseDir + cj6file));
+                IOUtils.readLines(mbBaseDir + cj6file, true));
         Map<String, List<String>> charCodesMap = PhraseUtils
                 .getMbSetMapByChar(cj6Set);
 

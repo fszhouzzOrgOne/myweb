@@ -41,7 +41,7 @@ public class QrCodeTest {
         if (!file.exists()) {
             file.createNewFile();
         }
-        List<String> list = IOUtils.readLines(mbsBaseDir + "qrcode_src.txt");
+        List<String> list = IOUtils.readLines(mbsBaseDir + "qrcode_src.txt", true);
         String str = "";
         for (String one : list) {
             str += one + "\r\n";

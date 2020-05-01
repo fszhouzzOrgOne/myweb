@@ -21,9 +21,9 @@ public class KarinaCheckTest {
     private static String mbsBaseDir = "src\\java\\karina\\mb\\";
 
     public static void main(String[] args) throws Exception {
-        List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt");
-        List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt");
-        List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt");
+        List<String> dictKanji1 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2.txt", true);
+        List<String> dictKanji2 = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-漢字部分2待編碼.txt", true);
+        List<String> dictKarina = IOUtils.readLines(mbsBaseDir + "新日漢大辭典-假名部分2.txt", true);
 
         Set<String> dict = new HashSet<String>();
         // 片假名轉成平假名
@@ -38,7 +38,7 @@ public class KarinaCheckTest {
             }
         }
 
-        List<String> dictMore = IOUtils.readLines(mbsBaseDir + "更多漢字補充.txt");
+        List<String> dictMore = IOUtils.readLines(mbsBaseDir + "更多漢字補充.txt", true);
 
         List<String> res = new ArrayList<String>();
         for (String str : dictMore) {

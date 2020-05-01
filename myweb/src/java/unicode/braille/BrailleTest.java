@@ -228,12 +228,12 @@ public class BrailleTest {
         keyMap2.put("m", "1111");
 
         for (String line : IOUtils
-                .readLines(mbsBaseDir + "braillePatterns.txt")) {
+                .readLines(mbsBaseDir + "braillePatterns.txt", true)) {
             String[] parts = line.split(" +");
             codeCharMap.put(parts[0].replaceAll("[12345678]", "1"), parts[1]);
         }
         for (String line : IOUtils
-                .readLines(mbsBaseDir + "chinese_braille.txt")) {
+                .readLines(mbsBaseDir + "chinese_braille.txt", true)) {
             String[] parts = line.split(" +");
             String key = parts[0].replaceAll("[12345678]", "1");
             List<String> val = codeCharMapEn.get(key);

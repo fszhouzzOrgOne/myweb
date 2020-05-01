@@ -34,7 +34,7 @@ public class DupPercentTest {
 
     /** 從mb370000中取出mb36000中所有文字的編碼 */
     private static List<String> getNoXCodeTable(String mb36000, String mb370000) {
-        List<String> line6000 = IOUtils.readLines(mb36000);
+        List<String> line6000 = IOUtils.readLines(mb36000, true);
         Set<String> charSet = new HashSet<String>();
         for (String line : line6000) {
             if (line.contains(" ")) {
@@ -48,7 +48,7 @@ public class DupPercentTest {
         }
 
         List<String> result = new ArrayList<String>();
-        List<String> line70000 = IOUtils.readLines(mb370000);
+        List<String> line70000 = IOUtils.readLines(mb370000, true);
         for (String line : line70000) {
             if (line.contains(" ")) {
                 String[] keyVal = line.split(" +");
@@ -65,7 +65,7 @@ public class DupPercentTest {
 
     private static void dupPercent(String[] files) {
         for (String file : files) {
-            List<String> lines = IOUtils.readLines(file);
+            List<String> lines = IOUtils.readLines(file, true);
             System.out.println("文件名：" + file);
             doCountDupPercent(lines);
         }

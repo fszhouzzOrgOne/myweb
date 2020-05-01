@@ -308,10 +308,10 @@ public class Cj00AllInOneTest {
         System.out.println("生成：" + destPhrasesFile);
         // 常用版所有字符
         Set<String> cj6Set = new LinkedHashSet<String>(
-                IOUtils.readLines(mbfile.get(0)));
+                IOUtils.readLines(mbfile.get(0), true));
         if (mbfile.size() > 1) {
             for (int index = 1; index < mbfile.size(); index++) {
-                cj6Set.addAll(IOUtils.readLines(mbfile.get(index)));
+                cj6Set.addAll(IOUtils.readLines(mbfile.get(index), true));
             }
         }
         // 做成映射，字符為鍵，編碼列表爲值
@@ -319,7 +319,7 @@ public class Cj00AllInOneTest {
                 .getMbSetMapByChar(cj6Set);
         // 所有詞組
         List<String> allphrases = new ArrayList<String>(
-                IOUtils.readLines(srcPhraseFile));
+                IOUtils.readLines(srcPhraseFile, true));
         // 六代詞組
         List<String> resPhrases = new ArrayList<String>();
 
@@ -384,7 +384,7 @@ public class Cj00AllInOneTest {
             if (null == mbs[i]) {
                 continue;
             }
-            List<String> temp = IOUtils.readLines(mbs[i]);
+            List<String> temp = IOUtils.readLines(mbs[i], true);
             for (String code : temp) {
                 if (!codeLines.contains(code)) {
                     codeLines.add(code);

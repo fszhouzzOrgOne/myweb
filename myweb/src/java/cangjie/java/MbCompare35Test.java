@@ -37,15 +37,15 @@ public class MbCompare35Test {
     }
 
     public static void compareCangjie5() throws Exception {
-        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb5cangjie5));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb5cangjie5sup));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb5more));
+        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb5cangjie5, true));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb5cangjie5sup, true));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb5more, true));
 
         Set<String> list2 = new LinkedHashSet<String>();
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb58000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb510000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb520000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb570000)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb58000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb510000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb520000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb570000, true)));
 
         List<String> list3 = compareGetDiff(list1, list2);
         for (String str : list3) {
@@ -57,15 +57,15 @@ public class MbCompare35Test {
     }
 
     public static void compareCangjie3() throws Exception {
-        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb330000));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb380000));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb3more));
+        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb330000, true));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb380000, true));
+        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb3more, true));
 
         Set<String> list2 = new LinkedHashSet<String>();
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb36000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb310000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb320000)));
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb370000)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb36000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb310000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb320000, true)));
+        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(mb370000, true)));
 
         List<String> list3 = compareGetDiff(list1, list2);
         for (String str : list3) {

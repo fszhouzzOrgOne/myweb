@@ -75,14 +75,14 @@ public class Cj01CodesSogouTest {
      */
     private static void getCodesForSogou(boolean deleteExtChars, boolean withFrases) throws Exception {
         System.out.println(destFileSogou);
-        Set<String> cj6Set = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbfile));
-        Set<String> mbMoreSet = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbMoreFile));
+        Set<String> cj6Set = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbfile, true));
+        Set<String> mbMoreSet = new LinkedHashSet<String>(IOUtils.readLines(mbBaseDir + mbMoreFile, true));
         ;
-        List<String> cj6phrases = new ArrayList<String>(IOUtils.readLines(mbBaseDir + destPhrasesFile));
+        List<String> cj6phrases = new ArrayList<String>(IOUtils.readLines(mbBaseDir + destPhrasesFile, true));
 
         Set<String> cj6simChar = new HashSet<String>();
         if (null != simfile) {
-            List<String> cj6sims = IOUtils.readLines(mbBaseDir + simfile);
+            List<String> cj6sims = IOUtils.readLines(mbBaseDir + simfile, true);
             for (String ss : cj6sims) {
                 if (ss.contains(" ")) {
                     String[] keyVal = ss.split(" +");

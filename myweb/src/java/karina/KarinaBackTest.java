@@ -18,7 +18,7 @@ public class KarinaBackTest {
         System.out.println("あからめる".matches(Romaji2KarinaTest.normalKarinaPtn));
 
         String file = mbsBaseDir + "更多漢字補充.txt";
-        List<String> dict = IOUtils.readLines(file);
+        List<String> dict = IOUtils.readLines(file, true);
         List<String> res = new ArrayList<String>();
         for (String line : dict) {
             if (line.contains(" ")) {

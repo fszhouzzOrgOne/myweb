@@ -56,8 +56,8 @@ public class HanGulHanjaText {
      */
     private static void encodeHangulPinyin(boolean deleteYanwen) throws Exception {
         String mbfile = mbsBaseDir + "korea-12000.txt";
-        List<String> mblist = IOUtils.readLines(mbfile);
-        List<String> mbOther = IOUtils.readLines(Cj00AllInOneTest.mbkoreaOther);
+        List<String> mblist = IOUtils.readLines(mbfile, true);
+        List<String> mbOther = IOUtils.readLines(Cj00AllInOneTest.mbkoreaOther, true);
         mblist.addAll(mbOther);
 
         Map<String, List<String>> mbMap = new HashMap<String, List<String>>();
@@ -127,7 +127,7 @@ public class HanGulHanjaText {
      */
     private static Set<String> encodeMbfile(String file, Map<String, List<String>> mbMap) {
         LinkedHashSet<String> res = new LinkedHashSet<String>();
-        outerFor: for (String str : IOUtils.readLines(file)) {
+        outerFor: for (String str : IOUtils.readLines(file, true)) {
             if (str.contains(" ")) {
                 String[] part = str.split(" ");
                 char[] chas = part[0].toCharArray();
@@ -178,7 +178,7 @@ public class HanGulHanjaText {
     private static void makeSingleCharMb() throws Exception {
         String file = mbsBaseDir + "韓文漢字單字的碼表.txt";
         String fileOri = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
-        List<String> listOri = IOUtils.readLines(fileOri);
+        List<String> listOri = IOUtils.readLines(fileOri, true);
 
         Set<String> resSinCodes = new HashSet<String>();
         List<String> resSins = new ArrayList<String>();
@@ -216,10 +216,10 @@ public class HanGulHanjaText {
 
         String fileAll = mbsBaseDir + "韓文漢字詞組碼表的整合.txt";
 
-        List<String> list1 = IOUtils.readLines(file1);
-        List<String> list2 = IOUtils.readLines(file2);
-        List<String> list3 = IOUtils.readLines(file3);
-        List<String> list4 = IOUtils.readLines(file4);
+        List<String> list1 = IOUtils.readLines(file1, true);
+        List<String> list2 = IOUtils.readLines(file2, true);
+        List<String> list3 = IOUtils.readLines(file3, true);
+        List<String> list4 = IOUtils.readLines(file4, true);
 
         List<String> listAll = new ArrayList<String>();
         listAll.addAll(list1);
@@ -255,7 +255,7 @@ public class HanGulHanjaText {
      * @return
      */
     private static List<String> getBiaozhunHanguoyu() {
-        List<String> list = IOUtils.readLines(mbsBaseDir + "标准韩国语词典.txt");
+        List<String> list = IOUtils.readLines(mbsBaseDir + "标准韩国语词典.txt", true);
         List<String> res = new ArrayList<String>();
         for (String str : list) {
             if (str.contains(" ")) {
@@ -340,7 +340,7 @@ public class HanGulHanjaText {
      * @return
      */
     private static List<String> getHanyuChangyongHanzi() {
-        List<String> list = IOUtils.readLines(mbsBaseDir + "韩语常用汉字对照.txt");
+        List<String> list = IOUtils.readLines(mbsBaseDir + "韩语常用汉字对照.txt", true);
         List<String> res = new ArrayList<String>();
         for (String str : list) {
             if (str.contains(" ")) {
@@ -385,7 +385,7 @@ public class HanGulHanjaText {
      * @time 2018年1月3日上午11:29:09
      */
     private static List<String> getDictHanwen() {
-        List<String> dictHanwen = IOUtils.readLines(mbsBaseDir + "韩文汉字词典.txt");
+        List<String> dictHanwen = IOUtils.readLines(mbsBaseDir + "韩文汉字词典.txt", true);
         List<String> res = new ArrayList<String>();
         for (String str : dictHanwen) {
             if (str.contains(" ")) {

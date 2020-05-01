@@ -26,7 +26,7 @@ public class MbBeautifyTest {
      * @throws Exception
      */
     private static void doBeautify(String file) throws Exception {
-        List<String> lines = IOUtils.readLines(file);
+        List<String> lines = IOUtils.readLines(file, true);
         List<String> res = doBeautify(lines);
         IOUtils.writeFile(file, res);
     }

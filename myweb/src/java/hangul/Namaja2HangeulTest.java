@@ -70,9 +70,9 @@ public class Namaja2HangeulTest {
      */
     private static List<String> getBaseMbByIS(InputStream is) {
         String patn = "[가-힣]{1}";
-        List<String> res = IOUtils.readLines(is);
+        List<String> res = IOUtils.readLines(is, true);
         if (null != res && !res.isEmpty()) {
-            List<String> res2 = IOUtils.readLines(is);
+            List<String> res2 = IOUtils.readLines(is, true);
             for (String line : res) {
                 if (line.contains(" ")) {
                     String[] parts = line.split(" ");

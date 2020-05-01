@@ -71,7 +71,7 @@ public class DuoDuoFormatTest {
                 String shortFileName = fileName.substring(fileName.lastIndexOf("\\") + 1);
                 String dduoFileName = shortFileName.substring(0, shortFileName.lastIndexOf(".")) + "-duoduo."
                         + shortFileName.substring(shortFileName.lastIndexOf(".") + 1);
-                List<String> lines = IOUtils.readLines(fileName);
+                List<String> lines = IOUtils.readLines(fileName, true);
                 if (null != lines && !lines.isEmpty()) {
                     writeDuoDuoMb(destFileDir, dduoFileName, lines);
                 }

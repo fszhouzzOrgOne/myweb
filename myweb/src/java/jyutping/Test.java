@@ -27,7 +27,7 @@ public class Test {
 
         // 粵拼碼表整合
         // 用Q的個數表示聲調
-        List<String> mb = IOUtils.readLines(jyutpAllFile);
+        List<String> mb = IOUtils.readLines(jyutpAllFile, true);
         List<String> jyutAllInOne = new ArrayList<String>();
         jyutAllInOne.addAll(PingJamTest.getPingjamList());
         for (String str : mb) {
@@ -37,7 +37,7 @@ public class Test {
                         .replace("5", "qqqqq").replace("6", "qqqqqq"));
             }
         }
-        List<String> jyutPhrases = IOUtils.readLines(jyutPhrase);
+        List<String> jyutPhrases = IOUtils.readLines(jyutPhrase, true);
         Set<String> jyutPhrasesRes = new LinkedHashSet<String>(); // 去褈用
         for (String phr : jyutPhrases) {
             if (phr.contains(" ")) {
@@ -66,11 +66,11 @@ public class Test {
     private static List<String> getJyutpingPhrase() throws Exception {
         String path = mbsBaseDir + File.separator + "praseGet" + File.separator;
         List<String> phrs = new ArrayList<String>();
-        phrs.addAll(IOUtils.readLines(path + "粤语发声字典中所有的字音詞3结果.txt"));
-        phrs.addAll(IOUtils.readLines(path + "粵語詞彙1.txt"));
-        phrs.addAll(IOUtils.readLines(path + "粵語詞彙2.txt"));
+        phrs.addAll(IOUtils.readLines(path + "粤语发声字典中所有的字音詞3结果.txt", true));
+        phrs.addAll(IOUtils.readLines(path + "粵語詞彙1.txt", true));
+        phrs.addAll(IOUtils.readLines(path + "粵語詞彙2.txt", true));
         // 粵語詞彙-補充.txt
-        phrs.addAll(IOUtils.readLines(path + "粵語詞彙-補充.txt"));
+        phrs.addAll(IOUtils.readLines(path + "粵語詞彙-補充.txt", true));
 
         Set<String> res = new HashSet<String>();
         for (String phr : phrs) {
@@ -107,7 +107,7 @@ public class Test {
      * @return
      */
     public static List<String> readMbCode_char_char(String filename) {
-        List<String> list = IOUtils.readLines(filename);
+        List<String> list = IOUtils.readLines(filename, true);
         List<String> res = new ArrayList<String>();
 
         for (String line : list) {
@@ -129,11 +129,11 @@ public class Test {
     public static void mergeMbs() throws Exception {
         // 合併
         List<String> list1 = IOUtils
-                .readLines(mbsBaseDir + "jyutping-dict.txt");
+                .readLines(mbsBaseDir + "jyutping-dict.txt", true);
         List<String> list2 = IOUtils
-                .readLines(mbsBaseDir + "jyutping-github.txt");
+                .readLines(mbsBaseDir + "jyutping-github.txt", true);
         List<String> list4 = IOUtils
-                .readLines(mbsBaseDir + "jyutping-more.txt");
+                .readLines(mbsBaseDir + "jyutping-more.txt", true);
         List<String> listall = new ArrayList<String>(list1);
         listall.addAll(list2);
         listall.addAll(list4);

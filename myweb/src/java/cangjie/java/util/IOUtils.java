@@ -38,7 +38,7 @@ public class IOUtils {
      */
     public static void uniqueCodeFile(String filename) throws Exception {
         System.out.println("去重：" + filename);
-        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename));
+        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename, true));
 
         Set<String> uniques = new LinkedHashSet<String>();
         for (String ph : allphrases) {
@@ -54,7 +54,7 @@ public class IOUtils {
      */
     public static void orderCodeFile(String filename) throws Exception {
         System.out.println("排序：" + filename);
-        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename));
+        List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename, true));
 
         Collections.sort(allphrases, new Comparator<String>() {
             @Override
@@ -86,19 +86,25 @@ public class IOUtils {
 
     /**
      * 讀碼表文件<br />
-     * 會去首尾格，中間也只留單個空格
+     * noBlank=true, 會去首尾格，中間也只留單個空格
      */
-    public static List<String> readLines(String fileName) {
+    public static List<String> readLines(String fileName, Boolean noBlank) {
         try {
+            if (null == noBlank) {
+                noBlank = false;
+            }
             InputStream in = new FileInputStream(fileName);
-            return readLines(in);
+            return readLines(in, noBlank);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public static List<String> readLines(InputStream in) {
+    public static List<String> readLines(InputStream in, Boolean noBlank) {
+        if (null == noBlank) {
+            noBlank = false;
+        }
         List<String> result = new ArrayList<String>();
         InputStreamReader isr = null;
         BufferedReader br = null;
@@ -109,8 +115,10 @@ public class IOUtils {
             while ((str = br.readLine()) != null) {
                 if (!"".equals(str)) {
                     String line = str.trim(); // 去首尾
-                    line = line.replaceAll("( )\\1+", "$1"); // 中间一个空
-                    line = line.replaceAll(blankPatn, ""); // 去空白字符
+                    if (noBlank) {
+                        line = line.replaceAll("( )\\1+", "$1"); // 中间一个空
+                        line = line.replaceAll(blankPatn, ""); // 去空白字符
+                    }
                     if (!line.startsWith("#")) {
                         result.add(line);
                     }

@@ -13,7 +13,7 @@ public class MedievalChineseTest {
     private static String koxHanhAllFile = mbsBaseDir + "中古漢語拼音.txt";
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = IOUtils.readLines(koxHanhAllFile);
+        List<String> lines = IOUtils.readLines(koxHanhAllFile, true);
         System.out.println(lines.size());
 
         IOUtils.writeFile(Cj00AllInOneTest.koxhanh30000, lines);

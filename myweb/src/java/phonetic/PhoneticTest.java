@@ -21,7 +21,7 @@ public class PhoneticTest {
     private static String phoneticAllFile = mbsBaseDir + "國際音標符號.txt";
 
     public static void main(String[] args) throws Exception {
-        List<String> mb = IOUtils.readLines(phoneticAllFile);
+        List<String> mb = IOUtils.readLines(phoneticAllFile, true);
 
         String az = "abcdefghijklmnopqrstuvwxyz";
         String[] azs = new String[az.length()];

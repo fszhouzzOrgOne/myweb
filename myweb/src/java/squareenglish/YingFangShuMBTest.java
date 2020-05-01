@@ -20,7 +20,7 @@ public class YingFangShuMBTest {
     private static String destFile = "yingfangshu-squareenglish-duoduo.txt";
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = IOUtils.readLines(mbsBaseDir + srcFile);
+        List<String> lines = IOUtils.readLines(mbsBaseDir + srcFile, true);
         List<String> linesNew = new ArrayList<String>();
         String space = " ";
         for (String str : lines) {

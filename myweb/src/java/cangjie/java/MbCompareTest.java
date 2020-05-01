@@ -25,11 +25,12 @@ public class MbCompareTest {
 
     public static void main(String[] args) throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(
-                IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
+                IOUtils.readLines(Cj00AllInOneTest.mb6newDict, true));
 
         Set<String> list2 = new LinkedHashSet<String>();
-        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
-        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua));
+        List<String> listMore = IOUtils.readLines(Cj00AllInOneTest.mb6more, true);
+        list2.addAll(listMore);
+        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua, true));
 
         // 六代碼表沒有的編碼
         List<String> list3 = compareGetDiff(list1, list2);

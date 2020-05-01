@@ -41,11 +41,11 @@ public class Cj01MbFormatTest {
      * 求倉頡三五六、雅虎、微軟，幾個的交集
      */
     public static void getCjMbsIntersection() throws Exception {
-        List<String> lines3 = IOUtils.readLines(mb3allInOne);
-        List<String> lines5 = IOUtils.readLines(mb5allInOne);
-        List<String> lines6 = IOUtils.readLines(mb6allInOne);
-        List<String> linescjyh = IOUtils.readLines(cjyhallInOne);
-        List<String> linescjms = IOUtils.readLines(cjmsallInOne);
+        List<String> lines3 = IOUtils.readLines(mb3allInOne, true);
+        List<String> lines5 = IOUtils.readLines(mb5allInOne, true);
+        List<String> lines6 = IOUtils.readLines(mb6allInOne, true);
+        List<String> linescjyh = IOUtils.readLines(cjyhallInOne, true);
+        List<String> linescjms = IOUtils.readLines(cjmsallInOne, true);
 
         @SuppressWarnings("unchecked")
         Set<String> inter = MbCompareTest.getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
@@ -77,7 +77,7 @@ public class Cj01MbFormatTest {
      * 如：ab 明
      */
     public static List<String> readCode_CharMb(String filename) {
-        return IOUtils.readLines(filename);
+        return IOUtils.readLines(filename, true);
     }
 
     /***
@@ -85,7 +85,7 @@ public class Cj01MbFormatTest {
      * 如：ab明冐
      */
     public static List<String> readCodeChaChaMb(String filename) throws Exception {
-        List<String> all = new ArrayList<String>(IOUtils.readLines(filename));
+        List<String> all = new ArrayList<String>(IOUtils.readLines(filename, true));
 
         List<String> res = new ArrayList<String>();
         String pattern = "[a-z]+";
@@ -116,7 +116,7 @@ public class Cj01MbFormatTest {
      * 如：明 ab
      */
     public static List<String> readCha_CodeMb(String filename) throws Exception {
-        List<String> all = new ArrayList<String>(IOUtils.readLines(filename));
+        List<String> all = new ArrayList<String>(IOUtils.readLines(filename, true));
 
         List<String> res = new ArrayList<String>();
         for (String line : all) {
@@ -141,7 +141,7 @@ public class Cj01MbFormatTest {
      * @time 2017-2-24下午9:16:56
      */
     public static List<String> read_quoteCodeEQquoteCharMb(String filename) throws Exception {
-        List<String> all = new ArrayList<String>(IOUtils.readLines(filename));
+        List<String> all = new ArrayList<String>(IOUtils.readLines(filename, true));
 
         List<String> res = new ArrayList<String>();
         String pattern = "^\".*\"=\".*\"$";

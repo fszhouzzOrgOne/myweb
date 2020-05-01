@@ -42,10 +42,10 @@ public class ManjuTypingTest {
             // context.getResources().getAssets().open("database" +
             // File.separator + "korea-12000.txt");
             InputStream is = new FileInputStream("src\\java\\manju\\mb\\manju-100.txt");
-            List<String> res = IOUtils.readLines(is);
+            List<String> res = IOUtils.readLines(is, true);
             // 符號的碼表
             is = new FileInputStream("src\\java\\manju\\mb\\manju-more.txt");
-            List<String> resSim = IOUtils.readLines(is);
+            List<String> resSim = IOUtils.readLines(is, true);
             if (null != resSim && !resSim.isEmpty()) {
                 theSimList = new ArrayList<String>();
                 for (String sim : resSim) {
