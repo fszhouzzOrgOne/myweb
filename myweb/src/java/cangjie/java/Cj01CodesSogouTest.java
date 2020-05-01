@@ -94,6 +94,11 @@ public class Cj01CodesSogouTest {
             cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.baseRange));
             cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
             cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.AextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.BextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.CextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.DextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.EextRange));
+            cj6simChar.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.FextRange));
         }
 
         Set<String> theRemoved = new HashSet<String>();
