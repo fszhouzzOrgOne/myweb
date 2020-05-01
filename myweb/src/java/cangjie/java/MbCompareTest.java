@@ -24,18 +24,21 @@ public class MbCompareTest {
     public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-70000.txt";
 
     public static void main(String[] args) throws Exception {
-        Set<String> list1 = new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
-        list1.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua));
+        Set<String> list1 = new LinkedHashSet<String>(
+                IOUtils.readLines(Cj00AllInOneTest.mb6newDict));
 
         Set<String> list2 = new LinkedHashSet<String>();
-        list2.addAll(new LinkedHashSet<String>(IOUtils.readLines(Cj00AllInOneTest.mb6unif7473)));
+        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6more));
+        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua));
 
+        // 六代碼表沒有的編碼
         List<String> list3 = compareGetDiff(list1, list2);
-        for (String str : list3) {
-            System.out.println(str);
-        }
-        System.out.println(list3.size());
+        System.out.println("compareGetDiff: " + list3.size());
+
+        // 六代碼表已有的碼表
+        Set<String> listExist = getIntersection(list1, list2);
+        System.out.println(
+                "getIntersection: " + listExist.size() + ", " + listExist);
 
         // 各個區漢字是否都有了：
         Set<String> chars = new LinkedHashSet<String>();
@@ -46,10 +49,22 @@ public class MbCompareTest {
                 chars.add(cha);
             }
         }
-        Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.privateUserArea);
+        Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.baseRange);
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.AextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.BextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.CextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.DextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.EextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.FextRange));
+        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.GextRange));
         set.removeAll(chars);
-        set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.privateUserArea2);
         System.out.println(set);
+        String res = "";
+        for (String str : set) {
+            res += str;
+        }
+        System.out.println(res);
     }
 
     /**

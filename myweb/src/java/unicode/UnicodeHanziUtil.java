@@ -31,6 +31,8 @@ public class UnicodeHanziUtil {
     public static int[] EextRange = { 0x2B820, 0x2CEA1 };
     /** 擴展F */
     public static int[] FextRange = { 0x2CEB0, 0x2EBE0 };
+    /** 擴展G */
+    public static int[] GextRange = { 0x30000, 0x3134F };
 
     /** Private Use Area 私用區 */
     public static int[] privateUserArea = { 0xE000, 0xF8FF };
@@ -305,6 +307,7 @@ public class UnicodeHanziUtil {
         list.add("2B820 2CEAF 中日韓擴展E");
         list.add("2CEB0 2EBE0 中日韓擴展F");
         list.add("2F800 2FA1F 中日韓兼容表意補");
+        list.add("30000 3134F 中日韓擴展G");
         list.add("E0000 E007F 標記");
         list.add("E0100 E01EF 變量選擇符17+");
         list.add("F0000 FFFFD 補充私用區A");

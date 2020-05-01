@@ -14,9 +14,6 @@ yzbuc 𧹂
 yzbuu 𬢆
 irzye 𣀨
 oirz  𠐲
-irmb  𧥑
-irmf  𤒓
-irmf  𤒉
 irmz  𢨋
 xzx   𣥒
 # 按ArtherMcarther，引入Z鍵來編碼「反字」
@@ -65,7 +62,6 @@ hjxm  𦥫
 hsxm  𦥢
 nxm   𦥢
 tuxm  𦥾
-ojvx  𦦓
 # 按官方pdf，𠃚字取sss，𠃬取ssss，𧦮字取yrsse，𢎧字取ssn。
 # 其他字，查改一些。𧅍𧂘，網友取jr開頭，也改正下，另加trr開頭的。
 esss  𣵬
@@ -102,7 +98,6 @@ jbe   𡬄
 jbff  𡬖
 jbmf  𡬇
 jbhk  𡬊
-jbni  㝱
 jbbn  𡬙
 jbmr  𡬑
 jbbu  𡬌
@@ -116,7 +111,6 @@ jmqx  𫴛
 #碼表錯作鶥
 ahumz 眉頁
 #有的字體沒有點
-aje   𭥢
 alo   𬀲
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
 alry  𠘀
@@ -146,7 +140,6 @@ ehsk  涙
 ewfg  濹
 fdmav 粮
 ggwy  𣫴
-gofbn 𠠄
 goll  𧺈
 gyoln 𧺈
 hdh   𠄒
@@ -194,14 +187,12 @@ oibh  𪝹
 oihdr ㋿
 olhdr ㋿
 omfp  𢚒
-omwa  㑹
 # 輔助字根亼，不能跨越字首字身取
 oml   𠇭
 omli  𫝇
 ompno 钦
 onmgi 㺸
 opy   铲
-pofm  𪫺
 pywv  懐
 # 三疊字，六代規則化。按官方pdf，取qdqdd。
 qdqdd 䆐
@@ -260,9 +251,7 @@ yof   㸂
 yof   鿪
 # 擴展區遺漏的字
 # A區
-liavf 䗾
 # C區
-omv   𪜨
 # F區
 jli  𬺿
 nmsm 𬻆
