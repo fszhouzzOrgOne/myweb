@@ -325,7 +325,6 @@ hhsli    卵
 hhw    留
 hi    ㇛
 hihc    簾
-hjr    ⾆
 hjsmm    翺
 hkp    懲
 hkp    懲
@@ -713,6 +712,7 @@ mjmjg    雃
 mjmjh    形
 mjmjn    㼛
 mjq    揅
+mjr    ⾆
 mku    ⽆
 ml    ㇕
 mlbo    兩
@@ -1265,6 +1265,7 @@ vyjj    姘
 vyyp    嬨
 w    ⽥
 wb    ⿵
+wc    ⺲
 wfno    㱎
 wg    里
 wg    ⾥
@@ -1277,7 +1278,6 @@ wl    ⿰
 wle    𥄳
 wljka    署
 wll    ⺫
-wll    ⺲
 wll    ⿲
 wlowy    䍙
 wlpog    罹
