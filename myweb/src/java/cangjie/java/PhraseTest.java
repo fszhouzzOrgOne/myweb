@@ -7,6 +7,9 @@ import java.util.Set;
 
 import cangjie.java.util.IOUtils;
 
+/**
+ * 詞組的去重排序
+ */
 public class PhraseTest {
 
     public static String mbsBaseDir = Cj00AllInOneTest.mbsBaseDir;
@@ -15,7 +18,7 @@ public class PhraseTest {
 
     public static void main(String[] args) throws Exception {
         Set<String> set = new LinkedHashSet<String>();
-        set.add("亮    ".trim());
+        // set.add("亮    ".trim());
 
         uniqueOrderPhraseFile();
 
