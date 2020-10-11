@@ -48,7 +48,7 @@ public class Cj01MbFormatTest {
         List<String> linescjms = IOUtils.readLines(cjmsallInOne, true);
 
         @SuppressWarnings("unchecked")
-        Set<String> inter = MbCompareTest.getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
+        Set<String> inter = MbCompare6Test.getIntersection(lines3, lines5, lines6, linescjyh, linescjms);
         IOUtils.writeFile(cj356hyms_allInOne, inter);
         IOUtils.orderCodeFile(cj356hyms_allInOne);
 

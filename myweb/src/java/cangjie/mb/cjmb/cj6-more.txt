@@ -157,10 +157,8 @@ ssse  𠭵
 ssss  𠃬
 trrk  𧅍
 trrk  𧂘
-tssk  𦷠
 yrsse 𧦮
 # 六代十鍵中的字根，如“𪧇-丆”或“𪧇+（夢-冖夕）”，都取一碼：十
-jbsb  㝲
 jbhd  𡬒
 jbfd  𡬍
 jbse  𡬓
@@ -234,11 +232,9 @@ mgooi 𬍦
 mgool 𬍦
 moie  𠘤
 nxno  欿
-jaj   龺
 jook  𠁊
 jv    𫠠
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
-kop   㤲
 llsb  帰
 lqmt  䀌
 lso   𬮘
@@ -272,7 +268,6 @@ opy   铲
 ozmf  𰨇
 pywv  懐
 # 三疊字，六代規則化。按官方pdf，取qdqdd。
-qdqdd 䆐
 qmb   靑
 qms   𫠤
 rhws  𠿋
@@ -309,7 +304,6 @@ ttz   𧹘
 tvvv  𦭺
 # 𠀫、𠀪字，依官方pdf改正
 tzh   𠀫
-tzi   𠀪
 uubx  𠚜
 uubx  𠚡
 uumg  𠚖

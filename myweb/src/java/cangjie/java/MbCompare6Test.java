@@ -13,41 +13,53 @@ import unicode.UnicodeConvertUtil;
 import unicode.UnicodeHanziUtil;
 
 /**
- * 碼表對比
+ * 碼表對比<br/>
+ * 參見myweb\src\java\cangjie\mb\cjmb\cj6引用說明.txt
  */
-public class MbCompareTest {
+public class MbCompare6Test {
 
     public static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
-    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-8300.txt";
-    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-13053.txt";
-    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-20902.txt";
-    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator + "oldmb" + File.separator + "cj6-70000.txt";
+    public static String mb68000 = mbsBaseDir + "cjmb" + File.separator
+            + "oldmb" + File.separator + "cj6-8300.txt";
+    public static String mb610000 = mbsBaseDir + "cjmb" + File.separator
+            + "oldmb" + File.separator + "cj6-13053.txt";
+    public static String mb620000 = mbsBaseDir + "cjmb" + File.separator
+            + "oldmb" + File.separator + "cj6-20902.txt";
+    public static String mb670000 = mbsBaseDir + "cjmb" + File.separator
+            + "oldmb" + File.separator + "cj6-70000.txt";
+
+    public static String mb6TheIntroduced = Cj00AllInOneTest.mb6newDict;
+    public static String mb6more = Cj00AllInOneTest.mb6more;
+    public static String mb6morePua = Cj00AllInOneTest.mb6morePua;
+    public static String mb6ToBeIntroduced = mbsBaseDir + "cjmb"
+            + File.separator + "cj6.dict.txt";
 
     public static void main(String[] args) throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(
-                IOUtils.readLines(Cj00AllInOneTest.mb6newDict, true));
+                IOUtils.readLines(mb6ToBeIntroduced, true));
 
-        Set<String> list2 = new LinkedHashSet<String>();
-        List<String> listMore = IOUtils.readLines(Cj00AllInOneTest.mb6more,
-                true);
+        Set<String> set2 = new LinkedHashSet<String>();
+        List<String> listMore = IOUtils.readLines(mb6more, true);
         // 摸否有重複行
         for (String line : listMore) {
-            if (!list2.contains(line)) {
-                list2.add(line);
+            if (!set2.contains(line)) {
+                set2.add(line);
             } else {
                 System.out.println("more: " + line);
             }
         }
-        list2.addAll(IOUtils.readLines(Cj00AllInOneTest.mb6morePua, true));
+        // set2.addAll(IOUtils.readLines(mb6morePua, true));
+        // set2.addAll(IOUtils.readLines(mb6TheIntroduced, true));
 
-        // 六代碼表沒有的編碼
-        List<String> list3 = compareGetDiff(list1, list2);
-        System.out.println("compareGetDiff: " + list3.size());
-
-        // 六代碼表已有的碼表
-        Set<String> listExist = getIntersection(list1, list2);
+        // mb6ToBeIntroduced碼表沒有的編碼
+        List<String> list3 = compareGetDiff(list1, set2);
         System.out.println(
-                "getIntersection: " + listExist.size() + ", " + listExist);
+                "mb6ToBeIntroduced碼表沒有的編碼: " + list3.size() + "， " + list3);
+
+        // mb6ToBeIntroduced碼表已有的碼表
+        Set<String> listExist = getIntersection(list1, set2);
+        System.out.println(
+                "mb6ToBeIntroduced碼表已有的編碼: " + listExist.size() + "， " + listExist);
 
         // 各個區漢字是否都有了：
         Set<String> chars = new LinkedHashSet<String>();
@@ -58,8 +70,10 @@ public class MbCompareTest {
                 chars.add(cha);
             }
         }
-        Set<String> set = UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.baseRange);
-        set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
+        Set<String> set = UnicodeConvertUtil
+                .getStringSet(UnicodeHanziUtil.baseRange);
+        set.addAll(
+                UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.base2Range));
         set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.AextRange));
         set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.BextRange));
         set.addAll(UnicodeConvertUtil.getStringSet(UnicodeHanziUtil.CextRange));
@@ -117,7 +131,8 @@ public class MbCompareTest {
      * @author t
      * @time 2017-1-3上午12:02:52
      */
-    public static List<String> compareGetDiff(Collection<String> set1, Collection<String> newSet) throws Exception {
+    public static List<String> compareGetDiff(Collection<String> set1,
+            Collection<String> newSet) throws Exception {
         List<String> diff = new ArrayList<String>();
 
         for (String n : newSet) {
@@ -131,7 +146,8 @@ public class MbCompareTest {
     /**
      * 比较碼表的不同：在碼表newSet中有，而在set1中沒有的字符
      */
-    public static List<String> compareGetDiffChars(Collection<String> set1, Collection<String> newSet) {
+    public static List<String> compareGetDiffChars(Collection<String> set1,
+            Collection<String> newSet) {
         List<String> diff = new ArrayList<String>();
 
         Set<String> oldChars = new HashSet<String>();
