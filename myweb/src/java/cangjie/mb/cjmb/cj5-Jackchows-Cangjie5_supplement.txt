@@ -643,6 +643,7 @@ lyiv    裗
 m    ⼀
 m    ㇀
 m    ㇐
+m    𝍲
 manl    鄑
 mbett    𩅅
 mbhoe    覆
@@ -715,6 +716,7 @@ mjq    揅
 mjr    ⾆
 mku    ⽆
 ml    ㇕
+ml    𝍳
 mlbo    兩
 mlby    ⾬
 mlby    ⻗
@@ -749,7 +751,7 @@ mohqm    甤
 mpbuu    𧢮
 mr    ⽯
 mrbhf    䃣
-mrbj    ⿀
+mrbl    ⿀
 mrhdw    磻
 mrhwj    碑
 mrjbc    磌
@@ -784,7 +786,10 @@ mwhxe    醙
 mwsl    ⾯
 mwtwt    醴
 mwyjj    𩈚
+my    𝍴
 mybl    龎
+myl    𝍵
+mylm    𝍶
 n    ⼅
 n    ⼸
 n    ㇚
