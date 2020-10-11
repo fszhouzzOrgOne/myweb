@@ -58,14 +58,14 @@ public class MbCompare6Test {
         Set<String> listExist = getIntersection(list1, set2);
         System.out.println(
                 "mb6ToBeIntroduced碼表已有的編碼: " + listExist.size() + "， " + listExist);
-        // 把補充碼表去掉已有的，寫回mb6more
+        // 把補充碼表註釋掉已有的，寫回mb6more
         if (!listExist.isEmpty()) {
             List<String> listMoreTmp = IOUtils.readLinesRaw(mb6more);
             boolean removed = false;
             for (int i = listMoreTmp.size() - 1; i >= 0; i--) {
                 String one = listMoreTmp.get(i);
                 if (listExist.contains(one)) {
-                    listMoreTmp.remove(i);
+                    listMoreTmp.set(i, "# " + one);
                     if (!removed) {
                         removed = true;
                     }

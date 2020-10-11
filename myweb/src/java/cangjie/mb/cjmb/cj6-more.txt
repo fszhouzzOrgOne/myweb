@@ -72,21 +72,21 @@ mshne 𣪔
 # 𤝇 khnki 編碼可能有誤
 ######################
 #𠃍在下，都取尸，補充一些
-gis 𪢳
-yjs 㪲
-yms 㫇
-yys 㫇
+# gis 𪢳
+# yjs 㪲
+# yms 㫇
+# yys 㫇
 # 倒字，可以用「片」作末尾表示倒字。（ArtherMcarther 問過官方得知）
 # 六代官方pdf中有𠄏𠄔𣥒等字的編碼，其他字依例補加，E區爲止
-nnz 𠄏
-vinnz 𢆴
-nzz 𠄔
-yzbuc 𧹂
-yzbuu 𬢆
-irzye 𣀨
-oirz 𠐲
-irmz 𢨋
-xzx 𣥒
+# nnz 𠄏
+# vinnz 𢆴
+# nzz 𠄔
+# yzbuc 𧹂
+# yzbuu 𬢆
+# irzye 𣀨
+# oirz 𠐲
+# irmz 𢨋
+# xzx 𣥒
 # 按ArtherMcarther，引入Z鍵來編碼「反字」
 # 反字如臦𦣩，加容錯
 rzhpu 𨞰
@@ -99,8 +99,8 @@ slslz 𦣩
 # 按ArtherMcarther言“𫥮𫯆𬲈，共同所含的部件，官方回答作字身可取「戈人金」
 # 「𬲈」按Unicode文档上方两横和「几」相交，我取「竹女」。”
 # 網友原編有hn開頭，改正下，並加入hv開頭的，暫都作字首。
-yuioc 𫥮
-icgah 𫯆
+# yuioc 𫥮
+# icgah 𫯆
 hnioc 𬲈
 hvioc 𬲈
 #取oo的錯碼，官方pdf有取，這裡將錯就錯
@@ -115,7 +115,7 @@ mgoou 𤩣
 olmbu 睂
 olunl 𨞅
 olmbv 𡡚
-oml 𠓡
+# oml 𠓡
 volu 𡡾
 uolu 𡼴
 eolu 𣾨
@@ -123,88 +123,88 @@ mgolu 𤩣
 buolu 𥋎
 holu 𥴔
 #ombu 睂，第二種正確取法
-vomu 𡡾
-uomu 𡼴
-buomu 𥋎
+# vomu 𡡾
+# uomu 𡼴
+# buomu 𥋎
 homu 𥴔
 # 𦦊字按官方pdf，取xm開頭，依之改幾個字
-xmwks 𦦊
-hjxm 𦥫
+# xmwks 𦦊
+# hjxm 𦥫
 hsxm 𦥢
-nxm 𦥢
-tuxm 𦥾
+# nxm 𦥢
+# tuxm 𦥾
 # 按官方pdf，𠃚字取sss，𠃬取ssss，𧦮字取yrsse，𢎧字取ssn。
 # 其他字，查改一些。𧅍𧂘，網友取jr開頭，也改正下，另加trr開頭的。
-esss 𣵬
+# esss 𣵬
 # 官方pdf
-gxce 𡓻
+# gxce 𡓻
 hosse 𤓷
-ifssm 𥙥
-ifsss 𥙸
+# ifssm 𥙥
+# ifsss 𥙸
 jrssk 𧅍
 jrssk 𧂘
 jsjrk 𧅍
 jsjrk 𧂘
-mfssm 𥙥
-mfsss 𥙸
-rrssk 𤕦
+# mfssm 𥙥
+# mfsss 𥙸
+# rrssk 𤕦
 rrssk 𡄉
-sshne 𣪐
-ssn 𢎧
-sss 𠃚
-ssse 𡕪
-ssse 𠭵
-ssss 𠃬
-trrk 𧅍
-trrk 𧂘
-tssk 𦷠
-yrsse 𧦮
+# sshne 𣪐
+# ssn 𢎧
+# sss 𠃚
+# ssse 𡕪
+# ssse 𠭵
+# ssss 𠃬
+# trrk 𧅍
+# trrk 𧂘
+# tssk 𦷠
+# yrsse 𧦮
 # 六代十鍵中的字根，如“𪧇-丆”或“𪧇+（夢-冖夕）”，都取一碼：十
-jbsb 㝲
-jbhd 𡬒
-jbfd 𡬍
-jbse 𡬓
-jbe 𡫺
-jbe 𡬄
-jbff 𡬖
-jbmf 𡬇
-jbhk 𡬊
-jbbn 𡬙
-jbmr 𡬑
-jbbu 𡬌
-jbv 𡫽
-jmbi 𫳻
-jmmw 𫳼
-jmqx 𫴛
+# jbsb 㝲
+# jbhd 𡬒
+# jbfd 𡬍
+# jbse 𡬓
+# jbe 𡫺
+# jbe 𡬄
+# jbff 𡬖
+# jbmf 𡬇
+# jbhk 𡬊
+# jbbn 𡬙
+# jbmr 𡬑
+# jbbu 𡬌
+# jbv 𡫽
+# jmbi 𫳻
+# jmmw 𫳼
+# jmqx 𫴛
 #############################################
 #其他漢字區
 #############################################
 #碼表錯作鶥
 ahumz 眉頁
 #有的字體沒有點
-alo 𬀲
+# alo 𬀲
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
 alry 𠘀
 ambg 𪱑
 anjlu 𨳻
-anmjh 𨴸
-anmkh 𨴸
+# anmjh 𨴸
+# anmkh 𨴸
 bei 肞
 # 參見㤲字，及麥字取kohe，十人可能取作大字根了，作字首。
-bkoh 𦟬
-blu 𦉭
+# bkoh 𦟬
+# blu 𦉭
 # 查無出處，按三代猜測的編法
 blxk 𦥼
 # 官方PDF有這個取法
 bmll 𠕲
-bru 𭁳
-bumlc 𥄙
-bx 𠕄
-cmso 㒸
+# bru 𭁳
+# bumlc 𥄙
+# bx 𠕄
+# cmso 㒸
 cwa 曾
-ds 𣎺
-ds 𠀟
-ebky 𬉝
+# ds 𣎺
+# ds 𠀟
+# ebky 𬉝
 # 理同 𧹘発
 eeep 𠭌
 ehsk 涙
@@ -212,35 +212,35 @@ ewfg 濹
 fdmav 粮
 ggwy 𣫴
 goll 𧺈
-gyoln 𧺈
-hdh 𠄒
+# gyoln 𧺈
+# hdh 𠄒
 hf 爫
-hi 𬼀
+# hi 𬼀
 hog 坕
 hoyhv 𧙍
 hnhii 𮕕
 hnmz 鳳
-hut 𢍂
+# hut 𢍂
 hxu 龜
 # 䑮字，按UCS字形从朶，按GB18030-2000/2005从朵
-hyhnd 䑮
+# hyhnd 䑮
 iiso 辶
-inf 礻
+# inf 礻
 # ArtherMcarther說丶几作字首，分體字。
 inkk 𡦹
 # 𠘤字，按UCS字形上凝下氷，按其他字形可能作左冫、右上疑下氷
 ioie 𠘤
-mgooi 𬍦
-mgool 𬍦
+# mgooi 𬍦
+# mgool 𬍦
 moie 𠘤
-nxno 欿
-jaj 龺
+# nxno 欿
+# jaj 龺
 jook 𠁊
 jv 𫠠
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
-kop 㤲
+# kop 㤲
 llsb 帰
-lqmt 䀌
+# lqmt 䀌
 lso 𬮘
 luoz 頫
 lwlb 𤲥
@@ -250,50 +250,51 @@ mbrv 𠄢
 mbvm 𠄢
 mkr 啓
 # 按官方pdf，画字可以mulw和mluw。
-mluw 画
+# mluw 画
 mluw 画
 mz 𩾏
 nmxc 𫝖
 nz 𩰲
 obou 𠒯
 ogob 𨿇
-ohbh 𪝹
-oibh 𪝹
+# ohbh 𪝹
+# oibh 𪝹
 # 令和，日本年號字
 oihdr ㋿
 olhdr ㋿
 omfp 𢚒
 # 輔助字根亼，不能跨越字首字身取
-oml 𠇭
-omli 𫝇
+# oml 𠇭
+# omli 𫝇
 ompno 钦
-onmgi 㺸
+# onmgi 㺸
 opy 铲
 ozmf 𰨇
 pywv 懐
 # 三疊字，六代規則化。按官方pdf，取qdqdd。
-qdqdd 䆐
+# qdqdd 䆐
 qmb 靑
 qms 𫠤
-rhws 𠿋
+# rhws 𠿋
 rhxu 𪚩
 rykk 𠲲
 # 𢑱字形多作彑頭
-rmfk 𢑱
-seooo 聚
+# rmfk 𢑱
+# seooo 聚
 sk 刃
 smikh 𮪡
+# 按官方m中多了個字根┌，形同厂
 smm 𠀌
 smmnl 𨚑
 smmu 𡵽
-sn 𠃌
-ss 𠥓
+# sn 𠃌
+# ss 𠥓
 ssls 𪟭
 su 已
 # 䕎字，按UCS字形从日，按GB18030-2000/200从目
 tamw 䕎
 # 同理 𧹘 字
-tij 𠂀
+# tij 𠂀
 ty 𠂀
 tj 𠦒
 # 𭀤 字取tlhu不對，同理 𧹘 字，又參考発字。
@@ -302,49 +303,49 @@ tkpc 𭀤
 tlld 䕈
 tlsd 䕈
 tmz 鿓
-tsll 𠁬
+# tsll 𠁬
 # 不可以破壞交叉的特徵，如干取一十；「冓-冉」不取龷ㅛ，取艹龷；丰取手十。
 # 又「亦-亠」是「片」的根。官方pdf也取ttz。（多謝ArtherMcarther指出）
 ttz 𧹘
 tvvv 𦭺
 # 𠀫、𠀪字，依官方pdf改正
-tzh 𠀫
-tzi 𠀪
-uubx 𠚜
-uubx 𠚡
-uumg 𠚖
-uuvuu 𦱠
-vfyrf 龻
+# tzh 𠀫
+# tzi 𠀪
+# uubx 𠚜
+# uubx 𠚡
+# uumg 𠚖
+# uuvuu 𦱠
+# vfyrf 龻
 vl 乚
 vlm 𡳿
 wcymf 𡮧
 wllk 𡚇
-wlr 𠰝
+# wlr 𠰝
 wmll 曱
 wx 𡆵
 xkbt 𥂞
-xum 𠙿
+# xum 𠙿
 ybhn 𠅙
-ybypg 𪚤
+# ybypg 𪚤
 yhqm 産
 ykll 斎
 ylbuc 𧹂
 ymbuc 𧹂
 ylbuu 𬢆
 ymbuu 𬢆
-yniz 𰲞
-yuiz 𰲞
-yriop 𧫎
+# yniz 𰲞
+# yuiz 𰲞
+# yriop 𧫎
 # 按官方pdf，遂作字首，道字同理，如導
-yof 㸂
+# yof 㸂
 yof 鿪
 # 擴展區遺漏的字
 # A區
 # C區
 # F區
-jli 𬺿
+# jli 𬺿
 nmsm 𬻆
-slmm 𬻈
+# slmm 𬻈
 jvs 𬻒
 # 中日韓筆畫部件區（可不管）
 ns ㇡
