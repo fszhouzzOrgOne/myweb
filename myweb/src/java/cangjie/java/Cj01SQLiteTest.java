@@ -34,7 +34,7 @@ public class Cj01SQLiteTest {
     private static String sghmallInOne = Cj00AllInOneTest.sghmallInOne; // 四角號碼
     private static String cjyhallInOne = Cj00AllInOneTest.cjyhallInOne; // 雅虎奇摩
     private static String cjmsallInOne = Cj00AllInOneTest.cjmsallInOne; // 微軟倉頡
-    private static String cjmacxallInOne = Cj00AllInOneTest.cjmacosx105allInOne; // MacOSX10.5
+    private static String cjmacxallInOne = Cj00AllInOneTest.cjmacosx105allInOne; // MacX10.5
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
@@ -374,7 +374,7 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
             sql_gen = getInsertGenSql(cjGencjms, "微軟倉頡");
             stmt.executeUpdate(sql_gen);
-            sql_gen = getInsertGenSql(cjGencjmacx, "MacOSX10.5");
+            sql_gen = getInsertGenSql(cjGencjmacx, "MacX10.5");
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenkorea, "朝鮮諺文");
@@ -420,7 +420,7 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGencjms + " successfully");
                 selectCountAll(stmt);
 
-                // MacOSX10.5
+                // MacX10.5
                 insertMbdb(stmt, cjGencjmacx, linescjmacx, true);
                 c.commit();
                 System.out.println("insert " + cjGencjmacx + " successfully");
