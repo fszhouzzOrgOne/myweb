@@ -103,7 +103,7 @@ slslz 𦣩
 # icgah 𫯆
 hnioc 𬲈
 hvioc 𬲈
-#取oo的錯碼，官方pdf有取，這裡將錯就錯
+#取oo的錯碼，官方pdf有取oo的，這裡將錯就錯
 #𥶫字都相同，不列入
 # 將錯就錯，留下它
 buoou 𥋎
@@ -113,6 +113,9 @@ mgoou 𤩣
 oolu 睂
 oounl 𨞅
 oolv 𡡚
+# 保留這個，官方pdf也有取oo的。
+uoou 𡼴
+voou 𡡾
 #第一種正確取法
 buolu 𥋎
 eolu 𣾨
@@ -190,6 +193,7 @@ oiki 𠍋
 oiqk 𠇇
 omkv 𠆭
 omnv 𠆭
+tmkz 𦹗
 # 帶〇的雪齋改口片，先補上原碼，待定
 krr 㔔
 r 〇
@@ -365,7 +369,8 @@ tkpc 𭀤
 tlld 䕈
 tlsd 䕈
 tmz 鿓
-# tsll 𠁬
+# 按官方m中多了個字根┌，形同厂，按ArtherMcarther指出
+tslm 𠁬
 # 不可以破壞交叉的特徵，如干取一十；「冓-冉」不取龷ㅛ，取艹龷；丰取手十。
 # 又「亦-亠」是「片」的根。官方pdf也取ttz。（多謝ArtherMcarther指出）
 ttz 𧹘
@@ -380,6 +385,8 @@ tvvv 𦭺
 # vfyrf 龻
 vl 乚
 vlm 𡳿
+# 保留wc的，兼容字形
+wcr 𠰝
 wcymf 𡮧
 wllk 𡚇
 # wlr 𠰝
