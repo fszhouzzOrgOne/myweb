@@ -1627,7 +1627,6 @@ bjmo 腚
 bjmu 脘
 bjnu 腕
 bjoc 膑
-bjoh 𦟬
 bjpn 𦡲
 bjr 𦙶
 bjrr 𦜐
@@ -15627,7 +15626,6 @@ jgg 𡧩
 jggu 𡪩
 jghp 𡧪
 jgig 𡫓
-jgjgg 𡬀
 jgow 𡫆
 jgryo 𨆧
 jham 𠦠
@@ -25271,7 +25269,6 @@ omm 仁
 ommf 佘
 ommf 𠇣
 ommi 伝
-omml 𠓡
 ommm 仨
 ommr 𠇙
 ommu 㐾
@@ -29724,7 +29721,6 @@ rtk 哎
 rtkl 𡂸
 rtkr 喏
 rtkr 𠸏
-rtlc 𠵢
 rtlf 嚥
 rtlj 㗆
 rtlk 𠸄
@@ -29888,7 +29884,6 @@ rwtj 嗶
 rwvf 𠼱
 rwyi 呣
 rwyv 𠼊
-rxu 𪚴
 ry 卟
 ryac 𡅙
 ryaj 啅
@@ -35250,6 +35245,7 @@ uufd 粜
 uuff 𤎸
 uuhaf 𦺂
 uuhau 𦯦
+uuhbb 𧂥
 uuhj 𡻀
 uuhlu 𦽱
 uuhml 㪿
@@ -37835,7 +37831,6 @@ wlybg 䍦
 wlyg 罜
 wlymr 詈
 wlypm 𦋾
-wlyrc 𦌻
 wlyri 罸
 wlyrn 罰
 wlysd 𦋤
@@ -38172,6 +38167,7 @@ ybeho 𠧼
 ybff 𨘩
 ybffs 髝
 ybfni 𧈒
+ybg 𡋪
 ybgr 週
 ybhf 𨖿
 ybhg 望
@@ -38200,6 +38196,7 @@ ybmcr 䜭
 ybmcu 睿
 ybmo 遯
 ybmo 𨖡
+ybmob 𠨆
 ybmp 𨘓
 ybmr 迵
 ybnif 𤈭
@@ -40060,7 +40057,6 @@ ytkr 𨔽
 ytl 䇂
 ytlb 𨒾
 ytle 䇐
-ytlr 𠱫
 ytlr 𠶷
 ytlws 𥪁
 ytma 竡
