@@ -1,36 +1,5 @@
-####### 雪齋之前删了些字編碼，這裡再次加入補充碼表，查對了一回其中一些錯碼。
-hlai 兎
-hrdhe 𤿘
-nrdhe 𤿘
-kwgf 𬏼
-limlw 𬠂
-lmje 𭣖
-mjsqf 𩢽
-mjxmz 𩒞
-mmmu 㒫
-mmrhu 况
-mmunl 𨛞
-mmcnl 𨛞
-mnru 𭮀
-mrdt 𥔫
-mrlto 𮁅
-mzemi 𮦵
-nlmyp 𨼆
-omgc 𠋾
-orvmz 𮨖
-otdd 𣞣
-ovlso 𮩆
-ohkp 𢞋
-qhlb 𢸌
-sjiil 𫆍
-sjivl 𫆍
-tqrrs 𮧪
-uvfk 𫶦
-wwct 𣽭
-ybefd 𥹟
-mmlmc 𭂟
-ynddh 𧈇
-mshne 𣪔
+####### 雪齋之前删了些字編碼，這裡去掉所有兼容區字
+######### 其餘的字，查對了一回其中一些錯碼，補充在這裡
 ######################
 # 𤝇 khnki 編碼可能有誤
 ######################
@@ -175,7 +144,7 @@ ahumz 眉頁
 alnm 𣆜
 # alo 𬀲
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
-# 兼容字形，留下日中
+# 兼容下字形，留下日中
 alrm 𠘀
 alry 𠘀
 ambg 𪱑
@@ -190,7 +159,7 @@ bei 肞
 blxk 𦥼
 # 官方PDF有這個取法
 bmll 𠕲
-# 加個作月的兼容字形
+# 加個作月的，兼容下字形
 bmsc 𤓹
 # bru 𭁳
 # bumlc 𥄙
@@ -214,14 +183,18 @@ goll 𧺈
 # hdh 𠄒
 hf 爫
 # hi 𬼀
-# 兼容字形，留下的十
+# 兼容下字形，留下的十
 hjh 𠄒
+# 官方pdf取hlai
+hlai 兎
+hnhii 𮕕
+hnmz 鳳
 hog 坕
 # 按官方pdf𧦮字取yrsse，加個sse的
 hosse 𤓷
 hoyhv 𧙍
-hnhii 𮕕
-hnmz 鳳
+hrdhe 𤿘
+nrdhe 𤿘
 # hut 𢍂
 hxu 龜
 # 䑮字，按UCS字形从朶，按GB18030-2000/2005从朵
@@ -239,6 +212,8 @@ ioie 𠘤
 # 錯碼，作弋頭
 ipoll 𢎉
 ipoln 𢎉
+# 有的字形作黒，所以加一個
+kwgf 𬏼
 # jaj 龺
 # jli 𬺿
 # 先補上卜的
@@ -250,7 +225,10 @@ jvs 𬻒
 kcinx 𤫒
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
 # kop 㤲
+# 兼容下字形，加個取l的
+limlw 𬠂
 llsb 帰
+lmje 𭣖
 # 加兩個連在一起作字首的，如𫿞字
 lmmjk 𭤏
 lmnjk 𭤏
@@ -269,24 +247,44 @@ mbvm 𠄢
 # mgool 𬍦
 # 暫時當作一個個字取，待定
 mimip 𱁬
+mjsqf 𩢽
+mjxmz 𩒞
 mkr 啓
 # 按官方pdf，画字可以mulw和mluw。
 # mluw 画
 # 兼容漢字，取消：mluw 画
+mmlmc 𭂟
+# 按官方m中多了個字根┌，形同厂
+mmmu 㒫
+mmrhu 况
+# 按官方m中多了個字根┌，形同厂
+mmunl 𨛞
+mmcnl 𨛞
+mnru 𭮀
 moie 𠘤
-# nxno 欿
+mrdt 𥔫
+# 加一個，右邊有作菐的，兼容下字形
+mrlto 𮁅
+# 加一個，兼容下字形
+mshne 𣪔
 mz 𩾏
+mzemi 𮦵
+nlmyp 𨼆
 nmxc 𫝖
 nmsm 𬻆
+# nxno 欿
 nz 𩰲
 obou 𠒯
 ogob 𨿇
 # ohbh 𪝹
 # oibh 𪝹
+# 加個hk，兼容下字形
+ohkp 𢞋
 # 令和，日本年號字
 oihdr ㋿
 olhdr ㋿
 omfp 𢚒
+omgc 𠋾
 # oml 𠓡
 # 輔助字根亼，不能跨越字首字身取
 # oml 𠇭
@@ -296,9 +294,13 @@ omly 𫝇
 ompno 钦
 # onmgi 㺸
 opy 铲
+otdd 𣞣
+# 加一個ov的
+ovlso 𮩆
 pywv 懐
 # 三疊字，六代規則化。按官方pdf，取qdqdd。
 # qdqdd 䆐
+qhlb 𢸌
 qmb 靑
 qms 𫠤
 # 補充rhbs的𠿋
@@ -314,6 +316,8 @@ rykk 𠲲
 # 𢑱字形多作彑頭
 # rmfk 𢑱
 # seooo 聚
+sjiil 𫆍
+sjivl 𫆍
 sk 刃
 smikh 𮪡
 # 按官方m中多了個字根┌，形同厂
@@ -352,10 +356,12 @@ tvvv 𦭺
 # uubx 𠚡
 # uumg 𠚖
 # uuvuu 𦱠
+# 加個k的，兼容下字形
+uvfk 𫶦
 # vfyrf 龻
 vl 乚
 vlm 𡳿
-# 保留wc的，兼容字形
+# 保留wc的，兼容下字形
 wcr 𠰝
 wcymf 𡮧
 wllk 𡚇
@@ -364,10 +370,18 @@ wmll 曱
 wx 𡆵
 xkbt 𥂞
 # xum 𠙿
+# 按官方pdf，𬃄𭪢取ybd，𡋪取ybg
+ybd 𬃄
+ybd 𭪢
+# 按官方pdf，同理𠧰取ybmmr
+ybefd 𥹟
+# 按官方pdf，𬃄𭪢取ybd，𡋪取ybg
+ybg 𡋪
 ybhn 𠅙
 # ybypg 𪚤
 yhqm 産
 ykll 斎
+ynddh 𧈇
 # yniz 𰲞
 # yuiz 𰲞
 # yriop 𧫎
