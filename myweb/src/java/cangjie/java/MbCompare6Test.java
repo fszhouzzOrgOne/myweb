@@ -35,10 +35,10 @@ public class MbCompare6Test {
             + File.separator + "cj6.dict.txt";
 
     public static void main(String[] args) throws Exception {
-        // compareNewCodesAndMore();
+        compareNewCodesAndMore();
         // compareNewCodesAndMorePlusOld();
         // checkAllUnicodeHanzi();
-        checkMoreHanziCompat();
+        // checkMoreHanziCompat();
     }
 
     /**
