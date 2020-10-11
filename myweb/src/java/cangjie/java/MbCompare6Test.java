@@ -36,8 +36,36 @@ public class MbCompare6Test {
 
     public static void main(String[] args) throws Exception {
         // compareNewCodesAndMore();
-        compareNewCodesAndMorePlusOld();
+        // compareNewCodesAndMorePlusOld();
         // checkAllUnicodeHanzi();
+        checkMoreHanziCompat();
+    }
+
+    /**
+     * 補充的字在兼容區
+     * 
+     * @throws Exception
+     */
+    private static void checkMoreHanziCompat() throws Exception {
+        List<String> listMoreTmp = IOUtils.readLinesRaw(mb6more);
+        boolean removed = false;
+        for (int i = listMoreTmp.size() - 1; i >= 0; i--) {
+            String one = listMoreTmp.get(i);
+            if (!one.startsWith("#")) {
+                String[] cv = one.split(" +");
+                if (UnicodeHanziUtil.isInhanziCompt(cv[1])) {
+                    System.out.println("# 兼容漢字，取消：" + one);
+                    listMoreTmp.set(i, "# 兼容漢字，取消：" + one);
+                    if (!removed) {
+                        removed = true;
+                    }
+                }
+            }
+        }
+        if (removed) {
+            IOUtils.writeFile(mb6more, listMoreTmp);
+            System.out.println("mb6more updated.");
+        }
     }
 
     private static void checkAllUnicodeHanzi() {
