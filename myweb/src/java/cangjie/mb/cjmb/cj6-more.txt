@@ -103,23 +103,25 @@ hnioc 𬲈
 hvioc 𬲈
 #取oo的錯碼，官方pdf有取，這裡將錯就錯
 #𥶫字都相同，不列入
-oolu 睂
-oounl 𨞅
-oolv 𡡚
+# 將錯就錯，留下它
+buoou 𥋎
 eoou 𣾨
 hoou 𥴔
 mgoou 𤩣
+oolu 睂
+oounl 𨞅
+oolv 𡡚
 #第一種正確取法
-olmbu 睂
-olunl 𨞅
-olmbv 𡡚
-# oml 𠓡
-volu 𡡾
-uolu 𡼴
-eolu 𣾨
-mgolu 𤩣
 buolu 𥋎
+eolu 𣾨
 holu 𥴔
+mgolu 𤩣
+olmbu 睂
+olmbv 𡡚
+olunl 𨞅
+# oml 𠓡
+uolu 𡼴
+volu 𡡾
 #ombu 睂，第二種正確取法
 # vomu 𡡾
 # uomu 𡼴
@@ -174,14 +176,23 @@ rrssk 𡄉
 # jmbi 𫳻
 # jmmw 𫳼
 # jmqx 𫴛
+# 帶奇怪筆劃的字，雪齋加上片，先補上原碼，待定
+# 另，ArtherMcarther說丶几作字首，分體字。
+inkk 𡦹
+# 帶〇的雪齋改口片，先補上原碼，待定
+krr 㔔
+r 〇
 #############################################
 #其他漢字區
 #############################################
 #碼表錯作鶥
 ahumz 眉頁
-#有的字體沒有點
+# 還是留着日中的
+alnm 𣆜
 # alo 𬀲
 # 𠘀字官方pdf取alrm，另有網友編airy，加一個alry。
+# 兼容字形，留下日中
+alrm 𠘀
 alry 𠘀
 ambg 𪱑
 anjlu 𨳻
@@ -223,9 +234,8 @@ hxu 龜
 # 䑮字，按UCS字形从朶，按GB18030-2000/2005从朵
 # hyhnd 䑮
 iiso 辶
+# 官方pdf中作iny
 # inf 礻
-# ArtherMcarther說丶几作字首，分體字。
-inkk 𡦹
 # 𠘤字，按UCS字形上凝下氷，按其他字形可能作左冫、右上疑下氷
 ioie 𠘤
 # mgooi 𬍦
@@ -235,6 +245,7 @@ moie 𠘤
 # jaj 龺
 jook 𠁊
 jv 𫠠
+jvs 𬻒
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
 # kop 㤲
 llsb 帰
@@ -252,6 +263,7 @@ mkr 啓
 mluw 画
 mz 𩾏
 nmxc 𫝖
+nmsm 𬻆
 nz 𩰲
 obou 𠒯
 ogob 𨿇
@@ -342,9 +354,10 @@ yof 鿪
 # C區
 # F區
 # jli 𬺿
-nmsm 𬻆
 # slmm 𬻈
-jvs 𬻒
+#############################################
+#以下是一些符號
+#############################################
 # 中日韓筆畫部件區（可不管）
 ns ㇡
 # 中日韓符號和標點區（可以不管）
@@ -367,7 +380,6 @@ ym 〧
 ymm 〨
 ok 〩
 ie 〩
-#以下是一些符號
 mm ⚋
 m ⚊
 aaa ☰
