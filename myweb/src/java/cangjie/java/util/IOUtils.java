@@ -137,6 +137,49 @@ public class IOUtils {
         }
         return result;
     }
+    
+    /**
+     * 原樣讀取文件
+     * 
+     * @author fszhouzz@qq.com
+     * @time 2020年10月11日 下午7:23:26
+     * @param fileName
+     * @return
+     */
+    public static List<String> readLinesRaw(String fileName) {
+        try {
+            InputStream in = new FileInputStream(fileName);
+            return readLinesRaw(in);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static List<String> readLinesRaw(InputStream in) {
+        List<String> result = new ArrayList<String>();
+        InputStreamReader isr = null;
+        BufferedReader br = null;
+        String str = null;
+        try {
+            isr = new InputStreamReader(in, "UTF-8");
+            br = new BufferedReader(isr);
+            while ((str = br.readLine()) != null) {
+                result.add(str);
+            }
+        } catch (Exception e) {
+        } finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+            }
+            try {
+                in.close();
+            } catch (Exception e) {
+            }
+        }
+        return result;
+    }
 
     /**
      * 寫碼表到文件<br />

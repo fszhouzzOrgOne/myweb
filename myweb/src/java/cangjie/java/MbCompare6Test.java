@@ -48,8 +48,6 @@ public class MbCompare6Test {
                 System.out.println("more: " + line);
             }
         }
-        // set2.addAll(IOUtils.readLines(mb6morePua, true));
-        // set2.addAll(IOUtils.readLines(mb6TheIntroduced, true));
 
         // mb6ToBeIntroduced碼表沒有的編碼
         List<String> list3 = compareGetDiff(list1, set2);
@@ -60,6 +58,23 @@ public class MbCompare6Test {
         Set<String> listExist = getIntersection(list1, set2);
         System.out.println(
                 "mb6ToBeIntroduced碼表已有的編碼: " + listExist.size() + "， " + listExist);
+        // 把補充碼表去掉已有的，寫回mb6more
+        if (!listExist.isEmpty()) {
+            List<String> listMoreTmp = IOUtils.readLinesRaw(mb6more);
+            boolean removed = false;
+            for (int i = listMoreTmp.size() - 1; i >= 0; i--) {
+                String one = listMoreTmp.get(i);
+                if (listExist.contains(one)) {
+                    listMoreTmp.remove(i);
+                    if (!removed) {
+                        removed = true;
+                    }
+                }
+            }
+            if (removed) {
+                IOUtils.writeFile(mb6more, listMoreTmp);
+            }
+        }
 
         // 各個區漢字是否都有了：
         Set<String> chars = new LinkedHashSet<String>();
