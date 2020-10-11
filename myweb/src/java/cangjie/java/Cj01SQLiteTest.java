@@ -34,6 +34,7 @@ public class Cj01SQLiteTest {
     private static String sghmallInOne = Cj00AllInOneTest.sghmallInOne; // 四角號碼
     private static String cjyhallInOne = Cj00AllInOneTest.cjyhallInOne; // 雅虎奇摩
     private static String cjmsallInOne = Cj00AllInOneTest.cjmsallInOne; // 微軟倉頡
+    private static String cjmacxallInOne = Cj00AllInOneTest.cjmacosx105allInOne; // MacOSX10.5
     private static String koreaallInOne = Cj00AllInOneTest.koreaAllInOne; // 朝鮮諺文
     private static String manjuallInOne = Cj00AllInOneTest.manjuAllInOne; // 圈點滿文
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
@@ -51,6 +52,7 @@ public class Cj01SQLiteTest {
     private static List<String> linessghm = null;
     private static List<String> linescjyh = null;
     private static List<String> linescjms = null;
+    private static List<String> linescjmacx = null;
     private static List<String> lineskorea = null;
     private static List<String> linesmanju = null;
     private static List<String> linesipa = null;
@@ -73,6 +75,7 @@ public class Cj01SQLiteTest {
     private static final String cjGensghm = "sghm";
     private static final String cjGencjyh = "cjyhqm";
     private static final String cjGencjms = "cjms";
+    private static final String cjGencjmacx = "cjmacx";
     private static final String cjGenkorea = "korea";
     private static final String cjGenInter = "cjcommon";
     private static final String cjGenManju = "manju";
@@ -122,11 +125,11 @@ public class Cj01SQLiteTest {
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = false; // 2版本自定義字體 560140 韓日单字 457595
+        boolean edition2 = true; // 2版本自定義字體 560140 韓日单字 478745
         boolean edition3 = false; // 版本倉頡三 164681
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean edition5 = true; // 版本五代 178048
+        boolean edition5 = false; // 版本五代 178048
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
         // 倉頡字典
@@ -297,13 +300,15 @@ public class Cj01SQLiteTest {
             linessghm = IOUtils.readLines(sghmallInOne, true);
             linescjyh = IOUtils.readLines(cjyhallInOne, true);
             linescjms = IOUtils.readLines(cjmsallInOne, true);
+            linescjmacx = IOUtils.readLines(cjmacxallInOne, true);
             lineskorea = IOUtils.readLines(koreaallInOne, true);
             linesmanju = IOUtils.readLines(manjuallInOne, true);
             linesipa = IOUtils.readLines(phoneticAllInOne, true);
             linesKoxhanh = IOUtils.readLines(koxhanhAllInOne, true);
             linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne, true);
             // 交集碼表
-            linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne, true);
+            linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne,
+                    true);
             // 倉頡三五
             lines35 = null;
 
@@ -312,6 +317,7 @@ public class Cj01SQLiteTest {
             initMbOrderNoMap(lines3, cjGen3);
             initMbOrderNoMap(linescjyh, cjGencjyh);
             initMbOrderNoMap(linescjms, cjGencjms);
+            initMbOrderNoMap(linescjmacx, cjGencjmacx);
             initMbOrderNoMap(lines2, cjGen2);
             initMbOrderNoMap(lines6, ORDER_MAP_DEFAULT_KEY);
 
@@ -368,6 +374,8 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
             sql_gen = getInsertGenSql(cjGencjms, "微軟倉頡");
             stmt.executeUpdate(sql_gen);
+            sql_gen = getInsertGenSql(cjGencjmacx, "MacOSX10.5");
+            stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenkorea, "朝鮮諺文");
             stmt.executeUpdate(sql_gen);
@@ -410,6 +418,12 @@ public class Cj01SQLiteTest {
                 insertMbdb(stmt, cjGencjms, linescjms, true);
                 c.commit();
                 System.out.println("insert " + cjGencjms + " successfully");
+                selectCountAll(stmt);
+
+                // MacOSX10.5
+                insertMbdb(stmt, cjGencjmacx, linescjmacx, true);
+                c.commit();
+                System.out.println("insert " + cjGencjmacx + " successfully");
                 selectCountAll(stmt);
             }
             if (withCangjie3) {
@@ -531,7 +545,8 @@ public class Cj01SQLiteTest {
         Map<String, Integer> mbOrderNoMap = new HashMap<String, Integer>();
         if (ORDER_MAP_DEFAULT_KEY.equals(key)) {
             int size = lines.size();
-            List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt", true);
+            List<String> rate = IOUtils.readLines(mbsBaseDir + "zi-order.txt",
+                    true);
             int rateSize = rate.size();
             for (int i = 0; i < rateSize; i++) {
                 String one = rate.get(i);

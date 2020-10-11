@@ -111,6 +111,9 @@ public class Cj00AllInOneTest {
             + "cjyahoo-80000.txt"; // 雅虎奇摩
     public static String cjms59000 = mbsBaseDir + "cjmb" + File.separator
             + "cjms-59000.txt"; // 微軟倉頡
+    // 對應MacOSX10.5Cangjie-Arthurmcarthur20200719.txt
+    public static String cjmacOsx10520000 = mbsBaseDir + "cjmb" + File.separator
+            + "cj5-MacOSX10.5.txt"; // 微軟倉頡
     // 合一
     public static String sionTanTsengAllInOne = mbsBaseDir + "allInOne"
             + File.separator + "allInOne-sionTanTseng.txt"; // 曾版湘潭話拼音
@@ -122,6 +125,8 @@ public class Cj00AllInOneTest {
             + "allInOne-cjyahoo.txt"; // 雅虎奇摩
     public static String cjmsallInOne = mbsBaseDir + "allInOne" + File.separator
             + "allInOne-cjms.txt"; // 微軟倉頡
+    public static String cjmacosx105allInOne = mbsBaseDir + "allInOne"
+            + File.separator + "allInOne-cjmacosx105.txt"; // MacOSX10.5
     // 粵語拼音，整合兩個碼表github上rime-aca的粵拼⁺正寫字碼表、
     // mdict字典粤语发声字典081217.mdx簡化字碼表，對簡化字更友好。
     public static String jyutpingAllInOne = mbsBaseDir + "allInOne"
@@ -234,6 +239,10 @@ public class Cj00AllInOneTest {
         // 微軟倉頡
         String[] mbcjms = new String[] { cjms59000 };
         genAllInOne("微軟倉頡", mbcjms, cjmsallInOne, withHeaders);
+
+        // MacOSX10.5
+        String[] mbcjmacos = new String[] { cjmacOsx10520000 };
+        genAllInOne("MacOSX10.5", mbcjmacos, cjmacosx105allInOne, withHeaders);
 
         // 詞組編碼6
         if (withPhrases6) {
