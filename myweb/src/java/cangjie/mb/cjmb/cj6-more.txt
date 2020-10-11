@@ -76,22 +76,24 @@ mshne 𣪔
 # yys 㫇
 # 倒字，可以用「片」作末尾表示倒字。（ArtherMcarther 問過官方得知）
 # 六代官方pdf中有𠄏𠄔𣥒等字的編碼，其他字依例補加，E區爲止
+# irmz 𢨋
+# irzye 𣀨
 # nnz 𠄏
-# vinnz 𢆴
 # nzz 𠄔
+# oirz 𠐲
+# 雪齋的對，ogzf
+# ogzf 𰨇
+# vinnz 𢆴
+# xzx 𣥒
 # yzbuc 𧹂
 # yzbuu 𬢆
-# irzye 𣀨
-# oirz 𠐲
-# irmz 𢨋
-# xzx 𣥒
 # 按ArtherMcarther，引入Z鍵來編碼「反字」
 # 反字如臦𦣩，加容錯
+nnz 𫸪
 rzhpu 𨞰
 rzrau 𨛜
 rztcu 𨞠
 rauz 𨙨
-nnz 𫸪
 szsll 臦
 slslz 𦣩
 # 按ArtherMcarther言“𫥮𫯆𬲈，共同所含的部件，官方回答作字身可取「戈人金」
@@ -179,6 +181,9 @@ rrssk 𡄉
 # 帶奇怪筆劃的字，雪齋加上片，先補上原碼，待定
 # 另，ArtherMcarther說丶几作字首，分體字。
 inkk 𡦹
+jkk 𡧑
+lkmc 𭁇
+niav 𭥟
 # 帶〇的雪齋改口片，先補上原碼，待定
 krr 㔔
 r 〇
@@ -206,6 +211,8 @@ bei 肞
 blxk 𦥼
 # 官方PDF有這個取法
 bmll 𠕲
+# 加個作月的兼容字形
+bmsc 𤓹
 # bru 𭁳
 # bumlc 𥄙
 # bx 𠕄
@@ -219,13 +226,20 @@ eeep 𠭌
 ehsk 涙
 ewfg 濹
 fdmav 粮
+# 作中中的，還是留下
+foll 𧺈
 ggwy 𣫴
 goll 𧺈
 # gyoln 𧺈
 # hdh 𠄒
 hf 爫
 # hi 𬼀
+# 兼容字形，留下的十
+hjh 𠄒
 hog 坕
+# 加個sse和sve的，右上角不分割
+hosse 𤓷
+hosve 𤓷
 hoyhv 𧙍
 hnhii 𮕕
 hnmz 鳳
@@ -233,34 +247,55 @@ hnmz 鳳
 hxu 龜
 # 䑮字，按UCS字形从朶，按GB18030-2000/2005从朵
 # hyhnd 䑮
+# 先補上，待定
+iclii 𧒟
+# 補上帶女的，待定
+ifsvm 𥙥
+mfsvm 𥙥
 iiso 辶
-# 官方pdf中作iny
-# inf 礻
+# 官方pdf中，單打這個用戈弓卜
+iny 礻
 # 𠘤字，按UCS字形上凝下氷，按其他字形可能作左冫、右上疑下氷
 ioie 𠘤
-# mgooi 𬍦
-# mgool 𬍦
-moie 𠘤
-# nxno 欿
+# 錯碼，作弋頭
+ipoll 𢎉
+ipoln 𢎉
 # jaj 龺
+# jli 𬺿
+# 先補上卜的
+jly 𬺿
 jook 𠁊
 jv 𫠠
 jvs 𬻒
+# 先留下kc的，待定
+kcinx 𤫒
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
 # kop 㤲
 llsb 帰
+# 加兩個連在一起作字首的，如𫿞字
+lmmjk 𭤏
+lmnjk 𭤏
+lomnk 𭤏
 # lqmt 䀌
 lso 𬮘
 luoz 頫
+lwct 𭾉
 lwlb 𤲥
 lwlm 甴
+lwmi 𡇛
 mav 良
 mbrv 𠄢
 mbvm 𠄢
+# mgooi 𬍦
+# mgool 𬍦
+# 暫時當作一個個字取，待定
+mimip 𱁬
 mkr 啓
 # 按官方pdf，画字可以mulw和mluw。
 # mluw 画
 mluw 画
+moie 𠘤
+# nxno 欿
 mz 𩾏
 nmxc 𫝖
 nmsm 𬻆
@@ -279,7 +314,6 @@ omfp 𢚒
 ompno 钦
 # onmgi 㺸
 opy 铲
-ozmf 𰨇
 pywv 懐
 # 三疊字，六代規則化。按官方pdf，取qdqdd。
 # qdqdd 䆐
@@ -305,6 +339,9 @@ su 已
 tamw 䕎
 # 同理 𧹘 字
 # tij 𠂀
+# 加兩個，待定
+tmlb 𫷄
+tulb 𫷄
 ty 𠂀
 tj 𠦒
 # 𭀤 字取tlhu不對，同理 𧹘 字，又參考発字。
@@ -349,12 +386,12 @@ ymbuu 𬢆
 # 按官方pdf，遂作字首，道字同理，如導
 # yof 㸂
 yof 鿪
+#############################################
 # 擴展區遺漏的字
+#############################################
 # A區
 # C區
 # F區
-# jli 𬺿
-# slmm 𬻈
 #############################################
 #以下是一些符號
 #############################################
