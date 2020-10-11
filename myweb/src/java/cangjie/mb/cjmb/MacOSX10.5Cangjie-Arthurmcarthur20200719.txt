@@ -1,5 +1,5 @@
 # MacOSX10.5Cangjie-Arthurmcarthur20200719
-# Arthurmcarthur提取，碼表有好多年了，和現在有差異，比如無三代編碼。
+# Arthurmcarthur提取，碼表有好多年了，注意差異，比如缺乏三代編碼，無簡化字。
 一	m
 ═	m
 二	mm
