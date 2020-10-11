@@ -1,10 +1,9 @@
-####### 雪齋删了185個字編碼，這裡再次加入補充碼表，查對了一回其中一些錯碼。
+####### 雪齋之前删了些字編碼，這裡再次加入補充碼表，查對了一回其中一些錯碼。
 bbmm 𠕋
 btt 𠕋
 dnsj 𦖨
 dnzd 𪳻
 dvw 椔
-edaa 𤅍
 fftf 𤎫
 ffto 𤎫
 frse 煅
@@ -14,7 +13,6 @@ hkss 翺
 hlai 兎
 hrdhe 𤿘
 nrdhe 𤿘
-oxnhe 𬾜
 khdlz 獺
 kwgf 𬏼
 limlw 𬠂

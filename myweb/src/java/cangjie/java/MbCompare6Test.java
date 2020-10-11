@@ -36,7 +36,7 @@ public class MbCompare6Test {
 
     public static void main(String[] args) throws Exception {
         // compareNewCodesAndMore();
-        compareNewCodesAndOld();
+        compareNewCodesAndMorePlusOld();
         // checkAllUnicodeHanzi();
     }
 
@@ -73,12 +73,13 @@ public class MbCompare6Test {
         System.out.println(res);
     }
 
-    private static void compareNewCodesAndOld() throws Exception {
+    private static void compareNewCodesAndMorePlusOld() throws Exception {
         Set<String> list1 = new LinkedHashSet<String>(
                 IOUtils.readLines(mb6ToBeIntroduced, true));
 
         Set<String> set2 = new LinkedHashSet<String>();
         set2.addAll(IOUtils.readLines(mb6TheIntroduced, true));
+        set2.addAll(IOUtils.readLines(mb6more, true));
 
         // mb6ToBeIntroduced碼表沒有的編碼
         List<String> list3 = compareGetDiff(list1, set2);
@@ -107,7 +108,7 @@ public class MbCompare6Test {
         }
 
         // mb6ToBeIntroduced碼表沒有的編碼
-        List<String> list3 = compareGetDiff(list1, set2);
+        List<String> list3 = compareGetDiff(list1, listMore);
         System.out.println(
                 "mb6ToBeIntroduced碼表沒有的編碼: " + list3.size() + "， " + list3);
 
@@ -130,6 +131,7 @@ public class MbCompare6Test {
             }
             if (removed) {
                 IOUtils.writeFile(mb6more, listMoreTmp);
+                System.out.println("mb6more updated.");
             }
         }
     }
