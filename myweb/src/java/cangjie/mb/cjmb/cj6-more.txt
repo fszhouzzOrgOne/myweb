@@ -150,6 +150,8 @@ jsjrk 𧂘
 # mfsss 𥙸
 # rrssk 𤕦
 rrssk 𡄉
+rsrkk 𤕦
+rsrkk 𡄉
 # sshne 𣪐
 # ssn 𢎧
 # sss 𠃚
@@ -241,9 +243,8 @@ hf 爫
 # 兼容字形，留下的十
 hjh 𠄒
 hog 坕
-# 加個sse和sve的，右上角不分割
+# 按官方pdf𧦮字取yrsse，加個sse的
 hosse 𤓷
-hosve 𤓷
 hoyhv 𧙍
 hnhii 𮕕
 hnmz 鳳
@@ -326,8 +327,15 @@ pywv 懐
 # qdqdd 䆐
 qmb 靑
 qms 𫠤
+# 補充rhbs的𠿋
 # rhws 𠿋
+rhbs 𠿋
 rhxu 𪚩
+# 加兩個rm作字首的，如𫿞
+rmmjk 𭌔
+rmnjk 𭌔
+# 按官方pdf，𧹘取ttz
+rttz 𠵢
 rykk 𠲲
 # 𢑱字形多作彑頭
 # rmfk 𢑱
