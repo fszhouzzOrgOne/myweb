@@ -35,46 +35,14 @@ public class MbCompare6Test {
             + File.separator + "cj6.dict.txt";
 
     public static void main(String[] args) throws Exception {
+        // compareNewCodesAndMore();
+        compareNewCodesAndOld();
+        // checkAllUnicodeHanzi();
+    }
+
+    private static void checkAllUnicodeHanzi() {
         Set<String> list1 = new LinkedHashSet<String>(
                 IOUtils.readLines(mb6ToBeIntroduced, true));
-
-        Set<String> set2 = new LinkedHashSet<String>();
-        List<String> listMore = IOUtils.readLines(mb6more, true);
-        // 摸否有重複行
-        for (String line : listMore) {
-            if (!set2.contains(line)) {
-                set2.add(line);
-            } else {
-                System.out.println("more: " + line);
-            }
-        }
-
-        // mb6ToBeIntroduced碼表沒有的編碼
-        List<String> list3 = compareGetDiff(list1, set2);
-        System.out.println(
-                "mb6ToBeIntroduced碼表沒有的編碼: " + list3.size() + "， " + list3);
-
-        // mb6ToBeIntroduced碼表已有的碼表
-        Set<String> listExist = getIntersection(list1, set2);
-        System.out.println(
-                "mb6ToBeIntroduced碼表已有的編碼: " + listExist.size() + "， " + listExist);
-        // 把補充碼表註釋掉已有的，寫回mb6more
-        if (!listExist.isEmpty()) {
-            List<String> listMoreTmp = IOUtils.readLinesRaw(mb6more);
-            boolean removed = false;
-            for (int i = listMoreTmp.size() - 1; i >= 0; i--) {
-                String one = listMoreTmp.get(i);
-                if (listExist.contains(one)) {
-                    listMoreTmp.set(i, "# " + one);
-                    if (!removed) {
-                        removed = true;
-                    }
-                }
-            }
-            if (removed) {
-                IOUtils.writeFile(mb6more, listMoreTmp);
-            }
-        }
 
         // 各個區漢字是否都有了：
         Set<String> chars = new LinkedHashSet<String>();
@@ -103,6 +71,67 @@ public class MbCompare6Test {
             res += str;
         }
         System.out.println(res);
+    }
+
+    private static void compareNewCodesAndOld() throws Exception {
+        Set<String> list1 = new LinkedHashSet<String>(
+                IOUtils.readLines(mb6ToBeIntroduced, true));
+
+        Set<String> set2 = new LinkedHashSet<String>();
+        set2.addAll(IOUtils.readLines(mb6TheIntroduced, true));
+
+        // mb6ToBeIntroduced碼表沒有的編碼
+        List<String> list3 = compareGetDiff(list1, set2);
+        System.out.println(
+                "mb6ToBeIntroduced碼表沒有的編碼: " + list3.size() + "， " + list3);
+
+        // mb6ToBeIntroduced碼表已有的碼表
+        Set<String> listExist = getIntersection(list1, set2);
+        System.out
+                .println("mb6ToBeIntroduced碼表已有的編碼: " + listExist.size() + "");
+    }
+
+    private static void compareNewCodesAndMore() throws Exception {
+        Set<String> list1 = new LinkedHashSet<String>(
+                IOUtils.readLines(mb6ToBeIntroduced, true));
+
+        Set<String> set2 = new LinkedHashSet<String>();
+        List<String> listMore = IOUtils.readLines(mb6more, true);
+        // 摸否有重複行
+        for (String line : listMore) {
+            if (!set2.contains(line)) {
+                set2.add(line);
+            } else {
+                System.out.println("more: " + line);
+            }
+        }
+
+        // mb6ToBeIntroduced碼表沒有的編碼
+        List<String> list3 = compareGetDiff(list1, set2);
+        System.out.println(
+                "mb6ToBeIntroduced碼表沒有的編碼: " + list3.size() + "， " + list3);
+
+        // mb6ToBeIntroduced碼表已有的碼表
+        Set<String> listExist = getIntersection(list1, set2);
+        System.out.println("mb6ToBeIntroduced碼表已有的編碼: " + listExist.size()
+                + "， " + listExist);
+        // 把補充碼表註釋掉已有的，寫回mb6more
+        if (!listExist.isEmpty()) {
+            List<String> listMoreTmp = IOUtils.readLinesRaw(mb6more);
+            boolean removed = false;
+            for (int i = listMoreTmp.size() - 1; i >= 0; i--) {
+                String one = listMoreTmp.get(i);
+                if (listExist.contains(one)) {
+                    listMoreTmp.set(i, "# " + one);
+                    if (!removed) {
+                        removed = true;
+                    }
+                }
+            }
+            if (removed) {
+                IOUtils.writeFile(mb6more, listMoreTmp);
+            }
+        }
     }
 
     /**
