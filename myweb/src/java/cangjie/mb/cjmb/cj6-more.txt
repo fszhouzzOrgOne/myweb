@@ -1,26 +1,10 @@
 ####### 雪齋之前删了些字編碼，這裡再次加入補充碼表，查對了一回其中一些錯碼。
-# 兼容漢字，取消：bbmm 𠕋
-# 兼容漢字，取消：btt 𠕋
-# 兼容漢字，取消：dnsj 𦖨
-dnzd 𪳻
-# 兼容漢字，取消：dvw 椔
-# 兼容漢字，取消：fftf 𤎫
-# 兼容漢字，取消：ffto 𤎫
-# 兼容漢字，取消：frse 煅
-# 兼容漢字，取消：fvw 𤉣
-# 兼容漢字，取消：hjss 翺
-# 兼容漢字，取消：hkss 翺
 hlai 兎
 hrdhe 𤿘
 nrdhe 𤿘
-# 兼容漢字，取消：khdlz 獺
 kwgf 𬏼
 limlw 𬠂
-# 兼容漢字，取消：llhjl 牐
-# 兼容漢字，取消：lshjl 牐
 lmje 𭣖
-# 兼容漢字，取消：lwle 叟
-# 兼容漢字，取消：mfyku 𥚚
 mjsqf 𩢽
 mjxmz 𩒞
 mmmu 㒫
@@ -31,37 +15,18 @@ mnru 𭮀
 mrdt 𥔫
 mrlto 𮁅
 mzemi 𮦵
-# 兼容漢字，取消：nso 豕
 nlmyp 𨼆
 omgc 𠋾
 orvmz 𮨖
 otdd 𣞣
 ovlso 𮩆
-# 兼容漢字，取消：pdlz 懶
-# 兼容漢字，取消：pdwf 𢛔
-# 兼容漢字，取消：plbo 懞
 ohkp 𢞋
 qhlb 𢸌
-# 兼容漢字，取消：qjfe 𢯱
-# 兼容漢字，取消：qvvd 摷
-# 兼容漢字，取消：rhi 吆
 sjiil 𫆍
 sjivl 𫆍
-# 兼容漢字，取消：tihp 菧
-# 兼容漢字，取消：tvou 荒
 tqrrs 𮧪
 uvfk 𫶦
-# 兼容漢字，取消：vdlz 嬾
-# 兼容漢字，取消：vf 災
-# 兼容漢字，取消：vfvw 緇
-# 兼容漢字，取消：vggn 嬈
-# 兼容漢字，取消：vhjx 㛼
-# 兼容漢字，取消：vmjx 㛼
-# 兼容漢字，取消：vjce 㛮
-# 兼容漢字，取消：vvxd 巢
-# 兼容漢字，取消：vw 甾
 wwct 𣽭
-# 兼容漢字，取消：wybuc 貫
 ybefd 𥹟
 mmlmc 𭂟
 ynddh 𧈇
@@ -232,6 +197,7 @@ bmsc 𤓹
 # bx 𠕄
 # cmso 㒸
 cwa 曾
+dnzd 𪳻
 # ds 𣎺
 # ds 𠀟
 # ebky 𬉝
