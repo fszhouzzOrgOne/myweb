@@ -80,9 +80,9 @@ mshne 𣪔
 # irzye 𣀨
 # nnz 𠄏
 # nzz 𠄔
-# oirz 𠐲
 # 雪齋的對，ogzf
 # ogzf 𰨇
+# oirz 𠐲
 # vinnz 𢆴
 # xzx 𣥒
 # yzbuc 𧹂
@@ -121,7 +121,6 @@ mgolu 𤩣
 olmbu 睂
 olmbv 𡡚
 olunl 𨞅
-# oml 𠓡
 uolu 𡼴
 volu 𡡾
 #ombu 睂，第二種正確取法
@@ -184,6 +183,11 @@ inkk 𡦹
 jkk 𡧑
 lkmc 𭁇
 niav 𭥟
+oidi 𠍋
+oiki 𠍋
+oiqk 𠇇
+omkv 𠆭
+omnv 𠆭
 # 帶〇的雪齋改口片，先補上原碼，待定
 krr 㔔
 r 〇
@@ -308,9 +312,12 @@ ogob 𨿇
 oihdr ㋿
 olhdr ㋿
 omfp 𢚒
+# oml 𠓡
 # 輔助字根亼，不能跨越字首字身取
 # oml 𠇭
 # omli 𫝇
+# 加個卜的𫝇
+omly 𫝇
 ompno 钦
 # onmgi 㺸
 opy 铲
