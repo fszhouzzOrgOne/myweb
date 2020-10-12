@@ -125,7 +125,7 @@ public class Cj01SQLiteTest {
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
         boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = true; // 2版本自定義字體 560140 韓日单字 478745
+        boolean edition2 = true; // 2版本自定義字體 560140 韓日单字 478703
         boolean edition3 = false; // 版本倉頡三 164681
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
