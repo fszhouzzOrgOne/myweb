@@ -11,6 +11,7 @@
 # yys 㫇
 # 倒字，可以用「片」作末尾表示倒字。（ArtherMcarther 問過官方得知）
 # 六代官方pdf中有𠄏𠄔𣥒等字的編碼，其他字依例補加，E區爲止
+buhwz 𮗙
 # irmz 𢨋
 # irzye 𣀨
 # nnz 𠄏
@@ -118,10 +119,11 @@ rsrkk 𡄉
 # jmmw 𫳼
 # jmqx 𫴛
 # 帶奇怪筆劃的字，雪齋加上片，先補上原碼，待定
-# 另，ArtherMcarther說丶几作字首，分體字。
+# 另，ArtherMcarther說丶几作字首，分體字。如官方六代PDF𠂸取hngt。
 inkk 𡦹
 jkk 𡧑
 lkmc 𭁇
+mwxk 𠪳
 niav 𭥟
 oidi 𠍋
 oiki 𠍋
@@ -189,6 +191,8 @@ hjh 𠄒
 # 官方pdf取hlai
 hlai 兎
 hnhii 𮕕
+# 兼容下字形
+hnmbg 㓘
 hnmz 鳳
 hog 坕
 hoyhv 𧙍
@@ -211,12 +215,19 @@ ioie 𠘤
 # 錯碼，作弋頭
 ipoll 𢎉
 ipoln 𢎉
-# 有的字形作黒，所以加一個
-kwgf 𬏼
 # jaj 龺
+# 如官方PDF𠁊取jook
+jbuk 𥈜
+jkhqu 𣰠
+# 加一個上下分的
+jjwbw 𨐄
 # jli 𬺿
 # 先補上卜的
 jly 𬺿
+# 加個大弓、十弓
+jnyhs 𭤪
+knyhs 𭤪
+# 官方PDF𠁊取jook
 jook 𠁊
 jv 𫠠
 jvs 𬻒
@@ -224,6 +235,8 @@ jvs 𬻒
 kcinx 𤫒
 # 㤲字官方PDF取kop。 ArtherMcarther指出： 以人与下分离可以当字首
 # kop 㤲
+# 有的字形作黒，所以加一個
+kwgf 𬏼
 # 兼容下字形，加個取l的
 limlw 𬠂
 llsb 帰
@@ -232,6 +245,8 @@ lmje 𭣖
 lmmjk 𭤏
 lmnjk 𭤏
 lomnk 𭤏
+# 巿十月
+lnjb 鬧
 # lqmt 䀌
 lso 𬮘
 luoz 頫
@@ -249,6 +264,10 @@ mimip 𱁬
 mjsqf 𩢽
 mjxmz 𩒞
 mkr 啓
+# 加個mlhn，如𠁘𠀺，另有𠁈可能要取mnhfr
+mlhn 𣃪
+# 官方PDF取mlnm
+mlnm 𠀣
 # 按官方pdf，画字可以mulw和mluw。
 # mluw 画
 # 兼容漢字，取消：mluw 画
@@ -259,6 +278,8 @@ mmrhu 况
 # 按官方m中多了個字根┌，形同厂
 mmunl 𨛞
 mmcnl 𨛞
+# 𠁈可能要取mnhfr，不同於𠁘𠀺
+mnhfr 𠁈
 mnru 𭮀
 moie 𠘤
 mrdt 𥔫
@@ -360,6 +381,8 @@ uvfk 𫶦
 # vfyrf 龻
 vl 乚
 vlm 𡳿
+# 加個vo，待定
+vo 𠙴
 # 保留wc的，兼容下字形
 wcr 𠰝
 wcymf 𡮧
@@ -382,6 +405,8 @@ ybmob 𠨆
 # ybypg 𪚤
 yhqm 産
 ykll 斎
+# 加一個，待定
+ylu 𬺾
 ynddh 𧈇
 # yniz 𰲞
 # yuiz 𰲞
