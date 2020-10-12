@@ -12304,6 +12304,7 @@ hnma 凬
 hnma 凮
 hnmb 䉲
 hnmbc 𠙒
+hnmbg 㓘
 hnmbo 颓
 hnmcw 𨡐
 hnme 𩗢
@@ -20625,6 +20626,7 @@ mllw 覀
 mlm 工
 mlmm 𣥄
 mln 㓚
+mlnm 𠀣
 mloc 𧵹
 mlp 𢘑
 mlq 㧭
