@@ -40,6 +40,7 @@ public class Cj01SQLiteTest {
     private static String phoneticAllInOne = Cj00AllInOneTest.phoneticAllInOne; // 國際音標
     private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
     private static String sionTanTsengAllInOne = Cj00AllInOneTest.sionTanTsengAllInOne; // 曾版湘潭話
+    private static String wugniuLophaAllInOne = Cj00AllInOneTest.wugniuLophaAllInOne; // 上海吳語（老派）
 
     private static List<String> lines2 = null;
     private static List<String> lines3 = null;
@@ -58,6 +59,7 @@ public class Cj01SQLiteTest {
     private static List<String> linesipa = null;
     private static List<String> linesKoxhanh = null;
     private static List<String> linesSionTanTseng = null;
+    private static List<String> linesWugniuLopha = null;
     // 交集碼表
     private static List<String> linesInter = null;
     // 倉頡三五
@@ -82,6 +84,7 @@ public class Cj01SQLiteTest {
     private static final String cjGenIpa = "ipa";
     private static final String cjGenKoxhanh = "kohan";
     private static final String cjGenSionTanTseng = "siontts";
+    private static final String cjGenWugniuLopha = "wugnl";
 
     private static Map<String, Map<String, Integer>> mbOrderNoMaps = null; // 文字排序權值
     private static String ORDER_MAP_DEFAULT_KEY = "default";
@@ -115,6 +118,7 @@ public class Cj01SQLiteTest {
     private static boolean withZy = true; // 注音
     private static boolean withKoxhanh = true; // 中古漢語
     private static boolean withSionTanTseng = true; // 曾版湘潭話
+    private static boolean withWugniuLopha = true; // 上海吳語（老派）
 
     private static boolean withCangjieOthers = false; // 加入其他倉頡？
     private static boolean withCangjie6 = false; // 加入蒼頡六？
@@ -129,14 +133,15 @@ public class Cj01SQLiteTest {
         boolean edition3 = false; // 版本倉頡三 164682
         boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
         boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean edition5 = true; // 版本五代 178043
+        boolean editionSpecial5 = true; // 特別版本五代 188760
+        boolean edition5 = false; // 版本五代 178043
         boolean edition6 = false; // 版本六 201084
         boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
         // 倉頡字典
         boolean editionDict = false; // 倉頡字典 372279
         // 其他輸入法是否去掉，純三代要設置這個爲true
         boolean withNotAllOthers = false;
-        if (edition3 || edition5) {
+        if (edition3 || edition5 || editionSpecial5) {
             withNotAllOthers = true;
         }
 
@@ -150,6 +155,7 @@ public class Cj01SQLiteTest {
         edits.add(edition6);
         edits.add(edition62);
         edits.add(editionDict);
+        edits.add(editionSpecial5);
         int trues = 0;
         for (Boolean b : edits) {
             if (b) {
@@ -167,13 +173,14 @@ public class Cj01SQLiteTest {
         if (withNotAllOthers) {
             withManju = false; // 滿文
             withKorea = false; // 韓文
-            withJyutp = true; // 粤拼
+            withJyutp = !editionSpecial5; // 粤拼
             withKarina = false; // 日文
             withSghm = false; // 四角號碼
             withPy = true; // 拼音
             withZy = true; // 注音
             withKoxhanh = false; // 中古漢語
             withSionTanTseng = false;
+            withWugniuLopha = editionSpecial5;
         }
         if (edition1 || edition2) {
             withCangjie6 = true;
@@ -196,7 +203,7 @@ public class Cj01SQLiteTest {
             withCangjie35 = true;
             withCangjie3 = false;
         }
-        if (edition5) {
+        if (edition5 || editionSpecial5) {
             withCangjie6 = false;
             withCangjie5 = true;
             withCangjieOthers = false;
@@ -219,6 +226,7 @@ public class Cj01SQLiteTest {
             withZy = false; // 注音
             withKoxhanh = false; // 中古漢語
             withSionTanTseng = false;
+            withWugniuLopha = false;
 
             withCangjie6 = true;
             withCangjie5 = true;
@@ -306,6 +314,8 @@ public class Cj01SQLiteTest {
             linesipa = IOUtils.readLines(phoneticAllInOne, true);
             linesKoxhanh = IOUtils.readLines(koxhanhAllInOne, true);
             linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne, true);
+            linesWugniuLopha = IOUtils.readLines(wugniuLophaAllInOne, true);
+
             // 交集碼表
             linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne,
                     true);
@@ -521,6 +531,14 @@ public class Cj01SQLiteTest {
                 c.commit();
                 System.out.println(
                         "insert " + cjGenSionTanTseng + " successfully");
+                selectCountAll(stmt);
+            }
+            // 上海吳語（老派）
+            if (withWugniuLopha) {
+                insertMbdb(stmt, cjGenWugniuLopha, linesWugniuLopha, false);
+                c.commit();
+                System.out.println(
+                        "insert " + cjGenWugniuLopha + " successfully");
                 selectCountAll(stmt);
             }
 

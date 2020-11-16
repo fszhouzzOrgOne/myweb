@@ -14,11 +14,12 @@ import cangjie.java.util.IOUtils;
  */
 public class WugniuRawMbTest {
 
-    private static String mbBaseDir = "src\\java\\wugniu\\mb\\";
+    public static String mbBaseDir = "src\\java\\wugniu\\mb\\";
+    public static String resultFile = mbBaseDir + "wugniu_good2order.txt";
 
     public static void main(String[] args) throws Exception {
         resolveWugniuRawMb("wugniu_lopha.dict.yaml", "wugniu_good1.txt");
-        orderWugniuMb("wugniu_good1.txt", "wugniu_good2order.txt");
+        orderWugniuMb("wugniu_good1.txt", resultFile);
     }
 
     private static void orderWugniuMb(String srcFile, String destFile)
@@ -29,10 +30,10 @@ public class WugniuRawMbTest {
             String[] parts = line.split(" +");
             res.add(parts[1] + " " + parts[0]);
         }
-        IOUtils.writeFile(mbBaseDir + destFile, res);
-        Set<String> dups = IOUtils.uniqueCodeFile(mbBaseDir + destFile);
+        IOUtils.writeFile(resultFile, res);
+        Set<String> dups = IOUtils.uniqueCodeFile(resultFile);
         System.out.println(dups);
-        IOUtils.orderCodeFile(mbBaseDir + destFile);
+        IOUtils.orderCodeFile(resultFile);
     }
 
     private static void resolveWugniuRawMb(String srcFile, String destFile)
