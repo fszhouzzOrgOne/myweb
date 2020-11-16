@@ -402,6 +402,9 @@ public class Cj01SQLiteTest {
             sql_gen = getInsertGenSql(cjGenSionTanTseng, "曾版湘潭話");
             stmt.executeUpdate(sql_gen);
 
+            sql_gen = getInsertGenSql(cjGenWugniuLopha, "上海吳語");
+            stmt.executeUpdate(sql_gen);
+
             // 不自動提交
             c.setAutoCommit(false);
 
