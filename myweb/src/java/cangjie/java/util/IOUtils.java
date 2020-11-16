@@ -36,17 +36,23 @@ public class IOUtils {
     /**
      * 碼表去重，重寫文件
      */
-    public static void uniqueCodeFile(String filename) throws Exception {
+    public static Set<String> uniqueCodeFile(String filename) throws Exception {
         System.out.println("去重：" + filename);
         List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename, true));
 
+        Set<String> duplicated = new LinkedHashSet<String>();
         Set<String> uniques = new LinkedHashSet<String>();
         for (String ph : allphrases) {
             if (!uniques.contains(ph)) {
                 uniques.add(ph);
+                continue;
+            }
+            if (!duplicated.contains(ph)) {
+                duplicated.add(ph);
             }
         }
         IOUtils.writeFile(filename, uniques);
+        return duplicated;
     }
 
     /**
