@@ -109,53 +109,51 @@ public class Cj01SQLiteTest {
     /** 只要ANSI的字 */
     private static boolean isOnlyAnsi = false;
     // 是否加入庫中
-    private static boolean withManju = true; // 滿文
-    private static boolean withKorea = true; // 韓文
-    private static boolean withJyutp = true; // 粤拼
-    private static boolean withKarina = true; // 日文
-    private static boolean withSghm = true; // 四角號碼
-    private static boolean withPy = true; // 拼音
-    private static boolean withZy = true; // 注音
-    private static boolean withKoxhanh = true; // 中古漢語
-    private static boolean withSionTanTseng = true; // 曾版湘潭話
-    private static boolean withWugniuLopha = true; // 上海吳語（老派）
+    private static boolean withPy = false; // 拼音
+    private static boolean withJyutp = false; // 粤拼
+    private static boolean withWugniuLopha = false; // 上海吳語（老派）
+    private static boolean withSionTanTseng = false; // 曾版湘潭話
+    private static boolean withKoxhanh = false; // 中古漢語
+    private static boolean withIpa = false; // 國際音標
+    private static boolean withSghm = false; // 四角號碼
+    private static boolean withKarina = false; // 日文
+    private static boolean withKorea = false; // 韓文
+    private static boolean withManju = false; // 滿文
+    private static boolean withZy = false; // 注音
 
-    private static boolean withCangjieOthers = false; // 加入其他倉頡？
-    private static boolean withCangjie6 = false; // 加入蒼頡六？
-    private static boolean withCangjie5 = false; // 加入蒼頡五？
-    private static boolean withCangjie35 = false; // 加入倉頡三五？
+    private static boolean withCangjie6 = false; // 加入蒼頡六
+    private static boolean withCangjie5 = false; // 加入蒼頡五
+    private static boolean withCangjiemacx = false; // 加入倉頡MacX10.5
     private static boolean withCangjie3 = false; // 加入倉頡三
+    private static boolean withCangjieyh = false; // 加入倉頡雅虎
+    private static boolean withCangjiems = false; // 加入倉頡微軟
+    private static boolean withCangjie2 = false; // 加入倉頡二
+    private static boolean withCangjie35 = false; // 加入蒼頡三五
 
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
-        boolean edition1 = false; // 1版本默認字體 同2
-        boolean edition2 = false; // 2版本自定義字體 560140 韓日单字 478703
+        boolean editionAll = false; // 版本自定義字體 513729
         boolean edition3 = false; // 版本倉頡三 164682
-        boolean edition35 = false; // 版本倉頡三五 183716 ANSI 105618
-        boolean edition35only5 = false; // 版本倉頡三五只要五代 178083 ansi 103934
-        boolean editionSpecial5 = true; // 特別版本五代 188760
+        boolean edition35 = false; // 版本倉頡三五 185549
         boolean edition5 = false; // 版本五代 178043
-        boolean edition6 = false; // 版本六 201084
-        boolean edition62 = false; // 版本六，帶詞組 676903 其中詞475817
+        boolean editionSpecial5 = false; // 特别五代，粵語不要，換吳語 188760
+        boolean edition6 = false; // 版本六 275759
+        boolean edition62 = false; // 版本六，帶詞組
+        boolean editionWugniu = true; // 吳語輸入法 102361
         // 倉頡字典
         boolean editionDict = false; // 倉頡字典 372279
-        // 其他輸入法是否去掉，純三代要設置這個爲true
-        boolean withNotAllOthers = false;
-        if (edition3 || edition5 || editionSpecial5) {
-            withNotAllOthers = true;
-        }
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
-        edits.add(edition1);
-        edits.add(edition2);
+        edits.add(editionAll);
         edits.add(edition3);
-        edits.add(edition35);
         edits.add(edition5);
         edits.add(edition6);
         edits.add(edition62);
-        edits.add(editionDict);
+        edits.add(editionWugniu);
+        edits.add(edition35);
         edits.add(editionSpecial5);
+        edits.add(editionDict);
         int trues = 0;
         for (Boolean b : edits) {
             if (b) {
@@ -170,68 +168,97 @@ public class Cj01SQLiteTest {
             return;
         }
 
-        if (withNotAllOthers) {
-            withManju = false; // 滿文
-            withKorea = false; // 韓文
-            withJyutp = !editionSpecial5; // 粤拼
-            withKarina = false; // 日文
-            withSghm = false; // 四角號碼
-            withPy = true; // 拼音
-            withZy = true; // 注音
-            withKoxhanh = false; // 中古漢語
-            withSionTanTseng = false;
-            withWugniuLopha = editionSpecial5;
-        }
-        if (edition1 || edition2) {
+        if (editionAll) {
             withCangjie6 = true;
             withCangjie5 = true;
-            withCangjieOthers = true;
-            withCangjie35 = false;
+            withCangjiemacx = true; // 加入倉頡MacX10.5
             withCangjie3 = true;
+            withCangjieyh = true; // 加入倉頡雅虎
+            withCangjiems = true; // 加入倉頡微軟
+            withCangjie2 = true; // 加入倉頡二
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withWugniuLopha = true; // 上海吳語（老派）
+            withSionTanTseng = true; // 曾版湘潭話
+            withKoxhanh = true; // 中古漢語
+            withIpa = true; // 國際音標
+            withSghm = true; // 四角號碼
+            withKarina = true; // 日文
+            withKorea = true; // 韓文
+            withManju = true; // 滿文
+            withZy = true; // 注音
         }
         if (edition3) {
-            withCangjie6 = false;
-            withCangjie5 = false;
-            withCangjieOthers = false;
-            withCangjie35 = false;
             withCangjie3 = true;
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withIpa = true; // 國際音標
+            withZy = true; // 注音
+        }
+        if (edition5) {
+            withCangjie5 = true;
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withIpa = true; // 國際音標
+            withZy = true; // 注音
         }
         if (edition35) {
-            withCangjie6 = false;
-            withCangjie5 = false;
-            withCangjieOthers = false;
             withCangjie35 = true;
-            withCangjie3 = false;
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withIpa = true; // 國際音標
+            withZy = true; // 注音
         }
-        if (edition5 || editionSpecial5) {
-            withCangjie6 = false;
+        if (editionSpecial5) {
             withCangjie5 = true;
-            withCangjieOthers = false;
-            withCangjie35 = false;
-            withCangjie3 = false;
+
+            withPy = true; // 拼音
+            withWugniuLopha = true; // 上海吳語（老派）
+            withIpa = true; // 國際音標
+            withZy = true; // 注音
         }
-        if (edition6 || edition62) {
+        if (edition6) {
             withCangjie6 = true;
-            withCangjie5 = false;
-            withCangjieOthers = false;
-            withCangjie35 = false;
-            withCangjie3 = false;
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withWugniuLopha = true; // 上海吳語（老派）
+            withSionTanTseng = true; // 曾版湘潭話
+            withKoxhanh = true; // 中古漢語
+            withIpa = true; // 國際音標
+            withSghm = true; // 四角號碼
+            withKarina = true; // 日文
+            withKorea = true; // 韓文
+            withManju = true; // 滿文
+            withZy = true; // 注音
+        }
+        if (edition62) {
+            withCangjie6 = true;
+
+            withPy = true; // 拼音
+            withJyutp = true; // 粤拼
+            withWugniuLopha = true; // 上海吳語（老派）
+            withSionTanTseng = true; // 曾版湘潭話
+            withKoxhanh = true; // 中古漢語
+            withIpa = true; // 國際音標
+            withSghm = true; // 四角號碼
+            withKarina = true; // 日文
+            withKorea = true; // 韓文
+            withManju = true; // 滿文
+            withZy = true; // 注音
+        }
+        if (editionWugniu) {
+            withWugniuLopha = true; // 上海吳語（老派）
+            withPy = true; // 拼音
+            withIpa = true; // 國際音標
         }
         if (editionDict) {
-            withManju = false; // 滿文
-            withKorea = false; // 韓文
-            withJyutp = false; // 粤拼
-            withKarina = false; // 日文
-            withPy = false; // 拼音
-            withZy = false; // 注音
-            withKoxhanh = false; // 中古漢語
-            withSionTanTseng = false;
-            withWugniuLopha = false;
-
             withCangjie6 = true;
             withCangjie5 = true;
-            withCangjieOthers = true;
-            withCangjie35 = false;
             withCangjie3 = true;
             withSghm = true; // 四角號碼
         }
@@ -246,7 +273,7 @@ public class Cj01SQLiteTest {
         // 生成交集碼表
         Cj01MbFormatTest.getCjMbsIntersection();
 
-        insertIntoDb(edition35only5);
+        insertIntoDb();
     }
 
     /**
@@ -254,10 +281,8 @@ public class Cj01SQLiteTest {
      * 
      * @author fszhouzz@qq.com
      * @time 2018年7月28日 下午4:18:02
-     * @param edition35only5
-     *            是版本倉頡三五代合一，且又只要五代
      */
-    private static void insertIntoDb(boolean edition35only5) {
+    private static void insertIntoDb() {
         Connection c = null;
         Statement stmt = null;
         try {
@@ -319,8 +344,6 @@ public class Cj01SQLiteTest {
             // 交集碼表
             linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne,
                     true);
-            // 倉頡三五
-            lines35 = null;
 
             initMbOrderNoMap(lines6, cjGen6);
             initMbOrderNoMap(lines5, cjGen5);
@@ -340,11 +363,9 @@ public class Cj01SQLiteTest {
             linescjms.removeAll(interset);
             if (withCangjie35) {
                 Set<String> set35 = new HashSet<String>(lines5);
-                if (!edition35only5) {
-                    for (String str : lines3) {
-                        if (!set35.contains(str)) {
-                            set35.add(str);
-                        }
+                for (String str : lines3) {
+                    if (!set35.contains(str)) {
+                        set35.add(str);
                     }
                 }
                 lines35 = new ArrayList<String>(set35);
@@ -360,9 +381,6 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
 
             String cj35name = "倉頡三五";
-            if (edition35only5) {
-                cj35name = "倉頡五代";
-            }
             sql_gen = getInsertGenSql(cjGen35, cj35name);
             stmt.executeUpdate(sql_gen);
 
@@ -414,25 +432,31 @@ public class Cj01SQLiteTest {
             System.out.println("insert " + cjGenInter + " successfully");
             selectCountAll(stmt);
 
-            if (withCangjieOthers) {
+            if (withCangjie2) {
                 // 倉頡二代
                 insertMbdb(stmt, cjGen2, lines2, true);
                 c.commit();
                 System.out.println("insert " + cjGen2 + " successfully");
                 selectCountAll(stmt);
+            }
 
+            if (withCangjieyh) {
                 // 雅虎奇摩
                 insertMbdb(stmt, cjGencjyh, linescjyh, true);
                 c.commit();
                 System.out.println("insert " + cjGencjyh + " successfully");
                 selectCountAll(stmt);
+            }
 
+            if (withCangjiems) {
                 // 微軟倉頡
                 insertMbdb(stmt, cjGencjms, linescjms, true);
                 c.commit();
                 System.out.println("insert " + cjGencjms + " successfully");
                 selectCountAll(stmt);
+            }
 
+            if (withCangjiemacx) {
                 // MacX10.5
                 insertMbdb(stmt, cjGencjmacx, linescjmacx, true);
                 c.commit();
@@ -444,6 +468,13 @@ public class Cj01SQLiteTest {
                 insertMbdb(stmt, cjGen3, lines3, true);
                 c.commit();
                 System.out.println("insert " + cjGen3 + " successfully");
+                selectCountAll(stmt);
+            }
+            if (withCangjie35) {
+                // 倉頡三五
+                insertMbdb(stmt, cjGen35, lines35, true);
+                c.commit();
+                System.out.println("insert " + cjGen35 + " successfully");
                 selectCountAll(stmt);
             }
             if (withCangjie5) {
@@ -460,18 +491,14 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGen6 + " successfully");
                 selectCountAll(stmt);
             }
-            // 倉頡三五
-            if (withCangjie35) {
-                insertMbdb(stmt, cjGen35, lines35, true);
+            ////////////////////////////////////////////////////////
+            // 其他
+            ////////////////////////////////////////////////////////
+            // 拼音
+            if (withPy) {
+                insertMbdb(stmt, cjGenpy, linespy, true);
                 c.commit();
-                System.out.println("insert " + cjGen35 + " successfully");
-                selectCountAll(stmt);
-            }
-            // 四角號碼
-            if (withSghm) {
-                insertMbdb(stmt, cjGensghm, linessghm, true);
-                c.commit();
-                System.out.println("insert " + cjGensghm + " successfully");
+                System.out.println("insert " + cjGenpy + " successfully");
                 selectCountAll(stmt);
             }
             // 粵語拼音
@@ -481,18 +508,41 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGenJyutp + " successfully");
                 selectCountAll(stmt);
             }
-            // 拼音
-            if (withPy) {
-                insertMbdb(stmt, cjGenpy, linespy, true);
+            // 上海吳語（老派）
+            if (withWugniuLopha) {
+                insertMbdb(stmt, cjGenWugniuLopha, linesWugniuLopha, false);
                 c.commit();
-                System.out.println("insert " + cjGenpy + " successfully");
+                System.out.println(
+                        "insert " + cjGenWugniuLopha + " successfully");
                 selectCountAll(stmt);
             }
-            // 注音符號
-            if (withZy) {
-                insertMbdb(stmt, cjGenzy, lineszy, false);
+            // 曾版湘潭話
+            if (withSionTanTseng) {
+                insertMbdb(stmt, cjGenSionTanTseng, linesSionTanTseng, false);
                 c.commit();
-                System.out.println("insert " + cjGenzy + " successfully");
+                System.out.println(
+                        "insert " + cjGenSionTanTseng + " successfully");
+                selectCountAll(stmt);
+            }
+            // 中古漢語
+            if (withKoxhanh) {
+                insertMbdb(stmt, cjGenKoxhanh, linesKoxhanh, false);
+                c.commit();
+                System.out.println("insert " + cjGenKoxhanh + " successfully");
+                selectCountAll(stmt);
+            }
+            // 國際音標
+            if (withIpa) {
+                insertMbdb(stmt, cjGenIpa, linesipa, false);
+                c.commit();
+                System.out.println("insert " + cjGenIpa + " successfully");
+                selectCountAll(stmt);
+            }
+            // 四角號碼
+            if (withSghm) {
+                insertMbdb(stmt, cjGensghm, linessghm, true);
+                c.commit();
+                System.out.println("insert " + cjGensghm + " successfully");
                 selectCountAll(stmt);
             }
             // 日語假名
@@ -516,32 +566,11 @@ public class Cj01SQLiteTest {
                 System.out.println("insert " + cjGenManju + " successfully");
                 selectCountAll(stmt);
             }
-            // 國際音標
-            insertMbdb(stmt, cjGenIpa, linesipa, false);
-            c.commit();
-            System.out.println("insert " + cjGenIpa + " successfully");
-            selectCountAll(stmt);
-            // 中古漢語
-            if (withKoxhanh) {
-                insertMbdb(stmt, cjGenKoxhanh, linesKoxhanh, false);
+            // 注音符號
+            if (withZy) {
+                insertMbdb(stmt, cjGenzy, lineszy, false);
                 c.commit();
-                System.out.println("insert " + cjGenKoxhanh + " successfully");
-                selectCountAll(stmt);
-            }
-            // 曾版湘潭話
-            if (withSionTanTseng) {
-                insertMbdb(stmt, cjGenSionTanTseng, linesSionTanTseng, false);
-                c.commit();
-                System.out.println(
-                        "insert " + cjGenSionTanTseng + " successfully");
-                selectCountAll(stmt);
-            }
-            // 上海吳語（老派）
-            if (withWugniuLopha) {
-                insertMbdb(stmt, cjGenWugniuLopha, linesWugniuLopha, false);
-                c.commit();
-                System.out.println(
-                        "insert " + cjGenWugniuLopha + " successfully");
+                System.out.println("insert " + cjGenzy + " successfully");
                 selectCountAll(stmt);
             }
 
