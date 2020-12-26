@@ -1,7 +1,9 @@
 package nowcoder;
 
+import java.util.Scanner;
+
 /**
- * NC105    二分查找<br/>
+ * NC105 二分查找<br/>
  * 请实现有重复数字的有序数组的二分查找。<br/>
  * 输出在数组中第一个大于等于查找值的位置，如果数组中不存在这样的数，则输出数组长度加一。
  * 
@@ -11,8 +13,11 @@ package nowcoder;
 public class NC105BinarySearch {
 
     public static void main(String[] args) {
-//        String input = "5,4,[1,2,4,4,5]";
-        String input = "5,1,[2,2,4,4,5]";
+        // 5,4,[1,2,4,4,5]
+        // 5,1,[2,2,4,4,5]
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        sc.close();
         String[] parts = input.replaceAll("\\[|\\]", "").split(",");
         int n = Integer.parseInt(parts[0]);
         int v = Integer.parseInt(parts[1]);
