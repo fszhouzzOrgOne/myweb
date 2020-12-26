@@ -1,8 +1,11 @@
 package utils;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 數學計算
@@ -11,6 +14,86 @@ import java.text.DecimalFormat;
  * @time 2019年3月9日 下午10:04:47
  */
 public class MathUtil {
+    /** 階乘 */
+    public static BigInteger factorial(String num) {
+        return factorial(new BigInteger(num.trim()));
+    }
+
+    /** 階乘 */
+    public static BigInteger factorial(BigInteger bi) {
+        if (bi.compareTo(BigInteger.ZERO) == 0
+                || bi.compareTo(BigInteger.ONE) == 0) {
+            return BigInteger.ONE;
+        }
+        return bi.multiply(factorial(bi.subtract(BigInteger.ONE)));
+    }
+
+    /** 組合n取m：C(n,m)=n!/((n-m)! * m!) */
+    public static BigInteger combination(String n, String m) {
+        return combination(new BigInteger(n), new BigInteger(m));
+    }
+
+    /** 組合n取m：C(n,m)=n!/((n-m)! * m!) */
+    public static BigInteger combination(BigInteger bin, BigInteger bim) {
+        return factorial(bin)
+                .divide(factorial(bin.subtract(bim)).multiply(factorial(bim)));
+    }
+
+    /** 是否相等 */
+    public static boolean checkEqual(String num1, String num2) {
+        BigDecimal bd1 = new BigDecimal(num1);
+        BigDecimal bd2 = new BigDecimal(num2);
+        return bd1.compareTo(bd2) == 0;
+    }
+
+    /** 菲波納契數，一個小於它，一個大於等於它 */
+    public static List<BigInteger> leastFibonacciGtOrEq(String s) {
+        return leastFibonacciGtOrEq(new BigInteger(s));
+    }
+
+    /** 菲波納契數，一個小於它，一個大於等於它 */
+    public static List<BigInteger> leastFibonacciGtOrEq(BigInteger bi) {
+        List<BigInteger> res = new ArrayList<BigInteger>();
+        if (bi.compareTo(BigInteger.ZERO) == 0) {
+            res.add(BigInteger.ONE);
+            res.add(BigInteger.ONE);
+            return res;
+        }
+        BigInteger tmp = BigInteger.ONE;
+        BigInteger tmp2 = tmp.add(tmp);
+        while (tmp2.compareTo(bi) < 0) {
+            BigInteger tmp3 = tmp2;
+            tmp2 = tmp2.add(tmp);
+            tmp = tmp3;
+        }
+        res.add(tmp);
+        res.add(tmp2);
+        return res;
+    }
+
+    /** 快速幂 */
+    public static BigInteger powerFast(String a, String b) {
+        return powerFast(new BigInteger(a), new BigInteger(b));
+    }
+
+    /** 快速幂 */
+    public static BigInteger powerFast(BigInteger a, BigInteger b) {
+        BigInteger bi2 = BigInteger.valueOf(2);
+        BigInteger res = BigInteger.ONE;
+        BigInteger base = a;
+        while (b.compareTo(BigInteger.ZERO) != 0) {
+            // 指數是單數時，把基數乘一次到結果中
+            if (b.remainder(bi2).compareTo(BigInteger.ONE) == 0) {
+                res = res.multiply(base);
+            }
+            // 指數減半，直到1，到0結束。
+            b = b.divide(bi2);
+            // 基數變成自己的平方
+            base = base.multiply(base);
+        }
+        return res;
+    }
+
     /**
      * 求百分比1，返回字符串结果
      *
@@ -218,5 +301,11 @@ public class MathUtil {
         System.out.println(formatDecimal("2.546234", 8, true));
         System.out.println(formatDecimal("2.546234", 8, false));
         System.out.println(formatDecimal("2.546234", null, false));
+        System.out.println(factorial("3"));
+        System.out.println(factorial("5"));
+        System.out.println(combination("5", "3"));
+        System.out.println(checkEqual("3.1400", "3.14"));
+        System.out.println(leastFibonacciGtOrEq("5"));
+        System.out.println(powerFast("3", "5"));
     }
 }
