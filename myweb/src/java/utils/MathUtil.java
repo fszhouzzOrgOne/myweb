@@ -40,10 +40,13 @@ public class MathUtil {
     }
 
     /** 是否相等 */
-    public static boolean checkEqual(String num1, String num2) {
-        BigDecimal bd1 = new BigDecimal(num1);
-        BigDecimal bd2 = new BigDecimal(num2);
+    public static boolean checkEqual(BigDecimal bd1, BigDecimal bd2) {
         return bd1.compareTo(bd2) == 0;
+    }
+
+    /** 是否相等 */
+    public static boolean checkEqual(String num1, String num2) {
+        return checkEqual(new BigDecimal(num1), new BigDecimal(num2));
     }
 
     /** 菲波納契數，一個小於它，一個大於等於它 */
@@ -140,9 +143,6 @@ public class MathUtil {
         if (StringUtil.isEmpty(numerator) || StringUtil.isEmpty(denominator)) {
             return null;
         }
-        // if (denominator.trim().matches("(-+)?0*\\.?0*")) {
-        // return null;
-        // }
         BigDecimal a = new BigDecimal(numerator.trim());
         BigDecimal b = new BigDecimal(denominator.trim());
         if (b.compareTo(BigDecimal.ZERO) == 0) {
