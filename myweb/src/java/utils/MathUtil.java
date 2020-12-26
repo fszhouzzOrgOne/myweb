@@ -1,10 +1,8 @@
-package math;
+package utils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
-
-import string.StringUtil;
 
 /**
  * 數學計算
