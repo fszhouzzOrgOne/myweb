@@ -1,4 +1,4 @@
-package baijuncheng;
+package nowcoder;
 
 import java.util.Calendar;
 import java.util.Scanner;

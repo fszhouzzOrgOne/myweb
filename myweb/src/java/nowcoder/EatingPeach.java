@@ -1,4 +1,4 @@
-package baijuncheng;
+package nowcoder;
 
 public class EatingPeach {
 

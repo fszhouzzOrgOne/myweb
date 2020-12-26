@@ -1,4 +1,4 @@
-package baijuncheng;
+package nowcoder;
 
 import java.util.Arrays;
 import java.util.Comparator;

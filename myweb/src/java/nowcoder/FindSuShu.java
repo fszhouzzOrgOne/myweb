@@ -1,4 +1,4 @@
-package baijuncheng;
+package nowcoder;
 
 import java.util.ArrayList;
 import java.util.List;
