@@ -14,7 +14,7 @@ import java.util.Scanner;
  * @author fszhouzz@qq.com
  * @time 2021年1月9日 下午7:47:27
  */
-public class NC45TraverseBinaryTree {
+public class NC045TraverseBinaryTree {
 
     public static void main(String[] args) {
         // {1,2,3}
