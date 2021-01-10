@@ -9,13 +9,18 @@ import java.util.Scanner;
  * NC45 实现二叉树先序，中序和后序遍历<br/>
  * 輸入是按樹的行，一行一行來的<br/>
  * 注意格式是帶#的表示空元素：[40,#,41,9,7,#,14,21,#,34,30,27,3]<br/>
- * 如果上面有个節點是#了，輸入就不會再輸入它的子節點了
+ * 如果上面有個節點是#了，輸入就不會再輸入它的子節點了
  * 
  * @author fszhouzz@qq.com
  * @time 2021年1月9日 下午7:47:27
  */
 public class NC045TraverseBinaryTree {
 
+    /**
+     * 核心編程模式，只讓寫threeOrders一個方法<br/>
+     * 從main寫起，生成樹、父子下標關係等，全部都考察一遍<br/>
+     * 隨時測試。編程理論，寫一點，測一測，寫一點，測一測，寫一點，測一測<br/>
+     */
     public static void main(String[] args) {
         // {1,2,3}
         // {1,2,#,3,4,5}
@@ -58,45 +63,64 @@ public class NC045TraverseBinaryTree {
         // write code here
         int[][] arr = new int[3][];
         // 先序
-        List<Integer> list = new ArrayList<Integer>();
-        preorderTravers(root, list);
-        arr[0] = list2Array(list);
+        // 收集器模式：List<Integer> list = new ArrayList<Integer>();
+        // 訪問者模式：用個訪問者對象
+        TreeNodeVisitor visitor = new TreeNodeVisitor();
+        preorderTravers(root, visitor);
+        arr[0] = visitor.list2Array();
         // 中序
-        list = new ArrayList<Integer>();
-        inorderTravers(root, list);
-        arr[1] = list2Array(list);
+        TreeNodeVisitor visitor2 = new TreeNodeVisitor();
+        inorderTravers(root, visitor2);
+        arr[1] = visitor2.list2Array();
         // 後序
-        list = new ArrayList<Integer>();
-        postorderTravers(root, list);
-        arr[2] = list2Array(list);
+        TreeNodeVisitor visitor3 = new TreeNodeVisitor();
+        postorderTravers(root, visitor3);
+        arr[2] = visitor3.list2Array();
         return arr;
     }
 
-    private static void postorderTravers(TreeNode root, List<Integer> list) {
+    private static void postorderTravers(TreeNode root, TreeNodeVisitor visitor) {
         if (null == root) {
             return;
         }
-        postorderTravers(root.left, list);
-        postorderTravers(root.right, list);
-        list.add(root.val);
+        postorderTravers(root.left, visitor);
+        postorderTravers(root.right, visitor);
+        visitor.add(root.val);
     }
 
-    private static void inorderTravers(TreeNode root, List<Integer> list) {
+    private static void inorderTravers(TreeNode root, TreeNodeVisitor visitor) {
         if (null == root) {
             return;
         }
-        inorderTravers(root.left, list);
-        list.add(root.val);
-        inorderTravers(root.right, list);
+        inorderTravers(root.left, visitor);
+        visitor.add(root.val);
+        inorderTravers(root.right, visitor);
     }
 
-    private static void preorderTravers(TreeNode root, List<Integer> list) {
+    private static void preorderTravers(TreeNode root, TreeNodeVisitor visitor) {
         if (null == root) {
             return;
         }
-        list.add(root.val);
-        preorderTravers(root.left, list);
-        preorderTravers(root.right, list);
+        visitor.add(root.val);
+        preorderTravers(root.left, visitor);
+        preorderTravers(root.right, visitor);
+    }
+
+    /** 訪問者 */
+    static class TreeNodeVisitor {
+        List<Integer> list = new ArrayList<Integer>();
+        
+        public void add(Integer v) {
+            list.add(v);
+        }
+        
+        private int[] list2Array() {
+            int[] arr = new int[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                arr[i] = list.get(i);
+            }
+            return arr;
+        }
     }
 
     /**
@@ -132,26 +156,6 @@ public class NC045TraverseBinaryTree {
 
     private static int getRightIndex(int currIndex) {
         return currIndex * 2 + 2;
-    }
-
-    private static TreeNode addToTree(TreeNode one, TreeNode root) {
-        if (null == root) {
-            return one;
-        }
-        if (one.val >= root.val) {
-            if (null == root.right) {
-                root.right = one;
-            } else {
-                addToTree(one, root.right);
-            }
-        } else {
-            if (null == root.left) {
-                root.left = one;
-            } else {
-                addToTree(one, root.left);
-            }
-        }
-        return root;
     }
 
     /** 列表轉成數組 */

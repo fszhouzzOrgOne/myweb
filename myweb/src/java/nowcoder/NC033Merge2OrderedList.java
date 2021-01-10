@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author fszhouzz@qq.com
  * @time 2021年1月10日 上午10:45:47
  */
-public class NC033Meger2OrderedList {
+public class NC033Merge2OrderedList {
 
     static class ListNode {
        int val;
@@ -34,6 +34,7 @@ public class NC033Meger2OrderedList {
         print(res);
     }
 
+    /** 合併兩個鏈表，時間複雜度 O(m + n)*/
     public static ListNode mergeTwoLists (ListNode l1, ListNode l2) {
         ListNode head = null;
         ListNode tail = null;
