@@ -133,7 +133,7 @@ public class ListUtil {
         if (isEmpty(list) || list.size() < 2) {
             return list;
         }
-        ComparatorByWeights compa = new ComparatorByWeights(weights);
+        ComparatorByWeightsReversed compa = new ComparatorByWeightsReversed(weights);
         // 後面開始找，找到第一個上升
         int currIndex = list.size() - 1;
         int previous = currIndex - 1;
