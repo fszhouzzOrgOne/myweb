@@ -26,6 +26,9 @@ public class TimeZoneUtil {
         System.out.println("從東八區，轉到西三區：" + DateFormatUtil
                 .format(convertTimeZone(date, generateTimeZone("UTC+8:00"),
                         generateTimeZone("UTC-3:00"))));
+        System.out.println("從東八區，轉到西五區：" + DateFormatUtil
+                .format(convertTimeZone(date, generateTimeZone("UTC+8:00"),
+                        generateTimeZone("UTC-5:00"))));
         System.out.println("從東八區，轉到東十三區：" + DateFormatUtil
                 .format(convertTimeZone(date, generateTimeZone("UTC+8:00"),
                         generateTimeZone("UTC+13:00"))));
@@ -33,7 +36,11 @@ public class TimeZoneUtil {
 
     /**
      * 從一個時區，轉到另一個時區<br/>
-     * 也是計算時間戳的差，用默認的Date表示
+     * 也是計算時間戳的差，用默認的Date表示<br/>
+     * Date打印出來，是有默認時區的，這樣轉換的用處，就是：<br/>
+     * 服務器、數據庫，默認時區不變，客户端時區可以不同，<br/>
+     * 客户端傳過來的時間，可以用它的時區，統一轉換成服務器的時區時間，統一處理<br/>
+     * 方便用於客户端傳來時間戳，服務器用Date對象接收的情況
      * 
      * @param srcDate
      * @param srcTimezone
@@ -53,10 +60,8 @@ public class TimeZoneUtil {
     }
 
     /**
-     * 把時間轉換成UTC標準時間，這裡說的是指：<br/>
-     * 把srcDate時間，關注它的年月日打印結果，當成是這個時區的時間，<br/>
-     * 然後求UTC標準時間，也關注它的年月日。<br/>
-     * 效果就是：打印出來後，年月日時分秒變化了
+     * 把時間轉換成UTC標準時間，返回一個Date對象：<br/>
+     * Date對象的時間戳變化了，減去了相對於UTC時區偏移量<br/>
      * 
      * @param srcDate
      * @param timezone
@@ -74,21 +79,17 @@ public class TimeZoneUtil {
         // 當前時區時間和UTC標準時間偏移量計算
         Calendar cal = Calendar.getInstance();
         cal.setTimeZone(timezone);
-        cal.setTimeInMillis(srcTime);
         // 相對於UTC時區偏移量
         long zoneOffset = cal.get(Calendar.ZONE_OFFSET);
         // 夏令時偏移量the daylight saving offset in milliseconds.
         long dlsOffset = cal.get(Calendar.DST_OFFSET);
-        long millisUtc = (cal.getTimeInMillis() - zoneOffset - dlsOffset);
-        cal.setTimeZone(generateTimeZone("GMT+00:00"));
-        cal.setTimeInMillis(millisUtc);
-        return cal.getTime();
+        long millisUtc = (srcTime - zoneOffset - dlsOffset);
+        return new Date(millisUtc);
     }
 
     /**
      * 假設utcDate中是UTC標準時間，求對應時區的時間<br/>
-     * 關注它的打印結果，返回值打印出來的時間，就是當UTC標準時間是utcDate時，<br/>
-     * 對應時區的時間打印出來是什麼<br/>
+     * utcDate的時間戳變化了，加上了時區相對於UTC時區偏移量<br/>
      * 
      * @param utcDate
      * @param timezone
@@ -106,14 +107,12 @@ public class TimeZoneUtil {
         // 當前時區時間和UTC標準時間偏移量計算
         Calendar cal = Calendar.getInstance();
         cal.setTimeZone(timezone);
-        cal.setTimeInMillis(srcTime);
         // 相對於UTC時區偏移量
         long zoneOffset = cal.get(Calendar.ZONE_OFFSET);
         // 夏令時偏移量the daylight saving offset in milliseconds.
         long dlsOffset = cal.get(Calendar.DST_OFFSET);
-        long millisUtc = (cal.getTimeInMillis() + zoneOffset + dlsOffset);
-        cal.setTimeInMillis(millisUtc);
-        return cal.getTime();
+        long millisZone = (srcTime + zoneOffset + dlsOffset);
+        return new Date(millisZone);
     }
 
     /**
