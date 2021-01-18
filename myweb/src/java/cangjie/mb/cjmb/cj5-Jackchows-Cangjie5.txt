@@ -10906,6 +10906,7 @@ dhus    櫋
 dhuu    橇
 dhuu    𣖏
 dhvd    栎
+dhvh    𭩩
 dhvi    柢
 dhvl    枊
 dhvo    柧
@@ -28067,6 +28068,7 @@ hmhf    𥷅
 hmhgu    𣱎
 hmhl    𥭕
 hmhml    斵
+hmhml    斲
 hmhml    𣂠
 hmhml    𣂩
 hmhmm    㽓
@@ -38482,7 +38484,6 @@ jhus    㝰
 jhuu    𡪣
 jhuu    𡬃
 jhvfu    𬔕
-jhvh    𭩩
 jhws    𡫘
 jhxc    𧸹
 jhxf    寫
@@ -46628,6 +46629,7 @@ lmbl    䙥
 lmbm    𧙸
 lmbo    贵
 lmbo    𧟙
+lmbpl    𦘝
 lmbt    𭾋
 lmbu    𥅌
 lmbuc    貴
@@ -75187,8 +75189,8 @@ rnks    𭊞
 rnkv    唌
 rnl    吲
 rnl    𨙫
-rnlb    𠶴
 rnlb    𡃴
+rnlb    𠶴
 rnld    𠴻
 rnld    𪡷
 rnle    𠻱
@@ -78821,6 +78823,7 @@ sihqj    𫴵
 sihqo    镻
 sihqu    𨱞
 sihsb    𨲜
+sihub    𨲰
 sihuc    𨳄
 sihus    𨲾
 sihvp    𨱡
@@ -79974,7 +79977,6 @@ sohon    𪨜
 sohqo    𡱛
 sohr    𪟰
 soht    𡱚
-sohub    𨲰
 sohyn    䖙
 sohyu    䖙
 soin    㔲
@@ -90934,6 +90936,7 @@ vhae    𭒉
 vhaf    𡡅
 vhag    媓
 vhail    郷
+vhail    𠨞
 vhail    𭅼
 vhaj    𡟷
 vhak    𡞃
@@ -90975,10 +90978,12 @@ vhgu    姺
 vhhc    嫌
 vhhl    㚹
 vhhpl    鄕
+vhhpl    𠨞
 vhhpl    𭅼
 vhhpu    𨝅
 vhhq    𰠺
 vhhsl    鄕
+vhhsl    𠨞
 vhhsl    𭅼
 vhhw    媹
 vhi    𡚸
@@ -91069,6 +91074,7 @@ vhsk    嬓
 vhsk    𡝢
 vhsk    𡞬
 vhsl    𡟧
+vhsl    𠨍
 vhsu    𡠣
 vht    𡛈
 vhtcl    𨜕
@@ -91488,7 +91494,6 @@ vl    乚
 vl    𠂈
 vla    𪥮
 vlaie    𫩃
-vlail    𠨞
 vlapv    𢇋
 vlav    㜢
 vlbgr    𰀧
@@ -91509,8 +91514,6 @@ vlhbr    嚮
 vlhbr    𪢞
 vlhda    𬳧
 vlhpe    𫩃
-vlhpl    𠨞
-vlhsl    𠨞
 vlit    𫱕
 vljbj    𡣤
 vljr    𡞐
@@ -91546,7 +91549,6 @@ vlsh    𠚨
 vlsh    𰄽
 vlshi    𬻲
 vlsk    𬻲
-vlsl    𠨍
 vlsp    𭑽
 vlsw    𫝮
 vlthu    𩠹
@@ -98923,7 +98925,7 @@ xhmff    𫂦
 xhmgn    籈
 xhmgt    𰪅
 xhmha    䲼
-xhmhm    𣂠
+xhmhm    斲
 xhmhn    𥬑
 xhmje    𢺾
 xhmkd    𭠋
@@ -104616,7 +104618,7 @@ xrnhs    𠯷
 xrnin    𠰄
 xrniw    𠻙
 xrnl    𨙫
-xrnlb    𡃴
+xrnlb    𠶴
 xrnld    𪡷
 xrnlm    𠾐
 xrnlq    𭌇
@@ -107050,11 +107052,11 @@ xvgom    𩞠
 xvgp    㥨
 xvgrr    𡣗
 xvgrv    𡟌
-xvhai    𭅼
+xvhai    𠨞
 xvhat    𡞌
 xvhbk    𪦂
-xvhhp    𭅼
-xvhhs    𭅼
+xvhhp    𠨞
+xvhhs    𠨞
 xvhio    𡜁
 xvhjr    𡝜
 xvhju    𡟢
@@ -107066,6 +107068,7 @@ xvhni    𫰉
 xvhok    𭒧
 xvhp    𭝇
 xvhsk    𡝢
+xvhsl    𠨍
 xvhu    𰀵
 xvhwp    𡠌
 xvhws    𪦪
@@ -109900,6 +109903,8 @@ xxvfu    𮈁
 xxvfy    䜌
 xxvgg    𫮸
 xxvgp    𢣘
+xxvha    𭅼
+xxvhh    𭅼
 xxvhs    𡞬
 xxvhw    𡠴
 xxvhx    𭒥
