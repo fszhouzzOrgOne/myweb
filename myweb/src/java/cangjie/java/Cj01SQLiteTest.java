@@ -139,9 +139,9 @@ public class Cj01SQLiteTest {
         boolean editionSpecial5 = false; // 特别五代，粵語不要，換吳語 188760
         boolean edition6 = false; // 版本六 275759
         boolean edition62 = false; // 版本六，帶詞組
-        boolean editionWugniu = true; // 吳語輸入法 102361
+        boolean editionWugniu = false; // 吳語輸入法 102361
         // 倉頡字典
-        boolean editionDict = false; // 倉頡字典 372279
+        boolean editionDict = true; // 倉頡字典 372031
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
@@ -259,7 +259,11 @@ public class Cj01SQLiteTest {
         if (editionDict) {
             withCangjie6 = true;
             withCangjie5 = true;
+            withCangjiemacx = true;
             withCangjie3 = true;
+            withCangjieyh = true; // 加入倉頡雅虎
+            withCangjiems = true; // 加入倉頡微軟
+            withCangjie2 = true;
             withSghm = true; // 四角號碼
         }
 
