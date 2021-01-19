@@ -141,7 +141,7 @@ public class Cj01SQLiteTest {
         boolean edition62 = false; // 版本六，帶詞組
         boolean editionWugniu = false; // 吳語輸入法 102361
         // 倉頡字典
-        boolean editionDict = true; // 倉頡字典 372031
+        boolean editionDict = true; // 倉頡字典 372437
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
