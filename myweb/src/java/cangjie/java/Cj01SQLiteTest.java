@@ -132,7 +132,7 @@ public class Cj01SQLiteTest {
 
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
-        boolean editionAll = false; // 版本自定義字體 513729
+        boolean editionAll = true; // 版本自定義字體 514145
         boolean edition3 = false; // 版本倉頡三 164682
         boolean edition35 = false; // 版本倉頡三五 185549
         boolean edition5 = false; // 版本五代 178043
@@ -141,7 +141,7 @@ public class Cj01SQLiteTest {
         boolean edition62 = false; // 版本六，帶詞組
         boolean editionWugniu = false; // 吳語輸入法 102361
         // 倉頡字典
-        boolean editionDict = true; // 倉頡字典 372442
+        boolean editionDict = false; // 倉頡字典 372442
 
         // 驗證多個版本，edition35only5除外
         List<Boolean> edits = new ArrayList<Boolean>();
