@@ -13,10 +13,77 @@ import java.util.List;
 public class StringUtil {
     
     public static void main(String[] args) {
-        String str = "1223";
-        generateAllPermutationTest(str);
+        String str = "abcdabf";
+        String p = "bfc";
+        int i = indexOfByKMP(str, p);
+        System.out.println(i);
     }
     
+    /**
+     * KMP算法實現
+     * 
+     * @param str 文本串
+     * @param p 模式串
+     * @return 求模式串在文本串，第一次出現的下標
+     */
+    public static int indexOfByKMP(String str, String p) {
+        int i = 0;
+        int j = 0;
+        // j下標的復位位置數組
+        int[] nextJ = generateKMPNextJArr(p);
+        int res = -1;
+        while (i < str.length()) {
+            // j是-1時，模式串p要整體後移，所以都要++，也防越界
+            if (-1 == j || str.charAt(i) == p.charAt(j)) {
+                i++;
+                j++;
+                // 匹配成功了，j到p的了末尾
+                if (j >= p.length()) {
+                    // i也加了1,所以直接減長度
+                    res = i - p.length();
+                    break;
+                }
+            } else {
+                // KMP的目的在這裡了
+                // i不動，j移動到指定位置
+                j = nextJ[j];
+            }
+        }
+        return res;
+    }
+    
+    /** 
+     * KMP算法中，模式串的next數組，j下標的復位位置數組<br/>
+     * 用於當有一個不匹配了，模式串中的下標移動到哪個位置
+     */
+    private static int[] generateKMPNextJArr(String p) {
+        int[] nextJ = new int[p.length()];
+        for (int j = 0; j < p.length(); j++) {
+            if (0 == j) {
+                nextJ[j] = -1; // 第一個就不匹配，模式串全體後移
+            } else {
+                int pre = j - 1;
+                determineKMPNextJValue(p, nextJ, j, pre);
+            }
+        }
+        return nextJ;
+    }
+
+    /** KMP算法模式串的next數組，按前面一個值，得到當前值 */
+    private static void determineKMPNextJValue(String p, int[] nextJ, int j,
+            int currPre) {
+        if (nextJ[currPre] == -1) {
+            nextJ[j] = 0;
+            return;
+        }
+        // j所在位置前一個字符，等於遞歸中前綴的後面那個位置的字符
+        if (p.charAt(j - 1) == p.charAt(nextJ[currPre])) {
+            nextJ[j] = nextJ[currPre] + 1;
+        } else {
+            determineKMPNextJValue(p, nextJ, j, nextJ[currPre]);
+        }
+    }
+
     // 得到字符串的全排列測試
     public static void generateAllPermutationTest(String str) {
         String tmp1 = generateFirstPermutation(str);
