@@ -41,6 +41,7 @@ public class Cj01SQLiteTest {
     private static String koxhanhAllInOne = Cj00AllInOneTest.koxhanhAllInOne; // 中古漢語
     private static String sionTanTsengAllInOne = Cj00AllInOneTest.sionTanTsengAllInOne; // 曾版湘潭話
     private static String wugniuLophaAllInOne = Cj00AllInOneTest.wugniuLophaAllInOne; // 上海吳語（老派）
+    private static String wugniuRuiAnAllInOne = Cj00AllInOneTest.wugniuRuiAnAllInOne; // 甌越瑞安吳語
 
     private static List<String> lines2 = null;
     private static List<String> lines3 = null;
@@ -60,6 +61,7 @@ public class Cj01SQLiteTest {
     private static List<String> linesKoxhanh = null;
     private static List<String> linesSionTanTseng = null;
     private static List<String> linesWugniuLopha = null;
+    private static List<String> linesWugniuRuiAn = null;
     // 交集碼表
     private static List<String> linesInter = null;
     // 倉頡三五
@@ -85,6 +87,7 @@ public class Cj01SQLiteTest {
     private static final String cjGenKoxhanh = "kohan";
     private static final String cjGenSionTanTseng = "siontts";
     private static final String cjGenWugniuLopha = "wugnl";
+    private static final String cjGenWugniuRuiAn = "wnoyra"; // 吳語甌越瑞安
 
     private static Map<String, Map<String, Integer>> mbOrderNoMaps = null; // 文字排序權值
     private static String ORDER_MAP_DEFAULT_KEY = "default";
@@ -112,6 +115,7 @@ public class Cj01SQLiteTest {
     private static boolean withPy = false; // 拼音
     private static boolean withJyutp = false; // 粤拼
     private static boolean withWugniuLopha = false; // 上海吳語（老派）
+    private static boolean withWugniuRuiAn = false; // 甌越瑞安吳語
     private static boolean withSionTanTseng = false; // 曾版湘潭話
     private static boolean withKoxhanh = false; // 中古漢語
     private static boolean withIpa = false; // 國際音標
@@ -133,13 +137,13 @@ public class Cj01SQLiteTest {
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
         boolean editionAll = false; // 版本自定義字體 514145
-        boolean edition3 = true; // 版本倉頡三 164682
+        boolean edition3 = false; // 版本倉頡三 164682
         boolean edition35 = false; // 版本倉頡三五 185549
         boolean edition5 = false; // 版本五代 178742
         boolean editionSpecial5 = false; // 特别五代，粵語不要，換吳語 188760
         boolean edition6 = false; // 版本六 275759
         boolean edition62 = false; // 版本六，帶詞組
-        boolean editionWugniu = false; // 吳語輸入法 102361
+        boolean editionWugniu = true; // 吳語輸入法 102361
         // 倉頡字典
         boolean editionDict = false; // 倉頡字典 372442
 
@@ -253,6 +257,7 @@ public class Cj01SQLiteTest {
         }
         if (editionWugniu) {
             withWugniuLopha = true; // 上海吳語（老派）
+            withWugniuRuiAn = true; // 甌越瑞安吳語
             withPy = true; // 拼音
             withIpa = true; // 國際音標
         }
@@ -344,6 +349,7 @@ public class Cj01SQLiteTest {
             linesKoxhanh = IOUtils.readLines(koxhanhAllInOne, true);
             linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne, true);
             linesWugniuLopha = IOUtils.readLines(wugniuLophaAllInOne, true);
+            linesWugniuRuiAn = IOUtils.readLines(wugniuRuiAnAllInOne, true);
 
             // 交集碼表
             linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne,
@@ -427,14 +433,21 @@ public class Cj01SQLiteTest {
             sql_gen = getInsertGenSql(cjGenWugniuLopha, "上海吳語");
             stmt.executeUpdate(sql_gen);
 
+            sql_gen = getInsertGenSql(cjGenWugniuRuiAn, "甌越瑞安");
+            stmt.executeUpdate(sql_gen);
+
             // 不自動提交
             c.setAutoCommit(false);
 
-            // 倉頡交集碼表
-            insertMbdbIntersect(stmt, linesInter, true);
-            c.commit();
-            System.out.println("insert " + cjGenInter + " successfully");
-            selectCountAll(stmt);
+            // 倉頡交集碼表，有倉頡輸入法，才插入交集碼表。
+            if (withCangjieyh || withCangjiems || withCangjiemacx
+                    || withCangjie3 || withCangjie35 || withCangjie5
+                    || withCangjie6) {
+                insertMbdbIntersect(stmt, linesInter, true);
+                c.commit();
+                System.out.println("insert " + cjGenInter + " successfully");
+                selectCountAll(stmt);
+            }
 
             if (withCangjie2) {
                 // 倉頡二代
@@ -518,6 +531,14 @@ public class Cj01SQLiteTest {
                 c.commit();
                 System.out.println(
                         "insert " + cjGenWugniuLopha + " successfully");
+                selectCountAll(stmt);
+            }
+            // 甌越瑞安吳語
+            if (withWugniuRuiAn) {
+                insertMbdb(stmt, cjGenWugniuRuiAn, linesWugniuRuiAn, false);
+                c.commit();
+                System.out.println(
+                        "insert " + cjGenWugniuRuiAn + " successfully");
                 selectCountAll(stmt);
             }
             // 曾版湘潭話

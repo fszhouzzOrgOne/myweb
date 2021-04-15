@@ -12,6 +12,7 @@ import java.util.Set;
 import cangjie.java.util.IOUtils;
 import cangjie.java.util.PhraseUtils;
 import wugniu.WugniuRawMbTest;
+import wugniu.WugniuRuiAnMbTest;
 
 public class Cj00AllInOneTest {
 
@@ -100,6 +101,9 @@ public class Cj00AllInOneTest {
             + "sionTanTseng-3000.txt";
     // 上海吳語（老派）
     public static String wugniuLopha30000 = WugniuRawMbTest.resultFile;
+    // 甌越瑞安吳語
+    public static String wugniuRuiAn11400 = WugniuRuiAnMbTest.mbBaseDir 
+            + "瓯越瑞安auyue_lodzen-order.txt";
     // 注音符號，自製碼表，只能打符號，不能打漢字
     public static String zyfhs5000 = mbsBaseDir + "zyfh-5000.txt";
     // 粵語拼音，整合兩個碼表GitHub上rime-aca的粵拼⁺正寫字碼表、
@@ -122,6 +126,8 @@ public class Cj00AllInOneTest {
             + File.separator + "allInOne-sionTanTseng.txt"; // 曾版湘潭話拼音
     public static String wugniuLophaAllInOne = mbsBaseDir + "allInOne"
             + File.separator + "allInOne-wugniuLopha.txt"; // 上海吳語（老派）
+    public static String wugniuRuiAnAllInOne = mbsBaseDir + "allInOne"
+            + File.separator + "allInOne-wugniuRuiAn.txt"; // 甌越瑞安吳語
     public static String zyfhsallInOne = mbsBaseDir + "allInOne"
             + File.separator + "allInOne-zyfh.txt"; // 注音符號
     public static String pinyinallInOne = mbsBaseDir + "allInOne"
@@ -193,6 +199,10 @@ public class Cj00AllInOneTest {
         // 上海吳語（老派）
         String[] wugniuLopha = new String[] { wugniuLopha30000 };
         genAllInOne("上海吳語", wugniuLopha, wugniuLophaAllInOne, withHeaders);
+
+        // 甌越瑞安吳語
+        String[] wugniuRuiAn = new String[] { wugniuRuiAn11400 };
+        genAllInOne("甌越瑞安", wugniuRuiAn, wugniuRuiAnAllInOne, withHeaders);
 
         // 中古漢語
         String[] mbkoxhanh = new String[] { koxhanh30000 };
