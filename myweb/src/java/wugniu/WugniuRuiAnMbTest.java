@@ -34,6 +34,6 @@ public class WugniuRuiAnMbTest {
         IOUtils.writeFile(mbBaseDir + destFile, res);
         Set<String> dups = IOUtils.uniqueCodeFile(mbBaseDir + destFile);
         System.out.println(dups);
-        IOUtils.orderCodeFile(mbBaseDir + destFile);
+        IOUtils.orderCodeFileRaw(mbBaseDir + destFile);
     }
 }

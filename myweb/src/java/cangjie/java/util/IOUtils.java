@@ -59,6 +59,17 @@ public class IOUtils {
      * 碼表排序，先按編碼先后，再按長度
      */
     public static void orderCodeFile(String filename) throws Exception {
+        doOrderCodeFile(filename, false);
+    }
+
+    /**
+     * 碼表排序，先按編碼先后，再按長度。長度相同時，保持原來的顺序。
+     */
+    public static void orderCodeFileRaw(String filename) throws Exception {
+        doOrderCodeFile(filename, true);
+    }
+    
+    private static void doOrderCodeFile(String filename, final boolean remainOrder) throws Exception {
         System.out.println("排序：" + filename);
         List<String> allphrases = new ArrayList<String>(IOUtils.readLines(filename, true));
 
@@ -73,13 +84,13 @@ public class IOUtils {
                         // 不等則短的在前
                         return str1.length() - str2.length();
                     } else {
-                        return str1.compareTo(str2);
+                        return (remainOrder ? 0 : str1.compareTo(str2));
                     }
                 } else {
                     // 如果不是碼表，看長度
                     // 長度相等
                     if (str1.length() == str2.length()) {
-                        return str1.compareTo(str2);
+                        return (remainOrder ? 0 : str1.compareTo(str2));
                     } else {
                         // 不等則短的在前
                         return str1.length() - str2.length();
