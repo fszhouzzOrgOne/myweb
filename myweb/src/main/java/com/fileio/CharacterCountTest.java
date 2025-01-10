@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -16,14 +17,14 @@ import java.util.List;
 public class CharacterCountTest {
 
     public static void main(String[] args) {
-        String fileName = "file/說明.txt";
+        String fileName = "myweb/myweb/file/說明.txt";
         File file = new File(fileName);
         Reader reader = null;
         try {
             List<Character> chars = new ArrayList<Character>();
             long charCount = 0;
             // 一次讀一个字符
-            reader = new InputStreamReader(new FileInputStream(file), "gbk");
+            reader = new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8);
             int tempchar;
             while ((tempchar = reader.read()) != -1) {
                 charCount++;
