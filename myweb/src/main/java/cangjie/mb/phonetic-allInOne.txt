@@ -38,6 +38,9 @@ e   ɛ̃
 e   ɜ
 e   ɚ
 e   ɝ
+e   ɣ
+e   ɤ
+e   ˠ
 f   f
 f   ɸ
 g   g
@@ -180,6 +183,9 @@ y   y
 y   ʏ
 y   ɥ
 y   ʎ
+y   ɣ
+y   ɤ
+y   ˠ
 z   z
 z   ʑ
 z   ʐ

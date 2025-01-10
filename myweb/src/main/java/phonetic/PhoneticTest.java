@@ -16,7 +16,7 @@ import cangjie.java.util.IOUtils;
  */
 public class PhoneticTest {
 
-    public static String mbsBaseDir = "src\\java\\phonetic\\";
+    public static String mbsBaseDir = "myweb\\myweb\\src\\main\\java\\phonetic\\";
     // 原碼表
     private static String phoneticAllFile = mbsBaseDir + "國際音標符號.txt";
 
@@ -48,6 +48,7 @@ public class PhoneticTest {
             
             res.add(currentKey + "   " + str);
         }
+        System.out.println(res);
 
         // res
         IOUtils.writeFile(Cj00AllInOneTest.phonetic200, res);
