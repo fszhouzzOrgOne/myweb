@@ -1,0 +1,12 @@
+JulianDate.java、 LunarCalendar.java、 LunarConstant.java、 LunarDate.java
+四個類來自：https://download.csdn.net/download/wangpeng047/7755661
+
+wangpeng047说明：
+1. LunarCalendar对象是以月历为基准的，例如：2014年8月的月历数据。
+2. LunarCalendar的所有方法都是针对于农历而言，例如getMonth方法，代表获取的是农历月的数据，而不是公历。
+3. LunarCalendar实例化，默认为今天，可以指定为某天，大多数方法都是依据实例化时指定的天而返回数据的。
+4. LunarDate类，是某一天的农历数据对象，并且已经拆分，而不是以前那样都混杂在一块。
+5. JulianDate类，是公历数据对象。
+6. LunarConstant类，是基本常量的数据对象，里面含有大量基本数据。
+
+本次的封装版，实质上还是较为简单，没有进一步深入和挖掘，但也基本够用了。各位读者可以根据自己的需要进行进一步整理，不过再整理和改造之前，建议还是先了解下相关的知识，否则估计你都无从下手，即便改了，在不了解逻辑的情况下，也容易出错。
