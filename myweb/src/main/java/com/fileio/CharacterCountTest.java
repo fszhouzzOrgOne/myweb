@@ -17,7 +17,7 @@ import java.util.List;
 public class CharacterCountTest {
 
     public static void main(String[] args) {
-        String fileName = "myweb/myweb/file/說明.txt";
+        String fileName = "myweb/myweb/src/main/java/com/fileio/說明.txt";
         File file = new File(fileName);
         Reader reader = null;
         try {
