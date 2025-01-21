@@ -13,8 +13,7 @@ import cangjie.java.util.IOUtils;
  * @time 2020年11月16日 下午10:12:23
  */
 public class WugniuRawMbTest {
-
-    public static String mbBaseDir = "src\\java\\wugniu\\mb\\";
+    public static String mbBaseDir = "myweb\\src\\main\\java\\wugniu\\mb\\";
     public static String resultFile = mbBaseDir + "wugniu_good2order.txt";
 
     public static void main(String[] args) throws Exception {

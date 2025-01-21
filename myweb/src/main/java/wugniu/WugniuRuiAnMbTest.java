@@ -14,7 +14,7 @@ import cangjie.java.util.IOUtils;
  */
 public class WugniuRuiAnMbTest {
 
-    public static String mbBaseDir = "src\\java\\wugniu\\mb\\";
+    public static String mbBaseDir = "myweb\\src\\main\\java\\wugniu\\mb\\";
 
     public static void main(String[] args) throws Exception {
         orderWugniuMb("瓯越瑞安auyue_lodzen-11400.txt", 

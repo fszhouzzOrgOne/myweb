@@ -15,8 +15,7 @@ import wugniu.WugniuRawMbTest;
 import wugniu.WugniuRuiAnMbTest;
 
 public class Cj00AllInOneTest {
-
-    public static String mbsBaseDir = "myweb\\myweb\\src\\main\\java\\cangjie\\mb\\";
+    public static String mbsBaseDir = "myweb\\src\\main\\java\\cangjie\\mb\\";
     // 取自倉頡平臺2012所帶碼表
     public static String mb26000 = mbsBaseDir + "cjmb" + File.separator
             + "cj2-6763.txt";
