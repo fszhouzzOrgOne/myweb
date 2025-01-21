@@ -157,6 +157,10 @@ public class Cj00AllInOneTest {
     public static String koxhanhAllInOne = mbsBaseDir + "allInOne"
             + File.separator + "allInOne-koxhanh.txt";
 
+    // 泰文輸入
+    public static String thai = mbsBaseDir + "thai-13000.txt";
+    public static String thaiAllInOne = mbsBaseDir + "allInOne" + File.separator + "allInOne-thai.txt";
+
     public static void main(String[] args) throws Exception {
         // 電腦輸入法碼表
         generateAllInOnes(false, false, false, false, false);
@@ -236,6 +240,10 @@ public class Cj00AllInOneTest {
         String[] mbkorea = new String[] { mbkoreaOther, koreaMoreSymbol,
                 koreaHanja };
         genAllInOne("朝鮮諺文", mbkorea, koreaAllInOne, withHeaders);
+
+        // 泰文
+        String[] mbthai = new String[] { thai };
+        genAllInOne("泰文輸入", mbthai, thaiAllInOne, withHeaders);
 
         // 四角號碼
         if (otherWithPhrases) {

@@ -16,7 +16,7 @@ import cangjie.java.util.IOUtils;
  */
 public class PhoneticTest {
 
-    public static String mbsBaseDir = "myweb\\myweb\\src\\main\\java\\phonetic\\";
+    public static String mbsBaseDir = "myweb\\src\\main\\java\\phonetic\\";
     // 原碼表
     private static String phoneticAllFile = mbsBaseDir + "國際音標符號.txt";
 

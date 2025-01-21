@@ -34,7 +34,7 @@ import cangjie.java.util.IOUtils;
 public class QrCodeTest {
     private static final int BLACK = 0xff000000;
     private static final int WHITE = 0xFFFFFFFF;
-    private static String mbsBaseDir = "myweb\\myweb\\src\\main\\java\\qrcode";
+    private static String mbsBaseDir = "myweb\\src\\main\\java\\qrcode";
 
     public static void main(String[] args) throws Exception {
         File file = new File(mbsBaseDir + "qrcode_src.txt");
