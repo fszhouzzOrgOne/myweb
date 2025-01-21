@@ -42,6 +42,7 @@ public class Cj01SQLiteTest {
     private static String sionTanTsengAllInOne = Cj00AllInOneTest.sionTanTsengAllInOne; // 曾版湘潭話
     private static String wugniuLophaAllInOne = Cj00AllInOneTest.wugniuLophaAllInOne; // 上海吳語（老派）
     private static String wugniuRuiAnAllInOne = Cj00AllInOneTest.wugniuRuiAnAllInOne; // 甌越瑞安吳語
+    private static String thaiAllInOne = Cj00AllInOneTest.thaiAllInOne; // 泰文輸入
 
     private static List<String> lines2 = null;
     private static List<String> lines3 = null;
@@ -62,6 +63,7 @@ public class Cj01SQLiteTest {
     private static List<String> linesSionTanTseng = null;
     private static List<String> linesWugniuLopha = null;
     private static List<String> linesWugniuRuiAn = null;
+    private static List<String> linesThai = null; // 泰文輸入
     // 交集碼表
     private static List<String> linesInter = null;
     // 倉頡三五
@@ -88,6 +90,7 @@ public class Cj01SQLiteTest {
     private static final String cjGenSionTanTseng = "siontts";
     private static final String cjGenWugniuLopha = "wugnl";
     private static final String cjGenWugniuRuiAn = "wnoyra"; // 吳語甌越瑞安
+    private static final String cjGenThai = "thai"; // 泰文輸入
 
     private static Map<String, Map<String, Integer>> mbOrderNoMaps = null; // 文字排序權值
     private static String ORDER_MAP_DEFAULT_KEY = "default";
@@ -116,6 +119,7 @@ public class Cj01SQLiteTest {
     private static boolean withJyutp = false; // 粤拼
     private static boolean withWugniuLopha = false; // 上海吳語（老派）
     private static boolean withWugniuRuiAn = false; // 甌越瑞安吳語
+    private static boolean withThai = false; // 泰文輸入
     private static boolean withSionTanTseng = false; // 曾版湘潭話
     private static boolean withKoxhanh = false; // 中古漢語
     private static boolean withIpa = false; // 國際音標
@@ -192,6 +196,7 @@ public class Cj01SQLiteTest {
             withKorea = true; // 韓文
             withManju = true; // 滿文
             withZy = true; // 注音
+            withThai = true; // 泰文
         }
         if (edition3) {
             withCangjie3 = true;
@@ -239,6 +244,7 @@ public class Cj01SQLiteTest {
             withKorea = true; // 韓文
             withManju = true; // 滿文
             withZy = true; // 注音
+            withThai = true; // 泰文
         }
         if (edition62) {
             withCangjie6 = true;
@@ -254,6 +260,7 @@ public class Cj01SQLiteTest {
             withKorea = true; // 韓文
             withManju = true; // 滿文
             withZy = true; // 注音
+            withThai = true; // 泰文
         }
         if (editionWugniu) {
             withWugniuLopha = true; // 上海吳語（老派）
@@ -350,6 +357,7 @@ public class Cj01SQLiteTest {
             linesSionTanTseng = IOUtils.readLines(sionTanTsengAllInOne, true);
             linesWugniuLopha = IOUtils.readLines(wugniuLophaAllInOne, true);
             linesWugniuRuiAn = IOUtils.readLines(wugniuRuiAnAllInOne, true);
+            linesThai = IOUtils.readLines(thaiAllInOne, true);
 
             // 交集碼表
             linesInter = IOUtils.readLines(Cj01MbFormatTest.cj356hyms_allInOne,
@@ -434,6 +442,9 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenWugniuRuiAn, "甌越瑞安");
+            stmt.executeUpdate(sql_gen);
+
+            sql_gen = getInsertGenSql(cjGenThai, "泰文輸入");
             stmt.executeUpdate(sql_gen);
 
             // 不自動提交
@@ -589,6 +600,13 @@ public class Cj01SQLiteTest {
                 insertMbdb(stmt, cjGenManju, linesmanju, true);
                 c.commit();
                 System.out.println("insert " + cjGenManju + " successfully");
+                selectCountAll(stmt);
+            }
+            // 泰文輸入
+            if (withThai) {
+                insertMbdb(stmt, cjGenThai, linesThai, false);
+                c.commit();
+                System.out.println("insert " + cjGenThai + " successfully");
                 selectCountAll(stmt);
             }
             // 注音符號
