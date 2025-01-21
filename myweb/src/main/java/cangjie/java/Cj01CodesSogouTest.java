@@ -23,7 +23,7 @@ public class Cj01CodesSogouTest {
     // 還不能到十萬了
     private static Integer max_line_cnt = 98000;
 
-    private static String mbBaseDir = "myweb\\src\\main\\java\\cangjie\\mb\\cjmb\\";
+    private static String mbBaseDir = Cj00AllInOneTest.mbsBaseDir + "cjmb\\";
 
     /** 詞組編碼後的目標文件 */
     private static String destPhrasesFile = null;

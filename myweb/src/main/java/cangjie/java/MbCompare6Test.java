@@ -18,7 +18,7 @@ import unicode.UnicodeHanziUtil;
  */
 public class MbCompare6Test {
 
-    public static String mbsBaseDir = "src\\java\\cangjie\\mb\\";
+    public static String mbsBaseDir = Cj00AllInOneTest.mbsBaseDir;
     public static String mb68000 = mbsBaseDir + "cjmb" + File.separator
             + "oldmb" + File.separator + "cj6-8300.txt";
     public static String mb610000 = mbsBaseDir + "cjmb" + File.separator

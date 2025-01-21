@@ -13,8 +13,7 @@ import cangjie.java.util.IOUtils;
  * @time 2017年9月25日下午3:32:02
  */
 public class DuoDuoFormatTest {
-
-    private static String destFileDir = "src\\java\\cangjie\\mb\\duoduo\\mb\\";
+    private static String destFileDir = Cj00AllInOneTest.mbsBaseDir + "\\duoduo\\mb\\";
 
     private static String mb2allInOne = Cj00AllInOneTest.mb2allInOne;
     private static String mb3allInOne = Cj00AllInOneTest.mb3allInOne;

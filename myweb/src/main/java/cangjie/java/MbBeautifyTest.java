@@ -14,7 +14,7 @@ import cangjie.java.util.IOUtils;
 public class MbBeautifyTest {
 
     public static void main(String[] args) throws Exception {
-        String file = "src\\java\\hangul\\file\\korea-12000.txt";
+        String file = "myweb\\src\\main\\java\\hangul\\file\\korea-12000.txt";
         doBeautify(file);
     }
 
