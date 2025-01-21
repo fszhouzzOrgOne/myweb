@@ -13,5 +13,6 @@ public class SquareOverlap {
        int x1 = squareOne[0];
        int y1 = squareOne[1];
 
+       return false;
     }
 }
