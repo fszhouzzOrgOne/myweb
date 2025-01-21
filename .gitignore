@@ -1,8 +1,9 @@
 ﻿.idea
+target
+classes
 /myweb/target
 /myweb/src/J2EE/APP-INF/classes/cangjie/mb/cjmbdb.db
 /myweb/src/main/java/cangjie/mb/mbdb/cjmbdb.db
-classes
 /myweb/src/main/java/cjdict2356pc/fonts/KaiXinSong2.1.ttf
 /myweb/src/main/java/cjdict2356pc/mb/cjmbdb.db
 /myweb/src/main/java/karina/mb/新日漢大辭典純漢字詞編碼.txt

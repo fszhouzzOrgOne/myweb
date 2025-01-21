@@ -23,7 +23,7 @@ public class Cj01CodesSogouTest {
     // 還不能到十萬了
     private static Integer max_line_cnt = 98000;
 
-    private static String mbBaseDir = "src\\java\\cangjie\\mb\\cjmb\\";
+    private static String mbBaseDir = "myweb\\src\\main\\java\\cangjie\\mb\\cjmb\\";
 
     /** 詞組編碼後的目標文件 */
     private static String destPhrasesFile = null;
@@ -146,7 +146,8 @@ public class Cj01CodesSogouTest {
         if (cj6All.size() + cj6phrases.size() > max_line_cnt) {
             endIndex = max_line_cnt - cj6All.size();
         }
-        if (withFrases) {
+        System.out.println("withFrases=" + withFrases + ", endIndex=" + endIndex);
+        if (withFrases && endIndex >= 0) {
             cj6All.addAll(cj6phrases.subList(0, endIndex));
             System.out.println("排除的詞組數：" + cj6phrases.subList(endIndex, cj6phrases.size()).size());
             System.out.println("排除的詞組，前面一個：" + cj6phrases.get(endIndex - 1));
